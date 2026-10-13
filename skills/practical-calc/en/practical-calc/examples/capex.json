@@ -1,0 +1,11 @@
+{
+  "unit": "100 million KRW",
+  "periods": [
+    {"period": "2024", "ppe_purchase": 90, "intangible_purchase": 8, "revenue": 1000, "operating_cash_flow": 150},
+    {"period": "2025", "net_ppe_begin": 400, "net_ppe_end": 440, "depreciation": 45, "ppe_disposals_nbv": 5, "revenue": 1150, "operating_cash_flow": 175}
+  ],
+  "assets": [
+    {"name": "Production equipment", "cost": 100, "residual": 10, "life": 5, "start_year": 2026, "method": "straight"},
+    {"name": "Servers", "cost": 50, "residual": 5, "life": 4, "start_year": 2026, "method": "declining"}
+  ]
+}

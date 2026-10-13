@@ -1,0 +1,4 @@
+item,budget_qty,budget_price,actual_qty,actual_price
+Product A,1000,50,1100,48
+Product B,500,80,450,82
+Product C,0,,120,60

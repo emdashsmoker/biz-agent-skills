@@ -1,0 +1,11 @@
+{
+  "unit": "원",
+  "fixed_cost": 120000000,
+  "products": [
+    {"name": "기본형", "price": 30000, "variable_cost": 18000, "mix": 0.7},
+    {"name": "고급형", "price": 50000, "variable_cost": 27000, "mix": 0.3}
+  ],
+  "target_profit": 40000000,
+  "tax_rate": 0.2,
+  "current_units": 12000
+}

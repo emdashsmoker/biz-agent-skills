@@ -1,0 +1,17 @@
+{
+  "unit": "억원",
+  "mode": "economic",
+  "base_year": 2025,
+  "discount_rate": 0.045,
+  "cost_rules": [
+    {"item": "총사업비", "total": 300, "start_year": 2026, "years": 3},
+    {"item": "운영비", "annual": 12, "start_year": 2029, "end_year": 2058}
+  ],
+  "benefit_rules": [
+    {"item": "이용자 시간 절감", "annual": 40, "project_end_year": 2028, "gestation": 0, "duration": 30, "growth": 0.01}
+  ],
+  "costs": [
+    {"item": "잔존가치", "year": 2058, "amount": -20}
+  ],
+  "sensitivity": {"rate_delta": 0.01, "cost_changes": [-0.1, 0.1], "benefit_changes": [-0.1, 0.1]}
+}

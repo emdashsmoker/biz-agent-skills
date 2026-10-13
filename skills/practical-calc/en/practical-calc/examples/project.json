@@ -1,0 +1,17 @@
+{
+  "unit": "100 million KRW",
+  "mode": "economic",
+  "base_year": 2025,
+  "discount_rate": 0.045,
+  "cost_rules": [
+    {"item": "Construction cost", "total": 300, "start_year": 2026, "years": 3},
+    {"item": "Operating cost", "annual": 12, "start_year": 2029, "end_year": 2058}
+  ],
+  "benefit_rules": [
+    {"item": "Travel time savings", "annual": 40, "project_end_year": 2028, "gestation": 0, "duration": 30, "growth": 0.01}
+  ],
+  "costs": [
+    {"item": "Residual value", "year": 2058, "amount": -20}
+  ],
+  "sensitivity": {"rate_delta": 0.01, "cost_changes": [-0.1, 0.1], "benefit_changes": [-0.1, 0.1]}
+}

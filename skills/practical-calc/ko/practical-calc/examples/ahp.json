@@ -1,0 +1,16 @@
+{
+  "criteria": ["경제성", "정책성", "지역균형"],
+  "cr_threshold": 0.1,
+  "exclude_inconsistent": false,
+  "respondents": [
+    {"id": "R1", "matrix": [[1, 2, 3], [null, 1, 2], [null, null, 1]]},
+    {"id": "R2", "matrix": [[1, "1/2", 2], [null, 1, 3], [null, null, 1]]},
+    {"id": "R3", "matrix": [[1, 3, 5], [null, 1, 2], [null, null, 1]]}
+  ],
+  "alternatives": ["사업 시행", "사업 미시행"],
+  "alternative_judgments": {
+    "경제성": [{"id": "R1", "matrix": [[1, 2], [null, 1]]}, {"id": "R2", "matrix": [[1, 1], [null, 1]]}, {"id": "R3", "matrix": [[1, "1/2"], [null, 1]]}],
+    "정책성": [{"id": "R1", "matrix": [[1, 3], [null, 1]]}, {"id": "R2", "matrix": [[1, 2], [null, 1]]}, {"id": "R3", "matrix": [[1, 2], [null, 1]]}],
+    "지역균형": [{"id": "R1", "matrix": [[1, 2], [null, 1]]}, {"id": "R2", "matrix": [[1, 3], [null, 1]]}, {"id": "R3", "matrix": [[1, 1], [null, 1]]}]
+  }
+}
