@@ -1,0 +1,19 @@
+{
+  "unit": "억원",
+  "approaches": {
+    "하향식": [
+      {"stage": "TAM", "name": "국내 업무용 소프트웨어 시장", "value": 50000, "source": "시장 조사 보고서"},
+      {"stage": "SAM", "name": "대상 업종 비중", "value": 0.25},
+      {"stage": "SAM", "name": "클라우드 도입 비중", "value": 0.4},
+      {"stage": "SOM", "name": "5년 내 목표 점유율", "value": 0.05}
+    ],
+    "상향식": [
+      {"stage": "TAM", "name": "대상 기업 수(개사)", "value": 80000},
+      {"stage": "TAM", "name": "기업당 연간 지출(억원)", "value": 0.6},
+      {"stage": "SAM", "name": "영업 가능 지역 비중", "value": 0.55},
+      {"stage": "SAM", "name": "클라우드 도입 비중", "value": 0.4},
+      {"stage": "SOM", "name": "영업 인력 기준 연간 도달 고객 비중", "value": 0.06}
+    ]
+  },
+  "projection": {"start_year": 2025, "end_year": 2030, "growth_rate": 0.08}
+}

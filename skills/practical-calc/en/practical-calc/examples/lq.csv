@@ -1,0 +1,17 @@
+region,industry,value
+Nation,All industries,1000000
+Nation,Manufacturing,200000
+Nation,Services,700000
+Nation,Other,100000
+Region 1,All industries,300000
+Region 1,Manufacturing,45000
+Region 1,Services,230000
+Region 1,Other,25000
+Region 2,All industries,200000
+Region 2,Manufacturing,70000
+Region 2,Services,110000
+Region 2,Other,20000
+Region 3,All industries,500000
+Region 3,Manufacturing,85000
+Region 3,Services,360000
+Region 3,Other,55000

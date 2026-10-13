@@ -1,0 +1,19 @@
+{
+  "unit": "100 million KRW",
+  "approaches": {
+    "top-down": [
+      {"stage": "TAM", "name": "Domestic business software market", "value": 50000, "source": "Market research report"},
+      {"stage": "SAM", "name": "Share of target industries", "value": 0.25},
+      {"stage": "SAM", "name": "Cloud adoption share", "value": 0.4},
+      {"stage": "SOM", "name": "Target share within 5 years", "value": 0.05}
+    ],
+    "bottom-up": [
+      {"stage": "TAM", "name": "Target companies", "value": 80000},
+      {"stage": "TAM", "name": "Annual spend per company (100 million KRW)", "value": 0.6},
+      {"stage": "SAM", "name": "Share in serviceable regions", "value": 0.55},
+      {"stage": "SAM", "name": "Cloud adoption share", "value": 0.4},
+      {"stage": "SOM", "name": "Share of customers reachable per year", "value": 0.06}
+    ]
+  },
+  "projection": {"start_year": 2025, "end_year": 2030, "growth_rate": 0.08}
+}
