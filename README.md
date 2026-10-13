@@ -101,10 +101,12 @@ Each skill carries its own `LICENSE` and `NOTICE.md`. Under the output exception
 
 ## References
 
-Thanks to the contributors of these projects for making HWP and HWPX documents open to everyone.
+Thanks to the contributors of the open source projects that helped build these skills.
 
 - [python-hwpx](https://github.com/airmang/python-hwpx)
 - [pyhwp](https://github.com/mete0r/pyhwp)
+- [Owlready2](https://bitbucket.org/jibalamy/owlready2)
+- [faster-whisper](https://github.com/SYSTRAN/faster-whisper)
 
 </details>
 
@@ -205,9 +207,11 @@ skills/think-review/
 
 ## 참조 프로젝트
 
-HWP와 HWPX 문서를 누구나 다룰 수 있게 해 주신 프로젝트 기여자분들께 감사드립니다.
+스킬 개발에 도움을 준 오픈소스 프로젝트 기여자분들께 감사드립니다.
 
 - [python-hwpx](https://github.com/airmang/python-hwpx)
 - [pyhwp](https://github.com/mete0r/pyhwp)
+- [Owlready2](https://bitbucket.org/jibalamy/owlready2)
+- [faster-whisper](https://github.com/SYSTRAN/faster-whisper)
 
 </details>
