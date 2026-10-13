@@ -1,0 +1,462 @@
+{
+ "project": {
+  "name": "City A Youth Policy Master Plan Study (fictional example)",
+  "start": "2026-03-02",
+  "end": "2026-08-31",
+  "buffer_ratio": 0.15,
+  "max_task_days": 28
+ },
+ "options": {
+  "mm": true,
+  "raci": false
+ },
+ "people": [
+  {
+   "id": "P1",
+   "name": "Lead Researcher A",
+   "role": "PM",
+   "rate": 0.5,
+   "months": 6,
+   "mm": {
+    "2026-03": 0.5,
+    "2026-04": 0.4,
+    "2026-05": 0.6,
+    "2026-06": 0.6,
+    "2026-07": 0.6,
+    "2026-08": 0.3
+   }
+  },
+  {
+   "id": "P2",
+   "name": "Senior Researcher B",
+   "role": "Team lead",
+   "rate": 0.6,
+   "months": 6,
+   "mm": {
+    "2026-03": 0.5,
+    "2026-04": 0.6,
+    "2026-05": 0.7,
+    "2026-06": 0.7,
+    "2026-07": 0.7,
+    "2026-08": 0.4
+   }
+  },
+  {
+   "id": "P3",
+   "name": "Researcher C",
+   "role": "Data analysis",
+   "rate": 0.7,
+   "months": 6,
+   "mm": {
+    "2026-03": 0.8,
+    "2026-04": 0.8,
+    "2026-05": 0.7,
+    "2026-06": 0.7,
+    "2026-07": 0.7,
+    "2026-08": 0.5
+   }
+  },
+  {
+   "id": "P4",
+   "name": "Researcher D",
+   "role": "Survey analysis",
+   "rate": 0.7,
+   "months": 6,
+   "mm": {
+    "2026-03": 0.6,
+    "2026-04": 0.8,
+    "2026-05": 0.8,
+    "2026-06": 0.7,
+    "2026-07": 0.8,
+    "2026-08": 0.5
+   }
+  }
+ ],
+ "tasks": [
+  {
+   "stage": "Project management",
+   "name": "Kickoff preparation",
+   "type": "work",
+   "start": "2026-03-02",
+   "end": "2026-03-11",
+   "owner": "P1",
+   "output": "Work plan finalized internally"
+  },
+  {
+   "stage": "Project management",
+   "name": "Kickoff meeting",
+   "type": "check",
+   "event": "kickoff",
+   "start": "2026-03-13",
+   "end": "2026-03-13",
+   "owner": "P1",
+   "output": "Kickoff report approved by client"
+  },
+  {
+   "stage": "Project management",
+   "name": "Progress and risk management",
+   "type": "work",
+   "allow_long": true,
+   "start": "2026-03-16",
+   "end": "2026-07-31",
+   "owner": "P1",
+   "output": "Monthly progress report",
+   "note": "Record buffer days used at each month end"
+  },
+  {
+   "stage": "Project management",
+   "name": "Interim report meeting",
+   "type": "check",
+   "event": "interim_report",
+   "start": "2026-05-15",
+   "end": "2026-05-15",
+   "owner": "P1",
+   "output": "Client comments on the interim report received"
+  },
+  {
+   "stage": "Project management",
+   "name": "Final report meeting",
+   "type": "check",
+   "event": "final_report",
+   "start": "2026-07-24",
+   "end": "2026-07-24",
+   "owner": "P1",
+   "output": "Client comments on the final report received"
+  },
+  {
+   "stage": "Project management",
+   "name": "Closing and raw data handover",
+   "type": "work",
+   "start": "2026-07-27",
+   "end": "2026-07-31",
+   "owner": "P4",
+   "output": "Raw data and statistical table handover list confirmed by client"
+  },
+  {
+   "stage": "Situation analysis",
+   "name": "Review of the previous plan",
+   "type": "work",
+   "start": "2026-03-09",
+   "end": "2026-03-27",
+   "owner": "P2",
+   "output": "Previous plan comparison table (no blank carry-over decisions)"
+  },
+  {
+   "stage": "Situation analysis",
+   "name": "Secondary data plan",
+   "type": "work",
+   "start": "2026-03-09",
+   "end": "2026-03-13",
+   "owner": "P3",
+   "output": "Source list (source, reference date, access route)"
+  },
+  {
+   "stage": "Situation analysis",
+   "name": "Data request to departments",
+   "type": "work",
+   "start": "2026-03-16",
+   "end": "2026-03-17",
+   "owner": "P3",
+   "output": "Request letter sent"
+  },
+  {
+   "stage": "Situation analysis",
+   "name": "Wait for department data",
+   "type": "wait",
+   "start": "2026-03-18",
+   "end": "2026-04-03",
+   "owner": "City A departments",
+   "note": "If replies are late, use public statistics instead"
+  },
+  {
+   "stage": "Situation analysis",
+   "name": "Data cleaning and status analysis",
+   "type": "work",
+   "start": "2026-04-06",
+   "end": "2026-04-24",
+   "owner": "P3",
+   "output": "Status analysis tables (rules for missing values and outliers documented)"
+  },
+  {
+   "stage": "Situation analysis",
+   "name": "Domestic and international case study",
+   "type": "work",
+   "start": "2026-03-23",
+   "end": "2026-04-17",
+   "owner": "P4",
+   "output": "Case comparison table"
+  },
+  {
+   "stage": "Stakeholder input",
+   "name": "Survey design and pilot",
+   "type": "work",
+   "start": "2026-03-23",
+   "end": "2026-04-10",
+   "owner": "P2",
+   "output": "Final questionnaire (pilot results reflected)"
+  },
+  {
+   "stage": "Stakeholder input",
+   "name": "Survey release and first collection",
+   "type": "wait",
+   "start": "2026-04-13",
+   "end": "2026-04-24",
+   "owner": "Respondents",
+   "note": "Uncertain result; send a support letter in parallel"
+  },
+  {
+   "stage": "Stakeholder input",
+   "name": "Reminder and second collection",
+   "type": "wait",
+   "start": "2026-04-27",
+   "end": "2026-05-06",
+   "owner": "Respondents",
+   "note": "Uncertain result"
+  },
+  {
+   "stage": "Stakeholder input",
+   "name": "Response check and follow-up survey",
+   "type": "work",
+   "start": "2026-05-07",
+   "end": "2026-05-15",
+   "owner": "P2",
+   "output": "Valid responses reach 80% of the target sample",
+   "note": "Follow-up survey only if short"
+  },
+  {
+   "stage": "Stakeholder input",
+   "name": "First advisory request",
+   "type": "work",
+   "start": "2026-04-20",
+   "end": "2026-04-22",
+   "owner": "P1",
+   "output": "Advisory materials sent"
+  },
+  {
+   "stage": "Stakeholder input",
+   "name": "First advisory meeting",
+   "type": "check",
+   "event": "advisory",
+   "start": "2026-05-06",
+   "end": "2026-05-06",
+   "owner": "P1",
+   "output": "Advisory input table"
+  },
+  {
+   "stage": "Stakeholder input",
+   "name": "Reflect first advisory input",
+   "type": "work",
+   "start": "2026-05-07",
+   "end": "2026-05-13",
+   "owner": "P1",
+   "output": "Reflection table"
+  },
+  {
+   "stage": "Stakeholder input",
+   "name": "Survey analysis",
+   "type": "work",
+   "start": "2026-05-18",
+   "end": "2026-05-29",
+   "owner": "P4",
+   "output": "Descriptive and cross tables"
+  },
+  {
+   "stage": "Stakeholder input",
+   "name": "FGI topics",
+   "type": "work",
+   "start": "2026-06-01",
+   "end": "2026-06-03",
+   "owner": "P2",
+   "output": "FGI topic draft (linked to survey results)"
+  },
+  {
+   "stage": "Stakeholder input",
+   "name": "Recruit FGI participants",
+   "type": "wait",
+   "start": "2026-06-01",
+   "end": "2026-06-12",
+   "owner": "Participants"
+  },
+  {
+   "stage": "Stakeholder input",
+   "name": "Run and summarize FGI",
+   "type": "work",
+   "start": "2026-06-15",
+   "end": "2026-06-19",
+   "owner": "P2",
+   "output": "FGI summary table"
+  },
+  {
+   "stage": "Stakeholder input",
+   "name": "Second advisory request",
+   "type": "work",
+   "start": "2026-06-08",
+   "end": "2026-06-10",
+   "owner": "P1",
+   "output": "Advisory materials sent"
+  },
+  {
+   "stage": "Stakeholder input",
+   "name": "Second advisory meeting",
+   "type": "check",
+   "event": "advisory",
+   "start": "2026-06-19",
+   "end": "2026-06-19",
+   "owner": "P1",
+   "output": "Advisory input table"
+  },
+  {
+   "stage": "Stakeholder input",
+   "name": "Reflect second advisory input",
+   "type": "work",
+   "start": "2026-06-22",
+   "end": "2026-06-26",
+   "owner": "P1",
+   "output": "Reflection table"
+  },
+  {
+   "stage": "Vision and strategy",
+   "name": "SWOT and implications",
+   "type": "work",
+   "start": "2026-06-01",
+   "end": "2026-06-05",
+   "owner": "P1",
+   "output": "SWOT table (at least 3 entries per factor)"
+  },
+  {
+   "stage": "Vision and strategy",
+   "name": "Vision and goal structure",
+   "type": "work",
+   "start": "2026-06-08",
+   "end": "2026-06-19",
+   "owner": "P1",
+   "output": "Vision and goal chart (quantitative target for each goal)"
+  },
+  {
+   "stage": "Vision and strategy",
+   "name": "Strategic actions and priorities",
+   "type": "work",
+   "start": "2026-06-15",
+   "end": "2026-06-26",
+   "owner": "P2",
+   "output": "Strategic action list, priority table"
+  },
+  {
+   "stage": "Vision and strategy",
+   "name": "Action definition sheets",
+   "type": "work",
+   "start": "2026-06-29",
+   "end": "2026-07-17",
+   "owner": "P2",
+   "output": "Action definition sheets (budget, funding, yearly investment, indicator)",
+   "note": "Deadline critical"
+  },
+  {
+   "stage": "Vision and strategy",
+   "name": "Indicator design",
+   "type": "work",
+   "start": "2026-06-29",
+   "end": "2026-07-10",
+   "owner": "P4",
+   "output": "Indicator table (indicators linked to actions)"
+  },
+  {
+   "stage": "Deliverables",
+   "name": "Final report draft and internal review",
+   "type": "work",
+   "start": "2026-07-06",
+   "end": "2026-07-17",
+   "owner": "P1",
+   "output": "Final report draft reviewed internally"
+  },
+  {
+   "stage": "Deliverables",
+   "name": "Wait for client review of final report",
+   "type": "wait",
+   "start": "2026-07-20",
+   "end": "2026-07-23",
+   "owner": "City A Youth Policy Division"
+  },
+  {
+   "stage": "Deliverables",
+   "name": "Summary report",
+   "type": "work",
+   "start": "2026-07-20",
+   "end": "2026-07-29",
+   "owner": "P3",
+   "output": "Summary report"
+  },
+  {
+   "stage": "Deliverables",
+   "name": "Revision and final version",
+   "type": "work",
+   "start": "2026-07-27",
+   "end": "2026-07-31",
+   "owner": "P1",
+   "output": "Final report delivery version confirmed by client"
+  },
+  {
+   "stage": "Schedule buffer",
+   "name": "Schedule buffer",
+   "type": "buffer",
+   "start": "2026-08-03",
+   "end": "2026-08-31",
+   "owner": "P1",
+   "note": "Use only when delays occur"
+  }
+ ],
+ "overview": {
+  "summary": [
+   [
+    "Client",
+    "City A Youth Policy Division"
+   ],
+   [
+    "Contract type",
+    "Research service contract"
+   ]
+  ],
+  "beneficiary": [
+   "Young residents of City A",
+   "Departments that run youth programs"
+  ],
+  "needs": [
+   "The current master plan ends, so the next five-year plan is needed",
+   "Youth programs are scattered across departments and overlap"
+  ],
+  "goals": [
+   "Set the vision and strategic actions for the next five-year youth policy",
+   "Present yearly investment based on action definition sheets",
+   "Set up the indicator structure and feedback procedure"
+  ],
+  "hypotheses": [
+   {
+    "statement": "Low awareness among young residents comes mainly from poor access to program information",
+    "solutions": [
+     "Survey how residents learn about and use programs",
+     "Use the FGI to explore why residents do not use programs",
+     "Review the priority of a single information desk action"
+    ]
+   },
+   {
+    "statement": "Merging similar programs across departments lets the same budget reach more people",
+    "solutions": [
+     "Fix the list of similar programs from the previous plan comparison table",
+     "Compare budget and beneficiaries of the programs to merge",
+     "Put the merged actions into the action definition sheets"
+    ]
+   }
+  ],
+  "success": [
+   "Every action definition sheet has all four required items",
+   "Final report meeting comments are reflected in the delivery version",
+   "At each monthly review, buffer used stays at or below progress"
+  ],
+  "notes": [
+   "Keep public statistics ready as a fallback if department data arrives late",
+   "If survey responses fall below 80%, add phone interviews; below 60%, agree on a sample design change with the client",
+   "Record the date and reason of any delay caused by the client in writing when it happens",
+   "The number of actions drives the time for definition sheets, so fix the action count at the interim report meeting"
+  ]
+ }
+}

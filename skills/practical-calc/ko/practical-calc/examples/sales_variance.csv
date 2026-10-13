@@ -1,0 +1,4 @@
+item,budget_qty,budget_price,actual_qty,actual_price
+제품 A,1000,50,1100,48
+제품 B,500,80,450,82
+제품 C,0,,120,60
