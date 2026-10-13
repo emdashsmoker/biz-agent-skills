@@ -200,9 +200,9 @@ skills/think-review/
 
 ## References
 
-Thanks to the contributors of the open source projects that helped build these skills.
+Thanks to the developers and contributors of these projects.
 
-스킬 개발에 도움을 준 오픈소스 프로젝트 기여자분들께 감사드립니다.
+이 프로젝트들의 개발자와 기여자분들께 감사드립니다.
 
 - [python-hwpx](https://github.com/airmang/python-hwpx)
 - [pyhwp](https://github.com/mete0r/pyhwp)
