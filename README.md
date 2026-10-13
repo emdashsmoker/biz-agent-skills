@@ -101,6 +101,8 @@ Each skill carries its own `LICENSE` and `NOTICE.md`. Under the output exception
 
 ## References
 
+Thanks to the contributors of these projects for making HWP and HWPX documents open to everyone.
+
 - [python-hwpx](https://github.com/airmang/python-hwpx)
 - [pyhwp](https://github.com/mete0r/pyhwp)
 
@@ -202,6 +204,8 @@ skills/think-review/
 스킬마다 `LICENSE`와 `NOTICE.md`가 들어 있습니다. `NOTICE.md`의 출력물 예외 조항에 따라 스킬로 만든 문서, 차트, 파일은 GPL 조건 없이 쓸 수 있습니다. 스킬이 실행 중에 설치하는 패키지, 글꼴, 모델은 각자의 라이선스를 따릅니다.
 
 ## 참조 프로젝트
+
+HWP와 HWPX 문서를 누구나 다룰 수 있게 해 주신 프로젝트 기여자분들께 감사드립니다.
 
 - [python-hwpx](https://github.com/airmang/python-hwpx)
 - [pyhwp](https://github.com/mete0r/pyhwp)
