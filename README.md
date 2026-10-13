@@ -10,52 +10,52 @@ A skill whose name ends in `-lite` is a lite edition: the same function with sho
 
 ### Research
 
-- `environment-analysis`: Researches the macro environment, industry, internal capability and benchmarks, then turns them into sourced facts and implications.
-- `environment-analysis-lite`: Lite edition of `environment-analysis`.
-- `five-forces`: Analyzes the competition in an industry with Michael Porter's Five Forces framework.
-- `source-check`: Answers only from the files you provide and from searched sources that pass a quality filter.
-- `digest`: Turns web pages, documents, audio and video into minutes, briefings, reports or translations.
-- `md-parser`: Converts PDF, HWP, HWPX, Office files and more into Markdown.
+- [`environment-analysis`](skills/environment-analysis/): Researches the macro environment, industry, internal capability and benchmarks, then turns them into sourced facts and implications.
+- [`environment-analysis-lite`](skills/environment-analysis-lite/): Lite edition of `environment-analysis`.
+- [`five-forces`](skills/five-forces/): Analyzes the competition in an industry with Michael Porter's Five Forces framework.
+- [`source-check`](skills/source-check/): Answers only from the files you provide and from searched sources that pass a quality filter.
+- [`digest`](skills/digest/): Turns web pages, documents, audio and video into minutes, briefings, reports or translations.
+- [`md-parser`](skills/md-parser/): Converts PDF, HWP, HWPX, Office files and more into Markdown.
 
 ### Analysis
 
-- `practical-calc`: Runs practical calculations such as CAGR, NPV, B/C, IRR, AHP and financial ratios as reproducible Python scripts.
-- `practical-calc-lite`: Lite edition of `practical-calc`.
-- `cagr`: Calculates a compound annual growth rate from two points in time.
-- `practical-stats`: Designs and runs practical statistical analysis of surveys and secondary data around the decision it must inform.
-- `network-analysis`: Runs social network analysis with NetworkX code and charts.
-- `network-analysis-lite`: Lite edition of `network-analysis`.
-- `ontology-modeling`: Designs definitions, classes and relations without overlaps or gaps, and builds an OWL ontology when needed.
-- `dataframe-ops`: Turns plain-language or cell-reference requests about tables into pandas code and runs it.
-- `chart`: Settles the message first, then builds static report charts with matplotlib.
-- `biz-code-style`: Sets how coding, analysis and chart work runs and how the outputs look.
-- `biz-code-style-lite`: Lite edition of `biz-code-style`.
+- [`practical-calc`](skills/practical-calc/): Runs practical calculations such as CAGR, NPV, B/C, IRR, AHP and financial ratios as reproducible Python scripts.
+- [`practical-calc-lite`](skills/practical-calc-lite/): Lite edition of `practical-calc`.
+- [`cagr`](skills/cagr/): Calculates a compound annual growth rate from two points in time.
+- [`practical-stats`](skills/practical-stats/): Designs and runs practical statistical analysis of surveys and secondary data around the decision it must inform.
+- [`network-analysis`](skills/network-analysis/): Runs social network analysis with NetworkX code and charts.
+- [`network-analysis-lite`](skills/network-analysis-lite/): Lite edition of `network-analysis`.
+- [`ontology-modeling`](skills/ontology-modeling/): Designs definitions, classes and relations without overlaps or gaps, and builds an OWL ontology when needed.
+- [`dataframe-ops`](skills/dataframe-ops/): Turns plain-language or cell-reference requests about tables into pandas code and runs it.
+- [`chart`](skills/chart/): Settles the message first, then builds static report charts with matplotlib.
+- [`biz-code-style`](skills/biz-code-style/): Sets how coding, analysis and chart work runs and how the outputs look.
+- [`biz-code-style-lite`](skills/biz-code-style-lite/): Lite edition of `biz-code-style`.
 
 ### Planning
 
-- `strategy-builder`: Builds an organization's strategy framework step by step, from environment analysis to performance indicators.
-- `rfp-strategy`: Analyzes a request for proposal and builds a bid strategy.
-- `project-plan`: Writes a project overview and a WBS for a project under contract.
-- `think-review`: Checks plans, arguments and documents from first principles.
-- `think-review-lite`: Lite edition of `think-review`.
+- [`strategy-builder`](skills/strategy-builder/): Builds an organization's strategy framework step by step, from environment analysis to performance indicators.
+- [`rfp-strategy`](skills/rfp-strategy/): Analyzes a request for proposal and builds a bid strategy.
+- [`project-plan`](skills/project-plan/): Writes a project overview and a WBS for a project under contract.
+- [`think-review`](skills/think-review/): Checks plans, arguments and documents from first principles.
+- [`think-review-lite`](skills/think-review-lite/): Lite edition of `think-review`.
 
 ### Writing
 
-- `logical-write`: Writes and revises Korean outline-style (gaejosik) reports in a Markdown hierarchy.
-- `logical-write-lite`: Lite edition of `logical-write`.
-- `clear-comm`: Writes emails, replies, feedback and announcements that put the point first.
-- `anti-slop`: Finds and fixes the stock phrasing of language models.
-- `no-jargon`: Rewrites jargon so that readers outside the field can follow.
-- `onto-mece`: Checks classifications, hierarchies and definitions in a text for overlaps and gaps.
-- `fx-krw`: Adds a Korean won equivalent next to each foreign currency amount.
+- [`logical-write`](skills/logical-write/): Writes and revises Korean outline-style (gaejosik) reports in a Markdown hierarchy.
+- [`logical-write-lite`](skills/logical-write-lite/): Lite edition of `logical-write`.
+- [`clear-comm`](skills/clear-comm/): Writes emails, replies, feedback and announcements that put the point first.
+- [`anti-slop`](skills/anti-slop/): Finds and fixes the stock phrasing of language models.
+- [`no-jargon`](skills/no-jargon/): Rewrites jargon so that readers outside the field can follow.
+- [`onto-mece`](skills/onto-mece/): Checks classifications, hierarchies and definitions in a text for overlaps and gaps.
+- [`fx-krw`](skills/fx-krw/): Adds a Korean won equivalent next to each foreign currency amount.
 
 ### Working setup
 
-- `lean-work`: Fixes the purpose, reader and scope first, then keeps only what the work needs.
-- `long-task-ledger`: Records long multi-step agent work so it can resume after a truncated conversation or a new session.
-- `pref-architect`: Designs short always-on instructions and on-demand modular skills through an interview.
-- `skill-forge`: Builds, combines and manages skills and agent instructions.
-- `offline-deps-builder`: Builds dependency skills that carry the libraries, fonts and models another skill would download at run time.
+- [`lean-work`](skills/lean-work/): Fixes the purpose, reader and scope first, then keeps only what the work needs.
+- [`long-task-ledger`](skills/long-task-ledger/): Records long multi-step agent work so it can resume after a truncated conversation or a new session.
+- [`pref-architect`](skills/pref-architect/): Designs short always-on instructions and on-demand modular skills through an interview.
+- [`skill-forge`](skills/skill-forge/): Builds, combines and manages skills and agent instructions.
+- [`offline-deps-builder`](skills/offline-deps-builder/): Builds dependency skills that carry the libraries, fonts and models another skill would download at run time.
 
 ## Installation
 
