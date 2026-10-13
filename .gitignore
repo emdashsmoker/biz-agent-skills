@@ -1,0 +1,23 @@
+# Python run-time artifacts from skill scripts
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets and credentials
+.env
+.env.*
+*.pem
+*.key
+*_secret*
+.credentials.json
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
