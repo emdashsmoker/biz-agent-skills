@@ -13,7 +13,7 @@
     python parse.py <입력 파일> <출력 폴더> --chunk [--chunk-size 2000]
 
 HWP 바이너리 해석(_parse_hwp_olefile) 관련 표기
-    본 제품은 한글과컴퓨터의 한/글 문서 파일(.hwp) 공개 문서를 참고하여 개발하였습니다.
+    본 제품은 한컴의 HWP 문서 파일(.hwp) 공개 문서를 참고하여 개발하였습니다.
 """
 
 import argparse

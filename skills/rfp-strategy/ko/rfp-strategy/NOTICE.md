@@ -24,3 +24,22 @@ If you modify this program, you may extend this permission to your version, but 
 ## Third-party software
 
 Packages, programs, fonts and models that this program installs or downloads at run time are not part of this program. They keep their own licenses.
+
+This program does not bundle any item below. It installs, downloads or calls them at run time, or uses them when they are already installed. Their own dependencies are not listed. Fonts that ship with the operating system follow the operating system's license.
+
+| Item | License | Use |
+|---|---|---|
+| markitdown | MIT | Required |
+| python-hwpx | Apache-2.0 | Required |
+| pdfplumber | MIT | Required |
+| olefile | BSD-2-Clause | Required |
+| beautifulsoup4 | MIT | Required |
+| lxml | BSD-3-Clause | Required |
+| pyhwp | AGPL-3.0-or-later | Optional, run as a separate process |
+| six | MIT | Required |
+
+## HWP format notice
+
+본 제품은 한컴의 HWP 문서 파일(.hwp) 공개 문서를 참고하여 개발하였습니다.
+
+(This product was developed with reference to the HWP document file (.hwp) specification published by Hancom.)

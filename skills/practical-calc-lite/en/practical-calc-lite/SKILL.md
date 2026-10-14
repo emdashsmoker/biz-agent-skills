@@ -73,7 +73,7 @@ Run `python scripts/parse_input.py input_file output.md`. For long documents, ad
 - Save DOC and PPT (legacy formats) as DOCX and PPTX before converting.
 - Image and audio files are not supported. Audio transcription sends the file to an external service, and images yield only metadata such as the shooting location.
 
-HWP reader notice: 본 제품은 한컴의 HWP 문서 파일(.hwp) 공개 문서를 참고하여 개발하였습니다. (This product was developed with reference to Hancom's published HWP document file format.)
+HWP reader notice: 본 제품은 한컴의 HWP 문서 파일(.hwp) 공개 문서를 참고하여 개발하였습니다. (This product was developed with reference to the HWP document file (.hwp) specification published by Hancom.)
 
 ## Data preparation
 
