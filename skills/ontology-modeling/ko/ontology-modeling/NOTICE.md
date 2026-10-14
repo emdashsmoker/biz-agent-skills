@@ -30,6 +30,6 @@ This program does not bundle any item below. It installs, downloads or calls the
 | Item | License | Use |
 |---|---|---|
 | owlready2 | LGPL-3.0-or-later | Required |
-| HermiT (bundled in owlready2) | LGPL | Optional |
-| Pellet (bundled in owlready2) | AGPL | Optional |
+| HermiT (bundled in owlready2) | LGPL-3.0-or-later | Optional |
+| Pellet (bundled in owlready2) | AGPL-3.0 (commercial license also offered) | Optional |
 | Java runtime | Depends on the distribution | Optional |
