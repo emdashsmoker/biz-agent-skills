@@ -72,7 +72,7 @@ python scripts/parse.py <input file> <output folder> --chunk --chunk-size 2000
 - For a password-protected file, ask for an unlocked copy.
 - Split long documents by heading with the `--chunk` option.
 
-Notice for the HWP binary parsing path: 본 제품은 한글과컴퓨터의 한/글 문서 파일(.hwp) 공개 문서를 참고하여 개발하였습니다. (This product was developed with reference to Hancom's public HWP document file format.)
+Notice for the HWP binary parsing path: 본 제품은 한컴의 HWP 문서 파일(.hwp) 공개 문서를 참고하여 개발하였습니다. (This product was developed with reference to the HWP document file (.hwp) specification published by Hancom.)
 
 ## Analysis mode
 

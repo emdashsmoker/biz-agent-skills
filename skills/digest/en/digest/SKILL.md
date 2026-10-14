@@ -88,7 +88,7 @@ pip install pyhwp
 | Audio, video | .ogg .opus .m4a .aac .mp3 .wav .flac .wma .webm .amr .mp4 .mkv .avi .mov | Local transcription with faster-whisper | `(name)_transcript.md` |
 | Legacy documents | .doc .ppt | No extraction engine | none |
 
-PDF body extraction loses the cell layout of tables, so read table content from `_tables.md`. The script cannot extract what an image shows. If the model can view images in the current environment, read the image directly. Notice for the HWP fallback parser: "본 제품은 한글과컴퓨터의 한/글 문서 파일(.hwp) 공개 문서를 참고하여 개발하였습니다." (This product was developed with reference to the public HWP document file (.hwp) specification published by Hancom Inc.)
+PDF body extraction loses the cell layout of tables, so read table content from `_tables.md`. The script cannot extract what an image shows. If the model can view images in the current environment, read the image directly. Notice for the HWP fallback parser: "본 제품은 한컴의 HWP 문서 파일(.hwp) 공개 문서를 참고하여 개발하였습니다." (This product was developed with reference to the HWP document file (.hwp) specification published by Hancom.)
 
 ### Script usage
 
