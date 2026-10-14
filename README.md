@@ -2,11 +2,7 @@
 
 Agent Skills for the report writing and analysis work of planners, consultants and analysts. Every skill ships as a Korean original and an English translation. The Korean originals follow the document conventions of Korean public agencies and companies.
 
-The [demos](demos/README.md) run the same request on hyperscale AI with and without a skill and show both results side by side.
-
 기획자, 컨설턴트, 분석가의 보고서 작성과 분석 업무를 위한 에이전트 스킬 모음입니다. 모든 스킬은 한국어 원본과 영어 번역본을 함께 제공합니다. 한국어 원본은 한국 공공기관과 기업의 문서 관행을 기준으로 작성했습니다.
-
-[데모](demos/README.md)에서는 초거대AI를 주제로 같은 요청을 스킬 없이 실행한 결과와 스킬을 적용한 결과를 나란히 비교합니다.
 
 <details>
 <summary><b>English</b></summary>
@@ -34,8 +30,8 @@ A skill whose name ends in `-lite` is a lite edition: the same function with sho
 - [`network-analysis-lite`](skills/network-analysis-lite/): Lite edition of `network-analysis`.
 - [`ontology-modeling`](skills/ontology-modeling/): Designs definitions, classes and relations without overlaps or gaps, and builds an OWL ontology when needed.
 - [`dataframe-ops`](skills/dataframe-ops/): Turns plain-language or cell-reference requests about tables into pandas code and runs it.
-- [`chart`](skills/chart/): Settles the message first, then builds static report charts with matplotlib. ([demo](demos/README.md#chart))
-- [`biz-code-style`](skills/biz-code-style/): Sets how coding, analysis and chart work runs and how the outputs look. ([demo](demos/README.md#biz-code-style))
+- [`chart`](skills/chart/): Settles the message first, then builds static report charts with matplotlib. [Samples](skills/chart/demo/)
+- [`biz-code-style`](skills/biz-code-style/): Sets how coding, analysis and chart work runs and how the outputs look. [Samples](skills/biz-code-style/demo/)
 - [`biz-code-style-lite`](skills/biz-code-style-lite/): Lite edition of `biz-code-style`.
 
 ### Planning
@@ -48,12 +44,12 @@ A skill whose name ends in `-lite` is a lite edition: the same function with sho
 
 ### Writing
 
-- [`logical-write`](skills/logical-write/): Writes and revises Korean outline-style (gaejosik) reports in a Markdown hierarchy. ([demo](demos/README.md#logical-write))
+- [`logical-write`](skills/logical-write/): Writes and revises Korean outline-style (gaejosik) reports in a Markdown hierarchy. [Samples](skills/logical-write/demo/)
 - [`logical-write-lite`](skills/logical-write-lite/): Lite edition of `logical-write`.
-- [`clear-comm`](skills/clear-comm/): Writes emails, replies, feedback and announcements that put the point first. ([demo](demos/README.md#clear-comm))
-- [`anti-slop`](skills/anti-slop/): Finds and fixes the stock phrasing of language models. ([demo](demos/README.md#anti-slop))
-- [`no-jargon`](skills/no-jargon/): Rewrites jargon so that readers outside the field can follow. ([demo](demos/README.md#no-jargon))
-- [`onto-mece`](skills/onto-mece/): Checks classifications, hierarchies and definitions in a text for overlaps and gaps. ([demo](demos/README.md#onto-mece))
+- [`clear-comm`](skills/clear-comm/): Writes emails, replies, feedback and announcements that put the point first. [Samples](skills/clear-comm/demo/)
+- [`anti-slop`](skills/anti-slop/): Finds and fixes the stock phrasing of language models. [Samples](skills/anti-slop/demo/)
+- [`no-jargon`](skills/no-jargon/): Rewrites jargon so that readers outside the field can follow. [Samples](skills/no-jargon/demo/)
+- [`onto-mece`](skills/onto-mece/): Checks classifications, hierarchies and definitions in a text for overlaps and gaps. [Samples](skills/onto-mece/demo/)
 - [`fx-krw`](skills/fx-krw/): Adds a Korean won equivalent next to each foreign currency amount.
 
 ### Working setup
@@ -129,8 +125,8 @@ Each skill carries its own `LICENSE` and `NOTICE.md`. Under the output exception
 - [`network-analysis-lite`](skills/network-analysis-lite/): `network-analysis`의 경량판입니다.
 - [`ontology-modeling`](skills/ontology-modeling/): 개념 정의, 분류, 관계를 겹침과 빠짐 없이 설계하고 필요하면 OWL 온톨로지를 만듭니다.
 - [`dataframe-ops`](skills/dataframe-ops/): 자연어나 엑셀식 좌표로 받은 표 데이터 요청을 pandas 코드로 바꿔 실행합니다.
-- [`chart`](skills/chart/): 전할 메시지를 먼저 정한 뒤 matplotlib으로 보고서용 정적 차트를 만듭니다. ([데모](demos/README.md#chart))
-- [`biz-code-style`](skills/biz-code-style/): 코딩, 데이터 분석, 차트 작업의 진행 방식과 산출물 스타일을 정합니다. ([데모](demos/README.md#biz-code-style))
+- [`chart`](skills/chart/): 전할 메시지를 먼저 정한 뒤 matplotlib으로 보고서용 정적 차트를 만듭니다. [예시](skills/chart/demo/)
+- [`biz-code-style`](skills/biz-code-style/): 코딩, 데이터 분석, 차트 작업의 진행 방식과 산출물 스타일을 정합니다. [예시](skills/biz-code-style/demo/)
 - [`biz-code-style-lite`](skills/biz-code-style-lite/): `biz-code-style`의 경량판입니다.
 
 ### 기획
@@ -143,12 +139,12 @@ Each skill carries its own `LICENSE` and `NOTICE.md`. Under the output exception
 
 ### 글쓰기
 
-- [`logical-write`](skills/logical-write/): 마크다운 계위 구조의 논리적 개조식 문장으로 보고서를 쓰고 고칩니다. ([데모](demos/README.md#logical-write))
+- [`logical-write`](skills/logical-write/): 마크다운 계위 구조의 논리적 개조식 문장으로 보고서를 쓰고 고칩니다. [예시](skills/logical-write/demo/)
 - [`logical-write-lite`](skills/logical-write-lite/): `logical-write`의 경량판입니다.
-- [`clear-comm`](skills/clear-comm/): 이메일, 답장, 피드백, 공지를 요점부터 전하는 존댓말 산문으로 씁니다. ([데모](demos/README.md#clear-comm))
-- [`anti-slop`](skills/anti-slop/): 언어 모델이 자주 만드는 상투 표현을 찾아 고칩니다. ([데모](demos/README.md#anti-slop))
-- [`no-jargon`](skills/no-jargon/): 분야 밖의 독자도 읽을 수 있도록 전문용어를 풀어 씁니다. ([데모](demos/README.md#no-jargon))
-- [`onto-mece`](skills/onto-mece/): 글 속 분류, 상하 구조, 정의에 겹침이나 빠짐이 있는지 점검합니다. ([데모](demos/README.md#onto-mece))
+- [`clear-comm`](skills/clear-comm/): 이메일, 답장, 피드백, 공지를 요점부터 전하는 존댓말 산문으로 씁니다. [예시](skills/clear-comm/demo/)
+- [`anti-slop`](skills/anti-slop/): 언어 모델이 자주 만드는 상투 표현을 찾아 고칩니다. [예시](skills/anti-slop/demo/)
+- [`no-jargon`](skills/no-jargon/): 분야 밖의 독자도 읽을 수 있도록 전문용어를 풀어 씁니다. [예시](skills/no-jargon/demo/)
+- [`onto-mece`](skills/onto-mece/): 글 속 분류, 상하 구조, 정의에 겹침이나 빠짐이 있는지 점검합니다. [예시](skills/onto-mece/demo/)
 - [`fx-krw`](skills/fx-krw/): 외화 금액 옆에 원화 환산액을 함께 적습니다.
 
 ### 작업 환경
