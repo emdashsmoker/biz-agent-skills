@@ -24,3 +24,11 @@ If you modify this program, you may extend this permission to your version, but 
 ## Third-party software
 
 Packages, programs, fonts and models that this program installs or downloads at run time are not part of this program. They keep their own licenses.
+
+This program does not bundle any item below. It installs, downloads or calls them at run time, or uses them when they are already installed. Their own dependencies are not listed. Fonts that ship with the operating system follow the operating system's license.
+
+| Item | License | Use |
+|---|---|---|
+| matplotlib | Matplotlib License (PSF-based) | Required |
+| adjustText | MIT | Optional |
+| NanumGothic | OFL-1.1 | Installed if missing |
