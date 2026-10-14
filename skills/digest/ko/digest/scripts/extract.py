@@ -10,7 +10,7 @@
     문서 파일              PDF는 markitdown과 pdfplumber, HWPX는 python-hwpx, HWP는 pyhwp와 olefile, 그 외는 markitdown
 
 HWP 대체 파서(parse_hwp_olefile) 고지
-    본 제품은 한글과컴퓨터의 한/글 문서 파일(.hwp) 공개 문서를 참고하여 개발하였습니다.
+    본 제품은 한컴의 HWP 문서 파일(.hwp) 공개 문서를 참고하여 개발하였습니다.
 
 사용 예
     python extract.py report.pdf

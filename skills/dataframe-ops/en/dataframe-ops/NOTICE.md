@@ -24,3 +24,20 @@ If you modify this program, you may extend this permission to your version, but 
 ## Third-party software
 
 Packages, programs, fonts and models that this program installs or downloads at run time are not part of this program. They keep their own licenses.
+
+This program does not bundle any item below. It installs, downloads or calls them at run time, or uses them when they are already installed. Their own dependencies are not listed. Fonts that ship with the operating system follow the operating system's license.
+
+| Item | License | Use |
+|---|---|---|
+| pandas | BSD-3-Clause | Required |
+| openpyxl | MIT | Required |
+| xlrd | BSD | Optional |
+| odfpy | Apache-2.0, GPL-2.0-or-later or LGPL-2.1-or-later | Optional |
+| pyarrow | Apache-2.0 | Optional |
+| tabulate | MIT | Optional |
+| matplotlib | Matplotlib License (PSF-based) | Optional |
+| seaborn | BSD-3-Clause | Optional |
+| pdfplumber | MIT | Optional |
+| tabula-py | MIT | Optional |
+| Java runtime | Depends on the distribution | Optional |
+| python-docx | MIT | Optional |
