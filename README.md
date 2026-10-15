@@ -30,8 +30,8 @@ A skill whose name ends in `-lite` is a lite edition: the same function with sho
 - [`network-analysis-lite`](skills/network-analysis-lite/): Lite edition of `network-analysis`.
 - [`ontology-modeling`](skills/ontology-modeling/): Designs definitions, classes and relations without overlaps or gaps, and builds an OWL ontology when needed.
 - [`dataframe-ops`](skills/dataframe-ops/): Turns plain-language or cell-reference requests about tables into pandas code and runs it.
-- [`chart`](skills/chart/): Settles the message first, then builds static report charts with matplotlib. [Samples](skills/chart/demo/)
-- [`biz-code-style`](skills/biz-code-style/): Sets how coding, analysis and chart work runs and how the outputs look. [Samples](skills/biz-code-style/demo/)
+- [`chart`](skills/chart/): Settles the message first, then builds static report charts with matplotlib. [Samples](skills/chart/demo/en/)
+- [`biz-code-style`](skills/biz-code-style/): Sets how coding, analysis and chart work runs and how the outputs look. [Samples](skills/biz-code-style/demo/en/)
 - [`biz-code-style-lite`](skills/biz-code-style-lite/): Lite edition of `biz-code-style`.
 
 ### Planning
@@ -44,12 +44,12 @@ A skill whose name ends in `-lite` is a lite edition: the same function with sho
 
 ### Writing
 
-- [`logical-write`](skills/logical-write/): Writes and revises Korean outline-style (gaejosik) reports in a Markdown hierarchy. [Samples](skills/logical-write/demo/)
+- [`logical-write`](skills/logical-write/): Writes and revises Korean outline-style (gaejosik) reports in a Markdown hierarchy. [Samples](skills/logical-write/demo/en/)
 - [`logical-write-lite`](skills/logical-write-lite/): Lite edition of `logical-write`.
-- [`clear-comm`](skills/clear-comm/): Writes emails, replies, feedback and announcements that put the point first. [Samples](skills/clear-comm/demo/)
-- [`anti-slop`](skills/anti-slop/): Finds and fixes the stock phrasing of language models. [Samples](skills/anti-slop/demo/)
-- [`no-jargon`](skills/no-jargon/): Rewrites jargon so that readers outside the field can follow. [Samples](skills/no-jargon/demo/)
-- [`onto-mece`](skills/onto-mece/): Checks classifications, hierarchies and definitions in a text for overlaps and gaps. [Samples](skills/onto-mece/demo/)
+- [`clear-comm`](skills/clear-comm/): Writes emails, replies, feedback and announcements that put the point first. [Samples](skills/clear-comm/demo/en/)
+- [`anti-slop`](skills/anti-slop/): Finds and fixes the stock phrasing of language models. [Samples](skills/anti-slop/demo/en/)
+- [`no-jargon`](skills/no-jargon/): Rewrites jargon so that readers outside the field can follow. [Samples](skills/no-jargon/demo/en/)
+- [`onto-mece`](skills/onto-mece/): Checks classifications, hierarchies and definitions in a text for overlaps and gaps. [Samples](skills/onto-mece/demo/en/)
 - [`fx-krw`](skills/fx-krw/): Adds a Korean won equivalent next to each foreign currency amount.
 
 ### Working setup
@@ -95,7 +95,7 @@ The skills come as they are, without any warranty. Correct operation in every en
 
 [GPL-3.0-or-later](LICENSE). Copyright (C) 2026 Em Dash Smoker.
 
-Each skill carries its own `LICENSE` and `NOTICE.md`. Under the output exception in `NOTICE.md`, the documents, charts and other files you make with a skill are free of GPL terms. Packages, fonts and models that a skill installs at run time keep their own licenses. When a skill uses such items, the "Third-party software" section of its `NOTICE.md` lists them with their licenses.
+Each skill carries its own `LICENSE` and `NOTICE.md`. Under the output exception in `NOTICE.md`, the documents, charts and other files you make with a skill are free of GPL terms. The sample files in the `demo/` folders are licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). Packages, fonts and models that a skill installs at run time keep their own licenses. When a skill uses such items, the "Third-party software" section of its `NOTICE.md` lists them with their licenses.
 
 </details>
 
@@ -125,8 +125,8 @@ Each skill carries its own `LICENSE` and `NOTICE.md`. Under the output exception
 - [`network-analysis-lite`](skills/network-analysis-lite/): `network-analysis`의 경량판입니다.
 - [`ontology-modeling`](skills/ontology-modeling/): 개념 정의, 분류, 관계를 겹침과 빠짐 없이 설계하고 필요하면 OWL 온톨로지를 만듭니다.
 - [`dataframe-ops`](skills/dataframe-ops/): 자연어나 엑셀식 좌표로 받은 표 데이터 요청을 pandas 코드로 바꿔 실행합니다.
-- [`chart`](skills/chart/): 전할 메시지를 먼저 정한 뒤 matplotlib으로 보고서용 정적 차트를 만듭니다. [예시](skills/chart/demo/)
-- [`biz-code-style`](skills/biz-code-style/): 코딩, 데이터 분석, 차트 작업의 진행 방식과 산출물 스타일을 정합니다. [예시](skills/biz-code-style/demo/)
+- [`chart`](skills/chart/): 전할 메시지를 먼저 정한 뒤 matplotlib으로 보고서용 정적 차트를 만듭니다. [예시](skills/chart/demo/ko/)
+- [`biz-code-style`](skills/biz-code-style/): 코딩, 데이터 분석, 차트 작업의 진행 방식과 산출물 스타일을 정합니다. [예시](skills/biz-code-style/demo/ko/)
 - [`biz-code-style-lite`](skills/biz-code-style-lite/): `biz-code-style`의 경량판입니다.
 
 ### 기획
@@ -139,12 +139,12 @@ Each skill carries its own `LICENSE` and `NOTICE.md`. Under the output exception
 
 ### 글쓰기
 
-- [`logical-write`](skills/logical-write/): 마크다운 계위 구조의 논리적 개조식 문장으로 보고서를 쓰고 고칩니다. [예시](skills/logical-write/demo/)
+- [`logical-write`](skills/logical-write/): 마크다운 계위 구조의 논리적 개조식 문장으로 보고서를 쓰고 고칩니다. [예시](skills/logical-write/demo/ko/)
 - [`logical-write-lite`](skills/logical-write-lite/): `logical-write`의 경량판입니다.
-- [`clear-comm`](skills/clear-comm/): 이메일, 답장, 피드백, 공지를 요점부터 전하는 존댓말 산문으로 씁니다. [예시](skills/clear-comm/demo/)
-- [`anti-slop`](skills/anti-slop/): 언어 모델이 자주 만드는 상투 표현을 찾아 고칩니다. [예시](skills/anti-slop/demo/)
-- [`no-jargon`](skills/no-jargon/): 분야 밖의 독자도 읽을 수 있도록 전문용어를 풀어 씁니다. [예시](skills/no-jargon/demo/)
-- [`onto-mece`](skills/onto-mece/): 글 속 분류, 상하 구조, 정의에 겹침이나 빠짐이 있는지 점검합니다. [예시](skills/onto-mece/demo/)
+- [`clear-comm`](skills/clear-comm/): 이메일, 답장, 피드백, 공지를 요점부터 전하는 존댓말 산문으로 씁니다. [예시](skills/clear-comm/demo/ko/)
+- [`anti-slop`](skills/anti-slop/): 언어 모델이 자주 만드는 상투 표현을 찾아 고칩니다. [예시](skills/anti-slop/demo/ko/)
+- [`no-jargon`](skills/no-jargon/): 분야 밖의 독자도 읽을 수 있도록 전문용어를 풀어 씁니다. [예시](skills/no-jargon/demo/ko/)
+- [`onto-mece`](skills/onto-mece/): 글 속 분류, 상하 구조, 정의에 겹침이나 빠짐이 있는지 점검합니다. [예시](skills/onto-mece/demo/ko/)
 - [`fx-krw`](skills/fx-krw/): 외화 금액 옆에 원화 환산액을 함께 적습니다.
 
 ### 작업 환경
@@ -190,7 +190,7 @@ skills/think-review/
 
 [GPL-3.0-or-later](LICENSE)를 따릅니다. Copyright (C) 2026 Em Dash Smoker.
 
-스킬마다 `LICENSE`와 `NOTICE.md`가 들어 있습니다. `NOTICE.md`의 출력물 예외 조항에 따라 스킬로 만든 문서, 차트, 파일은 GPL 조건 없이 쓸 수 있습니다. 스킬이 실행 중에 설치하는 패키지, 글꼴, 모델은 각자의 라이선스를 따릅니다. 해당 항목을 쓰는 스킬은 `NOTICE.md`의 "Third-party software" 절에 항목과 라이선스를 적어 둡니다.
+스킬마다 `LICENSE`와 `NOTICE.md`가 들어 있습니다. `NOTICE.md`의 출력물 예외 조항에 따라 스킬로 만든 문서, 차트, 파일은 GPL 조건 없이 쓸 수 있습니다. `demo/` 폴더의 예시 파일은 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.ko)을 따릅니다. 스킬이 실행 중에 설치하는 패키지, 글꼴, 모델은 각자의 라이선스를 따릅니다. 해당 항목을 쓰는 스킬은 `NOTICE.md`의 "Third-party software" 절에 항목과 라이선스를 적어 둡니다.
 
 </details>
 
