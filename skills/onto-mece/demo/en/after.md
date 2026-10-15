@@ -13,7 +13,7 @@
 
 ### 3. Talent (people who build and run AI)
 - Training advanced talent at master's and PhD level
-- [New] Training working-level engineers who build and run services on hyperscale models
+- Training working-level engineers who build and run services on hyperscale models
 
 ## II. Demand (who adopts what Part I produces, by adopter)
 

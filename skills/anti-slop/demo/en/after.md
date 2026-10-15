@@ -1,4 +1,4 @@
-# [Company Name] to adopt hyperscale AI with its risks managed
+# Hyperscale AI to be adopted with its risks managed
 
 > (Hyperscale AI) AI models with hundreds of billions of parameters (values a model adjusts during training to fit patterns in data), trained on large volumes of data
 
