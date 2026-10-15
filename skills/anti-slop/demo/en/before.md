@@ -1,6 +1,6 @@
-## Hyperscale AI: What It Is and What It Means for [Company Name]
+## Hyperscale AI: What It Is and What It Means for Us
 
-Hyperscale AI is changing how companies operate, and [Company Name] is no exception. It is starting to shape both where we are headed as a business and how we work day to day.
+Hyperscale AI is changing how companies operate, and our company is no exception. It is starting to shape both where we are headed as a business and how we work day to day.
 
 ### What is hyperscale AI?
 
