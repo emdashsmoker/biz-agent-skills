@@ -1,23 +1,28 @@
-## Pilot answering questions from internal documents on company-owned servers
+## Factory AI with results traceable to linked equipment, process, and quality records
 
-- (Model) Publicly downloadable large language model run on company-owned servers
-    + Servers equipped with chips used for artificial intelligence (AI) computation
-    + Model size of 70 billion internal numerical values set during training
-    + Up to about 128,000 tokens of text handled in a single request
-    + Model fitted to the company's line of business through additional training that adjusts only a small set of added numerical values
+### Factory data from separate systems linked through one ontology
+- Equipment, process, and quality areas of the factory described in one ontology
+    + Ontology structure following the levels of an international manufacturing standard from company and plant down to production line and machine
+    + Reasoning software to apply the category levels and chained relations of the ontology to work out links that no one entered
 
-> (large language model) An AI program that writes answers in ordinary sentences based on patterns learned from very large amounts of text
+> (ontology) A formal set of definitions that states the kinds of things in a field and their relations in a form computers can process
 
-> (token) A word or part of a word as the unit in which a large language model reads and writes text
+- Data from the MES (Manufacturing Execution System) and the ERP (Enterprise Resource Planning) system loaded into a knowledge graph through preset conversion rules
 
-- (Answer reliability) Answers based on internal documents to make their accuracy verifiable
-    + Internal documents stored in a search database that finds passages by meaning regardless of wording
-    + Passages related to each question retrieved from that database as the basis for the answer
-    + Citation of source documents required in every answer
-    + Review of answers by a second large language model to track false information presented as fact
-- (Operating efficiency) Reduction in the wait before an answer starts and in computing cost per token
-    + Internal numerical values stored in a shortened 4-bit format to reduce the model's memory needs
-    + More efficient storage of intermediate calculations the model reuses for each new token
-- (Safety controls) Automatic protection of personal information and of the model's operating rules
-    + Hiding of information that can identify a specific person
-    + Filtering of inputs containing instructions meant to override those rules
+> (knowledge graph) A database that stores each record together with its links to related records
+
+- Equipment data described in international standard formats to let the system read data from machines of different makers with the same meaning
+
+### Anomalies detected by AI traced to possible root causes through the knowledge graph
+- AI model to detect anomalies by learning from each record together with its linked records
+- Links in the knowledge graph followed back from each detected anomaly to a list of possible root causes
+
+### Operators' questions answered by AI with supporting records from the knowledge graph
+- Questions asked and answered in everyday language
+- Related records and links looked up in the knowledge graph ahead of each answer
+- Supporting records and links shown with each answer to let operators check the basis
+
+### Accuracy of data and ontology maintained through checks and version records
+- Each record checked against preset rules for missing or inconsistent values
+- Each change to the ontology saved as a separate version
+- Retest after each change using a fixed list of questions the ontology must be able to answer
