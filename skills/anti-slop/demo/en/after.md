@@ -1,17 +1,9 @@
-# Hyperscale AI to be adopted with its risks managed
+## How Our Company Plans to Use Hyperscale AI
 
-> (Hyperscale AI) AI models with hundreds of billions of parameters (values a model adjusts during training to fit patterns in data), trained on large volumes of data
+Hyperscale AI refers to AI models with hundreds of billions of parameters, trained on vast amounts of data. Our company is adopting hyperscale AI to:
 
-## Uses expected in routine work, creative work, and customer service
-- (Routine work) Repetitive tasks automated to cut time and cost
-- (Creative work) Staff ideas turned into first drafts with AI
-- (Customer service) Customer needs predicted from accumulated customer data
+- automate routine workflows and cut the time and cost they take
+- help employees develop ideas by building on drafts the AI generates
+- predict what customers need
 
-## Checks needed on information protection, output quality, and cost before use
-- (Information protection) Rules needed on which data goes into AI tools and how generated content is used
-    + (Security) Possible leaks of internal and customer data entered into AI tools
-    + (Copyright) Possible reproduction of copyrighted material in generated text and images
-- (Output quality) Staff review needed before AI output reaches documents or customers
-    + (Hallucination) Plausible but false answers presented as fact
-    + (Ethics) Biased or inappropriate content learned from training data
-- (Cost) Usage and infrastructure costs to be weighed against the time saved
+Adoption carries risks in security, cost, ethics, copyright, and hallucinations (answers that sound confident but are false). Before each new use goes live, an internal AI review committee will review it against these risks.
