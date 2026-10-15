@@ -23,5 +23,5 @@ I'm happy to walk you through the details in a short call if that would help.
 
 Thank you,
 
-Doyun Kim
+Doyun Kim  
 Manager, IT Planning Team

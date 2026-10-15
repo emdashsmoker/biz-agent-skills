@@ -14,6 +14,6 @@ The six weekly feedback meetings add up to three hours for each member. Because 
 
 If the quality team can take part, could you include the names of the three members in your reply? Once I have their names, I will send the three members the schedule for the feedback meetings before the pilot starts on Monday, November 2.
 
-Thank you,
-Doyun Kim
+Thank you,  
+Doyun Kim  
 Manager, IT Planning Team
