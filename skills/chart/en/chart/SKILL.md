@@ -134,7 +134,17 @@ Edit: "highlight A", "title XXX", "show n", etc. | Proceed: "y"
 
 ### 5. Rendering
 
-After approval, render according to the visual spec. Open the rendered image and check for overlapping or clipped labels. If labels overlap, apply these fixes in order.
+After approval, render according to the visual spec. Open the rendered image yourself and check the items below. If you find a defect, fix the code and render again. Deliver the chart only when no defect remains. If the environment cannot show you the image, tell the user the chart was not checked.
+
+- (Clipping and overlap) Labels and axis text are not cut off at the figure edge and do not overlap.
+- (Legibility) Data labels have enough font size and contrast against their background.
+- (Accuracy) Label values match the values computed in Python.
+- (Spec) Spines, grid, and colors match the per-chart spec.
+- (Spacing) Gaps between elements are even and the figure edges have enough margin.
+
+Also fix anything that would look odd to a practitioner, even if the list above does not cover it.
+
+If labels overlap, apply these fixes in order.
 
 1. Let adjustText move labels. For scatter and line charts, pass the point coordinates as well (adjust_text(texts, x=xs, y=ys, ax=ax)) so labels do not cover points.
 2. Change the bar_label padding to adjust the gap between bar and label.
