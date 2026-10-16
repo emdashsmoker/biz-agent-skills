@@ -1,271 +1,218 @@
-# OO Precision AI strategy framework (2027-2029)
+# OO Precision AI Strategy Framework (2027–2029)
 
-## Executive summary
+## Key points
 
-- **What we do**: We keep the security rule that forbids external generative AI as it is. We run an in-house AI built on open-weight models in the headquarters server room and use it first for design and quality document search and report drafting.
-- **What we get (2029)**: Search time per staff member from 4.8 to 2.4 hours a week, one report draft from 6.5 to 3.9 hours, and repeat design changes caused by not checking past cases from 61 to 30 or fewer.
-- **Link to the parent goal**: AI alone cannot deliver the 20% cost cut (KRW 1.18 billion). Even removing all 61 repeats yields at most KRW 870 million at the average design change cost. AI takes on part of the parent goal (26.3% of the 2029 savings target under the assumptions), and other tasks such as quality defect measures must cover the rest.
-- **How we spend**: We do not spend the KRW 1.5 billion at once. Short term KRW 400 million, mid term KRW 550 million and long term KRW 350 million, plus a KRW 200 million reserve, with each year-end deciding the next stage by the KPIs (2 investment gates).
-- **Return on investment**: Under the assumptions (KRW 40,000 hourly labor cost and others), cumulative benefit divided by cumulative spending reaches 0.80-0.93 by 2029, with payback in 2030. These assumptions must be replaced with Q1 2027 measurements.
+1. **The way AI contributes directly to the company's cost goal is by preventing "design changes that recur because past cases were not checked."** In 2025, 61 of 412 design changes (14.8%) were of this kind. The first goal is to halve this rate (to 7.4%) by 2029.
+2. **External generative AI cannot be used, so we will build on company servers with open-weight models.** Company security rules and customers' tighter security checks point the same way, and the narrowing performance gap of open models supports this choice.
+3. **Of the KRW 1.5 billion investment cap, only a base KRW 1.01 billion is committed.** The remaining KRW 490 million is spent only after results are confirmed. The only spending committed before the first gate (June 2027) is the KRW 50 million PoC.
+4. **AI alone cannot deliver the full "20% cost cut."** If a recurrence costs about as much as an average design change, halving recurrences saves at most about KRW 440 million a year, about 38% of the KRW 1.18 billion savings target. The rest has to come from tasks other than AI.
+5. **This program does not pay back within 3 years on cost savings alone.** The payback point depends on the cost of one recurrence, which is not yet known. So the plan estimates that value first in Q1 2027 and reconsiders the investment at the first gate.
 
-## 1. Reading the input and assumptions
+---
 
-### How each input item is applied
+## 1. Strategy framework at a glance
 
-| Item | Input | Applied as |
+| Item | Details |
+|---|---|
+| **Vision** | A company where anyone can safely find and use its accumulated design and quality experience |
+| **Linked goal** | Company mid-term business plan: cut design change and quality defect costs by 20% by 2029 (KRW 5.9 billion → KRW 4.72 billion) |
+| **Strategic goal 1** | Fewer repeats of the same problem: recurring design change rate 14.8% → 7.4% or less |
+| **Strategic goal 2** | Give staff their time back: weekly document search 4.8 hours → 2.4 hours, one report draft 6.5 hours → 3.9 hours |
+| **Strategic goal 3** | Invest safely and with verification: 0 security incidents, 90% weekly use, investment only in stages that pass the performance gates |
+| **Principles** | ① In-house build: documents never leave the company ② Measure, then invest: baselines and gate results open the next stage's budget ③ Build it into the workflow: add a similar-case check to the design change procedure, not just a tool ④ Build outside, run inside: buy the solution, keep operating capability in-house |
+| **Tasks** | A performance measurement base · B in-house AI document search · C design change procedure integration · D report drafting support · E document data cleanup · F in-house infrastructure and security · G operating organization, guidelines and training · H rollout to other departments (conditional) |
+
+---
+
+## 2. Environment analysis and implications
+
+### External environment
+
+| Fact | What it means for OO Precision |
+|---|---|
+| Inference cost of GPT-3.5-level AI fell more than 280-fold between November 2022 and October 2024 (Stanford HAI, 2025) | AI is now affordable for a mid-sized company. This figure is based on API prices, though. On-premises server costs need to be checked separately with supplier quotes. |
+| Performance gap between open-weight and closed models on some benchmarks narrowed from 8% to 1.7% in one year (same report) | Building an open model in-house has become a realistic option even under the constraint of not using external services. As this is from some benchmarks, performance on Korean technical documents needs to be checked in a PoC. |
+| Share of companies reporting AI use rose from 55% in 2023 to 78% in 2024 (same report) | Adoption alone no longer sets a company apart. Showing the effect in numbers is what matters. As this covers responding companies worldwide, it was not applied directly to Korean mid-sized manufacturers. |
+| Ministry of Science and ICT "Plan to Strengthen Hyperscale AI Competitiveness" (April 2023): computing support goes to small and venture companies, universities and research institutes, and 200 kinds of training data and 130 Korean-language corpora are to be built by 2027 | Mid-sized companies are not eligible for computing support, so it was not included in the budget. Korean corpora indirectly help improve open models' Korean quality. As this was announced in 2023, support programs for mid-sized companies as of 2027 need to be checked separately. |
+| 2 competitors in the same industry adopted AI for design document search in 2025 | A gap in document search speed may open. As the competitors' results are unknown, we proceed by verifying with our own figures rather than copying them. |
+| Major customers tightened checks on suppliers' technical document security from 2026 | External AI is blocked by both the rules and customer requirements. An in-house build with access logs gives evidence for customer checks. Conversely, if AI shows documents outside a user's permissions, that itself becomes a finding in the check. |
+
+### Internal status
+
+| Status | Implication |
+|---|---|
+| Work documents may not be entered into external generative AI | Only an in-house build is possible. |
+| The only time measurement is a 2-week sample from Q3 2026 | The baseline is weak. Measure again before investing (task A). |
+| 5 IT staff, 0 dedicated to AI | Building it ourselves is unrealistic. Build with an external solution and hire 1 AI staff member to bring operation in-house. |
+| Design documents from before 2015 are on paper | AI cannot see them. First check whether the precedents for the 61 recurrences are in paper documents, then decide the scope of digitization. |
+| Space and power for expansion in the headquarters server room | Little extra construction burden for an in-house build. |
+| 48 staff × 4.8 hours of search a week | About 10,600 hours a year (assuming 46 weeks), about 5.8 people's working time. That is about 12% of working hours. |
+| 6.5 hours per report draft | The number of reports per person is unknown, so the annual total cannot yet be calculated. Measure the count. |
+| 2025 design change and quality defect costs of KRW 5.9 billion, 61 of 412 design changes recurring | What AI can reduce directly is the recurring share. But how the KRW 5.9 billion splits between design changes and quality defects, and what one recurrence costs, are unknown. |
+| 2027–2029 investment cap of KRW 1.5 billion | Split into a base KRW 1.01 billion and a conditional KRW 280 million, with KRW 210 million held back. |
+
+---
+
+## 3. Strategic goals and KPIs
+
+### 3-1. Baselines
+
+| Item | Baseline | Source and limits |
 |---|---|---|
-| Hypothesis | OO Precision, headquarters and 2 plants, 2027-2029 | AI servers at headquarters, the 2 plants connect over the internal network. 3-year period |
-| Beneficiaries | Staff, executives | Staff link to strategic goal 1, executives to strategic goal 2 |
-| Upper alignment | 20% cost cut | KRW 5.9 billion → KRW 4.72 billion (assuming 2025 as the base). Linked to strategic goal 2 and the financial KPI |
-| Draft issues | Auto | 5 draft issues derived from the internal status (chapter 4) |
-| External environment | Free input | 4 macro and 2 micro items summarized as implications (chapter 2) |
-| Internal status | Free input | Summarized as baselines, strengths and weaknesses (chapter 3) |
-| Benchmarking | Skip | Not done. Only the micro-environment items are used for competitor information |
-| Analysis tool | SWOT | Chapter 5 |
-| SWOT mode | Fixed | 3 per quadrant, fixed at 12 in total |
-| SWOT follow-up | Y | 8 SO, ST, WO and WT cross strategies (chapter 6) |
-| Issue confirmation | Refine | 5 drafts grouped by cause into 4 confirmed issues (chapter 7) |
-| Strategy type | Standard | Vision → strategic goals → strategies → strategic tasks → KPIs |
-| Strategic goal | Dual | 2 goals (work efficiency, business results), each with a qualitative statement and a quantitative target |
-| Strategic tasks | Auto-derive | 1 strategic task per cross strategy, 8 in total |
-| Implementation tasks | Skip | No detailed implementation tasks, only the end point of each stage |
-| KPIs | Strategy level | 9 KPIs at the strategic goal and task level plus 1 KPI shared with the parent goal |
-| KPI track | BSC | Financial, customer, internal process, learning and growth |
-| Time format | Short, mid and long term | Short term 2027, mid term 2028, long term 2029 |
-| Check method | Script | Calculations, links, budget and figures in the document checked by script (chapter 12) |
+| Recurring design changes | 61 / 412 = **14.8%** | 2025 actuals |
+| Design change and quality defect costs | **KRW 5.9 billion** | 2025 actuals. Not split by type |
+| Weekly document search time per person | **4.8 hours** | 2-week sample in Q3 2026. Seasonality and sample representativeness need checking |
+| Time to draft one report | **6.5 hours** | Same as above. No report count |
+| AI users | **0** / 48 | No in-house AI at present |
 
-### Premises and assumptions
+### 3-2. KPIs and targets
 
-| Area | Content | Used in |
-|---|---|---|
-| Base year of the parent goal | 2025 actual of KRW 5.9 billion taken as the base | Strategic goal 2, financial KPI |
-| Reading of the internal status | It says both "no measurement" and "2-week sample measurement," so I took it that there is no ongoing measurement, only one 2-week sample in Q3 2026 | Baselines, weakness W3 |
-| Working weeks per year | 46 weeks | Time conversion |
-| Hourly labor cost | KRW 40,000 | Return on investment (chapter 11) |
-| Report drafts per person per year | 24 (2 a month) | Return on investment |
-| Cost of one repeat design change | KRW 10 million. Even if all KRW 5.9 billion were design change cost, the average could not exceed KRW 14.32 million per case, so a lower figure is used | Return on investment |
-| Labor cost treatment | Pay for newly hired AI staff is outside the KRW 1.5 billion cap (HR budget) | Budget |
-
-## 2. External environment analysis
-
-### Macro environment
-
-| Code | Fact (source) | Meaning for OO Precision | SWOT |
-|---|---|---|---|
-| M1 | Inference cost of a GPT-3.5-level system fell more than 280-fold between November 2022 and October 2024 (Stanford HAI, 2025) | The burden of running models in-house is falling fast. An in-house build within the KRW 1.5 billion cap becomes a realistic option. | O1 |
-| M2 | Performance gap between open-weight and closed models on some benchmarks narrowed from 8% to 1.7% in one year (same report) | Even without external services, an in-house model gives up little performance. Benchmark scores do not guarantee performance on company document work, though, so the pilot must check it. | O2 |
-| M3 | Companies reporting AI use rose from 55% in 2023 to 78% in 2024 (same report) | AI use is becoming the industry default. The later we start, the wider the gap. | T1 |
-| M4 | Ministry of Science and ICT "Plan to Strengthen Hyperscale AI Competitiveness" (April 2023). Computing support goes to small and venture companies, universities and research institutes. 200 kinds of training data and 130 Korean corpora by 2027 | As a mid-sized company, OO Precision is not eligible for computing support and must invest on its own (T3). Public data and corpora can strengthen Korean performance, subject to their release terms (O3). | T3, O3 |
-
-### Micro environment
-
-| Code | Fact | Meaning for OO Precision | SWOT |
-|---|---|---|---|
-| m1 | Two competitors in the same industry adopted AI for design document search in 2025 | Starting in 2027 puts us 2 years behind. A design team pilot must show results quickly from the first year. | T1 |
-| m2 | Major customers tightened checks on suppliers' technical document security from 2026 | If AI becomes a leak path for technical documents, it puts business at risk. Conversely, an in-house build with permission and usage log management gives grounds for passing those checks. | T2 |
-
-Sources: Stanford HAI(2025), AI Index Report 2025 / Ministry of Science and ICT(2023), KRW 390.1 billion invested to strengthen hyperscale AI competitiveness... "accelerating the digital economy" (korea.kr)
-
-## 3. Internal status analysis
-
-| Item | Status | Reading | SWOT |
-|---|---|---|---|
-| Security rules | No work documents into external generative AI | Commercial AI services cannot be used right away. An in-house build is effectively the only route. | W1 |
-| Measurement | No ongoing measurement, one 2-week sample in Q3 2026 | There is a baseline, but the sample period is short and reports per person are missing. | S3, W3 |
-| Staff | IT team of 5, 0 dedicated to AI | No one to build and run it. | W2 |
-| Documents | Electronic files from 2015, paper before that | Over 10 years of electronic documents can be searched right away. Paper documents are left out of search. | S2, W3 |
-| Infrastructure | Space and power for more servers in the headquarters server room | In-house GPU servers can be installed. | S1 |
-| Target size | 48 quality and design staff | People covered by the strategy | - |
-| Time baselines | Search 4.8 hours a week per person, report draft 6.5 hours each | Across the 48 staff, search alone takes 230.4 hours a week. That is 5.8 people at 40 hours a week, or 10,598 hours over 46 weeks a year. | S3 |
-| Cost and repeats | 2025 cost KRW 5.9 billion. 61 of 412 design changes were repeats from not checking similar past cases (14.8%) | The cause of the repeats is pinned to "similar past cases not checked," which links directly to AI search. | S3 |
-| Investment cap | KRW 1.5 billion for 2027-2029 | Executive commitment is confirmed, and so is the demand to prove the effect. | S3 |
-
-**Data gaps**: report drafts per person, the split of the KRW 5.9 billion into design changes and quality defects, the cost of the 61 repeats, quality defect counts and repeats, and the makeup of the 48 staff by team and site. Task 3-2 fills these gaps in Q1 2027.
-
-## 4. Draft issues (auto)
-
-| Draft | Problem | Basis |
-|---|---|---|
-| D1 | Searching past documents takes a lot of time | 4.8 hours a week per person |
-| D2 | Drafting reports takes a lot of time | 6.5 hours each |
-| D3 | Design changes repeat because similar past cases are not checked | 61 of 412 |
-| D4 | External AI cannot be used and there are no AI staff | Security rules, 0 dedicated to AI |
-| D5 | There is no system to measure the effect | No ongoing measurement |
-
-## 5. SWOT analysis (fixed, 3 per quadrant)
-
-| | Positive | Negative |
-|---|---|---|
-| **Internal** | **Strengths (S)**<br>S1 Space and power for more servers in the headquarters server room<br>S2 Design documents kept electronically since 2015 (over 10 years of records)<br>S3 KRW 1.5 billion investment cap set, with quantitative baselines (search 4.8 hours, drafts 6.5 hours, 61 repeats) | **Weaknesses (W)**<br>W1 No work documents into external generative AI<br>W2 IT team of 5, 0 dedicated to AI<br>W3 Paper documents before 2015, no ongoing measurement or cost breakdown |
-| **External** | **Opportunities (O)**<br>O1 Inference cost down more than 280-fold<br>O2 Gap between open-weight and closed models 8% → 1.7%<br>O3 Government building 200 kinds of training data and 130 Korean corpora (by 2027) | **Threats (T)**<br>T1 2 competitors adopted (2025), 78% of companies use AI<br>T2 Customers tightening checks on suppliers' technical document security (from 2026)<br>T3 Mid-sized companies left out of government computing support, so self-investment is needed |
-
-## 6. SWOT follow-up: cross strategies
-
-| Type | Code | Combination | Cross strategy | Task derived |
-|---|---|---|---|---|
-| SO | SO1 | S1·O1·O2 | Install open-weight models in the spare server room space and use cheaper AI within the security rules | 1-1 |
-| SO | SO2 | S2·O2 | Put electronic design documents from 2015 onward into AI search first to show effects in the first year | 2-1 |
-| ST | ST1 | S1·T2 | Add document permission and usage log management to the in-house build as grounds for passing customer security checks | 1-2 |
-| ST | ST2 | S3·T1 | Use the 61 repeats with a known cause as the baseline, add similar-case lookup to design change review, and close the gap with competitors through results | 2-2 |
-| WO | WO1 | W1·O2·O3 | Draft reports with in-house models and public Korean data instead of external services | 2-4 |
-| WO | WO2 | W2·O1·O2 | Building on models becoming easier and cheaper to use, go with an external build partner and a small dedicated team | 3-1 |
-| WO | WO3 | W3·O1 | With the cost of reading and indexing scanned documents falling along with AI processing costs, digitize only the paper documents for product lines at risk of repeats | 2-3 |
-| WT | WT1 | W3·T3 | With no government support to count on, build the measurement system first and spend the KRW 1.5 billion gate by gate | 3-2 |
-
-## 7. Confirmed issues (refined)
-
-Checking the drafts against the SWOT results led to four changes.
-
-- D1 and D3 are merged. Search time is a symptom and repeats are a result, and both come from the same cause: "there is no route to the knowledge."
-- D4 is redefined as "security and staffing constraints," adding the external threat (tighter customer security checks).
-- D5 is redefined as "the investment effect cannot be proven," adding the executive demand and the KRW 1.5 billion cap.
-- Each issue now has supporting figures and a link to the parent goal, and the issues are ranked.
-
-| Confirmed issue | Definition | Supporting figures | Drafts | Link to parent goal | Priority | Tasks |
+| Strategic goal | KPI | Baseline | 2027 | 2028 | 2029 | Measurement |
 |---|---|---|---|---|---|---|
-| I-1 | Company knowledge cannot be searched, so the same design problems repeat | 61 repeats (14.8%), 230.4 search hours a week, paper documents before 2015 | D1, D3 | Direct (design change cost) | 1 | 2-1, 2-2, 2-3 |
-| I-2 | Report drafting ties up experienced staff time | 6.5 hours each | D2 | Indirect (frees review time) | 3 | 2-4 |
-| I-3 | Security rules and staffing leave no route to use AI | External AI banned, 0 dedicated to AI, tighter customer checks | D4 | Precondition | 2 | 1-1, 1-2, 3-1 |
-| I-4 | There is no measurement system to prove the investment effect | No ongoing measurement, no breakdown of KRW 5.9 billion, KRW 1.5 billion cap | D5 | Basis for executive decisions | 2 | 3-2 |
+| (Linked) | Design change and quality defect costs | KRW 5.9 billion | Company plan path | Company plan path | **KRW 4.72 billion or less** (−20%) | Financial and quality cost totals. Split design changes and quality defects from 2027 |
+| 1 | **Recurring design change rate** (core) | 14.8% | 13.3% or less (−10%) | 10.4% or less (−30%) | **7.4% or less** (−50%) | Recurrence judgment on design change requests, applying the same criteria that identified the 61 cases |
+| 1 | Rate of similar-case lookups at the start of a design change | Measured in Q1 2027 | Manual check introduced | 80% or more | 95% or more | Share of design change requests with a lookup record attached |
+| 1 | Trace-back hit rate (share of recurrences whose precedent document appears in the top 5 search results) | First measured in the PoC | 70% or more | 80% or more | 85% or more | Measured quarterly on a test set built from the 61 recurrences and real queries |
+| 2 | **Weekly past document search time per person** | 4.8 hours | 3.8 hours (−20%) | 2.9 hours (−40%) | **2.4 hours** (−50%) | 2-week sample measurements every May and November. Yearly targets judged on the November figure |
+| 2 | **Time to draft one report** | 6.5 hours | Baseline remeasured, count established | 4.9 hours (−25%) | **3.9 hours** (−40%) | Report writing log (count and time) |
+| 2 | (Supporting) Draft review rejection rate | Measured in Q1 2027 | Measure | At or below baseline | At or below baseline | Review records. Check that quality does not drop as time falls |
+| 3 | Weekly active user rate (of 48) | 0% | 60% (29) | 80% (39) | **90%** (44) | System access logs |
+| 3 | Document leaks and permission violations | – | 0 | 0 | **0** | Monthly access log checks |
+| 3 | AI-related findings in customer security checks | – | 0 | 0 | **0** | Customer check results |
+| 3 | Investment spending | Cap KRW 1.5 billion | Only what passes the gate | Only what passes the gate | **KRW 1.5 billion cumulative or less** (base KRW 1.01 billion) | Budget execution records |
 
-## 8. Strategy framework (standard)
+Targets were set as reduction rates. If the Q1 2027 remeasurement differs greatly from the 2026 sample, only the baseline changes and the reduction rates stay.
 
-### Strategy framework chart
+### 3-3. Basis for the targets
 
-```
-Vision        OO Precision never hits the same problem twice
-              - reuse accumulated design and quality knowledge with AI
+**50% fewer recurrences.** The reduction in recurrences can be seen as the product of four steps.
 
-Strategic     [1] Work efficiency: halve search time, cut report drafting time by 40%
-goals         [2] Business results: halve repeat design changes or better, prove the investment effect in numbers
+> Recurrence reduction ≈ ① share of precedents in electronic documents × ② share of precedents the AI finds (hit rate) × ③ share of design changes where a lookup is actually done × ④ share of lookup results reflected in the design
 
-Strategy 1  In-house AI base that works within security
-  ├ 1-1  Build an in-house generative AI platform
-  └ 1-2  Set up AI security and data management
-Strategy 2  Prevent repeats and save time by reusing knowledge
-  ├ 2-1  AI search service for design and quality documents
-  ├ 2-2  Built-in similar-case lookup in design change review
-  ├ 2-3  Selective digitization of paper documents for product lines at risk of repeats
-  └ 2-4  Report drafting support
-Strategy 3  Operations that prove results
-  ├ 3-1  AI operations staff and staff capability
-  └ 3-2  Impact measurement and staged investment gates
+With the 2029 targets of ② 85% and ③ 95%, a 50% reduction results when ① × ④ is about 62% or more (e.g., ① 80% × ④ 78%). ① is checked by a trace-back study in Q1 2027. If ① falls short of 70%, selective digitization of paper documents (conditional budget) is carried out.
 
-KPIs (BSC)  Financial F1 / Customer C1·C2·C3 / Internal process P1·P2·P3 / Learning and growth L1·L2
-```
+**50% less search time.** What AI cuts is the time spent "finding" documents, while the time to read and judge them remains. So half was treated as a target near the upper limit. If the June 2027 PoC results fall well short of this level, the 2028–2029 targets will be reset.
 
-### Strategic goals (dual)
+**Relation to the company's 20% goal.** Even if all KRW 5.9 billion were design change costs, the average cost of one design change would be no more than KRW 14.32 million (KRW 5.9 billion ÷ 412). If a recurrence costs about this average, cutting 31 recurrences in 2029 saves at most about KRW 440 million, about 38% of the KRW 1.18 billion savings target. So **the company's mid-term plan needs to state separately the share of AI tasks and the share of other tasks (such as process quality control).** If recurrences were costlier problems than average, AI's share grows. This value is estimated in Q1 2027.
 
-| Goal | Qualitative goal | Quantitative goal (2029) | Baseline | Beneficiary |
-|---|---|---|---|---|
-| Goal 1. Work efficiency | Design and quality staff spend less time finding documents and drafting, and put that time into review and improvement | Search 2.4 hours a week per person (50% less), drafts 3.9 hours each (40% less) | 4.8 hours, 6.5 hours | Quality and design staff |
-| Goal 2. Business results | Fewer repeats by building past-case checks into the design change process, and the investment effect shown in numbers | 30 or fewer repeat design changes (cut by 50% or more), investment benefit ratio of 0.7 or more | 61, 0 | Executives (including the parent goal) |
+---
 
-The basis for the reductions is as follows. Search is work AI takes over directly, so it is set at 50%. Drafts still need human review and editing, so they are set lower at 40%. Repeats have a known cause, "similar cases not checked," and task 2-2 makes the lookup mandatory, so they are set at 50%. Cases buried in paper documents can be found only after the 2-3 digitization is done, so no more than that is expected.
+## 4. Tasks
 
-### Strategies and strategic tasks (auto-derived)
-
-| Task | Content | Derived from | Issue solved | KPI |
-|---|---|---|---|---|
-| 1-1 Build an in-house generative AI platform | Put GPU servers in the headquarters server room and connect open-weight language models and a document search engine to the internal network only. The 2 plants use it over the internal network. Choose models by comparing them on a set of in-house queries, such as questions about the 61 repeats, and check commercial use terms. Design the setup so a better model can replace it later. | SO1 | I-3 | L2 |
-| 1-2 Set up AI security and data management | Set the AI search scope by document security grade, apply existing document permissions to search results as they are, and keep query and viewing logs. Treat customers' technical documents as a separate grade after checking whether contracts allow it. Document it in a form that can be submitted at customer checks. | ST1 | I-3 | C3 |
-| 2-1 AI search service for design and quality documents | Index electronic design documents from 2015 onward first. Show the source document and location with every answer so staff can check right away. Expand from the design team to the quality team (defect analysis and corrective action documents) and then the 2 plants. | SO2 | I-1 | C1, P1 |
-| 2-2 Built-in similar-case lookup in design change review | Analyze the 61 repeats first to set lookup criteria for which cases should have been found. Add an "AI similar-case lookup result" item to the design change review form, recommended in 2027 and mandatory in 2028. | ST2 | I-1 | P1, P2 |
-| 2-3 Selective digitization of paper documents for product lines at risk of repeats | Rather than scanning all paper documents from before 2015, scan and OCR only the product and part lines related to repeat cases and add them to search. The targets are fixed in Q1 2027. | WO3 | I-1 | C1, P3 |
-| 2-4 Report drafting support | Pick frequently used report templates. AI finds related past documents and drafts, and the author reviews and edits. Sources must be shown in drafts, and submitting an AI draft as is is forbidden. | WO1 | I-2 | C2 |
-| 3-1 AI operations staff and staff capability | In 2027, move 1 IT team member to AI operations and hire 1, then hire 1 more in 2028. A partner does the build, with transfer of operating know-how written into the contract. Name and train usage leads in the design team, quality team and the 2 plants. | WO2 | I-3 | L1, L2 |
-| 3-2 Impact measurement and staged investment gates | In Q1 2027, remeasure the baseline with the same 2-week sample method and also survey reports per person. Split the KRW 5.9 billion into design changes and quality defects and cost the repeats to fix the benefit criteria. Measure every October and hold the gate review in December. | WT1 | I-4 | F1 |
-
-## 9. Short, mid and long-term roadmap and investment gates
-
-| Stage | Focus | Key milestones | Budget (rough) |
+| Task | Details | Timing | Related goals |
 |---|---|---|---|
-| Short term (2027) | Build the base and pilot with the design team | Q1: remeasure baselines and split costs, set security rules, analyze the 61 repeats, pick digitization targets / Q2: build servers and models, design team search pilot / Q3: report drafting pilot / October: first performance measurement | KRW 400 million |
-| Mid term (2028) | Spread to the quality team and the 2 plants | Expand search to the quality team and plants, make the lookup item mandatory in design change reviews, more draft templates, 70% of paper documents digitized | KRW 550 million |
-| Long term (2029) | Settle in and prove results | Lookup established for all design changes, digitization complete, extend to quality defect reviews, decide on investment from 2030 | KRW 350 million |
-| Reserve | Only when a gate is passed | Server expansion as usage grows, wider scope | KRW 200 million |
+| **A. Performance measurement base** | ① Remeasure search time and report counts and times over 4 weeks ② Split the KRW 5.9 billion into design changes and quality defects and estimate the cost of each of the 61 recurrences ③ Trace back where the precedent documents for the 61 cases are (electronic or paper) ④ Document the recurrence criteria | Q1 2027 | All |
+| **B. In-house AI document search** | Build a retrieval-based AI (RAG) that answers with source documents, covering design change history, design review minutes, quality defect reports, test reports and customer claim reports. Each answer shows its source document and page. The design team's 10 people run a PoC in Q2 (8 weeks, comparing 2 suppliers), then it opens to the design team in September and the quality team (including plants) in October. Drawing image search is left out of the first stage. | From Q2 2027 | 1, 2 |
+| **C. Design change procedure integration** | Make a "similar case check" item mandatory on the design change request. In Q2 2027 the check is done manually as now, and in H1 2028 AI search results can be attached directly on the PLM design change request screen. The 61 recurrences may have happened because there was no check procedure rather than no tool, so this task is the core of goal 1. | Q2 2027–H1 2028 | 1 |
+| **D. Report drafting support** | Generate drafts in the formats of quality defect reports and design review reports, based on similar past reports and test data. The author is responsible for the draft, and showing source documents is mandatory. Piloted by the quality team in H1 2028 and applied fully in H2. | 2028 | 2 |
+| **E. Document data cleanup** | Deduplicate electronic design and quality documents from 2015 onward, mark final versions, and add item, customer and process metadata (80% by end-2027, 100% in H1 2028). Paper documents are digitized only for the scope the trace-back shows is needed among those related to current products (conditional). | 2027–2028 | 1, 2 |
+| **F. In-house infrastructure and security** | Install GPU servers in the headquarters server room, with the 2 plants connecting over the company network. The AI follows existing document permissions so it never shows documents a user could not already see, and documents are separated by customer. Query and answer logs are kept, with an external security check once a year. | From H2 2027 | 3 |
+| **G. Operating organization, guidelines and training** | Hire 1 AI staff member, write in-house AI usage guidelines (allowed scope, duty to check sources, responsibility for drafts) and train key users. Starts in Q1 2027. | 2027–2029 | 3 |
+| **H. Rollout to other departments** (conditional) | Extend use to production engineering, purchasing and others, and expand the servers. Carried out only if the end-2028 gate is passed. | 2029 | 2, 3 |
 
-The budget is a rough split before quotes and will be fixed with quotes in Q1 2027. The total equals the cap, KRW 1.5 billion.
+**Use of the time freed up.** Halving search time frees about 5,300 hours a year in 2029 (about 2.9 people). Only if team goals direct this time to similar-case reviews before design changes and to upstream quality activities will the time saved turn back into cost savings.
 
-| Gate | When | Pass criteria (that year's targets) | If passed | If not |
-|---|---|---|---|---|
-| Gate 1 | December 2027 | C1 4.3 hours or less, C3 0 cases, L2 30% or more | Release mid-term KRW 550 million | Analyze the cause, narrow or redesign the rollout, hold back part of the mid-term budget |
-| Gate 2 | December 2028 | P1 42 or fewer, F1 0.4 or more, L2 70% or more | Release long-term KRW 350 million, consider using the KRW 200 million reserve | Release only the long-term budget needed to keep operations running, reserve unused |
+---
 
-## 10. KPIs (strategy level, BSC)
+## 5. Roadmap and stage gates
 
-**Target-setting rules**
-
-- Reduction KPIs multiply the baseline by (1 − reduction rate) and round down, which guarantees at least the reduction rate. Example: 61 repeats × 0.9 = 54.9 → 54.
-- Reduction rates are 10% in the short term (pilot), 30% in the mid term (rollout) and 50% (search and repeats) or 40% (drafts) in the long term.
-- Time KPIs are remeasured every October with the same 2-week sample method as the baseline, as the average across all 48 staff.
-- "Customer" in the BSC covers both internal customers (staff) and external customers.
-
-| Perspective | Code | KPI | Formula and measurement | Baseline | Short (2027) | Mid (2028) | Long (2029) | Link |
-|---|---|---|---|---|---|---|---|---|
-| Financial | F1 | AI investment benefit ratio | Cumulative benefit (time savings value + repeat costs avoided) ÷ cumulative AI spending | 0 (before investment) | Benefit criteria set, executive approval | 0.4 or more | 0.7 or more | Goal 2, 3-2 |
-| Financial (reference) | Shared | Cost of design changes and quality defects (shared with the parent goal) | Accounting totals | KRW 5.9 billion (2025) | Annual target of the mid-term plan | Annual target of the mid-term plan | KRW 4.72 billion or less | Parent goal, AI contributes |
-| Customer | C1 | Weekly past document search time per staff member | 2-week sample, average of 48 | 4.8 hours | 4.3 hours | 3.3 hours | 2.4 hours | Goal 1, 2-1·2-3 |
-| Customer | C2 | Time to draft one report | 2-week sample, average per report | 6.5 hours | 5.8 hours | 4.5 hours | 3.9 hours | Goal 1, 2-4 |
-| Customer | C3 | AI-related findings in customer security checks | Customer check results | None (no AI yet) | 0 | 0 | 0 | 1-2 |
-| Internal process | P1 | Repeat design changes from similar cases not checked | Cause classification of design changes | 61 (2025) | 54 or fewer | 42 or fewer | 30 or fewer | Goal 2, 2-1·2-2 |
-| Internal process | P2 | Rate of AI similar-case lookup in design change reviews | Changes with lookup results attached ÷ all design changes | 0% | 50% | 80% | 95% | 2-2 |
-| Internal process | P3 | Digitization rate of paper documents for at-risk product lines | Documents done ÷ targets set in Q1 2027 | 0% | 30% | 70% | 100% | 2-3 |
-| Learning and growth | L1 | Dedicated AI and operations staff | Headcount | 0 | 2 | 3 | 3 | 3-1 |
-| Learning and growth | L2 | Monthly usage rate among staff | Users at least once a month ÷ 48 | 0% | 30% (15) | 70% (34) | 90% (44) | 1-1, 3-1 |
-
-**Causal chain between KPIs**: Staff and usage (L1, L2) → lookup and digitization (P2, P3) → fewer repeats (P1) and time savings (C1, C2) → investment benefit (F1) and the parent cost KPI. If F1 falls short at a gate review, trace this chain backward to find where it stalled.
-
-**Caution**: The P1 baseline is the 2025 actual. When the 2026 actual comes out in early 2027, recheck the baseline against it.
-
-## 11. Return on investment (for executives)
-
-Assumptions: 46 weeks a year, KRW 40,000 hourly labor cost, 24 drafts per person a year, KRW 10 million per repeat, reserve unused. Each year's target is treated as met for the whole year, so the figures may run somewhat higher than reality.
-
-| Stage | Hours saved | Time value (KRW million) | Repeats avoided | Cost avoided (KRW million) | Annual benefit (KRW million) | Cumulative benefit (KRW million) | Cumulative spending (KRW million) | Benefit ratio |
-|---|---|---|---|---|---|---|---|---|
-| Short term (2027) | 1,910.4 hours | 76 | 7 | 70 | 146 | 146 | 400 | 0.37 |
-| Mid term (2028) | 5,616.0 hours | 225 | 19 | 190 | 415 | 561 | 950 | 0.59 |
-| Long term (2029) | 8,294.4 hours | 332 | 31 | 310 | 642 | 1,203 | 1,300 | 0.93 |
-
-How to read it:
-
-- The 2029 cumulative ratio is 0.93 with the reserve unused and 0.80 if the KRW 200 million reserve is spent. Both clear the 0.7 target with room to spare.
-- If only 70% of the benefit materializes, the ratio is 0.65 with the reserve unused, below the target. That is why gate 2 ties use of the reserve to results.
-- Time savings are not cash. Counting only the cash-like benefit of avoided repeats gives 0.44. Executives will be convinced only if the report also shows where the freed time went (for example, stronger design review).
-- For F1 to reach 0.7, a repeat must cost at least KRW 4.86 million (reserve unused) to KRW 7.32 million (reserve used). I recommend checking this value first in the Q1 2027 cost breakdown.
-- The KRW 310 million of repeat costs avoided in 2029 is 26.3% of the parent goal's KRW 1.18 billion savings.
-- If the 2029 annual benefit of KRW 642 million continues and 2030 operating costs stay at KRW 345 million or less, cumulative benefit passes KRW 1.5 billion within 2030 and the investment pays back.
-
-## 12. Script check results
-
-The strategy framework's figures and links were entered as data into `check_strategy.py` and checked. All 91 items passed.
-
-| Area | What was checked | Result |
+| Period | Main activities | Gate |
 |---|---|---|
-| A Baseline arithmetic | 230.4 hours, 14.8%, KRW 1.18 billion, KRW 4.72 billion, upper bound if all 61 repeats were removed | All 5 passed |
-| B Targets | Round-down rule for reductions, consistent direction across short, mid and long term, 3 time points defined | All 21 passed |
-| C SWOT | 3 per quadrant, all 12 items used in cross strategies, cross types match combinations | All 14 passed |
-| D Links | All 8 tasks derived from cross strategies, issue-task, task-KPI, goal-KPI, beneficiary-goal, 4 BSC perspectives | All 12 passed |
-| E Budget and gates | Stage budgets and reserve total KRW 1.5 billion, gate criteria equal that year's targets | All 3 passed |
-| F Investment effect | F1 mid and long-term targets fall within the assumed scenarios | Both passed |
-| G Document check | This reply contains the key calculated values, the 9 KPI rows and the 8 tasks as they are | All 34 passed |
+| Q1 2027 | Task A (measurement, trace-back, cost breakdown), requests for information to suppliers (3 or more), usage guidelines, start of AI staff hiring | |
+| Q2 2027 | PoC with 10 design team members (8 weeks), similar case check item added to design change requests (manual) | **G1 (June): whether to proceed with the full build** |
+| H2 2027 | Server installation, search launch (design team in September, quality team in October), electronic document cleanup | **G2 (December): whether to spend the 2028 budget** |
+| H1 2028 | PLM integration, report drafting pilot (quality team), selective digitization of paper documents (conditional) | |
+| H2 2028 | Full use of report drafting, performance measurement | **G3 (December): whether to roll out in 2029** |
+| 2029 | Rollout to other departments (conditional), 3-year performance review, operating plan for 2030 onward | Final year-end review |
 
-Some things the script cannot confirm. Whether the assumptions (labor cost, report counts, cost per repeat) are right, whether the external environment figures match their sources, and whether the reduction rates are appropriate are matters of judgment that a person needs to review.
+| Gate | Pass criteria | Action if not met |
+|---|---|---|
+| **G1** | ① Trace-back hit rate of 70% or more (for recurrences whose precedent is in electronic documents) ② PoC participants' search time down 30% or more ③ Internal security check passed ④ Cost of one recurrence estimated and the payback conditions in section 6 recalculated | Re-verify for up to 3 months with a different supplier or model. Stop if still not met (loss within KRW 50 million) |
+| **G2** | Weekly use rate of 60% or more, search time down 20% or more, 0 security incidents | Postpone PLM integration and drafting, and focus on improving search quality |
+| **G3** | Recurrence rate of 10.4% or less, search time down 40% or more, drafting time down 25% or more | Hold the rollout (conditional KRW 200 million) and improve within the existing scope |
 
-- Script: `check_strategy.py`
-- Check results: `check_result.txt`
-- Rerun: `python3 check_strategy.py reply.md` (after replacing the assumptions with measured values, it recalculates the investment effect and the adequacy of the targets)
+---
 
-## 13. Items to confirm
+## 6. Investment plan and return on investment
 
-Once the values below are set, I will recalculate the return on investment in chapter 11 and the F1 targets.
+### 6-1. Investment plan (KRW million)
 
-1. Report drafts per staff member per year (now assumed at 24)
-2. Hourly labor cost (now assumed at KRW 40,000)
-3. The share of design changes and quality defects in the KRW 5.9 billion, and the cost of the 61 repeats (now assumed at KRW 10 million each)
-4. Base year of the parent goal "20% cut" (now assumed to be 2025)
-5. Whether pay for dedicated AI staff falls within the KRW 1.5 billion cap (now assumed outside it)
-6. Makeup of the 48 staff by team and site (needed to set the design team pilot scope)
-7. Quality defect counts and repeat data (if available, a quality-side repeat KPI would be added next to P1)
-8. Reading of the input: "SWOT fixed" was read as 3 per quadrant, and "dual strategic goals" as 2 goals each with a qualitative and a quantitative target. Let me know if you meant otherwise.
+| Category | Item | 2027 | 2028 | 2029 | Total |
+|---|---|---|---|---|---|
+| Base | PoC and baseline measurement | 50 | – | – | 50 |
+| Base | GPU servers, storage and backup | 200 | – | – | 200 |
+| Base | AI search and drafting solution build (document system, permissions, PLM integration) | 200 | 100 | – | 300 |
+| Base | Electronic document cleanup and metadata | 60 | 30 | – | 90 |
+| Base | Labor cost of 1 AI staff member (hired in H2 2027) | 40 | 80 | 80 | 200 |
+| Base | Operation and maintenance (licenses, model replacement) | – | 40 | 40 | 80 |
+| Base | Security (access control, logs, external checks) | 30 | 10 | 10 | 50 |
+| Base | Training and change management | 10 | 20 | 10 | 40 |
+|  | **Base subtotal** | **590** | **280** | **140** | **1,010** |
+| Conditional | Selective digitization of paper documents (if G1 confirms the need) | – | 80 | – | 80 |
+| Conditional | Rollout to other departments and server expansion (if G3 is passed) | – | – | 200 | 200 |
+| Reserve | Unallocated |  |  |  | 210 |
+|  | **Total (cap)** |  |  |  | **1,500** |
+
+- Server and solution amounts are estimates. They will be fixed with quotes from 3 or more suppliers in Q1 2027.
+- The only spending committed before G1 is the KRW 50 million PoC. The KRW 400 million for servers and solutions is spent after G1 is passed.
+- From 2030 on, operating costs of about KRW 130 million a year continue, including KRW 80 million for staff, KRW 40 million for maintenance and KRW 10 million for security.
+
+### 6-2. Return on investment (based on the base investment of KRW 1.01 billion)
+
+**Time effect.** Adding the cut in search time in 2028 and 2029 (an average of 30% and 45% in each year) gives about 7,900 hours, worth about KRW 400 million at KRW 50,000 an hour. This is the value of time freed for other work, though, not cash. The 2027 share and the report drafting effect are left out because there is no count data (a conservative calculation).
+
+**Cost effect.** Meeting the recurrence reduction targets cuts about 55 recurrences in total over 2027–2029 (6 + 18 + 31). The amount saved depends on the cost of one recurrence.
+
+| Average cost of one recurrence (assumed) | Cumulative cost savings to 2029 | Payback on cost savings alone | Payback including time value |
+|---|---|---|---|
+| KRW 7 million | About KRW 390 million | Around 2037 (effectively out of reach) | 2030 |
+| KRW 10 million | About KRW 550 million | 2032 | 2030 |
+| KRW 14.32 million (upper limit of the design change average) | About KRW 790 million | 2030 | Within 2029 |
+
+**Conditions for paying back the base investment within the planning period:** One recurrence must cost about KRW 11 million or more including time value, or about KRW 18.4 million or more on cost savings alone. The latter is above the upper limit of the average design change cost. So the accurate message for executives is not "cash payback within 3 years" but **"payback in 2030–2032 if one recurrence costs KRW 10 million or more, with the final call based on the recurrence cost fixed at G1."**
+
+Some effects do not show up in the numbers. The company gains evidence for customer security checks and can keep competitors from opening a gap in search speed. These effects are not included in the payback calculation.
+
+---
+
+## 7. Governance
+
+| Body or role | Members | Responsibilities |
+|---|---|---|
+| AI steering committee (quarterly) | Executive in charge of technology (chair), design team head, quality team head, IT team head, security officer | Gate (G1–G3) decisions, budget approval, KPI review |
+| AI staff (IT team) | 1 new hire. 1 existing IT staff member also covers infrastructure | Solution operation, search quality management, test set management, supplier management |
+| Business key users | 2 from the design team, 2 from the quality team (including plants) | Writing test queries, PoC evaluation, spreading use within teams, improvement requests |
+| Supplier | Supplier of the on-premises solution | Build, maintenance, support for model replacement (included in the maintenance contract) |
+
+**Key points of the usage guidelines**
+- The existing rule barring work documents from external generative AI stays, and only in-house AI use is newly allowed.
+- When using AI answers in designs or reports, source documents must be checked. The author is responsible for drafts.
+- Customer documents are searchable only by people with work permissions for that customer.
+
+---
+
+## 8. Risks and responses
+
+| Risk | Response |
+|---|---|
+| Search quality on Korean technical documents falls short of expectations | Compare 2 suppliers in the PoC, apply the G1 hit rate criterion, contract for a structure where models are easy to replace |
+| The tool is installed but not used | Build it into the procedure as a mandatory item on design change requests (task C), run key users, publish use rates quarterly |
+| Reliability of the baseline (2-week sample) | 4-week remeasurement in Q1 2027, then repeated measurement by the same method at the same times |
+| Precedents are in paper documents | Check the scale by trace-back first, then digitize only the needed scope (conditional KRW 80 million) |
+| Knowledge concentrated in the 1 AI staff member | Document operating procedures, name 1 IT staff member as backup, supplier maintenance contract |
+| AI exposes documents outside a user's permissions | Design it to follow existing document permissions, test permissions before launch, check logs monthly |
+| Server price rises or delivery delays | Quotes from 3 or more suppliers, order preparation during the PoC, KRW 210 million reserve |
+| Changes in the number of design changes distort recurrence comparisons | Use the rate (recurrences ÷ all design changes) as the core KPI, not the count |
+
+---
+
+## 9. Assumptions and items to confirm
+
+- **Assumptions:** 46 working weeks a year, labor cost of KRW 50,000 an hour, design changes holding at about 412 a year
+- **Interpretation:** The internal status contains both "there is no measurement of the time spent" and "a 2-week sample measurement." This was read as meaning there is no systematic measurement, only a 2-week sample, and the sample figures were used as an interim baseline.
+- **To confirm in Q1 2027:** Cost of one recurrence, breakdown of the KRW 5.9 billion by type, number of reports per person, share of the 61 recurrences whose precedents are in paper documents
+- **Scope of external figures:** The AI Index figures are based on a global survey, some benchmarks and API prices. The Ministry of Science and ICT material was announced in 2023, so current support programs need to be checked separately.
+
+---
+
+The labor cost of 1 AI staff member was included within the KRW 1.5 billion investment cap to keep the estimate conservative. If labor costs are handled as a separate budget, the base investment falls to KRW 810 million and payback comes sooner.
