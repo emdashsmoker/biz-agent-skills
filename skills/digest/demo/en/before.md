@@ -1,60 +1,63 @@
-# Meeting minutes: Hyperscale AI pilot review
+# Summary: Survey Results on Generative AI Use at Work
+Planning Office, September 30, 2026
 
-| Item | Details |
-|---|---|
-| Date | Thursday, October 15, 2026, about 5 minutes |
-| Chair | Head of Planning |
-| Attendees | Quality team lead, Design team lead, IT team lead |
-| Agenda | Whether a hyperscale AI pilot is feasible in the first half of 2027 |
+## Key points
 
-## 1. Background
+- **Demand is confirmed**: 54.7% of respondents already use generative AI at work, and 61.3% want an in-house service.
+- **There is also a security problem**: 36 of 157 users (22.9%) said they have entered work documents into external services. The rules prohibit this, and 4 of them entered confidential documents. 30.0% of staff do not know the rule.
+- **Next steps**: Usage guidelines will be announced in October, and the in-house hyperscale AI pilot plan (draft) will go to executives in November. Training schedules will be set in December.
 
-- At the last management meeting the CEO asked for a report on whether a pilot is possible in the first half of next year (2027).
-- This meeting heard each team's views and set the direction of the report.
+## Survey overview
 
-## 2. Decisions
+- Population and responses: 287 of all 412 staff responded (response rate 69.7%).
+- Method: An anonymous online survey ran from September 8 to 19 (14 multiple-choice and 2 open-ended questions).
+- Purpose: To build baseline input for reviewing an in-house hyperscale AI pilot.
+- Definition of "user": Staff who used it for work at least once in the past 6 months.
 
-1. **The pilot is limited to two tasks.**
-   - Quality team: searching past defect reports
-   - Design team: drafting design change reports (including searching past change history)
-   - Whether to roll out company-wide will be decided separately after the pilot results.
-2. **Paper drawings from before 2015 are excluded from the pilot.** (Proposed by the Design team lead, no objection)
-3. **The system will be installed on in-house servers.** Under the current security rules, work documents cannot be entered into external generative AI services. (IT team lead's view, no objection)
-4. **The work-hour measurements and vendor quotes will be gathered, and the pilot decision and budget proposal will go to the December management meeting.**
+## Main findings
 
-## 3. Action items
+**1. Current use**
+- The use rate is 54.7% (157 people). Office departments are high at 56.4% to 100%, but the Production team stands at only 22.1%. The report presumes this is because the Production team does much of its work on the shop floor and spends little time at a PC.
+- 51.6% use it twice a week or more, and 48.4% once a week or less. It has not yet become an everyday work tool.
+- It is mainly used for drafting documents (62.4%), searching and summarizing material (55.4%) and translation (33.1%). Only the IT team and some of the Design team use it to write code (8.9%).
 
-| Owner | Task | Due |
+**2. Compliance with the security rules**
+- The current rules prohibit entering work documents into external generative AI. 70.0% of staff know this rule, and 30.0% do not.
+- 22.9% of users (36 people) have entered work documents, and 4 of them entered confidential documents.
+- 44.6% of the 130 non-users named the security rules as their reason for not using it. The rules do hold back use, but some users do not follow them.
+
+**3. Perceived benefits and concerns**
+- 68.8% of users said they cut 1 hour or more of work time a week, and 23.6% said 3 hours or more. These are their own estimates, though, not measured values.
+- The biggest concerns are answer accuracy (58.5%) and information leaks (49.5%). Concern about effects on performance reviews was low at 12.9%.
+
+**4. Support staff want from the company**
+- In order: an in-house service (61.3%), training (51.9%) and usage guidelines (46.3%).
+- The open-ended answers show specific uses each department wants.
+  - Quality team: Wants to search past defect reports but cannot upload them to external services.
+  - Design team: Wants to use it to organize design change history and draft change reports.
+  - Production team: Wants to look up work standards on a phone right on the shop floor.
+  - Business Support team: Uses it cautiously because there is no standard for how far it may be used.
+
+## Implications and next steps
+
+The report presents four implications.
+- Demand: Demand for use at work is confirmed.
+- Security: There are cases of confidential documents being entered.
+- Guidelines: Guidance on the scope of use is lacking.
+- Impact: Actual impact needs to be measured during the pilot.
+
+| When | What | Owner |
 |---|---|---|
-| IT team | Get quotes from 3 vendors for the build and operations | Monday, November 30 |
-| IT team | Schedule a review with the security team (access rights criteria for the in-house install) | Not set |
-| Quality team | Log the actual time spent searching defect reports for 2 weeks | Monday, October 19 - Friday, October 30* |
-| Design team | Log the time spent drafting change reports (including history search) for 2 weeks | Monday, October 19 - Friday, October 30* |
-| Planning office | Gather the results and submit the pilot decision and budget proposal to the December management meeting | December management meeting |
+| October | Draft generative AI usage guidelines and announce them to all staff | Planning Office, Information Security |
+| October | Follow up on cases of confidential documents being entered | Information Security |
+| November | Report the in-house hyperscale AI pilot plan (draft) to executives | Planning Office |
+| December | Set training schedules by department | Planning Office, HR |
 
-\* The meeting only said "for two weeks starting next week." The dates are counted from the meeting date.
+## Points worth checking as you read
 
-## 4. Discussion by team
+These are not stated in the report directly, but they are worth raising when you review it.
 
-### Quality team
-- The task that takes the most time is finding past defect reports. To check whether a similar defect happened before, staff have to open the shared folders one by one.
-- Each person seems to spend close to 20 hours a month on it. This is an estimate based on what team members said, and it has never been measured. The team will therefore measure it directly for two weeks.
-
-### Design team
-- Drafting a design change report takes a lot of time because past change history has to be found and attached.
-- Drawings from before 2015 exist only on paper and cannot be searched at all. They will therefore be left out of this pilot.
-
-### IT team
-- Under the current security rules, work documents cannot be put into external generative AI services. Adoption would require installing the model directly on in-house servers.
-- Open-weight models have improved a lot lately, so document search or drafting should be possible.
-- The IT team has 5 people and no one dedicated to AI. Outside vendor support is therefore needed for both the build and operations.
-- Vendor costs will be known only after getting quotes.
-- Even for an in-house install, the access rights criteria need the security team's confirmation.
-
-## 5. Open items to confirm
-
-- **Reporting date:** At the start of the meeting the report was "next month (November)," but the wrap-up settled on "submission to the December management meeting." It needs to be confirmed whether the report to the CEO moves to December or whether a separate interim report is due in November.
-- **Security review deadline:** No deadline was set. The review result has to come before the December management meeting to be reflected in the budget proposal.
-- **Scope of quotes:** The IT team lead said outside support is needed for both the build and operations. It would help to decide in advance whether the quotes should include operation and maintenance costs.
-- **Measurement standard:** The two teams did not agree on what to log or in what units. The two results can be compared only if they use the same standard.
-- **Schedule margin:** Quotes are due November 30, so if the December management meeting is early in the month, there will be little time to write the budget proposal.
+1. **The survey is anonymous, yet the report plans to follow up on the cases of confidential documents being entered.** Survey answers alone cannot show who entered them. Trying to trace respondents would break the promise of anonymity and make honest answers harder to get in the next survey. In a small department like the IT team (5 people), crossing department with answers alone could identify an individual. It is safer to decide first how the follow-up will be done (checking system access logs, voluntary reporting and so on).
+2. **Some staff may read the rule more broadly than it is.** As the report describes it, the rule prohibits entering work documents, not use itself. Yet 58 non-users gave "not allowed under the security rules" as their reason. One group breaks the rule because they do not know it, while the other reads it too strictly and does not use it at all. The October guidelines would do well to spell out what is and is not allowed, with examples. Cross-tabulating whether the 36 people who entered documents knew the rule would also help decide whether to strengthen guidance or controls.
+3. **The Production team weighs heavily on the overall figures.** The Production team is the largest department at 30% of respondents (86 people). Excluding it, the use rate for office departments rises to 68.7% (138 of 201). The Production team asked to use it on a phone on the shop floor, but the next steps offer no answer to this. Whether to include the Production team in the pilot looks like a decision for the November plan (draft).
+4. **Impact measurement is missing from the plan table.** The implications say actual measurement is needed, but the next-steps table has no measurement item. It would be worth checking that the November pilot plan (draft) includes the measurement method and criteria.
