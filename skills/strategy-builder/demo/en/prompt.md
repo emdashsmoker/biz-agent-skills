@@ -1,26 +1,12 @@
-Build our company's AI strategy framework in one-stop mode. I have filled in the whole input form below. Set the strategic goals and KPI targets using the internal status figures as baselines. The company name, internal information and figures are fictional.
+Build our company's AI strategy framework. Set the strategic goals and KPI targets using the internal status figures as baselines. The company name, internal information and figures are fictional.
 
-```
-[Hypothesis] OO Precision, a mid-sized manufacturer, headquarters and 2 domestic plants, 2027-2029
-[Beneficiaries] Quality and design team staff (less time searching past documents and drafting reports), executives (confirm return on investment)
-[Upper alignment] Company mid-term business plan goal "cut costs from design changes and quality defects by 20% by 2029"
-[Draft issues] auto
-[External environment] macro free input, micro free input (described below)
-[Internal status] free input (described below)
-[Benchmarking] skip
-[Analysis tool] SWOT
-[Issue confirmation] refine
-[SWOT mode] fixed
-[SWOT follow-up] Y
-[Strategy type] standard
-[Strategic goal] dual
-[Strategic tasks] auto-derive
-[Implementation tasks] skip
-[KPIs] strategy level
-[KPI track] BSC
-[Time format] short, mid, and long term
-[Check method] script
-```
+## Company overview
+
+- OO Precision is a mid-sized manufacturer with headquarters and 2 domestic plants.
+- The planning period is 2027-2029.
+- Quality and design team staff want to spend less time searching past documents and drafting reports.
+- Executives want to confirm the return on investment.
+- The goal of the company's mid-term business plan is "cut costs from design changes and quality defects by 20% by 2029."
 
 ## External environment
 
