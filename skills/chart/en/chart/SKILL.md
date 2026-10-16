@@ -142,6 +142,8 @@ After approval, render according to the visual spec. Open the rendered image you
 - (Spec) Spines, grid, and colors match the per-chart spec.
 - (Spacing) Gaps between elements are even and the figure edges have enough margin.
 
+Also fix anything that would look odd to a practitioner putting this chart in a report, even if the list above does not cover it.
+
 If labels overlap, apply these fixes in order.
 
 1. Let adjustText move labels. For scatter and line charts, pass the point coordinates as well (adjust_text(texts, x=xs, y=ys, ax=ax)) so labels do not cover points.
