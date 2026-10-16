@@ -17,7 +17,7 @@ A skill whose name ends in `-lite` is a lite edition: the same function with sho
 - [`environment-analysis-lite`](skills/environment-analysis-lite/): Lite edition of `environment-analysis`.
 - [`five-forces`](skills/five-forces/): Analyzes the competition in an industry with Michael Porter's Five Forces framework.
 - [`source-check`](skills/source-check/): Answers only from the files you provide and from searched sources that pass a quality filter.
-- [`digest`](skills/digest/): Turns web pages, documents, audio and video into minutes, briefings, reports or translations.
+- [`digest`](skills/digest/): Turns web pages, documents, audio and video into minutes, briefings, reports or translations. [Samples](skills/digest/demo/en/)
 - [`md-parser`](skills/md-parser/): Converts PDF, HWP, HWPX, Office files and more into Markdown.
 
 ### Analysis
@@ -26,20 +26,20 @@ A skill whose name ends in `-lite` is a lite edition: the same function with sho
 - [`practical-calc-lite`](skills/practical-calc-lite/): Lite edition of `practical-calc`.
 - [`cagr`](skills/cagr/): Calculates a compound annual growth rate from two points in time.
 - [`practical-stats`](skills/practical-stats/): Designs and runs practical statistical analysis of surveys and secondary data around the decision it must inform.
-- [`network-analysis`](skills/network-analysis/): Runs social network analysis with NetworkX code and charts.
+- [`network-analysis`](skills/network-analysis/): Runs social network analysis with NetworkX code and charts. [Samples](skills/network-analysis/demo/en/)
 - [`network-analysis-lite`](skills/network-analysis-lite/): Lite edition of `network-analysis`.
-- [`ontology-modeling`](skills/ontology-modeling/): Designs definitions, classes and relations without overlaps or gaps, and builds an OWL ontology when needed.
-- [`dataframe-ops`](skills/dataframe-ops/): Turns plain-language or cell-reference requests about tables into pandas code and runs it.
+- [`ontology-modeling`](skills/ontology-modeling/): Designs definitions, classes and relations without overlaps or gaps, and builds an OWL ontology when needed. [Samples](skills/ontology-modeling/demo/en/)
+- [`dataframe-ops`](skills/dataframe-ops/): Turns plain-language or cell-reference requests about tables into pandas code and runs it. [Samples](skills/dataframe-ops/demo/en/)
 - [`chart`](skills/chart/): Settles the message first, then builds static report charts with matplotlib. [Samples](skills/chart/demo/en/)
 - [`biz-code-style`](skills/biz-code-style/): Sets how coding, analysis and chart work runs and how the outputs look. [Samples](skills/biz-code-style/demo/en/)
 - [`biz-code-style-lite`](skills/biz-code-style-lite/): Lite edition of `biz-code-style`.
 
 ### Planning
 
-- [`strategy-builder`](skills/strategy-builder/): Builds an organization's strategy framework step by step, from environment analysis to performance indicators.
+- [`strategy-builder`](skills/strategy-builder/): Builds an organization's strategy framework step by step, from environment analysis to performance indicators. [Samples](skills/strategy-builder/demo/en/)
 - [`rfp-strategy`](skills/rfp-strategy/): Analyzes a request for proposal and builds a bid strategy.
-- [`project-plan`](skills/project-plan/): Writes a project overview and a WBS for a project under contract.
-- [`think-review`](skills/think-review/): Checks plans, arguments and documents from first principles.
+- [`project-plan`](skills/project-plan/): Writes a project overview and a WBS for a project under contract. [Samples](skills/project-plan/demo/en/)
+- [`think-review`](skills/think-review/): Checks plans, arguments and documents from first principles. [Samples](skills/think-review/demo/en/)
 - [`think-review-lite`](skills/think-review-lite/): Lite edition of `think-review`.
 
 ### Writing
@@ -50,7 +50,7 @@ A skill whose name ends in `-lite` is a lite edition: the same function with sho
 - [`anti-slop`](skills/anti-slop/): Finds and fixes the stock phrasing of language models. [Samples](skills/anti-slop/demo/en/)
 - [`no-jargon`](skills/no-jargon/): Rewrites jargon so that readers outside the field can follow. [Samples](skills/no-jargon/demo/en/)
 - [`onto-mece`](skills/onto-mece/): Checks classifications, hierarchies and definitions in a text for overlaps and gaps. [Samples](skills/onto-mece/demo/en/)
-- [`fx-krw`](skills/fx-krw/): Adds a Korean won equivalent next to each foreign currency amount.
+- [`fx-krw`](skills/fx-krw/): Adds a Korean won equivalent next to each foreign currency amount. [Samples](skills/fx-krw/demo/en/)
 
 ### Working setup
 
@@ -112,7 +112,7 @@ Each skill carries its own `LICENSE` and `NOTICE.md`. Under the output exception
 - [`environment-analysis-lite`](skills/environment-analysis-lite/): `environment-analysis`의 경량판입니다.
 - [`five-forces`](skills/five-forces/): 마이클 포터의 5-Forces 프레임워크로 산업의 경쟁환경을 분석합니다.
 - [`source-check`](skills/source-check/): 사용자가 제공한 파일과 품질 기준을 통과한 검색 출처만으로 답합니다.
-- [`digest`](skills/digest/): 웹 페이지, 문서, 음성, 영상을 회의록, 브리핑, 보고서, 번역문으로 정리합니다.
+- [`digest`](skills/digest/): 웹 페이지, 문서, 음성, 영상을 회의록, 브리핑, 보고서, 번역문으로 정리합니다. [예시](skills/digest/demo/ko/)
 - [`md-parser`](skills/md-parser/): PDF, HWP, HWPX, 오피스 파일 등을 마크다운으로 변환합니다.
 
 ### 분석
@@ -121,20 +121,20 @@ Each skill carries its own `LICENSE` and `NOTICE.md`. Under the output exception
 - [`practical-calc-lite`](skills/practical-calc-lite/): `practical-calc`의 경량판입니다.
 - [`cagr`](skills/cagr/): 두 시점의 값으로 연평균 성장률을 계산합니다.
 - [`practical-stats`](skills/practical-stats/): 설문조사와 2차 자료를 다루는 실무 통계 분석을 의사결정 목적에 맞춰 설계하고 수행합니다.
-- [`network-analysis`](skills/network-analysis/): NetworkX 코드와 그림으로 소셜 네트워크 분석을 수행합니다.
+- [`network-analysis`](skills/network-analysis/): NetworkX 코드와 그림으로 소셜 네트워크 분석을 수행합니다. [예시](skills/network-analysis/demo/ko/)
 - [`network-analysis-lite`](skills/network-analysis-lite/): `network-analysis`의 경량판입니다.
-- [`ontology-modeling`](skills/ontology-modeling/): 개념 정의, 분류, 관계를 겹침과 빠짐 없이 설계하고 필요하면 OWL 온톨로지를 만듭니다.
-- [`dataframe-ops`](skills/dataframe-ops/): 자연어나 엑셀식 좌표로 받은 표 데이터 요청을 pandas 코드로 바꿔 실행합니다.
+- [`ontology-modeling`](skills/ontology-modeling/): 개념 정의, 분류, 관계를 겹침과 빠짐 없이 설계하고 필요하면 OWL 온톨로지를 만듭니다. [예시](skills/ontology-modeling/demo/ko/)
+- [`dataframe-ops`](skills/dataframe-ops/): 자연어나 엑셀식 좌표로 받은 표 데이터 요청을 pandas 코드로 바꿔 실행합니다. [예시](skills/dataframe-ops/demo/ko/)
 - [`chart`](skills/chart/): 전할 메시지를 먼저 정한 뒤 matplotlib으로 보고서용 정적 차트를 만듭니다. [예시](skills/chart/demo/ko/)
 - [`biz-code-style`](skills/biz-code-style/): 코딩, 데이터 분석, 차트 작업의 진행 방식과 산출물 스타일을 정합니다. [예시](skills/biz-code-style/demo/ko/)
 - [`biz-code-style-lite`](skills/biz-code-style-lite/): `biz-code-style`의 경량판입니다.
 
 ### 기획
 
-- [`strategy-builder`](skills/strategy-builder/): 환경분석부터 성과지표까지 조직의 전략체계를 단계별로 수립합니다.
+- [`strategy-builder`](skills/strategy-builder/): 환경분석부터 성과지표까지 조직의 전략체계를 단계별로 수립합니다. [예시](skills/strategy-builder/demo/ko/)
 - [`rfp-strategy`](skills/rfp-strategy/): 제안요청서(RFP)를 분석해 입찰 전략을 세웁니다.
-- [`project-plan`](skills/project-plan/): 계약을 마친 과업의 사업 개요와 WBS를 작성합니다.
-- [`think-review`](skills/think-review/): 기획, 주장, 문서를 제1원칙으로 점검합니다.
+- [`project-plan`](skills/project-plan/): 계약을 마친 과업의 사업 개요와 WBS를 작성합니다. [예시](skills/project-plan/demo/ko/)
+- [`think-review`](skills/think-review/): 기획, 주장, 문서를 제1원칙으로 점검합니다. [예시](skills/think-review/demo/ko/)
 - [`think-review-lite`](skills/think-review-lite/): `think-review`의 경량판입니다.
 
 ### 글쓰기
@@ -145,7 +145,7 @@ Each skill carries its own `LICENSE` and `NOTICE.md`. Under the output exception
 - [`anti-slop`](skills/anti-slop/): 언어 모델이 자주 만드는 상투 표현을 찾아 고칩니다. [예시](skills/anti-slop/demo/ko/)
 - [`no-jargon`](skills/no-jargon/): 분야 밖의 독자도 읽을 수 있도록 전문용어를 풀어 씁니다. [예시](skills/no-jargon/demo/ko/)
 - [`onto-mece`](skills/onto-mece/): 글 속 분류, 상하 구조, 정의에 겹침이나 빠짐이 있는지 점검합니다. [예시](skills/onto-mece/demo/ko/)
-- [`fx-krw`](skills/fx-krw/): 외화 금액 옆에 원화 환산액을 함께 적습니다.
+- [`fx-krw`](skills/fx-krw/): 외화 금액 옆에 원화 환산액을 함께 적습니다. [예시](skills/fx-krw/demo/ko/)
 
 ### 작업 환경
 
