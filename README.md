@@ -104,7 +104,7 @@ Each skill carries its own `LICENSE` and `NOTICE.md`. Under the output exception
 
 ## 스킬 목록
 
-이름 끝에 `-lite`가 붙은 스킬은 같은 기능을 더 짧은 지침으로 줄여 토큰을 덜 쓰는 경량판입니다.
+이름 끝에 `-lite`가 붙은 스킬은 같은 기능을 유지하면서 지침 분량을 줄여 토큰 사용량을 낮춘 경량판입니다.
 
 ### 조사
 
@@ -123,41 +123,41 @@ Each skill carries its own `LICENSE` and `NOTICE.md`. Under the output exception
 - [`practical-stats`](skills/practical-stats/): 설문조사와 2차 자료를 다루는 실무 통계 분석을 의사결정 목적에 맞춰 설계하고 수행합니다.
 - [`network-analysis`](skills/network-analysis/): NetworkX 코드와 그림으로 소셜 네트워크 분석을 수행합니다. [예시](skills/network-analysis/demo/ko/)
 - [`network-analysis-lite`](skills/network-analysis-lite/): `network-analysis`의 경량판입니다.
-- [`ontology-modeling`](skills/ontology-modeling/): 개념 정의, 분류, 관계를 겹침과 빠짐 없이 설계하고 필요하면 OWL 온톨로지를 만듭니다. [예시](skills/ontology-modeling/demo/ko/)
-- [`dataframe-ops`](skills/dataframe-ops/): 자연어나 엑셀식 좌표로 받은 표 데이터 요청을 pandas 코드로 바꿔 실행합니다. [예시](skills/dataframe-ops/demo/ko/)
-- [`chart`](skills/chart/): 전할 메시지를 먼저 정한 뒤 matplotlib으로 보고서용 정적 차트를 만듭니다. [예시](skills/chart/demo/ko/)
+- [`ontology-modeling`](skills/ontology-modeling/): 개념 정의, 분류, 관계를 중복과 누락 없이 설계하고 필요한 경우 OWL 온톨로지를 구축합니다. [예시](skills/ontology-modeling/demo/ko/)
+- [`dataframe-ops`](skills/dataframe-ops/): 자연어나 엑셀식 좌표로 받은 표 데이터 요청을 pandas 코드로 변환해 실행합니다. [예시](skills/dataframe-ops/demo/ko/)
+- [`chart`](skills/chart/): 전달할 메시지를 먼저 확정한 뒤 matplotlib으로 보고서용 정적 차트를 작성합니다. [예시](skills/chart/demo/ko/)
 - [`biz-code-style`](skills/biz-code-style/): 코딩, 데이터 분석, 차트 작업의 진행 방식과 산출물 스타일을 정합니다. [예시](skills/biz-code-style/demo/ko/)
 - [`biz-code-style-lite`](skills/biz-code-style-lite/): `biz-code-style`의 경량판입니다.
 
 ### 기획
 
 - [`strategy-builder`](skills/strategy-builder/): 환경분석부터 성과지표까지 조직의 전략체계를 단계별로 수립합니다. [예시](skills/strategy-builder/demo/ko/)
-- [`rfp-strategy`](skills/rfp-strategy/): 제안요청서(RFP)를 분석해 입찰 전략을 세웁니다.
+- [`rfp-strategy`](skills/rfp-strategy/): 제안요청서(RFP)를 분석해 입찰 전략을 수립합니다.
 - [`project-plan`](skills/project-plan/): 계약을 마친 과업의 사업 개요와 WBS를 작성합니다. [예시](skills/project-plan/demo/ko/)
 - [`think-review`](skills/think-review/): 기획, 주장, 문서를 제1원칙으로 점검합니다. [예시](skills/think-review/demo/ko/)
 - [`think-review-lite`](skills/think-review-lite/): `think-review`의 경량판입니다.
 
 ### 글쓰기
 
-- [`logical-write`](skills/logical-write/): 마크다운 계위 구조의 논리적 개조식 문장으로 보고서를 쓰고 고칩니다. [예시](skills/logical-write/demo/ko/)
+- [`logical-write`](skills/logical-write/): 마크다운 계위 구조의 논리적 개조식 문장으로 보고서를 작성하고 수정합니다. [예시](skills/logical-write/demo/ko/)
 - [`logical-write-lite`](skills/logical-write-lite/): `logical-write`의 경량판입니다.
-- [`clear-comm`](skills/clear-comm/): 이메일, 답장, 피드백, 공지를 요점부터 전하는 존댓말 산문으로 씁니다. [예시](skills/clear-comm/demo/ko/)
-- [`anti-slop`](skills/anti-slop/): 언어 모델이 자주 만드는 상투 표현을 찾아 고칩니다. [예시](skills/anti-slop/demo/ko/)
-- [`no-jargon`](skills/no-jargon/): 분야 밖의 독자도 읽을 수 있도록 전문용어를 풀어 씁니다. [예시](skills/no-jargon/demo/ko/)
-- [`onto-mece`](skills/onto-mece/): 글 속 분류, 상하 구조, 정의에 겹침이나 빠짐이 있는지 점검합니다. [예시](skills/onto-mece/demo/ko/)
-- [`fx-krw`](skills/fx-krw/): 외화 금액 옆에 원화 환산액을 함께 적습니다. [예시](skills/fx-krw/demo/ko/)
+- [`clear-comm`](skills/clear-comm/): 이메일, 답장, 피드백, 공지를 요점부터 전달하는 존댓말 산문으로 작성합니다. [예시](skills/clear-comm/demo/ko/)
+- [`anti-slop`](skills/anti-slop/): 언어 모델이 자주 만드는 상투 표현을 찾아 수정합니다. [예시](skills/anti-slop/demo/ko/)
+- [`no-jargon`](skills/no-jargon/): 분야 밖의 독자도 읽을 수 있도록 전문용어를 쉬운 표현으로 바꾸어 작성합니다. [예시](skills/no-jargon/demo/ko/)
+- [`onto-mece`](skills/onto-mece/): 글 속 분류, 상하 구조, 정의에 중복이나 누락이 있는지 점검합니다. [예시](skills/onto-mece/demo/ko/)
+- [`fx-krw`](skills/fx-krw/): 외화 금액 옆에 원화 환산액을 함께 표기합니다. [예시](skills/fx-krw/demo/ko/)
 
 ### 작업 환경
 
 - [`lean-work`](skills/lean-work/): 목적, 독자, 범위를 먼저 정하고 작업에 필요한 요소만 남깁니다.
-- [`long-task-ledger`](skills/long-task-ledger/): 대화가 잘리거나 세션이 바뀌어도 긴 다단계 작업을 이어 갈 수 있게 기록합니다.
+- [`long-task-ledger`](skills/long-task-ledger/): 대화가 잘리거나 세션이 바뀌어도 긴 다단계 작업을 이어 갈 수 있도록 기록합니다.
 - [`pref-architect`](skills/pref-architect/): 인터뷰로 짧은 상시 지침과 필요할 때만 불러오는 모듈 스킬을 설계합니다.
-- [`skill-forge`](skills/skill-forge/): 스킬과 에이전트 지침을 만들고 조합하고 관리합니다.
-- [`offline-deps-builder`](skills/offline-deps-builder/): 다른 스킬이 실행 중에 내려받는 라이브러리, 글꼴, 모델을 미리 담은 의존성 스킬을 만듭니다.
+- [`skill-forge`](skills/skill-forge/): 스킬과 에이전트 지침을 생성하고 조합하고 관리합니다.
+- [`offline-deps-builder`](skills/offline-deps-builder/): 다른 스킬이 실행 중에 내려받는 라이브러리, 글꼴, 모델을 미리 포함한 의존성 스킬을 생성합니다.
 
 ## 설치
 
-스킬 폴더마다 설치용 패키지와 소스 폴더가 들어 있습니다.
+스킬 폴더마다 설치용 패키지와 소스 폴더가 포함되어 있습니다.
 
 ```
 skills/think-review/
@@ -167,18 +167,18 @@ skills/think-review/
 └── en/think-review/         영어판 소스
 ```
 
-- `.skill` 파일은 스킬 폴더를 묶은 zip 파일입니다. `.zip` 파일만 올릴 수 있는 환경에서는 확장자를 `.zip`으로 바꿔 업로드하면 됩니다.
+- `.skill` 파일은 스킬 폴더를 묶은 zip 파일입니다. `.zip` 파일만 올릴 수 있는 환경에서는 확장자를 `.zip`으로 변경해 업로드합니다.
 - 소스로 설치할 때는 스킬 이름과 같은 폴더(예를 들어 `ko/think-review/`)를 에이전트의 스킬 폴더에 복사합니다.
 - 한국어판과 영어판은 스킬 이름이 같아서 둘 중 하나만 설치할 수 있습니다.
 
 ## 한계
 
 - 테스트는 Claude Opus 5.5와 Claude Fable 5.1에서 진행했습니다. 다른 모델과 실행 환경에서는 결과가 달라질 수 있습니다.
-- 모든 예외 상황을 테스트하지는 못했습니다. 일부 스킬은 테스트가 충분하지 않습니다.
+- 모든 예외 상황에 대한 테스트는 완료되지 않았습니다. 일부 스킬은 테스트 범위가 제한적입니다.
 - 일부 스킬은 기능이 중복될 수 있습니다.
-- 코드를 실행하는 스킬은 코드 실행 환경과 네트워크 연결이 있어야 작동합니다.
+- 코드를 실행하는 스킬은 코드 실행 환경과 네트워크 연결이 필요합니다.
 - 스킬에 수록한 법령, 제도, 방법론은 작성 시점을 기준으로 합니다.
-- 영어판은 번역본이라서 한국어 문법과 한국 문서 관행에 관한 규칙이 원본과 다르게 작동할 수 있습니다.
+- 영어판은 번역본이므로 한국어 문법과 한국 문서 관행에 관한 규칙이 원본과 다르게 작동할 수 있습니다.
 
 ## 면책 고지
 
@@ -190,7 +190,7 @@ skills/think-review/
 
 [GPL-3.0-or-later](LICENSE)를 따릅니다. Copyright (C) 2026 Em Dash Smoker.
 
-스킬마다 `LICENSE`와 `NOTICE.md`가 들어 있습니다. `NOTICE.md`의 출력물 예외 조항에 따라 스킬로 만든 문서, 차트, 파일은 GPL 조건 없이 쓸 수 있습니다. `demo/` 폴더의 예시 파일은 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.ko)을 따릅니다. 스킬이 실행 중에 설치하는 패키지, 글꼴, 모델은 각자의 라이선스를 따릅니다. 해당 항목을 쓰는 스킬은 `NOTICE.md`의 "Third-party software" 절에 항목과 라이선스를 적어 둡니다.
+스킬마다 `LICENSE`와 `NOTICE.md`가 들어 있습니다. `NOTICE.md`의 출력물 예외 조항에 따라 스킬로 만든 문서, 차트, 파일은 GPL 조건 없이 사용할 수 있습니다. `demo/` 폴더의 예시 파일은 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.ko)을 따릅니다. 스킬이 실행 중에 설치하는 패키지, 글꼴, 모델은 각자의 라이선스를 따릅니다. 해당 항목을 사용하는 스킬은 `NOTICE.md`의 "Third-party software" 절에 항목과 라이선스를 명시합니다.
 
 </details>
 
