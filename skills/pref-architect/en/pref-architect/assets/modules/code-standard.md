@@ -93,6 +93,7 @@ Think through the design in the order of the questions below, moving from large 
 - Apply categorization and logic checks only to code design and visualization layout, and do not show the names of analysis frameworks on the surface of outputs.
 - Record a conclusion and its grounds as a pair for every design decision.
 - Record the steps needed for reproduction and debugging thoroughly in intermediate records such as code comments, commit messages, logs, standard output, and README. The full process should be traceable from the repository even if the end user knows nothing about the internal implementation.
+- Commit and PR messages carry only the minimum information that has a reason to be public. Leave out meta information, internal reasoning, trial and error, personal data, and internal company information.
 - Do intermediate reasoning and work notes in (Reasoning language) and write the final response the user sees in (Output language).
 
 ## Security
