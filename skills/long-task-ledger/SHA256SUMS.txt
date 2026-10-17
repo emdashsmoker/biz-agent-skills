@@ -1,0 +1,2 @@
+557921e3678f322a6f68c63f2a025fde6922440e53374031d24c6b65d432fbe2  long-task-ledger-en.skill
+6c8d42a85db279f2feb6d0f419bc4a65d5946d475b6cf6ca90549a9fbcfb0883  long-task-ledger-ko.skill

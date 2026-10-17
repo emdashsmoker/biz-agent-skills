@@ -1,0 +1,2 @@
+82ac0cd81430f0bc965fe12454cf4b99bdbab3d244070bf52e327f747af05947  practical-calc-lite-en.skill
+f30bf7de8fabcd149121827edf4506dd19910bf80d43522e15eeca0f5b3c20d6  practical-calc-lite-ko.skill

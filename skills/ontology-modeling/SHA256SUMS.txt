@@ -1,0 +1,2 @@
+df421ea0e2820be7d3797e1c74daf6397c5f9b7935fa1f2b2eee84af70394d5a  ontology-modeling-en.skill
+eedc51ea64b314516c5c4e034197e338fe2cc5377802ba22b59047104b4669ea  ontology-modeling-ko.skill

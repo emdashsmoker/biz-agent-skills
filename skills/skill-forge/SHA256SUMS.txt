@@ -1,0 +1,2 @@
+41e9395f864fc3883cb781c3e120dca1896189c83348807fefa0acc1fede9d60  skill-forge-en.skill
+df4bbaa86f685f27afdbea5897d50d948dc9e086c8d7c53cd92e0807022de2a3  skill-forge-ko.skill
