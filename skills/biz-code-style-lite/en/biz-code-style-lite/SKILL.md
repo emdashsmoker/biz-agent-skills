@@ -393,7 +393,7 @@ Apply to code comments, commit messages, logs, chart and diagram labels, slide c
 - Center comments on Why (why this code is needed). Add What only when the code is not self-evident, and How when alternatives exist, stating the reason for the choice
 - Mark unfinished and temporary spots with `TODO`, `FIXME`, and `HACK`
 - In intermediate records such as commit messages, logs, stdout, and the README, record the steps needed for reproduction and debugging in full. The whole history of the work must be traceable from the repository alone
-- Commit and PR messages carry only the minimum information that has a reason to be public. Leave out meta information, internal reasoning, trial and error, personal data, and internal company information
+- Write PR messages to the same standard as commit messages. Keep information that must not leak, such as personal data and company security information, out of intermediate records
 - Do not expose the authoring process, internal tools, or tech stack in final deliverables (reports, charts, slides)
 
 ### Sentences
