@@ -1,0 +1,2 @@
+93666d4c15218c4b133f9871df1544a1878483faf0c597ca0d278d2befd44876  dataframe-ops-en.skill
+ecd6e87944e8bb5702be1ed96a038f2972899f8bfb234e84b07185f2afcc957a  dataframe-ops-ko.skill
