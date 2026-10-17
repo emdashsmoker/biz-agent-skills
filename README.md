@@ -62,12 +62,13 @@ A skill whose name ends in `-lite` is a lite edition: the same function with sho
 
 ## Installation
 
-Each skill folder holds the install packages and the source folders.
+Each skill folder holds the install packages, a checksum file and the source folders.
 
 ```
 skills/think-review/
 ├── think-review-ko.skill    Korean install package
 ├── think-review-en.skill    English install package
+├── SHA256SUMS.txt           SHA-256 checksums of the packages
 ├── ko/think-review/         Korean source
 └── en/think-review/         English source
 ```
@@ -157,12 +158,13 @@ Each skill carries its own `LICENSE` and `NOTICE.md`. Under the output exception
 
 ## 설치
 
-스킬 폴더마다 설치용 패키지와 소스 폴더가 포함되어 있습니다.
+스킬 폴더마다 설치용 패키지, 체크섬 파일, 소스 폴더가 포함되어 있습니다.
 
 ```
 skills/think-review/
 ├── think-review-ko.skill    한국어판 설치용 패키지
 ├── think-review-en.skill    영어판 설치용 패키지
+├── SHA256SUMS.txt           설치용 패키지 SHA-256 체크섬
 ├── ko/think-review/         한국어판 소스
 └── en/think-review/         영어판 소스
 ```

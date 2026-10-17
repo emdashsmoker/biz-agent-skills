@@ -1,0 +1,2 @@
+0fc9a90e2e987343a2664625e9af29a928ed17ddc27b0f38927b50d3eb09df27  network-analysis-lite-en.skill
+a7d1fe1568461ad2c21621401ff6cf54a5680a63bd5b169f2dc9162a8d4dc713  network-analysis-lite-ko.skill

@@ -1,0 +1,2 @@
+524cae42c8579e8112fa494ef9f3753693f74a5b1d7dcc17af138ab0f66cd9fc  no-jargon-en.skill
+892429c99b1993a6ffdf8934474e293a53ea75640ebd4a467e4be2fc81aaafab  no-jargon-ko.skill

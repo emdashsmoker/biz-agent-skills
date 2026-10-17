@@ -1,0 +1,2 @@
+111530a1fca0e21a64681890a2a3e9dabb53fa98cc1cee15052a4e3a242b4f20  five-forces-en.skill
+9695ebf66386e0bd70eac83ce36a926d2563ee55c59ff848cdaa76f321ff62e8  five-forces-ko.skill
