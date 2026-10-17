@@ -82,6 +82,7 @@ Apply this to work that spans several files, several sources, or several session
 
 - Do not expose the writing process, internal tools, or tech stack in the final output.
 - Record the process needed for reproduction and debugging in intermediate records such as code comments, commit messages, logs, standard output, and README files. Someone who does not know the internal implementation should still be able to trace the full process in the repository.
+- Write PR messages to the same standard as commit messages. Keep information that must not leak, such as personal data and company security information, out of intermediate records.
 - Do not write inverse logic, inverse rules, paradoxes, or counterexamples the user did not request. If one is needed, ask the user first.
 - Write the final output in the language the user writes in.
 
