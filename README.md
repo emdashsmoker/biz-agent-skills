@@ -47,7 +47,7 @@ A skill whose name ends in `-lite` is a lite edition: the same function with sho
 - [`logical-write`](skills/logical-write/): Writes and revises Korean outline-style (gaejosik) reports in a Markdown hierarchy. [Samples](skills/logical-write/demo/en/)
 - [`logical-write-lite`](skills/logical-write-lite/): Lite edition of `logical-write`.
 - [`clear-comm`](skills/clear-comm/): Writes emails, replies, feedback and announcements that put the point first. [Samples](skills/clear-comm/demo/en/)
-- [`anti-slop`](skills/anti-slop/): Finds and fixes the stock phrasing of language models. [Samples](skills/anti-slop/demo/en/)
+- [`slop-proof`](skills/slop-proof/): Finds and fixes the stock phrasing of language models. [Samples](skills/slop-proof/demo/en/)
 - [`no-jargon`](skills/no-jargon/): Rewrites jargon so that readers outside the field can follow. [Samples](skills/no-jargon/demo/en/)
 - [`onto-mece`](skills/onto-mece/): Checks classifications, hierarchies and definitions in a text for overlaps and gaps. [Samples](skills/onto-mece/demo/en/)
 - [`fx-krw`](skills/fx-krw/): Adds a Korean won equivalent next to each foreign currency amount. [Samples](skills/fx-krw/demo/en/)
@@ -142,7 +142,7 @@ Each skill carries its own `LICENSE` and `NOTICE.md`. Under the output exception
 - [`logical-write`](skills/logical-write/): 마크다운 계위 구조의 논리적 개조식 문장으로 보고서를 작성하고 수정합니다. [예시](skills/logical-write/demo/ko/)
 - [`logical-write-lite`](skills/logical-write-lite/): `logical-write`의 경량판입니다.
 - [`clear-comm`](skills/clear-comm/): 이메일, 답장, 피드백, 공지를 요점부터 전달하는 존댓말 산문으로 작성합니다. [예시](skills/clear-comm/demo/ko/)
-- [`anti-slop`](skills/anti-slop/): 언어 모델이 자주 만드는 상투 표현을 찾아 수정합니다. [예시](skills/anti-slop/demo/ko/)
+- [`slop-proof`](skills/slop-proof/): 언어 모델이 자주 만드는 상투 표현을 찾아 수정합니다. [예시](skills/slop-proof/demo/ko/)
 - [`no-jargon`](skills/no-jargon/): 분야 밖의 독자도 읽을 수 있도록 전문용어를 쉬운 표현으로 바꾸어 작성합니다. [예시](skills/no-jargon/demo/ko/)
 - [`onto-mece`](skills/onto-mece/): 글 속 분류, 상하 구조, 정의에 중복이나 누락이 있는지 점검합니다. [예시](skills/onto-mece/demo/ko/)
 - [`fx-krw`](skills/fx-krw/): 외화 금액 옆에 원화 환산액을 함께 표기합니다. [예시](skills/fx-krw/demo/ko/)
