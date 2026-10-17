@@ -1,0 +1,2 @@
+f1fba119189e46096b74612b4663d9cd43244ac15d37783d4521756338a0a3d3  rfp-strategy-en.skill
+bb2fa878ebbc1afdf74f2f5cb5201af81f3ba107d4efc866c7ce8635dc5ab1af  rfp-strategy-ko.skill

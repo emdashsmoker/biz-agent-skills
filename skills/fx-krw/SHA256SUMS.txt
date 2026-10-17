@@ -1,0 +1,2 @@
+3e06b45e37512d3c1eeb2fee12765e178d5c3e33f971b6131a3c9783fe2415ec  fx-krw-en.skill
+521eea3615acf954407a6a074e59248aa30bbd473c9aea8c7de2ef89a80ed72b  fx-krw-ko.skill

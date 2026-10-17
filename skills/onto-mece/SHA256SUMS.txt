@@ -1,0 +1,2 @@
+cb2267db3c3ed28fbffc27c159f0070dec84b853f40015dbe6f019e0fceb4576  onto-mece-en.skill
+e9ad08c82f932e8508f321695fe9cfa5eb030fac7e5d2fb936538e5b797b6729  onto-mece-ko.skill

@@ -1,0 +1,2 @@
+6018e7298158e6f19a2d50616004a761528cebadf645ffe5512250bee2435be9  offline-deps-builder-en.skill
+32f8a45603cece01573ff088cc49b07a3c1ae434f2680a2b72ea56396fb0c325  offline-deps-builder-ko.skill
