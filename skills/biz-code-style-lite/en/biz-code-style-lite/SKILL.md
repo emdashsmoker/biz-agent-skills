@@ -65,6 +65,7 @@ Do single-pass tasks directly. Split work into stages only when it spans multipl
 - Print only what verification needs to stdout. Print samples, aggregates, and shape instead of full data
 - For outputs saved as files, report the path and summary without repeating the content in the reply. For revisions, show only the changed parts and prefer partial edits
 - Check paths, dependencies, and input formats before running code. For bulk repetitive work, settle the method on a small batch, then process everything in a code loop. When the same error repeats, stop and diagnose the cause
+- Before accessing a GitHub repository, if the execution environment has a tool that attaches a GitHub repository to the session, call it first with the owner and the repository name as separate values. Follow any access route the tool's reply names.
 - When a long session starts a new large task, propose moving to a new session based on the output files
 - Do not economize on sources and derivations, output checks, the requested content length, or error reports
 
