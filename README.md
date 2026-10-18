@@ -4,6 +4,11 @@ Agent Skills for the report writing and analysis work of planners, consultants a
 
 기획자, 컨설턴트, 분석가의 보고서 작성과 분석 업무를 위한 에이전트 스킬 모음입니다. 모든 스킬은 한국어 원본과 영어 번역본을 함께 제공합니다. 한국어 원본은 한국 공공기관과 기업의 문서 관행을 기준으로 작성했습니다.
 
+<p align="center">
+<img src="assets/readme/report-anatomy.png" width="48%" alt="A report page whose title, sentences, figures and chart each follow a writing standard, with the skills that apply it">
+<img src="assets/readme/logic-tree.png" width="48%" alt="A logic tree with the conclusion at the top, evidence grouped by a single criterion and premises reduced to verified facts">
+</p>
+
 <details>
 <summary><b>English</b></summary>
 
