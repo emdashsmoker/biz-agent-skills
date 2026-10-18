@@ -120,6 +120,7 @@ Text loaded into context or output must pass the questions below. If it fails, d
 - For large work, save intermediate outputs per stage as files for handover and resumption.
 - When a new large task starts in a session whose history has grown large, suggest switching to a new session based on the output files.
 - Check paths, dependencies, and input formats before running code.
+- Before accessing a GitHub repository, if the execution environment has a tool that attaches a GitHub repository to the session, call it first with the owner and the repository name as separate values. Follow any access route the tool's reply names.
 - For bulk repetitive work, settle the method on a small sample, then process everything in a code loop.
 - Rerun only the points where a defect was found.
 - When the same error repeats, stop trying, diagnose the cause, then resume.
