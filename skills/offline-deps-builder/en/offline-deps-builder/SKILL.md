@@ -76,6 +76,8 @@ The channels for getting dependency files are below. Channels higher in the list
 - (User attachment) The user downloads the file and attaches it to the conversation
 - (Assembly in the user's environment) The user runs this skill in their own networked environment, assembles the dependency skill there, and uploads it
 
+When GitHub access is needed, look in the current session's tool list for a tool that attaches a GitHub repository to the session. If one exists, call it before each repository's first GitHub access. Pass the owner and the repository name from the address as separate values. Follow any access route the tool's reply names. Skip this step when no such tool exists or the call is refused.
+
 Most software can be obtained through more than one channel. A release binary address can be blocked while the git repository stays open. Some projects publish the same function through another package registry or as a WASM package. When one channel is blocked, look for another and try it, and record each channel tried with its result.
 
 When you ask the user to download files, follow the rules below.
