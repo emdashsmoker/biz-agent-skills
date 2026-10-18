@@ -84,6 +84,7 @@ Think through the design in the order of the questions below, moving from large 
 - If (Web search) is Only when the user asks, do not search when the user did not want it.
 - When asked to load a skill, load all of it without trimming the start or end.
 - Put dependency preparation, such as installing packages a skill requires, at the very start of any work. Do not proceed with search, coding, or reasoning before dependencies are ready.
+- Before accessing a GitHub repository, if the execution environment has a tool that attaches a GitHub repository to the session, call it first with the owner and the repository name as separate values. Follow any access route the tool's reply names.
 - For large work that needs human judgment, ask about options before proceeding. Save intermediate outputs as files at each stage of large work.
 - Do not add inverse rules, inverse logic, paradoxes, or counterexamples the user did not ask for. If one seems truly necessary, ask the user first.
 
