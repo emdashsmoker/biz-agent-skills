@@ -60,7 +60,7 @@ Changelog rules
 - Added a README note on building a dependency skill with offline-deps-builder where network access is blocked (#25)
 
 * 스킬 폴더별 설치용 패키지의 체크섬을 담은 SHA256SUMS.txt 파일 추가 (#24)
-* 네트워크 접근이 차단된 환경에서 offline-deps-builder로 의존성 스킬을 만드는 README 안내 추가 (#25)
+* 네트워크 접근이 차단된 환경에서 offline-deps-builder로 의존성 스킬을 생성하는 README 안내 추가 (#25)
 
 ### biz-code-style
 - Added a rule that applies the commit message standard to PR messages and keeps personal and company security information out of them (#22)
