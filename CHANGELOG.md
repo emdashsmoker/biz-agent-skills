@@ -14,12 +14,12 @@ Changelog rules
 - (Entry unit) Write one entry for each change that users can notice.
 - (Grouping) Combine same-day pull requests on the same topic into one entry and list every pull request number.
 - (Splitting) Split a pull request that contains unrelated changes into separate entries.
-- (Skill tag) Use the folder name under skills/. Join two names with "and" in English and "및" in Korean. Separate three or more names with commas. Use (common) in English and (공통) in Korean for repository-wide changes.
-- (Entry order) Put repository-wide entries first and sort the rest by skill folder name.
-- (English entries) List the English entries first under each date with the "-" bullet.
+- (Skill header) Group the entries of each date under ### headers named after the folders under skills/. Use ### Common (공통) for repository-wide changes and changes that apply to every skill. Repeat a change that applies to several skills under each of their headers.
+- (Entry order) Put the Common (공통) header first and sort the other headers by skill folder name. List the entries under each header in pull request order.
+- (English entries) List the English entries first under each header with the "-" bullet.
 - (Korean entries) Leave one blank line after the English entries and list the same changes in the same order with the "*" bullet so that they render as a separate list.
-- (English format) - (skill tag) Description that starts with the change type verb (#PR number)
-- (Korean format) * (skill tag) Korean noun-ending description that ends with the change type word (#PR number)
+- (English format) - Description that starts with the change type verb (#PR number)
+- (Korean format) * Korean noun-ending description that ends with the change type word (#PR number)
 - (Change types) Added (추가), Changed (변경), Fixed (수정), Removed (삭제), Action needed (필요)
 - (Include) Changes to skill outputs, usage steps, or installation.
 - (Exclude) Typo and wording fixes, demo image replacements, README changes unrelated to installation, internal refactoring without behavior changes, and commits that only change CHANGELOG.md.
@@ -27,27 +27,71 @@ Changelog rules
 -->
 
 ## 2026-10-18
-- (biz-code-style, biz-code-style-lite, chart, offline-deps-builder, pref-architect) Added a step that attaches GitHub repositories before accessing GitHub (#26, #27, #28)
 
-* (biz-code-style, biz-code-style-lite, chart, offline-deps-builder, pref-architect) GitHub 접근 전 GitHub 저장소 연결 단계 추가 (#26, #27, #28)
+### biz-code-style
+- Added a step that attaches GitHub repositories before accessing GitHub (#27, #28)
+
+* GitHub 접근 전 GitHub 저장소 연결 단계 추가 (#27, #28)
+
+### biz-code-style-lite
+- Added a step that attaches GitHub repositories before accessing GitHub (#27, #28)
+
+* GitHub 접근 전 GitHub 저장소 연결 단계 추가 (#27, #28)
+
+### chart
+- Added a step that attaches GitHub repositories before accessing GitHub (#26)
+
+* GitHub 접근 전 GitHub 저장소 연결 단계 추가 (#26)
+
+### offline-deps-builder
+- Added a step that attaches GitHub repositories before accessing GitHub (#26)
+
+* GitHub 접근 전 GitHub 저장소 연결 단계 추가 (#26)
+
+### pref-architect
+- Added a step that attaches GitHub repositories before accessing GitHub (#27)
+
+* GitHub 접근 전 GitHub 저장소 연결 단계 추가 (#27)
 
 ## 2026-10-17
-- (common) Added SHA256SUMS.txt files with the checksums of the install packages to each skill folder (#24)
-- (common) Added a README note on building a dependency skill with offline-deps-builder where network access is blocked (#25)
-- (biz-code-style, biz-code-style-lite, pref-architect) Added a rule that applies the commit message standard to PR messages and keeps personal and company security information out of them (#22)
-- (slop-proof) Changed the skill name from anti-slop to slop-proof (#23)
 
-* (공통) 스킬 폴더별 설치용 패키지의 체크섬을 담은 SHA256SUMS.txt 파일 추가 (#24)
-* (공통) 네트워크 접근이 차단된 환경에서 offline-deps-builder로 의존성 스킬을 만드는 README 안내 추가 (#25)
-* (biz-code-style, biz-code-style-lite, pref-architect) 커밋 메시지 기준을 PR 메시지에 적용하여 개인정보 및 사내 보안 정보를 제외하는 규칙 추가 (#22)
-* (slop-proof) 스킬 이름을 anti-slop에서 slop-proof로 변경 (#23)
+### Common (공통)
+- Added SHA256SUMS.txt files with the checksums of the install packages to each skill folder (#24)
+- Added a README note on building a dependency skill with offline-deps-builder where network access is blocked (#25)
+
+* 스킬 폴더별 설치용 패키지의 체크섬을 담은 SHA256SUMS.txt 파일 추가 (#24)
+* 네트워크 접근이 차단된 환경에서 offline-deps-builder로 의존성 스킬을 만드는 README 안내 추가 (#25)
+
+### biz-code-style
+- Added a rule that applies the commit message standard to PR messages and keeps personal and company security information out of them (#22)
+
+* 커밋 메시지 기준을 PR 메시지에 적용하여 개인정보 및 사내 보안 정보를 제외하는 규칙 추가 (#22)
+
+### biz-code-style-lite
+- Added a rule that applies the commit message standard to PR messages and keeps personal and company security information out of them (#22)
+
+* 커밋 메시지 기준을 PR 메시지에 적용하여 개인정보 및 사내 보안 정보를 제외하는 규칙 추가 (#22)
+
+### pref-architect
+- Added a rule that applies the commit message standard to PR messages and keeps personal and company security information out of them (#22)
+
+* 커밋 메시지 기준을 PR 메시지에 적용하여 개인정보 및 사내 보안 정보를 제외하는 규칙 추가 (#22)
+
+### slop-proof
+- Changed the skill name from anti-slop to slop-proof (#23)
+
+* 스킬 이름을 anti-slop에서 slop-proof로 변경 (#23)
 
 ## 2026-10-16
-- (chart) Added a visual check loop that inspects the rendered image and renders again until no defects remain (#12)
 
-* (chart) 렌더링한 이미지를 검수하여 결함이 없을 때까지 다시 렌더링하는 시각 검수 단계 추가 (#12)
+### chart
+- Added a visual check loop that inspects the rendered image and renders again until no defects remain (#12)
+
+* 렌더링한 이미지를 검수하여 결함이 없을 때까지 다시 렌더링하는 시각 검수 단계 추가 (#12)
 
 ## 2026-10-13
-- (common) Added the first public release with the Korean and English editions of anti-slop, biz-code-style, biz-code-style-lite, cagr, chart, clear-comm, dataframe-ops, digest, environment-analysis, environment-analysis-lite, five-forces, fx-krw, lean-work, logical-write, logical-write-lite, long-task-ledger, md-parser, network-analysis, network-analysis-lite, no-jargon, offline-deps-builder, onto-mece, ontology-modeling, practical-calc, practical-calc-lite, practical-stats, pref-architect, project-plan, rfp-strategy, skill-forge, source-check, strategy-builder, think-review and think-review-lite
 
-* (공통) anti-slop, biz-code-style, biz-code-style-lite, cagr, chart, clear-comm, dataframe-ops, digest, environment-analysis, environment-analysis-lite, five-forces, fx-krw, lean-work, logical-write, logical-write-lite, long-task-ledger, md-parser, network-analysis, network-analysis-lite, no-jargon, offline-deps-builder, onto-mece, ontology-modeling, practical-calc, practical-calc-lite, practical-stats, pref-architect, project-plan, rfp-strategy, skill-forge, source-check, strategy-builder, think-review, think-review-lite 스킬의 한국어판 및 영어판을 담은 최초 공개 버전 추가
+### Common (공통)
+- Added the first public release with the Korean and English editions of anti-slop, biz-code-style, biz-code-style-lite, cagr, chart, clear-comm, dataframe-ops, digest, environment-analysis, environment-analysis-lite, five-forces, fx-krw, lean-work, logical-write, logical-write-lite, long-task-ledger, md-parser, network-analysis, network-analysis-lite, no-jargon, offline-deps-builder, onto-mece, ontology-modeling, practical-calc, practical-calc-lite, practical-stats, pref-architect, project-plan, rfp-strategy, skill-forge, source-check, strategy-builder, think-review and think-review-lite
+
+* anti-slop, biz-code-style, biz-code-style-lite, cagr, chart, clear-comm, dataframe-ops, digest, environment-analysis, environment-analysis-lite, five-forces, fx-krw, lean-work, logical-write, logical-write-lite, long-task-ledger, md-parser, network-analysis, network-analysis-lite, no-jargon, offline-deps-builder, onto-mece, ontology-modeling, practical-calc, practical-calc-lite, practical-stats, pref-architect, project-plan, rfp-strategy, skill-forge, source-check, strategy-builder, think-review, think-review-lite 스킬의 한국어판 및 영어판을 담은 최초 공개 버전 추가
