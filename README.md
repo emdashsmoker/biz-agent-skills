@@ -1,8 +1,8 @@
 # biz-agent-skills
 
-Agent Skills that support how planners, consultants and analysts think, write logically structured reports and carry out analysis. Every skill ships as a Korean original and an English translation. The Korean originals follow the document conventions of Korean public agencies and companies.
+Agent Skills that support the work of planners, consultants and analysts, from logical thinking to analysis and report writing. Every skill ships as a Korean original and an English translation. The Korean originals follow the document conventions of Korean public agencies and companies.
 
-기획자, 컨설턴트, 분석가의 사고방식, 논리적인 보고서 작성, 분석 업무를 지원하는 에이전트 스킬 모음입니다. 모든 스킬은 한국어 원본과 영어 번역본을 함께 제공합니다. 한국어 원본은 한국 공공기관과 기업의 문서 관행을 기준으로 작성했습니다.
+기획자, 컨설턴트, 분석가의 업무를 논리적 사고부터 분석과 보고서 작성까지 지원하는 에이전트 스킬 모음입니다. 모든 스킬은 한국어 원본과 영어 번역본을 함께 제공합니다. 한국어 원본은 한국 공공기관과 기업의 문서 관행을 기준으로 작성했습니다.
 
 <p align="center">
 <img src="assets/readme/report-anatomy.png" width="48%" alt="A report page whose title, sentences, figures and chart each follow a writing standard, with the skills that apply it">
