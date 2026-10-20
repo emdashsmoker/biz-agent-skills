@@ -20,7 +20,7 @@ Changelog rules
 - (Korean entries) Leave one blank line after the English entries and list the same changes in the same order with the "*" bullet so that they render as a separate list.
 - (English format) - Description that starts with the change type verb (#PR number)
 - (Korean format) * Korean noun-ending description that ends with the change type word (#PR number)
-- (Korean style) Write each Korean entry as one short formal sentence in note style with a noun ending. Avoid colloquial expressions.
+- (Korean style) Write each Korean entry in formal note style as a simple sentence (단문) with a noun ending. Keep one subject-predicate relation per entry, turn other clauses into noun phrases, and split an entry that carries two messages. Avoid colloquial expressions and placeholder nouns such as 것, 곳, 거, 셈 and 부분.
 - (Change types) Added (추가), Changed (변경), Fixed (수정), Removed (삭제), Action needed (필요)
 - (Include) Changes to skill outputs, usage steps, or installation.
 - (Exclude) Typo and wording fixes, demo image replacements, README changes unrelated to installation, internal refactoring without behavior changes, and commits that only change CHANGELOG.md.
@@ -61,22 +61,28 @@ Changelog rules
 - Added a README note on building a dependency skill with offline-deps-builder where network access is blocked (#25)
 
 * 스킬 폴더별 설치용 패키지의 체크섬을 담은 SHA256SUMS.txt 파일 추가 (#24)
-* 네트워크 접근이 차단된 환경에서 offline-deps-builder로 의존성 스킬을 생성하는 README 안내 추가 (#25)
+* 네트워크 차단 환경에서 offline-deps-builder로 의존성 스킬을 생성하는 README 안내 추가 (#25)
 
 ### biz-code-style
-- Added a rule that applies the commit message standard to PR messages and keeps personal and company security information out of them (#22)
+- Added a rule that applies the commit message standard to PR messages (#22)
+- Added a rule that keeps personal and company security information out of intermediate records (#22)
 
-* 커밋 메시지 기준을 PR 메시지에 적용하여 개인정보 및 사내 보안 정보를 제외하는 규칙 추가 (#22)
+* 커밋 메시지 기준을 PR 메시지에도 적용하는 규칙 추가 (#22)
+* 중간 기록에서 개인정보 및 사내 보안 정보를 제외하는 규칙 추가 (#22)
 
 ### biz-code-style-lite
-- Added a rule that applies the commit message standard to PR messages and keeps personal and company security information out of them (#22)
+- Added a rule that applies the commit message standard to PR messages (#22)
+- Added a rule that keeps personal and company security information out of intermediate records (#22)
 
-* 커밋 메시지 기준을 PR 메시지에 적용하여 개인정보 및 사내 보안 정보를 제외하는 규칙 추가 (#22)
+* 커밋 메시지 기준을 PR 메시지에도 적용하는 규칙 추가 (#22)
+* 중간 기록에서 개인정보 및 사내 보안 정보를 제외하는 규칙 추가 (#22)
 
 ### pref-architect
-- Added a rule that applies the commit message standard to PR messages and keeps personal and company security information out of them (#22)
+- Added a rule that applies the commit message standard to PR messages (#22)
+- Added a rule that keeps personal and company security information out of intermediate records (#22)
 
-* 커밋 메시지 기준을 PR 메시지에 적용하여 개인정보 및 사내 보안 정보를 제외하는 규칙 추가 (#22)
+* 커밋 메시지 기준을 PR 메시지에도 적용하는 규칙 추가 (#22)
+* 중간 기록에서 개인정보 및 사내 보안 정보를 제외하는 규칙 추가 (#22)
 
 ### slop-proof
 - Changed the skill name from anti-slop to slop-proof (#23)
@@ -88,7 +94,7 @@ Changelog rules
 ### chart
 - Added a visual check loop that inspects the rendered image and renders again until no defects remain (#12)
 
-* 렌더링한 이미지를 검수하여 결함이 없을 때까지 다시 렌더링하는 시각 검수 단계 추가 (#12)
+* 결함 해소 시점까지 렌더링 이미지 검수와 재렌더링을 반복하는 시각 점검 단계 추가 (#12)
 
 ## 2026-10-13
 
