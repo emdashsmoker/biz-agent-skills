@@ -27,6 +27,15 @@ Changelog rules
 - (Push) Commit on top of the latest main and push directly to main.
 -->
 
+## 2026-10-24
+
+### offline-deps-builder
+- Changed the timing of the font redistribution check to the pre-sharing check (#36)
+- Added a user confirmation step before connecting a substitute font (#36)
+
+* 폰트 재배포 조건의 확인 시점을 공유 전 점검 단계로 변경 (#36)
+* 대체 폰트 연결 전 사용자 확인 단계 추가 (#36)
+
 ## 2026-10-18
 
 ### biz-code-style

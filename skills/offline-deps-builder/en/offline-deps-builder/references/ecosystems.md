@@ -92,7 +92,7 @@ Use deb and rpm packages only when the target environment runs the same distribu
 
 ## Fonts
 
-Bundle only fonts whose license allows redistribution (such as the SIL Open Font License). When a document names a commercial font, bundle a similar free font and connect it as a substitute.
+Record each font's license in the manifest, as with any other dependency. Redistribution terms are covered by the pre-sharing check in SKILL.md. If a font that a document names cannot be obtained in the build environment, ask the user whether to attach the font file or to substitute a similar font. A substitute font changes how the output looks.
 
 - If the tool offers a font path option, use that option
 - Without such an option, copy the fonts to `$HOME/.local/share/fonts` and run `fc-cache`. If HOME is not writable, write a fontconfig settings file that adds the font folder and a writable cache folder, and point FONTCONFIG_FILE at it

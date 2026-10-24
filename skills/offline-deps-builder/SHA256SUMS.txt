@@ -1,2 +1,2 @@
-b0b3d7825690c486c71bee7e37ed9112ccb3f94d0930f1da7d5e22f73fa890f1  offline-deps-builder-en.skill
-e7cb3b235539186fd9e03e1a10e60bbaed7aad119a7fad3dbcc1beefd0f12b9d  offline-deps-builder-ko.skill
+99f00afc39adc40bf8c73a90ffa9482f76f5088b723789e7016022ebf04808cd  offline-deps-builder-en.skill
+4ed351c06e027ad1f91fb511e63a89a43b17d300e08546727450a25ccf462f0f  offline-deps-builder-ko.skill
