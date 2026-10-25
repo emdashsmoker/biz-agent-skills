@@ -63,6 +63,9 @@ Changelog rules
 - Changed build mode to ask the user whether to run tests and whether to run them in a subagent or a separate session (#39)
 - Removed framework selection, prompt output formats, documentation tables and the table of contents rule from build mode (#39)
 - Removed the planning and consulting scope from the description and Combine mode (#39)
+- Added a build mode rule to include instructions that call another skill or agent only when the user wants them, with a fallback for a missing target (#40)
+- Changed the package format used when none is set from .skill to the recommended output format in the environment check table (#40)
+- Added a step to confirm the target environment's skill registration steps when the chat window has no skill save feature (#40)
 
 * 제작 모드 템플릿에 SKILL.md 프론트매터 양식 추가 (#38)
 * 제작 모드의 설계 방식을 산출물 단위 업무 분해와 단계별 수행 주체 배정으로 변경 (#39)
@@ -71,6 +74,9 @@ Changelog rules
 * 제작 모드 시험의 수행 여부와 서브 에이전트 실행 여부를 사용자에게 질의하는 방식으로 변경 (#39)
 * 제작 모드의 프레임워크 선택, 프롬프트 출력 형식, 문서화 표, 참조 파일 목차 규칙 삭제 (#39)
 * description과 조합 모드의 기획과 컨설팅 업무 한정 표현 삭제 (#39)
+* 제작 모드에 다른 스킬이나 에이전트를 호출하는 지시는 사용자가 원할 때만 넣고 대체 동작을 함께 적는 규칙 추가 (#40)
+* 형식 미지정 시 패키지 기본값을 .skill에서 실행 환경 판별 표의 권장 산출 형식으로 변경 (#40)
+* 대화창에 스킬 저장 기능이 없는 환경에서 스킬 등록 절차를 사용자에게 확인하는 단계 추가 (#40)
 
 ### think-review
 - Changed the scope for code to its classification structure (#37)
