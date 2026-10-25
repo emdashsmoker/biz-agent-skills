@@ -12,7 +12,7 @@ This skill handles the building, combining, and managing of skills and agent ins
 
 ## Entry
 
-| Mode | What the user wants | Main output |
+| Mode | Request purpose | Main output |
 |---|---|---|
 | Build | Create a new skill or agent instructions, or improve an existing skill | Skill package or agent instruction file |
 | Combine | Decide the order in which installed skills handle a task | Stage-by-stage execution plan |
@@ -159,11 +159,11 @@ Organize the results of work capture and process design into a design, and write
 | Output | Format, completion criteria |
 | Input | Material, sources, sensitivity |
 | Target environment | Skill or agent instructions, run conditions |
-| File layout | SKILL.md and the list of bundled files |
+| File layout | SKILL.md, the list of bundled files, and the package format (.skill or zip) |
 | Applied defaults | Values the model set because the user did not |
 
 ## Process
-| Step | What it does | Input | Output | Actor |
+| Step | Tasks | Input | Output | Actor |
 |---|---|---|---|---|
 ```
 
@@ -172,7 +172,7 @@ Organize the results of work capture and process design into a design, and write
 The model decides whether to use a skill from the name and description in the skill list alone. The body is read only after the skill triggers, so put every condition for use in description.
 - Write name with 1-64 lowercase letters, digits, and hyphens, and do not start or end with a hyphen or use consecutive hyphens
 - Make name match the folder name, and check the target environment's documentation for words it forbids
-- Write what the skill does and when to use it in description within 1,024 characters, without XML tags
+- Write the skill's tasks and when to use it in description within 1,024 characters, without XML tags
 - In when to use it, include actual request phrases and requests that do not name the work directly, and state the instruction to use the skill for those requests (weak wording keeps the skill from being called even on requests that need it)
 - If adjacent work shares keywords, briefly state what this skill does not cover
 - Wrap description in double quotes (without quotes, a colon in the text breaks YAML parsing)
@@ -195,13 +195,13 @@ Use the template below as the default body and omit sections the work does not n
 ```
 ---
 name: {skill name, same as the folder name}
-description: "{What the skill does}. {When to use it}. Use this skill whenever the user mentions '{request phrase}', '{request phrase}', or similar."
+description: "{The skill's tasks}. {When to use it}. Use this skill whenever the user mentions '{request phrase}', '{request phrase}', or similar."
 ---
 # {Skill name}
 {The work the skill handles and its output}
 ## Process
 ### Step {number}: {step name}
-{What to do, judgment criteria and reasons, scripts or tools to use, user checkpoints}
+{Tasks, judgment criteria and reasons, scripts or tools to use, user checkpoints}
 ## Output format
 {Output template}
 ## Cautions
@@ -255,13 +255,12 @@ If the target environment does not support skills, write the same design as one 
 
 ## Test Loop
 
-Before handing over the finished version, test it with real requests. If the user does not want tests, skip this stage.
+Before handing over the finished version, ask the user whether to run tests. If the environment can run a subagent or a separate session, ask in the same question whether to run in the same conversation or as independent runs (independent runs keep the author's intent out and expose defects better, but take more time and cost). If the user declines tests, move on to the final check.
 1. Write 2-3 requests the user would plausibly send and get the user's confirmation (include the information real requests carry, such as file names, readers, and length, and one edge case)
-2. If the environment can run a subagent or a separate session, ask the user whether to use independent runs (independent runs keep the author's intent out and expose defects better, but take more time and cost)
-3. If independent runs are approved, run each request with the skill and with a baseline (the baseline is a run without the skill for a new skill, or a run of the previous version for an improved skill)
-4. When running in the same conversation, run each request following only the written instructions, and record where an unclear instruction made a decision difficult (filling gaps in the instructions with the author's intent hides defects)
-5. Check items that can be judged objectively, such as file format, required sections, and expressions ruled out, with code
-6. Present the outputs and check results, and get specific feedback per request (an author's own evaluation tends to be lenient, so the user's review settles quality)
+2. (Independent runs) Run each request with the skill and with a baseline (the baseline is a run without the skill for a new skill, or a run of the previous version for an improved skill)
+3. (Same-conversation run) Run each request following only the written instructions, and record where an unclear instruction made a decision difficult (filling gaps in the instructions with the author's intent hides defects)
+4. Check items that can be judged objectively, such as file format, required sections, and expressions ruled out, with code
+5. Present the outputs and check results, and get specific feedback per request (an author's own evaluation tends to be lenient, so the user's review settles quality)
 
 For steps where unproductive attempts repeated, first check whether an unclear instruction led to trying several approaches, whether an instruction that did not apply to the current request was followed, and whether options came without a default. Improve by these principles.
 - Generalize each fix so it works for every request of the same type (copying a test request's wording into the instructions fails on other requests)
@@ -270,7 +269,7 @@ For steps where unproductive attempts repeated, first check whether an unclear i
 - Strengthen the reason for a rule the model broke, and add the points the user corrected to the cautions
 - End the loop when the user is satisfied, feedback is empty, or improvements stop having effect
 
-After the tests, check description. Write 5 requests that should use the skill and 5 requests that share keywords but suit another skill, and review with the user whether description separates the two groups. If independent runs were approved, give a new session or a subagent only the name and description of each listed skill and the request, and check which skill it picks. For a misclassified request, reflect the category it belongs to in description (adding the failed request's words as they are yields a description that fits only that wording).
+After the tests, check description. Write 5 requests that should use the skill and 5 requests that share keywords but suit another skill, and review with the user whether description separates the two groups. If independent runs were chosen, give a new session or a subagent only the name and description of each listed skill and the request, and check which skill it picks. For a misclassified request, reflect the category it belongs to in description (adding the failed request's words as they are yields a description that fits only that wording).
 
 ## Final Check
 
@@ -285,7 +284,7 @@ Before packaging, check the items below with code. In environments without code 
 ## Packaging
 
 Bundle a skill that passed the check under the packaging rules and deliver it.
-- The default output is a .skill file, with a zip file of the same content added if the user wants one
+- Produce the package in the format approved in the design, and use a .skill file if no format was set
 - Deliver the package, SKILL.md, and every bundled file so the user can review the content before installing
 - To install directly into a skill root, follow the direct install rules of Import Comparison (user approval, backup of the existing folder)
 - In environments without file delivery, output SKILL.md and each bundled file in its own code block and give manual install steps
@@ -306,14 +305,14 @@ Draft an execution plan for handling the user's task with installed skills. Once
 
 - If the task goal is unclear, ask briefly about only the deliverable form and the input material
 - Split the task into stages and assign one skill to each stage (set the number of stages to fit the task)
-- For planning and consulting tasks, start from the default stages below and drop stages the task does not have
+- Start from the default stages below and skip stages the task does not have
 - Choose skills by how well the stage purpose matches the description (if there are several candidates, pick the one that names the output format or field more specifically and list the rest as alternatives)
 - Assign skills the user names to their stage first
 - Give stages that can run at the same time the same number
 - Separate rule-type skills that apply across all stages, such as writing style or citation standards, into an always-on entry
 - Mark stages with no matching skill as missing stages, and offer the model's default handling or a new skill from Build mode as options
 
-| Default stage | What it does |
+| Default stage | Tasks |
 |---|---|
 | Gather | Convert submitted material to text, search the web, collect figures |
 | Analyze | Apply analysis frameworks, calculate, compare |
@@ -328,10 +327,10 @@ Draft an execution plan for handling the user's task with installed skills. Once
 Execution plan ({task name})
 | Stage | Skill | Work | Input |
 |---|---|---|---|
-| 1 | {skill name} | {one line on what this stage does} | User-submitted material |
-| 2 | {skill name} | {one line on what this stage does} | Stage 1 output |
-| 2 | {skill name} | {one line on what this stage does} | Stage 1 output |
-| 3 | {skill name} | {one line on what this stage does} | Stage 2 output |
+| 1 | {skill name} | {one line on this stage's tasks} | User-submitted material |
+| 2 | {skill name} | {one line on this stage's tasks} | Stage 1 output |
+| 2 | {skill name} | {one line on this stage's tasks} | Stage 1 output |
+| 3 | {skill name} | {one line on this stage's tasks} | Stage 2 output |
 (Always on) {skill name}
 (Alternative skill) Stage {stage number} {skill name}
 (Missing stage) {stage name}, model default handling or new skill build
@@ -481,7 +480,8 @@ Redesign the split of work between instructions and skills when the instructions
 - (Build) Did every final check item pass, and does the result summary table record the check results?
 - (Build) Were SKILL.md and every bundled file delivered along with the package?
 - (Build) Are instructions provided in a code block free of nested code blocks?
-- (Build) Unless the test loop was skipped, were test results shown to the user?
+- (Build) Was the user asked whether to run tests and how to run them?
+- (Build) Were the results of the tests run shown to the user?
 - (Combine) Is every skill in the plan on the collected list, and does every stage state its input source?
 - (Manage) Does SKILL.md sit directly inside the skill folder in each package?
 - (Manage) In the import comparison verdict table, is every submitted skill marked as duplicate, update, update (layout difference), new, or unreadable?
