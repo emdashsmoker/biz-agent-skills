@@ -1,6 +1,6 @@
 ---
 name: skill-forge
-description: "Builds, combines, and manages skills and agent instructions. Build mode maps a real work process to steps for the model, scripts, tools, or the user, then writes, tests, and packages the skill or agent instructions. Combine mode plans which installed skill handles each work stage, with inputs and outputs. Manage mode discovers skills, checks ownership and identity, then exports, compares on import, and packages skills, and exports, packages, or restructures user instructions. Use it whenever the user mentions '/skill-forge', 'make a skill', 'turn this task into a skill', 'improve this skill', 'write agent instructions', 'design an agent', 'design a prompt', 'which skill should I use', 'recommend a skill combination', 'manage skills', 'export skills', 'import skills', 'migrate skills', 'compare skills', 'check duplicate skills', 'package a skill', 'turn my instructions into a skill', or 'restructure my instructions', or submits skill files (zip, .skill, SKILL.md) to compare, import, or improve."
+description: "Builds, combines, and manages skills and agent instructions. Build mode maps a real work process to steps for the model, scripts, tools, or the user, then writes, tests, and packages the skill or agent instructions. Combine mode picks a pattern and plans each stage's installed skill, inputs, outputs, and pass criteria. Manage mode discovers skills, checks ownership and identity, then exports, compares on import, and packages skills, and exports, packages, or restructures user instructions. Use it whenever the user mentions '/skill-forge', 'make a skill', 'turn this task into a skill', 'improve this skill', 'write agent instructions', 'design an agent', 'design a prompt', 'which skill should I use', 'recommend a skill combination', 'manage skills', 'export skills', 'import skills', 'migrate skills', 'compare skills', 'check duplicate skills', 'package a skill', 'turn my instructions into a skill', or 'restructure my instructions', or submits skill files (zip, .skill, SKILL.md) to compare, import, or improve."
 license: GPL-3.0-or-later with an output exception. Terms in LICENSE and NOTICE.md
 ---
 
@@ -15,7 +15,7 @@ This skill handles the building, combining, and managing of skills and agent ins
 | Mode | Request purpose | Main output |
 |---|---|---|
 | Build | Create a new skill or agent instructions, or improve an existing skill | Skill package or agent instruction file |
-| Combine | Decide the order in which installed skills handle a task | Stage-by-stage execution plan |
+| Combine | Decide the pattern and order in which installed skills handle a task | Stage-by-stage execution plan |
 | Manage | Export, import, or compare skills and user instructions | Packages, verdict table, instruction files |
 
 - If the request states a purpose, enter the matching mode
@@ -37,6 +37,7 @@ This skill handles the building, combining, and managing of skills and agent ins
 | Package | A zip file with the skill folder at its top level (some environments also accept the same zip renamed with a .skill extension) |
 | Hash | A fixed-length string computed from file contents (it changes with any content change, which makes it useful for identity checks; the method is sha256) |
 | Harness | The program that attaches tools and an execution environment to a model so it can act as an agent (chat apps, coding agents, and similar) |
+| Independent run | A way of running work in a separate run unit that does not share the current conversation history (subagents, separate sessions, and similar) |
 
 ## Environment Check
 
@@ -294,60 +295,66 @@ Bundle a skill that passed the check under the packaging rules and deliver it.
 
 # Combine Mode
 
-Draft an execution plan for handling the user's task with installed skills. Once the user approves the plan, run it as planned.
+Draft an execution plan that links installed skills to handle the user's task, and run it as planned once the user approves. Every added stage and skill adds time, cost, and error propagation, so start from the simplest pattern and add stages only where they improve the result.
+- (Skill list) Use skill discovery to collect each skill's name, description, and location, and use only skills on this list in the plan (mark skills whose name or description cannot be read as excluded candidates)
+- (Goal) Ask about whichever of the deliverable form, input material, and completion criteria is unclear, and draft the plan only after the answers are in (a vague goal splits interpretation at every stage)
 
-## Skill Inventory
+## Pattern Selection
 
-- Use skill discovery to build a list of each skill's name, description, and location
-- Exclude skills whose name or description cannot be read, and list them as excluded at the bottom of the plan
-- Use only skills on the list in the plan
+Review the patterns from the top of the table below and move to the next pattern only when there is a reason the previous one cannot handle the task. Patterns can be mixed (for example, one stage of a chain built as a review loop).
 
-## Plan Design
+| Pattern | When to use | Plan items |
+|---|---|---|
+| Single skill | One skill's description covers the whole deliverable of the task | The skill to use |
+| Chain | The task splits into fixed stages and each stage's output is the next stage's input | Pass criteria for each stage |
+| Routing | Each input type needs a different skill and the type can be identified clearly | Identification criteria, skill per type |
+| Split | The task splits into subtasks that do not depend on each other, or one output must be checked against several criteria | Subtask list, merge method |
+| Dynamic split | The number and content of subtasks are settled only after reading the input | Criteria for deriving subtasks, synthesis method |
+| Review loop | Review criteria are clear and the output improves when the findings are applied | Review criteria, iteration limit |
+| Autonomous run | The number of stages cannot be set in advance, so the model checks actual results at each stage to decide the next one | User checkpoints, stage limit, stop conditions |
 
-- If the task goal is unclear, ask briefly about only the deliverable form and the input material
-- Split the task into stages and assign one skill to each stage (set the number of stages to fit the task)
-- Start from the default stages below and skip stages the task does not have
-- Choose skills by how well the stage purpose matches the description (if there are several candidates, pick the one that names the output format or field more specifically and list the rest as alternatives)
-- Assign skills the user names to their stage first
-- Give stages that can run at the same time the same number
-- Separate rule-type skills that apply across all stages, such as writing style or citation standards, into an always-on entry
-- Mark stages with no matching skill as missing stages, and offer the model's default handling or a new skill from Build mode as options
+- Before running, confirm with the user any input whose routing type is ambiguous and any subtask list derived for a dynamic split
+- End a review loop at whichever comes first: the review criteria are met, a round brings no improvement over the previous one, or the iteration limit is reached
+- Offer an autonomous run only as an option, and if the user picks it, ask for the items in the table and record them in the plan (it is the pattern with the highest cost and error accumulation, so state that it runs under the user's responsibility)
 
-| Default stage | Tasks |
-|---|---|
-| Gather | Convert submitted material to text, search the web, collect figures |
-| Analyze | Apply analysis frameworks, calculate, compare |
-| Outline | Design conclusions, outline, and storyline |
-| Write | Write the body text |
-| Review | Check and correct logic, sources, and wording |
-| Produce | Generate final file formats such as reports and slide decks |
+## Stage Design
+
+- (Stage split) Split stages by output on the same basis as Work Capture in Build mode, and assign one skill to each stage (give stages that do not depend on each other the same number with a, b, and so on)
+- (Skill choice) Choose by how well the stage output matches the description, and assign skills the user names to their stage first (if there are several candidates, pick the one that names the output format or field more specifically and list the rest as alternatives)
+- (Always on) Separate rule-type skills that apply across all stages, such as writing style or citation standards, into an always-on entry
+- (Missing stage) Mark stages with no matching skill as missing stages, and offer the model's default handling or a new skill from Build mode as options
+- (Pass criteria) For each stage, write conditions a third party can judge from that stage's output alone (check objective items such as format with code when code execution is available)
 
 ## Plan Output Format
 
 ```
 Execution plan ({task name})
-| Stage | Skill | Work | Input |
-|---|---|---|---|
-| 1 | {skill name} | {one line on this stage's tasks} | User-submitted material |
-| 2 | {skill name} | {one line on this stage's tasks} | Stage 1 output |
-| 2 | {skill name} | {one line on this stage's tasks} | Stage 1 output |
-| 3 | {skill name} | {one line on this stage's tasks} | Stage 2 output |
+(Pattern) {chosen pattern}, {one-line reason}, {plan items from the pattern table that are not in the stage table}
+| Stage | Skill | Output | Input | Pass criteria |
+|---|---|---|---|---|
+| 1 | {skill name} | {this stage's output} | User-submitted material | {judging condition} |
+| 2a | {skill name} | {subtask output} | Stage 1 output | {judging condition} |
+| 2b | {skill name} | {subtask output} | Stage 1 output | {judging condition} |
+(Run mode) {same-conversation run or stage numbers for independent runs}, {confirm every stage or confirm only on failure}
 (Always on) {skill name}
 (Alternative skill) Stage {stage number} {skill name}
 (Missing stage) {stage name}, model default handling or new skill build
 (Excluded candidates) {names of skills that could not be read}
-A. Run   B. Revise plan   C. Redefine goal
+A. Run   B. Revise plan (output the revised plan)   C. Redefine goal (ask about the goal again and redesign)
 ```
 
-## Execution Branches
+## Execution
 
-| Choice | Action |
-|---|---|
-| A Run | Load always-on skills first, run skills in order from stage 1, show the output of each stage, and confirm before moving to the next stage |
-| B Revise plan | Output the revised plan and present A, B, C again |
-| C Redefine goal | Ask about the task goal again and redesign from the start |
+- (A Run) Apply always-on skills first, run the stages in plan order, show each stage's output and pass criteria result, and confirm before moving to the next stage (if the user chose to confirm only on failure, stop only at stages that fail the pass criteria)
+- (Applying skills) Use the environment's skill invocation feature, and if there is none, read that skill's SKILL.md and follow its instructions
+- (Stop conditions) When a stage fails its pass criteria, hits an error, reaches a limit or stop condition, or needs a stage the plan does not have, do not move to the next stage, and state the cause with options (rerun, swap in an alternative skill, skip, revise the plan, stop) (a failed output carries into every later stage)
+- (Instruction conflicts) If a stage skill and an always-on skill give conflicting instructions, show the conflict and apply the priority the user sets to the remaining stages
 
-- If an error occurs during execution, state the error, and once the user chooses between skipping and swapping in an alternative skill, update the plan and continue
+The run mode defaults to a same-conversation run, which handles the stages one by one in the current conversation. Run the subtasks of a split or dynamic split, and the review step of a review loop, as independent runs only when all of the conditions below hold.
+- The environment has a means for independent runs, and the user chose independent runs when approving the plan (explain the benefit of keeping the author's intent out together with the added time and cost)
+- Give each independent run unit the task goal, input material, skill to apply, output format, and pass criteria in full (an independent run unit cannot see the current conversation history)
+- After merging the results, check for term mismatches, overlaps, gaps, and conflicts before moving to the next stage (each unit judges separately, so consistency across results breaks easily)
+- If an independent run fails, switch that stage to a same-conversation run and tell the user
 
 # Manage Mode
 
@@ -476,14 +483,15 @@ Redesign the split of work between instructions and skills when the instructions
 # Pre-delivery Check
 
 - (Common) Were original skill files left unmodified and undeleted, and was a backup copy of the existing folder created for any direct install replacement?
-- (Common) Did design approval, independent runs, private skill classification, non-contributing file classification, update application, and direct install go through user confirmation?
+- (Common) Did design approval, independent runs, autonomous runs, private skill classification, non-contributing file classification, update application, and direct install go through user confirmation?
 - (Common) Were the environment check results and recommended path reported before starting, and were tasks on unavailable paths left unattempted?
 - (Build) Did every final check item pass, and does the result summary table record the check results?
 - (Build) Were SKILL.md and every bundled file delivered along with the package?
 - (Build) Are instructions provided in a code block free of nested code blocks?
 - (Build) Was the user asked whether to run tests and how to run them?
 - (Build) Were the results of the tests run shown to the user?
-- (Combine) Is every skill in the plan on the collected list, and does every stage state its input source?
+- (Combine) Is every skill in the plan on the collected list, and does every stage state its input source and pass criteria?
+- (Combine) Does the plan state the pattern, the reason for it, and that pattern's plan items, and were independent run results checked after merging?
 - (Manage) Does SKILL.md sit directly inside the skill folder in each package?
 - (Manage) In the import comparison verdict table, is every submitted skill marked as duplicate, update, update (layout difference), new, or unreadable?
 - (Manage) Was no update verdict made on the basis of extra file insertion or an added wrapper folder alone?
