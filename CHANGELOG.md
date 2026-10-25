@@ -30,37 +30,37 @@ Changelog rules
 ## 2026-10-25
 
 ### biz-code-style
-- Changed the scope for code to its classification structure
-- Added an exception that applies the domain specification's category count and depth to code
+- Changed the scope for code to its classification structure (#37)
+- Added an exception that applies the domain specification's category count and depth to code (#37)
 
-* 코드의 적용 범위를 분류 구조로 변경
-* 코드의 항목 수와 계층 깊이에 도메인 명세 기준을 적용하는 예외 추가
+* 코드의 적용 범위를 분류 구조로 변경 (#37)
+* 코드의 항목 수와 계층 깊이에 도메인 명세 기준을 적용하는 예외 추가 (#37)
 
 ### logical-write
-- Changed the scope for code to its classification structure
-- Added an exception that applies the domain specification's item count and depth to code
+- Changed the scope for code to its classification structure (#37)
+- Added an exception that applies the domain specification's item count and depth to code (#37)
 
-* 코드의 적용 범위를 분류 구조로 변경
-* 코드의 항목 수와 계층 깊이에 도메인 명세 기준을 적용하는 예외 추가
+* 코드의 적용 범위를 분류 구조로 변경 (#37)
+* 코드의 항목 수와 계층 깊이에 도메인 명세 기준을 적용하는 예외 추가 (#37)
 
 ### onto-mece
-- Changed the scope for code to its classification structure
-- Added an exception that applies the domain specification's category count and depth to code
+- Changed the scope for code to its classification structure (#37)
+- Added an exception that applies the domain specification's category count and depth to code (#37)
 
-* 코드의 적용 범위를 분류 구조로 변경
-* 코드의 범주 수와 계층 깊이에 도메인 명세 기준을 적용하는 예외 추가
+* 코드의 적용 범위를 분류 구조로 변경 (#37)
+* 코드의 범주 수와 계층 깊이에 도메인 명세 기준을 적용하는 예외 추가 (#37)
 
 ### ontology-modeling
-- Changed the scope for code to its classification structure
+- Changed the scope for code to its classification structure (#37)
 
-* 코드의 적용 범위를 분류 구조로 변경
+* 코드의 적용 범위를 분류 구조로 변경 (#37)
 
 ### think-review
-- Changed the scope for code to its classification structure
-- Added an exception that applies the domain specification's category count and depth to code
+- Changed the scope for code to its classification structure (#37)
+- Added an exception that applies the domain specification's category count and depth to code (#37)
 
-* 코드의 적용 범위를 분류 구조로 변경
-* 코드의 항목 수와 계층 깊이에 도메인 명세 기준을 적용하는 예외 추가
+* 코드의 적용 범위를 분류 구조로 변경 (#37)
+* 코드의 항목 수와 계층 깊이에 도메인 명세 기준을 적용하는 예외 추가 (#37)
 
 ## 2026-10-24
 
