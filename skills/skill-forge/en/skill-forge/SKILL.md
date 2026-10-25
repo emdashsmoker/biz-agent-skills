@@ -225,7 +225,6 @@ Step-by-step description or flow diagram
 
 ## Skill Writing Rules
 
-- Set the folder name and the frontmatter name to the same value
 - Compose name from 1-64 lowercase letters, digits, and hyphens, with no leading, trailing, or consecutive hyphens
 - Some environments reserve certain words in name, so check the target environment's documentation
 - Write description within 1,024 characters in the third person, covering what the skill does and when to use it, with no XML tags
@@ -240,9 +239,13 @@ Step-by-step description or flow diagram
 
 ## Prompt Writing Rules
 
-Use the template below as the default for the single format. A skill body follows the same layout under its frontmatter.
+Use the template below as the default for the single format and for skills. Only skills keep the frontmatter.
 
 ```
+---
+name: {Skill name, same as the folder name}
+description: "{What the skill does}. {When to use it}. Use this skill whenever the user mentions '{request phrase}' or '{request phrase}'. {Reference file names and their contents, if any}"
+---
 # {System name}
 ## Role
 {Role and expertise. If all modules share the same role, state it once}

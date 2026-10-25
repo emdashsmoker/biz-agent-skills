@@ -55,6 +55,11 @@ Changelog rules
 
 * 코드의 적용 범위를 분류 구조로 변경 (#37)
 
+### skill-forge
+- Added the SKILL.md frontmatter format to the build mode template (#38)
+
+* 제작 모드 템플릿에 SKILL.md 프론트매터 양식 추가 (#38)
+
 ### think-review
 - Changed the scope for code to its classification structure (#37)
 - Added an exception that applies the domain specification's category count and depth to code (#37)
