@@ -103,7 +103,7 @@ Turn a real work process into a skill or agent instructions. Work proceeds in th
 
 A skill is worth what it knows about the work that the model does not. Instructions written from general knowledge alone tend to stop at vague directions such as "handle appropriately." Gather work knowledge in this order.
 - (Work record) If the conversation already holds a task carried out, first extract the tools used, the order of steps, the points the user corrected, and the input and output formats
-- (Work material) Extract work-specific rules and gotchas from writing guides, templates, past outputs, review comments, and failure cases
+- (Work material) Extract work-specific rules and cautions from writing guides, templates, past outputs, review comments, and failure cases
 - (User answers) Ask only about the items the two sources above leave empty
 - If both sources are empty, propose doing one real task together with the user and then turning that process into the skill
 
@@ -134,15 +134,15 @@ Split the captured work process into steps and set the actor for each step. Step
 | Model judgment | Steps such as interpretation, structuring, and writing where several approaches work and variation in results is acceptable | Purpose and reason, judgment criteria, a short example |
 | Script | Steps such as calculation, format conversion, and format checks where the same input must give the same result | Command to run, input and output, response on failure |
 | External tool | Steps such as web search, files, APIs, and MCP tools that need information or systems outside the model | Conditions for use, how to check the result |
-| User checkpoint | Steps such as setting direction, judging appropriateness, and sending externally that carry accountability for the result or are hard to undo | Where to stop, what to show the user |
+| User checkpoint | Steps such as setting direction, judging appropriateness, and sending externally that carry accountability for the result or are hard to undo | Where to ask for confirmation, what to show the user |
 
 - Make sequential steps the default process and add a branch only when processing differs by input type (a simpler process makes intermediate checks and error tracing easier)
-- Make model judgment the default actor, and use a script only for steps where instructions alone give unstable results or the same code would be rewritten every run (unneeded scripts add edge cases and maintenance load)
+- Make model judgment the default actor, and use a script only for steps where instructions alone give inconsistent results or the same code would be rewritten every run (unneeded scripts add edge cases and maintenance load)
 - Check input material for gaps and format in the first step (a misread input spreads to every later step)
 - Handle numeric calculation by running code, and have unconfirmed facts checked with a tool or marked as unconfirmed
-- For steps that handle sensitive material, leave out sending it to external tools or add a pseudonymization step before them
+- For steps that handle sensitive material, exclude sending it to external tools or add a pseudonymization step before them
 - Where a part carries a core judgment such as setting direction, take the user's decision as input and have the model draft and check
-- Build outputs where quality matters in draft, check, and finalize order, and derive the check criteria from error types that actually occurred in the work (smooth text without evidence, minority opinions dropped, sources that do not exist, unperformed work described as done, and similar)
+- Build outputs where quality matters in draft, check, and finalize order, and derive the check criteria from error types that actually occurred in the work (assertive statements with weak evidence, minority opinions dropped, sources that do not exist, unperformed work described as done, and similar)
 - For work with many steps or long conversations, keep each step's intermediate output in a file so the work can resume after an interruption (confirm file saving with the user)
 
 ## Design Approval
@@ -181,16 +181,16 @@ The model decides whether to use a skill from the name and description in the sk
 ## Body Writing
 
 Every time the skill triggers, the body takes up context alongside the conversation history and other skills. Keep each instruction only if the model would get the task wrong without it.
-- Write work-specific rules, gotchas, and tool usage, and leave out general knowledge the model already has
+- Write work-specific rules, cautions, and tool usage, and leave out general knowledge the model already has
 - Give each rule a short reason so the model judges unfamiliar situations by the rule's intent (reasons are followed more reliably than repeated emphasis)
-- For steps that tolerate varied results, give only the purpose and criteria, and for steps that break when the order slips, fix the commands and order
-- When several methods work, give one default and an exception path (listing equal options delays judgment and makes results unstable)
-- Write a procedure that works for every request of the same type (an instruction holding only one case's answer cannot serve other requests)
+- For steps that tolerate varied results, give only the purpose and criteria, and for steps where a change in order causes errors, fix the commands and order
+- When several methods work, give one default and an exception path (listing equal options delays judgment and lowers consistency)
+- Write a procedure that works for every request of the same type (an instruction holding only one case's answer cannot be reused for other requests)
 - Give output formats as templates (models follow a concrete form more accurately than a prose description)
-- Keep work-specific facts the model tends to get wrong in the body as gotchas
+- Keep work-specific facts the model tends to get wrong in the body as cautions
 - For multi-step work, give each step check items and move to the next step only after the check passes
 
-Use the template below as the default body and drop sections the work does not need.
+Use the template below as the default body and omit sections the work does not need.
 
 ```
 ---
@@ -204,10 +204,10 @@ description: "{What the skill does}. {When to use it}. Use this skill whenever t
 {What to do, judgment criteria and reasons, scripts or tools to use, user checkpoints}
 ## Output format
 {Output template}
-## Gotchas
+## Cautions
 {Work-specific facts the model tends to get wrong}
 ## User decisions
-{Judgments the skill does not make and hands to the user}
+{Judgments the skill does not make and leaves to the user}
 ## Pre-delivery check
 {Check items a third party can apply with the same result}
 ```
@@ -230,7 +230,7 @@ A skill folder holds SKILL.md and subfolders created only when needed. The model
 
 | Location | Content |
 |---|---|
-| SKILL.md | Process, defaults, gotchas, and check items needed on every run (within 500 lines) |
+| SKILL.md | Process, defaults, cautions, and check items needed on every run (within 500 lines) |
 | references/ | Detailed criteria needed only in specific situations, and per-variant instructions |
 | scripts/ | Code for the steps that process design assigned to scripts |
 | assets/ | Forms and templates used in outputs |
@@ -238,37 +238,39 @@ A skill folder holds SKILL.md and subfolders created only when needed. The model
 - In the body, state the condition for reading or running each bundled file ("read references/table.md when building a table" gets read at the right moment, where "see references for details" does not)
 - Link reference files only one level deep from SKILL.md, and have per-variant reference files read only for their variant
 - Prefer standard libraries in scripts, and state needed dependencies in the body
-- Have scripts take input as arguments and provide usage help and error messages that give the cause and the fix (a script that waits for interactive input stalls the run)
-- Send script results to stdout and progress and warnings to stderr, and default to a summary when results are large (harnesses truncate long output)
+- Have scripts take input as arguments and provide usage help and error messages that give the cause and the fix (a script that waits for interactive input halts the run)
+- Send script results to stdout and progress and warnings to stderr, and default to a summary when results are large (harnesses may omit part of a long output)
 - When improving an existing skill, keep the original name and folder name, and edit a copy in a writable location
 
 ## Agent Instruction Writing
 
 If the target environment does not support skills, write the same design as one instruction text. System prompts, chatbot custom instructions, and project instruction files fall here.
-- Drop the frontmatter and keep the section layout of the body template
-- Bundled files cannot be read separately, so keep the process, gotchas, and output format first, and check the target environment's character limit
+- Omit the frontmatter and keep the section layout of the body template
+- Bundled files cannot be read separately, so keep the process, cautions, and output format first, and check the target environment's character limit
 - In environments without a code execution tool, turn the steps assigned to scripts into manual user steps
 - Write tool names exactly as the target environment shows them
-- Start with one agent, and split roles only when their work areas do not overlap (splitting sequential work across agents tends to break the information passed between steps)
+- Start with one agent, and split roles only when their work areas do not overlap (splitting sequential work across agents tends to lose information passed between steps)
 - When roles are split, write one instruction per role and state the inputs and outputs between roles in the design's process table
-- When providing instructions in a code block, do not put another code block inside (it breaks rendering, so use square or curly brackets instead of backticks for code notation)
+- When providing instructions in a code block, do not put another code block inside (it causes rendering errors, so use square or curly brackets instead of backticks for code notation)
 
 ## Test Loop
 
 Before handing over the finished version, test it with real requests. If the user does not want tests, skip this stage.
 1. Write 2-3 requests the user would plausibly send and get the user's confirmation (include the information real requests carry, such as file names, readers, and length, and one edge case)
-2. Run each request following only the written instructions, and record where an unclear instruction blocked a decision (filling gaps with the author's intent hides defects)
-3. Check items that can be judged objectively, such as file format, required sections, and expressions ruled out, with code
-4. Present the outputs and check results, and get specific feedback per request (an author's own evaluation in the same conversation tends to be lenient, so the user's review settles quality)
+2. If the environment can run a subagent or a separate session, ask the user whether to use independent runs (independent runs keep the author's intent out and expose defects better, but take more time and cost)
+3. If independent runs are approved, run each request with the skill and with a baseline (the baseline is a run without the skill for a new skill, or a run of the previous version for an improved skill)
+4. When running in the same conversation, run each request following only the written instructions, and record where an unclear instruction made a decision difficult (filling gaps in the instructions with the author's intent hides defects)
+5. Check items that can be judged objectively, such as file format, required sections, and expressions ruled out, with code
+6. Present the outputs and check results, and get specific feedback per request (an author's own evaluation tends to be lenient, so the user's review settles quality)
 
-For steps where the run went in circles, first check whether an unclear instruction led to trying several approaches, whether an instruction that did not apply to the current request was followed, and whether options came without a default. Improve by these principles.
+For steps where unproductive attempts repeated, first check whether an unclear instruction led to trying several approaches, whether an instruction that did not apply to the current request was followed, and whether options came without a default. Improve by these principles.
 - Generalize each fix so it works for every request of the same type (copying a test request's wording into the instructions fails on other requests)
 - Delete instructions that do not contribute to the result
 - Bundle helper code written repeatedly across tests into the scripts folder
-- Strengthen the reason for a rule the model broke, and add the points the user corrected to the gotchas
-- End the loop when the user is satisfied, feedback is empty, or improvement stalls
+- Strengthen the reason for a rule the model broke, and add the points the user corrected to the cautions
+- End the loop when the user is satisfied, feedback is empty, or improvements stop having effect
 
-After the tests, check description. Write 5 requests that should use the skill and 5 requests that share keywords but suit another skill, and review with the user whether description separates the two groups. For a request placed on the wrong side, reflect the category it belongs to in description (adding the failed request's words as they are fits only that wording).
+After the tests, check description. Write 5 requests that should use the skill and 5 requests that share keywords but suit another skill, and review with the user whether description separates the two groups. If independent runs were approved, give a new session or a subagent only the name and description of each listed skill and the request, and check which skill it picks. For a misclassified request, reflect the category it belongs to in description (adding the failed request's words as they are yields a description that fits only that wording).
 
 ## Final Check
 
@@ -446,7 +448,7 @@ Direct install follows these rules.
 - Copy the folder of each new skill into the skill root
 - Keep a backup copy of each updated skill's existing folder, then replace it
 - If several roots are writable, ask the user where to install
-- Replace updated skills in the root that held the original so the same skill does not pile up in two places
+- Replace updated skills in the root that held the original so the same skill is not installed twice in different places
 
 ## Instruction File Export
 
@@ -474,7 +476,7 @@ Redesign the split of work between instructions and skills when the instructions
 # Pre-delivery Check
 
 - (Common) Were original skill files left unmodified and undeleted, and was a backup copy of the existing folder created for any direct install replacement?
-- (Common) Did design approval, private skill classification, non-contributing file classification, update application, and direct install go through user confirmation?
+- (Common) Did design approval, independent runs, private skill classification, non-contributing file classification, update application, and direct install go through user confirmation?
 - (Common) Were the environment check results and recommended path reported before starting, and were tasks on unavailable paths left unattempted?
 - (Build) Did every final check item pass, and does the result summary table record the check results?
 - (Build) Were SKILL.md and every bundled file delivered along with the package?
