@@ -197,5 +197,6 @@ The original asserts absence ("almost none", "none at all") without survey groun
 ## Scope
 
 - When the user specifies a classification criterion, apply it first. Tell the user when you find a structural defect.
-- Code itself is out of scope. Apply the rules to the design structure of the code and to explanatory sentences.
+- The classification structure of code is in scope. Check function boundaries, conditional branches, exception handling, enums, and class inheritance.
+- The recommended item count and hierarchy depth exist for document readers. In code, follow the item count and depth set by the domain specification.
 - Simple lists such as rankings or catalogs are distinct from classifications, and these rules are not enforced on them.

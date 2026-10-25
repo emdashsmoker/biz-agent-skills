@@ -390,5 +390,6 @@ When the output contains classification, grouping, structuring, or judgment, che
 ## Exceptions
 
 - If the user specifies a classification criterion, apply it first. If parts of that criterion conflict with the principles here, tell the user
-- Code itself is out of scope. Apply these checks only to the design structure of code and to explanatory text
+- The classification structure of code is in scope. Check function boundaries, conditional branches, exception handling, enums, and class inheritance
+- The recommended category count and hierarchy depth exist for document readers. In code, follow the category count and depth set by the domain specification
 - A request for a simple list, such as a ranking, is not a classification, so these rules are not enforced on it

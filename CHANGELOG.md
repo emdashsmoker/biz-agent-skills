@@ -27,6 +27,36 @@ Changelog rules
 - (Push) Commit on top of the latest main and push directly to main.
 -->
 
+## 2026-10-25
+
+### biz-code-style
+- Changed the scope for code to its classification structure
+- Added an exception that applies the domain specification's category count and depth to code
+
+* 코드의 적용 범위를 분류 구조로 변경
+* 코드의 항목 수와 계층 깊이에 도메인 명세 기준을 적용하는 예외 추가
+
+### logical-write
+- Changed the scope for code to its classification structure
+- Added an exception that applies the domain specification's item count and depth to code
+
+* 코드의 적용 범위를 분류 구조로 변경
+* 코드의 항목 수와 계층 깊이에 도메인 명세 기준을 적용하는 예외 추가
+
+### onto-mece
+- Changed the scope for code to its classification structure
+- Added an exception that applies the domain specification's category count and depth to code
+
+* 코드의 적용 범위를 분류 구조로 변경
+* 코드의 범주 수와 계층 깊이에 도메인 명세 기준을 적용하는 예외 추가
+
+### think-review
+- Changed the scope for code to its classification structure
+- Added an exception that applies the domain specification's category count and depth to code
+
+* 코드의 적용 범위를 분류 구조로 변경
+* 코드의 항목 수와 계층 깊이에 도메인 명세 기준을 적용하는 예외 추가
+
 ## 2026-10-24
 
 ### offline-deps-builder
