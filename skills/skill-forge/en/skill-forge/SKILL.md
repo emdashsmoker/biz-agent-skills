@@ -1,6 +1,6 @@
 ---
 name: skill-forge
-description: "Builds, combines, and manages skills and agent instructions for planning and consulting work. Build mode writes a SKILL.md or single, modular, or sequential prompts through intake, framework choice, plan approval, writing, and testing. Combine mode plans which installed skill handles each work stage, with inputs and outputs. Manage mode discovers skills, checks ownership and identity, then exports, compares on import, and packages skills, and exports, packages, or restructures user instructions. Use it whenever the user mentions '/skill-forge', 'make a skill', 'improve this skill', 'write agent instructions', 'design an agent', 'design a prompt', 'which skill should I use', 'recommend a skill combination', 'manage skills', 'export skills', 'import skills', 'migrate skills', 'compare skills', 'check duplicate skills', 'package a skill', 'turn my instructions into a skill', or 'restructure my instructions', or submits skill files (zip, .skill, SKILL.md) to compare, import, or improve."
+description: "Builds, combines, and manages skills and agent instructions. Build mode maps a real work process to steps for the model, scripts, tools, or the user, then writes, tests, and packages the skill or agent instructions. Combine mode plans which installed skill handles each work stage, with inputs and outputs. Manage mode discovers skills, checks ownership and identity, then exports, compares on import, and packages skills, and exports, packages, or restructures user instructions. Use it whenever the user mentions '/skill-forge', 'make a skill', 'turn this task into a skill', 'improve this skill', 'write agent instructions', 'design an agent', 'design a prompt', 'which skill should I use', 'recommend a skill combination', 'manage skills', 'export skills', 'import skills', 'migrate skills', 'compare skills', 'check duplicate skills', 'package a skill', 'turn my instructions into a skill', or 'restructure my instructions', or submits skill files (zip, .skill, SKILL.md) to compare, import, or improve."
 license: GPL-3.0-or-later with an output exception. Terms in LICENSE and NOTICE.md
 ---
 
@@ -8,13 +8,13 @@ license: GPL-3.0-or-later with an output exception. Terms in LICENSE and NOTICE.
 
 > This skill is an English translation of a Korean original. It may behave differently from the intent of the original.
 
-This skill handles the building, combining, and managing of skills and agent instructions used in planning and consulting work. Every mode follows the common rules.
+This skill handles the building, combining, and managing of skills and agent instructions. Every mode follows the common rules.
 
 ## Entry
 
-| Mode | What the user wants | Main output |
+| Mode | Request purpose | Main output |
 |---|---|---|
-| Build | Create a new skill or agent instructions, or improve an existing skill | SKILL.md or a prompt set |
+| Build | Create a new skill or agent instructions, or improve an existing skill | Skill package or agent instruction file |
 | Combine | Decide the order in which installed skills handle a task | Stage-by-stage execution plan |
 | Manage | Export, import, or compare skills and user instructions | Packages, verdict table, instruction files |
 
@@ -32,7 +32,7 @@ This skill handles the building, combining, and managing of skills and agent ins
 | Skill root | A parent folder that holds several skill folders |
 | Frontmatter | The property block between the two `---` lines at the top of SKILL.md (name, description, and other fields written in YAML) |
 | Bundled file | Any file in a skill folder other than SKILL.md |
-| Agent instructions | A set of prompts that makes a model perform a given role (unit prompts form an agent module, and modules form an agent system) |
+| Agent instructions | Instruction text written in a format other than a skill to hand a given task to a model (system prompts, chatbot custom instructions, and similar) |
 | User instructions | Settings that a chat environment applies to every conversation (preferences, custom instructions, project instruction files, and similar) |
 | Package | A zip file with the skill folder at its top level (some environments also accept the same zip renamed with a .skill extension) |
 | Hash | A fixed-length string computed from file contents (it changes with any content change, which makes it useful for identity checks; the method is sha256) |
@@ -44,7 +44,6 @@ Before starting, test what the current environment can do by trying it. Do not a
 - (Code execution) Whether hashing and compression work
 - (Skill root write) Whether files can be created in a skill root
 - (File delivery) Whether files can be handed to the user in a downloadable form
-- (Independent run) Whether the same request can run separately in a subagent or a separate session (check this for Build mode tests)
 
 Report the results to the user. Recommend the path that fits the results, and follow the user's choice if they pick another path.
 - (Path A) If Python runs, use Python for hashing, compression, and file creation
@@ -98,211 +97,199 @@ Skill locations differ by environment. Do not assume a fixed path, and treat mul
 
 # Build Mode
 
-Create new skills or agent instructions, and improve existing skills. Work proceeds in this order: requirements intake, framework selection, plan approval, writing, test loop, documentation. If the user brings a draft or an existing skill, start at the stage it needs. If the user does not want tests, skip the test loop.
+Turn a real work process into a skill or agent instructions. Work proceeds in this order: work capture, process design, design approval, writing, test loop, final check, packaging. If the user brings a draft or an existing skill, start at the stage it needs.
 
-## Design Principles
+## Work Capture
 
-- (Consistency) Specify output formats and templates so the same input yields output with the same structure
-- (Transparency) State the rationale for each design decision, and show the user intermediate outputs, progress, and the trade-offs of each option
-- (Reproducibility) Document prompts, settings, and external dependencies so each step can run as written
-- (Brevity) Cut explanations the model already knows and repeated information, and use short examples in place of long explanations
-- (Stated reasons) Give each rule a short reason so the model can apply the rule's intent in situations it has not seen
+A skill is worth what it knows about the work that the model does not. Instructions written from general knowledge alone tend to stop at vague directions such as "handle appropriately." Gather work knowledge in this order.
+- (Work record) If the conversation already holds a task carried out, first extract the tools used, the order of steps, the points the user corrected, and the input and output formats
+- (Work material) Extract work-specific rules and cautions from writing guides, templates, past outputs, review comments, and failure cases
+- (User answers) Ask only about the items the two sources above leave empty
+- If both sources are empty, propose doing one real task together with the user and then turning that process into the skill
 
-Write known model weaknesses into the instructions as countermeasures.
-- (Calculation errors) Instruct the model to compute numbers by running code
-- (Knowledge gaps) Instruct the model to check uncertain information with a search tool
-- (Long input) Specify how to split long input for processing
-- (Long tasks) Instruct the model to save intermediate outputs as files for complex work, and confirm file saving with the user
-- (Information position) Put key information at the start of the instructions, and place supporting information where it can be looked up when needed
-- (Output drift) Set explicit constraints on output format and structure
-- (Complex reasoning) Instruct the model to think through complex logic in separate steps
+Split the work by output. An output is the unit at which completion can be judged. The output of one task becomes the input of the next.
+- Make one output the default scope of one skill (a broad scope makes triggering imprecise, and a narrow one makes several skills' instructions overlap on one task)
+- Combine outputs that follow the same process and differ only by target or stage into one skill, and split the differences into per-variant reference files
+- Split work in which different outputs follow one another into one skill per output, and design the run order in Combine mode
+- For an output assembled from several component outputs, write the component outputs stage by stage inside one skill
 
-## Requirements Intake
-
-First look for answers to the items below in the request, attachments, and earlier conversation. If the conversation already contains a completed workflow, extract the tools used, the order of steps, and the user's corrections first. If the request has little information, show the required item list and ask the user to submit any files or templates needed to define the items.
-
-| Required item | What to confirm |
+| Item | What to confirm |
 |---|---|
-| Name | Name of the skill or agent system |
-| Purpose | The work problem to solve and the expected result |
-| Input | Format of submitted material (documents, tables, transcripts, links, and similar) and whether web search is allowed |
-| Output | Type of deliverable (report, proposal, slide deck, analysis table, meeting minutes, and similar) and file format |
-| Environment | Skill folder, chatbot custom instructions, API system prompt, manual run, and similar |
-| Target users | Role and skill level of the people using the instructions, and the readers of the deliverable |
-| Constraints | Length, instruction length limit, response time, cost, citation rules |
-| External tools | Code execution (included by default), web search, file input and output, APIs, MCP (Model Context Protocol) tools |
-| Framework | An entry from the framework table, or a request for a recommendation |
-| Output format | One of single, modular, sequential |
+| Purpose | The work problem to solve and who receives the output |
+| Trigger | Request phrases users actually type, and adjacent requests another skill should handle |
+| Output | Output type, file format, and completion criteria |
+| Input | Material and sources each output needs, sensitive material that must not leave the environment, and whether web search is allowed |
+| Work process | Steps the person doing the work actually goes through, inputs and outputs per step, and points where a person decides |
+| Target environment | Skill support, code execution, tools to use, and instruction length limits |
 
-Ask about all empty required items in one round. Ask conditional and optional items in one round after the required answers settle their conditions. If the conditions are settled from the start, ask them together with the required items.
-- (Session layout) If the output format is not single, confirm whether all modules run in one session or in separate sessions
-- (Definition scope) If the output format is not single, confirm whether role and input and output definitions are shared across modules or set per module
-- (Memory location) If the framework is in the PPMA family, confirm whether memory stays inside the planning stage or becomes a separate module
-- (Memory implementation) If memory is a separate module, confirm the implementation: file storage, external DB, API, conversation context, or automatic choice
-- (Optional items) Whether few-shot examples are provided, error handling requirements, multilingual support, security and privacy constraints, whether intermediate outputs are saved as files, completion criteria (used as the test loop's evaluation criteria)
+- Ask about all empty items in one round
+- For items with a reasonable default, apply the default instead of asking and record it in the design
 
-## Framework Selection
+## Process Design
 
-A framework is the processing cycle an agent goes through from receiving input to producing a result. If the user has not chosen one, recommend a framework that fits the work and explain why.
+Split the captured work process into steps and set the actor for each step. Steps follow the order the person doing the work actually goes through.
 
-| Framework | Processing cycle | Suitable work |
+| Actor | Steps it takes | What the instructions state |
 |---|---|---|
-| PCA | Perception, cognition, action | Work that ends with one judgment, such as document classification or checking whether requirements are met |
-| PPMA | Perception, planning, memory, action (memory is a resource the planning step consults) | Multi-step work, such as research followed by report writing |
-| PPMA-DCA | PPMA with action split into draft (Do), check (Check), and finalize (Act) | Work where deliverable quality checks matter, such as proposals and policy reports |
-| ReAct | Repeated thought, action, observation | Work where the next action depends on web search or file search results |
-| PDCA | Repeated plan, do, check, act | Work repeated each cycle with improvement, such as recurring reports |
-| Reflexion | Execute, evaluate, record reflection, re-execute | Tasks with clear evaluation criteria that improve through repeated attempts |
-| User-defined | Set by the user | Special purposes the frameworks above do not describe |
+| Model judgment | Steps such as interpretation, structuring, and writing where several approaches work and variation in results is acceptable | Purpose and reason, judgment criteria, a short example |
+| Script | Steps such as calculation, format conversion, and format checks where the same input must give the same result | Command to run, input and output, response on failure |
+| External tool | Steps such as web search, files, APIs, and MCP tools that need information or systems outside the model | Conditions for use, how to check the result |
+| User checkpoint | Steps such as setting direction, judging appropriateness, and sending externally that carry accountability for the result or are hard to undo | Where to ask for confirmation, what to show the user |
 
-- By default, keep PPMA-family memory as an internal resource of the planning stage, and confirm with the user whether to split it into a separate module
-- PPMA-DCA is a variant of PPMA that splits the action stage for quality checks
+- Make sequential steps the default process and add a branch only when processing differs by input type (a simpler process makes intermediate checks and error tracing easier)
+- Make model judgment the default actor, and use a script only for steps where instructions alone give inconsistent results or the same code would be rewritten every run (unneeded scripts add edge cases and maintenance load)
+- Check input material for gaps and format in the first step (a misread input spreads to every later step)
+- Handle numeric calculation by running code, and have unconfirmed facts checked with a tool or marked as unconfirmed
+- For steps that handle sensitive material, exclude sending it to external tools or add a pseudonymization step before them
+- Where a part carries a core judgment such as setting direction, take the user's decision as input and have the model draft and check
+- Build outputs where quality matters in draft, check, and finalize order, and derive the check criteria from error types that actually occurred in the work (assertive statements with weak evidence, minority opinions dropped, sources that do not exist, unperformed work described as done, and similar)
+- For work with many steps or long conversations, keep each step's intermediate output in a file so the work can resume after an interruption (confirm file saving with the user)
 
-| Basis for | Source |
-|---|---|
-| PCA (perception, brain, action classification) | Xi et al. (2023), The Rise and Potential of Large Language Model Based Agents: A Survey (https://arxiv.org/abs/2309.07864) |
-| PPMA (planning, memory, and action modules combined with a perception stage) | Wang et al. (2023), A Survey on Large Language Model based Autonomous Agents (https://arxiv.org/abs/2308.11432) |
-| ReAct | Yao et al. (2023), ReAct: Synergizing Reasoning and Acting in Language Models (https://arxiv.org/abs/2210.03629) |
-| Reflexion | Shinn et al. (2023), Reflexion: Language Agents with Verbal Reinforcement Learning (https://arxiv.org/abs/2303.11366) |
-| PDCA | American Society for Quality (n.d.), PDCA Cycle (https://asq.org/quality-resources/pdca-cycle) |
-| Calculation error countermeasure | Gao et al. (2023), PAL: Program-aided Language Models (https://arxiv.org/abs/2211.10435) |
-| Information position countermeasure | Liu et al. (2023), Lost in the Middle: How Language Models Use Long Contexts (https://arxiv.org/abs/2307.03172) |
-| Complex reasoning countermeasure | Wei et al. (2022), Chain-of-Thought Prompting Elicits Reasoning in Large Language Models (https://arxiv.org/abs/2201.11903) |
+## Design Approval
 
-## Output Format
-
-| Output format | Prompt layout | Suitable environment |
-|---|---|---|
-| Single | One integrated prompt | Skills, chatbot custom instructions, APIs |
-| Modular | One prompt per module | Systems where several agents split roles |
-| Sequential | Several prompts split in execution order | Complex workflows, manual runs where a person checks each step |
-
-## Plan Approval
-
-Write a plan from the collected information, and move to writing after the user approves it. Use the template below.
+Organize the results of work capture and process design into a design, and write only after the user approves it. Approval of the file layout item confirms the creation of bundled files.
 
 ```
-## Plan
+## Design
 | Item | Content |
 |---|---|
-| System name | |
+| Name | |
 | Purpose | |
-| Input | |
-| Output | |
-| Operating environment | Environment and constraints |
-| Standing context | Information the model always refers to |
-| External tools | |
-| Framework | |
-| Output format | One of single, modular, sequential |
-| Memory location | Inside the planning stage, or a separate module and its implementation |
-| Intermediate outputs | Whether and how they are saved |
-| Instruction length limit | Applied limit or lifted |
-| File layout | For skills, SKILL.md and the list of bundled files |
+| Trigger | Requests to use it for, adjacent requests not to use it for |
+| Output | Format, completion criteria |
+| Input | Material, sources, sensitivity |
+| Target environment | Skill or agent instructions, run conditions |
+| File layout | SKILL.md, the list of bundled files, and the package format (.skill or zip) |
+| Applied defaults | Values the model set because the user did not |
 
-## Module design
-| Module | Role | Input | Output | Tools |
+## Process
+| Step | Tasks | Input | Output | Actor |
 |---|---|---|---|---|
-
-## Expected workflow
-Step-by-step description or flow diagram
 ```
-- Apply the target environment's limit as the default instruction length limit, and lift it if the user asks
-- Approval of the file layout item settles which bundled files get created
 
-## General Writing Rules
+## Frontmatter Writing
 
-- State the role, purpose, inputs and outputs, steps, constraints, and examples
-- Structure with markdown headings and lists
-- Split classifications by a single criterion so items neither overlap nor leave gaps
-- Write in a plain, concise register without honorifics, and include no unsupported claims
-- Use each term with its first-defined meaning and the same word throughout
-- Write judgment criteria as conditions a third party can apply with the same result (use quantities, order, or presence in place of adverbs people read differently)
-- Write domain examples as broad examples that reveal no specific organization or project
-- Use wording tied to a specific product or harness name only when the user wants it
-- Avoid date conditions that become wrong once a point in time passes
-- Use hyphens for ranges (some markdown renderers turn the tilde character into strikethrough)
-- Instruct output-producing skills to keep the use of the skill and internal work steps out of the deliverable
+The model decides whether to use a skill from the name and description in the skill list alone. The body is read only after the skill triggers, so put every condition for use in description.
+- Write name with 1-64 lowercase letters, digits, and hyphens, and do not start or end with a hyphen or use consecutive hyphens
+- Make name match the folder name, and check the target environment's documentation for words it forbids
+- Write the skill's tasks and when to use it in description within 1,024 characters, without XML tags
+- In when to use it, include actual request phrases and requests that do not name the work directly, and state the instruction to use the skill for those requests (weak wording keeps the skill from being called even on requests that need it)
+- If adjacent work shares keywords, briefly state what this skill does not cover
+- Wrap description in double quotes (without quotes, a colon in the text breaks YAML parsing)
+- If running the skill needs a specific program or network access, record it in the compatibility field within 500 characters
 
-## Skill Writing Rules
+## Body Writing
 
-- Compose name from 1-64 lowercase letters, digits, and hyphens, with no leading, trailing, or consecutive hyphens
-- Some environments reserve certain words in name, so check the target environment's documentation
-- Write description within 1,024 characters in the third person, covering what the skill does and when to use it, with no XML tags
-- Put the request phrases users will type into description, and state that the skill must be used for those requests (the model decides whether to use a skill from name and description alone, so weak wording leaves the skill uncalled)
-- When creating bundled reference files, list every file name in description and state in the body when to read each one
-- For skills that support several domains or variants, split reference files by variant and tell the model in the body to read only the relevant variant file
-- Link reference files only one level deep from SKILL.md
-- Keep SKILL.md within 500 lines and move overflow into bundled reference files
-- For reference files over 100 lines, propose a table of contents, explain why it is needed, and insert it after the user confirms
-- Put helper code that gets written repeatedly into a scripts folder and state its dependencies (standard libraries first)
+Every time the skill triggers, the body takes up context alongside the conversation history and other skills. Keep each instruction only if the model would get the task wrong without it.
+- Write work-specific rules, cautions, and tool usage, and leave out general knowledge the model already has
+- Give each rule a short reason so the model judges unfamiliar situations by the rule's intent (reasons are followed more reliably than repeated emphasis)
+- For steps that tolerate varied results, give only the purpose and criteria, and for steps where a change in order causes errors, fix the commands and order
+- When several methods work, give one default and an exception path (listing equal options delays judgment and lowers consistency)
+- Write a procedure that works for every request of the same type (an instruction holding only one case's answer cannot be reused for other requests)
+- Give output formats as templates (models follow a concrete form more accurately than a prose description)
+- Keep work-specific facts the model tends to get wrong in the body as cautions
+- For multi-step work, give each step check items and move to the next step only after the check passes
+
+Use the template below as the default body and omit sections the work does not need.
+
+```
+---
+name: {skill name, same as the folder name}
+description: "{The skill's tasks}. {When to use it}. Use this skill whenever the user mentions '{request phrase}', '{request phrase}', or similar."
+---
+# {Skill name}
+{The work the skill handles and its output}
+## Process
+### Step {number}: {step name}
+{Tasks, judgment criteria and reasons, scripts or tools to use, user checkpoints}
+## Output format
+{Output template}
+## Cautions
+{Work-specific facts the model tends to get wrong}
+## User decisions
+{Judgments the skill does not make and leaves to the user}
+## Pre-delivery check
+{Check items a third party can apply with the same result}
+```
+
+## Notation Rules
+
+- Use each term with the meaning first defined, and use the same word throughout
+- Classify by one criterion with no overlaps or gaps between items
+- State judgment criteria as conditions a third party can apply with the same result (use quantities, order, and inclusion instead of adverbs people read differently)
+- Write in a concise, plain register, and include no unsupported claims
+- Write domain examples broadly enough that no specific organization or task shows
+- Use wording that depends on a specific product or harness name only when the user wants it
+- Do not write date conditions that become wrong as time passes
+- Use a hyphen for ranges (some Markdown renderers turn the tilde into strikethrough)
+- In skills that produce outputs, instruct that the output must not reveal that a skill was applied or show the internal work process
+
+## File Layout
+
+A skill folder holds SKILL.md and subfolders created only when needed. The model reads all of SKILL.md when the skill triggers, and reads bundled files only when the body points to them.
+
+| Location | Content |
+|---|---|
+| SKILL.md | Process, defaults, cautions, and check items needed on every run (within 500 lines) |
+| references/ | Detailed criteria needed only in specific situations, and per-variant instructions |
+| scripts/ | Code for the steps that process design assigned to scripts |
+| assets/ | Forms and templates used in outputs |
+
+- In the body, state the condition for reading or running each bundled file ("read references/table.md when building a table" gets read at the right moment, where "see references for details" does not)
+- Link reference files only one level deep from SKILL.md, and have per-variant reference files read only for their variant
+- Prefer standard libraries in scripts, and state needed dependencies in the body
+- Have scripts take input as arguments and provide usage help and error messages that give the cause and the fix (a script that waits for interactive input halts the run)
+- Send script results to stdout and progress and warnings to stderr, and default to a summary when results are large (harnesses may omit part of a long output)
 - When improving an existing skill, keep the original name and folder name, and edit a copy in a writable location
 
-## Prompt Writing Rules
+## Agent Instruction Writing
 
-Use the template below as the default for the single format and for skills. Only skills keep the frontmatter.
-
-```
----
-name: {Skill name, same as the folder name}
-description: "{What the skill does}. {When to use it}. Use this skill whenever the user mentions '{request phrase}' or '{request phrase}'. {Reference file names and their contents, if any}"
----
-# {System name}
-## Role
-{Role and expertise. If all modules share the same role, state it once}
-## Purpose
-{Goal to achieve}
-## Input and output
-- (Input) {Format and example}
-- (Output) {Format and example}
-## Steps
-### Step {number} {step name}
-{Detailed instructions, repeated for each step}
-## Tool use
-{Conditions and methods for each tool}
-## Constraints
-{Things not to do, handling of errors and exceptions}
-## Examples
-{Input example and output example}
-```
-- Deliver generated prompts in code blocks for easy copying
-- Use one code block for the single format, one per module for the modular format, and one per execution step under each module for the sequential format
-- Do not put code blocks inside generated prompts (they break rendering, so use square or curly brackets in place of backticks when code notation is needed)
-- For chatbot custom instructions, check the character limit, and for skills, check the frontmatter format
-- For instructions that connect to MCP tools, check the JSON format of the tool schemas, and for other environments, ask the user about syntax requirements
+If the target environment does not support skills, write the same design as one instruction text. System prompts, chatbot custom instructions, and project instruction files fall here.
+- Omit the frontmatter and keep the section layout of the body template
+- Bundled files cannot be read separately, so keep the process, cautions, and output format first, and check the target environment's character limit
+- In environments without a code execution tool, turn the steps assigned to scripts into manual user steps
+- Write tool names exactly as the target environment shows them
+- Start with one agent, and split roles only when their work areas do not overlap (splitting sequential work across agents tends to lose information passed between steps)
+- When roles are split, write one instruction per role and state the inputs and outputs between roles in the design's process table
+- When providing instructions in a code block, do not put another code block inside (it causes rendering errors, so use square or curly brackets instead of backticks for code notation)
 
 ## Test Loop
 
-Test with real requests before handing over the final version.
-1. Write at least three concrete requests a user would plausibly send, and get the user's confirmation (include information real requests carry, such as material names, readers, and length)
-2. Run each request with the skill or instructions applied
-3. If independent runs are possible, run a baseline in parallel with user approval (no skill for a new build, the previous version for an improvement; approval is needed because of the extra time and cost)
-4. If independent runs are not possible, the model follows the instructions itself and leaves judgment of the results to user review
+Before handing over the finished version, ask the user whether to run tests. If the environment can run a subagent or a separate session, ask in the same question whether to run in the same conversation or as independent runs (independent runs keep the author's intent out and expose defects better, but take more time and cost). If the user declines tests, move on to the final check.
+1. Write 2-3 requests the user would plausibly send and get the user's confirmation (include the information real requests carry, such as file names, readers, and length, and one edge case)
+2. (Independent runs) Run each request with the skill and with a baseline (the baseline is a run without the skill for a new skill, or a run of the previous version for an improved skill)
+3. (Same-conversation run) Run each request following only the written instructions, and record where an unclear instruction made a decision difficult (filling gaps in the instructions with the author's intent hides defects)
+4. Check items that can be judged objectively, such as file format, required sections, and expressions ruled out, with code
+5. Present the outputs and check results, and get specific feedback per request (an author's own evaluation tends to be lenient, so the user's review settles quality)
 
-- (Objective evaluation) Check file format, presence of required sections, citation format, and appearance of banned expressions with code
-- (Subjective evaluation) Organize fit to the required format, traceability of evidence, links between claims and evidence, and fit for the reader into a rubric for user review
-- (Consistency evaluation) Run one request twice and compare whether the outline and output format match
+For steps where unproductive attempts repeated, first check whether an unclear instruction led to trying several approaches, whether an instruction that did not apply to the current request was followed, and whether options came without a default. Improve by these principles.
+- Generalize each fix so it works for every request of the same type (copying a test request's wording into the instructions fails on other requests)
+- Delete instructions that do not contribute to the result
+- Bundle helper code written repeatedly across tests into the scripts folder
+- Strengthen the reason for a rule the model broke, and add the points the user corrected to the cautions
+- End the loop when the user is satisfied, feedback is empty, or improvements stop having effect
 
-Improve under these principles.
-- Generalize each fix so it works for every request of the same type
-- Delete instructions that do not contribute to results
-- Bundle helper code written repeatedly across tests into a bundled script
-- Where the model broke a rule, strengthen the rule's stated reason and test again
-- End the loop when the user is satisfied, feedback is empty, or improvement stalls
+After the tests, check description. Write 5 requests that should use the skill and 5 requests that share keywords but suit another skill, and review with the user whether description separates the two groups. If independent runs were chosen, give a new session or a subagent only the name and description of each listed skill and the request, and check which skill it picks. For a misclassified request, reflect the category it belongs to in description (adding the failed request's words as they are yields a description that fits only that wording).
 
-## Trigger Check
+## Final Check
 
-The model decides whether to use a skill from the name and description in the skill list. After the skill is complete, propose a trigger check to the user.
-- Write at least five requests that should use the skill and at least five that should not
-- Build the should-not requests mainly from requests that share keywords but fit another skill
-- With the installed skills' name and description list in view, pick the skill to use for each request and check the result (use a new session if independent runs are possible)
-- Adjust the when-to-use wording in description based on requests with unexpected results, and check again
+Before packaging, check the items below with code. In environments without code execution, compare the same items by hand and note that in the result.
+- Does SKILL.md sit directly inside the skill folder, with the frontmatter between two `---` lines? (if a YAML parser exists, also confirm that parsing succeeds)
+- Does name follow the rules and match the folder name?
+- Is description within 1,024 characters and free of XML tags?
+- Is SKILL.md within 500 lines?
+- Does every bundled file the body mentions exist, with no bundled file left unmentioned by the body or the frontmatter?
+- If there are scripts, do they run on sample input?
 
-## Documentation
+## Packaging
 
-After outputting the final instructions, ask the user whether documentation is needed. If it is, create the tables below.
-- (Overview table) System name, purpose, input, output, operating environment, standing context, external tools, framework, memory location, intermediate outputs, output format, notes
-- (Prompt table) Columns for sequence number, agent module, and prompt, with every prompt recorded verbatim including line breaks (mark line breaks inside cells with `<br>`, and split rows per step for the sequential format)
-- (Architecture table) Framework and per-module components, inputs and outputs, and external tools
+Bundle a skill that passed the check under the packaging rules and deliver it.
+- Produce the package in the format approved in the design, and use a .skill file if no format was set
+- Deliver the package, SKILL.md, and every bundled file so the user can review the content before installing
+- To install directly into a skill root, follow the direct install rules of Import Comparison (user approval, backup of the existing folder)
+- In environments without file delivery, output SKILL.md and each bundled file in its own code block and give manual install steps
+- Deliver agent instructions as an md file, or in a code block if file delivery is unavailable
+- Build the result summary table with columns for file path, line count, description character count, and check result
 
 # Combine Mode
 
@@ -318,14 +305,14 @@ Draft an execution plan for handling the user's task with installed skills. Once
 
 - If the task goal is unclear, ask briefly about only the deliverable form and the input material
 - Split the task into stages and assign one skill to each stage (set the number of stages to fit the task)
-- For planning and consulting tasks, start from the default stages below and drop stages the task does not have
+- Start from the default stages below and skip stages the task does not have
 - Choose skills by how well the stage purpose matches the description (if there are several candidates, pick the one that names the output format or field more specifically and list the rest as alternatives)
 - Assign skills the user names to their stage first
 - Give stages that can run at the same time the same number
 - Separate rule-type skills that apply across all stages, such as writing style or citation standards, into an always-on entry
 - Mark stages with no matching skill as missing stages, and offer the model's default handling or a new skill from Build mode as options
 
-| Default stage | What it does |
+| Default stage | Tasks |
 |---|---|
 | Gather | Convert submitted material to text, search the web, collect figures |
 | Analyze | Apply analysis frameworks, calculate, compare |
@@ -340,10 +327,10 @@ Draft an execution plan for handling the user's task with installed skills. Once
 Execution plan ({task name})
 | Stage | Skill | Work | Input |
 |---|---|---|---|
-| 1 | {skill name} | {one line on what this stage does} | User-submitted material |
-| 2 | {skill name} | {one line on what this stage does} | Stage 1 output |
-| 2 | {skill name} | {one line on what this stage does} | Stage 1 output |
-| 3 | {skill name} | {one line on what this stage does} | Stage 2 output |
+| 1 | {skill name} | {one line on this stage's tasks} | User-submitted material |
+| 2 | {skill name} | {one line on this stage's tasks} | Stage 1 output |
+| 2 | {skill name} | {one line on this stage's tasks} | Stage 1 output |
+| 3 | {skill name} | {one line on this stage's tasks} | Stage 2 output |
 (Always on) {skill name}
 (Alternative skill) Stage {stage number} {skill name}
 (Missing stage) {stage name}, model default handling or new skill build
@@ -460,7 +447,7 @@ Direct install follows these rules.
 - Copy the folder of each new skill into the skill root
 - Keep a backup copy of each updated skill's existing folder, then replace it
 - If several roots are writable, ask the user where to install
-- Replace updated skills in the root that held the original so the same skill does not pile up in two places
+- Replace updated skills in the root that held the original so the same skill is not installed twice in different places
 
 ## Instruction File Export
 
@@ -488,11 +475,13 @@ Redesign the split of work between instructions and skills when the instructions
 # Pre-delivery Check
 
 - (Common) Were original skill files left unmodified and undeleted, and was a backup copy of the existing folder created for any direct install replacement?
-- (Common) Did plan approval, private skill classification, non-contributing file classification, update application, and direct install go through user confirmation?
+- (Common) Did design approval, independent runs, private skill classification, non-contributing file classification, update application, and direct install go through user confirmation?
 - (Common) Were the environment check results and recommended path reported before starting, and were tasks on unavailable paths left unattempted?
-- (Build) Do the name rules, folder name match, and 1,024-character description limit hold, and does description list every bundled reference file name?
-- (Build) Is SKILL.md within 500 lines, and are generated prompts free of nested code blocks?
-- (Build) Unless the test loop was skipped, were test results shown to the user?
+- (Build) Did every final check item pass, and does the result summary table record the check results?
+- (Build) Were SKILL.md and every bundled file delivered along with the package?
+- (Build) Are instructions provided in a code block free of nested code blocks?
+- (Build) Was the user asked whether to run tests and how to run them?
+- (Build) Were the results of the tests run shown to the user?
 - (Combine) Is every skill in the plan on the collected list, and does every stage state its input source?
 - (Manage) Does SKILL.md sit directly inside the skill folder in each package?
 - (Manage) In the import comparison verdict table, is every submitted skill marked as duplicate, update, update (layout difference), new, or unreadable?
