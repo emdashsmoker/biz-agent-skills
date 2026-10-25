@@ -207,5 +207,6 @@ The criterion is unified as "where the problem arises", and seven items are grou
 ## Exceptions
 
 - If the user sets a classification criterion, use it first. Point out any structural flaws you see.
-- Do not apply this lens to code itself, only to its design structure and explanatory text.
+- The classification structure of code is in scope. Check function boundaries, conditional branches, exception handling, enums, and class inheritance.
+- The recommended category count and hierarchy depth exist for document readers. In code, follow the category count and depth set by the domain specification.
 - Treat requests for rankings or simple lists as different from classification, and do not force this lens on them.

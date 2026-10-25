@@ -352,5 +352,5 @@ Check outputs that contain classification, grouping, structure or judgment.
 ## Exceptions
 
 - When the user sets the classification criterion, apply it first, and report any structural defect you find
-- For code, apply these rules to the design structure and the explanatory text, and leave code syntax out of scope
+- The classification structure of code is in scope. Check function boundaries, conditional branches, exception handling, enums, and class inheritance
 - A request for a plain list, such as a ranking, differs from a classification, and these rules do not have to be enforced on it

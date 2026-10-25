@@ -1,6 +1,6 @@
 # Classification and hierarchy design
 
-These rules apply to any thinking that involves classification, grouping, structuring, or judgment. Splitting functions, classifying exceptions, designing enums, data models, chart categories, screen division, tables of contents, and lists inside sentences are all in scope. The rules carry ontology design principles over as a discipline of thought. Building OWL models and running reasoners are out of scope.
+These rules apply to any thinking that involves classification, grouping, structuring, or judgment. Splitting functions, conditional branches, classifying exceptions, designing enums, class inheritance, data models, chart categories, screen division, tables of contents, and lists inside sentences are all in scope. The rules carry ontology design principles over as a discipline of thought. Building OWL models and running reasoners are out of scope.
 
 ## Principles
 
@@ -124,5 +124,5 @@ Enum extension (after): Create a separate enum `Priority = {URGENT, NORMAL}` and
 ## Exceptions
 
 - If the user specifies a classification criterion, apply it first and report any structural defect you find.
-- Code itself is exempt. Apply these rules to the design structure of code and to explanatory text.
+- The recommended category count and hierarchy depth exist for document readers. In code, follow the category count and depth set by the domain specification.
 - Requests for rankings or simple lists are distinct from classification, and these rules are not enforced on them.
