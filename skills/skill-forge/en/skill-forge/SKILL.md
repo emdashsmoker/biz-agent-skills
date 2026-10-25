@@ -188,6 +188,7 @@ Every time the skill triggers, the body takes up context alongside the conversat
 - Write a procedure that works for every request of the same type (an instruction holding only one case's answer cannot be reused for other requests)
 - Give output formats as templates (models follow a concrete form more accurately than a prose description)
 - Keep work-specific facts the model tends to get wrong in the body as cautions
+- Add instructions that call another skill or agent only when the user wants them, and state a fallback for when the target is missing (installed skills and agents differ by environment, and a missing target stops the procedure)
 - For multi-step work, give each step check items and move to the next step only after the check passes
 
 Use the template below as the default body and omit sections the work does not need.
@@ -284,7 +285,7 @@ Before packaging, check the items below with code. In environments without code 
 ## Packaging
 
 Bundle a skill that passed the check under the packaging rules and deliver it.
-- Produce the package in the format approved in the design, and use a .skill file if no format was set
+- Produce the package in the format approved in the design, and if no format was set, follow the recommended output format in the Environment Check table
 - Deliver the package, SKILL.md, and every bundled file so the user can review the content before installing
 - To install directly into a skill root, follow the direct install rules of Import Comparison (user approval, backup of the existing folder)
 - In environments without file delivery, output SKILL.md and each bundled file in its own code block and give manual install steps
@@ -424,7 +425,7 @@ Filter out skills unsuitable for sharing, then export. The primary criterion is 
 ## Import Comparison
 
 When bringing a skill bundle exported from one environment into another, filter out duplicates and select only new and updated skills. Both account-to-account moves and environment-to-environment moves are supported.
-- (Account-to-account move) The main use is moving between chat environments, and the final output is a list of individual packages the user applies one by one with the chat window's skill save feature
+- (Account-to-account move) The main use is moving between chat environments, and the final output is a list of individual packages the user applies one by one with the chat window's skill save feature (if there is no save feature, confirm the target environment's skill registration steps with the user)
 - (Environment-to-environment move) Moves between local agent environments that manage skills as file system folders are supported
 - If the target environment manages instructions with a single instruction file in place of skill folders, ask the user whether to convert to that format
 - (Accepted input) Accept anything that contains a SKILL.md, regardless of origin (folder, .skill file, zip file, standalone SKILL.md, multiple files at once, nested archives)
@@ -459,7 +460,7 @@ Direct install follows these rules.
 
 1. Obtain the original text the same way as instruction file export
 2. Build a SKILL.md with frontmatter holding name and description and the original text as the body (description states the nature of the instructions and when to load them, and is finalized after user confirmation)
-3. Output a .skill file following the packaging rules
+3. Output the skill the same way as Build mode packaging
 
 ## Instruction Restructuring
 
