@@ -57,20 +57,20 @@ Changelog rules
 
 ### skill-forge
 - Added the SKILL.md frontmatter format to the build mode template (#38)
-- Changed build mode to split work by output and assign each step to model judgment, a script, an external tool or a user checkpoint
-- Added a final check and packaging in the .skill or zip format approved in the design as the last stages of build mode
-- Changed the reference file rule to state in the body when each file is read
-- Changed build mode to ask the user whether to run tests and whether to run them in a subagent or a separate session
-- Removed framework selection, prompt output formats, documentation tables and the table of contents rule from build mode
-- Removed the planning and consulting scope from the description and Combine mode
+- Changed build mode to split work by output and assign each step to model judgment, a script, an external tool or a user checkpoint (#39)
+- Added a final check and packaging in the .skill or zip format approved in the design as the last stages of build mode (#39)
+- Changed the reference file rule to state in the body when each file is read (#39)
+- Changed build mode to ask the user whether to run tests and whether to run them in a subagent or a separate session (#39)
+- Removed framework selection, prompt output formats, documentation tables and the table of contents rule from build mode (#39)
+- Removed the planning and consulting scope from the description and Combine mode (#39)
 
 * 제작 모드 템플릿에 SKILL.md 프론트매터 양식 추가 (#38)
-* 제작 모드의 설계 방식을 산출물 단위 업무 분해와 단계별 수행 주체 배정으로 변경
-* 제작 모드 마지막 단계에 최종 검사와 설계안에서 승인한 형식(.skill 또는 zip)의 패키징 추가
-* 참조 파일 규칙을 본문에 파일별 읽기 시점을 적는 방식으로 변경
-* 제작 모드 시험의 수행 여부와 서브 에이전트 실행 여부를 사용자에게 질의하는 방식으로 변경
-* 제작 모드의 프레임워크 선택, 프롬프트 출력 형식, 문서화 표, 참조 파일 목차 규칙 삭제
-* description과 조합 모드의 기획과 컨설팅 업무 한정 표현 삭제
+* 제작 모드의 설계 방식을 산출물 단위 업무 분해와 단계별 수행 주체 배정으로 변경 (#39)
+* 제작 모드 마지막 단계에 최종 검사와 설계안에서 승인한 형식(.skill 또는 zip)의 패키징 추가 (#39)
+* 참조 파일 규칙을 본문에 파일별 읽기 시점을 적는 방식으로 변경 (#39)
+* 제작 모드 시험의 수행 여부와 서브 에이전트 실행 여부를 사용자에게 질의하는 방식으로 변경 (#39)
+* 제작 모드의 프레임워크 선택, 프롬프트 출력 형식, 문서화 표, 참조 파일 목차 규칙 삭제 (#39)
+* description과 조합 모드의 기획과 컨설팅 업무 한정 표현 삭제 (#39)
 
 ### think-review
 - Changed the scope for code to its classification structure (#37)
