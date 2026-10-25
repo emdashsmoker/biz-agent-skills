@@ -50,6 +50,11 @@ Changelog rules
 * 코드의 적용 범위를 분류 구조로 변경
 * 코드의 범주 수와 계층 깊이에 도메인 명세 기준을 적용하는 예외 추가
 
+### ontology-modeling
+- Changed the scope for code to its classification structure
+
+* 코드의 적용 범위를 분류 구조로 변경
+
 ### think-review
 - Changed the scope for code to its classification structure
 - Added an exception that applies the domain specification's category count and depth to code
