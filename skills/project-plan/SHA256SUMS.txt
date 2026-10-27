@@ -1,2 +1,2 @@
 bab5ad12984c617998e5e123a7728160813267bfbd7c76a89081b0cfb62320d0  project-plan-en.skill
-a75c448d90f7f9e11db167e8c137aa7821f5fe98bd0ca2ebd57e0c834e8743b8  project-plan-ko.skill
+7b0ee7cce625fc7d1c7ad45cad2cee319edf4a1a06493ddfdf9bee21f541d3ac  project-plan-ko.skill

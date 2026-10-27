@@ -1,2 +1,2 @@
-ea5433e3fb37002cfa249a55916131c7020786d65c0d9c9b96df1b2fe39e59f4  logical-write-lite-en.skill
-8c19aa12b17b9c661823348daf3d7e6a67d85c2f23082eb00ff4ef96dccfa2ca  logical-write-lite-ko.skill
+0261bb1b10585a51d3b9f91f396211fe08191e59aeb2b2e0a180252c3dbb3fcb  logical-write-lite-en.skill
+aba295d51667437a90cf2611bf627a31d7710f0d744f07d6d529a94fbfa4c80a  logical-write-lite-ko.skill
