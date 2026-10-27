@@ -30,66 +30,66 @@ Changelog rules
 ## 2026-10-27
 
 ### biz-code-style
-- Added a rule for Korean text that joins two parallel nouns with 및 in place of 와 or 과 (#42)
+- Added a rule for Korean text that joins two parallel nouns with 및 in place of 와 or 과, except in idiomatic names (#42, #43)
 
-* 대등한 명사 2개를 '와', '과' 대신 '및'으로 잇는 규칙 추가 (#42)
+* 관용 명칭 외의 대등한 명사 2개를 '와', '과' 대신 '및'으로 잇는 규칙 추가 (#42, #43)
 
 ### biz-code-style-lite
-- Added a rule for Korean text that joins two parallel nouns with 및 in place of 와 or 과 (#42)
+- Added a rule for Korean text that joins two parallel nouns with 및 in place of 와 or 과, except in idiomatic names (#42, #43)
 
-* 대등한 명사 2개를 '와', '과' 대신 '및'으로 잇는 규칙 추가 (#42)
+* 관용 명칭 외의 대등한 명사 2개를 '와', '과' 대신 '및'으로 잇는 규칙 추가 (#42, #43)
 
 ### digest
-- Added a rule for Korean text that joins two parallel nouns with 및 in place of 와 or 과 (#42)
+- Added a rule for Korean text that joins two parallel nouns with 및 in place of 와 or 과, except in idiomatic names (#42, #43)
 
-* 대등한 명사 2개를 '와', '과' 대신 '및'으로 잇는 규칙 추가 (#42)
+* 관용 명칭 외의 대등한 명사 2개를 '와', '과' 대신 '및'으로 잇는 규칙 추가 (#42, #43)
 
 ### environment-analysis
-- Added a rule for Korean text that joins two parallel nouns with 및 in place of 와 or 과 (#42)
+- Added a rule for Korean text that joins two parallel nouns with 및 in place of 와 or 과, except in idiomatic names (#42, #43)
 
-* 대등한 명사 2개를 '와', '과' 대신 '및'으로 잇는 규칙 추가 (#42)
+* 관용 명칭 외의 대등한 명사 2개를 '와', '과' 대신 '및'으로 잇는 규칙 추가 (#42, #43)
 
 ### environment-analysis-lite
-- Added a rule for Korean text that joins two parallel nouns with 및 in place of 와 or 과 (#42)
+- Added a rule for Korean text that joins two parallel nouns with 및 in place of 와 or 과, except in idiomatic names (#42, #43)
 
-* 대등한 명사 2개를 '와', '과' 대신 '및'으로 잇는 규칙 추가 (#42)
+* 관용 명칭 외의 대등한 명사 2개를 '와', '과' 대신 '및'으로 잇는 규칙 추가 (#42, #43)
 
 ### logical-write
-- Added a rule for Korean text that joins two parallel nouns with 및 in place of 와 or 과 (#42)
+- Added a rule for Korean text that joins two parallel nouns with 및 in place of 와 or 과, except in idiomatic names (#42, #43)
 
-* 대등한 명사 2개를 '와', '과' 대신 '및'으로 잇는 규칙 추가 (#42)
+* 관용 명칭 외의 대등한 명사 2개를 '와', '과' 대신 '및'으로 잇는 규칙 추가 (#42, #43)
 
 ### logical-write-lite
-- Added a rule for Korean text that joins two parallel nouns with 및 in place of 와 or 과 (#42)
+- Added a rule for Korean text that joins two parallel nouns with 및 in place of 와 or 과, except in idiomatic names (#42, #43)
 - Removed the "A와 B" option for joining two items (#42)
 
-* 대등한 명사 2개를 '와', '과' 대신 '및'으로 잇는 규칙 추가 (#42)
+* 관용 명칭 외의 대등한 명사 2개를 '와', '과' 대신 '및'으로 잇는 규칙 추가 (#42, #43)
 * 2개 항목을 잇는 표현에서 "A와 B" 허용 삭제 (#42)
 
 ### network-analysis
-- Added a rule for Korean text that joins two parallel nouns with 및 in place of 와 or 과 (#42)
+- Added a rule for Korean text that joins two parallel nouns with 및 in place of 와 or 과, except in idiomatic names (#42, #43)
 
-* 대등한 명사 2개를 '와', '과' 대신 '및'으로 잇는 규칙 추가 (#42)
+* 관용 명칭 외의 대등한 명사 2개를 '와', '과' 대신 '및'으로 잇는 규칙 추가 (#42, #43)
 
 ### pref-architect
-- Added a rule for Korean text that joins two parallel nouns with 및 in place of 와 or 과 (#42)
+- Added a rule for Korean text that joins two parallel nouns with 및 in place of 와 or 과, except in idiomatic names (#42, #43)
 
-* 대등한 명사 2개를 '와', '과' 대신 '및'으로 잇는 규칙 추가 (#42)
+* 관용 명칭 외의 대등한 명사 2개를 '와', '과' 대신 '및'으로 잇는 규칙 추가 (#42, #43)
 
 ### project-plan
-- Added a rule for Korean text that joins two parallel nouns with 및 in place of 와 or 과 (#42)
+- Added a rule for Korean text that joins two parallel nouns with 및 in place of 와 or 과, except in idiomatic names (#42, #43)
 
-* 대등한 명사 2개를 '와', '과' 대신 '및'으로 잇는 규칙 추가 (#42)
+* 관용 명칭 외의 대등한 명사 2개를 '와', '과' 대신 '및'으로 잇는 규칙 추가 (#42, #43)
 
 ### rfp-strategy
-- Added a rule for Korean text that joins two parallel nouns with 및 in place of 와 or 과 (#42)
+- Added a rule for Korean text that joins two parallel nouns with 및 in place of 와 or 과, except in idiomatic names (#42, #43)
 
-* 대등한 명사 2개를 '와', '과' 대신 '및'으로 잇는 규칙 추가 (#42)
+* 관용 명칭 외의 대등한 명사 2개를 '와', '과' 대신 '및'으로 잇는 규칙 추가 (#42, #43)
 
 ### strategy-builder
-- Added a rule for Korean text that joins two parallel nouns with 및 in place of 와 or 과 (#42)
+- Added a rule for Korean text that joins two parallel nouns with 및 in place of 와 or 과, except in idiomatic names (#42, #43)
 
-* 대등한 명사 2개를 '와', '과' 대신 '및'으로 잇는 규칙 추가 (#42)
+* 관용 명칭 외의 대등한 명사 2개를 '와', '과' 대신 '및'으로 잇는 규칙 추가 (#42, #43)
 
 ## 2026-10-25
 
