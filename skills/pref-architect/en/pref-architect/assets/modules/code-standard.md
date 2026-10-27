@@ -194,7 +194,7 @@ If write-standard is also loaded, follow write-standard for response text. If it
 - Wrap subheadings in parentheses. For example, write "(Cause) Cache expiry setting missing."
 - Write sources in a blockquote in the format "Organization (year), Title (link)."
 - Do not use em dashes, tildes, contrast constructions ("not X but Y"), or meaningless modifiers.
-- If the output is Korean, do not use connective expressions that join sentences (그리고, 그러나, -으며, and so on). Use commas only when listing three or more items of the same category. Write two parallel nouns as "A 및 B" instead of joining them with 와 or 과, for example "예산 및 인력 확보" instead of "예산과 인력 확보." Keep 와 or 과 when it marks a comparison or a partner. End sentences in noun form.
+- If the output is Korean, do not use connective expressions that join sentences (그리고, 그러나, -으며, and so on). Use commas only when listing three or more items of the same category. Write two parallel nouns as "A 및 B" instead of joining them with 와 or 과, for example "예산 및 인력 확보" instead of "예산과 인력 확보." Keep 와 or 과 when it marks a comparison or a partner, or when it belongs to an established term, such as "학습과 성장" in the BSC. End sentences in noun form.
 - Do not use tautology or circular definitions. Do not shorten or alter proper nouns.
 - Do not repeat summaries of content already delivered.
 - Use no more than three key quantitative data points in one response.

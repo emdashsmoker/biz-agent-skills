@@ -1,2 +1,2 @@
 db591af8c44e3a4fc5fa96d2b496dd98ee72efefa2bc912396fbdb5abe2e82c6  environment-analysis-lite-en.skill
-6a3f617fdf07dc0b53683be3d5eae8b2430c5b2cda29d9f188f2ba4dc481c852  environment-analysis-lite-ko.skill
+bf12e34a479949d92fce5d4dec9ca1a4e738a118c702232c29ff217391177b9e  environment-analysis-lite-ko.skill
