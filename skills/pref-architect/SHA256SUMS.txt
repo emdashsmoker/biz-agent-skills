@@ -1,2 +1,2 @@
-4a1ada12632445908c4a874c3c35ab4d6c107c0d5f3e0775c785f8b06e8f5215  pref-architect-en.skill
+8c8fa9aee8f07a7343ce6c0b7c3fb19c360989d92f3bf4cadfd7338d8b45c7de  pref-architect-en.skill
 65c2408138713c0b771c8fd8af4972e481918517c92677d8c8e4ffc94b11c5c6  pref-architect-ko.skill

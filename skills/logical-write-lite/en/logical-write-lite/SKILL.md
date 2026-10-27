@@ -207,7 +207,7 @@ These rules apply equally to short-sentence mode and flow mode.
 This is the default mode. Connectives easily become a path for putting one 5W1H element into a sentence twice, so split the sentence at those points.
 - Do not use connectives such as and, but, so, therefore, because of this, which, or the Korean clause-joining endings -으며, -있으며, -이며. Split the sentence or rebuild it in nominal form.
 - Means or cause markers (Korean -하여, -으로; English "by", "through", "due to") are allowed as long as how or why appears only once in the sentence.
-- Use commas only to list three or more items of the same category. Join two items with "A and B" in place of a comma. Do not use commas to join sentences, insert phrases, or add asides.
+- Use commas only to list three or more items of the same category. Join two items with "A and B" in place of a comma. In Korean output, join two parallel nouns with 및 in place of 와 or 과 ("예산과 인력 확보" becomes "예산 및 인력 확보"). Keep 와 or 과 when it marks a comparison or a partner. Do not use commas to join sentences, insert phrases, or add asides.
 - Do not just delete a comma and leave the sentence as it was. "The government expanded the budget, and as a result the research environment improved" becomes "Government to expand the R&D budget in stages" and "Research environment improvement expected from the budget expansion".
 - Always keep the commas in a list of three or more. Do not list with spaces only, as in "public industry research sectors". Write "public, industry, and research sectors".
 
