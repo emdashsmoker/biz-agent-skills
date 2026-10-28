@@ -27,6 +27,70 @@ Changelog rules
 - (Push) Commit on top of the latest main and push directly to main.
 -->
 
+## 2026-10-28
+
+### biz-code-style
+- Changed the 및 rule exception that keeps 와 or 과 from comparisons and partners to relations between two nouns, such as 연계 and 격차, and partners of an action (#44)
+- Added the 및 rule to the Korean text rules of the English edition (#44)
+
+* 및 규칙에서 '와', '과'를 유지하는 예외의 범위를 두 명사 사이의 관계(연계, 격차 등) 및 동작의 상대로 변경 (#44)
+* 영어판의 한국어 텍스트 규칙에 및 규칙 추가 (#44)
+
+### biz-code-style-lite
+- Changed the 및 rule exception that keeps 와 or 과 from comparisons and partners to relations between two nouns, such as 연계 and 격차, and partners of an action (#44)
+
+* 및 규칙에서 '와', '과'를 유지하는 예외의 범위를 두 명사 사이의 관계(연계, 격차 등) 및 동작의 상대로 변경 (#44)
+
+### digest
+- Changed the 및 rule exception that keeps 와 or 과 from comparisons and partners to relations between two nouns, such as 연계 and 격차, and partners of an action (#44)
+
+* 및 규칙에서 '와', '과'를 유지하는 예외의 범위를 두 명사 사이의 관계(연계, 격차 등) 및 동작의 상대로 변경 (#44)
+
+### environment-analysis
+- Changed the 및 rule exception that keeps 와 or 과 from comparisons and partners to relations between two nouns, such as 연계 and 격차, and partners of an action (#44)
+
+* 및 규칙에서 '와', '과'를 유지하는 예외의 범위를 두 명사 사이의 관계(연계, 격차 등) 및 동작의 상대로 변경 (#44)
+
+### environment-analysis-lite
+- Changed the 및 rule exception that keeps 와 or 과 from comparisons and partners to relations between two nouns, such as 연계 and 격차, and partners of an action (#44)
+
+* 및 규칙에서 '와', '과'를 유지하는 예외의 범위를 두 명사 사이의 관계(연계, 격차 등) 및 동작의 상대로 변경 (#44)
+
+### logical-write
+- Changed the 및 rule exception that keeps 와 or 과 from comparisons and partners to relations between two nouns, such as 연계 and 격차, and partners of an action (#44)
+
+* 및 규칙에서 '와', '과'를 유지하는 예외의 범위를 두 명사 사이의 관계(연계, 격차 등) 및 동작의 상대로 변경 (#44)
+
+### logical-write-lite
+- Changed the 및 rule exception that keeps 와 or 과 from comparisons and partners to relations between two nouns, such as 연계 and 격차, and partners of an action (#44)
+
+* 및 규칙에서 '와', '과'를 유지하는 예외의 범위를 두 명사 사이의 관계(연계, 격차 등) 및 동작의 상대로 변경 (#44)
+
+### network-analysis
+- Changed the 및 rule exception that keeps 와 or 과 from comparisons and partners to relations between two nouns, such as 연계 and 격차, and partners of an action (#44)
+
+* 및 규칙에서 '와', '과'를 유지하는 예외의 범위를 두 명사 사이의 관계(연계, 격차 등) 및 동작의 상대로 변경 (#44)
+
+### pref-architect
+- Changed the 및 rule exception that keeps 와 or 과 from comparisons and partners to relations between two nouns, such as 연계 and 격차, and partners of an action (#44)
+
+* 및 규칙에서 '와', '과'를 유지하는 예외의 범위를 두 명사 사이의 관계(연계, 격차 등) 및 동작의 상대로 변경 (#44)
+
+### project-plan
+- Changed the 및 rule exception that keeps 와 or 과 from comparisons and partners to relations between two nouns, such as 연계 and 격차, and partners of an action (#44)
+
+* 및 규칙에서 '와', '과'를 유지하는 예외의 범위를 두 명사 사이의 관계(연계, 격차 등) 및 동작의 상대로 변경 (#44)
+
+### rfp-strategy
+- Changed the 및 rule exception that keeps 와 or 과 from comparisons and partners to relations between two nouns, such as 연계 and 격차, and partners of an action (#44)
+
+* 및 규칙에서 '와', '과'를 유지하는 예외의 범위를 두 명사 사이의 관계(연계, 격차 등) 및 동작의 상대로 변경 (#44)
+
+### strategy-builder
+- Changed the 및 rule exception that keeps 와 or 과 from comparisons and partners to relations between two nouns, such as 연계 and 격차, and partners of an action (#44)
+
+* 및 규칙에서 '와', '과'를 유지하는 예외의 범위를 두 명사 사이의 관계(연계, 격차 등) 및 동작의 상대로 변경 (#44)
+
 ## 2026-10-27
 
 ### biz-code-style
