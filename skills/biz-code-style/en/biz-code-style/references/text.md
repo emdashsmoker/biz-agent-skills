@@ -11,6 +11,7 @@ These rules apply to code comments, commit messages, log text, text inside chart
 - Include Why, What, and How in a sentence. (recommended)
 - (Korean text) Do not use connectives such as 그리고 (and), 그러나 (but), 그래서 (so), 그렇기 때문에 (therefore), 이는 (this), -으며 and -있으며 (and, while).
 - Use commas only to list three or more items of the same category. Resolve commas that join clauses by splitting the sentence or restructuring it as a noun phrase. Do not delete only the comma and leave an awkward sentence behind.
+- (Korean text) Write two parallel nouns as "A 및 B" instead of joining them with 와 or 과, for example "예산 및 인력 확보" instead of "예산과 인력 확보." Keep 와 or 과 when it marks a relation between two nouns (사이, 간, 격차, 차이, 일치, 불일치, 연계, 연동, 정렬, 비교, 구분, 분리, 협력, as in "현행과 기준의 격차") or the partner of an action (as in "유관기관과 공유"), or when it belongs to an established term, such as "학습과 성장" in the BSC
 - Do not use middle dots, separator symbols such as slashes or vertical bars, excessive abbreviations, unneeded foreign or Sino-Korean words, or hyphens that join words.
 - (Korean text) Use noun-ending bullet style (명사형 종결) and write verb endings where the flow calls for them. Make noun endings read as natural Korean ("목차명은 키워드 기반으로 재구성" over "목차명에는 키워드 기반 재구성으로 반영").
 - Do not write sentences made only of stacked nouns (write "연구 인프라 보유 여부", whether research infrastructure is in place, over "연구 기술 자원 역량 상태", research technology resource capability status).
