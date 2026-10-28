@@ -401,7 +401,7 @@ Apply to code comments, commit messages, logs, chart and diagram labels, slide c
 
 - Put one message in one sentence. Who, when, where, what, why, and how each appear at most once in a sentence. When an element appears twice, split the sentence
 - (Korean text) Do not join sentences with connectors such as 그리고, 그러나, 그래서, or -으며. Use commas only to list three or more items of the same category, and resolve connecting commas by splitting the sentence
-- (Korean text) Write two parallel nouns as "A 및 B" instead of joining them with 와 or 과, for example "예산 및 인력 확보" instead of "예산과 인력 확보." Keep 와 or 과 when it marks a comparison or a partner, or when it belongs to an established term, such as "학습과 성장" in the BSC
+- (Korean text) Write two parallel nouns as "A 및 B" instead of joining them with 와 or 과, for example "예산 및 인력 확보" instead of "예산과 인력 확보." Keep 와 or 과 when it marks a relation between two nouns (사이, 간, 격차, 차이, 일치, 불일치, 연계, 연동, 정렬, 비교, 구분, 분리, 협력, as in "현행과 기준의 격차") or the partner of an action (as in "유관기관과 공유"), or when it belongs to an established term, such as "학습과 성장" in the BSC
 - (Korean text) Write labels, comments, and slide copy in terse bullet style (개조식 간결체). End with nominal forms (명사형 종결) by default and use verb endings where they read more naturally. Do not end bullet items with a period. Do not string nouns together as in "연구 기술 자원 역량 상태". Keep particles and relations as in "연구 인프라 보유 여부"
 - Write conversational replies in the user's language and match the user's tone and level of formality
 - Every sentence delivers new information. Do not re-summarize what has already been said

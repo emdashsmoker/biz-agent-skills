@@ -78,7 +78,7 @@ The rules below apply regardless of output language.
 - Make noun endings sound natural. Write "목차명은 키워드 기반으로 재구성" instead of "목차명에는 키워드 기반 재구성으로 반영." Do not end awkwardly with 구조, 우선, 결론, 훌륭, 것, 곳, and the like.
 - Do not leave adnominal forms. Write "달성 필요" instead of "달성할 필요."
 - Do not use connective expressions that join sentences (그리고, 그러나, 그래서, 그렇기 때문에, 이는, -으며, -있으며, and so on). Split the sentence instead.
-- Use commas only when listing three or more items of the same category. Write two parallel nouns as "A 및 B" instead of joining them with 와 or 과, for example "예산 및 인력 확보" instead of "예산과 인력 확보." Keep 와 or 과 when it marks a comparison or a partner, or when it belongs to an established term, such as "학습과 성장" in the BSC. Do not just delete a comma and leave the sentence as is.
+- Use commas only when listing three or more items of the same category. Write two parallel nouns as "A 및 B" instead of joining them with 와 or 과, for example "예산 및 인력 확보" instead of "예산과 인력 확보." Keep 와 or 과 when it marks a relation between two nouns (사이, 간, 격차, 차이, 일치, 불일치, 연계, 연동, 정렬, 비교, 구분, 분리, 협력, as in "현행과 기준의 격차") or the partner of an action (as in "유관기관과 공유"), or when it belongs to an established term, such as "학습과 성장" in the BSC. Do not just delete a comma and leave the sentence as is.
 - Do not use the middle dot (·), slash (/), vertical bar (|), hyphens that join words, excessive abbreviations, or unnecessary loanwords and Sino-Korean words.
 - Do not drop particles. Do not write ungrammatical or compound sentences.
 - Use the dependent noun '것' only when the sentence needs it. Do not swap '것' for other empty nouns such as 곳, 거, 셈, or 부분.
