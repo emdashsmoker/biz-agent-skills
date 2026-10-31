@@ -222,9 +222,9 @@ Before you start writing, check whether the meeting name, date and time, and att
 ```markdown
 # Meeting overview
 - (Meeting name) Name of the meeting
+- (Purpose) Purpose the meeting addressed
 - (Date and time) YYYY-MM-DD HH:MM-HH:MM
 - (Attendees) Name, Name, Name
-- (Purpose) Purpose the meeting addressed
 
 # Discussion
 - **(Level-1 label) Claim**
@@ -240,9 +240,9 @@ Before you start writing, check whether the meeting name, date and time, and att
 | Topic | Topic | Keyword | Group similar claims under one topic. Topics must not overlap, and no discussion may be left out |
 | Time | Topic | Keyword | Follow the order in which the discussion happened. Without time data, follow the order of remarks. Do not group by speaker, so the flow stays intact |
 
+- Write the purpose from the transcript as one short, clear simple sentence.
 - The default format for the date and time is `YYYY-MM-DD HH:MM-HH:MM` on a 24-hour clock (for example 2026-03-05 14:00-15:30). If the user's region writes dates and times differently, follow that convention (for example 03/05/2026 2:00-3:30 PM for a user in the United States). Use the user's local time zone for the times.
 - Separate attendees with commas.
-- Write the purpose from the transcript as one short, clear simple sentence. Do not ask the user for the purpose.
 - Write three to five lines for the next steps. If the transcript has fewer items, write only those.
 - Bold level-1 lines and do not indent them. Indent level-2 lines.
 - Attach evidence from the transcript as level 2 under every level-1 claim.
