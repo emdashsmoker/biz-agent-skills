@@ -30,9 +30,13 @@ Changelog rules
 ## 2026-10-31
 
 ### digest
-- Added steps that explain how to get captions for a video page address when the user asks (#46)
+- Added steps that explain how to get captions for a video page address when the user asks, with official and lawful routes first (#46, #47)
+- Added a step that carries out the caption method in the current environment after the user agrees (#47)
+- Added a step that continues the workflow from step 2 with the .srt or .vtt captions obtained (#47)
 
-* 사용자 요청 시 영상 페이지 주소의 자막 확보 방법을 안내하는 절차 추가 (#46)
+* 사용자 요청 시 영상 페이지 주소의 자막 확보 방법을 공식적이고 합법적인 경로 우선으로 안내하는 절차 추가 (#46, #47)
+* 사용자 동의 후 실행 환경에서 자막 확보 방법을 실행하는 단계 추가 (#47)
+* 확보한 .srt나 .vtt 자막으로 작업 순서 2번부터 이어가는 단계 추가 (#47)
 
 ## 2026-10-28
 
