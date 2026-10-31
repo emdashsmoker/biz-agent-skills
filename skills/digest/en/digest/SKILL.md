@@ -169,7 +169,7 @@ Larger models are more accurate, slower, and use more memory. Recognition qualit
 
 ### Video platform addresses
 
-When the user gives only the address of a video page on a video sharing service, do not download the video or its captions with automated tools. Platform terms sometimes restrict automated collection and downloading. Ask the user for one of the following.
+When the user gives only the address of a video page on a video sharing service, do not download the video or its captions with automated tools without the user's consent. Platform terms sometimes restrict automated collection and downloading. Ask the user for one of the following.
 
 - A caption file (.srt, .vtt) the user obtained in a way the platform's terms allow
 - Text copied from the platform's own transcript view
@@ -181,7 +181,9 @@ Explain how to obtain captions only when the user asks. When the user asks, answ
 2. Lay out the ways to get captions on that platform from the model's own knowledge. Consider both the platform's built-in features and outside methods.
 3. If the environment provides a web search tool, check step 2 against current information. Platform features, terms, and whether outside methods still work change often. Without a search tool, tell the user the guidance may be out of date.
 4. Guide the user through the most useful method in steps they can follow themselves. Judge usefulness by whether it runs in the user's environment, whether it yields captions in the needed language, and how few steps it takes.
-5. State the risks that come with the method.
+5. Explain the risks that come with the method thoroughly.
+6. Ask the user whether to carry out the method. If the user wants it, carry it out in the current environment. If the environment cannot run it, guide the user to run it themselves.
+7. Once the captions are in hand, continue from step 2 of the workflow. If the user already asked for an output, follow that request.
 
 ### Reading limits
 
