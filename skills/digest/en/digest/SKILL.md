@@ -245,7 +245,7 @@ Before you start writing, check whether the meeting name, date and time, and att
 - Separate attendees with commas.
 - Write three to five lines for the next steps. If the transcript has fewer items, write only those.
 - Do not indent level-1 lines. Indent level-2 lines.
-- Add a level-2 label only when the evidence needs structuring.
+- Add a level-2 label when the evidence needs structuring.
 - Attach evidence from the transcript as level 2 under every level-1 claim.
 
 ## Briefing
