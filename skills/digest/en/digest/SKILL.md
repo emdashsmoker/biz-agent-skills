@@ -175,6 +175,14 @@ When the user gives only the address of a video page on a video sharing service,
 - Text copied from the platform's own transcript view
 - An audio or video file the user holds
 
+Explain how to obtain captions only when the user asks. When the user asks, answer in this order.
+
+1. Identify the platform from the address the user gave.
+2. Lay out the ways to get captions on that platform from the model's own knowledge. Consider both the platform's built-in features and outside methods.
+3. If the environment provides a web search tool, check step 2 against current information. Platform features, terms, and whether outside methods still work change often. Without a search tool, tell the user the guidance may be out of date.
+4. Guide the user through the most useful method in steps they can follow themselves. Judge usefulness by whether it runs in the user's environment, whether it yields captions in the needed language, and how few steps it takes.
+5. State the risks that come with the method.
+
 ### Reading limits
 
 Set a per-input character limit with `--max-chars` so the conversion results read in one task stay within the model's context window. The input count is the number of inputs read in one task. If the user sets a limit, use it.

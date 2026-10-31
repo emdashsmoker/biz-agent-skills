@@ -27,6 +27,13 @@ Changelog rules
 - (Push) Commit on top of the latest main and push directly to main.
 -->
 
+## 2026-10-31
+
+### digest
+- Added steps that explain how to get captions for a video page address when the user asks (#46)
+
+* 사용자 요청 시 영상 페이지 주소의 자막 확보 방법을 안내하는 절차 추가 (#46)
+
 ## 2026-10-28
 
 ### biz-code-style
