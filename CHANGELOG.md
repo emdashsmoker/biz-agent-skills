@@ -33,10 +33,16 @@ Changelog rules
 - Added steps that explain how to get captions for a video page address when the user asks, with official and lawful routes first (#46, #47)
 - Added a step that carries out the caption method in the current environment after the user agrees (#47)
 - Added a step that continues the workflow from step 2 with the .srt or .vtt captions obtained (#47)
+- Changed the first section of meeting minutes from the meeting purpose to a meeting overview with the meeting name, date and time, and attendees (#48)
+- Added a default date and time format for meeting minutes, YYYY-MM-DD HH:MM-HH:MM, that follows the user's regional convention when it differs (#48)
+- Added a question before writing meeting minutes that asks once for unconfirmed overview fields and unnamed speakers (#48)
 
 * 사용자 요청 시 영상 페이지 주소의 자막 확보 방법을 공식적이고 합법적인 경로 우선으로 안내하는 절차 추가 (#46, #47)
 * 사용자 동의 후 실행 환경에서 자막 확보 방법을 실행하는 단계 추가 (#47)
 * 확보한 .srt나 .vtt 자막으로 작업 순서 2번부터 이어가는 단계 추가 (#47)
+* 회의록 첫 절을 회의 목적에서 회의명, 회의일시, 참석자로 구성된 회의 개요로 변경 (#48)
+* 사용자 지역 관례를 우선하는 회의일시 기본 형식(YYYY-MM-DD HH:MM-HH:MM) 추가 (#48)
+* 회의록 작성 전에 확인되지 않은 개요 항목 및 발언자 이름을 한 번에 묻는 단계 추가 (#48)
 
 ## 2026-10-28
 
