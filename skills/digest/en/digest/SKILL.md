@@ -22,7 +22,7 @@ The skill turns many kinds of input into text and then into writing a reader can
 
 ## Workflow
 
-1. Check the input. If a request arrives without input, briefly list the input types and output types available and ask for the input. For a meeting-minutes request, also list the grouping options (speaker, topic, time).
+1. Check the input. If a request arrives without input, briefly list the input types and output types available and ask for the input. For a meeting-minutes request, also list the grouping options (speaker, topic, time). Ask for the meeting name, date and time, and attendees at the same time.
 2. Choose the output type using the "Output types" section.
 3. Install the required packages. Do this before any other work.
 4. Convert every input except pasted text with the script.
@@ -217,9 +217,13 @@ These principles apply to meeting minutes, briefings, and reports.
 
 Group by speaker, topic, or time. If the user names no grouping, group by topic. For a recording, finish transcription, correct the transcript, and treat it as the meeting transcript.
 
+Before you start writing, check whether the meeting name, date and time, and attendees appear in the transcript or the user's description. Ask the user about the unconfirmed fields in a single question. When asking for the meeting name, also suggest a name based on the main agenda. Leave out entirely any field the user asks to drop or does not know. When grouping by speaker or naming owners in the next steps, if the transcript labels speakers without names (for example "Speaker 1"), ask in the same question who each speaker is. If the user prefers not to say, keep the transcript labels.
+
 ```markdown
-# Meeting purpose
-- **(Topic) Purpose the meeting addressed**
+# Meeting overview
+- (Meeting name) Name of the meeting
+- (Date and time) YYYY-MM-DD HH:MM-HH:MM
+- (Attendees) Name, Name, Name
 
 # Discussion
 - **(Level-1 label) Claim**
@@ -231,11 +235,13 @@ Group by speaker, topic, or time. If the user names no grouping, group by topic.
 
 | Grouping | Level-1 label | Level-2 label | How to group |
 |---|---|---|---|
-| Speaker | Speaker name | Topic | Group by speaker, using names exactly as the transcript writes them. Write each speaker's claims as one block, never split across places |
+| Speaker | Speaker name | Topic | Group by speaker, using the names the user gave or the transcript labels. Write each speaker's claims as one block, never split across places |
 | Topic | Topic | Keyword | Group similar claims under one topic. Topics must not overlap, and no discussion may be left out |
 | Time | Topic | Keyword | Follow the order in which the discussion happened. Without time data, follow the order of remarks. Do not group by speaker, so the flow stays intact |
 
-- Write three to five lines each for the meeting purpose and next steps. If the transcript has fewer items, write only those.
+- Write the date and time as `YYYY-MM-DD HH:MM-HH:MM` on a 24-hour clock (for example 2026-03-05 14:00-15:30). Use the user's local time zone for the date and time.
+- Separate attendees with commas.
+- Write three to five lines for the next steps. If the transcript has fewer items, write only those.
 - Bold level-1 lines and do not indent them. Indent level-2 lines.
 - Attach evidence from the transcript as level 2 under every level-1 claim.
 
@@ -324,6 +330,7 @@ These rules apply to all write-ups and to the overview and summary of an essay t
 - Does every correction meet the correction test?
 - Does the overview contain only confirmed fields?
 - If any input was truncated, was the user told?
+- Before writing minutes, were the unconfirmed overview fields asked about?
 - Does every claim in the minutes carry evidence?
 - Is no paragraph missing from the translation?
 - Were the writing style rules followed?
