@@ -227,11 +227,11 @@ Before you start writing, check whether the meeting name, date and time, and att
 - (Attendees) Name, Name, Name
 
 # Discussion
-- **(Level-1 label) Claim**
-    + (Level-2 label) Evidence for the claim
+- (Level-1 label) Claim
+    + Evidence for the claim
 
 # Next steps
-- **(Owner) Recipient, deliverable, deadline**
+- (Owner) Recipient, deliverable, deadline
 ```
 
 | Grouping | Level-1 label | Level-2 label | How to group |
@@ -244,7 +244,8 @@ Before you start writing, check whether the meeting name, date and time, and att
 - The default format for the date and time is `YYYY-MM-DD HH:MM-HH:MM` on a 24-hour clock (for example 2026-03-05 14:00-15:30). If the user's region writes dates and times differently, follow that convention (for example 03/05/2026 2:00-3:30 PM for a user in the United States). Use the user's local time zone for the times.
 - Separate attendees with commas.
 - Write three to five lines for the next steps. If the transcript has fewer items, write only those.
-- Bold level-1 lines and do not indent them. Indent level-2 lines.
+- Do not indent level-1 lines. Indent level-2 lines.
+- Add a level-2 label only when the evidence needs structuring.
 - Attach evidence from the transcript as level 2 under every level-1 claim.
 
 ## Briefing
