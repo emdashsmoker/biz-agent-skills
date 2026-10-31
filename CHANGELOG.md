@@ -37,6 +37,8 @@ Changelog rules
 - Added a default date and time format for meeting minutes, YYYY-MM-DD HH:MM-HH:MM, that follows the user's regional convention when it differs (#48)
 - Added a question before writing meeting minutes that asks once for the unconfirmed meeting name, date and time, attendees, and speaker names (#48)
 - Changed the meeting purpose from three to five lines to one concise simple sentence written from the transcript (#49)
+- Removed the bold markup from the claim lines and next steps lines of meeting minutes (#50)
+- Changed the level-2 label of meeting minutes to be used in cases where the evidence needs structuring (#50)
 
 * 사용자 요청 시 영상 페이지 주소의 자막 확보 방법을 공식적이고 합법적인 경로 우선으로 안내하는 절차 추가 (#46, #47)
 * 사용자 동의 후 실행 환경에서 자막 확보 방법을 실행하는 단계 추가 (#47)
@@ -45,6 +47,8 @@ Changelog rules
 * 사용자 지역 관례를 우선하는 회의일시 기본 형식(YYYY-MM-DD HH:MM-HH:MM) 추가 (#48)
 * 회의록 작성 전에 확인되지 않은 회의명, 회의일시, 참석자, 발언자 이름을 한 번에 묻는 단계 추가 (#48)
 * 회의목적의 분량을 3-5줄에서 녹취록 기반의 1줄 단문으로 변경 (#49)
+* 회의록 주장 줄 및 향후 계획 줄의 굵게 표시 삭제 (#50)
+* 회의록 2단계 소제목의 사용 조건을 근거 구조화가 필요한 경우로 변경 (#50)
 
 ## 2026-10-28
 
