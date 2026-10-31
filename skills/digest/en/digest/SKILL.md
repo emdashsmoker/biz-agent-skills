@@ -228,7 +228,7 @@ Before you start writing, check whether the meeting name, date and time, and att
 
 # Discussion
 - (Level-1 label) Claim
-    + Evidence for the claim
+    + (Level-2 label) Evidence for the claim
 
 # Next steps
 - (Owner) Recipient, deliverable, deadline
