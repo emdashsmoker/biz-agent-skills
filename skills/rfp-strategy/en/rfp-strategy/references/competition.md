@@ -86,7 +86,7 @@ Many organizations do not publicize public service contracts they perform. Using
 
 - Apply only to notices where the eligibility judgment allows mid-sized and large companies. If the user turned filtering off, apply to every notice.
 - Large consulting firms win many public contracts without advertising a public-sector practice on their websites. Do not filter them out for lacking one.
-- Use three default candidate types: consulting arms of large accounting firms, large management consulting firms, and large education-association-type organizations. The last are association-form organizations that lead with management education and certification businesses. They win public consulting contracts without calling themselves consulting firms, so search for them separately.
+- Use large consulting firms with many public consulting contract wins as the default candidates. Include organizations without "consulting" in their names when they have public consulting contract wins. Confirm their contract wins separately through the award records path.
 - Obtain organization names by searching industry articles and reports of public contract work. Search for evidence that they have worked in the project field and record it in the rationale column. If no evidence turns up, write "group of organizations with many public contracts" and cite the organization's website URL with the check date.
 
 ### Search order

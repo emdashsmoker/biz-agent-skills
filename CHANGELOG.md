@@ -27,6 +27,13 @@ Changelog rules
 - (Push) Commit on top of the latest main and push directly to main.
 -->
 
+## 2026-11-02
+
+### rfp-strategy
+- Changed the default candidates of the large consulting firm type to large consulting firms with many public consulting contract wins, including organizations without "consulting" in their name (#52)
+
+* 대형 컨설팅사 유형의 기본 후보를 기관명과 관계없이 공공 컨설팅 수주 실적이 많은 대형 컨설팅사로 변경 (#52)
+
 ## 2026-10-31
 
 ### digest
