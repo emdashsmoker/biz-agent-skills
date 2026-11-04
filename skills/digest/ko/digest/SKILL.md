@@ -54,11 +54,11 @@ license: GPL-3.0-or-later with an output exception. Terms in LICENSE and NOTICE.
 | PDF, DOCX, PPTX, XLSX 등 문서 | markitdown[pdf,docx,pptx,xlsx,xls], pdfplumber |
 | HWPX | python-hwpx, beautifulsoup4, lxml |
 | HWP | pyhwp, olefile |
-| 음성, 영상 | faster-whisper |
+| 음성, 영상 | faster-whisper, `av<19` |
 | 자막 | 없음 |
 
 ```bash
-pip install httpx trafilatura "markitdown[pdf,docx,pptx,xlsx,xls]" pdfplumber python-hwpx beautifulsoup4 lxml olefile faster-whisper
+pip install httpx trafilatura "markitdown[pdf,docx,pptx,xlsx,xls]" pdfplumber python-hwpx beautifulsoup4 lxml olefile faster-whisper "av<19"
 pip install pyhwp
 ```
 
@@ -66,6 +66,7 @@ pip install pyhwp
 - 일회용 격리 환경(클라우드 샌드박스 등)에서 `externally-managed-environment` 오류가 나면 `--break-system-packages` 옵션을 붙여 다시 설치한다.
 - pyhwp 설치가 `install_layout` 관련 빌드 오류로 실패하면 `SETUPTOOLS_USE_DISTUTILS=stdlib pip install pyhwp`로 다시 시도한다. 그래도 실패하면 pyhwp 없이 진행한다. HWP 파일은 olefile 대체 경로로 처리된다.
 - ffmpeg는 선택 사항이다. 설치되어 있으면 음성 디코딩에 우선 쓰고 없으면 faster-whisper에 포함된 디코더를 쓴다.
+- faster-whisper 1.2.1에 포함된 디코더는 PyAV 19 이상에서 작동하지 않는다. 그래서 설치 명령에 `av<19` 조건을 둔다. ffmpeg가 없는 환경에서 `metadata_errors` 관련 오류가 나면 `pip install "av<19"`로 PyAV를 다시 설치한 뒤 재시도한다.
 - Whisper 모델은 첫 전사 때 Hugging Face에서 자동으로 내려받는다. 네트워크가 막힌 환경에서는 전사를 진행할 수 없으므로 사용자에게 그 사실을 알린다.
 - 스크립트가 `missing_dependency` 오류를 내면 결과에 적힌 `install` 명령을 실행한 뒤 다시 시도한다.
 

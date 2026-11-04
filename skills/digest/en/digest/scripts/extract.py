@@ -76,6 +76,8 @@ MIN_WEB_TEXT_CHARS = 50      # shorter trafilatura output counts as a failure an
 MIN_DOC_TEXT_CHARS = 10      # shorter document text is treated as an image-based document
 SAMPLE_RATE = 16000          # Whisper input format (16 kHz mono)
 FFMPEG_TIMEOUT_SEC = 600
+# The PyAV decoder in faster-whisper 1.2.1 passes av.open the metadata_errors argument that PyAV 19 removed
+PYAV_PIP_SPEC = '"av<19"'
 HWP5TXT_TIMEOUT_SEC = 60
 TRUNCATION_MARK = "\n\n[... truncated ...]"
 
@@ -438,7 +440,7 @@ def decode_audio(path):
             )
         audio, decoder = np.frombuffer(result.stdout, dtype=np.float32), "ffmpeg"
     else:
-        require("faster_whisper", "faster-whisper")
+        require("faster_whisper", f"faster-whisper {PYAV_PIP_SPEC}")
         from faster_whisper.audio import decode_audio as pyav_decode
         audio, decoder = pyav_decode(str(path), sampling_rate=SAMPLE_RATE), "pyav"
     if len(audio) == 0:

@@ -75,6 +75,8 @@ MIN_WEB_TEXT_CHARS = 50      # trafilatura 결과가 이보다 짧으면 추출 
 MIN_DOC_TEXT_CHARS = 10      # 문서 추출 결과가 이보다 짧으면 이미지 기반 문서로 판단
 SAMPLE_RATE = 16000          # Whisper 입력 규격(16kHz 모노)
 FFMPEG_TIMEOUT_SEC = 600
+# faster-whisper 1.2.1의 PyAV 디코더는 PyAV 19에서 제거된 av.open의 metadata_errors 인자를 사용
+PYAV_PIP_SPEC = '"av<19"'
 HWP5TXT_TIMEOUT_SEC = 60
 TRUNCATION_MARK = "\n\n[... 이하 생략 ...]"
 
@@ -437,7 +439,7 @@ def decode_audio(path):
             )
         audio, decoder = np.frombuffer(result.stdout, dtype=np.float32), "ffmpeg"
     else:
-        require("faster_whisper", "faster-whisper")
+        require("faster_whisper", f"faster-whisper {PYAV_PIP_SPEC}")
         from faster_whisper.audio import decode_audio as pyav_decode
         audio, decoder = pyav_decode(str(path), sampling_rate=SAMPLE_RATE), "pyav"
     if len(audio) == 0:
