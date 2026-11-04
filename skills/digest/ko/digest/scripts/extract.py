@@ -15,6 +15,7 @@ HWP 대체 파서(parse_hwp_olefile) 고지
 사용 예
     python extract.py report.pdf
     python extract.py "https://example.com/news/123" --max-chars 50000
+    python extract.py meeting.m4a --probe
     python extract.py meeting.m4a --model small --language ko
     python extract.py lecture.vtt --start 00:10:00 --end 00:25:00
     python extract.py --bundle
@@ -33,6 +34,7 @@ import struct
 import subprocess
 import sys
 import tempfile
+import time
 import traceback
 import zipfile
 import zlib
@@ -56,7 +58,16 @@ DEFAULT_CHUNK_SIZE = 2000
 DEFAULT_MODEL = "tiny"
 DEFAULT_BEAM_SIZE = 5
 DEFAULT_BUNDLE_NAME = "digest_documents.zip"
-MODEL_CHOICES = ["tiny", "base", "small", "medium", "large-v3"]
+
+# Whisper 모델별 매개변수 수(백만)와 상대 속도(large 기준). OpenAI Whisper 저장소 공개 값
+# --probe가 시범 모델의 실측 시간을 다른 모델의 예상 시간 범위로 환산할 때 사용
+#   하한: 상대 속도 비율. GPU 측정값이라 CPU에서는 빠른 쪽 추정
+#   상한: 매개변수 수 비율. CPU 연산량이 모델 크기에 비례한다고 본 느린 쪽 추정
+MODEL_PARAMS_M = {"tiny": 39, "base": 74, "small": 244, "medium": 769, "large-v3": 1550}
+MODEL_RELATIVE_SPEED = {"tiny": 10, "base": 7, "small": 4, "medium": 2, "large-v3": 1}
+MODEL_CHOICES = list(MODEL_PARAMS_M)
+PROBE_MODEL = "tiny"         # 내려받기와 실행이 가장 빠른 모델로 기기 속도 측정
+PROBE_SAMPLE_SEC = 60        # Whisper 처리 단위(30초) 2개 분량. 짧으면 측정 편차가 커짐
 
 # 매직넘버 대신 이름을 붙인 기준값
 CHUNK_OVERFLOW_RATIO = 1.5   # 제목 단위 청크가 기준의 1.5배를 넘으면 문단 단위로 다시 분할
@@ -434,22 +445,38 @@ def decode_audio(path):
     return audio, decoder
 
 
-def transcribe(path, model_size, language, beam_size, start, end, timestamps):
+def load_target_audio(path, start, end):
+    """디코딩 후 --start, --end 구간만 잘라 반환"""
     audio, decoder = decode_audio(path)
     full_duration = len(audio) / SAMPLE_RATE
-    offset = start or 0.0
-    first = int(offset * SAMPLE_RATE)
+    first = int((start or 0.0) * SAMPLE_RATE)
     last = int(end * SAMPLE_RATE) if end is not None else len(audio)
-    audio = audio[first:last]
     print(f"[DECODE] {path.name} {format_duration(full_duration)} ({decoder})", file=sys.stderr)
+    target = audio[first:last]
+    if len(target) == 0:
+        raise RuntimeError("처리 구간이 비어 있음 (--start, --end 값 확인)")
+    return target, full_duration, decoder
 
+
+def load_whisper(model_size):
     require("faster_whisper", "faster-whisper")
     from faster_whisper import WhisperModel
-    model = WhisperModel(model_size, device="cpu", compute_type="int8")
+    return WhisperModel(model_size, device="cpu", compute_type="int8")
+
+
+def run_whisper(model, audio, language, beam_size):
+    """faster-whisper의 segments는 지연 생성이라 목록으로 바꿔야 전사가 끝남"""
     options = {"beam_size": beam_size}
     if language:
         options["language"] = language
     segments, info = model.transcribe(audio, **options)
+    return list(segments), info
+
+
+def transcribe(path, model_size, language, beam_size, start, end, timestamps):
+    audio, full_duration, decoder = load_target_audio(path, start, end)
+    segments, info = run_whisper(load_whisper(model_size), audio, language, beam_size)
+    offset = start or 0.0
 
     lines = []
     for seg in segments:
@@ -464,6 +491,58 @@ def transcribe(path, model_size, language, beam_size, start, end, timestamps):
         "decoder": decoder,
     }
     return lines, meta
+
+
+def middle_sample(audio):
+    """녹음 앞뒤의 무음과 잡담을 피하려고 처리 구간 중간에서 시범 구간을 자름"""
+    size = min(len(audio), PROBE_SAMPLE_SEC * SAMPLE_RATE)
+    first = (len(audio) - size) // 2
+    return audio[first:first + size]
+
+
+def estimate_ranges(probe_model_sec):
+    """시범 모델의 예상 시간을 모델 크기 비율로 환산하여 모델별 예상 시간 범위 반환"""
+    speed, params = MODEL_RELATIVE_SPEED[PROBE_MODEL], MODEL_PARAMS_M[PROBE_MODEL]
+    return {
+        model: {
+            "min": format_duration(probe_model_sec * speed / MODEL_RELATIVE_SPEED[model]),
+            "max": format_duration(probe_model_sec * MODEL_PARAMS_M[model] / params),
+        }
+        for model in MODEL_CHOICES
+    }
+
+
+def describe_machine():
+    """모델 선택 안내에 쓸 CPU 코어 수와 전체 메모리. sysconf가 없는 Windows는 메모리 null"""
+    try:
+        memory_gb = round(os.sysconf("SC_PAGE_SIZE") * os.sysconf("SC_PHYS_PAGES") / 1024 ** 3, 1)
+    except (AttributeError, ValueError, OSError):
+        memory_gb = None
+    return {"cpu_count": os.cpu_count(), "memory_gb": memory_gb}
+
+
+def probe_media(path, language, beam_size, start, end):
+    """시범 구간을 시범 모델로 전사해 이 기기의 처리 속도를 재고 모델별 예상 전사 시간 계산"""
+    audio, full_duration, decoder = load_target_audio(path, start, end)
+    target_sec = len(audio) / SAMPLE_RATE
+    sample = middle_sample(audio)
+    sample_sec = len(sample) / SAMPLE_RATE
+    model = load_whisper(PROBE_MODEL)
+    began = time.perf_counter()  # 모델 내려받기와 불러오기 시간은 측정에서 제외
+    _, info = run_whisper(model, sample, language, beam_size)
+    realtime_factor = (time.perf_counter() - began) / sample_sec
+    return {
+        "duration": format_duration(full_duration),
+        "target_duration": format_duration(target_sec),
+        "probe_model": PROBE_MODEL,
+        "sample_sec": round(sample_sec),
+        "realtime_factor": round(realtime_factor, 3),
+        "language": info.language,
+        "language_probability": round(info.language_probability, 2),
+        "decoder": decoder,
+        **describe_machine(),
+        "estimates": estimate_ranges(target_sec * realtime_factor),
+    }
 
 
 # ── 웹 수신 ───────────────────────────────────────────────────
@@ -612,6 +691,10 @@ def process_file(path, args, source=None):
         return {**base, "kind": "captions", "engine": "caption_cleaner", "output_path": str(out),
                 "cue_count": cues, "char_count": len(text), "truncated": truncated}
 
+    if ext in MEDIA_EXTS and args.probe:
+        return {**base, "kind": "media_probe",
+                **probe_media(path, args.language, args.beam_size, args.start, args.end)}
+
     if ext in MEDIA_EXTS:
         lines, meta = transcribe(path, args.model, args.language, args.beam_size,
                                  args.start, args.end, args.timestamps)
@@ -693,6 +776,7 @@ def build_parser():
     ap.add_argument("--start", help="자막 및 음성 처리 시작 시각 (예: 00:10:00)")
     ap.add_argument("--end", help="자막 및 음성 처리 종료 시각 (예: 00:25:00)")
     ap.add_argument("--timestamps", action="store_true", help="자막 및 전사 줄 앞에 시각 표기")
+    ap.add_argument("--probe", action="store_true", help="음성 시범 전사로 모델별 예상 전사 시간 계산 (음성과 영상 전용)")
     ap.add_argument("--model", default=DEFAULT_MODEL, choices=MODEL_CHOICES, help="Whisper 모델 크기")
     ap.add_argument("--language", default=None, help="음성 언어 코드 (예: ko, en). 미지정 시 자동 감지")
     ap.add_argument("--beam-size", type=int, default=DEFAULT_BEAM_SIZE, help="빔 서치 크기")
