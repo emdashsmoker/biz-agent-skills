@@ -25,7 +25,7 @@ The skill turns many kinds of input into text and then into writing a reader can
 1. Check the input. If a request arrives without input, briefly list the input types and output types available and ask for the input. For a meeting-minutes request, also list the grouping options (speaker, topic, time). Ask for the meeting name, date and time, and attendees at the same time.
 2. Choose the output type using the "Output types" section.
 3. Install the required packages. Do this before any other work.
-4. Convert every input except pasted text with the script. Transcribe audio and video with the model the user picks in the "Choosing the transcription model" section.
+4. Convert every input except pasted text with the script. Transcribe audio and video with the model the user selects in the "Choosing the transcription model" section.
 5. Read the conversion result files. Do not read the original document, caption, or audio files.
 6. Write in the format for the chosen output type.
 7. Go through the "Pre-delivery check" section, then deliver. Output write-ups and translations as a chat reply, and save them as a markdown file when the user wants a file. Deliver conversions as files.
@@ -154,27 +154,28 @@ The script prints a JSON summary. Read the file in `output_path` (or `chunk_path
 
 ### Choosing the transcription model
 
-Larger models are more accurate, take longer, and use more memory. The same model can take very different times on different machines. So measure the speed on the machine that will transcribe first, then let the user compare time and accuracy and pick a model. If the user already named a model in the request, skip these steps and transcribe with that model.
+Larger models recognize speech more accurately but take longer and use more memory. The same model can take very different times on different machines. So measure the processing speed on the machine that will transcribe first. The user then compares time and accuracy from the result and selects a model. If the user specified a model in the request, skip these steps and transcribe with that model.
 
-1. Run a probe with `--probe`. Pass the same `--start`, `--end`, `--language`, and `--beam-size` you will use for the transcription. The script transcribes 60 seconds from the middle of the range with tiny, measures the speed, and puts an expected time range per model in `estimates`.
-2. Take the model whose recommended task in the table below matches the task at hand as the recommended model. If the recommended model's expected time is long, also offer the next smaller model as an alternative.
-3. Tell the user the machine specs (`cpu_count`, `memory_gb`), the length of the processing range (`target_duration`), and the recommended model. Show the expected time per model in a table with model, expected time, and recommended task columns. Write the expected time as the `min`-`max` range from `estimates`.
-4. Ask the user to pick a model. Do not start transcribing before the user picks.
-5. Transcribe with the chosen model in `--model`.
+1. Run a probe with `--probe`. Set `--start`, `--end`, `--language`, and `--beam-size` to the same values as the real transcription. The script transcribes 60 seconds from the middle of the range with tiny to measure the processing speed. The expected time range per model calculated from the result is recorded in `estimates`.
+2. Determine the recommended model. Weigh the recognition accuracy the output requires, how hard the recording is to recognize (language, noise, number of speakers, technical terms), the expected time, and memory. If the recommended model's expected time is long, also present the next smaller model as an alternative.
+3. Inform the user of the machine specs (`cpu_count`, `memory_gb`), the length of the processing range (`target_duration`), the recommended model, and the reason for the recommendation. Present the expected time per model in a table with model, expected time, and recognition accuracy columns. Write the expected time as the `min`-`max` range from `estimates`.
+4. Ask the user to select a model. Do not start transcribing before the user selects one.
+5. Transcribe with the selected model in `--model`.
 
-| Model | Parameters | Relative speed (vs large) | Peak memory (measured) | Recommended task |
+| Model | Parameters | Relative speed (vs large) | Peak memory (measured) | Recognition accuracy (relative grade) |
 |---|---|---|---|---|
-| tiny | about 39M | about 10x | about 0.4 GB | Tasks with tight time or memory limits. Many recognition errors make correction heavy |
-| base | about 74M | about 7x | about 0.5 GB | Tasks with tight time or memory limits |
-| small | about 244M | about 4x | about 1.2 GB | Briefings and summaries that aim to grasp the content |
-| medium | about 769M | about 2x | about 3.3 GB | Minutes and transcripts that must carry what was said accurately |
-| large-v3 | about 1,550M | 1x | about 5.5 GB | Conversions that deliver the transcript itself, where accuracy matters most |
+| tiny | about 39M | about 10x | about 0.4 GB | Lowest |
+| base | about 74M | about 7x | about 0.5 GB | Low |
+| small | about 244M | about 4x | about 1.2 GB | Medium |
+| medium | about 769M | about 2x | about 3.3 GB | High |
+| large-v3 | about 1,550M | 1x | about 5.5 GB | Highest |
 
-- The relative speed was measured on a GPU. Judge CPU transcription time from the `--probe` result. Recognition quality varies widely by language.
-- The expected time leaves out model download and load time. A model used for the first time adds its download time.
-- Drop models whose peak memory exceeds `memory_gb` from the options. Warn that a model whose peak memory is close to `memory_gb` may fail for lack of memory. If `memory_gb` is null, say that memory could not be checked.
-- With several audio files, run a probe for each file. Compute the total expected time per model with code and ask once.
-- If the environment limits how long a command may run, compare that limit with the upper bound of the chosen model's expected time. If the upper bound is longer, transcribe with the background execution the environment provides. If there is none, split the processing range with `--start` and `--end` into parts shorter than the limit and transcribe them one by one.
+- The relative speed was measured on a GPU. Judge CPU transcription time by the `--probe` result.
+- The accuracy grade is the relative order among models. Actual recognition quality varies widely with the language and the recording conditions.
+- The expected time does not include model download time or load time. A model used for the first time adds its download time.
+- Exclude models whose peak memory exceeds `memory_gb` from the options. For a model whose peak memory is close to `memory_gb`, inform the user that it may fail for lack of memory. If `memory_gb` is null, inform the user that memory could not be checked.
+- With several audio files, run a probe for each file. Calculate the total expected time per model with code and present it at once.
+- If the environment limits how long a command may run, compare that limit with the upper bound of the selected model's expected time. If the upper bound is longer, transcribe with the environment's background execution feature. If there is no such feature, split the processing range with `--start` and `--end` into parts shorter than the limit and transcribe them in turn.
 
 > OpenAI(2022), Whisper model sizes, parameters, and relative speed(https://github.com/openai/whisper)
 
@@ -346,7 +347,7 @@ These rules apply to all write-ups and to the overview and summary of an essay t
 
 - Does the output type match the request and the "Output types" section?
 - Was the writing based on the conversion result files?
-- Was audio transcribed with the model the user picked or named?
+- Was audio transcribed with the model the user selected or specified?
 - Is every topic in the input reflected?
 - Are there no claims, judgments, figures, or plans that the input lacks?
 - Does every correction meet the correction test?
