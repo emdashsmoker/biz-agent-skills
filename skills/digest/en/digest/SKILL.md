@@ -155,11 +155,15 @@ The script prints a JSON summary. Read the file in `output_path` (or `chunk_path
 
 ### Choosing the transcription model
 
-Larger models recognize speech more accurately but take longer and use more memory. The same model can take very different times on different machines. So measure the processing speed on the machine that will transcribe first. The user then compares time and accuracy from the result and selects a model. If the user specified a model in the request, skip these steps and transcribe with that model.
+The transcription model is a speech recognition model that turns speech into text. The skill runs the Whisper model published by OpenAI on the user's machine, so the audio never leaves the machine. Whisper comes in several sizes. Larger models recognize speech more accurately but take longer and use more memory. The same model can take very different times on different machines. So measure the processing speed on the machine that will transcribe first. The user then compares time and accuracy from the result and selects a model. If the user specified a model in the request, skip these steps and transcribe with that model.
 
 1. Run a probe with `--probe`. Set `--start`, `--end`, `--language`, and `--beam-size` to the same values as the real transcription. The script transcribes 60 seconds from the middle of the range with tiny to measure the processing speed. The expected time range per model calculated from the result is recorded in `estimates`.
-2. Determine the recommended model. Weigh the recognition accuracy the output requires, how hard the recording is to recognize (language, noise, number of speakers, technical terms), the expected time, and memory. If the recommended model's expected time is long, also present the next smaller model as an alternative.
-3. Inform the user of the machine specs (`cpu_count`, `memory_gb`), the length of the processing range (`target_duration`), the recommended model, and the reason for the recommendation. Present the expected time per model in a table with model, expected time, and recognition accuracy columns. Write the expected time as the `min`-`max` range from `estimates`.
+2. Determine the recommended model by the following criteria.
+    - Decide first how much recognition accuracy the output needs. A write-up corrects recognition errors from the surrounding sentences during writing, so it needs less accuracy than a conversion, which delivers the transcript as it is.
+    - Judge how hard the recording is to recognize from confirmed facts only. Confirmed facts are the recording conditions the user described (noise, number of speakers, share of technical terms) and the language detection result of the probe (`language`, `language_probability`). The subject or field of the material is no evidence of recognition difficulty.
+    - Recommend the model with the shortest expected time among those that meet the needed accuracy and the recognition difficulty. Move up to a larger model one step at a time, and only when a confirmed fact calls for it.
+    - If the recommended model's expected time is long, also present the next smaller model as an alternative.
+3. Inform the user in this order: an explanation of the transcription model, the machine specs (`cpu_count`, `memory_gb`), the length of the processing range (`target_duration`), the expected time per model, and the recommended model with the reason. The explanation covers, in two or three sentences, what the model does, how model size relates to accuracy, time, and memory, the download of a model used for the first time, and the fact that the audio never leaves the machine. Skip the explanation if the user says they already know the transcription model. Present the expected time per model in a table with model, expected time, and recognition accuracy columns. Write the expected time as the `min`-`max` range from `estimates`.
 4. Ask the user to select a model. Do not start transcribing before the user selects one.
 5. Transcribe with the selected model in `--model`.
 
@@ -349,6 +353,7 @@ These rules apply to all write-ups and to the overview and summary of an essay t
 - Does the output type match the request and the "Output types" section?
 - Was the writing based on the conversion result files?
 - Was audio transcribed with the model the user selected or specified?
+- Did the model guidance include the explanation of the model and the reason for the recommendation?
 - Is every topic in the input reflected?
 - Are there no claims, judgments, figures, or plans that the input lacks?
 - Does every correction meet the correction test?

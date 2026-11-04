@@ -34,11 +34,15 @@ Changelog rules
 - Changed the transcription model choice from tiny by default to the model the user selects after seeing the expected time per model (#54)
 - Added peak memory and a relative recognition accuracy grade to the Whisper model table (#54)
 - Fixed audio decoding without ffmpeg by adding the PyAV version condition av<19 to the installation (#55)
+- Added an explanation of the transcription model to the model choice guidance for users meeting it for the first time (#57)
+- Changed the model recommendation to the fastest model that meets the accuracy the output needs and the recording conditions confirmed by the user (#57)
 
 * 기기의 전사 속도 측정 결과로 Whisper 모델별 예상 시간을 계산하는 `--probe` 옵션 추가 (#54)
 * 전사 모델 결정 방식을 tiny 기본 사용에서 모델별 예상 시간 안내 후 사용자 선택으로 변경 (#54)
 * Whisper 모델 표에 최대 메모리 및 인식 정확도 상대 등급 추가 (#54)
 * PyAV 버전 조건(av<19) 추가로 ffmpeg 미설치 환경의 음성 디코딩 실패 수정 (#55)
+* 전사 모델 선택 안내에 처음 접하는 사용자를 위한 전사 모델 설명 추가 (#57)
+* 전사 모델 추천 기준을 결과물에 필요한 정확도와 사용자가 확인한 녹음 상태를 충족하는 최단 시간 모델로 변경 (#57)
 
 ## 2026-11-02
 
