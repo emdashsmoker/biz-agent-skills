@@ -150,19 +150,35 @@ The script prints a JSON summary. Read the file in `output_path` (or `chunk_path
 
 - The script decodes the input to 16 kHz mono and transcribes on the CPU with int8 precision. It saves one line per segment without times. Add `--timestamps` for time-based minutes or when the user asks for times.
 - When the user wants only part of a recording, process that range with `--start` and `--end`. Pass `--language` when the language is known.
-- Use tiny by default. Use small or larger when the user asks for better quality. Use tiny or base when memory is short or the recording runs 60 minutes or longer.
+- Choose the transcription model by following the "Choosing the transcription model" section.
 
-| Model | Parameters | Relative speed (vs large) |
-|---|---|---|
-| tiny | about 39M | about 10x |
-| base | about 74M | about 7x |
-| small | about 244M | about 4x |
-| medium | about 769M | about 2x |
-| large-v3 | about 1,550M | 1x |
+### Choosing the transcription model
 
-Larger models are more accurate, slower, and use more memory. Recognition quality varies widely by language. tiny makes many recognition errors, so it needs more correction.
+Larger models are more accurate, take longer, and use more memory. The same model can take very different times on different machines. So measure the speed on the machine that will transcribe first, then let the user compare time and accuracy and pick a model. If the user already named a model in the request, skip these steps and transcribe with that model.
+
+1. Run a probe with `--probe`. Pass the same `--start`, `--end`, `--language`, and `--beam-size` you will use for the transcription. The script transcribes 60 seconds from the middle of the range with tiny, measures the speed, and puts an expected time range per model in `estimates`.
+2. Take the model whose recommended task in the table below matches the task at hand as the recommended model. If the recommended model's expected time is long, also offer the next smaller model as an alternative.
+3. Tell the user the machine specs (`cpu_count`, `memory_gb`), the length of the processing range (`target_duration`), and the recommended model. Show the expected time per model in a table with model, expected time, and recommended task columns. Write the expected time as the `min`-`max` range from `estimates`.
+4. Ask the user to pick a model. Do not start transcribing before the user picks.
+5. Transcribe with the chosen model in `--model`.
+
+| Model | Parameters | Relative speed (vs large) | Peak memory (measured) | Recommended task |
+|---|---|---|---|---|
+| tiny | about 39M | about 10x | about 0.4 GB | Tasks with tight time or memory limits. Many recognition errors make correction heavy |
+| base | about 74M | about 7x | about 0.5 GB | Tasks with tight time or memory limits |
+| small | about 244M | about 4x | about 1.2 GB | Briefings and summaries that aim to grasp the content |
+| medium | about 769M | about 2x | about 3.3 GB | Minutes and transcripts that must carry what was said accurately |
+| large-v3 | about 1,550M | 1x | about 5.5 GB | Conversions that deliver the transcript itself, where accuracy matters most |
+
+- The relative speed was measured on a GPU. Judge CPU transcription time from the `--probe` result. Recognition quality varies widely by language.
+- The expected time leaves out model download and load time. A model used for the first time adds its download time.
+- Drop models whose peak memory exceeds `memory_gb` from the options. Warn that a model whose peak memory is close to `memory_gb` may fail for lack of memory. If `memory_gb` is null, say that memory could not be checked.
+- With several audio files, run a probe for each file. Compute the total expected time per model with code and ask once.
+- If the environment limits how long a command may run, compare that limit with the upper bound of the chosen model's expected time. If the upper bound is longer, transcribe with the background execution the environment provides. If there is none, split the processing range with `--start` and `--end` into parts shorter than the limit and transcribe them one by one.
 
 > OpenAI(2022), Whisper model sizes, parameters, and relative speed(https://github.com/openai/whisper)
+
+> (Peak memory test setup) faster-whisper 1.2.1, CPU int8, beam size 5, 250 seconds of Zeroth Korean test audio(https://huggingface.co/datasets/Bingsu/zeroth-korean)
 
 ### Caption files
 
@@ -330,6 +346,7 @@ These rules apply to all write-ups and to the overview and summary of an essay t
 
 - Does the output type match the request and the "Output types" section?
 - Was the writing based on the conversion result files?
+- Was audio transcribed with the model the user picked or named?
 - Is every topic in the input reflected?
 - Are there no claims, judgments, figures, or plans that the input lacks?
 - Does every correction meet the correction test?
