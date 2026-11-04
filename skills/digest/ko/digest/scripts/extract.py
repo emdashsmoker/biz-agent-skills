@@ -61,17 +61,17 @@ DEFAULT_BUNDLE_NAME = "digest_documents.zip"
 
 # Whisper 모델별 매개변수 수(백만)와 상대 속도(large 기준). OpenAI Whisper 저장소 공개 값
 # --probe가 시범 모델의 실측 시간을 다른 모델의 예상 시간 범위로 환산할 때 사용
-#   하한: 상대 속도 비율. GPU 측정값이라 CPU에서는 빠른 쪽 추정
-#   상한: 매개변수 수 비율. CPU 연산량이 모델 크기에 비례한다고 본 느린 쪽 추정
+#   하한: 상대 속도 비율. GPU 측정값이므로 CPU 기준으로는 최소 예상 시간
+#   상한: 매개변수 수 비율. CPU 연산량이 모델 크기에 비례한다고 가정한 최대 예상 시간
 MODEL_PARAMS_M = {"tiny": 39, "base": 74, "small": 244, "medium": 769, "large-v3": 1550}
 MODEL_RELATIVE_SPEED = {"tiny": 10, "base": 7, "small": 4, "medium": 2, "large-v3": 1}
 MODEL_CHOICES = list(MODEL_PARAMS_M)
 PROBE_MODEL = "tiny"         # 내려받기와 실행이 가장 빠른 모델로 기기 속도 측정
 PROBE_SAMPLE_SEC = 60        # Whisper 처리 단위(30초) 2개 분량. 짧으면 측정 편차가 커짐
 
-# 매직넘버 대신 이름을 붙인 기준값
+# 매직넘버 대신 이름을 부여한 기준값
 CHUNK_OVERFLOW_RATIO = 1.5   # 제목 단위 청크가 기준의 1.5배를 넘으면 문단 단위로 다시 분할
-MIN_WEB_TEXT_CHARS = 50      # trafilatura 결과가 이보다 짧으면 추출 실패로 보고 대체 추출기 사용
+MIN_WEB_TEXT_CHARS = 50      # trafilatura 결과가 이보다 짧으면 추출 실패로 간주하고 대체 추출기 사용
 MIN_DOC_TEXT_CHARS = 10      # 문서 추출 결과가 이보다 짧으면 이미지 기반 문서로 판단
 SAMPLE_RATE = 16000          # Whisper 입력 규격(16kHz 모노)
 FFMPEG_TIMEOUT_SEC = 600
@@ -467,7 +467,7 @@ def load_whisper(model_size):
 
 
 def run_whisper(model, audio, language, beam_size):
-    """faster-whisper의 segments는 지연 생성이라 목록으로 바꿔야 전사가 끝남"""
+    """faster-whisper의 segments는 지연 생성 방식이므로 목록으로 변환해야 전사가 완료됨"""
     options = {"beam_size": beam_size}
     if language:
         options["language"] = language
@@ -496,7 +496,7 @@ def transcribe(path, model_size, language, beam_size, start, end, timestamps):
 
 
 def middle_sample(audio):
-    """녹음 앞뒤의 무음과 잡담을 피하려고 처리 구간 중간에서 시범 구간을 자름"""
+    """녹음 앞뒤의 무음과 잡담을 제외하기 위해 처리 구간 중간에서 시범 구간을 추출"""
     size = min(len(audio), PROBE_SAMPLE_SEC * SAMPLE_RATE)
     first = (len(audio) - size) // 2
     return audio[first:first + size]
@@ -515,7 +515,7 @@ def estimate_ranges(probe_model_sec):
 
 
 def describe_machine():
-    """모델 선택 안내에 쓸 CPU 코어 수와 전체 메모리. sysconf가 없는 Windows는 메모리 null"""
+    """모델 선택 안내에 사용할 CPU 코어 수와 전체 메모리. sysconf가 없는 Windows는 메모리 null"""
     try:
         memory_gb = round(os.sysconf("SC_PAGE_SIZE") * os.sysconf("SC_PHYS_PAGES") / 1024 ** 3, 1)
     except (AttributeError, ValueError, OSError):
@@ -524,7 +524,7 @@ def describe_machine():
 
 
 def probe_media(path, language, beam_size, start, end):
-    """시범 구간을 시범 모델로 전사해 이 기기의 처리 속도를 재고 모델별 예상 전사 시간 계산"""
+    """시범 구간을 시범 모델로 전사하여 이 기기의 처리 속도를 측정하고 모델별 예상 전사 시간 계산"""
     audio, full_duration, decoder = load_target_audio(path, start, end)
     target_sec = len(audio) / SAMPLE_RATE
     sample = middle_sample(audio)
