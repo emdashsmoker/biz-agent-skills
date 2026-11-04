@@ -27,17 +27,6 @@ Changelog rules
 - (Push) Commit on top of the latest main and push directly to main.
 -->
 
-## 2026-11-04
-
-### digest
-- Added a `--probe` option that measures transcription speed on the machine and estimates the expected time per Whisper model (#54)
-- Changed the transcription model choice from tiny by default to the model the user selects after seeing the expected time per model (#54)
-- Added peak memory and a relative recognition accuracy grade to the Whisper model table (#54)
-
-* 기기의 전사 속도 측정 결과로 Whisper 모델별 예상 시간을 계산하는 `--probe` 옵션 추가 (#54)
-* 전사 모델 결정 방식을 tiny 기본 사용에서 모델별 예상 시간 안내 후 사용자 선택으로 변경 (#54)
-* Whisper 모델 표에 최대 메모리 및 인식 정확도 상대 등급 추가 (#54)
-
 ## 2026-11-02
 
 ### rfp-strategy
