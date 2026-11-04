@@ -62,8 +62,8 @@ DEFAULT_BUNDLE_NAME = "digest_documents.zip"
 
 # Parameters (millions) and relative speed (vs large) per Whisper model, as published in the OpenAI Whisper repository
 # --probe uses them to turn the measured time of the probe model into a time range for every other model
-#   lower bound: relative speed ratio. Measured on GPU, so it is the fast-side estimate on a CPU
-#   upper bound: parameter ratio. Assumes CPU compute grows with model size, so it is the slow-side estimate
+#   lower bound: relative speed ratio. Measured on GPU, so on a CPU it gives the shortest expected time
+#   upper bound: parameter ratio. Assumes CPU compute grows with model size, so it gives the longest expected time
 MODEL_PARAMS_M = {"tiny": 39, "base": 74, "small": 244, "medium": 769, "large-v3": 1550}
 MODEL_RELATIVE_SPEED = {"tiny": 10, "base": 7, "small": 4, "medium": 2, "large-v3": 1}
 MODEL_CHOICES = list(MODEL_PARAMS_M)

@@ -1,6 +1,6 @@
 ---
 name: digest
-description: Converts web addresses, documents (PDF, HWP, HWPX, DOCX, PPTX, XLSX and more), audio and video files, caption files (SRT, VTT), and pasted text into text, then organizes them into meeting minutes, briefings, reports, translations, or markdown conversions. Audio is transcribed locally with faster-whisper, web pages are extracted with trafilatura, and documents are converted with markitdown, pdfplumber, python-hwpx, and pyhwp. Use this skill whenever the user asks to write up meeting minutes, clean up a transcript, organize a recording, convert speech to text, clean up captions, summarize a video, summarize or translate a news article, translate a column, extract the body of a web page, convert a document to markdown, extract file contents, or write a report or briefing that combines several sources. Also use it whenever the user hands over a file or link and asks for a summary, write-up, or translation, even without naming a format.
+description: Converts web addresses, documents (PDF, HWP, HWPX, DOCX, PPTX, XLSX and more), audio and video files, caption files (SRT, VTT), and pasted text into text, then organizes them into meeting minutes, briefings, reports, translations, or markdown conversions. Audio is transcribed locally with faster-whisper, web pages are extracted with trafilatura, and documents are converted with markitdown, pdfplumber, python-hwpx, and pyhwp. Use this skill whenever the user asks to write up meeting minutes, clean up a transcript, organize a recording, convert speech to text, clean up captions, summarize a video, summarize or translate a news article, translate a column, extract the body of a web page, convert a document to markdown, extract file contents, or write a report or briefing that combines several sources. Also use it whenever the user provides a file or link and asks for a summary, write-up, or translation, even without naming a format.
 license: GPL-3.0-or-later with an output exception. Terms in LICENSE and NOTICE.md
 ---
 
@@ -8,7 +8,7 @@ license: GPL-3.0-or-later with an output exception. Terms in LICENSE and NOTICE.
 
 This English version was translated from the Korean original. It may behave differently from what the original intends.
 
-The skill turns many kinds of input into text and then into writing a reader can use right away. `scripts/extract.py` handles conversion and the model handles the writing. Save the conversion result to a file first, then read that file and write. Reading the raw input directly lets timing lines, markup tags, and repeated lines leak noise into the result.
+The skill turns many kinds of input into text and then into writing a reader can use without further editing. `scripts/extract.py` handles conversion and the model handles the writing. Save the conversion result to a file first, then read that file and write. Reading the raw input directly lets timing lines, markup tags, and repeated lines leak noise into the result.
 
 ## Terms
 
@@ -34,11 +34,11 @@ When input arrives with the request, skip the guidance and start from step 2. Af
 
 ## Output types
 
-If the user specifies a type, format, or length, follow it. Otherwise check the table from the top and pick the first matching type.
+If the user specifies a type, format, or length, follow it. Otherwise check the table from the top and select the first matching type.
 
 | Order | Condition | Output |
 |---|---|---|
-| 1 | The user only asks for a format change, such as convert, extract, or turn into markdown | Conversion |
+| 1 | The user only asks for a format change, such as convert, extract, or reformat as markdown | Conversion |
 | 2 | The user asks for a translation | Translation |
 | 3 | The user says the input is from a meeting, or the input records several participants discussing agenda items | Meeting minutes |
 | 4 | There is one input | Briefing |
@@ -65,11 +65,11 @@ pip install pyhwp
 ```
 
 - On a personal computer, create a project virtual environment (venv, conda, or similar) and install there. Installing into the system Python can conflict with packages other programs use.
-- In a disposable isolated environment such as a cloud sandbox, rerun the install with `--break-system-packages` if you see an `externally-managed-environment` error.
+- In a disposable isolated environment such as a cloud sandbox, rerun the install with `--break-system-packages` if an `externally-managed-environment` error occurs.
 - If pyhwp fails with a build error mentioning `install_layout`, retry with `SETUPTOOLS_USE_DISTUTILS=stdlib pip install pyhwp`. If it still fails, continue without pyhwp. HWP files then go through the olefile fallback.
 - ffmpeg is optional. The script uses it for audio decoding when present and uses the decoder bundled with faster-whisper otherwise.
 - The decoder bundled with faster-whisper 1.2.1 does not work with PyAV 19 or later, so the install command keeps the `av<19` condition. If an error mentioning `metadata_errors` appears where ffmpeg is absent, reinstall PyAV with `pip install "av<19"` and try again.
-- Whisper models download from Hugging Face on the first transcription. Transcription cannot run where the network is blocked, so tell the user.
+- Whisper models download from Hugging Face on the first transcription. Transcription cannot run where network access is restricted, so tell the user.
 - If the script returns a `missing_dependency` error, run the `install` command in the result and try again.
 
 ## Input conversion
@@ -110,7 +110,7 @@ python scripts/extract.py --clean
 | Option | Default | Purpose |
 |---|---|---|
 | `--out-dir` | `digest_work` | Output folder |
-| `--max-chars` | 0 (no limit) | Maximum characters of result text. Anything beyond is cut and marked as truncated |
+| `--max-chars` | 0 (no limit) | Maximum characters of result text. Text beyond the limit is cut, and a truncation mark is added at the end |
 | `--timeout` | 15 | Web request timeout in seconds |
 | `--download` | off | Keep the original file of a web address in the `downloads` folder |
 | `--chunk`, `--chunk-size` | off, 2000 | Split a document into heading-based chunk files |
@@ -143,7 +143,7 @@ The script prints a JSON summary. Read the file in `output_path` (or `chunk_path
 
 - Fetch with the script first. If network limits in the environment keep the script from reaching the address, use the web reading tool the environment provides. If there is none, ask the user for the file or the text.
 - The skill has no search function. Addresses come from the user or from separate web search results.
-- Pages behind a login or subscription yield only their public part. If the body is missing, ask the user to supply it.
+- Pages behind a login or subscription yield only their publicly visible content. If the body is missing, ask the user to supply it.
 - For document addresses, extract the text and do not keep the original. Use `--download` only when the user asks to keep files or when the task collects documents found through web search.
 - Bundle three or more downloaded files with `--bundle` before delivery, and deliver two or fewer one by one. Before starting a second download task in the same conversation, clear earlier files with `--clean`.
 
@@ -189,21 +189,21 @@ Larger models recognize speech more accurately but take longer and use more memo
 
 ### Video platform addresses
 
-When the user gives only the address of a video page on a video sharing service, do not download the video or its captions with automated tools without the user's consent. Platform terms sometimes restrict automated collection and downloading. Ask the user for one of the following.
+When the user provides only the address of a video page on a video sharing service, do not download the video or its captions with automated tools without the user's consent. Platform terms sometimes restrict automated collection and downloading. Ask the user for one of the following.
 
 - A caption file (.srt, .vtt) the user obtained in a way the platform's terms allow
 - Text copied from the platform's own transcript view
 - An audio or video file the user holds
 
-Explain how to obtain captions only when the user asks. When the user asks, answer in this order.
+Explain how to obtain captions only when the user asks. Follow this order when explaining.
 
-1. Identify the platform from the address the user gave.
-2. Lay out the ways to get captions on that platform from the model's own knowledge. Consider both the platform's built-in features and outside methods.
+1. Identify the platform from the address the user provided.
+2. Summarize the ways to obtain captions on that platform from the model's own knowledge. Consider both the platform's built-in features and outside methods.
 3. If the environment provides a web search tool, check step 2 against current information. Platform features, terms, and whether outside methods still work change often. Without a search tool, tell the user the guidance may be out of date.
 4. Guide the user through the most useful method in steps they can follow themselves. When choosing, put official and lawful routes first. Judge usefulness by whether it runs in the user's environment, whether it yields captions in the needed language, and how few steps it takes.
 5. Explain the risks that come with the method thoroughly.
-6. Ask the user whether to carry out the method. If the user wants it, carry it out in the current environment. If the environment cannot run it, guide the user to run it themselves. Either way, get caption files as .srt or .vtt.
-7. Once the captions are in hand, continue from step 2 of the workflow. If the user already asked for an output, follow that request.
+6. Ask the user whether to carry out the method. If the user wants it, carry it out in the current environment. If the environment cannot run it, guide the user to run it themselves. Either way, obtain caption files as .srt or .vtt.
+7. Once the captions are obtained, continue from step 2 of the workflow. If the user already asked for an output, follow that request.
 
 ### Reading limits
 
@@ -237,7 +237,7 @@ These principles apply to meeting minutes, briefings, and reports.
 
 Group by speaker, topic, or time. If the user names no grouping, group by topic. For a recording, finish transcription, correct the transcript, and treat it as the meeting transcript.
 
-Before you start writing, check whether the meeting name, date and time, and attendees appear in the transcript or the user's description. Ask the user about the unconfirmed fields in a single question. When asking for the meeting name, also suggest a name based on the main agenda. Leave out the line for any field the user asks to omit or does not know. When grouping by speaker or naming owners in the next steps, if the transcript labels speakers without names (for example "Speaker 1"), ask in the same question who each speaker is. If the user prefers not to say, keep the transcript labels.
+Before you start writing, check whether the meeting name, date and time, and attendees appear in the transcript or the user's description. Ask the user about the unconfirmed fields in a single question. When asking for the meeting name, also suggest a name based on the main agenda. Leave out the line for any field the user asks to omit or does not know. When grouping by speaker or naming owners in the next steps, if the transcript labels speakers without names (for example "Speaker 1"), ask in the same question for each speaker's name. If the user prefers not to say, keep the transcript labels.
 
 ```markdown
 # Meeting overview
@@ -258,19 +258,19 @@ Before you start writing, check whether the meeting name, date and time, and att
 |---|---|---|---|
 | Speaker | Speaker name | Topic | Group by speaker, using the names the user gave or the transcript labels. Write each speaker's claims as one block, never split across places |
 | Topic | Topic | Keyword | Group similar claims under one topic. Topics must not overlap, and no discussion may be left out |
-| Time | Topic | Keyword | Follow the order in which the discussion happened. Without time data, follow the order of remarks. Do not group by speaker, so the flow stays intact |
+| Time | Topic | Keyword | Follow the order in which the discussion happened. Without time data, follow the order of remarks. Do not group by speaker, so the order of discussion stays intact |
 
 - Write the purpose from the transcript as one concise, clear simple sentence with a single subject and predicate.
 - The default format for the date and time is `YYYY-MM-DD HH:MM-HH:MM` on a 24-hour clock (for example 2026-03-05 14:00-15:30). If the user's region writes dates and times differently, follow that convention (for example 03/05/2026 2:00-3:30 PM for a user in the United States). Use the user's local time zone for the times.
 - Separate attendees with commas.
-- Write three to five lines for the next steps. If the transcript has fewer items, write only those.
+- Write three to five lines for the next steps. If the transcript has fewer than three items, write only those.
 - Do not indent level-1 lines. Indent level-2 lines.
 - Use a level-2 label in cases where the evidence needs structuring.
 - Attach evidence from the transcript as level 2 under every level-1 claim.
 
 ## Briefing
 
-Keep the flow of a single input. Videos, audio, articles, and documents all use this format.
+Preserve the order in which a single input presents its content. Videos, audio, articles, and documents all use this format.
 
 ```markdown
 # Overview
@@ -281,7 +281,7 @@ Keep the flow of a single input. Videos, audio, articles, and documents all use 
 Three to five lines
 
 # Content
-## Subtopic following the input's flow
+## Subtopic following the input's order
 - Content
 
 # Takeaways
@@ -297,7 +297,7 @@ Three to five lines
 
 - Fill the overview only with fields confirmed by the conversion metadata or the user's description. Leave out unconfirmed fields entirely.
 - Write the content in the order it appears in the input. Videos and audio follow time order. Cover every topic without omission, with no length limit.
-- In takeaways, write what the content means and what needs further checking. Do not write forecasts or judgments the input does not support.
+- In takeaways, write the implications of the content and the items that need further checking. Do not write forecasts or judgments the input does not support.
 
 ## Report
 
@@ -306,20 +306,20 @@ Combine two or more inputs around topics.
 - Structure a report that shares a status or trend as why, what, how. Structure a report that asks for a solution or decision as situation, complication, question, answer.
 - Name each heading so its title alone tells the reader what follows.
 - When inputs disagree, write each input's position side by side with its source.
-- Keep the figures that drive the conclusion to three or fewer. More figures blur what the reader should judge by.
+- Keep the figures that drive the conclusion to three or fewer. More figures make the reader's basis for judgment unclear.
 - Use at most three tables, only where a summary helps, placed right after the claim they support. Do not place tables back to back.
 - Cite sources so each sentence can be traced to its input.
 
 ## Translation
 
-Translate into the language the user names. Without one, translate into the user language. If the source is already in the user language and no target is named, ask for the target language. Pick one of the following modes by the nature of the text.
+Translate into the language the user names. Without one, translate into the user language. If the source is already in the user language and no target is named, ask for the target language. Choose one of the following modes by the nature of the text.
 
 | Mode | For | Rules |
 |---|---|---|
 | General translation | Texts centered on conveying facts, such as news reports, official letters, manuals, papers, and meeting minutes | Render the whole source without distortion or omission. Use markdown and bullets only where the source uses them |
 | Essay translation | Texts centered on the author's argument, such as essays, columns, editorials, and op-eds | Translate everything without summarizing. Write the body in the target language's polite register (for Korean, 존댓말). Use bullets only where the author intended structure. Put an overview and a summary of up to ten lines at the top, written without the polite register |
 
-- Intended structure often appears where items are listed after a colon (:). Do not turn paragraphs that flow as sentences into bullets.
+- Intended structure often appears where items are listed after a colon (:). Do not convert narrative paragraphs into bullets.
 - A translation follows the source's style, so the "Writing style" section does not apply. It does apply to the overview and summary of an essay translation.
 
 ## Conversion
