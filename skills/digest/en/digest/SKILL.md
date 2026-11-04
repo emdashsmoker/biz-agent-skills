@@ -25,7 +25,7 @@ The skill turns many kinds of input into text and then into writing a reader can
 1. Check the input. If a request arrives without input, briefly list the input types and output types available and ask for the input. For a meeting-minutes request, also list the grouping options (speaker, topic, time). Ask for the meeting name, date and time, and attendees at the same time.
 2. Choose the output type using the "Output types" section.
 3. Install the required packages. Do this before any other work.
-4. Convert every input except pasted text with the script.
+4. Convert every input except pasted text with the script. Transcribe audio and video with the model the user picks in the "Choosing the transcription model" section.
 5. Read the conversion result files. Do not read the original document, caption, or audio files.
 6. Write in the format for the chosen output type.
 7. Go through the "Pre-delivery check" section, then deliver. Output write-ups and translations as a chat reply, and save them as a markdown file when the user wants a file. Deliver conversions as files.
@@ -97,6 +97,7 @@ PDF body extraction loses the cell layout of tables, so read table content from 
 ```bash
 python scripts/extract.py report.pdf
 python scripts/extract.py "https://example.com/news/123" --max-chars 50000
+python scripts/extract.py meeting.m4a --probe
 python scripts/extract.py meeting.m4a --model small --language en
 python scripts/extract.py lecture.vtt --start 00:10:00 --end 00:25:00
 python scripts/extract.py report.pdf --chunk --chunk-size 2000
@@ -114,6 +115,7 @@ python scripts/extract.py --clean
 | `--chunk`, `--chunk-size` | off, 2000 | Split a document into heading-based chunk files |
 | `--start`, `--end` | whole file | Range for captions and audio (for example 00:10:00) |
 | `--timestamps` | off | Prefix each caption or transcript line with a time |
+| `--probe` | off | Estimate transcription time per model on this machine from a sample transcription |
 | `--model` | tiny | Whisper model size |
 | `--language` | auto-detect | Audio language code (for example ko, en) |
 | `--beam-size` | 5 | Beam search size for transcription |

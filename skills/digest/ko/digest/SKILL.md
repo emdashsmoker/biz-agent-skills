@@ -23,7 +23,7 @@ license: GPL-3.0-or-later with an output exception. Terms in LICENSE and NOTICE.
 1. 입력 자료를 확인한다. 자료 없이 요청만 왔다면 받을 수 있는 자료 종류와 산출물 유형을 짧게 안내하고 자료를 요청한다. 회의록 요청이면 정리 기준(발언자, 주제, 시간)도 함께 안내한다. 회의명, 회의일시, 참석자도 이때 함께 묻는다.
 2. 산출물 유형을 정한다. 기준은 "산출물 유형" 절을 따른다.
 3. 필요한 패키지를 설치한다. 설치는 다른 작업보다 먼저 한다.
-4. 붙여넣은 글을 제외한 모든 입력 자료를 스크립트로 변환한다.
+4. 붙여넣은 글을 제외한 모든 입력 자료를 스크립트로 변환한다. 음성과 영상은 "전사 모델 선택" 절에 따라 사용자가 고른 모델로 변환한다.
 5. 변환 결과 파일을 읽는다. 문서, 자막, 음성의 원본 파일은 읽지 않는다.
 6. 산출물 유형별 형식에 맞춰 작성한다.
 7. "산출 전 점검" 절의 항목을 확인한 뒤 전달한다. 정리본과 번역본은 대화 응답으로 출력하고 사용자가 파일을 원하면 마크다운 파일로 저장해 전달한다. 변환본은 파일로 전달한다.
@@ -95,6 +95,7 @@ PDF 본문 추출은 표의 칸 구조를 보존하지 못한다. 표 내용은 
 ```bash
 python scripts/extract.py report.pdf
 python scripts/extract.py "https://example.com/news/123" --max-chars 50000
+python scripts/extract.py meeting.m4a --probe
 python scripts/extract.py meeting.m4a --model small --language ko
 python scripts/extract.py lecture.vtt --start 00:10:00 --end 00:25:00
 python scripts/extract.py report.pdf --chunk --chunk-size 2000
@@ -112,6 +113,7 @@ python scripts/extract.py --clean
 | `--chunk`, `--chunk-size` | 꺼짐, 2000 | 문서를 제목 단위로 나눈 청크 파일 생성 |
 | `--start`, `--end` | 전체 | 자막과 음성의 처리 구간(예: 00:10:00) |
 | `--timestamps` | 꺼짐 | 자막과 전사 결과의 각 줄 앞에 시각 표기 |
+| `--probe` | 꺼짐 | 음성 시범 전사로 이 기기의 모델별 예상 전사 시간 계산 |
 | `--model` | tiny | Whisper 모델 크기 |
 | `--language` | 자동 감지 | 음성 언어 코드(예: ko, en) |
 | `--beam-size` | 5 | 전사 빔 서치 크기 |

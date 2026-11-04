@@ -16,6 +16,7 @@ Notice for the HWP fallback parser (parse_hwp_olefile)
 Examples
     python extract.py report.pdf
     python extract.py "https://example.com/news/123" --max-chars 50000
+    python extract.py meeting.m4a --probe
     python extract.py meeting.m4a --model small --language ko
     python extract.py lecture.vtt --start 00:10:00 --end 00:25:00
     python extract.py --bundle
@@ -34,6 +35,7 @@ import struct
 import subprocess
 import sys
 import tempfile
+import time
 import traceback
 import zipfile
 import zlib
@@ -57,7 +59,16 @@ DEFAULT_CHUNK_SIZE = 2000
 DEFAULT_MODEL = "tiny"
 DEFAULT_BEAM_SIZE = 5
 DEFAULT_BUNDLE_NAME = "digest_documents.zip"
-MODEL_CHOICES = ["tiny", "base", "small", "medium", "large-v3"]
+
+# Parameters (millions) and relative speed (vs large) per Whisper model, as published in the OpenAI Whisper repository
+# --probe uses them to turn the measured time of the probe model into a time range for every other model
+#   lower bound: relative speed ratio. Measured on GPU, so it is the fast-side estimate on a CPU
+#   upper bound: parameter ratio. Assumes CPU compute grows with model size, so it is the slow-side estimate
+MODEL_PARAMS_M = {"tiny": 39, "base": 74, "small": 244, "medium": 769, "large-v3": 1550}
+MODEL_RELATIVE_SPEED = {"tiny": 10, "base": 7, "small": 4, "medium": 2, "large-v3": 1}
+MODEL_CHOICES = list(MODEL_PARAMS_M)
+PROBE_MODEL = "tiny"         # fastest model to download and run, used to measure machine speed
+PROBE_SAMPLE_SEC = 60        # two Whisper windows (30 s each); shorter samples measure less steadily
 
 # Named thresholds used across the script
 CHUNK_OVERFLOW_RATIO = 1.5   # heading chunks larger than 1.5x the target are split again by paragraph
@@ -435,22 +446,38 @@ def decode_audio(path):
     return audio, decoder
 
 
-def transcribe(path, model_size, language, beam_size, start, end, timestamps):
+def load_target_audio(path, start, end):
+    """Decode, then return only the --start to --end range"""
     audio, decoder = decode_audio(path)
     full_duration = len(audio) / SAMPLE_RATE
-    offset = start or 0.0
-    first = int(offset * SAMPLE_RATE)
+    first = int((start or 0.0) * SAMPLE_RATE)
     last = int(end * SAMPLE_RATE) if end is not None else len(audio)
-    audio = audio[first:last]
     print(f"[DECODE] {path.name} {format_duration(full_duration)} ({decoder})", file=sys.stderr)
+    target = audio[first:last]
+    if len(target) == 0:
+        raise RuntimeError("the processing range is empty (check --start and --end)")
+    return target, full_duration, decoder
 
+
+def load_whisper(model_size):
     require("faster_whisper", "faster-whisper")
     from faster_whisper import WhisperModel
-    model = WhisperModel(model_size, device="cpu", compute_type="int8")
+    return WhisperModel(model_size, device="cpu", compute_type="int8")
+
+
+def run_whisper(model, audio, language, beam_size):
+    """faster-whisper yields segments lazily, so the transcription only finishes once they are listed"""
     options = {"beam_size": beam_size}
     if language:
         options["language"] = language
     segments, info = model.transcribe(audio, **options)
+    return list(segments), info
+
+
+def transcribe(path, model_size, language, beam_size, start, end, timestamps):
+    audio, full_duration, decoder = load_target_audio(path, start, end)
+    segments, info = run_whisper(load_whisper(model_size), audio, language, beam_size)
+    offset = start or 0.0
 
     lines = []
     for seg in segments:
@@ -465,6 +492,58 @@ def transcribe(path, model_size, language, beam_size, start, end, timestamps):
         "decoder": decoder,
     }
     return lines, meta
+
+
+def middle_sample(audio):
+    """Cut the probe sample from the middle of the range to avoid silence and small talk at the edges"""
+    size = min(len(audio), PROBE_SAMPLE_SEC * SAMPLE_RATE)
+    first = (len(audio) - size) // 2
+    return audio[first:first + size]
+
+
+def estimate_ranges(probe_model_sec):
+    """Scale the probe model's expected time by model size ratios and return a time range per model"""
+    speed, params = MODEL_RELATIVE_SPEED[PROBE_MODEL], MODEL_PARAMS_M[PROBE_MODEL]
+    return {
+        model: {
+            "min": format_duration(probe_model_sec * speed / MODEL_RELATIVE_SPEED[model]),
+            "max": format_duration(probe_model_sec * MODEL_PARAMS_M[model] / params),
+        }
+        for model in MODEL_CHOICES
+    }
+
+
+def describe_machine():
+    """CPU cores and total memory for the model choice guide. Memory is null on Windows, which lacks sysconf"""
+    try:
+        memory_gb = round(os.sysconf("SC_PAGE_SIZE") * os.sysconf("SC_PHYS_PAGES") / 1024 ** 3, 1)
+    except (AttributeError, ValueError, OSError):
+        memory_gb = None
+    return {"cpu_count": os.cpu_count(), "memory_gb": memory_gb}
+
+
+def probe_media(path, language, beam_size, start, end):
+    """Transcribe a sample with the probe model to measure machine speed, then estimate each model's time"""
+    audio, full_duration, decoder = load_target_audio(path, start, end)
+    target_sec = len(audio) / SAMPLE_RATE
+    sample = middle_sample(audio)
+    sample_sec = len(sample) / SAMPLE_RATE
+    model = load_whisper(PROBE_MODEL)
+    began = time.perf_counter()  # model download and load time stay out of the measurement
+    _, info = run_whisper(model, sample, language, beam_size)
+    realtime_factor = (time.perf_counter() - began) / sample_sec
+    return {
+        "duration": format_duration(full_duration),
+        "target_duration": format_duration(target_sec),
+        "probe_model": PROBE_MODEL,
+        "sample_sec": round(sample_sec),
+        "realtime_factor": round(realtime_factor, 3),
+        "language": info.language,
+        "language_probability": round(info.language_probability, 2),
+        "decoder": decoder,
+        **describe_machine(),
+        "estimates": estimate_ranges(target_sec * realtime_factor),
+    }
 
 
 # ── Web fetching ─────────────────────────────────────────────
@@ -613,6 +692,10 @@ def process_file(path, args, source=None):
         return {**base, "kind": "captions", "engine": "caption_cleaner", "output_path": str(out),
                 "cue_count": cues, "char_count": len(text), "truncated": truncated}
 
+    if ext in MEDIA_EXTS and args.probe:
+        return {**base, "kind": "media_probe",
+                **probe_media(path, args.language, args.beam_size, args.start, args.end)}
+
     if ext in MEDIA_EXTS:
         lines, meta = transcribe(path, args.model, args.language, args.beam_size,
                                  args.start, args.end, args.timestamps)
@@ -694,6 +777,7 @@ def build_parser():
     ap.add_argument("--start", help="start time for captions and audio (e.g. 00:10:00)")
     ap.add_argument("--end", help="end time for captions and audio (e.g. 00:25:00)")
     ap.add_argument("--timestamps", action="store_true", help="prefix caption and transcript lines with a time")
+    ap.add_argument("--probe", action="store_true", help="estimate transcription time per model from a sample transcription (audio and video only)")
     ap.add_argument("--model", default=DEFAULT_MODEL, choices=MODEL_CHOICES, help="Whisper model size")
     ap.add_argument("--language", default=None, help="audio language code (e.g. ko, en). Detected automatically when omitted")
     ap.add_argument("--beam-size", type=int, default=DEFAULT_BEAM_SIZE, help="beam search size")
