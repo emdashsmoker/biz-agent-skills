@@ -56,11 +56,11 @@ Install only the packages for the input types at hand.
 | PDF, DOCX, PPTX, XLSX and other documents | markitdown[pdf,docx,pptx,xlsx,xls], pdfplumber |
 | HWPX | python-hwpx, beautifulsoup4, lxml |
 | HWP | pyhwp, olefile |
-| Audio, video | faster-whisper |
+| Audio, video | faster-whisper, `av<19` |
 | Captions | none |
 
 ```bash
-pip install httpx trafilatura "markitdown[pdf,docx,pptx,xlsx,xls]" pdfplumber python-hwpx beautifulsoup4 lxml olefile faster-whisper
+pip install httpx trafilatura "markitdown[pdf,docx,pptx,xlsx,xls]" pdfplumber python-hwpx beautifulsoup4 lxml olefile faster-whisper "av<19"
 pip install pyhwp
 ```
 
@@ -68,6 +68,7 @@ pip install pyhwp
 - In a disposable isolated environment such as a cloud sandbox, rerun the install with `--break-system-packages` if you see an `externally-managed-environment` error.
 - If pyhwp fails with a build error mentioning `install_layout`, retry with `SETUPTOOLS_USE_DISTUTILS=stdlib pip install pyhwp`. If it still fails, continue without pyhwp. HWP files then go through the olefile fallback.
 - ffmpeg is optional. The script uses it for audio decoding when present and uses the decoder bundled with faster-whisper otherwise.
+- The decoder bundled with faster-whisper 1.2.1 does not work with PyAV 19 or later, so the install command keeps the `av<19` condition. If an error mentioning `metadata_errors` appears where ffmpeg is absent, reinstall PyAV with `pip install "av<19"` and try again.
 - Whisper models download from Hugging Face on the first transcription. Transcription cannot run where the network is blocked, so tell the user.
 - If the script returns a `missing_dependency` error, run the `install` command in the result and try again.
 
