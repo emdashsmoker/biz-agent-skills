@@ -159,7 +159,7 @@ The transcription model is a speech recognition model that turns speech into tex
 
 1. Run a probe with `--probe`. Set `--start`, `--end`, `--language`, and `--beam-size` to the same values as the real transcription. The script transcribes 60 seconds from the middle of the range with tiny to measure the processing speed. The expected time range per model calculated from the result is recorded in `estimates`.
 2. Determine the recommended model by the following criteria.
-    - Decide first how much recognition accuracy the output needs. A write-up corrects recognition errors from the surrounding sentences during writing, so it needs less accuracy than a conversion, which delivers the transcript as it is.
+    - Decide first how much recognition accuracy the output needs. For example, a write-up corrects recognition errors from the surrounding sentences during writing, so it needs less accuracy than a conversion, which delivers the transcript as it is.
     - Judge how hard the recording is to recognize from confirmed facts only. Confirmed facts are the recording conditions the user described (noise, number of speakers, share of technical terms) and the language detection result of the probe (`language`, `language_probability`).
     - Recommend the model with the shortest expected time among those that meet the needed accuracy and the recognition difficulty. Move up to a larger model one step at a time, and only when a confirmed fact calls for it.
     - If the recommended model's expected time is long, also present the next smaller model as an alternative.
