@@ -35,12 +35,20 @@ Changelog rules
 - Changed the next-step lines of meeting minutes from a comma list to one sentence that states the follow-up action (#61)
 - Added example next-step sentences with the deadline, the deliverable's recipient, and the deliverable (#61)
 - Added a writing style rule and a matching pre-delivery check item for classifying headings, labels, and bullets by one criterion without overlap or omission (#63, #64)
+- Added a label usage rule that labels every item in a group divided by one criterion and labels other items only when the label adds information the heading and the sentence lack (#65)
+- Added a writing style rule and a matching pre-delivery check item for labels that repeat their heading, their sentence, or the content of another label (#65)
+- Added a formal written register rule that bans informal endings, colloquial words, and placeholder nouns (#65)
+- Changed the end of every example list to an open-ended marker ("등" in Korean, "and so on" in English) (#65)
 
 * 회의록 근거 줄의 기본 형식을 2단계 소제목 생략 형식으로 변경 (#60)
 * 회의록 2단계 소제목이 필요한 근거의 예시(여러 개의 카테고리, 복잡한 개념) 추가 (#60)
 * 회의록 향후 계획 줄의 형식을 쉼표 나열에서 후속 조치 서술 문장으로 변경 (#61)
 * 회의록 향후 계획의 예시 문장(기한, 결과물 수령자, 결과물 포함) 추가 (#61)
 * 헤더, 소제목, 불릿을 한 가지 기준으로 중복 및 누락 없이 분류하기 위한 작성 문체 규칙 및 산출 전 점검 항목 추가 (#63, #64)
+* 소제목 사용 규칙(한 가지 기준으로 나뉜 항목 묶음은 전체 부착, 그 밖의 항목은 헤더와 문장에 없는 정보가 있을 때만 부착) 추가 (#65)
+* 헤더, 문장, 다른 소제목과 내용이 겹치는 소제목을 정리하기 위한 작성 문체 규칙 및 산출 전 점검 항목 추가 (#65)
+* 격식 문어체 작성 규칙(비격식 종결, 구어체 어휘, 빈자리 명사 미사용) 추가 (#65)
+* 예시 목록의 끝 표기를 열린 목록 표기(한국어 "등", 영어 "and so on")로 변경 (#65)
 
 ## 2026-11-04
 
