@@ -256,7 +256,7 @@ Before you start writing, check whether the meeting name, date and time, and att
     + (Level-2 label, when the evidence needs structuring) Evidence for the claim
 
 # Next steps
-- (Owner) Recipient, deliverable, deadline
+- (Owner) Action item
 ```
 
 | Grouping | Level-1 label | Level-2 label | How to group |
@@ -269,6 +269,7 @@ Before you start writing, check whether the meeting name, date and time, and att
 - The default format for the date and time is `YYYY-MM-DD HH:MM-HH:MM` on a 24-hour clock (for example 2026-03-05 14:00-15:30). If the user's region writes dates and times differently, follow that convention (for example 03/05/2026 2:00-3:30 PM for a user in the United States). Use the user's local time zone for the times.
 - Separate attendees with commas.
 - Write three to five lines for the next steps. If the transcript has fewer than three items, write only those.
+- Write each next-step line as one sentence that states the owner's action item. Include the deadline, the deliverable's recipient, and the deliverable mentioned in the transcript (for example "(Minsu Kim) Pilot rollout plan draft to be reported to the executives by November 20", "(Jiyoung Park) Vendor data check results to be shared with the security team by next Friday", and similar lines).
 - Do not indent level-1 lines. Indent level-2 lines.
 - Use a level-2 label in cases where the evidence needs structuring (for example, when the evidence falls into several categories or expresses a complex concept).
 - Attach evidence from the transcript as level 2 under every level-1 claim.
@@ -362,5 +363,6 @@ These rules apply to all write-ups and to the overview and summary of an essay t
 - If any input was truncated, was the user told?
 - Before writing minutes, were the unconfirmed meeting name, date and time, and attendees asked about?
 - Does every claim in the minutes carry evidence?
+- Is each next-step line a sentence with the deadline, the deliverable's recipient, and the deliverable mentioned in the transcript?
 - Is no paragraph missing from the translation?
 - Were the writing style rules followed?
