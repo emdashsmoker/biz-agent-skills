@@ -262,7 +262,7 @@ Before you start writing, check whether the meeting name, date and time, and att
 
 | Grouping | Header (##) | Level-1 label | Level-2 label | How to group |
 |---|---|---|---|---|
-| Speaker | Speaker name | Topic | Keyword | Write one `##` header per speaker. Put all of that speaker's claims under that header. Use the name the user gave or the transcript label in the header. When a breakdown helps, add `###` headers under the speaker header |
+| Speaker | Speaker name | Topic | Keyword | Write one `##` header per speaker. Put all of that speaker's claims under that header. Use the name the user gave or the transcript label in the header. When the topics need a breakdown, add `###` headers under the speaker header |
 | Topic | As needed | Topic | Keyword | Group similar claims under one topic. Topics must not overlap, and no discussion may be left out |
 | Time | As needed | Topic | Keyword | Follow the order in which the discussion happened. Without time data, follow the order of remarks. Do not group by speaker, so the order of discussion stays intact |
 
