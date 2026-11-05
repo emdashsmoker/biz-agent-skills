@@ -251,7 +251,7 @@ Before you start writing, check whether the meeting name, date and time, and att
 - (Attendees) Name, Name, Name
 
 # Discussion
-## Speaker name (when grouping by speaker)
+## Header (speaker name for speaker grouping, as needed for other groupings)
 - (Level-1 label) Claim
     + Evidence for the claim
     + (Level-2 label, when the evidence needs structuring) Evidence for the claim
@@ -263,8 +263,8 @@ Before you start writing, check whether the meeting name, date and time, and att
 | Grouping | Header (##) | Level-1 label | Level-2 label | How to group |
 |---|---|---|---|---|
 | Speaker | Speaker name | Topic | Keyword | Write one `##` header per speaker. Put all of that speaker's claims under that header. Use the name the user gave or the transcript label in the header. Do not repeat the header's speaker name in the labels or sentences under it |
-| Topic | None | Topic | Keyword | Group similar claims under one topic. Topics must not overlap, and no discussion may be left out |
-| Time | None | Topic | Keyword | Follow the order in which the discussion happened. Without time data, follow the order of remarks. Do not group by speaker, so the order of discussion stays intact |
+| Topic | As needed | Topic | Keyword | Group similar claims under one topic. Topics must not overlap, and no discussion may be left out |
+| Time | As needed | Topic | Keyword | Follow the order in which the discussion happened. Without time data, follow the order of remarks. Do not group by speaker, so the order of discussion stays intact |
 
 - Write the purpose from the transcript as one concise, clear simple sentence with a single subject and predicate.
 - The default format for the date and time is `YYYY-MM-DD HH:MM-HH:MM` on a 24-hour clock (for example 2026-03-05 14:00-15:30). If the user's region writes dates and times differently, follow that convention (for example 03/05/2026 2:00-3:30 PM for a user in the United States). Use the user's local time zone for the times.
