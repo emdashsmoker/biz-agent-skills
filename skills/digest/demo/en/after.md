@@ -4,63 +4,66 @@
 - (Issue date) September 30, 2026
 
 # Summary
-- (Demand) Use rate of 54.7%. 61.3% ask for an in-house service
-- (Security) 36 people entered work documents into external services. 22 of them knew the rule
-- (Perceived benefits) 68.8% of users feel they save 1 hour or more a week
-- (Errors) 71.3% of users have received factually wrong answers
-- (Adoption direction) A pilot on a security-contract cloud to be considered first
+- Demand for use at work confirmed by a 54.7% use rate and 61.3% asking for an in-house service
+- 22 of the 36 people who entered work documents into external services already knew the rule
+- 68.8% of users feel they save 1 hour or more a week (no measured evidence)
+- Staff who received factually wrong answers make up 71.3% of users
+- A pilot on a security-contract cloud considered first by the Planning Office
 
 > Planning Office (2026), Survey Results on Generative AI Use at Work
 
 # Content
 ## Survey design
 - (Background) CEO's instruction to review an in-house hyperscale AI pilot (July 2026)
-- (Method) Anonymous survey of all 412 staff, September 8-19, 2026. 287 responses (69.7%)
-- (Limits) Answers not verified. Time saved is a self-estimate
+- (Method) 287 responses (69.7%) to an anonymous survey of all 412 staff, September 8-19, 2026
+- (Limits) Truth of answers and actual time saved not verified in a self-reported survey
 
 ## Current use
-- (Gaps in use) Low use rates in the Production team at 22.1%, among those 50 and over at 29.3% and among general managers and above at 32.0%
-- (Settings of use) 77.1% use free general-purpose chatbots. 26.1% use personal phones
-- (Tasks) Drafting documents (62.4%), searching and summarizing material (55.4%) and translation (33.1%), in that order
+- (Gaps by group) Use rates of 22.1% in the Production team, 29.3% among those 50 and over and 32.0% among general managers and above, all below the overall 54.7%
+- (Environment) 77.1% use free general-purpose chatbots. 26.1% mainly use personal phones
+- (Main tasks) Drafting documents (62.4%), searching and summarizing material (55.4%) and translation (33.1%), in that order
 
-## Compliance with the security rules
-- (Awareness of the rule) 70.0% know the ban on entering work documents. 50.0% in the Production team
-- (Document input) 22.9% of users (36 people) entered work documents into external services. Including confidential documents (4 people), supplier material (9 people) and documents with personal information (3 people)
-- (Misreading the rule) 44.6% of non-users gave the rules as their reason for not using it. The ban covers only entering documents
-- (Views on the rules) Allowing some use within a defined scope is the most common view at 58.5%
+## Security rules
+- (Awareness) 70.0% of respondents know the ban on entering work documents. 50.0% in the Production team
+- (Scale of breaches) 22.9% of users (36 people) entered work documents into external services. 22 of them knew the rule
+- (Leak risk) Inputs of confidential documents by 4 people, customer and supplier material by 9 and documents with personal information by 3
+- (Misreading the scope) 44.6% of non-users chose the security rules as their reason. The ban covers only entering work documents
+- (Preferred direction) Allowing some use within a defined scope is the most common view at 58.5%
 
 ## Effects on work
-- (Perceived benefits) 68.8% feel they save 1 hour or more a week. 40.8% said output quality improved
-- (Wrong answers) 17 staff used wrong answers in work documents without checking
+- (Time saved) 1 hour or more a week for 68.8% of users, by their own estimate
+- (Errors) 71.3% of users have received factually wrong answers. 17 of them used such answers in work documents without checking
 
 ## Staff views
-- (Concerns) Answer accuracy (58.5%) and information leaks (49.5%) lead
+- (Concerns) Answer accuracy (58.5%) and information leaks (49.5%) at the top
 - (Support requested) An in-house service (61.3%), training (51.9%) and usage guidelines (46.3%), in that order
-- (Tasks wanted) Searching past documents is the most common open-ended answer at 30.6%
-- (Voices from staff) One answer says some staff hide their use for fear of breaking the rules
+- (Tasks wanted) Searching past documents leads the 134 open-ended answers at 30.6%
 
 ## Cases at other companies
-- (Company A) Measured a baseline before its security-contract cloud pilot. Cut time per document search from 42 to 17 minutes. Rolled out company-wide
-- (Company B) Found customer drawings had been entered 6 months after allowing full use without guidelines. Stopped use
-- (Company C) Spent about KRW 400 million on an in-house deployment. Monthly active users only 18% due to dissatisfaction with answer quality
+- (Company A) Baseline measured before its security-contract cloud pilot. Search time per document cut from 42 to 17 minutes, followed by a company-wide rollout
+- (Company B) Customer drawings found entered 6 months into full use without guidelines. Use stopped afterward
+- (Company C) About KRW 400 million spent on an in-house deployment. Monthly active users only 18% due to dissatisfaction with answer quality
 
 > Planning Office (2026), Survey Results on Generative AI Use at Work, section 9 (interviews with staff at 3 companies in the same industry)
 
 ## Adoption options
-- (External general-purpose service) No initial cost. Breaches the current security rules
-- (Security-contract cloud) About KRW 30 million up front. KRW 8-12 million a month. 2-3 months to set up. Needs a partial rule change
-- (In-house deployment) KRW 300-500 million up front. 6-9 months to set up. Needs 2 or more dedicated staff
-- (Planning Office view) Consider a security-contract cloud first. Keep in-house deployment as a medium to long-term option
+- (Considered first) A security-contract cloud, ready for a pilot within 2-3 months
+- (Medium to long-term alternative) An in-house deployment, too hard to run with the 5-person IT team
+
+| Item | External general-purpose service | Security-contract cloud | In-house deployment |
+|---|---|---|---|
+| Security rules | Breaches the current rules | Allowed after a partial change | Allowed under the current rules |
+| Initial cost | None | About KRW 30 million | KRW 300-500 million |
+| Monthly cost | About KRW 30,000 per person | KRW 8-12 million | About KRW 3 million |
+| Setup time | Immediate | 2-3 months | 6-9 months |
 
 ## Next steps
-- (October) Announce usage guidelines. Follow up on confidential document input. Check cloud contract terms
-- (November) Report the pilot plan (draft) to executives
-- (December) Set training schedules by department
-
-> Planning Office (2026), Survey Results on Generative AI Use at Work
+- (October) Usage guideline announcement, follow-up on confidential document input, check of contract terms with 2 cloud providers
+- (November) In-house hyperscale AI pilot plan (draft) reported to executives
+- (December) Training schedules set by department
 
 # Implications
-- (Measuring impact) The baseline measurement before the pilot, named in the Planning Office implications, is missing from the next steps. Needs checking before the November report
-- (Rule revision) The preferred option depends on revising the security rules. The next steps have no schedule for the revision
-- (Follow-up scope) The follow-up covers only confidential documents. Whether supplier material and personal information inputs will be checked needs confirming
-- (Reaching the shop floor) The Production team, the largest department, has the lowest response rate and the lowest use rate. Whether the training plan reflects the shop floor needs checking
+- (Proving impact) The baseline measurement before the pilot, named in the Planning Office implications, is missing from the next steps. Inclusion needs checking before the November report
+- (Precondition) The next steps have no schedule for the security rule change that the option considered first needs
+- (Scope) The October follow-up covers confidential documents only. Whether customer and supplier material (9 people) will be checked needs confirming
+- (Reaching the shop floor) The Production team, the largest department, has the lowest use rate and rule awareness. Whether the December training schedule fits its shift work needs checking

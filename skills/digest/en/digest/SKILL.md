@@ -251,6 +251,7 @@ Before you start writing, check whether the meeting name, date and time, and att
 - (Attendees) Name, Name, Name
 
 # Discussion
+## Header (speaker name for speaker grouping, used for other groupings when a breakdown helps)
 - (Level-1 label) Claim
     + Evidence for the claim
     + (Level-2 label, when the evidence needs structuring) Evidence for the claim
@@ -259,11 +260,11 @@ Before you start writing, check whether the meeting name, date and time, and att
 - (Owner) Action item
 ```
 
-| Grouping | Level-1 label | Level-2 label | How to group |
-|---|---|---|---|
-| Speaker | Speaker name | Topic | Group by speaker, using the names the user gave or the transcript labels. Write each speaker's claims as one block, never split across places |
-| Topic | Topic | Keyword | Group similar claims under one topic. Topics must not overlap, and no discussion may be left out |
-| Time | Topic | Keyword | Follow the order in which the discussion happened. Without time data, follow the order of remarks. Do not group by speaker, so the order of discussion stays intact |
+| Grouping | Header (##) | Level-1 label | Level-2 label | How to group |
+|---|---|---|---|---|
+| Speaker | Speaker name | Topic | Keyword | Write one `##` header per speaker. Put all of that speaker's claims under that header. Use the name the user gave or the transcript label in the header |
+| Topic | As needed | Topic | Keyword | Group similar claims under one topic. Topics must not overlap, and no discussion may be left out |
+| Time | As needed | Topic | Keyword | Follow the order in which the discussion happened. Without time data, follow the order of remarks. Do not group by speaker, so the order of discussion stays intact |
 
 - Write the purpose from the transcript as one concise, clear simple sentence with a single subject and predicate.
 - The default format for the date and time is `YYYY-MM-DD HH:MM-HH:MM` on a 24-hour clock (for example 2026-03-05 14:00-15:30). If the user's region writes dates and times differently, follow that convention (for example 03/05/2026 2:00-3:30 PM for a user in the United States). Use the user's local time zone for the times.
@@ -271,6 +272,7 @@ Before you start writing, check whether the meeting name, date and time, and att
 - Write three to five lines for the next steps. If the transcript has fewer than three items, write only those.
 - Write each next-step line as one sentence that states the owner's action item. Include the deadline, the deliverable's recipient, and the deliverable mentioned in the transcript (for example "(Minsu Kim) Pilot rollout plan draft to be reported to the executives by November 20", "(Jiyoung Park) Vendor data check results to be shared with the security team by next Friday", and similar lines).
 - Do not indent level-1 lines. Indent level-2 lines.
+- Do not duplicate the information in a header (for example a speaker name, an agenda item, and so on) in the labels or sentences under it.
 - Use a level-2 label in cases where the evidence needs structuring (for example, when the evidence falls into several categories, expresses a complex concept, and so on).
 - Attach evidence from the transcript as level 2 under every level-1 claim.
 
@@ -367,6 +369,7 @@ These rules apply to all write-ups and to the overview and summary of an essay t
 - If any input was truncated, was the user told?
 - Before writing minutes, were the unconfirmed meeting name, date and time, and attendees asked about?
 - Does every claim in the minutes carry evidence?
+- Is each header in the minutes used as its grouping specifies, with its information not duplicated in the labels or sentences under it?
 - Is each next-step line a sentence with the deadline, the deliverable's recipient, and the deliverable mentioned in the transcript?
 - Is no paragraph missing from the translation?
 - Are headings, labels, and bullets classified by one criterion without overlap or omission?
