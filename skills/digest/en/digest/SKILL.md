@@ -344,6 +344,7 @@ These rules apply to all write-ups and to the overview and summary of an essay t
 - Put a label in parentheses before a sentence when needed (for example "(Budget adjustment) Q2 budget cut agreed"). Do not attach labels with a colon or hyphen. Name labels after their content, and do not use empty names such as "Explanation" or "Evidence".
 - Give each heading one topic. Do not combine two topics as in "A and B". Within one text, keep headings either all keyword style or all sentence style.
 - Use sub-bullets (+) only when there are two or more items at the same level. Merge a single item into the line above.
+- When dividing content into headings, labels, or bullets, apply one criterion. Items at the same level must not overlap in content. Taken together, the items must cover all of the content being divided, with nothing left out.
 - Do not use contrasts such as "not A but B", the em dash character, the tilde (write ranges with "-"), or expressions that announce a count in advance such as "three key tasks".
 - Do not use intensifying adverbs such as "very" or "highly", or inflated judgments such as "groundbreaking" or "innovative".
 - Do not write sentences about the text itself or the writing process, such as "This report...", "As you requested", or "In summary".
