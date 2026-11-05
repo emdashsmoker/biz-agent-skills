@@ -8,7 +8,7 @@ license: GPL-3.0-or-later with an output exception. Terms in LICENSE and NOTICE.
 
 This English version was translated from the Korean original. It may behave differently from what the original intends.
 
-The skill turns many kinds of input into text and then into writing a reader can use without further editing. `scripts/extract.py` handles conversion and the model handles the writing. Save the conversion result to a file first, then read that file and write. Reading the raw input directly lets timing lines, markup tags, and repeated lines leak noise into the result.
+The skill turns many kinds of input into text and then into writing a reader can use without further editing. `scripts/extract.py` handles conversion and the model handles the writing. Save the conversion result to a file first, then read that file and write. Reading the raw input directly lets noise such as timing lines, markup tags, repeated lines, and so on leak into the result.
 
 ## Terms
 
@@ -38,7 +38,7 @@ If the user specifies a type, format, or length, follow it. Otherwise check the 
 
 | Order | Condition | Output |
 |---|---|---|
-| 1 | The user only asks for a format change, such as convert, extract, or reformat as markdown | Conversion |
+| 1 | The user only asks for a format change, such as convert, extract, reformat as markdown, and so on | Conversion |
 | 2 | The user asks for a translation | Translation |
 | 3 | The user says the input is from a meeting, or the input records several participants discussing agenda items | Meeting minutes |
 | 4 | There is one input | Briefing |
@@ -118,7 +118,7 @@ python scripts/extract.py --clean
 | `--timestamps` | off | Prefix each caption or transcript line with a time |
 | `--probe` | off | Estimate transcription time per model on this machine from a sample transcription |
 | `--model` | tiny | Whisper model size |
-| `--language` | auto-detect | Audio language code (for example ko, en) |
+| `--language` | auto-detect | Audio language code (for example ko, en, and so on) |
 | `--beam-size` | 5 | Beam search size for transcription |
 | `--bundle` | off | Bundle files in the `downloads` folder into one ZIP |
 | `--clean` | off | Delete files in the `downloads` folder |
@@ -271,7 +271,7 @@ Before you start writing, check whether the meeting name, date and time, and att
 - Write three to five lines for the next steps. If the transcript has fewer than three items, write only those.
 - Write each next-step line as one sentence that states the owner's action item. Include the deadline, the deliverable's recipient, and the deliverable mentioned in the transcript (for example "(Minsu Kim) Pilot rollout plan draft to be reported to the executives by November 20", "(Jiyoung Park) Vendor data check results to be shared with the security team by next Friday", and similar lines).
 - Do not indent level-1 lines. Indent level-2 lines.
-- Use a level-2 label in cases where the evidence needs structuring (for example, when the evidence falls into several categories or expresses a complex concept).
+- Use a level-2 label in cases where the evidence needs structuring (for example, when the evidence falls into several categories, expresses a complex concept, and so on).
 - Attach evidence from the transcript as level 2 under every level-1 claim.
 
 ## Briefing
@@ -322,8 +322,8 @@ Translate into the language the user names. Without one, translate into the user
 
 | Mode | For | Rules |
 |---|---|---|
-| General translation | Texts centered on conveying facts, such as news reports, official letters, manuals, papers, and meeting minutes | Render the whole source without distortion or omission. Use markdown and bullets only where the source uses them |
-| Essay translation | Texts centered on the author's argument, such as essays, columns, editorials, and op-eds | Translate everything without summarizing. Write the body in the target language's polite register (for Korean, 존댓말). Use bullets only where the author intended structure. Put an overview and a summary of up to ten lines at the top, written without the polite register |
+| General translation | Texts centered on conveying facts, such as news reports, official letters, manuals, papers, meeting minutes, and so on | Render the whole source without distortion or omission. Use markdown and bullets only where the source uses them |
+| Essay translation | Texts centered on the author's argument, such as essays, columns, editorials, op-eds, and so on | Translate everything without summarizing. Write the body in the target language's polite register (for Korean, 존댓말). Use bullets only where the author intended structure. Put an overview and a summary of up to ten lines at the top, written without the polite register |
 
 - Intended structure often appears where items are listed after a colon (:). Do not convert narrative paragraphs into bullets.
 - A translation follows the source's style, so the "Writing style" section does not apply. It does apply to the overview and summary of an essay translation.
@@ -338,17 +338,20 @@ Translate into the language the user names. Without one, translate into the user
 
 These rules apply to all write-ups and to the overview and summary of an essay translation. The rules were written for Korean. In other languages, apply the same principles as terse bullet phrasing in that language.
 
-- Write in bullet style and end lines with noun phrases (for example "Budget cut agreed", "Further review needed", "Recovery expected in H2"). Do not use a polite or honorific register.
+- Write in bullet style and end lines with noun phrases (for example "Budget cut agreed", "Further review needed", "Recovery expected in H2", and so on). Keep a formal written register, and do not use a polite or honorific register. Do not use colloquial words or slang (for example "kinda", "pretty much", "a bunch of", and so on).
 - Put one message in each sentence. If an actor, an object, or a method appears twice in one sentence, split the sentence.
-- Do not join sentences with connectors such as "and", "but", or "while". Use commas only to list three or more items of the same kind.
-- Put a label in parentheses before a sentence when needed (for example "(Budget adjustment) Q2 budget cut agreed"). Do not attach labels with a colon or hyphen. Name labels after their content, and do not use empty names such as "Explanation" or "Evidence".
+- Do not join sentences with connectors such as "and", "but", "while", and so on. Use commas only to list three or more items of the same kind.
+- Put a label in parentheses before a sentence when needed (for example "(Sales division) Q2 marketing budget cut agreed"). Do not attach labels with a colon or hyphen. Name labels after their content, and do not use empty names such as "Explanation", "Evidence", and so on.
+- A label is a marker that lets the reader find and compare items before reading the sentences. When the items under one parent divide by one criterion (for example actor, period, option, and so on), label every item with its category name. On other items, attach a label only when it carries information that the heading and the sentence do not.
+- Do not repeat the information in a label in its heading or its sentence. When the same label appears in several places, check whether the classification overlaps. Merge overlapping content into one place.
 - Give each heading one topic. Do not combine two topics as in "A and B". Within one text, keep headings either all keyword style or all sentence style.
 - Use sub-bullets (+) only when there are two or more items at the same level. Merge a single item into the line above.
 - Classify headings, labels, and bullets by one criterion. Write items at the same level so that they do not overlap. Lower-level items must collectively cover the full scope of their higher-level item without omission.
 - Do not use contrasts such as "not A but B", the em dash character, the tilde (write ranges with "-"), or expressions that announce a count in advance such as "three key tasks".
-- Do not use intensifying adverbs such as "very" or "highly", or inflated judgments such as "groundbreaking" or "innovative".
-- Do not write sentences about the text itself or the writing process, such as "This report...", "As you requested", or "In summary".
-- Avoid stiff, translated-sounding phrasing such as "in the case of" or "it is necessary to".
+- Do not use intensifying adverbs such as "very", "highly", and so on, or inflated judgments such as "groundbreaking", "innovative", and so on.
+- Do not write sentences about the text itself or the writing process, such as "This report...", "As you requested", "In summary", and so on.
+- Avoid stiff, translated-sounding phrasing such as "in the case of", "it is necessary to", and so on.
+- Do not use placeholder nouns such as "thing", "stuff", "part", "aspect", and so on. Name what they refer to with a specific noun (for example "the agenda item for further discussion" for "the part to discuss").
 - Attach a source to every figure. Write sources in a `>` block as "Organization or author(year), title(link)", and use a separate block for each source.
 
 ## Pre-delivery check
@@ -367,4 +370,5 @@ These rules apply to all write-ups and to the overview and summary of an essay t
 - Is each next-step line a sentence with the deadline, the deliverable's recipient, and the deliverable mentioned in the transcript?
 - Is no paragraph missing from the translation?
 - Are headings, labels, and bullets classified by one criterion without overlap or omission?
+- Reading only the labels, is there no label whose content duplicates another and no label that repeats its heading or sentence?
 - Were the writing style rules followed?
