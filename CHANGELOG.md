@@ -27,6 +27,15 @@ Changelog rules
 - (Push) Commit on top of the latest main and push directly to main.
 -->
 
+## 2026-11-05
+
+### digest
+- Changed the evidence lines of meeting minutes to omit the level-2 label by default (#60)
+- Added examples of evidence that needs a level-2 label in meeting minutes, such as several categories or a complex concept (#60)
+
+* 회의록 근거 줄의 기본 형식을 2단계 소제목 생략 형식으로 변경 (#60)
+* 회의록 2단계 소제목이 필요한 근거의 예시(여러 개의 카테고리, 복잡한 개념) 추가 (#60)
+
 ## 2026-11-04
 
 ### digest
