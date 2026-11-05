@@ -252,7 +252,8 @@ Before you start writing, check whether the meeting name, date and time, and att
 
 # Discussion
 - (Level-1 label) Claim
-    + (Level-2 label) Evidence for the claim
+    + Evidence for the claim
+    + (Level-2 label, when the evidence needs structuring) Evidence for the claim
 
 # Next steps
 - (Owner) Recipient, deliverable, deadline
@@ -269,7 +270,7 @@ Before you start writing, check whether the meeting name, date and time, and att
 - Separate attendees with commas.
 - Write three to five lines for the next steps. If the transcript has fewer than three items, write only those.
 - Do not indent level-1 lines. Indent level-2 lines.
-- Use a level-2 label in cases where the evidence needs structuring.
+- Use a level-2 label in cases where the evidence needs structuring (for example, when the evidence falls into several categories or expresses a complex concept).
 - Attach evidence from the transcript as level 2 under every level-1 claim.
 
 ## Briefing
