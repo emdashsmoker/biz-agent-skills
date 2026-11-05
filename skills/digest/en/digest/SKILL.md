@@ -338,10 +338,12 @@ Translate into the language the user names. Without one, translate into the user
 
 These rules apply to all write-ups and to the overview and summary of an essay translation. The rules were written for Korean. In other languages, apply the same principles as terse bullet phrasing in that language.
 
-- Write in bullet style and end lines with noun phrases (for example "Budget cut agreed", "Further review needed", "Recovery expected in H2"). Do not use a polite or honorific register.
+- Write in bullet style and end lines with noun phrases (for example "Budget cut agreed", "Further review needed", "Recovery expected in H2"). Keep a formal written register, and do not use a polite or honorific register. Do not use colloquial words or slang (for example "kinda", "pretty much", "a bunch of").
 - Put one message in each sentence. If an actor, an object, or a method appears twice in one sentence, split the sentence.
 - Do not join sentences with connectors such as "and", "but", or "while". Use commas only to list three or more items of the same kind.
-- Put a label in parentheses before a sentence when needed (for example "(Budget adjustment) Q2 budget cut agreed"). Do not attach labels with a colon or hyphen. Name labels after their content, and do not use empty names such as "Explanation" or "Evidence".
+- Put a label in parentheses before a sentence when needed (for example "(Sales division) Q2 marketing budget cut agreed"). Do not attach labels with a colon or hyphen. Name labels after their content, and do not use empty names such as "Explanation" or "Evidence".
+- A label is a marker that lets the reader find and compare items before reading the sentences. When the items under one parent divide by one criterion (for example actor, period, or option), label every item with its category name. On other items, attach a label only when it carries information that the heading and the sentence do not.
+- Do not repeat the information in a label in its heading or its sentence. When the same label appears in several places, check whether the classification overlaps. Merge overlapping content into one place.
 - Give each heading one topic. Do not combine two topics as in "A and B". Within one text, keep headings either all keyword style or all sentence style.
 - Use sub-bullets (+) only when there are two or more items at the same level. Merge a single item into the line above.
 - Classify headings, labels, and bullets by one criterion. Write items at the same level so that they do not overlap. Lower-level items must collectively cover the full scope of their higher-level item without omission.
@@ -349,6 +351,7 @@ These rules apply to all write-ups and to the overview and summary of an essay t
 - Do not use intensifying adverbs such as "very" or "highly", or inflated judgments such as "groundbreaking" or "innovative".
 - Do not write sentences about the text itself or the writing process, such as "This report...", "As you requested", or "In summary".
 - Avoid stiff, translated-sounding phrasing such as "in the case of" or "it is necessary to".
+- Do not use placeholder nouns such as "thing", "stuff", "part", or "aspect". Name what they refer to with a specific noun (for example "the agenda item for further discussion" for "the part to discuss").
 - Attach a source to every figure. Write sources in a `>` block as "Organization or author(year), title(link)", and use a separate block for each source.
 
 ## Pre-delivery check
@@ -367,4 +370,5 @@ These rules apply to all write-ups and to the overview and summary of an essay t
 - Is each next-step line a sentence with the deadline, the deliverable's recipient, and the deliverable mentioned in the transcript?
 - Is no paragraph missing from the translation?
 - Are headings, labels, and bullets classified by one criterion without overlap or omission?
+- Reading only the labels, is there no label whose content duplicates another and no label that repeats its heading or sentence?
 - Were the writing style rules followed?
