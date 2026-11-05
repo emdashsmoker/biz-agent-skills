@@ -366,4 +366,5 @@ These rules apply to all write-ups and to the overview and summary of an essay t
 - Does every claim in the minutes carry evidence?
 - Is each next-step line a sentence with the deadline, the deliverable's recipient, and the deliverable mentioned in the transcript?
 - Is no paragraph missing from the translation?
+- Are headings, labels, and bullets classified by one criterion without overlap or omission?
 - Were the writing style rules followed?
