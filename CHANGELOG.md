@@ -39,6 +39,9 @@ Changelog rules
 - Added a writing style rule and a matching pre-delivery check item for labels that repeat their heading, their sentence, or the content of another label (#65)
 - Added a formal written register rule that bans informal endings, colloquial words, and placeholder nouns (#65)
 - Changed the end of every example list to an open-ended marker ("등" in Korean, "and so on" in English) (#65)
+- Changed speaker-grouped meeting minutes to name each speaker once in a `##` header, with topic and keyword labels for the claims under it (#66)
+- Added optional `##` headers that break down topic-grouped and time-grouped meeting minutes (#66)
+- Added a meeting minutes rule and a matching pre-delivery check item against duplicating header information in the labels and sentences below (#66)
 
 * 회의록 근거 줄의 기본 형식을 2단계 소제목 생략 형식으로 변경 (#60)
 * 회의록 2단계 소제목이 필요한 근거의 예시(여러 개의 카테고리, 복잡한 개념) 추가 (#60)
@@ -49,6 +52,9 @@ Changelog rules
 * 헤더, 문장, 다른 소제목과 내용이 겹치는 소제목을 정리하기 위한 작성 문체 규칙 및 산출 전 점검 항목 추가 (#65)
 * 격식 문어체 작성 규칙(비격식 종결, 구어체 어휘, 빈자리 명사 미사용) 추가 (#65)
 * 예시 목록의 끝 표기를 열린 목록 표기(한국어 "등", 영어 "and so on")로 변경 (#65)
+* 발언자 기준 회의록의 발언자 이름 표기를 1단계 소제목 반복에서 발언자별 `##` 헤더 1회 표기(하위 소제목은 주제 및 키워드)로 변경 (#66)
+* 주제 기준 및 시간 기준 회의록의 세분화용 `##` 헤더 선택 사용 방식 추가 (#66)
+* 하위 소제목 및 문장의 헤더 정보 중복을 막기 위한 회의록 규칙 및 산출 전 점검 항목 추가 (#66)
 
 ## 2026-11-04
 
