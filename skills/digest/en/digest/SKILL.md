@@ -251,6 +251,7 @@ Before you start writing, check whether the meeting name, date and time, and att
 - (Attendees) Name, Name, Name
 
 # Discussion
+## Speaker name (when grouping by speaker)
 - (Level-1 label) Claim
     + Evidence for the claim
     + (Level-2 label, when the evidence needs structuring) Evidence for the claim
@@ -259,11 +260,11 @@ Before you start writing, check whether the meeting name, date and time, and att
 - (Owner) Action item
 ```
 
-| Grouping | Level-1 label | Level-2 label | How to group |
-|---|---|---|---|
-| Speaker | Speaker name | Topic | Group by speaker, using the names the user gave or the transcript labels. Write each speaker's claims as one block, never split across places |
-| Topic | Topic | Keyword | Group similar claims under one topic. Topics must not overlap, and no discussion may be left out |
-| Time | Topic | Keyword | Follow the order in which the discussion happened. Without time data, follow the order of remarks. Do not group by speaker, so the order of discussion stays intact |
+| Grouping | Header (##) | Level-1 label | Level-2 label | How to group |
+|---|---|---|---|---|
+| Speaker | Speaker name | Topic | Keyword | Write one `##` header per speaker. Put all of that speaker's claims under that header. Use the name the user gave or the transcript label in the header. Do not repeat the header's speaker name in the labels or sentences under it |
+| Topic | None | Topic | Keyword | Group similar claims under one topic. Topics must not overlap, and no discussion may be left out |
+| Time | None | Topic | Keyword | Follow the order in which the discussion happened. Without time data, follow the order of remarks. Do not group by speaker, so the order of discussion stays intact |
 
 - Write the purpose from the transcript as one concise, clear simple sentence with a single subject and predicate.
 - The default format for the date and time is `YYYY-MM-DD HH:MM-HH:MM` on a 24-hour clock (for example 2026-03-05 14:00-15:30). If the user's region writes dates and times differently, follow that convention (for example 03/05/2026 2:00-3:30 PM for a user in the United States). Use the user's local time zone for the times.
@@ -367,6 +368,7 @@ These rules apply to all write-ups and to the overview and summary of an essay t
 - If any input was truncated, was the user told?
 - Before writing minutes, were the unconfirmed meeting name, date and time, and attendees asked about?
 - Does every claim in the minutes carry evidence?
+- In minutes grouped by speaker, does each speaker have exactly one header, with the speaker's name not repeated under it?
 - Is each next-step line a sentence with the deadline, the deliverable's recipient, and the deliverable mentioned in the transcript?
 - Is no paragraph missing from the translation?
 - Are headings, labels, and bullets classified by one criterion without overlap or omission?
