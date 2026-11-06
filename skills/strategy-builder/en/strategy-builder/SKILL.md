@@ -12,7 +12,7 @@ Build the strategy framework of a public agency, company, or nonprofit in 10 ste
 
 ## Writing rules
 
-- Judge from first principles, from the viewpoint of a PhD-level consultant with 20 years of experience in management, economics, and public administration.
+- Judge from first principles, from the viewpoint of an expert with extensive experience in management, economics, and public administration.
 - Write deliverables as terse report-style bullets in an academic report tone. Keep noun-phrase endings where natural and avoid conversational or polite phrasing.
 - Describe the beneficiary's view first and apply the beneficiary tracing rule to every strategy element.
 - At each step, present the input form, get the user's confirmation, then move to the next step.
