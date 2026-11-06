@@ -48,7 +48,7 @@ Words are sorted by how readers receive them, how much they mark the text as AI 
 
 ### Preferred words
 
-- (Nouns) linkage, cooperation, strategy, direction, vision, takeaways, change, development, convergence, transition, improvement, differentiation, contribution, supplement, stage, demand, conditions, current status, actual state, trend, movement, outlook, funding, infrastructure, regional base, demonstration, pilot, diffusion, implementation, full lifecycle, concurrency
+- (Nouns) linkage, cooperation, strategy, direction, vision, takeaways, change, development, convergence, transition, improvement, differentiation, contribution, supplement, stage, demand, conditions, current status, actual state, trend, movement, outlook, funding, infrastructure, regional base, demonstration, pilot, diffusion, implementation, full lifecycle, concurrency, value
 - (Verbs) draw up, secure, introduce, increase, derive, build up, shift, set, expand, match, open, contribute, link, cooperate, pursue, prepare, reflect, apply, operate, use, raise, reduce, ease, promote, include, add, exclude, delete, deduct, state side by side
 - (Modifiers) phased, gradual, short-term, mid- to long-term, specific, clear
 
