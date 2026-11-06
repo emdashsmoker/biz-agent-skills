@@ -29,10 +29,103 @@ Changelog rules
 
 ## 2026-11-06
 
+### biz-code-style
+- Added new entries to the vocabulary lists: 가치 (preferred); 갈래, 묶음, 판, 약속, 통독 (non-preferred); 판정, 출발, the -측 words (cautionary) (#69)
+- Added informal style and a colloquial or informal tone in endings, words, and expressions to the colloquial style rule (#69)
+
+* 어휘 목록의 신규 어휘(가치, 갈래, 묶음, 판, 약속, 통독, 판정, 출발, '-측' 어휘) 추가 (#69)
+* 구어체 규칙의 대상에 비격식체, 구어적 어감, 비격식적 어감 추가 (#69)
+
+### biz-code-style-lite
+- Added new entries to the vocabulary lists: 묶음, 판 (non-preferred); 판정, 약속, 출발, 계측, 실측 (cautionary) (#69)
+- Added a writing rule against a colloquial or informal tone in endings, words, and expressions (#69)
+- Changed the placeholder noun rule to cover all placeholder nouns such as 것, 곳, 거, 셈, and 부분 in any position (#69)
+
+* 어휘 목록의 신규 어휘(묶음, 판, 판정, 약속, 출발, 계측, 실측) 추가 (#69)
+* 종결, 어휘, 표현의 구어적 어감 및 비격식적 어감 미사용 규칙 추가 (#69)
+* 빈자리 명사 규칙의 적용 범위를 문장 전체의 빈자리 명사(것, 곳, 거, 셈, 부분 등)로 변경 (#69)
+
+### digest
+- Changed the register rule from informal endings and colloquial words to a colloquial or informal tone across endings, words, and expressions (#69)
+
+* 비격식 표현 규칙의 적용 범위를 종결 및 어휘에서 표현 전반으로 변경 (#69)
+
+### environment-analysis
+- Added a writing rule against a colloquial or informal tone in endings, words, and expressions (#69)
+- Changed the placeholder noun rule to cover all placeholder nouns such as 것, 곳, 거, 셈, and 부분 in any position (#69)
+
+* 종결, 어휘, 표현의 구어적 어감 및 비격식적 어감 미사용 규칙 추가 (#69)
+* 빈자리 명사 규칙의 적용 범위를 문장 전체의 빈자리 명사(것, 곳, 거, 셈, 부분 등)로 변경 (#69)
+
+### environment-analysis-lite
+- Added a writing rule against a colloquial or informal tone in endings, words, and expressions (#69)
+- Added a writing rule against placeholder nouns such as 것, 곳, 거, 셈, and 부분 (#69)
+
+* 종결, 어휘, 표현의 구어적 어감 및 비격식적 어감 미사용 규칙 추가 (#69)
+* 빈자리 명사(것, 곳, 거, 셈, 부분 등) 미사용 규칙 추가 (#69)
+
+### logical-write
+- Added new entries to the vocabulary lists: 가치 (preferred); 정립, 묶음, 판, 약속 (non-preferred); 판정, 출발, the -측 words (cautionary) (#69)
+- Added informal style and a colloquial or informal tone in endings, words, and expressions to the colloquial style rule (#69)
+
+* 어휘 목록의 신규 어휘(가치, 정립, 묶음, 판, 약속, 판정, 출발, '-측' 어휘) 추가 (#69)
+* 구어체 규칙의 대상에 비격식체, 구어적 어감, 비격식적 어감 추가 (#69)
+
+### logical-write-lite
+- Added new entries to the vocabulary lists: 가치 (preferred); 묶음, 판 (non-preferred); 판정, 약속, 출발, 계측 (cautionary) (#69)
+- Added informal style and a colloquial or informal tone in endings, words, and expressions to the colloquial style rule (#69)
+
+* 어휘 목록의 신규 어휘(가치, 묶음, 판, 판정, 약속, 출발, 계측) 추가 (#69)
+* 구어체 규칙의 대상에 비격식체, 구어적 어감, 비격식적 어감 추가 (#69)
+
+### network-analysis
+- Added a writing rule against a colloquial or informal tone in endings, words, and expressions (#69)
+- Added a writing rule against placeholder nouns such as 것, 곳, 거, 셈, and 부분 (#69)
+
+* 종결, 어휘, 표현의 구어적 어감 및 비격식적 어감 미사용 규칙 추가 (#69)
+* 빈자리 명사(것, 곳, 거, 셈, 부분 등) 미사용 규칙 추가 (#69)
+
+### pref-architect
+- Added new entries to the vocabulary lists: 가치 (preferred); 묶음, 판 (non-preferred); 판정, 출발, the -측 words, 약속 (cautionary) (#69)
+- Added informal style and a colloquial or informal tone in endings, words, and expressions to the colloquial style rule (#69)
+- Changed the placeholder noun rule to cover all placeholder nouns such as 것, 곳, 거, 셈, and 부분 in any position (#69)
+
+* 어휘 목록의 신규 어휘(가치, 묶음, 판, 판정, 출발, '-측' 어휘, 약속) 추가 (#69)
+* 구어체 규칙의 대상에 비격식체, 구어적 어감, 비격식적 어감 추가 (#69)
+* 빈자리 명사 규칙의 적용 범위를 문장 전체의 빈자리 명사(것, 곳, 거, 셈, 부분 등)로 변경 (#69)
+
+### project-plan
+- Added a writing rule against a colloquial or informal tone in endings, words, and expressions (#69)
+- Added a writing rule against placeholder nouns such as 것, 곳, 거, 셈, and 부분 (#69)
+
+* 종결, 어휘, 표현의 구어적 어감 및 비격식적 어감 미사용 규칙 추가 (#69)
+* 빈자리 명사(것, 곳, 거, 셈, 부분 등) 미사용 규칙 추가 (#69)
+
+### rfp-strategy
+- Added a writing rule against a colloquial or informal tone in endings, words, and expressions (#69)
+- Added a writing rule against placeholder nouns such as 것, 곳, 거, 셈, and 부분 (#69)
+
+* 종결, 어휘, 표현의 구어적 어감 및 비격식적 어감 미사용 규칙 추가 (#69)
+* 빈자리 명사(것, 곳, 거, 셈, 부분 등) 미사용 규칙 추가 (#69)
+
+### slop-proof
+- Added new entries to the vocabulary lists: 가치 (preferred); 묶음, 판, 약속 (non-preferred); 판정, 출발, the -측 words (cautionary) (#69)
+
+* 어휘 목록의 신규 어휘(가치, 묶음, 판, 약속, 판정, 출발, '-측' 어휘) 추가 (#69)
+
 ### strategy-builder
 - Changed the viewpoint in the writing rules to an expert with extensive experience in management, economics, and public administration (#68)
+- Added a writing rule against a colloquial or informal tone in endings, words, and expressions (#69)
+- Added a writing rule against placeholder nouns such as 것, 곳, 거, 셈, and 부분 (#69)
 
 * 작성 원칙의 판단 관점을 경영학, 경제학, 행정학 분야의 경험이 풍부한 전문가로 변경 (#68)
+* 종결, 어휘, 표현의 구어적 어감 및 비격식적 어감 미사용 규칙 추가 (#69)
+* 빈자리 명사(것, 곳, 거, 셈, 부분 등) 미사용 규칙 추가 (#69)
+
+### think-review
+- Added informal style to the colloquial style rule for rewrite suggestions (#69)
+
+* 수정 제안 문체 규칙의 대상에 비격식체 추가 (#69)
 
 ## 2026-11-05
 
