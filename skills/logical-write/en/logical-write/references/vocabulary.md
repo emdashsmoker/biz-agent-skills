@@ -36,7 +36,6 @@ A list of words LLMs habitually overuse, sorted into preferred, non-preferred, a
 - (Direct English borrowings) 딥다이브 (deep dive, replace with 심층 분석 "in-depth analysis"), 인사이트 (insight, replace with 시사점 "implication"), 피보팅 (pivoting), 게이트키핑 (gatekeeping), 에코시스템 (ecosystem, replace with 생태계), 트랜스포메이션 (transformation, replace with 디지털 전환 "digital transition"), 풀스택 (full stack, as in "풀스택 솔루션", replace with 전주기 "full life cycle"), 매핑 (mapping, replace with 대응 "correspondence", 연결 "link", or 배치 "placement"), 정립 (establishment, a literal rendering of "establish", as in "체계 정립" establishing a system)
 - (LLM favorites) 괴리 (disconnect, as in "인식과 현실의 괴리" gap between perception and reality), 묵음 (muting), 차등 (differentiated grading), 전량 (entire quantity), 뽑기 (picking) and every other form of 뽑다 (pick) such as 뽑음, 병렬 (parallel), 한정 (limitation), 병목 (bottleneck) outside real process analysis, 값 (value) outside engineering contexts, 갈래 (branch) used in place of "branch" or "path", 묶음 (bundle) used in place of the proper name of a set (패키지 package, 종합본 compendium, 전략 strategy, and so on), 판 (edition) used in place of "version" or "basis"
 - (Forced noun) 온전 (wholeness), formed by cutting 한 off the adjective 온전한 (whole)
-- (User safety) 약속 (promise). Use it with great care, given the user's risk and safety
 
 ### Cautionary
 
@@ -71,6 +70,7 @@ Use these words only under their conditions.
 - (교차 cross) Do not overuse meta-style when describing methods
 - (입력 input, 출력 output) Only in engineering contexts
 - (언어 language) Only for real languages such as Korean, English, or language models. Not in a figurative sense
+- (약속 promise) Only when needed, given the user's risk and safety
 
 ## Verbs and predicates
 
