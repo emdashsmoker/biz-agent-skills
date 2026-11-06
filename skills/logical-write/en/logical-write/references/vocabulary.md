@@ -70,7 +70,7 @@ Use these words only under their conditions.
 - (교차 cross) Do not overuse meta-style when describing methods
 - (입력 input, 출력 output) Only in engineering contexts
 - (언어 language) Only for real languages such as Korean, English, or language models. Not in a figurative sense
-- (약속 promise) Only when needed, given the user's risk and safety
+- (약속 promise) Only for something the user can actually deliver. A promise written in a document becomes an obligation the user must meet
 
 ## Verbs and predicates
 
