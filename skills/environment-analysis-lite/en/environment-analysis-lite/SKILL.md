@@ -449,7 +449,7 @@ An implication is a conclusion that groups several facts and condenses what they
 
 ### Sentences and Format
 
-- Write in concise report style with one message per sentence. Each of who, when, where, what, why, and how appears at most once in a sentence. Split the sentence if one appears twice
+- Write in concise report style with one message per sentence. Each of who, when, where, what, why, and how appears at most once in a sentence. Split the sentence if one appears twice. Do not use colloquial or informal register, and avoid a colloquial or informal tone in endings, word choice, and phrasing. Do not use placeholder nouns such as "thing" or "part" (in Korean 것, 곳, 거, 셈, 부분), and name the referent with a concrete noun
 - Do not join clauses with conjunctions such as "and", "but", or "while", and do not use commas to join sentences. Use commas when listing three or more items of the same kind
 - Write subheadings in the form "(subheading) content". Do not attach them with a colon or hyphen
 - Use Markdown as follows: `#` document title, `##` sections, `###` subsections only when needed, `-` statements, `>` sources. Do not use indented sub-lists. Show relations between items with subheadings and IDs

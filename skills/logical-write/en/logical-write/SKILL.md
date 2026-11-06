@@ -117,7 +117,7 @@ Work from large units to small units.
 ### Sentences
 
 - Put one message in one sentence. Who, when, where, what, why, and how each appear once per sentence. Including why, what, and how in each sentence is recommended.
-- End sentences with noun forms (Korean -함, -임, -필요, -전망, -예정; in English a noun phrase such as "Budget expansion needed"). Do not use honorific endings, colloquialisms, trendy words, slang, or jargon of closed groups. Keep the formality of academic writing.
+- End sentences with noun forms (Korean -함, -임, -필요, -전망, -예정; in English a noun phrase such as "Budget expansion needed"). Do not use honorific endings, colloquialisms, informal register, trendy words, slang, or jargon of closed groups. Also avoid a colloquial or informal tone in endings, words, and expressions. Keep the formality of academic writing.
 - Make noun-form endings read naturally. Revise "목차명에는 키워드 기반 재구성으로 반영" ("reflected in table-of-contents names as keyword-based restructuring") to "목차명은 키워드 기반으로 재구성" ("table-of-contents names restructured by keyword").
 - Do not write sentences that only chain nouns. Keep the particles and write "연구 인프라 보유 여부" ("whether research infrastructure is in place") instead of "연구 기술 자원 역량 상태" ("research technology resource capability status").
 - Use commas only for lists of three or more items of the same category. Write two items as "A and B". In Korean output, join two parallel nouns with 및 in place of 와 or 과 ("예산과 인력 확보" becomes "예산 및 인력 확보"). Keep 와 or 과 when it marks a relation between two nouns (사이, 간, 격차, 차이, 일치, 불일치, 연계, 연동, 정렬, 비교, 구분, 분리, 협력, as in "현행과 기준의 격차") or the partner of an action (as in "유관기관과 공유"), or when it belongs to an established term, such as "학습과 성장" in the BSC. Do not just delete a joining comma. Split the sentence or rebuild it as a noun phrase.
@@ -201,7 +201,7 @@ Work from large units to small units.
 - Does each 5W1H element appear only once per sentence?
 - In strict mode, are conjunctions and clause-linking endings absent?
 - In flow mode, do conjunctions appear only where they show a real relation, with no stacked linking endings in one sentence?
-- Do noun-form endings read naturally, with no honorific or colloquial endings?
+- Do noun-form endings read naturally, with no honorific, colloquial, or informal wording?
 - Are `+` items used only when two or more exist?
 - Does every quantitative data point have a basis and a source?
 - Are meta commentary, empty modifiers, count announcements, and negate-then-assert contrasts absent?

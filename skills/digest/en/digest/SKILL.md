@@ -340,7 +340,7 @@ Translate into the language the user names. Without one, translate into the user
 
 These rules apply to all write-ups and to the overview and summary of an essay translation. The rules were written for Korean. In other languages, apply the same principles as terse bullet phrasing in that language.
 
-- Write in bullet style and end lines with noun phrases (for example "Budget cut agreed", "Further review needed", "Recovery expected in H2", and so on). Keep a formal written register, and do not use a polite or honorific register. Do not use colloquial words or slang (for example "kinda", "pretty much", "a bunch of", and so on).
+- Write in bullet style and end lines with noun phrases (for example "Budget cut agreed", "Further review needed", "Recovery expected in H2", and so on). Keep a formal written register, and do not use a polite or honorific register. Do not use a colloquial or informal tone in endings, word choice, or phrasing, including colloquial words and slang (for example "kinda", "pretty much", "a bunch of", and so on).
 - Put one message in each sentence. If an actor, an object, or a method appears twice in one sentence, split the sentence.
 - Do not join sentences with connectors such as "and", "but", "while", and so on. Use commas only to list three or more items of the same kind.
 - Put a label in parentheses before a sentence when needed (for example "(Sales division) Q2 marketing budget cut agreed"). Do not attach labels with a colon or hyphen. Name labels after their content, and do not use empty names such as "Explanation", "Evidence", and so on.

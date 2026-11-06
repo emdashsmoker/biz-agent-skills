@@ -155,7 +155,7 @@ Only when the user asks, set `options.raci` to true and write each person's role
 | Notes | Risks, possible scope changes, external changes, conflicts between documents, the `[To confirm]` list |
 | WBS Detail, Staffing | Automatic. Full row table and monthly M/M per person |
 
-- Keep a terse bullet style with one point per line
+- Keep a terse bullet style with one point per line. Do not use colloquial or informal register, and avoid a colloquial or informal tone in endings, word choice, and phrasing. Do not use placeholder nouns such as "thing" or "part" (in Korean 것, 곳, 거, 셈, 부분), and name the referent with a concrete noun
 - Dates and numbers in the overview must match plan.json, so take any number added to a sentence from plan.json
 
 ## Export commands

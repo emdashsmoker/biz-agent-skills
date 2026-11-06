@@ -402,7 +402,7 @@ Apply to code comments, commit messages, logs, chart and diagram labels, slide c
 - Put one message in one sentence. Who, when, where, what, why, and how each appear at most once in a sentence. When an element appears twice, split the sentence
 - (Korean text) Do not join sentences with connectors such as 그리고, 그러나, 그래서, or -으며. Use commas only to list three or more items of the same category, and resolve connecting commas by splitting the sentence
 - (Korean text) Write two parallel nouns as "A 및 B" instead of joining them with 와 or 과, for example "예산 및 인력 확보" instead of "예산과 인력 확보." Keep 와 or 과 when it marks a relation between two nouns (사이, 간, 격차, 차이, 일치, 불일치, 연계, 연동, 정렬, 비교, 구분, 분리, 협력, as in "현행과 기준의 격차") or the partner of an action (as in "유관기관과 공유"), or when it belongs to an established term, such as "학습과 성장" in the BSC
-- (Korean text) Write labels, comments, and slide copy in terse bullet style (개조식 간결체). End with nominal forms (명사형 종결) by default and use verb endings where they read more naturally. Do not end bullet items with a period. Do not string nouns together as in "연구 기술 자원 역량 상태". Keep particles and relations as in "연구 인프라 보유 여부"
+- (Korean text) Write labels, comments, and slide copy in terse bullet style (개조식 간결체). End with nominal forms (명사형 종결) by default and use verb endings where they read more naturally. Do not end bullet items with a period. Do not string nouns together as in "연구 기술 자원 역량 상태". Keep particles and relations as in "연구 인프라 보유 여부". Do not use colloquial or informal register, and avoid a colloquial or informal tone in endings, words, and expressions
 - Write conversational replies in the user's language and match the user's tone and level of formality
 - Every sentence delivers new information. Do not re-summarize what has already been said
 - Do not use modifiers whose removal keeps the meaning, tautologies ("improvement is needed, so improvement is required"), or circular definitions ("data governance is the system that governs data")
@@ -431,11 +431,11 @@ Apply to code comments, commit messages, logs, chart and diagram labels, slide c
 
 Words that generative models overuse signal machine-written text to readers. Replace the words below with concrete expressions. Leave quoted originals, proper nouns, legal terms, and technical standard names unchanged. If the user asks for a specific word, use it.
 
-- (Korean, avoid) 맥락, 담론, 지형, 함의, 패러다임, 게임체인저, 인사이트, 딥다이브, 레버리지, 매핑, 획기적, 혁신적, 선도적, 압도적, 진정한, 궁극적, 매우, 상당히, 사실상, 그야말로, 축 and 종 attached to numbers ("두 축", "3종")
+- (Korean, avoid) 맥락, 담론, 지형, 함의, 패러다임, 게임체인저, 인사이트, 딥다이브, 레버리지, 매핑, 획기적, 혁신적, 선도적, 압도적, 진정한, 궁극적, 매우, 상당히, 사실상, 그야말로, 축 and 종 attached to numbers ("두 축", "3종"), 묶음 (bundle), 판 (edition, in place of version or basis)
 - (Korean, empty phrases) "이러한 맥락에서", "결론적으로", "시사하는 바가 크다", "중요한 것은", "주목할 점은", "-의 필요성이 대두되고 있다"
-- (Korean, use sparingly) Use 핵심, 본질, 체계, 구축, 고도화, 강화, 검증, 전략적, 체계적, 효과적, and 특히 no more than once per paragraph
+- (Korean, use sparingly) Use 핵심, 본질, 체계, 구축, 고도화, 강화, 검증, 전략적, 체계적, 효과적, 특히, 판정, and 약속 no more than once per paragraph. Use 출발, 계측, and 실측 only when something actually departs or is measured, and never figuratively
 - (Korean, translationese) -에 있어서, -에 대하여, -을 통하여, -로 인하여, -라고 하는, -인 셈이다, -것은 아닐까, -하지 않으면 안 된다, overuse of -적 and -화
-- (Korean, empty nouns) Shorten "-하는 것이 필요" to "- 필요". Replace "-한 것으로 보임" with a direct statement plus its evidence. Do not swap '것' for '곳', '거', '부분', or '셈'
+- (Korean, empty nouns) Do not use placeholder nouns such as 것, 곳, 거, 셈, or 부분. Name the referent with a concrete noun. Shorten "-하는 것이 필요" to "- 필요". Replace "-한 것으로 보임" with a direct statement plus its evidence. Do not swap '것' for '곳', '거', '부분', or '셈'
 - (Korean, nominal endings) End "목적을 달성할 필요" as "목적 달성 필요" by dropping the adnominal form
 - (Korean, connotation) 넣다, 빼다, and 박다 are avoided in workplace documents because of their connotations, so use 포함, 제외, and 명시
 - (English, avoid) delve, landscape, tapestry, realm, leverage, navigate, underscore, showcase, harness, spearhead, multifaceted, ever-evolving, game-changer, groundbreaking, paradigm shift, holistic, "not just A but B"

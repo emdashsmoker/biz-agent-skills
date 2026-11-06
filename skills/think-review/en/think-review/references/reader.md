@@ -120,7 +120,7 @@ Step 2 is the explanation block. Keep terms that would change meaning if replace
 ### Keeping tone
 
 - Keep the tone of a formal document for adults even when the vocabulary is simple.
-- Do not use casual speech, exclamations, emoji, or direct address to the reader ("folks", "you guys").
+- Do not use casual speech, informal register, exclamations, emoji, or direct address to the reader ("folks", "you guys").
 - Do not use phrases that comment on difficulty, such as "simply put", "in plain terms", or "this may sound hard, but". If the content is easy, no commentary is needed.
 - Use metaphors only when they carry the concept's structure accurately. Do not end an explanation on a metaphor. Describe how the thing actually works as well.
 - Do not chop sentences short to make them look easy. Ease comes from words and logic.

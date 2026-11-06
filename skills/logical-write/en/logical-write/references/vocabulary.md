@@ -20,7 +20,7 @@ A list of words LLMs habitually overuse, sorted into preferred, non-preferred, a
 
 ### Preferred
 
-연계 (linkage), 협력 (cooperation), 전략 (strategy), 방향 (direction), 비전 (vision), 시사점 (implication), 변화 (change), 발전 (development), 융합 (convergence), 전환 (transition), 개선 (improvement), 차별화 (differentiation), 기여 (contribution), 보완 (supplement), 단계 (stage), 수요 (demand), 여건 (conditions), 현황 (current status), 실태 (actual state), 추이 (trend line), 동향 (trends), 전망 (outlook), 재원 (funding source), 인프라 (infrastructure), 거점 (hub site), 실증 (demonstration), 시범 (pilot), 확산 (spread), 이행 (implementation), 전주기 (full life cycle), 동시 (simultaneous), 필요 (need), 추가 (addition)
+연계 (linkage), 협력 (cooperation), 전략 (strategy), 방향 (direction), 비전 (vision), 시사점 (implication), 변화 (change), 발전 (development), 융합 (convergence), 전환 (transition), 개선 (improvement), 차별화 (differentiation), 기여 (contribution), 보완 (supplement), 단계 (stage), 수요 (demand), 여건 (conditions), 현황 (current status), 실태 (actual state), 추이 (trend line), 동향 (trends), 전망 (outlook), 재원 (funding source), 인프라 (infrastructure), 거점 (hub site), 실증 (demonstration), 시범 (pilot), 확산 (spread), 이행 (implementation), 전주기 (full life cycle), 동시 (simultaneous), 필요 (need), 추가 (addition), 가치 (value)
 
 ### Non-preferred
 
@@ -33,15 +33,16 @@ A list of words LLMs habitually overuse, sorted into preferred, non-preferred, a
 - (Assertive judgment) 직결 (direct link), 인과 (causation), 쟁점 (point of contention), 선결 (prerequisite), 준거 (standard of reference), and judgment words ending in -결
 - (Authoritarian tone) 엄수 (strict observance)
 - (Unneeded loanwords) 프레임 (frame), 레버리지 (leverage), 컨틴전시 (contingency), 게이트 (gate, as in "단계별 게이트" stage gates), 커버리지 (coverage), 헷지 (hedge), MVP, 통합패키지 (integrated package)
-- (Direct English borrowings) 딥다이브 (deep dive, replace with 심층 분석 "in-depth analysis"), 인사이트 (insight, replace with 시사점 "implication"), 피보팅 (pivoting), 게이트키핑 (gatekeeping), 에코시스템 (ecosystem, replace with 생태계), 트랜스포메이션 (transformation, replace with 디지털 전환 "digital transition"), 풀스택 (full stack, as in "풀스택 솔루션", replace with 전주기 "full life cycle"), 매핑 (mapping, replace with 대응 "correspondence", 연결 "link", or 배치 "placement")
-- (LLM favorites) 괴리 (disconnect, as in "인식과 현실의 괴리" gap between perception and reality), 묵음 (muting), 차등 (differentiated grading), 전량 (entire quantity), 뽑기 (picking) and every other form of 뽑다 (pick) such as 뽑음, 병렬 (parallel), 한정 (limitation), 병목 (bottleneck) outside real process analysis, 값 (value) outside engineering contexts, 갈래 (branch) used in place of "branch" or "path"
+- (Direct English borrowings) 딥다이브 (deep dive, replace with 심층 분석 "in-depth analysis"), 인사이트 (insight, replace with 시사점 "implication"), 피보팅 (pivoting), 게이트키핑 (gatekeeping), 에코시스템 (ecosystem, replace with 생태계), 트랜스포메이션 (transformation, replace with 디지털 전환 "digital transition"), 풀스택 (full stack, as in "풀스택 솔루션", replace with 전주기 "full life cycle"), 매핑 (mapping, replace with 대응 "correspondence", 연결 "link", or 배치 "placement"), 정립 (establishment, a literal rendering of "establish", as in "체계 정립" establishing a system)
+- (LLM favorites) 괴리 (disconnect, as in "인식과 현실의 괴리" gap between perception and reality), 묵음 (muting), 차등 (differentiated grading), 전량 (entire quantity), 뽑기 (picking) and every other form of 뽑다 (pick) such as 뽑음, 병렬 (parallel), 한정 (limitation), 병목 (bottleneck) outside real process analysis, 값 (value) outside engineering contexts, 갈래 (branch) used in place of "branch" or "path", 묶음 (bundle) used in place of the proper name of a set (패키지 package, 종합본 compendium, 전략 strategy, and so on), 판 (edition) used in place of "version" or "basis"
 - (Forced noun) 온전 (wholeness), formed by cutting 한 off the adjective 온전한 (whole)
+- (User safety) 약속 (promise). Use it with great care, given the user's risk and safety
 
 ### Cautionary
 
 Do not overuse these words.
 
-핵심 (core), 본질 (essence), 근본 (root), 원칙 (principle), 결과 (result), 영향 (impact), 역량 (capability), 리스크 (risk), 한계 (limit), 격차 (gap), 문제 (problem), 이슈 (issue), 과제 (task), 구조 (structure), 정합 (consistency), 검증 (verification), 진단 (diagnosis), 평가 (evaluation), 판단 (judgment), 통제 (control), 관리 (management), 책임 (responsibility), 근거 (grounds), 객관 (objectivity), 주관 (subjectivity), 위험 (danger), 위협 (threat), 규제 (regulation), 준법 (legal compliance), 컴플라이언스 (compliance), 논리 (logic), 우선 (priority), 순위 (ranking), 연결 (connection), 결합 (combination), 구성 (composition), 규칙 (rule), 명제 (proposition), 유보 (reservation), 확정 (finalization), 조직 (organization), 인사 (personnel), 보상 (compensation), 소속 (affiliation), 결정 (decision), 단일 (single), 매칭 (matching), 탁월 (excellence), 훌륭 (splendid)
+핵심 (core), 본질 (essence), 근본 (root), 원칙 (principle), 결과 (result), 영향 (impact), 역량 (capability), 리스크 (risk), 한계 (limit), 격차 (gap), 문제 (problem), 이슈 (issue), 과제 (task), 구조 (structure), 정합 (consistency), 검증 (verification), 진단 (diagnosis), 평가 (evaluation), 판단 (judgment), 판정 (ruling), 통제 (control), 관리 (management), 책임 (responsibility), 근거 (grounds), 객관 (objectivity), 주관 (subjectivity), 위험 (danger), 위협 (threat), 규제 (regulation), 준법 (legal compliance), 컴플라이언스 (compliance), 논리 (logic), 우선 (priority), 순위 (ranking), 연결 (connection), 결합 (combination), 구성 (composition), 규칙 (rule), 명제 (proposition), 유보 (reservation), 확정 (finalization), 조직 (organization), 인사 (personnel), 보상 (compensation), 소속 (affiliation), 결정 (decision), 단일 (single), 매칭 (matching), 탁월 (excellence), 훌륭 (splendid)
 
 Use these words only under their conditions.
 
@@ -101,6 +102,8 @@ Use these words only under their conditions.
 - (삽입 insert) Fine as a document-editing function name, as in "그림 삽입" (insert figure). In narrative text, replace with 추가 (add) or 배치 (place)
 - (주입 inject) Fine as a technical term, as in "SQL 주입" (SQL injection). In narrative text, replace with 반영 (reflect) or 적용 (apply)
 - (투입 input) For inputs of resources such as staff or budget
+- (출발 departure, 출발점 starting point) Use them only when something actually departs. Do not use them figuratively
+- (계측 measurement, 실측 actual measurement, 시측 trial measurement, and other -측 words) Use them only when something is actually measured. Do not use them figuratively or to claim accuracy for the work
 
 ## Adjectives, adverbs, modifiers
 
