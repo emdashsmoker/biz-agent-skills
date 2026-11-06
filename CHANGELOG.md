@@ -33,10 +33,12 @@ Changelog rules
 - Added new entries to the vocabulary lists: 가치 (preferred); 갈래, 묶음, 판, 통독 (non-preferred); 판정, 약속, 출발, the -측 words (cautionary) (#69, #71)
 - Added informal style and a colloquial or informal tone in endings, words, and expressions to the colloquial style rule (#69)
 - Changed the plain-wording rule to describe the writing behavior without a group label (#73)
+- Changed the usage condition for 약속 to content the user can actually deliver (#75)
 
 * 어휘 목록의 신규 어휘(가치, 갈래, 묶음, 판, 통독, 판정, 약속, 출발, '-측' 어휘) 추가 (#69, #71)
 * 구어체 규칙의 대상에 비격식체, 구어적 어감, 비격식적 어감 추가 (#69)
 * 쉬운 표현 규칙의 문구를 집단 명칭 없이 작성 방식을 서술하는 문장으로 변경 (#73)
+* 약속의 사용 조건을 사용자가 실제로 이행할 수 있는 내용으로 변경 (#75)
 
 ### biz-code-style-lite
 - Added new entries to the vocabulary lists: 묶음, 판 (non-preferred); 판정, 약속, 출발, 계측, 실측 (cautionary) (#69)
@@ -69,9 +71,11 @@ Changelog rules
 ### logical-write
 - Added new entries to the vocabulary lists: 가치 (preferred); 정립, 묶음, 판 (non-preferred); 판정, 약속, 출발, the -측 words (cautionary) (#69, #71)
 - Added informal style and a colloquial or informal tone in endings, words, and expressions to the colloquial style rule (#69)
+- Changed the usage condition for 약속 to content the user can actually deliver (#75)
 
 * 어휘 목록의 신규 어휘(가치, 정립, 묶음, 판, 판정, 약속, 출발, '-측' 어휘) 추가 (#69, #71)
 * 구어체 규칙의 대상에 비격식체, 구어적 어감, 비격식적 어감 추가 (#69)
+* 약속의 사용 조건을 사용자가 실제로 이행할 수 있는 내용으로 변경 (#75)
 
 ### logical-write-lite
 - Added new entries to the vocabulary lists: 가치 (preferred); 묶음, 판 (non-preferred); 판정, 약속, 출발, 계측 (cautionary) (#69)
@@ -114,8 +118,10 @@ Changelog rules
 
 ### slop-proof
 - Added new entries to the vocabulary lists: 가치 (preferred); 묶음, 판 (non-preferred); 판정, 약속, 출발, the -측 words (cautionary) (#69, #71)
+- Changed the usage condition for 약속 to content the user can actually deliver (#75)
 
 * 어휘 목록의 신규 어휘(가치, 묶음, 판, 판정, 약속, 출발, '-측' 어휘) 추가 (#69, #71)
+* 약속의 사용 조건을 사용자가 실제로 이행할 수 있는 내용으로 변경 (#75)
 
 ### strategy-builder
 - Changed the viewpoint in the writing rules to an expert with extensive experience in management, economics, and public administration (#68)
