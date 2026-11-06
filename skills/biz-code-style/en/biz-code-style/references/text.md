@@ -29,7 +29,7 @@ These rules apply to code comments, commit messages, log text, text inside chart
 - For the same content, lead with positive wording ("the transition becomes possible once structured data is secured" over "data readiness is insufficient").
 - Use polite, non-aggressive euphemism ("needs reinforcement" over "capability is severely lacking", "B is needed for A" over "absolutely impossible"). Criticize what is clearly wrong, and do not let euphemism blur the meaning.
 - Avoid assertive and aggressive words such as absolutely, block, only, sole, unconditionally, top priority, and final. (recommended)
-- Avoid nerd-style writing that shows off details only experts know. (recommended)
+- Limit expert-only details to what the reader needs to follow the text. (recommended)
 - Do not explain knowledge the target reader already has. (recommended)
 
 ## Logic
