@@ -56,8 +56,8 @@ Each analysis section describes the current state first and recent changes after
 ## Sentences
 
 - One sentence carries one message. If who, when, where, what, why, or how appears twice in one sentence, split it
-- Write bullets as compact statements. Drop filler words and keep a clear subject and verb where the statement needs them. Use a formal tone and no conversational or chatty phrasing
-- Close statements with specific nouns. Avoid vague placeholders such as "thing", "aspect", or "part" when a specific noun exists
+- Write bullets as compact statements. Drop filler words and keep a clear subject and verb where the statement needs them. Use a formal tone with no colloquial, informal, or chatty phrasing in endings, word choice, or expressions
+- Close statements with specific nouns. Do not use vague placeholders such as "thing", "aspect", or "part" (in Korean 것, 곳, 거, 셈, 부분), and name the referent with a specific noun
 - Do not chain several facts in one sentence with "and", "but", "while", or "which". Split them into separate sentences
 - Use commas to list three or more items of the same category. Join two items with "and"
 - Put subtitles in parentheses in the form `(Subtitle) Content`. Do not attach subtitles with colons or hyphens

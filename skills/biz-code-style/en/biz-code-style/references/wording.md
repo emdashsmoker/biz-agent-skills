@@ -12,7 +12,7 @@ A list that sorts words LLMs pick out of habit into preferred, non-preferred, an
 
 ## Nouns
 
-Preferred: 연계 (linkage), 협력 (cooperation), 전략 (strategy), 방향 (direction), 비전 (vision), 시사점 (implication), 필요 (need), 변화 (change), 발전 (development), 융합 (convergence), 전환 (transition), 개선 (improvement), 차별화 (differentiation), 기여 (contribution), 보완 (reinforcement), 단계 (stage), 수요 (demand), 여건 (conditions), 현황 (current status), 실태 (actual state), 추이 (trend), 동향 (developments), 전망 (outlook), 재원 (funding), 인프라 (infrastructure), 거점 (hub site), 실증 (field validation), 시범 (pilot), 확산 (diffusion), 이행 (implementation), 전주기 (full life cycle), 동시 (simultaneous)
+Preferred: 연계 (linkage), 협력 (cooperation), 전략 (strategy), 방향 (direction), 비전 (vision), 시사점 (implication), 필요 (need), 변화 (change), 발전 (development), 융합 (convergence), 전환 (transition), 개선 (improvement), 차별화 (differentiation), 기여 (contribution), 보완 (reinforcement), 단계 (stage), 수요 (demand), 여건 (conditions), 현황 (current status), 실태 (actual state), 추이 (trend), 동향 (developments), 전망 (outlook), 재원 (funding), 인프라 (infrastructure), 거점 (hub site), 실증 (field validation), 시범 (pilot), 확산 (diffusion), 이행 (implementation), 전주기 (full life cycle), 동시 (simultaneous), 가치 (value)
 
 Non-preferred:
 
@@ -21,15 +21,16 @@ Non-preferred:
 - (Excess metaphors) 뼈대 (skeleton), 디딤돌 (stepping stone), 초석 (cornerstone), 교두보 (beachhead), 청사진 (blueprint), 나침반 (compass), 등대 (lighthouse), 촉매, 촉매제 (catalyst), 이정표 (milestone), 돌파구 (breakthrough), 전환점 (turning point, when overused)
 - (Exaggeration) 패러다임 (paradigm, as in "paradigm shift"), 게임체인저 (game changer), 판도 (the whole game), 폭증 (explosion), 비약 (leap, as in "leaping growth"), 최초 (first ever, when overused), 최강 (strongest), 최약 (weakest)
 - (Aggressive or assertive nouns) 도태 (being weeded out), 선점 (preemption), 선제 (preemptive, as in "preemptive response"), 직결 (direct link), 인과 (causation), 쟁점 (point of contention), 엄수 (strict observance), 선결 (prerequisite), 준거 (yardstick)
-- (Nouns LLMs favor) 함의 (implication, a literal translation), 괴리 (disconnect), 묵음 (muting), 차등 (differential), 전량 (entire quantity), 뽑기 (drawing), 병렬 (parallel), 한정 (limitation), 정립 (establishment, a literal translation of establish), 고아 (orphan), 병목 (bottleneck, outside actual process analysis), 매핑 (mapping, a literal translation, replace with 대응 correspondence, 연결 connection, or 배치 arrangement), 값 (value, outside engineering contexts)
+- (Nouns LLMs favor) 함의 (implication, a literal translation), 괴리 (disconnect), 묵음 (muting), 차등 (differential), 전량 (entire quantity), 뽑기 (drawing), 병렬 (parallel), 한정 (limitation), 정립 (establishment, a literal translation of establish), 고아 (orphan), 병목 (bottleneck, outside actual process analysis), 매핑 (mapping, a literal translation, replace with 대응 correspondence, 연결 connection, or 배치 arrangement), 값 (value, outside engineering contexts), 갈래 (branch, in place of "branch" or "path"), 묶음 (bundle, in place of a proper name for a set such as 패키지 package, 종합본 compendium, or 전략 strategy), 판 (edition, in place of "version" or "basis")
 - (Unneeded loanwords and acronyms) 프레임 (frame), 레버리지 (leverage), 컨틴전시 (contingency), 풀스택 (full stack, replace with 전주기), 게이트 (gate, as in "stage gates"), MVP, 통합패키지 (integrated package), 딥다이브 (deep dive, replace with 심층 분석 in-depth analysis), 인사이트 (insight, replace with 시사점), 피보팅 (pivoting), 게이트키핑 (gatekeeping), 에코시스템 (ecosystem), 트랜스포메이션 (transformation, replace with 디지털 전환 digital transition), 커버리지 (coverage), 헷지 (hedge)
 - (Forced nouns) 온전 (a noun made by cutting 한 off 온전한 "whole", regardless of context)
+- (User safety) 약속 (promise, use with great care given the user's risk and safety)
 - (기반 base) Avoid using it alone. Compounds such as 기반조성 (laying the groundwork) and 기반구축 (building the base) are allowed.
 
 Use with care:
 
 - (Nouns LLMs overuse to add authority) 핵심 (core), 본질 (essence), 근본 (root), 원칙 (principle)
-- (Nouns to watch for overuse) 결론 (conclusion, non-preferred in 결론적으로 "in conclusion"), 결과 (result), 영향 (impact), 영역 (area, when a specific object exists), 환경 (environment), 역량 (capability), 리스크 (risk), 한계 (limit), 격차 (gap), 문제 (problem), 이슈 (issue), 과제 (task), 체계 (system, as in "building a system"), 구조 (structure), 구축 (construction, when it is actual new development), 고도화 (upgrade, when it is a real improvement to an existing system), 선도 (leading), 정합 (consistency), 검증 (verification), 진단 (diagnosis), 평가 (evaluation), 판단 (judgment), 통제 (control), 관리 (management), 책임 (responsibility), 근거 (basis), 객관 (objectivity), 주관 (subjectivity), 위험 (danger), 위협 (threat), 규제 (regulation), 컴플라이언스, 준법 (compliance), 논리 (logic), 우선, 순위 (priority, rank), 연결 (connection), 결합 (combination), 구성 (composition), 규칙 (rule), 명제 (proposition), 유보 (reservation), 확정 (finalization), 조직 (organization), 인사 (personnel), 보상 (compensation), 소속 (affiliation), 결정 (decision), 단일 (single), 매칭 (matching), 교차 (cross, not as a meta expression describing method)
+- (Nouns to watch for overuse) 결론 (conclusion, non-preferred in 결론적으로 "in conclusion"), 결과 (result), 영향 (impact), 영역 (area, when a specific object exists), 환경 (environment), 역량 (capability), 리스크 (risk), 한계 (limit), 격차 (gap), 문제 (problem), 이슈 (issue), 과제 (task), 체계 (system, as in "building a system"), 구조 (structure), 구축 (construction, when it is actual new development), 고도화 (upgrade, when it is a real improvement to an existing system), 선도 (leading), 정합 (consistency), 검증 (verification), 진단 (diagnosis), 평가 (evaluation), 판단 (judgment), 판정 (ruling), 통제 (control), 관리 (management), 책임 (responsibility), 근거 (basis), 객관 (objectivity), 주관 (subjectivity), 위험 (danger), 위협 (threat), 규제 (regulation), 컴플라이언스, 준법 (compliance), 논리 (logic), 우선, 순위 (priority, rank), 연결 (connection), 결합 (combination), 구성 (composition), 규칙 (rule), 명제 (proposition), 유보 (reservation), 확정 (finalization), 조직 (organization), 인사 (personnel), 보상 (compensation), 소속 (affiliation), 결정 (decision), 단일 (single), 매칭 (matching), 교차 (cross, not as a meta expression describing method)
 - (Allowed when they refer to an actual object) 거버넌스 (governance, an actual organizational operating structure), 바우처 (voucher, a policy instrument), 생태계 (ecosystem, an actual structure of interaction among many actors), 시너지 (synergy, when the specific effect is stated), 로드맵 (roadmap, an actual schedule), 허브 (hub, an actual hub function), 플랫폼 (platform, an actual technology platform), 솔루션 (solution, an actual product or service), 아젠다 (agenda, an actual agenda), 이니셔티브 (initiative, an actual program), 벤치마크 (benchmark, an actual comparison baseline), 마중물 (priming water, limited to metaphors for initial policy investment)
 - (Engineering contexts only) 입력 (input), 출력 (output)
 - (Only when referring to actual languages) 언어 (language, such as Korean, English, or language models), not in a figurative sense
@@ -45,6 +46,7 @@ Non-preferred:
 - (Aggressive wording) 차단 (block), 배제 (exclude), 금지 (prohibit, except when quoting regulations), 회피 (evade), 도태 (weed out)
 - (Literal translations) 야기 (cause), 수반 (entail), 내포 (imply), 탈피 (break away, as in "break away from the old way")
 - (Assertion disguised as neutrality) 좌우 (determine, sway)
+- (Words unused in work and daily life) 통독 (read through, overused to mean reading the whole text)
 - (Verbs with sexual connotations, in every conjugation) 넣다 (put in, including 넣을 것, replace with 포함 include or 추가 add), 빼다 (pull out, including 뺄 것, replace with 제외 exclude or 삭제 delete), 박다 (drive in, a literal translation of hardcode, replace with 명시 state explicitly or 고정 fix), 쑤시다 (poke, replace with 점검 inspect or 조사 investigate), 동시삽입 (simultaneous insertion, replace with 병기)
 
 Use with care:
@@ -53,6 +55,7 @@ Use with care:
 - 판단 (judge, non-preferred combined with empty obligations such as "-라고 판단됨" "it is judged that"), 확인 (confirm, non-preferred combined with meta narration such as "확인된 바에 따르면" "according to what was confirmed"), 검증 (verify), 진단 (diagnose), 평가 (evaluate)
 - 번역 (translate), 통역 (interpret), only for actual translation and interpretation between languages
 - 삽입 (insert, allowed as the name of a document editing feature, use 추가 or 배치 in narration), 주입 (inject, allowed as a technical term such as SQL injection, use 반영 or 적용 in narration), 투입 (commit, allowed for committing resources such as staff and budget)
+- 출발 (departure), 출발점 (starting point), used only when something actually departs and never figuratively, 계측 (measurement), 실측 (actual measurement), 시측 (trial measurement), and other -측 words, used only when something is actually measured and never figuratively or to claim accuracy for the work
 
 ## Adjectives, adverbs, and modifiers
 

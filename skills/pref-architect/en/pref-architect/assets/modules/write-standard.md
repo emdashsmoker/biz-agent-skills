@@ -74,14 +74,14 @@ The rules below apply regardless of output language.
 
 ### When the output is Korean
 
-- If (Writing style) is Korean report style ending in a noun, do not use honorific endings, and write concisely on the basis of academic paper style. Do not use colloquialisms, slang, or jargon.
+- If (Writing style) is Korean report style ending in a noun, do not use honorific endings, and write concisely on the basis of academic paper style. Do not use colloquialisms, informal register, slang, or jargon. Also avoid a colloquial or informal tone in endings, words, and expressions.
 - Make noun endings sound natural. Write "목차명은 키워드 기반으로 재구성" instead of "목차명에는 키워드 기반 재구성으로 반영." Do not end awkwardly with 구조, 우선, 결론, 훌륭, 것, 곳, and the like.
 - Do not leave adnominal forms. Write "달성 필요" instead of "달성할 필요."
 - Do not use connective expressions that join sentences (그리고, 그러나, 그래서, 그렇기 때문에, 이는, -으며, -있으며, and so on). Split the sentence instead.
 - Use commas only when listing three or more items of the same category. Write two parallel nouns as "A 및 B" instead of joining them with 와 or 과, for example "예산 및 인력 확보" instead of "예산과 인력 확보." Keep 와 or 과 when it marks a relation between two nouns (사이, 간, 격차, 차이, 일치, 불일치, 연계, 연동, 정렬, 비교, 구분, 분리, 협력, as in "현행과 기준의 격차") or the partner of an action (as in "유관기관과 공유"), or when it belongs to an established term, such as "학습과 성장" in the BSC. Do not just delete a comma and leave the sentence as is.
 - Do not use the middle dot (·), slash (/), vertical bar (|), hyphens that join words, excessive abbreviations, or unnecessary loanwords and Sino-Korean words.
 - Do not drop particles. Do not write ungrammatical or compound sentences.
-- Use the dependent noun '것' only when the sentence needs it. Do not swap '것' for other empty nouns such as 곳, 거, 셈, or 부분.
+- Do not use placeholder nouns such as 것, 곳, 거, 셈, or 부분. Name the referent with a concrete noun. Do not swap one placeholder noun for another.
 - Avoid Japanese-calque patterns (-에 있어서, -에 대하여, -을 통하여, -로 인하여, -하지 않으면 안 된다, -라고 하는, -인 셈이다, -할 수밖에 없다) and overuse of -적 and -화.
 - Use periods only when needed.
 - Prefer characters that can be typed on a standard Korean keyboard.
@@ -146,10 +146,10 @@ If (Bullet levels) is One level, do not use '+' lines. Write the evidence after 
 
 Use this when (Korean word list) is Apply and the output is Korean. The list is sorted by whether readers accept a word easily and whether the word signals model-generated writing.
 
-- (Common words) 연계, 수립, 확보, 도입, 증대, 도출, 전주기, 시너지, 전략, 협력, 단기, 중장기, 조성, 동시, 전환, 필요, 보완, 차별화, 개선, 방향, 설정, 확장, 부합, 생태계, 개방, 기여, 비전, 시사점, 단계적, 점진적, 변화, 발전, 융합, 추가
-- (Words to avoid) 기반(기반조성 and 기반구축 are allowed), 축, 층, 종, 층위, 계위, 위계, 즉시, 맞춤, 맥락, 이중, 삼중, MVP, 통합패키지, 절대, 선점, 선제, 컨틴전시, 정립, 차등, 풀스택, 배제, 병렬, 차단, 회피, 금지, 한정, 병목, 함의, 유일, 도태, 최초, 비약, 흐름, 게이트, 전량, 폭증, 묵음, 괴리, 뼈대, 뽑기, 최강, 최약, 직결, 인과, 고아, 커버리지, 쟁점, 엄수, 헷지, 값, 선결, 좌우, 결(as in 같은 결), 준거, 틀, 갈래(when used in place of branch or path), 통독(when used to mean reading the whole text)
+- (Common words) 연계, 수립, 확보, 도입, 증대, 도출, 전주기, 시너지, 전략, 협력, 단기, 중장기, 조성, 동시, 전환, 필요, 보완, 차별화, 개선, 방향, 설정, 확장, 부합, 생태계, 개방, 기여, 비전, 시사점, 단계적, 점진적, 변화, 발전, 융합, 추가, 가치
+- (Words to avoid) 기반(기반조성 and 기반구축 are allowed), 축, 층, 종, 층위, 계위, 위계, 즉시, 맞춤, 맥락, 이중, 삼중, MVP, 통합패키지, 절대, 선점, 선제, 컨틴전시, 정립, 차등, 풀스택, 배제, 병렬, 차단, 회피, 금지, 한정, 병목, 함의, 유일, 도태, 최초, 비약, 흐름, 게이트, 전량, 폭증, 묵음, 괴리, 뼈대, 뽑기, 최강, 최약, 직결, 인과, 고아, 커버리지, 쟁점, 엄수, 헷지, 값, 선결, 좌우, 결(as in 같은 결), 준거, 틀, 갈래(when used in place of branch or path), 통독(when used to mean reading the whole text), 묶음(when used in place of a proper name for a set such as 패키지, 종합본, or 전략), 판(when used in place of version or basis)
 - (Words to replace for tone) Replace 넣다 with 포함 or 추가, 빼다 with 제외 or 삭제, 박다 with 명시 or 고정, 쑤시다 with 점검 or 조사, and 뽑다 with 선정 or 도출. In work documents these can sound colloquial or carry an inappropriate connotation.
-- (Words to use sparingly) 영역, 탁월, 훌륭, 결론, 결과, 영향, 단일, 우선, 순위, 연결, 판단, 진단, 평가, 검증, 리스크, 통제, 관리, 한계, 명제, 객관, 주관, 위험, 위협, 유보, 확정, 규제, 준법, 컴플라이언스, 논리, 역량, 환경, 조직, 인사, 보상, 거버넌스, 가드, 가드레일, 책임, 소속, 근거, 확인, 근본, 본질, 격차, 결정, 매칭, 핵심, 문제, 이슈, 선도, 체계, 구조, 구축, 고도화, 정합, 원칙, 구성, 결합, 온전, 교차, 규칙, and the particles '-으로' and '-로'
+- (Words to use sparingly) 영역, 탁월, 훌륭, 결론, 결과, 영향, 단일, 우선, 순위, 연결, 판단, 판정, 진단, 평가, 검증, 리스크, 통제, 관리, 한계, 명제, 객관, 주관, 위험, 위협, 유보, 확정, 규제, 준법, 컴플라이언스, 논리, 역량, 환경, 조직, 인사, 보상, 거버넌스, 가드, 가드레일, 책임, 소속, 근거, 확인, 근본, 본질, 격차, 결정, 매칭, 핵심, 문제, 이슈, 선도, 체계, 구조, 구축, 고도화, 정합, 원칙, 구성, 결합, 온전, 교차, 규칙, 출발, '-측' words (계측, 실측, 시측, and so on), 약속, and the particles '-으로' and '-로'
 - (Words not used as metaphors) Use 언어, 번역, and 통역 only for actual languages.
 - (Number declarations) Do not announce item counts in advance, as in "4대 방안" or "세 가지 약속." Write the content directly.
 
