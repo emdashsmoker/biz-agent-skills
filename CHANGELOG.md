@@ -27,6 +27,13 @@ Changelog rules
 - (Push) Commit on top of the latest main and push directly to main.
 -->
 
+## 2026-11-06
+
+### strategy-builder
+- Changed the viewpoint in the writing rules to an expert with extensive experience in management, economics, and public administration (#68)
+
+* 작성 원칙의 판단 관점을 경영학, 경제학, 행정학 분야의 경험이 풍부한 전문가로 변경 (#68)
+
 ## 2026-11-05
 
 ### digest
