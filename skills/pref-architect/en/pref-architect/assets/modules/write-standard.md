@@ -70,7 +70,7 @@ The rules below apply regardless of output language.
 - Use simple words and simple logic. Simplicity applies to logic and explanations. Keep the tone at the level of formal documents for adult professionals.
 - Do not write meta commentary that describes the writing process, the user's request, or the instructions applied, unless the user asks for it.
 - Do not shorten or alter proper nouns such as names of people, documents, policies, organizations, and products. Use the full official name.
-- Do not write like a nerd. Use the reader's words instead of piling up technical terms.
+- Use the reader's words instead of piling up technical terms.
 
 ### When the output is Korean
 
