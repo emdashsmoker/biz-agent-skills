@@ -27,6 +27,51 @@ Changelog rules
 - (Push) Commit on top of the latest main and push directly to main.
 -->
 
+## 2026-11-07
+
+### biz-code-style
+- Added a rule that sources cite only external material the reader can look up (#76)
+
+* 출처 대상을 독자가 찾아볼 수 있는 외부 자료로 한정하는 규칙 추가 (#76)
+
+### biz-code-style-lite
+- Added a rule that sources cite only external material the reader can look up (#76)
+
+* 출처 대상을 독자가 찾아볼 수 있는 외부 자료로 한정하는 규칙 추가 (#76)
+
+### environment-analysis
+- Added an internal source disclosure item to scoping: the full document name, "[기관명] 내부 자료", or no source in the body, chosen by disclosure scope, internal security, and personal-information sensitivity (#76)
+- Added a rule that names each source by the material itself and never by the user's request, the drafting process, or labels such as "사용자 제출 자료" (#76)
+
+* 범위 설정의 내부 자료 출처 표기 수준 항목(문서명 전체, "[기관명] 내부 자료", 본문 출처 생략) 추가 (#76)
+* 자료를 특정하는 출처 이름 규칙 추가 (사용자 요청, 작성 과정, "사용자 제출 자료" 표기 제외) (#76)
+
+### environment-analysis-lite
+- Added a step that confirms the disclosure level of internal sources with the user before internal material is used: the source format, "[기관명] 내부 자료", or no source line (#76)
+- Added a rule that names each source by the material itself and never by the user's request, the drafting process, or labels such as "사용자 제출 자료" (#76)
+- Changed figures the user states in the conversation to be recorded as "사용자 제시" in the evidence register only, outside the deliverable's source blocks (#76)
+- Fixed the English submitted-file source format to name the title of the material instead of the file name (#76)
+
+* 내부 자료 사용 전 출처 표기 수준(출처 형식, "[기관명] 내부 자료", 출처 생략)의 사용자 확인 절차 추가 (#76)
+* 자료를 특정하는 출처 이름 규칙 추가 (사용자 요청, 작성 과정, "사용자 제출 자료" 표기 제외) (#76)
+* 대화 중 사용자 제시 수치의 "사용자 제시" 기록 위치를 근거 대장으로 변경 (#76)
+* 영문판 제출 자료 출처 형식의 표기 대상을 파일명에서 자료 제목으로 수정 (#76)
+
+### logical-write
+- Added a rule that sources and notes cite only external material the reader can look up (#76)
+
+* 출처와 주석의 출처 대상을 독자가 찾아볼 수 있는 외부 자료로 한정하는 규칙 추가 (#76)
+
+### logical-write-lite
+- Added a rule that sources and notes cite only external material the reader can look up (#76)
+
+* 출처와 주석의 출처 대상을 독자가 찾아볼 수 있는 외부 자료로 한정하는 규칙 추가 (#76)
+
+### pref-architect
+- Added a rule to the writing standard module that sources and notes cite only external material the reader can look up (#76)
+
+* 글쓰기 기준 모듈에 출처와 주석의 출처 대상을 독자가 찾아볼 수 있는 외부 자료로 한정하는 규칙 추가 (#76)
+
 ## 2026-11-06
 
 ### biz-code-style
