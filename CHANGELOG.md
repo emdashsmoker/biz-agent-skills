@@ -39,6 +39,17 @@ Changelog rules
 
 * 출처 대상을 독자가 찾아볼 수 있는 외부 자료로 한정하는 규칙 추가 (#76)
 
+### digest
+- Changed the scope of `>` source blocks from every figure to each input of a report (#77)
+- Added a rule against citing the input, internal material, internal reasoning, and conversion output files as sources (#77)
+- Added a rule that writes the input's details once in the overview (#77)
+- Added a write-up rule that writes external material the input names as its basis in the same sentence as the content it supports (#77)
+
+* `>` 출처 블록의 적용 범위를 모든 수치에서 보고서의 입력 자료별 출처로 변경 (#77)
+* 입력 자료, 내부 자료, 내부 추론, 변환 결과 파일의 출처 미표기 규칙 추가 (#77)
+* 입력 자료 정보의 개요 1회 기재 규칙 추가 (#77)
+* 입력 자료에 명시된 외부 근거 자료의 동일 문장 기재 규칙 추가 (#77)
+
 ### environment-analysis
 - Added an internal source disclosure item to scoping: the full document name, "[기관명] 내부 자료", or no source in the body, chosen by disclosure scope, internal security, and personal-information sensitivity (#76)
 - Added a rule that names each source by the material itself and never by the user's request, the drafting process, or labels such as "사용자 제출 자료" (#76)
