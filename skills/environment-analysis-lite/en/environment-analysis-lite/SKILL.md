@@ -136,14 +136,14 @@ Follow the rules of the module sections in scope. Apply the common rules below t
 
 ### Common Principles
 
-- Knowledge sources are limited to user-submitted files, connected tool results, and web search results. Facts remembered by the model are not sources
+- Knowledge sources are limited to user-submitted files, connected tool results, and web search results. Facts remembered by the model are not sources. Name each source by the material itself, and do not cite the user's request, the drafting process, or labels such as "user-submitted file" as sources
 - Do not write information that no source confirms. Mark it "unverified"
 - Do not treat missing information as evidence of absence. Write "none" only for a scope that was fully surveyed, and state that scope
 - Do not justify a claim by an institution's reputation alone. Base it on the content and method of the source
 - State who produced a figure, when, and how, so a third party asking for the basis can get an answer. Example: "According to a 2024 survey by XX Institute, the domestic XX market is projected to grow from A in 2023 to B in 2028, a CAGR of N% (sum of industry revenue)"
 - Public source format: Institution or author (year), title (URL). The URL is the full path of the page holding the information, never the domain alone
-- Internal source format: System or tool name (reference date), document or table name (location in the tool)
-- Submitted file format: File name (issuing organization, reference date), page or sheet location
+- Internal source format: System or tool name (reference date), document or table name (location in the tool). Before using internal material, confirm the disclosure level with the user based on disclosure scope, internal security, and personal-information sensitivity: this format, "[organization] internal material", or no source line (recorded only in the evidence register)
+- Submitted file format: Title of the submitted material (issuing organization, reference date), page or sheet location
 
 ### Public Source Quality
 
@@ -200,7 +200,7 @@ Data from internal systems, collaborative document tools, spreadsheets, email, m
 
 - Use submitted files as primary evidence and record the issuing organization and reference date in the evidence register
 - If a submitted file is a news report or reworked material, apply the public source criteria for that type
-- Use figures the user states in the conversation without confirmation, and cite them as "stated by user"
+- Use figures the user states in the conversation without confirmation, and record them as "stated by user" in the evidence register (do not put this label in the source blocks of the deliverable)
 
 ### Verification Level
 

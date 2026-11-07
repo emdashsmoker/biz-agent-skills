@@ -425,6 +425,7 @@ Apply to code comments, commit messages, logs, chart and diagram labels, slide c
 - Do not place tables inside code blocks or `>` blocks. Use three tables or fewer per document and place each after the claim it supports. Do not place tables back to back
 - Output only what was requested
 - Write sources as `> Institution or author (year), title (link)`. Use the full address that reaches the material directly. With multiple sources, separate the `>` blocks with line breaks
+- Sources cite only external material the reader can look up. Do not cite items such as the target RFP, input files, internal documents, the user's request, or the drafting process as sources
 - Use the official full names of institutions, publications, policies, and products without shortening or altering them
 
 ### Vocabulary

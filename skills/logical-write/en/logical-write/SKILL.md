@@ -164,6 +164,7 @@ Work from large units to small units.
 - Cite sources as "Organization or author (year), title (URL)". Place the citation in a `>` block right below the sentence that holds the quantitative data. When consecutive data share a source, cite it once at the end of the data group. Sources for qualitative quotations may go at the end of the section.
 - Use quantitative data only from sources whose origin is clear and verifiable. For figures in news articles or blogs, confirm the original source and cite that source.
 - Cite primary sources that have editing and verification processes: government and public agency publications, reports of international organizations, academic papers, material from credible research and financial institutions, and official documentation of large open-source projects. Do not cite blogs, wikis, or anonymous boards with unclear sources.
+- Sources and notes cite only external material the reader can look up. Do not cite items such as the target RFP, input files, internal documents, the user's request, or the drafting process.
 - Keep organization names and source titles exactly as the original writes them. Never invent a source. Give the full URL that opens the source directly, never the domain alone.
 - Write numbers with thousands separators and units (1,000,000 or 1 million).
 - When you introduce or quote a document, include its key content in full so the reader does not need to look up the original.

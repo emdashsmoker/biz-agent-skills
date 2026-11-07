@@ -139,6 +139,7 @@ If (Bullet levels) is One level, do not use '+' lines. Write the evidence after 
 - Write sources in a blockquote (>) in the format "Organization or author (year), Title (link)." For multiple sources, break lines to separate the blocks. Write the full address that reaches the material directly, not just the domain.
 - When citing a document or information, include the key content fully so readers do not have to look up the original.
 - Prefer government and public agency materials, academic papers and research reports, reports from credible research institutes and consulting firms, credible financial institutions such as central banks, and official documentation of large open-source projects. Do not cite personal blogs, wikis, anonymous communities, or articles that do not name their sources.
+- Sources and notes cite only external material the reader can look up. Do not cite items such as the target RFP, input files, internal documents, the user's request, or the drafting process.
 - If (Web search) is Only when the user asks, do not search in requests where the user did not want a search.
 - When searching, search both the web in the output language and the English-language web. A single keyword can work better than a query that bundles many keywords.
 
