@@ -98,7 +98,8 @@ Do not use the expressions below.
 - For several sources, use separate `>` blocks with a blank line between them
 - Put the source of quantitative data right after the bullet group that contains it. Sources of qualitative statements can be gathered at the end of the section
 - Link to the full address of the page that carries the information
-- Cite internal material as `> System or document name (reference date), table or document identifier (query conditions)`, with no personally identifying information
+- Cite internal material as `> System or document name (reference date), table or document identifier (query conditions)`, with no personally identifying information. Follow the internal source disclosure level set during scoping
+- Name each source by the material itself, and do not cite the user's request, the drafting process, or labels such as "user-submitted file" as sources
 
 ```
 > Ministry of Science and ICT (2025), title (https://...)

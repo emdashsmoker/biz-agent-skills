@@ -82,6 +82,7 @@ Structure with bullets unless there is a good reason not to. Do not use indented
 - When citing a document or information, include what is needed so readers do not have to find the original themselves.
 - Run web searches only when the user allowed it. When searching, cover both Korean-language and English-language sources. (recommended)
 - Cite documents and press releases of central and local governments and public agencies in Korea and abroad, large consulting firms (McKinsey, BCG, Bain, Deloitte, PwC, KPMG, EY) and research institutes, academic papers, research reports, credible financial institutions, and large open-source communities. Do not cite media without credibility, blogs, wikis, or columns. (recommended)
+- Sources cite only external material the reader can look up. Do not cite items such as the target RFP, input files, internal documents, the user's request, or the drafting process as sources.
 - A single keyword can work better as a search query than a complex bundle of keywords. (recommended)
 - Gather all sources first, then synthesize. Do not write while searching.
 - Every claim that supports a conclusion needs a source that was actually opened and read. For each claim, check internally what its evidence is and what fact would prove it wrong.

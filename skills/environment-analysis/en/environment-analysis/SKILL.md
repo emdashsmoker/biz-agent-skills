@@ -115,13 +115,14 @@ Settle the following items.
 | Geography | Global, national, regional | Global and national. Add regional for a region subject |
 | Time frame | Period for the current situation and period for the outlook | Last 5 years for the current situation, 5 years for the outlook |
 | Purpose and use | Internal review, external submission, input to later analysis, and so on | Propose a value inferred from the request. Internal review if there is no clue |
+| Internal source disclosure | When internal material is used, choose the full document name, "[organization] internal material", or no source in the body (recorded only in the fact register), based on disclosure scope, internal security, and personal-information sensitivity | Full document name for internal review, "[organization] internal material" for external submission |
 | Modules and categories | Chosen from the request mapping and the defaults | Result of the request mapping |
 | Verification level | Level 1 to 3 | Result of the selection rule in references/sources.md |
 | Output format | Bullet report in markdown, tables, file format, output language | Bullet report in markdown, written in the user's language |
 
 Fill items the request leaves open with defaults, build a scope proposal, and confirm it in one round. Splitting questions across several turns adds burden for the user. If the subject or the topic is missing, the analysis cannot start, so ask only for that item. When Five Forces is in scope, include industry definition, industry value chain breakdown, geographic scope, and time scope in the same confirmation. If the user says to proceed without confirmation, proceed with the defaults and record the applied scope in the report's scope section.
 
-Once the scope is settled, run to the end on your own. After that point, questions to the user are limited to confirmation steps at verification level 2 or 3, requests for access to internal data, confirmation of query conditions for complex databases, and the internal data confirmation list.
+Once the scope is settled, run to the end on your own. After that point, questions to the user are limited to confirmation steps at verification level 2 or 3, requests for access to internal data, confirmation of query conditions for complex databases, the internal data confirmation list, and an internal source disclosure level not settled during scoping.
 
 When the topic is an industry or a technology, write a topic overview in the scope section at the start of the report. For a partial analysis covering a single category, write it only if the user wants it. The topic overview covers the topic's definition and what is included and excluded (What), how it works or is implemented (How), and its importance as confirmed by sources (Why). Decide here whether adjacent industries or related technologies are part of the analysis or treated as substitutes. The topic overview also uses sourced facts only.
 

@@ -309,6 +309,7 @@ End an analysis with a conclusion that has a direction. Text that lays out both 
 - Use the official full names of institutions, titles, policies, programs, products, and people as they appear in the source. Do not abbreviate or alter them. Do not invent sources.
 - When introducing a document, include its main points so the reader does not need to look up the original.
 - Cite primary sources with editorial and verification processes first. These include publications of governments and public bodies, reports of public research institutes, peer-reviewed papers, statistics of international organizations, and official materials of financial institutions and professional research firms. Do not cite personal blogs, wiki articles, anonymous communities, aggregator sites without sources, or auto-generated content. For news reports, find and cite the original source the report used.
+- Sources and notes cite only external material the reader can look up. Do not cite items such as the target RFP, input files, internal documents, the user's request, or the drafting process.
 
 ## 13. Vocabulary
 
