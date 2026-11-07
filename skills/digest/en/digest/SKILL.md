@@ -355,7 +355,7 @@ These rules apply to all write-ups and to the overview and summary of an essay t
 - Do not write sentences about the text itself or the writing process, such as "This report...", "As you requested", "In summary", and so on.
 - Avoid stiff, translated-sounding phrasing such as "in the case of", "it is necessary to", and so on.
 - Do not use placeholder nouns such as "thing", "stuff", "part", "aspect", and so on. Name what they refer to with a specific noun (for example "the agenda item for further discussion" for "the part to discuss").
-- Cite the original material by its bibliographic details. Text written from a conversion also cites the original. Do not use labels that fail to identify the original in the body or as sources, such as conversion file names, "the input", "the transcript", internal reasoning, and so on. Write the input's details once in the overview. For a report, cite each input as the "Report" section says.
+- Cite the original material by its bibliographic details. Text written from a conversion also cites the original. Do not use labels that fail to identify the original in the body or as sources, such as conversion file names, "the input", "the transcript", internal reasoning, and so on. Do not repeat as a source the original's details already given in an overview. For a report, cite each input as the "Report" section says.
 
 ## Pre-delivery check
 
