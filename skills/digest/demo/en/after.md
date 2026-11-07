@@ -10,12 +10,11 @@
 - Staff who received factually wrong answers make up 71.3% of users
 - A pilot on a security-contract cloud considered first by the Planning Office
 
-> Planning Office (2026), Survey Results on Generative AI Use at Work
-
 # Content
 ## Survey design
 - (Background) CEO's instruction to review an in-house hyperscale AI pilot (July 2026)
 - (Method) 287 responses (69.7%) to an anonymous survey of all 412 staff, September 8-19, 2026
+- (Supplementary research) Interviews with staff at 3 companies in the same industry, August 2026
 - (Limits) Truth of answers and actual time saved not verified in a self-reported survey
 
 ## Current use
@@ -43,8 +42,6 @@
 - (Company A) Baseline measured before its security-contract cloud pilot. Search time per document cut from 42 to 17 minutes, followed by a company-wide rollout
 - (Company B) Customer drawings found entered 6 months into full use without guidelines. Use stopped afterward
 - (Company C) About KRW 400 million spent on an in-house deployment. Monthly active users only 18% due to dissatisfaction with answer quality
-
-> Planning Office (2026), Survey Results on Generative AI Use at Work, section 9 (interviews with staff at 3 companies in the same industry)
 
 ## Adoption options
 - (Considered first) A security-contract cloud, ready for a pilot within 2-3 months
