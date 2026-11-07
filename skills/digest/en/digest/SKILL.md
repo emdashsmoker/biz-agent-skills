@@ -236,6 +236,7 @@ These principles apply to meeting minutes, briefings, and reports.
 - Correct only when surrounding sentences or other mentions in the input narrow the right spelling down to one option. If they do not, keep the original spelling. Apply the same test to proper nouns and technical terms.
 - Write write-ups in the user language, including when the input is in another language.
 - Do arithmetic on figures in code.
+- Write external material that the input names as its basis in the same sentence as the content it supports (for example "based on a 2025 Census Bureau survey", and so on).
 
 ## Meeting minutes
 
@@ -316,7 +317,7 @@ Combine two or more inputs around topics.
 - When inputs disagree, write each input's position side by side with its source.
 - Keep the figures that drive the conclusion to three or fewer. More figures make the reader's basis for judgment unclear.
 - Use at most three tables, only where a summary helps, placed right after the claim they support. Do not place tables back to back.
-- Cite sources so each sentence can be traced to its input.
+- Cite sources so each sentence can be traced to its input. Write sources in a `>` block as "Organization or author(year), title(link)", and use a separate block for each source.
 
 ## Translation
 
@@ -354,7 +355,7 @@ These rules apply to all write-ups and to the overview and summary of an essay t
 - Do not write sentences about the text itself or the writing process, such as "This report...", "As you requested", "In summary", and so on.
 - Avoid stiff, translated-sounding phrasing such as "in the case of", "it is necessary to", and so on.
 - Do not use placeholder nouns such as "thing", "stuff", "part", "aspect", and so on. Name what they refer to with a specific noun (for example "the agenda item for further discussion" for "the part to discuss").
-- Attach a source to every figure. Write sources in a `>` block as "Organization or author(year), title(link)", and use a separate block for each source.
+- Do not cite the input, internal material, internal reasoning, conversion output files, and so on as meta sources. Write the input's details once in the overview. For a report, cite each input as the "Report" section says.
 
 ## Pre-delivery check
 
