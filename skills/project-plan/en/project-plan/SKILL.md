@@ -156,6 +156,8 @@ Only when the user asks, set `options.raci` to true and write each person's role
 | WBS Detail, Staffing | Automatic. Full row table and monthly M/M per person |
 
 - Keep a terse bullet style with one point per line. Do not use colloquial or informal register, and avoid a colloquial or informal tone in endings, word choice, and phrasing. Do not use placeholder nouns such as "thing" or "part" (in Korean 것, 곳, 거, 셈, 부분), and name the referent with a concrete noun
+- While avoiding colloquial wording, informal register, and placeholder nouns, do not replace them with wording such as jargon beyond the reader's level, engineering expressions, or software design expressions (input value, mapping, interface, pipeline, and so on). Write professional or technical content in accurate terms and clear sentences without changing its meaning. Also avoid oversimplification that underestimates the reader (plain rewording that blurs the meaning, a childish tone, and so on). Keep every sentence grammatical
+- When referring to another page, slide, document, data set, and so on, write the key content in place so the reader does not need to look it up. Do not let a WBS number, code, abbreviation, summary label, and so on stand in for the content, and write the content it refers to alongside it
 - Dates and numbers in the overview must match plan.json, so take any number added to a sentence from plan.json
 
 ## Export commands

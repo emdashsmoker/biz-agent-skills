@@ -29,6 +29,7 @@ Every word passes two questions before output. Does the reader know this word? I
 - When the reference reader understands a word without a definition, treat it as ordinary and use it.
 - A word learned through daily life is ordinary. A word learned only through study of, work in, or a degree in a field is jargon.
 - A word that looks like an everyday word but carries a different meaning in a field counts as jargon ("significant" in statistics, "good faith" in law, "exposure" in finance).
+- An engineering or software design expression (input value, mapping, interface, pipeline, and so on) used for a subject unrelated to any system counts as jargon.
 - Spell out English abbreviations and acronyms in full on first use, whether or not the reader knows them.
 - The more familiar a word feels to the writer, the easier it is to skip the check, so doubt familiar words first.
 
