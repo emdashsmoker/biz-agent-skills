@@ -119,6 +119,7 @@ Pure software development projects are outside the scope of the module skeletons
 - Keep project names, organization names, deliverable names, and task names exactly as written in the RFP. Evaluators read the proposal against the RFP's wording.
 - Split items at the same level by a single criterion. Items should not overlap and together should leave nothing out. Do not name the classification criterion in the output.
 - Write output documents in the user's language, in concise bullet style, one point per sentence. Do not use colloquial or informal register, and avoid a colloquial or informal tone in endings, word choice, and phrasing. Do not use placeholder nouns such as "thing" or "part" (in Korean 것, 곳, 거, 셈, 부분), and name the referent with a concrete noun.
+- Formality comes from precise terms and grammatical sentences. Do not pile up technical terms beyond the reader's level. Use engineering and software design phrasing (input value, output, mapping, pipeline, and so on) only in sentences that describe an actual system. Do not distort technical content or talk down to the reader through excessive simplification.
 - Use bold only for conditions that could lead to disqualification, point deductions, or exclusion.
 - State unknowns as unknown.
 

@@ -24,6 +24,7 @@ These rules apply to code comments, commit messages, log text, text inside chart
 
 - Write in a concise bullet style based on academic prose. Do not use honorific speech, colloquialisms, informal register, buzzwords, slang, or jargon of insiders. Also avoid a colloquial or informal tone in endings, words, and expressions.
 - Keep logic and explanations of concepts as easy and simple as possible. Keep vocabulary and style at the formality of official documents for adult practitioners.
+- Formality comes from precise terms and grammatical sentences. Do not pile up technical terms beyond the reader's level. Use engineering and software design phrasing (input value, output, mapping, pipeline, and so on) only in sentences that describe an actual system. Do not distort technical content or talk down to the reader through excessive simplification.
 - Explain at a level a practitioner with introductory knowledge of the field can follow. (recommended)
 - Write in a warm tone without losing objectivity. (recommended)
 - For the same content, lead with positive wording ("the transition becomes possible once structured data is secured" over "data readiness is insufficient").

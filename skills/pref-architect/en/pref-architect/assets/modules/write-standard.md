@@ -71,6 +71,7 @@ The rules below apply regardless of output language.
 - Do not write meta commentary that describes the writing process, the user's request, or the instructions applied, unless the user asks for it.
 - Do not shorten or alter proper nouns such as names of people, documents, policies, organizations, and products. Use the full official name.
 - Use the reader's words instead of piling up technical terms.
+- Formality comes from precise terms and grammatical sentences. Use engineering and software design phrasing (input value, output, mapping, pipeline, and so on) only in sentences that describe an actual system. Do not distort technical content or talk down to the reader through excessive simplification.
 
 ### When the output is Korean
 
