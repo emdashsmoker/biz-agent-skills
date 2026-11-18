@@ -445,11 +445,11 @@ An implication is a conclusion that groups several facts and condenses what they
 - Name headings so the content below is clear from the heading alone, and give each heading one topic. Do not combine two topics as in "Policy Trends and Technology Trends"
 - Use either keyword headings or sentence headings throughout the document (Five Forces headings follow their set format). Name sibling headings in parallel (e.g., "Overseas Policy Trends", "Domestic Policy Trends"). Avoid repeating generic labels such as "Overview", "Background", or "Status"
 - Keep three or four items at the same level where possible. With five or more, add a grouping level, and use one classification criterion
-- Keep fact IDs and implication IDs in the output. If the user asks for a clean copy without IDs, make a separate version with the IDs removed
+- Keep fact IDs and implication IDs in the output. If the user asks for a clean copy without IDs, make a separate version with the IDs removed. Add IDs only as tracing tags. Write the key facts of the supporting evidence in each implication sentence so the reader can follow it without consulting the appendix. When referring to another section, a source, data, and so on, also write the needed content in the sentence itself. Do not replace content with codes, numbers, abbreviations, or summary labels, and so on
 
 ### Sentences and Format
 
-- Write in concise report style with one message per sentence. Each of who, when, where, what, why, and how appears at most once in a sentence. Split the sentence if one appears twice. Do not use colloquial or informal register, and avoid a colloquial or informal tone in endings, word choice, and phrasing. Do not use placeholder nouns such as "thing" or "part" (in Korean 것, 곳, 거, 셈, 부분), and name the referent with a concrete noun
+- Write in concise report style with one message per sentence. Each of who, when, where, what, why, and how appears at most once in a sentence. Split the sentence if one appears twice. Do not use colloquial or informal register, and avoid a colloquial or informal tone in endings, word choice, and phrasing. Do not use placeholder nouns such as "thing" or "part" (in Korean 것, 곳, 거, 셈, 부분), and name the referent with a concrete noun. Keep grammar correct regardless of how technical or plain the text is
 - Do not join clauses with conjunctions such as "and", "but", or "while", and do not use commas to join sentences. Use commas when listing three or more items of the same kind
 - Write subheadings in the form "(subheading) content". Do not attach them with a colon or hyphen
 - Use Markdown as follows: `#` document title, `##` sections, `###` subsections only when needed, `-` statements, `>` sources. Do not use indented sub-lists. Show relations between items with subheadings and IDs
@@ -459,7 +459,7 @@ An implication is a conclusion that groups several facts and condenses what they
 - Replace tildes with hyphens. Do not use em dashes, contrast constructions that negate one thing to assert another, unsupported count announcements ("three pillars" and similar), or inflated modifiers
 - Do not write sentences about the output or the writing process ("This report", "Our research found", "The table below summarizes")
 - Keep working terms (module, stage, evidence register, verification level, quality grade, unit of analysis, rating) out of the output. Framework names such as PEST, Five Forces, and VRIO, and the names of the five forces, may appear as section names
-- Write the full name of technical terms and abbreviations at first use, and add a one-line explanation block `> (term) explanation` when needed
+- Write the full name of technical terms and abbreviations at first use, and add a one-line explanation block `> (term) explanation` when needed. Keep formality through word choice and sentence endings. Do not overuse jargon beyond the reader's level or engineering and software-design phrasing (input value, output, mapping, and so on). Plain writing must not underestimate the reader's level or compromise the accuracy of the content through oversimplification. State specialized and technical content accurately and clearly, without distorting its meaning
 
 ### Output Skeleton Example
 

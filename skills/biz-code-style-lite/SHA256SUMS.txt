@@ -1,2 +1,2 @@
-d2a82e5bf4bbe84324ed3b11928935188a511a4736ae46e53da0e99a568abacc  biz-code-style-lite-en.skill
-34bdd7252b74964c0db7a5c6e0ae0c8bd844d14f6deb93253f554c96273a4fbf  biz-code-style-lite-ko.skill
+896d06b4541429d6f0eb688c8082adc98b6ed4e65cb69904284fd60e43d64a94  biz-code-style-lite-en.skill
+6547cbdf4717c9f6862524c3756498789b9f47a0fe87eae074062d9957a19159  biz-code-style-lite-ko.skill

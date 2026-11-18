@@ -27,6 +27,185 @@ Changelog rules
 - (Push) Commit on top of the latest main and push directly to main.
 -->
 
+## 2026-11-18
+
+### biz-code-style
+- Added a vocabulary-level rule that keeps jargon and software-design phrasing (input value, output, mapping and so on) within the reader's level and prevents oversimplification that underestimates the reader (#79)
+- Added a rule that states specialized and technical content accurately, plainly and clearly (#79)
+- Changed the scope of the rule that states cited content in place from sources to other pages, slides and so on (#79)
+- Added a rule against replacing content with codes, numbers, abbreviations or summary labels (#79)
+
+* 독자 수준에 맞춘 어휘 규칙 추가 (전문용어와 소프트웨어 설계 어투의 남발 및 독자를 과소평가한 과잉 평이화 방지) (#79)
+* 전문적, 기술적 내용의 정확하고 쉽고 명료한 서술 규칙 추가 (#79)
+* 인용 내용 직접 기재 규칙의 적용 범위를 문헌에서 다른 쪽, 슬라이드 등으로 확대 변경 (#79)
+* 코드, 번호, 약칭, 요약 문구 등으로의 내용 치환 금지 규칙 추가 (#79)
+
+### biz-code-style-lite
+- Added a vocabulary-level rule that keeps jargon and software-design phrasing (input value, output, mapping and so on) within the reader's level and prevents oversimplification that underestimates the reader (#79)
+- Added a rule that states specialized and technical content accurately, plainly and clearly (#79)
+- Added a grammar rule that applies regardless of technicality or plainness (#79)
+- Added a self-contained writing rule that states the needed content in place when referring to other pages, slides, sources, data and so on, without replacing content with codes, numbers, abbreviations or summary labels (#79)
+
+* 독자 수준에 맞춘 어휘 규칙 추가 (전문용어와 소프트웨어 설계 어투의 남발 및 독자를 과소평가한 과잉 평이화 방지) (#79)
+* 전문적, 기술적 내용의 정확하고 쉽고 명료한 서술 규칙 추가 (#79)
+* 글의 전문성 및 평이함 정도와 무관한 문법 준수 규칙 추가 (#79)
+* 자기완결 서술 규칙 추가 (다른 쪽, 슬라이드, 문헌, 데이터 등의 언급 시 필요한 내용의 직접 기재 및 코드, 번호, 약칭, 요약 문구 등으로의 내용 치환 금지) (#79)
+
+### clear-comm
+- Added a vocabulary-level rule that keeps jargon and software-design phrasing (input value, output, mapping and so on) within the reader's level and prevents oversimplification that underestimates the reader (#79)
+- Added a rule that states specialized and technical content accurately, plainly and clearly (#79)
+- Added a grammar rule that applies regardless of technicality or plainness (#79)
+- Added a self-contained writing rule that states the needed content in place when referring to an earlier email, a page of an attachment, a meeting agenda number and so on, without replacing content with codes, numbers, abbreviations or summary labels (#79)
+
+* 독자 수준에 맞춘 어휘 규칙 추가 (전문용어와 소프트웨어 설계 어투의 남발 및 독자를 과소평가한 과잉 평이화 방지) (#79)
+* 전문적, 기술적 내용의 정확하고 쉽고 명료한 서술 규칙 추가 (#79)
+* 글의 전문성 및 평이함 정도와 무관한 문법 준수 규칙 추가 (#79)
+* 자기완결 서술 규칙 추가 (이전 메일, 첨부 문서의 쪽, 회의 안건 번호 등의 언급 시 필요한 내용의 직접 기재 및 코드, 번호, 약칭, 요약 문구 등으로의 내용 치환 금지) (#79)
+
+### digest
+- Added a vocabulary-level rule that keeps jargon and software-design phrasing (input value, output, mapping and so on) within the reader's level and prevents oversimplification that underestimates the reader (#79)
+- Added a rule that states specialized and technical content accurately, plainly and clearly (#79)
+- Added a grammar rule that applies regardless of technicality or plainness (#79)
+- Added a self-contained writing rule that states the needed content in place when referring to other pages, slides, agenda items, cited sources and so on in the original, without replacing content with codes, numbers, abbreviations or summary labels (#79)
+
+* 독자 수준에 맞춘 어휘 규칙 추가 (전문용어와 소프트웨어 설계 어투의 남발 및 독자를 과소평가한 과잉 평이화 방지) (#79)
+* 전문적, 기술적 내용의 정확하고 쉽고 명료한 서술 규칙 추가 (#79)
+* 글의 전문성 및 평이함 정도와 무관한 문법 준수 규칙 추가 (#79)
+* 자기완결 서술 규칙 추가 (원문의 다른 쪽, 슬라이드, 안건, 인용 문헌 등의 언급 시 필요한 내용의 직접 기재 및 코드, 번호, 약칭, 요약 문구 등으로의 내용 치환 금지) (#79)
+
+### environment-analysis
+- Added a vocabulary-level rule that keeps jargon and software-design phrasing (input value, output, mapping and so on) within the reader's level and prevents oversimplification that underestimates the reader (#79)
+- Added a rule that states specialized and technical content accurately, plainly and clearly (#79)
+- Added a grammar rule that applies regardless of technicality or plainness (#79)
+- Added a self-contained writing rule that states the needed content in place when referring to other sections, sources, data and so on, without replacing content with codes, numbers, abbreviations or summary labels (#79)
+- Added a rule that each implication sentence states the key facts of its supporting evidence, with fact IDs kept as tracing tags (#79)
+
+* 독자 수준에 맞춘 어휘 규칙 추가 (전문용어와 소프트웨어 설계 어투의 남발 및 독자를 과소평가한 과잉 평이화 방지) (#79)
+* 전문적, 기술적 내용의 정확하고 쉽고 명료한 서술 규칙 추가 (#79)
+* 글의 전문성 및 평이함 정도와 무관한 문법 준수 규칙 추가 (#79)
+* 자기완결 서술 규칙 추가 (다른 절, 문헌, 데이터 등의 언급 시 필요한 내용의 직접 기재 및 코드, 번호, 약칭, 요약 문구 등으로의 내용 치환 금지) (#79)
+* 시사점 문장의 근거 팩트 핵심 사실 기재 규칙 추가 (팩트 번호는 추적용 표지로 병기) (#79)
+
+### environment-analysis-lite
+- Added a vocabulary-level rule that keeps jargon and software-design phrasing (input value, output, mapping and so on) within the reader's level and prevents oversimplification that underestimates the reader (#79)
+- Added a rule that states specialized and technical content accurately, plainly and clearly (#79)
+- Added a grammar rule that applies regardless of technicality or plainness (#79)
+- Added a self-contained writing rule that states the needed content in place when referring to other sections, sources, data and so on, without replacing content with codes, numbers, abbreviations or summary labels (#79)
+- Added a rule that each implication sentence states the key facts of its supporting evidence, with fact IDs kept as tracing tags (#79)
+
+* 독자 수준에 맞춘 어휘 규칙 추가 (전문용어와 소프트웨어 설계 어투의 남발 및 독자를 과소평가한 과잉 평이화 방지) (#79)
+* 전문적, 기술적 내용의 정확하고 쉽고 명료한 서술 규칙 추가 (#79)
+* 글의 전문성 및 평이함 정도와 무관한 문법 준수 규칙 추가 (#79)
+* 자기완결 서술 규칙 추가 (다른 절, 문헌, 데이터 등의 언급 시 필요한 내용의 직접 기재 및 코드, 번호, 약칭, 요약 문구 등으로의 내용 치환 금지) (#79)
+* 시사점 문장의 근거 팩트 핵심 사실 기재 규칙 추가 (팩트 번호는 추적용 표지로 병기) (#79)
+
+### lean-work
+- Added a vocabulary-level rule that keeps jargon and software-design phrasing (input value, output, mapping and so on) within the reader's level and prevents oversimplification that underestimates the reader (#79)
+- Added a rule that states specialized and technical content accurately, plainly and clearly (#79)
+- Added a grammar rule that applies regardless of technicality or plainness (#79)
+- Added a self-contained writing rule that states the needed content in place when referring to other documents, pages, sections, data and so on, without replacing content with codes, numbers, abbreviations or summary labels (#79)
+
+* 독자 수준에 맞춘 어휘 규칙 추가 (전문용어와 소프트웨어 설계 어투의 남발 및 독자를 과소평가한 과잉 평이화 방지) (#79)
+* 전문적, 기술적 내용의 정확하고 쉽고 명료한 서술 규칙 추가 (#79)
+* 글의 전문성 및 평이함 정도와 무관한 문법 준수 규칙 추가 (#79)
+* 자기완결 서술 규칙 추가 (다른 문서, 쪽, 절, 데이터 등의 언급 시 필요한 내용의 직접 기재 및 코드, 번호, 약칭, 요약 문구 등으로의 내용 치환 금지) (#79)
+
+### logical-write
+- Added software-design phrasing (input value, output, mapping and so on) to the wording that may not stand in for formality (#79)
+- Added a rule that states specialized and technical content accurately, plainly and clearly (#79)
+- Added a grammar rule that applies regardless of technicality or plainness (#79)
+- Changed the scope of the rule that states cited content in place from sources to other pages, sections, slides, data and so on (#79)
+- Added a rule against replacing content with codes, numbers, abbreviations or summary labels (#79)
+- Changed the grammar error lists into examples that end with "and so on" (#79)
+
+* 격식을 대신하지 않는 어휘에 소프트웨어 설계 어투(입력값, 출력, 매핑 등) 추가 (#79)
+* 전문적, 기술적 내용의 정확하고 쉽고 명료한 서술 규칙 추가 (#79)
+* 글의 전문성 및 평이함 정도와 무관한 문법 준수 규칙 추가 (#79)
+* 인용 내용 직접 기재 규칙의 적용 범위를 문헌에서 다른 쪽, 절, 슬라이드, 데이터 등으로 확대 변경 (#79)
+* 코드, 번호, 약칭, 요약 문구 등으로의 내용 치환 금지 규칙 추가 (#79)
+* 비문 유형 목록을 '등'으로 끝나는 예시 목록으로 변경 (#79)
+
+### logical-write-lite
+- Added software-design phrasing (input value, output, mapping and so on) to the wording that may not stand in for formality (#79)
+- Added a rule that states specialized and technical content accurately, plainly and clearly (#79)
+- Added a grammar rule that applies regardless of technicality or plainness (#79)
+- Changed the scope of the rule that states cited content in place from sources to other pages, sections, slides, data and so on (#79)
+- Added a rule against replacing content with codes, numbers, abbreviations or summary labels (#79)
+- Changed the grammar error lists into examples that end with "and so on" (#79)
+
+* 격식을 대신하지 않는 어휘에 소프트웨어 설계 어투(입력값, 출력, 매핑 등) 추가 (#79)
+* 전문적, 기술적 내용의 정확하고 쉽고 명료한 서술 규칙 추가 (#79)
+* 글의 전문성 및 평이함 정도와 무관한 문법 준수 규칙 추가 (#79)
+* 인용 내용 직접 기재 규칙의 적용 범위를 문헌에서 다른 쪽, 절, 슬라이드, 데이터 등으로 확대 변경 (#79)
+* 코드, 번호, 약칭, 요약 문구 등으로의 내용 치환 금지 규칙 추가 (#79)
+* 비문 유형 목록을 '등'으로 끝나는 예시 목록으로 변경 (#79)
+
+### network-analysis
+- Added a vocabulary-level rule that keeps jargon and software-design phrasing (input value, output, mapping and so on) within the reader's level and prevents oversimplification that underestimates the reader (#79)
+- Added a rule that states specialized and technical content accurately, plainly and clearly (#79)
+- Added a grammar rule that applies regardless of technicality or plainness (#79)
+- Added a self-contained writing rule that states the needed content in place when referring to other sections, figures, tables, sources and so on, and names nodes and groups along with any number or code (#79)
+
+* 독자 수준에 맞춘 어휘 규칙 추가 (전문용어와 소프트웨어 설계 어투의 남발 및 독자를 과소평가한 과잉 평이화 방지) (#79)
+* 전문적, 기술적 내용의 정확하고 쉽고 명료한 서술 규칙 추가 (#79)
+* 글의 전문성 및 평이함 정도와 무관한 문법 준수 규칙 추가 (#79)
+* 자기완결 서술 규칙 추가 (다른 절, 그림, 표, 문헌 등의 언급 시 필요한 내용의 직접 기재 및 노드와 집단의 이름 병기) (#79)
+
+### no-jargon
+- Added software-design phrasing used outside its field (input value, output, mapping and so on) to the jargon criteria (#79)
+
+* 분야 밖에서 사용한 소프트웨어 설계 어투(입력값, 출력, 매핑 등)의 전문용어 판별 기준 추가 (#79)
+
+### pref-architect
+- Added a vocabulary-level rule that keeps jargon and software-design phrasing (input value, output, mapping and so on) within the reader's level and prevents oversimplification that underestimates the reader (#79)
+- Added a rule that states specialized and technical content accurately, plainly and clearly (#79)
+- Added a grammar rule that applies regardless of technicality or plainness (#79)
+- Changed the scope of the rule that states cited content in place from sources to other pages, slides, data and so on (#79)
+- Added a rule against replacing content with codes, numbers, abbreviations or summary labels (#79)
+
+* 독자 수준에 맞춘 어휘 규칙 추가 (전문용어와 소프트웨어 설계 어투의 남발 및 독자를 과소평가한 과잉 평이화 방지) (#79)
+* 전문적, 기술적 내용의 정확하고 쉽고 명료한 서술 규칙 추가 (#79)
+* 글의 전문성 및 평이함 정도와 무관한 문법 준수 규칙 추가 (#79)
+* 인용 내용 직접 기재 규칙의 적용 범위를 문헌에서 다른 쪽, 슬라이드, 데이터 등으로 확대 변경 (#79)
+* 코드, 번호, 약칭, 요약 문구 등으로의 내용 치환 금지 규칙 추가 (#79)
+
+### project-plan
+- Added a vocabulary-level rule that keeps jargon and software-design phrasing (input value, output, mapping and so on) within the reader's level and prevents oversimplification that underestimates the reader (#79)
+- Added a rule that states specialized and technical content accurately, plainly and clearly (#79)
+- Added a grammar rule that applies regardless of technicality or plainness (#79)
+- Added a self-contained writing rule that states the needed content in place when referring to WBS tasks, other sections, sources and so on in the overview, without replacing content with codes, numbers, abbreviations or summary labels (#79)
+
+* 독자 수준에 맞춘 어휘 규칙 추가 (전문용어와 소프트웨어 설계 어투의 남발 및 독자를 과소평가한 과잉 평이화 방지) (#79)
+* 전문적, 기술적 내용의 정확하고 쉽고 명료한 서술 규칙 추가 (#79)
+* 글의 전문성 및 평이함 정도와 무관한 문법 준수 규칙 추가 (#79)
+* 자기완결 서술 규칙 추가 (오버뷰의 WBS 작업, 다른 절, 문헌 등의 언급 시 필요한 내용의 직접 기재 및 코드, 번호, 약칭, 요약 문구 등으로의 내용 치환 금지) (#79)
+
+### rfp-strategy
+- Added a vocabulary-level rule that keeps jargon and software-design phrasing (input value, output, mapping and so on) within the reader's level and prevents oversimplification that underestimates the reader (#79)
+- Added a rule that states specialized and technical content accurately, plainly and clearly (#79)
+- Added a grammar rule that applies regardless of technicality or plainness (#79)
+- Added a self-contained writing rule that states the needed content in place when referring to RFP clauses, other sections, sources, data and so on, without replacing content with codes, numbers, abbreviations or summary labels (#79)
+
+* 독자 수준에 맞춘 어휘 규칙 추가 (전문용어와 소프트웨어 설계 어투의 남발 및 독자를 과소평가한 과잉 평이화 방지) (#79)
+* 전문적, 기술적 내용의 정확하고 쉽고 명료한 서술 규칙 추가 (#79)
+* 글의 전문성 및 평이함 정도와 무관한 문법 준수 규칙 추가 (#79)
+* 자기완결 서술 규칙 추가 (RFP 조항, 다른 절, 문헌, 데이터 등의 언급 시 필요한 내용의 직접 기재 및 코드, 번호, 약칭, 요약 문구 등으로의 내용 치환 금지) (#79)
+
+### slop-proof
+- Added software-design phrasing outside system design explanations (input value, output, interface, pipeline and so on) to the non-preferred words (#79)
+
+* 시스템 설계 설명 밖의 소프트웨어 설계 어투(입력값, 출력, 인터페이스, 파이프라인 등) 비선호 어휘 추가 (#79)
+
+### strategy-builder
+- Added a vocabulary-level rule that keeps jargon and software-design phrasing (input value, output, mapping and so on) within the reader's level and prevents oversimplification that underestimates the reader (#79)
+- Added a rule that states specialized and technical content accurately, plainly and clearly (#79)
+- Added a grammar rule that applies regardless of technicality or plainness (#79)
+- Added a self-contained writing rule that states the needed content in place when referring to other elements or steps in the body, without replacing content with codes, numbers, abbreviations or summary labels (#79)
+
+* 독자 수준에 맞춘 어휘 규칙 추가 (전문용어와 소프트웨어 설계 어투의 남발 및 독자를 과소평가한 과잉 평이화 방지) (#79)
+* 전문적, 기술적 내용의 정확하고 쉽고 명료한 서술 규칙 추가 (#79)
+* 글의 전문성 및 평이함 정도와 무관한 문법 준수 규칙 추가 (#79)
+* 자기완결 서술 규칙 추가 (본문의 다른 요소나 단계 언급 시 필요한 내용의 직접 기재 및 코드, 번호, 약칭, 요약 문구 등으로의 내용 치환 금지) (#79)
 ## 2026-11-07
 
 ### biz-code-style

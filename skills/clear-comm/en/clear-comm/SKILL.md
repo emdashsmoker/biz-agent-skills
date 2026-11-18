@@ -101,10 +101,12 @@ Punctuation marks and symbols are part of the message the reader reads. Use a ma
 - When you ask for a review, state the items to review and the result you want.
 - When you describe an improvement, state the current state and the state after the change.
 - Call things by their specific names in place of vague nouns such as "thing", "part", "point", or "aspect" (in Korean, 것, 부분, 점, 곳, 셈, 편). Keep fixed expressions (Korean "먹을 것" for "something to eat"), grammatical words (Korean "-할 수 있다" for "can"), and counters (Korean "5곳" for "five places") as they are.
+- When you point to an earlier email, a page of an attachment, a meeting agenda number, and so on, include the needed content so the reader does not have to check it again. Do not replace content with numbers, abbreviations, or summary labels, and so on.
+- Keep grammar correct regardless of how technical or plain the text is.
 
 ### Terminology
 
-Use terms the reader used first as they are. Use terms common in the reader's line of work or in the channel as they are. Explain any other abbreviation, industry term, or internal term once, where it first appears.
+Use terms the reader used first as they are. Use terms common in the reader's line of work or in the channel as they are. Explain any other abbreviation, industry term, or internal term once, where it first appears. Replace engineering and software-design phrasing from outside the reader's field (input value, output, mapping, interface, and so on) with everyday expressions. Plain wording must not underestimate the reader's level or obscure the meaning with catch-all words. State specialized and technical content accurately and clearly, without distorting its meaning.
 
 ## Attitude
 

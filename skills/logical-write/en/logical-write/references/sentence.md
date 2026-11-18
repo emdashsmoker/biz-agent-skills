@@ -10,7 +10,7 @@ Put one message in one sentence. The test for this is 5W1H singularity. Within o
 - Splitting a sentence must not drop the 5W1H information each new sentence needs.
 - The reason to split a sentence is a repeated 5W1H element. Do not break sentences at random.
 - The conjunction limits of strict mode and the comma and semicolon limits common to both modes exist to block the paths through which the same element enters one sentence twice.
-- Do not write ungrammatical sentences with dropped particles or mismatched subjects and predicates.
+- Do not write ungrammatical sentences, such as those with omitted particles, subject-predicate agreement errors, and so on.
 
 Test procedure:
 
@@ -145,7 +145,7 @@ Correct (core message "timely decisions became difficult", preceding clause as c
 
 - Give one sentence one subject-predicate skeleton for the core message. Subordinate clauses support this skeleton.
 - As clauses increase, keep each clause's scope clear so the core subject and predicate stay visible.
-- Avoid dropped particles, broken subject-predicate agreement, and modifiers with unclear targets.
+- Avoid omitted particles, subject-predicate agreement errors, modifiers with unclear targets, and so on.
 - Adjust the number of clauses and the sentence length so a reader reading aloud can follow the core subject and predicate in one breath.
 - No rule tells you to shorten sentences. A sentence with several clauses is fine when its skeleton is clear.
 

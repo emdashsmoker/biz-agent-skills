@@ -413,7 +413,8 @@ Apply to code comments, commit messages, logs, chart and diagram labels, slide c
 - Do not mix facts and judgments in one sentence or one classification
 - Prefer positive phrasing. Write "conversion becomes possible once structured data is secured" in place of "data readiness is insufficient". Avoid categorical words such as "absolutely", "unconditionally", "only", and "block"
 - Do not substitute the name of an authoritative institution for evidence. Say you do not know what you do not know, and do not treat the absence of information as evidence of absence
-- Pitch explanations at a level a newcomer to the field can follow, and keep the tone of an adult professional document
+- Pitch explanations at a level a newcomer to the field can follow, and keep the tone of an adult professional document. Keep formality through word choice and sentence endings. In sentences for readers, do not overuse jargon beyond the reader's level or engineering and software-design phrasing (input value, output, mapping, pipeline, and so on). Plain writing must not underestimate the reader's level or compromise the accuracy of the content through oversimplification. State specialized and technical content accurately and clearly, without distorting its meaning
+- Keep grammar correct regardless of how technical or plain the text is
 
 ### Formatting
 
@@ -427,6 +428,7 @@ Apply to code comments, commit messages, logs, chart and diagram labels, slide c
 - Write sources as `> Institution or author (year), title (link)`. Use the full address that reaches the material directly. With multiple sources, separate the `>` blocks with line breaks
 - Sources cite only external material the reader can look up. Do not cite items such as the target RFP, input files, internal documents, the user's request, or the drafting process as sources
 - Use the official full names of institutions, publications, policies, and products without shortening or altering them
+- When citing a source, another page or slide, data, and so on, include the needed content so the reader does not have to consult the original or that location. Do not replace content with codes, numbers, abbreviations, or summary labels, and so on
 
 ### Vocabulary
 

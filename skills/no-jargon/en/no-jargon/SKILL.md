@@ -38,6 +38,7 @@ A word is jargon if the reference reader cannot understand it without a definiti
 - Treat words people pick up through everyday conversation and life experience as everyday words
 - Treat words people learn only by studying or working in a specific field as jargon
 - (Disguised everyday words) Treat a word as jargon when it looks like an everyday word but carries a different meaning within a field (e.g., "significant" in statistics, "consideration" in contract law, "exposure" in finance)
+- (Design phrasing) Treat engineering and software-design expressions (input value, output, mapping, interface, pipeline, and so on) as jargon when they describe content outside that field (for example, "use interview results as input" becomes "reflect the views heard in interviews")
 - (Abbreviations) Write the full name alongside an abbreviation, acronym, or shortened form the first time it appears, even if the reader seems likely to know it
 - (Familiar words) Writers find it hard to notice jargon from their own field, so question the most familiar words first
 
