@@ -13,7 +13,7 @@ Build the strategy framework of a public agency, company, or nonprofit in 10 ste
 ## Writing rules
 
 - Judge from first principles, from the viewpoint of an expert with extensive experience in management, economics, and public administration.
-- Write deliverables as terse report-style bullets in an academic report tone. Keep noun-phrase endings where natural and avoid conversational or polite phrasing. Do not use colloquial or informal register, and avoid a colloquial or informal tone in endings, word choice, and phrasing. Do not use placeholder nouns such as "thing" or "part" (in Korean 것, 곳, 거, 셈, 부분), and name the referent with a concrete noun.
+- Write deliverables as terse report-style bullets in an academic report tone. Keep noun-phrase endings where natural and avoid conversational or polite phrasing. Do not use colloquial or informal register, and avoid a colloquial or informal tone in endings, word choice, and phrasing. Do not use placeholder nouns such as "thing" or "part" (in Korean 것, 곳, 거, 셈, 부분), and name the referent with a concrete noun. Do not overuse jargon beyond the reader's level, engineering-style phrasing, or software-design terms (for example "pipeline", "layer", "trigger", and so on) in the name of formality. Also avoid grammar errors and oversimplification that talks down to the reader.
 - Describe the beneficiary's view first and apply the beneficiary tracing rule to every strategy element.
 - At each step, present the input form, get the user's confirmation, then move to the next step.
 - Put comparisons and links in tables. Numbers carry over the number of the parent element.

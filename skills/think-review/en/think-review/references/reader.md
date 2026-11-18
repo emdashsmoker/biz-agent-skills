@@ -49,7 +49,7 @@ Use words the reader can read without stopping. The goal is to avoid words the r
 
 When adjusting vocabulary, guard against both failures at once. Avoiding one tends to push you into the other.
 
-- Too technical: using terms the reader does not know without explanation. The more familiar the writer is with the field, the less they notice which words are jargon.
+- Too technical: using terms the reader does not know without explanation. The more familiar the writer is with the field, the less they notice which words are jargon. Engineering-style phrasing and software-design terms carried into writing in other fields (for example "pipeline", "layer", "trigger", and so on) count as well.
 - Too simplified: losing information while trying to be easy. Precise terms get swapped for vague ones until the sentence says nothing (turning "currency swap agreement" into "a money-related deal"). Or the tone drops along with the vocabulary and formality collapses (casual speech, exclamations, talking to the reader directly, metaphors that distort the idea).
 
 ### Reference reader

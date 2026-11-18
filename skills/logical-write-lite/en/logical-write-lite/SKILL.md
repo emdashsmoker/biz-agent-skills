@@ -417,7 +417,7 @@ Meta commentary is any sentence about the text itself, the writing process, the 
 
 ## 16. Tone
 - Use a formal academic report style. Do not use colloquial speech, informal register, buzzwords, slang, jargon of in-groups, or honorific endings. Also avoid a colloquial or informal tone in endings, words, and expressions.
-- Keep reasoning and concept explanations plain and simple. Keep the formality of vocabulary and style at the level of an official document for adult professionals.
+- Keep reasoning and concept explanations plain and simple. Keep the formality of vocabulary and style at the level of an official document for adult professionals. Do not overuse jargon beyond the reader's level, engineering-style phrasing, or software-design terms (for example "pipeline", "layer", "trigger", and so on) in the name of formality.
 - Keep the tone warm while staying objective. Write the direction for improvement in place of blaming expressions. Aim for the finish of a professional consulting report.
 - Avoid absolute and aggressive words (absolutely, block, only, unconditionally, final) and use tactful wording the reader can accept. Write "capability severely lacking" as "capability needs strengthening" and "absolutely impossible" as "requires X to achieve Y". State clear errors clearly. Too much tact blurs the meaning, so adjust the degree.
 - When the content is the same, lead with the positive form. "Insufficient data readiness for cloud migration" becomes "Cloud migration possible once structured data is secured".
@@ -433,7 +433,7 @@ Meta commentary is any sentence about the text itself, the writing process, the 
 - Were the mode rules kept (connectives and commas in short-sentence mode; clause roles and frame in flow mode)?
 - Does each conclusion pair with evidence, stay within its scope, and have a direction?
 - Are there at most three key data points, each with source, calculation basis, full link, and official name, calculated with a tool?
-- Were jargon, avoided words, translationese, empty-slot nouns, Chapter 14 patterns, and banned symbols handled?
+- Were jargon, engineering-style phrasing, avoided words, translationese, empty-slot nouns, Chapter 14 patterns, and banned symbols handled?
 - Is the text free of meta commentary, unrequested reverse statements, and framework names, with body content in the first and last sentences?
 - Is it plain and clear enough for a third party to accept its reasoning, and does it sound natural read aloud?
 

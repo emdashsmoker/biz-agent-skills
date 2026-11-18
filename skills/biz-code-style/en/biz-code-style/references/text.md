@@ -23,7 +23,7 @@ These rules apply to code comments, commit messages, log text, text inside chart
 ## Tone
 
 - Write in a concise bullet style based on academic prose. Do not use honorific speech, colloquialisms, informal register, buzzwords, slang, or jargon of insiders. Also avoid a colloquial or informal tone in endings, words, and expressions.
-- Keep logic and explanations of concepts as easy and simple as possible. Keep vocabulary and style at the formality of official documents for adult practitioners.
+- Keep logic and explanations of concepts as easy and simple as possible. Keep vocabulary and style at the formality of official documents for adult practitioners. Do not overuse jargon beyond the reader's level, engineering-style phrasing, or software-design terms (for example "pipeline", "layer", "trigger", and so on) in the name of formality. Also avoid oversimplification that talks down to the reader.
 - Explain at a level a practitioner with introductory knowledge of the field can follow. (recommended)
 - Write in a warm tone without losing objectivity. (recommended)
 - For the same content, lead with positive wording ("the transition becomes possible once structured data is secured" over "data readiness is insufficient").
@@ -228,7 +228,7 @@ The praise word, dramatic fragment, and contrast emphasis are gone, replaced wit
 - Are em dashes, emphasis bold, dramatic ellipses, and label colons absent?
 - Are tautologies, empty obligations, and circular definitions absent?
 - Is narration about the text itself or the writing process absent?
-- Are translationese and AI-favored vocabulary absent?
+- Are translationese, AI-favored vocabulary, and needless engineering-style phrasing absent?
 - Do no three adjacent sentences share the same structure?
 - Does every conclusion and claim have evidence, and every number a source?
 - Are no unneeded adnominal forms or particles left in noun endings?

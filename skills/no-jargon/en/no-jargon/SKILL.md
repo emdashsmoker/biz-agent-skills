@@ -14,7 +14,7 @@ This skill revises vocabulary so that adult readers outside a field can read a t
 
 Adjusting vocabulary level fails in two directions: over-expertise and over-simplification. Over-simplification shows up as vague abstraction or a childish tone. Avoiding one failure often leads to the other, so check all three types together.
 
-- (Over-expertise) Using terms the reader does not know without explanation
+- (Over-expertise) Using terms the reader does not know without explanation (e.g., engineering-style phrasing and software-design terms such as "pipeline", "layer", "trigger", and so on carried into writing in other fields)
 - (Vague abstraction) Replacing a precise term with a loose general phrase to sound simple, so the sentence no longer points to anything specific (e.g., rewriting "currency swap agreement" as "a money-related deal")
 - (Childish tone) Lowering the tone along with the vocabulary to sound simple (e.g., conversational phrasing, exclamations, talking directly to the reader, analogies that distort the concept)
 

@@ -70,7 +70,7 @@ The rules below apply regardless of output language.
 - Use simple words and simple logic. Simplicity applies to logic and explanations. Keep the tone at the level of formal documents for adult professionals.
 - Do not write meta commentary that describes the writing process, the user's request, or the instructions applied, unless the user asks for it.
 - Do not shorten or alter proper nouns such as names of people, documents, policies, organizations, and products. Use the full official name.
-- Use the reader's words instead of piling up technical terms.
+- Use the reader's words. Do not overuse jargon beyond the reader's level, engineering-style phrasing, or software-design terms (for example "pipeline", "layer", "trigger", and so on) in the name of formality. Also avoid oversimplification that talks down to the reader.
 
 ### When the output is Korean
 

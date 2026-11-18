@@ -179,7 +179,7 @@ Work from large units to small units.
 - Do not re-explain what the reader already knows. Avoid information overload.
 - Avoid assertive and aggressive words (absolutely, block, only, sole, unconditionally) and use polite, softened wording the reader can accept. Too much softening blurs meaning, so point out clear errors plainly.
 - Keep a warm tone without losing objectivity. Avoid showy expressions that only insiders understand.
-- Use simple logic and plain words. Simplicity applies to the flow of logic and the explanation of concepts. Keep the tone at the formality of official documents for adult professionals.
+- Use simple logic and plain words. Simplicity applies to the flow of logic and the explanation of concepts. Keep the tone at the formality of official documents for adult professionals. Do not overuse jargon beyond the reader's level, engineering-style phrasing, or software-design terms (for example "pipeline", "layer", "trigger", and so on) in the name of formality.
 - Aim for the expertise and finish of a professional consulting report.
 
 ## Priority and scope

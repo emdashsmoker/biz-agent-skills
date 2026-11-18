@@ -413,7 +413,7 @@ Apply to code comments, commit messages, logs, chart and diagram labels, slide c
 - Do not mix facts and judgments in one sentence or one classification
 - Prefer positive phrasing. Write "conversion becomes possible once structured data is secured" in place of "data readiness is insufficient". Avoid categorical words such as "absolutely", "unconditionally", "only", and "block"
 - Do not substitute the name of an authoritative institution for evidence. Say you do not know what you do not know, and do not treat the absence of information as evidence of absence
-- Pitch explanations at a level a newcomer to the field can follow, and keep the tone of an adult professional document
+- Pitch explanations at a level a newcomer to the field can follow, and keep the tone of an adult professional document. Do not overuse jargon beyond the reader's level, engineering-style phrasing, or software-design terms (for example "pipeline", "layer", "trigger", and so on) in the name of formality. Also avoid oversimplification that talks down to the reader
 
 ### Formatting
 

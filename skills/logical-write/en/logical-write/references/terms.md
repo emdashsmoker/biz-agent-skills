@@ -8,7 +8,7 @@ Do not use words a non-specialist reader cannot understand without a definition.
 
 Adjusting vocabulary level produces failures at both ends. Avoiding one end makes it easy to slide into the other, so check both directions together.
 
-- (Excess expertise) Using terms the reader does not know without defining them. The more familiar the writer is with a field, the less the writer notices which words are jargon.
+- (Excess expertise) Using terms the reader does not know without defining them. The more familiar the writer is with a field, the less the writer notices which words are jargon. Engineering-style phrasing and software-design terms carried into writing in other fields (for example "pipeline", "layer", "trigger", and so on) count as well.
 - (Excess simplification) Losing information while trying to write simply. It takes two forms: vague abstraction, where a precise term becomes a catch-all word and the sentence says nothing ("currency swap agreement" becomes "money-related promise"), and childish style, where lowering the vocabulary also lowers the tone until formality collapses (colloquial endings, exclamations, addressing the reader, metaphors that distort the essence).
 
 ## Reference reader
