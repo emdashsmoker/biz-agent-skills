@@ -1,2 +1,2 @@
-642308b9e04e0b7b98daecb4bd5866a4b57f05ddbd2181c1dc981633df717ebe  network-analysis-en.skill
-f7f48d4f565ae2ed953d0696198d240af86803f4a003cdf14d705c38cd687a5f  network-analysis-ko.skill
+08bcebdcd3174fd0fa6dddfb6327beafc33b2575b8bc2ae9fdeabfd51dc8e857  network-analysis-en.skill
+3d542824529f8a8f81e311ef50de827173ea5c05bc18dddad5f2b2670919633e  network-analysis-ko.skill

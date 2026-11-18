@@ -23,7 +23,7 @@ These rules apply to code comments, commit messages, log text, text inside chart
 ## Tone
 
 - Write in a concise bullet style based on academic prose. Do not use honorific speech, colloquialisms, informal register, buzzwords, slang, or jargon of insiders. Also avoid a colloquial or informal tone in endings, words, and expressions.
-- While avoiding colloquial wording, informal register, and placeholder nouns, do not replace them with wording such as jargon beyond the reader's level, engineering expressions, or software design expressions (input value, mapping, interface, pipeline, and so on). Write professional or technical content in accurate terms and clear sentences without changing its meaning. Also avoid oversimplification that underestimates the reader (plain rewording that blurs the meaning, a childish tone, and so on).
+- Do not replace colloquial wording, informal register, or placeholder nouns with wording such as jargon beyond the reader's level, engineering expressions, or software design expressions (input value, mapping, interface, pipeline, and so on). Write professional or technical content in accurate terms and clear sentences without distorting its meaning. Also avoid oversimplification that underestimates the reader (plain rewording that blurs the meaning, a childish tone, and so on).
 - Keep logic and explanations of concepts as easy and simple as possible. Keep vocabulary and style at the formality of official documents for adult practitioners.
 - Explain at a level a practitioner with introductory knowledge of the field can follow. (recommended)
 - Write in a warm tone without losing objectivity. (recommended)
@@ -80,7 +80,7 @@ Structure with bullets unless there is a good reason not to. Do not use indented
 - Prefer time series of 3-5 years or more, and add the compound annual growth rate and the share of the total. (recommended)
 - Use three or fewer key quantitative figures in a whole document. Beyond three, every number becomes noise that clouds judgment. (recommended)
 - Write sources in a blockquote in the form "Organization or author (year), document title (link)". Write the full address that reaches the document directly. A bare domain is not enough.
-- When citing a document, data, another page, a slide, and so on, include what is needed in place so readers do not have to find the original themselves. Do not let a code, number, abbreviation, summary label, and so on stand in for the content, and write the content it refers to alongside it.
+- When citing a document, data, another page, a slide, and so on, include what is needed in place so readers do not have to find the original themselves. Do not let a code, number, abbreviation, summary label, and so on substitute for the content, and write the content alongside it.
 - Run web searches only when the user allowed it. When searching, cover both Korean-language and English-language sources. (recommended)
 - Cite documents and press releases of central and local governments and public agencies in Korea and abroad, large consulting firms (McKinsey, BCG, Bain, Deloitte, PwC, KPMG, EY) and research institutes, academic papers, research reports, credible financial institutions, and large open-source communities. Do not cite media without credibility, blogs, wikis, or columns. (recommended)
 - Sources cite only external material the reader can look up. Do not cite items such as the target RFP, input files, internal documents, the user's request, or the drafting process as sources.

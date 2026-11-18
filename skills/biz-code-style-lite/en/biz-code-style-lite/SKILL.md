@@ -413,7 +413,7 @@ Apply to code comments, commit messages, logs, chart and diagram labels, slide c
 - Do not mix facts and judgments in one sentence or one classification
 - Prefer positive phrasing. Write "conversion becomes possible once structured data is secured" in place of "data readiness is insufficient". Avoid categorical words such as "absolutely", "unconditionally", "only", and "block"
 - Do not substitute the name of an authoritative institution for evidence. Say you do not know what you do not know, and do not treat the absence of information as evidence of absence
-- Pitch explanations at a level a newcomer to the field can follow, and keep the tone of an adult professional document. While avoiding colloquial wording, informal register, and placeholder nouns, do not replace them with wording such as jargon beyond the reader's level, engineering expressions, or software design expressions (input value, mapping, interface, pipeline, and so on). Write professional or technical content in accurate terms and clear sentences without changing its meaning. Also avoid oversimplification that underestimates the reader (plain rewording that blurs the meaning, a childish tone, and so on). Keep every sentence grammatical
+- Pitch explanations at a level a newcomer to the field can follow, and keep the tone of an adult professional document. Do not replace colloquial wording, informal register, or placeholder nouns with wording such as jargon beyond the reader's level, engineering expressions, or software design expressions (input value, mapping, interface, pipeline, and so on). Write professional or technical content in accurate terms and clear sentences without distorting its meaning. Also avoid oversimplification that underestimates the reader (plain rewording that blurs the meaning, a childish tone, and so on). Keep every sentence grammatical
 
 ### Formatting
 
@@ -426,7 +426,7 @@ Apply to code comments, commit messages, logs, chart and diagram labels, slide c
 - Output only what was requested
 - Write sources as `> Institution or author (year), title (link)`. Use the full address that reaches the material directly. With multiple sources, separate the `>` blocks with line breaks
 - Sources cite only external material the reader can look up. Do not cite items such as the target RFP, input files, internal documents, the user's request, or the drafting process as sources
-- Use the official full names of institutions, publications, policies, and products without shortening or altering them. When referring to another page, slide, document, data set, and so on, write the key content in place so the reader does not need to look it up. Do not let a code, number, abbreviation, summary label, and so on stand in for the content, and write the content it refers to alongside it
+- Use the official full names of institutions, publications, policies, and products without shortening or altering them. When referring to another page, slide, document, data set, and so on, write the key content in place so the reader does not need to look it up. Do not let a code, number, abbreviation, summary label, and so on substitute for the content, and write the content alongside it
 
 ### Vocabulary
 

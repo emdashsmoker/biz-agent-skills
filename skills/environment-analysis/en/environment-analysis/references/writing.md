@@ -58,13 +58,13 @@ Each analysis section describes the current state first and recent changes after
 - One sentence carries one message. If who, when, where, what, why, or how appears twice in one sentence, split it
 - Write bullets as compact statements. Drop filler words and keep a clear subject and verb where the statement needs them. Use a formal tone with no colloquial, informal, or chatty phrasing in endings, word choice, or expressions
 - Close statements with specific nouns. Do not use vague placeholders such as "thing", "aspect", or "part" (in Korean 것, 곳, 거, 셈, 부분), and name the referent with a specific noun
-- While avoiding colloquial wording, informal register, and placeholder nouns, do not replace them with wording such as jargon beyond the reader's level, engineering expressions, or software design expressions (input value, mapping, interface, pipeline, and so on). Write professional or technical content in accurate terms and clear sentences without changing its meaning. Also avoid oversimplification that underestimates the reader (plain rewording that blurs the meaning, a childish tone, and so on). Keep every sentence grammatical
+- Do not replace colloquial wording, informal register, or placeholder nouns with wording such as jargon beyond the reader's level, engineering expressions, or software design expressions (input value, mapping, interface, pipeline, and so on). Write professional or technical content in accurate terms and clear sentences without distorting its meaning. Also avoid oversimplification that underestimates the reader (plain rewording that blurs the meaning, a childish tone, and so on). Keep every sentence grammatical
 - Do not chain several facts in one sentence with "and", "but", "while", or "which". Split them into separate sentences
 - Use commas to list three or more items of the same category. Join two items with "and"
 - Put subtitles in parentheses in the form `(Subtitle) Content`. Do not attach subtitles with colons or hyphens
 - Name subtitles by their content. Avoid empty subtitles such as "(Explanation)", "(Evidence)", or "(Claim)", and avoid repeating the same subtitle
 - Use the official full names of organizations, policies, programs, and products. Spell out abbreviations at first use
-- When referring to another page, slide, document, data set, and so on, write the key content in place so the reader does not need to look it up. Do not let a code, number, abbreviation, summary label, and so on stand in for the content, and write the content it refers to alongside it
+- When referring to another page, slide, document, data set, and so on, write the key content in place so the reader does not need to look it up. Do not let a code, number, abbreviation, summary label, and so on substitute for the content, and write the content alongside it
 - Some markdown renderers turn the tilde into strikethrough, so write ranges with a hyphen (for example, 2021-2025)
 - Report outlooks published by sources with who made them, the publication year, and the outlook period
 
