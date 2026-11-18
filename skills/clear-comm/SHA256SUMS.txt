@@ -1,2 +1,2 @@
 08222bd06309c60b3e69d1c5518d6e0fc1fb972208ca97c7f1094e5421fca268  clear-comm-en.skill
-50736262c4472d4aa472385de1ed04185648bef02fd040bd71b8fc207fe27cbf  clear-comm-ko.skill
+091d828f3ca4a9be9e0ae8a1dda0f2c405dae27eba8b155f8abcaa0399acd089  clear-comm-ko.skill
