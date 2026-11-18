@@ -1,2 +1,2 @@
-d3c05e4e0be0463a8f064fe0cb6ecedf66a56e821ec3ddfd15559912afe074ba  think-review-en.skill
-6cae5a1cc59ef5d149445661efb771ed05b648cd7bcb0254c2216ff52c14abf5  think-review-ko.skill
+0b12a14461be68d0433aff456433128cbadf9092d529be5c08c0e3fe06b7b63c  think-review-en.skill
+c10712f90c1b44b762cbfdb8647918a201f03f85b2e65d6f3cfc54279703eea4  think-review-ko.skill

@@ -23,7 +23,7 @@ These rules apply to code comments, commit messages, log text, text inside chart
 ## Tone
 
 - Write in a concise bullet style based on academic prose. Do not use honorific speech, colloquialisms, informal register, buzzwords, slang, or jargon of insiders. Also avoid a colloquial or informal tone in endings, words, and expressions.
-- Do not replace colloquial wording, informal register, or placeholder nouns with wording such as jargon beyond the reader's level, engineering expressions, or software design expressions (input value, mapping, interface, pipeline, and so on). Write professional or technical content in accurate terms and clear sentences without distorting its meaning. Also avoid oversimplification that underestimates the reader (plain rewording that blurs the meaning, a childish tone, and so on).
+- When revising wording to fit a formal register, do not replace it with jargon beyond the reader's level or engineering expressions unrelated to the subject (input value, mapping, interface, pipeline, and so on). Write professional or technical content in accurate terms and clear sentences without distorting its meaning. Also avoid oversimplification that underestimates the reader (plain rewording that blurs the meaning, a childish tone, and so on).
 - Keep logic and explanations of concepts as easy and simple as possible. Keep vocabulary and style at the formality of official documents for adult practitioners.
 - Explain at a level a practitioner with introductory knowledge of the field can follow. (recommended)
 - Write in a warm tone without losing objectivity. (recommended)

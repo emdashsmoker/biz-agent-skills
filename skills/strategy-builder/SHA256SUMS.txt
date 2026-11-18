@@ -1,2 +1,2 @@
-417550c9bebe9dea1bce13ff468126579eb22422385aee8b3efd00022e6e0773  strategy-builder-en.skill
-d968d3a8ac009385a2d2596f27620582d3ac09246aabb91b2579ca7b9a1b7de3  strategy-builder-ko.skill
+474f4da4ded72a949621cea288d8d0650413e03a45a251ad8b56c63ea9097fa3  strategy-builder-en.skill
+0ed07a4e3060956e79d7b525efb00041b7e1510c29fad5f0f59cf824bb3de27c  strategy-builder-ko.skill

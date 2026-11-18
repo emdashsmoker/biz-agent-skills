@@ -70,7 +70,7 @@ The rules below apply regardless of output language.
 - Use simple words and simple logic. Simplicity applies to logic and explanations. Keep the tone at the level of formal documents for adult professionals.
 - Do not write meta commentary that describes the writing process, the user's request, or the instructions applied, unless the user asks for it.
 - Do not shorten or alter proper nouns such as names of people, documents, policies, organizations, and products. Use the full official name.
-- Use the reader's words instead of listing technical terms, engineering expressions, software design expressions (input value, mapping, interface, pipeline, and so on), and the like. Write professional or technical content in accurate terms and clear sentences without distorting its meaning. Also avoid oversimplification that underestimates the reader (plain rewording that blurs the meaning, a childish tone, and so on). Keep every sentence grammatical.
+- Use the reader's words instead of listing jargon beyond the reader's level or engineering expressions unrelated to the subject (input value, mapping, interface, pipeline, and so on). Write professional or technical content in accurate terms and clear sentences without distorting its meaning. Also avoid oversimplification that underestimates the reader (plain rewording that blurs the meaning, a childish tone, and so on). Keep every sentence grammatical.
 
 ### When the output is Korean
 

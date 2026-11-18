@@ -71,7 +71,7 @@ Question 1 is whether the reader understands it without explanation.
 - If the reference reader understands it without explanation, treat it as an everyday word and use it as is.
 - Judge by how people learn the word: through daily life, or through studying or working in a specific field. The second kind is jargon.
 - Words that look everyday but mean something else within a field count as jargon. Examples are "significant" in statistics, "good faith" in law, and "exposure" in finance.
-- An engineering or software design expression (input value, mapping, interface, pipeline, and so on) used for a subject unrelated to any system counts as jargon.
+- An engineering expression unrelated to the subject (input value, mapping, interface, pipeline, and so on) counts as jargon.
 - Spell out every abbreviation and acronym in full the first time, whether or not the reader knows it.
 - The more familiar a word feels to the writer, the easier it is to skip the test. Suspect familiar words first.
 
