@@ -118,6 +118,7 @@ Work from large units to small units.
 
 - Put one message in one sentence. Who, when, where, what, why, and how each appear once per sentence. Including why, what, and how in each sentence is recommended.
 - End sentences with noun forms (Korean -함, -임, -필요, -전망, -예정; in English a noun phrase such as "Budget expansion needed"). Do not use honorific endings, colloquialisms, informal register, trendy words, slang, or jargon of closed groups. Also avoid a colloquial or informal tone in endings, words, and expressions. Keep the formality of academic writing.
+- Do not add technical terms above the reader's level or engineering and software design wording (input, output, mapping, pipeline, interface, and similar words) to raise formality. Use engineering and software design wording only in sentences that explain an actual system. A sentence corrected for colloquial wording or a placeholder noun must still be grammatical.
 - Make noun-form endings read naturally. Revise "목차명에는 키워드 기반 재구성으로 반영" ("reflected in table-of-contents names as keyword-based restructuring") to "목차명은 키워드 기반으로 재구성" ("table-of-contents names restructured by keyword").
 - Do not write sentences that only chain nouns. Keep the particles and write "연구 인프라 보유 여부" ("whether research infrastructure is in place") instead of "연구 기술 자원 역량 상태" ("research technology resource capability status").
 - Use commas only for lists of three or more items of the same category. Write two items as "A and B". In Korean output, join two parallel nouns with 및 in place of 와 or 과 ("예산과 인력 확보" becomes "예산 및 인력 확보"). Keep 와 or 과 when it marks a relation between two nouns (사이, 간, 격차, 차이, 일치, 불일치, 연계, 연동, 정렬, 비교, 구분, 분리, 협력, as in "현행과 기준의 격차") or the partner of an action (as in "유관기관과 공유"), or when it belongs to an established term, such as "학습과 성장" in the BSC. Do not just delete a joining comma. Split the sentence or rebuild it as a noun phrase.
@@ -167,7 +168,7 @@ Work from large units to small units.
 - Sources and notes cite only external material the reader can look up. Do not cite items such as the target RFP, input files, internal documents, the user's request, or the drafting process.
 - Keep organization names and source titles exactly as the original writes them. Never invent a source. Give the full URL that opens the source directly, never the domain alone.
 - Write numbers with thousands separators and units (1,000,000 or 1 million).
-- When you introduce or quote a document, include its key content in full so the reader does not need to look up the original.
+- When you introduce or quote a document, another section, a table, or data, include its key content in full in place so the reader does not need to look up the original. Do not replace content with a number, code, short label, or summary phrase (for example, spell out what "see Section 3.2", "factor S2", or "the option above" refers to).
 - Say you do not know when you do not know.
 - Use the official full names of people, organizations, sources, policies, programs, and products. Do not shorten or alter them unless the user asks.
 
@@ -179,7 +180,7 @@ Work from large units to small units.
 - Do not re-explain what the reader already knows. Avoid information overload.
 - Avoid assertive and aggressive words (absolutely, block, only, sole, unconditionally) and use polite, softened wording the reader can accept. Too much softening blurs meaning, so point out clear errors plainly.
 - Keep a warm tone without losing objectivity. Avoid showy expressions that only insiders understand.
-- Use simple logic and plain words. Simplicity applies to the flow of logic and the explanation of concepts. Keep the tone at the formality of official documents for adult professionals.
+- Use simple logic and plain words. Simplicity applies to the flow of logic and the explanation of concepts. Keep the tone at the formality of official documents for adult professionals. Write professional and technical content simply and clearly while keeping the exact terms and relations. Do not make it easier by switching to a vague umbrella word that changes the meaning or to a tone that talks down to the reader.
 - Aim for the expertise and finish of a professional consulting report.
 
 ## Priority and scope
@@ -203,6 +204,8 @@ Work from large units to small units.
 - In strict mode, are conjunctions and clause-linking endings absent?
 - In flow mode, do conjunctions appear only where they show a real relation, with no stacked linking endings in one sentence?
 - Do noun-form endings read naturally, with no honorific, colloquial, or informal wording?
+- Do technical terms and engineering wording fit the reader's level, and is professional and technical content exact in meaning?
+- Is no content referred to by a number, code, or short label alone, so that the reader must look up the original?
 - Are `+` items used only when two or more exist?
 - Does every quantitative data point have a basis and a source?
 - Are meta commentary, empty modifiers, count announcements, and negate-then-assert contrasts absent?

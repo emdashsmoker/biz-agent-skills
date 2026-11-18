@@ -307,7 +307,7 @@ End an analysis with a conclusion that has a direction. Text that lays out both 
 - Put the source once, right below the sentence with quantitative data or right after the data block. Sources for qualitative citations may go at the end of the paragraph or section.
 - Write links as full addresses that reach the material directly. Do not leave only the domain.
 - Use the official full names of institutions, titles, policies, programs, products, and people as they appear in the source. Do not abbreviate or alter them. Do not invent sources.
-- When introducing a document, include its main points so the reader does not need to look up the original.
+- When introducing a document, another section, a table, or data, include its main points in place so the reader does not need to look up the original. Do not replace content with a number, code, short label, or summary phrase (for example, spell out what "see Section 3.2", "factor S2", or "the option above" refers to).
 - Cite primary sources with editorial and verification processes first. These include publications of governments and public bodies, reports of public research institutes, peer-reviewed papers, statistics of international organizations, and official materials of financial institutions and professional research firms. Do not cite personal blogs, wiki articles, anonymous communities, aggregator sites without sources, or auto-generated content. For news reports, find and cite the original source the report used.
 - Sources and notes cite only external material the reader can look up. Do not cite items such as the target RFP, input files, internal documents, the user's request, or the drafting process.
 
@@ -416,8 +416,8 @@ Meta commentary is any sentence about the text itself, the writing process, the 
 - Include purpose, limitations, or methodology when the user asks, when the genre requires it (such as the methods section of an academic paper), when a major uncertainty affects the reliability of the result, or when a non-obvious assumption changes the result (such as the exchange rate applied). A diagnosis report that assesses the structure or logic of another text is not meta commentary.
 
 ## 16. Tone
-- Use a formal academic report style. Do not use colloquial speech, informal register, buzzwords, slang, jargon of in-groups, or honorific endings. Also avoid a colloquial or informal tone in endings, words, and expressions.
-- Keep reasoning and concept explanations plain and simple. Keep the formality of vocabulary and style at the level of an official document for adult professionals.
+- Use a formal academic report style. Do not use colloquial speech, informal register, buzzwords, slang, jargon of in-groups, or honorific endings. Also avoid a colloquial or informal tone in endings, words, and expressions. Do not add technical terms above the reader's level or engineering and software design wording (input, output, mapping, pipeline, interface, and similar words) to raise formality. Use engineering and software design wording only in sentences that explain an actual system. A sentence corrected for colloquial wording or a placeholder noun must still be grammatical.
+- Keep reasoning and concept explanations plain and simple. Keep the formality of vocabulary and style at the level of an official document for adult professionals. Write professional and technical content simply and clearly while keeping the exact terms and relations. Do not make it easier by switching to a vague umbrella word that changes the meaning or to a tone that talks down to the reader.
 - Keep the tone warm while staying objective. Write the direction for improvement in place of blaming expressions. Aim for the finish of a professional consulting report.
 - Avoid absolute and aggressive words (absolutely, block, only, unconditionally, final) and use tactful wording the reader can accept. Write "capability severely lacking" as "capability needs strengthening" and "absolutely impossible" as "requires X to achieve Y". State clear errors clearly. Too much tact blurs the meaning, so adjust the degree.
 - When the content is the same, lead with the positive form. "Insufficient data readiness for cloud migration" becomes "Cloud migration possible once structured data is secured".
@@ -433,7 +433,7 @@ Meta commentary is any sentence about the text itself, the writing process, the 
 - Were the mode rules kept (connectives and commas in short-sentence mode; clause roles and frame in flow mode)?
 - Does each conclusion pair with evidence, stay within its scope, and have a direction?
 - Are there at most three key data points, each with source, calculation basis, full link, and official name, calculated with a tool?
-- Were jargon, avoided words, translationese, empty-slot nouns, Chapter 14 patterns, and banned symbols handled?
+- Were jargon, engineering wording, avoided words, translationese, empty-slot nouns, Chapter 14 patterns, and banned symbols handled?
 - Is the text free of meta commentary, unrequested reverse statements, and framework names, with body content in the first and last sentences?
 - Is it plain and clear enough for a third party to accept its reasoning, and does it sound natural read aloud?
 

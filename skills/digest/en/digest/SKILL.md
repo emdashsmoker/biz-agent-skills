@@ -355,6 +355,7 @@ These rules apply to all write-ups and to the overview and summary of an essay t
 - Do not write sentences about the text itself or the writing process, such as "This report...", "As you requested", "In summary", and so on.
 - Avoid stiff, translated-sounding phrasing such as "in the case of", "it is necessary to", and so on.
 - Do not use placeholder nouns such as "thing", "stuff", "part", "aspect", and so on. Name what they refer to with a specific noun (for example "the agenda item for further discussion" for "the part to discuss").
+- Do not add technical terms above the reader's level or engineering and software design wording (for example "input", "output", "mapping", "pipeline", and so on) to raise formality. Write professional and technical content simply and clearly while keeping the exact meaning of the original. Avoid oversimplification that talks down to the reader and grammar errors.
 - Cite the original material by its bibliographic details. Text written from a conversion also cites the original. Do not use labels that fail to identify the original in the body or as sources, such as conversion file names, "the input", "the transcript", internal reasoning, and so on. Do not repeat as a source the original's details already given in an overview. For a report, cite each input as the "Report" section says.
 
 ## Pre-delivery check

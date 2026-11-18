@@ -58,6 +58,7 @@ Each analysis section describes the current state first and recent changes after
 - One sentence carries one message. If who, when, where, what, why, or how appears twice in one sentence, split it
 - Write bullets as compact statements. Drop filler words and keep a clear subject and verb where the statement needs them. Use a formal tone with no colloquial, informal, or chatty phrasing in endings, word choice, or expressions
 - Close statements with specific nouns. Do not use vague placeholders such as "thing", "aspect", or "part" (in Korean 것, 곳, 거, 셈, 부분), and name the referent with a specific noun
+- Do not add technical terms above the reader's level or engineering and software design wording (input, output, mapping, pipeline, and similar words) to raise formality. Write professional and technical content simply and clearly while keeping its exact meaning, and avoid oversimplification that talks down to the reader and grammar errors. Do not replace content from another document, section, or table with a number, ID, short label, or summary phrase. Write the core content in place (use a supporting fact ID only as a trace mark at the end of the sentence)
 - Do not chain several facts in one sentence with "and", "but", "while", or "which". Split them into separate sentences
 - Use commas to list three or more items of the same category. Join two items with "and"
 - Put subtitles in parentheses in the form `(Subtitle) Content`. Do not attach subtitles with colons or hyphens

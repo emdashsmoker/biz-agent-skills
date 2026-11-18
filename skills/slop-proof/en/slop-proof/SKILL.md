@@ -18,6 +18,7 @@ The skill finds and fixes slop at four levels: words, sentences, meta commentary
 - (Editing mode) Find and fix slop in existing text. Give a short summary of the fixed patterns by type, then present the edited text.
 - (Style neutrality) Sentence length, whether to use connectives, sentence-ending style, the overall structure of the piece (SCQA, WWH, SCR and so on), markdown hierarchy, length, and number of items are outside this skill. Follow the user's style guide or the conventions of the genre.
 - (Conflicts) When the user's style guide clashes with this skill, follow the user on formatting and follow this skill on what counts as slop.
+- (Level of the fixed sentence) A sentence fixed for slop keeps its vocabulary at the reader's level and stays grammatical. Do not add technical terms or engineering and software design wording (input, output, mapping, pipeline, and similar words) while fixing colloquial wording or placeholder nouns. Keep the exact meaning of professional and technical content in the original.
 - (No self-exposure) In writing-mode output and in the body of edited text, do not reveal the names of this skill's criteria, categories, or tests. The type summary in editing mode is exempt because the user asked for it.
 
 ## Tests

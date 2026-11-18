@@ -7,6 +7,7 @@ Pick the template that fits the request. Sections may be added or dropped to sui
 ## Writing rules
 
 - (Bullets) Write claims as bullets and label them in the form "(keyword) statement". Keep bullets short and factual. Do not use colloquial or informal register, and avoid a colloquial or informal tone in endings, word choice, and phrasing. Do not use placeholder nouns such as "thing" or "part" (in Korean 것, 곳, 거, 셈, 부분), and name the referent with a concrete noun.
+- (Term level) Do not add technical terms above the reader's level or engineering and software design wording (input, output, mapping, pipeline, and similar words) to raise formality. Write professional and technical content simply and clearly while keeping its exact meaning, and avoid oversimplification that talks down to the reader and grammar errors.
 - (Formulas) Define each measure with a LaTeX formula.
 - (Code) Show the Python code that produced every number. A reader should get the same result from the same code.
 - (Images) Deliver image files separately with the file delivery feature. Leave `![alt](file.png)` syntax out of the body and write a short line such as "image files sent separately".
