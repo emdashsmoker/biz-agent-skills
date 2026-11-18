@@ -102,7 +102,7 @@ Punctuation marks and symbols are part of the message the reader reads. Use a ma
 - When you describe an improvement, state the current state and the state after the change.
 - Call things by their specific names in place of vague nouns such as "thing", "part", "point", or "aspect" (in Korean, 것, 부분, 점, 곳, 셈, 편). Keep fixed expressions (Korean "먹을 것" for "something to eat"), grammatical words (Korean "-할 수 있다" for "can"), and counters (Korean "5곳" for "five places") as they are.
 - When you point to an earlier email, a page of an attachment, a meeting agenda number, and so on, include the needed content so the reader does not have to look it up again. Do not replace content with numbers, abbreviations, or summary labels, and so on.
-- Keep grammar correct (subject-predicate agreement, particles, endings, and so on) regardless of how technical or plain the text is.
+- Keep grammar correct regardless of how technical or plain the text is.
 
 ### Terminology
 

@@ -414,7 +414,7 @@ Apply to code comments, commit messages, logs, chart and diagram labels, slide c
 - Prefer positive phrasing. Write "conversion becomes possible once structured data is secured" in place of "data readiness is insufficient". Avoid categorical words such as "absolutely", "unconditionally", "only", and "block"
 - Do not substitute the name of an authoritative institution for evidence. Say you do not know what you do not know, and do not treat the absence of information as evidence of absence
 - Pitch explanations at a level a newcomer to the field can follow, and keep the tone of an adult professional document. Keep formality through word choice and sentence endings. In sentences for readers, do not pile up jargon beyond the reader's level or engineering and software-design phrasing (input value, output, mapping, pipeline, and so on). Plain writing must not talk down to the reader or blur the content through oversimplification. State specialized and technical content accurately and clearly, without distorting its meaning
-- Keep grammar correct (subject-predicate agreement, particles, endings, and so on) regardless of how technical or plain the text is
+- Keep grammar correct regardless of how technical or plain the text is
 
 ### Formatting
 

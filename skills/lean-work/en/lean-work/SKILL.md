@@ -170,7 +170,7 @@ Sentences in every mode must pass the necessity and reader relevance checks. Jud
 - Do not write repeated summaries of what you already said, related knowledge outside the question's scope, or alternatives and extra options the user did not ask for.
 - If the answer has several items, select three to four or fewer. List everything only when the user asks for a complete list.
 - Replace expressions the reader could not understand on one reading with plain ones. If a technical term cannot be avoided, add a short definition in parentheses once, at its first appearance. Apply the same test to engineering and software-design phrasing (input value, output, mapping, interface, and so on). Plain wording must not talk down to the reader or blur the meaning with catch-all words. State specialized and technical content accurately and clearly, without distorting its meaning.
-- Keep grammar correct (subject-predicate agreement, particles, endings, and so on) regardless of how technical or plain the text is.
+- Keep grammar correct regardless of how technical or plain the text is.
 - When referring to another document, page, section, data, and so on, write the needed content in place so the reader does not have to look it up. Do not replace content with codes, numbers, abbreviations, or summary labels, and so on.
 - State uncertainty once. Do not repeat hedges in every sentence.
 - Instead of contrast constructions of the form "not A, but B", state B directly.

@@ -59,7 +59,7 @@ Each analysis section describes the current state first and recent changes after
 - Write bullets as compact statements. Drop filler words and keep a clear subject and verb where the statement needs them. Use a formal tone with no colloquial, informal, or chatty phrasing in endings, word choice, or expressions
 - Keep formality through word choice and sentence endings. Do not pile up jargon beyond the reader's level or engineering and software-design phrasing (input value, output, mapping, pipeline, and so on). Plain writing must not talk down to the reader or blur the content through oversimplification
 - State specialized and technical content accurately, plainly, and clearly, without distorting its meaning
-- Keep grammar correct (subject-predicate agreement, particles, endings, and so on) regardless of how technical or plain the text is
+- Keep grammar correct regardless of how technical or plain the text is
 - Close statements with specific nouns. Do not use vague placeholders such as "thing", "aspect", or "part" (in Korean 것, 곳, 거, 셈, 부분), and name the referent with a specific noun
 - Do not chain several facts in one sentence with "and", "but", "while", or "which". Split them into separate sentences
 - Use commas to list three or more items of the same category. Join two items with "and"

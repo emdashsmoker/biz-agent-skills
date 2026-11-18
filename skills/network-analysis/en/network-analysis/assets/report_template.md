@@ -8,7 +8,7 @@ Pick the template that fits the request. Sections may be added or dropped to sui
 
 - (Bullets) Write claims as bullets and label them in the form "(keyword) statement". Keep bullets short and factual. Do not use colloquial or informal register, and avoid a colloquial or informal tone in endings, word choice, and phrasing. Do not use placeholder nouns such as "thing" or "part" (in Korean 것, 곳, 거, 셈, 부분), and name the referent with a concrete noun.
 - (Terms) Keep formality through word choice and sentence endings. Do not pile up analysis terms beyond the reader's level or engineering and software-design phrasing (input value, output, pipeline, and so on). Plain writing must not talk down to the reader or blur the meaning of a measure through oversimplification. State the meaning of each measure and method accurately and clearly, without distorting it.
-- (Grammar) Keep grammar correct (subject-predicate agreement, particles, endings, and so on) regardless of how technical or plain the text is.
+- (Grammar) Keep grammar correct regardless of how technical or plain the text is.
 - (Self-contained text) When referring to another section, figure, table, source, and so on, write the needed content in place so the reader does not have to look it up. Give nodes and groups their names together with any number or code.
 - (Formulas) Define each measure with a LaTeX formula.
 - (Code) Show the Python code that produced every number. A reader should get the same result from the same code.
