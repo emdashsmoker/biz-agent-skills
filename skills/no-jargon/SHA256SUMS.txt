@@ -1,2 +1,2 @@
-524cae42c8579e8112fa494ef9f3753693f74a5b1d7dcc17af138ab0f66cd9fc  no-jargon-en.skill
-892429c99b1993a6ffdf8934474e293a53ea75640ebd4a467e4be2fc81aaafab  no-jargon-ko.skill
+ccd72ca8363d1b20fe63831b5ecd2ce297bbd2910bae5a7e6d03d4c425212588  no-jargon-en.skill
+4a52dd7fd15b2fedf9ca5d781eb113ae593bec52c87b7b4cfe6ec431eb7d674d  no-jargon-ko.skill
