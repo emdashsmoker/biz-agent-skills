@@ -168,7 +168,7 @@ Work from large units to small units.
 - Sources and notes cite only external material the reader can look up. Do not cite items such as the target RFP, input files, internal documents, the user's request, or the drafting process.
 - Keep organization names and source titles exactly as the original writes them. Never invent a source. Give the full URL that opens the source directly, never the domain alone.
 - Write numbers with thousands separators and units (1,000,000 or 1 million).
-- When you introduce or quote a source, another page or section, a slide, data, and so on, include its key content in full so the reader does not need to look up the original or that location.
+- When you introduce or quote a source, another page or section, a slide, data, and so on, include its key content in full so the reader does not need to consult the original or that location.
 - Do not replace content with codes, numbers, abbreviations, or summary labels, and so on. Readers do not memorize numbers or abbreviations they saw earlier.
 - Say you do not know when you do not know.
 - Use the official full names of people, organizations, sources, policies, programs, and products. Do not shorten or alter them unless the user asks.
@@ -182,7 +182,7 @@ Work from large units to small units.
 - Avoid assertive and aggressive words (absolutely, block, only, sole, unconditionally) and use polite, softened wording the reader can accept. Too much softening blurs meaning, so point out clear errors plainly.
 - Keep a warm tone without losing objectivity. Avoid showy expressions that only insiders understand.
 - Use simple logic and plain words. Simplicity applies to the flow of logic and the explanation of concepts. Keep the tone at the formality of official documents for adult professionals.
-- Keep formality through word choice and sentence endings. Do not pile up engineering and software-design phrasing (input value, output, mapping, interface, pipeline, and so on) or jargon beyond the reader's level to imitate formality. Plain writing must not talk down to the reader or blur the content through oversimplification (criteria in `references/terms.md`).
+- Keep formality through word choice and sentence endings. Do not overuse engineering and software-design phrasing (input value, output, mapping, interface, pipeline, and so on) or jargon beyond the reader's level as a substitute for formality. Plain writing must not underestimate the reader's level or compromise the accuracy of the content through oversimplification (criteria in `references/terms.md`).
 - State specialized and technical content accurately, plainly, and clearly, without distorting its meaning.
 - Aim for the expertise and finish of a professional consulting report.
 

@@ -24,7 +24,7 @@ These rules apply to code comments, commit messages, log text, text inside chart
 
 - Write in a concise bullet style based on academic prose. Do not use honorific speech, colloquialisms, informal register, buzzwords, slang, or jargon of insiders. Also avoid a colloquial or informal tone in endings, words, and expressions.
 - Keep logic and explanations of concepts as easy and simple as possible. Keep vocabulary and style at the formality of official documents for adult practitioners.
-- Keep formality through word choice and sentence endings. In sentences written for readers, such as explanations of analysis results and chart text, do not pile up jargon beyond the reader's level or engineering and software-design phrasing (input value, output, mapping, pipeline, and so on). Plain writing must not talk down to the reader or blur the content through oversimplification.
+- Keep formality through word choice and sentence endings. In sentences written for readers, such as explanations of analysis results and chart text, do not overuse jargon beyond the reader's level or engineering and software-design phrasing (input value, output, mapping, pipeline, and so on). Plain writing must not underestimate the reader's level or compromise the accuracy of the content through oversimplification.
 - State specialized and technical content accurately, plainly, and clearly, without distorting its meaning.
 - Explain at a level a practitioner with introductory knowledge of the field can follow. (recommended)
 - Write in a warm tone without losing objectivity. (recommended)
@@ -81,7 +81,7 @@ Structure with bullets unless there is a good reason not to. Do not use indented
 - Prefer time series of 3-5 years or more, and add the compound annual growth rate and the share of the total. (recommended)
 - Use three or fewer key quantitative figures in a whole document. Beyond three, every number becomes noise that clouds judgment. (recommended)
 - Write sources in a blockquote in the form "Organization or author (year), document title (link)". Write the full address that reaches the document directly. A bare domain is not enough.
-- When citing a document, information, another page or slide, and so on, include what is needed so readers do not have to find the original or that location themselves. Do not replace content with codes, numbers, abbreviations, or summary labels, and so on.
+- When citing a document, information, another page or slide, and so on, include what is needed so readers do not have to consult the original or that location themselves. Do not replace content with codes, numbers, abbreviations, or summary labels, and so on.
 - Run web searches only when the user allowed it. When searching, cover both Korean-language and English-language sources. (recommended)
 - Cite documents and press releases of central and local governments and public agencies in Korea and abroad, large consulting firms (McKinsey, BCG, Bain, Deloitte, PwC, KPMG, EY) and research institutes, academic papers, research reports, credible financial institutions, and large open-source communities. Do not cite media without credibility, blogs, wikis, or columns. (recommended)
 - Sources cite only external material the reader can look up. Do not cite items such as the target RFP, input files, internal documents, the user's request, or the drafting process as sources.

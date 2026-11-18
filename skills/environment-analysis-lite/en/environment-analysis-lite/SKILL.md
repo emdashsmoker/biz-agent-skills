@@ -445,7 +445,7 @@ An implication is a conclusion that groups several facts and condenses what they
 - Name headings so the content below is clear from the heading alone, and give each heading one topic. Do not combine two topics as in "Policy Trends and Technology Trends"
 - Use either keyword headings or sentence headings throughout the document (Five Forces headings follow their set format). Name sibling headings in parallel (e.g., "Overseas Policy Trends", "Domestic Policy Trends"). Avoid repeating generic labels such as "Overview", "Background", or "Status"
 - Keep three or four items at the same level where possible. With five or more, add a grouping level, and use one classification criterion
-- Keep fact IDs and implication IDs in the output. If the user asks for a clean copy without IDs, make a separate version with the IDs removed. Add IDs only as tracing tags. Write the key facts of the supporting evidence in each implication sentence so the reader can follow it without looking up the appendix. When referring to another section, a source, data, and so on, also write the needed content in place. Do not replace content with codes, numbers, abbreviations, or summary labels, and so on
+- Keep fact IDs and implication IDs in the output. If the user asks for a clean copy without IDs, make a separate version with the IDs removed. Add IDs only as tracing tags. Write the key facts of the supporting evidence in each implication sentence so the reader can follow it without consulting the appendix. When referring to another section, a source, data, and so on, also write the needed content in the sentence itself. Do not replace content with codes, numbers, abbreviations, or summary labels, and so on
 
 ### Sentences and Format
 
@@ -459,7 +459,7 @@ An implication is a conclusion that groups several facts and condenses what they
 - Replace tildes with hyphens. Do not use em dashes, contrast constructions that negate one thing to assert another, unsupported count announcements ("three pillars" and similar), or inflated modifiers
 - Do not write sentences about the output or the writing process ("This report", "Our research found", "The table below summarizes")
 - Keep working terms (module, stage, evidence register, verification level, quality grade, unit of analysis, rating) out of the output. Framework names such as PEST, Five Forces, and VRIO, and the names of the five forces, may appear as section names
-- Write the full name of technical terms and abbreviations at first use, and add a one-line explanation block `> (term) explanation` when needed. Keep formality through word choice and sentence endings. Do not pile up jargon beyond the reader's level or engineering and software-design phrasing (input value, output, mapping, and so on). Plain writing must not talk down to the reader or blur the content through oversimplification. State specialized and technical content accurately and clearly, without distorting its meaning
+- Write the full name of technical terms and abbreviations at first use, and add a one-line explanation block `> (term) explanation` when needed. Keep formality through word choice and sentence endings. Do not overuse jargon beyond the reader's level or engineering and software-design phrasing (input value, output, mapping, and so on). Plain writing must not underestimate the reader's level or compromise the accuracy of the content through oversimplification. State specialized and technical content accurately and clearly, without distorting its meaning
 
 ### Output Skeleton Example
 

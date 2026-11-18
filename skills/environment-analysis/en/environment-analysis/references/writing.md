@@ -57,7 +57,7 @@ Each analysis section describes the current state first and recent changes after
 
 - One sentence carries one message. If who, when, where, what, why, or how appears twice in one sentence, split it
 - Write bullets as compact statements. Drop filler words and keep a clear subject and verb where the statement needs them. Use a formal tone with no colloquial, informal, or chatty phrasing in endings, word choice, or expressions
-- Keep formality through word choice and sentence endings. Do not pile up jargon beyond the reader's level or engineering and software-design phrasing (input value, output, mapping, pipeline, and so on). Plain writing must not talk down to the reader or blur the content through oversimplification
+- Keep formality through word choice and sentence endings. Do not overuse jargon beyond the reader's level or engineering and software-design phrasing (input value, output, mapping, pipeline, and so on). Plain writing must not underestimate the reader's level or compromise the accuracy of the content through oversimplification
 - State specialized and technical content accurately, plainly, and clearly, without distorting its meaning
 - Keep grammar correct regardless of how technical or plain the text is
 - Close statements with specific nouns. Do not use vague placeholders such as "thing", "aspect", or "part" (in Korean 것, 곳, 거, 셈, 부분), and name the referent with a specific noun
@@ -66,7 +66,7 @@ Each analysis section describes the current state first and recent changes after
 - Put subtitles in parentheses in the form `(Subtitle) Content`. Do not attach subtitles with colons or hyphens
 - Name subtitles by their content. Avoid empty subtitles such as "(Explanation)", "(Evidence)", or "(Claim)", and avoid repeating the same subtitle
 - Use the official full names of organizations, policies, programs, and products. Spell out abbreviations at first use
-- When referring to another section, a source, data, and so on, write the needed content in place so the reader does not have to look it up. Do not replace content with codes, numbers, abbreviations, or summary labels, and so on
+- When referring to another section, a source, data, and so on, write the needed content in the sentence itself so the reader does not have to consult it. Do not replace content with codes, numbers, abbreviations, or summary labels, and so on
 - Some markdown renderers turn the tilde into strikethrough, so write ranges with a hyphen (for example, 2021-2025)
 - Report outlooks published by sources with who made them, the publication year, and the outlook period
 
@@ -133,7 +133,7 @@ Write the implications section as one-line bullets under stage subheaders. Keep 
 
 Do not create subheaders for stages that did not run.
 
-Add evidence IDs as tracing tags. Write the key facts of the supporting evidence in the implication sentence itself so the reader can follow it without looking up the fact ledger in the appendix.
+Add evidence IDs as tracing tags. Write the key facts of the supporting evidence in the implication sentence itself so the reader can follow it without consulting the fact ledger in the appendix.
 
 Gathering implications at the end of the report is the default. If the user wants it or the analysis sections are long, each analysis section can end with its own implications, and the same rules on evidence IDs and stage grouping still apply.
 

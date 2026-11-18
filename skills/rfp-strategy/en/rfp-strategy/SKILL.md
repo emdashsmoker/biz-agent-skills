@@ -119,9 +119,9 @@ Pure software development projects are outside the scope of the module skeletons
 - Keep project names, organization names, deliverable names, and task names exactly as written in the RFP. Evaluators read the proposal against the RFP's wording.
 - Split items at the same level by a single criterion. Items should not overlap and together should leave nothing out. Do not name the classification criterion in the output.
 - Write output documents in the user's language, in concise bullet style, one point per sentence. Do not use colloquial or informal register, and avoid a colloquial or informal tone in endings, word choice, and phrasing. Do not use placeholder nouns such as "thing" or "part" (in Korean 것, 곳, 거, 셈, 부분), and name the referent with a concrete noun.
-- Keep formality through word choice and sentence endings. Do not pile up jargon beyond the reader's level or engineering and software-design phrasing (input value, output, mapping, interface, and so on). Plain writing must not talk down to the reader or blur the content through oversimplification. State specialized and technical content accurately and clearly, without distorting its meaning.
+- Keep formality through word choice and sentence endings. Do not overuse jargon beyond the reader's level or engineering and software-design phrasing (input value, output, mapping, interface, and so on). Plain writing must not underestimate the reader's level or compromise the accuracy of the content through oversimplification. State specialized and technical content accurately and clearly, without distorting its meaning.
 - Keep grammar correct regardless of how technical or plain the text is.
-- When referring to an RFP clause, another section, a source, data, and so on, write the needed content in place so the reader does not have to look it up. Do not replace content with codes, numbers, abbreviations, or summary labels, and so on.
+- When referring to an RFP clause, another section, a source, data, and so on, write the needed content in the sentence itself so the reader does not have to consult it. Do not replace content with codes, numbers, abbreviations, or summary labels, and so on.
 - Use bold only for conditions that could lead to disqualification, point deductions, or exclusion.
 - State unknowns as unknown.
 
