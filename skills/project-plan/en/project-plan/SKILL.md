@@ -156,6 +156,9 @@ Only when the user asks, set `options.raci` to true and write each person's role
 | WBS Detail, Staffing | Automatic. Full row table and monthly M/M per person |
 
 - Keep a terse bullet style with one point per line. Do not use colloquial or informal register, and avoid a colloquial or informal tone in endings, word choice, and phrasing. Do not use placeholder nouns such as "thing" or "part" (in Korean 것, 곳, 거, 셈, 부분), and name the referent with a concrete noun
+- In the overview body, keep formality through word choice and sentence endings. Do not pile up jargon beyond the reader's level or engineering and software-design phrasing (input value, output, mapping, interface, and so on). Plain writing must not talk down to the reader or blur the content through oversimplification. State specialized and technical content accurately and clearly, without distorting its meaning
+- Keep grammar correct (subject-predicate agreement, particles, endings, and so on) regardless of how technical or plain the text is
+- When the overview refers to a WBS task, another section, a source, and so on, write the task name and the needed content in place so the reader does not have to look it up. Do not replace content with codes, numbers, abbreviations, or summary labels, and so on
 - Dates and numbers in the overview must match plan.json, so take any number added to a sentence from plan.json
 
 ## Export commands

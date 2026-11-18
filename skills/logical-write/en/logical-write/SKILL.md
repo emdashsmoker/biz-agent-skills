@@ -120,6 +120,7 @@ Work from large units to small units.
 - End sentences with noun forms (Korean -함, -임, -필요, -전망, -예정; in English a noun phrase such as "Budget expansion needed"). Do not use honorific endings, colloquialisms, informal register, trendy words, slang, or jargon of closed groups. Also avoid a colloquial or informal tone in endings, words, and expressions. Keep the formality of academic writing.
 - Make noun-form endings read naturally. Revise "목차명에는 키워드 기반 재구성으로 반영" ("reflected in table-of-contents names as keyword-based restructuring") to "목차명은 키워드 기반으로 재구성" ("table-of-contents names restructured by keyword").
 - Do not write sentences that only chain nouns. Keep the particles and write "연구 인프라 보유 여부" ("whether research infrastructure is in place") instead of "연구 기술 자원 역량 상태" ("research technology resource capability status").
+- Keep grammar correct (subject-predicate agreement, particles, endings, and so on) regardless of sentence mode, technicality, or plainness.
 - Use commas only for lists of three or more items of the same category. Write two items as "A and B". In Korean output, join two parallel nouns with 및 in place of 와 or 과 ("예산과 인력 확보" becomes "예산 및 인력 확보"). Keep 와 or 과 when it marks a relation between two nouns (사이, 간, 격차, 차이, 일치, 불일치, 연계, 연동, 정렬, 비교, 구분, 분리, 협력, as in "현행과 기준의 격차") or the partner of an action (as in "유관기관과 공유"), or when it belongs to an established term, such as "학습과 성장" in the BSC. Do not just delete a joining comma. Split the sentence or rebuild it as a noun phrase.
 - Do not use sentence-final periods, semicolons, separator symbols (/, |, ·, →, vs), joining hyphens ("short-mid term"), excessive abbreviations, or unnecessary loanwords and Sino-Korean words.
 - Do not hide the referent behind empty nouns such as the bound noun 것 ("thing") or 곳 ("place"), 부분 ("part"), 셈 ("amount to").
@@ -167,7 +168,8 @@ Work from large units to small units.
 - Sources and notes cite only external material the reader can look up. Do not cite items such as the target RFP, input files, internal documents, the user's request, or the drafting process.
 - Keep organization names and source titles exactly as the original writes them. Never invent a source. Give the full URL that opens the source directly, never the domain alone.
 - Write numbers with thousands separators and units (1,000,000 or 1 million).
-- When you introduce or quote a document, include its key content in full so the reader does not need to look up the original.
+- When you introduce or quote a source, another page or section, a slide, data, and so on, include its key content in full so the reader does not need to look up the original or that location.
+- Do not replace content with codes, numbers, abbreviations, or summary labels, and so on. Readers do not memorize numbers or abbreviations they saw earlier.
 - Say you do not know when you do not know.
 - Use the official full names of people, organizations, sources, policies, programs, and products. Do not shorten or alter them unless the user asks.
 
@@ -180,6 +182,8 @@ Work from large units to small units.
 - Avoid assertive and aggressive words (absolutely, block, only, sole, unconditionally) and use polite, softened wording the reader can accept. Too much softening blurs meaning, so point out clear errors plainly.
 - Keep a warm tone without losing objectivity. Avoid showy expressions that only insiders understand.
 - Use simple logic and plain words. Simplicity applies to the flow of logic and the explanation of concepts. Keep the tone at the formality of official documents for adult professionals.
+- Keep formality through word choice and sentence endings. Do not pile up engineering and software-design phrasing (input value, output, mapping, interface, pipeline, and so on) or jargon beyond the reader's level to imitate formality. Plain writing must not talk down to the reader or blur the content through oversimplification (criteria in `references/terms.md`).
+- State specialized and technical content accurately, plainly, and clearly, without distorting its meaning.
 - Aim for the expertise and finish of a professional consulting report.
 
 ## Priority and scope
@@ -203,6 +207,7 @@ Work from large units to small units.
 - In strict mode, are conjunctions and clause-linking endings absent?
 - In flow mode, do conjunctions appear only where they show a real relation, with no stacked linking endings in one sentence?
 - Do noun-form endings read naturally, with no honorific, colloquial, or informal wording?
+- Is the text free of grammar errors, design phrasing, and oversimplification, and of passages that make the reader look up another location or the original?
 - Are `+` items used only when two or more exist?
 - Does every quantitative data point have a basis and a source?
 - Are meta commentary, empty modifiers, count announcements, and negate-then-assert contrasts absent?
