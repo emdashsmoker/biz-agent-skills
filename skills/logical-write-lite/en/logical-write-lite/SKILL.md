@@ -307,7 +307,7 @@ End an analysis with a conclusion that has a direction. Text that lays out both 
 - Put the source once, right below the sentence with quantitative data or right after the data block. Sources for qualitative citations may go at the end of the paragraph or section.
 - Write links as full addresses that reach the material directly. Do not leave only the domain.
 - Use the official full names of institutions, titles, policies, programs, products, and people as they appear in the source. Do not abbreviate or alter them. Do not invent sources.
-- When introducing a document, include its main points so the reader does not need to look up the original.
+- When introducing a document, data, or another section or page, include its main points so the reader does not need to look up the original. Do not let a number, code, or summary label stand in for the content.
 - Cite primary sources with editorial and verification processes first. These include publications of governments and public bodies, reports of public research institutes, peer-reviewed papers, statistics of international organizations, and official materials of financial institutions and professional research firms. Do not cite personal blogs, wiki articles, anonymous communities, aggregator sites without sources, or auto-generated content. For news reports, find and cite the original source the report used.
 - Sources and notes cite only external material the reader can look up. Do not cite items such as the target RFP, input files, internal documents, the user's request, or the drafting process.
 
@@ -417,7 +417,7 @@ Meta commentary is any sentence about the text itself, the writing process, the 
 
 ## 16. Tone
 - Use a formal academic report style. Do not use colloquial speech, informal register, buzzwords, slang, jargon of in-groups, or honorific endings. Also avoid a colloquial or informal tone in endings, words, and expressions.
-- Keep reasoning and concept explanations plain and simple. Keep the formality of vocabulary and style at the level of an official document for adult professionals.
+- Keep reasoning and concept explanations plain and simple. Keep the formality of vocabulary and style at the level of an official document for adult professionals. Do not imitate formality by piling up jargon, engineering phrasing, or software-design terms (input, output, mapping, pipeline, and the like).
 - Keep the tone warm while staying objective. Write the direction for improvement in place of blaming expressions. Aim for the finish of a professional consulting report.
 - Avoid absolute and aggressive words (absolutely, block, only, unconditionally, final) and use tactful wording the reader can accept. Write "capability severely lacking" as "capability needs strengthening" and "absolutely impossible" as "requires X to achieve Y". State clear errors clearly. Too much tact blurs the meaning, so adjust the degree.
 - When the content is the same, lead with the positive form. "Insufficient data readiness for cloud migration" becomes "Cloud migration possible once structured data is secured".

@@ -57,12 +57,13 @@ Each analysis section describes the current state first and recent changes after
 
 - One sentence carries one message. If who, when, where, what, why, or how appears twice in one sentence, split it
 - Write bullets as compact statements. Drop filler words and keep a clear subject and verb where the statement needs them. Use a formal tone with no colloquial, informal, or chatty phrasing in endings, word choice, or expressions
+- Build the report's formality from correct grammar. Do not imitate formality by piling up jargon or engineering phrasing. Keep the meaning of the source material when you simplify specialist content on policy, market, or technology trends
 - Close statements with specific nouns. Do not use vague placeholders such as "thing", "aspect", or "part" (in Korean 것, 곳, 거, 셈, 부분), and name the referent with a specific noun
 - Do not chain several facts in one sentence with "and", "but", "while", or "which". Split them into separate sentences
 - Use commas to list three or more items of the same category. Join two items with "and"
 - Put subtitles in parentheses in the form `(Subtitle) Content`. Do not attach subtitles with colons or hyphens
 - Name subtitles by their content. Avoid empty subtitles such as "(Explanation)", "(Evidence)", or "(Claim)", and avoid repeating the same subtitle
-- Use the official full names of organizations, policies, programs, and products. Spell out abbreviations at first use
+- Use the official full names of organizations, policies, programs, and products. Spell out abbreviations at first use. When you mention an external report, the analysis in another section, or a table, state its content in place. Do not let a fact ID, table number, or short name stand in for the content
 - Some markdown renderers turn the tilde into strikethrough, so write ranges with a hyphen (for example, 2021-2025)
 - Report outlooks published by sources with who made them, the publication year, and the outlook period
 

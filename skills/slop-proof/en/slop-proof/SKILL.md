@@ -15,7 +15,7 @@ The skill finds and fixes slop at four levels: words, sentences, meta commentary
 ## How it works
 
 - (Writing mode) Apply the criteria while drafting new text. Do not mention in the output that the skill was applied.
-- (Editing mode) Find and fix slop in existing text. Give a short summary of the fixed patterns by type, then present the edited text.
+- (Editing mode) Find and fix slop in existing text. Give a short summary of the fixed patterns by type, then present the edited text. Do not fill a fixed spot with new jargon, engineering phrasing, or stiff formal vocabulary. Keep correct grammar and the original specialist content in the fixed sentence.
 - (Style neutrality) Sentence length, whether to use connectives, sentence-ending style, the overall structure of the piece (SCQA, WWH, SCR and so on), markdown hierarchy, length, and number of items are outside this skill. Follow the user's style guide or the conventions of the genre.
 - (Conflicts) When the user's style guide clashes with this skill, follow the user on formatting and follow this skill on what counts as slop.
 - (No self-exposure) In writing-mode output and in the body of edited text, do not reveal the names of this skill's criteria, categories, or tests. The type summary in editing mode is exempt because the user asked for it.
@@ -57,7 +57,7 @@ Words are sorted by how readers receive them, how much they mark the text as AI 
 | Reason | Words | Fix |
 |---|---|---|
 | LLMs overuse them, so they mark text as AI output | context (as glue or abstraction), discourse, layer, tier, level, hierarchy (abstract uses such as "at multiple levels"), disconnect ("the disconnect between perception and reality"), graded, in full, parallel, restricted to, gate, MVP (including lean-method explanations), integrated package, tide ("the great tide"), break away from ("break away from old ways"), tailored, customized, multilayered | Name the specific thing or action |
-| Spread beyond their home field | bottleneck (outside real process analysis), value (outside engineering), full-stack (where "full lifecycle" fits) | Keep to the original use or replace |
+| Spread beyond their home field | bottleneck (outside real process analysis), value (outside engineering), full-stack (where "full lifecycle" fits), and software-design terms such as input, output, pipeline, and interface (outside the description of an actual system) | Keep to the original use or replace |
 | Emphasis that adds nothing when deleted | very, quite, considerably, extremely, virtually, literally, genuine ("genuine innovation"), fundamental, essential (when adding abstract authority), comprehensive, overall (when specifics disappear) | Delete or state the degree |
 | Inflation without evidence | groundbreaking, innovative, pioneering, overwhelming, radical, unprecedented, unheard-of, explosive, astonishing, outstanding, excellent, historic, enormous, all-out, surge, leap, first-mover, paradigm, game-changer, "change the game", first-ever (when overused), strongest, weakest, orphan, maximize, encompass, span, reign, sweep, dominate, lead (when overused), trigger | Replace with evidence, figures, or a comparison |
 | Absolutes that shut out counterarguments | absolutely, only, sole, unconditionally, immediately, top priority (when overused), "directly linked", causal (as an assertion), crux, prerequisite, reference standard, strictly observe, "make or break" | State the conditions and scope |

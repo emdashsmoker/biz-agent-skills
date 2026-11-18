@@ -342,6 +342,7 @@ Translate into the language the user names. Without one, translate into the user
 These rules apply to all write-ups and to the overview and summary of an essay translation. The rules were written for Korean. In other languages, apply the same principles as terse bullet phrasing in that language.
 
 - Write in bullet style and end lines with noun phrases (for example "Budget cut agreed", "Further review needed", "Recovery expected in H2", and so on). Keep a formal written register, and do not use a polite or honorific register. Do not use a colloquial or informal tone in endings, word choice, or phrasing, including colloquial words and slang (for example "kinda", "pretty much", "a bunch of", and so on).
+- Build the formality of a write-up from correct grammar. Do not imitate formality by adding jargon, engineering phrasing, or software-design terms that the source does not use. Keep the original meaning of specialist and technical content when you simplify it.
 - Put one message in each sentence. If an actor, an object, or a method appears twice in one sentence, split the sentence.
 - Do not join sentences with connectors such as "and", "but", "while", and so on. Use commas only to list three or more items of the same kind.
 - Put a label in parentheses before a sentence when needed (for example "(Sales division) Q2 marketing budget cut agreed"). Do not attach labels with a colon or hyphen. Name labels after their content, and do not use empty names such as "Explanation", "Evidence", and so on.
@@ -354,7 +355,7 @@ These rules apply to all write-ups and to the overview and summary of an essay t
 - Do not use intensifying adverbs such as "very", "highly", and so on, or inflated judgments such as "groundbreaking", "innovative", and so on.
 - Do not write sentences about the text itself or the writing process, such as "This report...", "As you requested", "In summary", and so on.
 - Avoid stiff, translated-sounding phrasing such as "in the case of", "it is necessary to", and so on.
-- Do not use placeholder nouns such as "thing", "stuff", "part", "aspect", and so on. Name what they refer to with a specific noun (for example "the agenda item for further discussion" for "the part to discuss").
+- Do not use placeholder nouns such as "thing", "stuff", "part", "aspect", and so on. Name what they refer to with a specific noun (for example "the agenda item for further discussion" for "the part to discuss"). Likewise, spell out agenda items and materials that the source points to by number, page, or short name, using the content the source confirms.
 - Cite the original material by its bibliographic details. Text written from a conversion also cites the original. Do not use labels that fail to identify the original in the body or as sources, such as conversion file names, "the input", "the transcript", internal reasoning, and so on. Do not repeat as a source the original's details already given in an overview. For a report, cite each input as the "Report" section says.
 
 ## Pre-delivery check

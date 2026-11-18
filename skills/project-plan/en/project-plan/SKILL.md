@@ -155,7 +155,8 @@ Only when the user asks, set `options.raci` to true and write each person's role
 | Notes | Risks, possible scope changes, external changes, conflicts between documents, the `[To confirm]` list |
 | WBS Detail, Staffing | Automatic. Full row table and monthly M/M per person |
 
-- Keep a terse bullet style with one point per line. Do not use colloquial or informal register, and avoid a colloquial or informal tone in endings, word choice, and phrasing. Do not use placeholder nouns such as "thing" or "part" (in Korean 것, 곳, 거, 셈, 부분), and name the referent with a concrete noun
+- Keep a terse bullet style with one point per line. Do not use colloquial or informal register, and avoid a colloquial or informal tone in endings, word choice, and phrasing. Do not use placeholder nouns such as "thing" or "part" (in Korean 것, 곳, 거, 셈, 부분), and name the referent with a concrete noun Build the overview's formality from correct grammar. Use software-design terms from the terms of reference or the proposal (input, output, interface, and the like) only where the text describes an actual system.
+- When the overview mentions a task in the schedule, write the task name in place of the row number.
 - Dates and numbers in the overview must match plan.json, so take any number added to a sentence from plan.json
 
 ## Export commands

@@ -100,11 +100,12 @@ Punctuation marks and symbols are part of the message the reader reads. Use a ma
 - If there are several problems, state each one specifically, one at a time.
 - When you ask for a review, state the items to review and the result you want.
 - When you describe an improvement, state the current state and the state after the change.
+- When you mention an attachment, an earlier message, or meeting notes, put the content the reader needs in the body so they can follow without opening it.
 - Call things by their specific names in place of vague nouns such as "thing", "part", "point", or "aspect" (in Korean, 것, 부분, 점, 곳, 셈, 편). Keep fixed expressions (Korean "먹을 것" for "something to eat"), grammatical words (Korean "-할 수 있다" for "can"), and counters (Korean "5곳" for "five places") as they are.
 
 ### Terminology
 
-Use terms the reader used first as they are. Use terms common in the reader's line of work or in the channel as they are. Explain any other abbreviation, industry term, or internal term once, where it first appears.
+Use terms the reader used first as they are. Use terms common in the reader's line of work or in the channel as they are. Explain any other abbreviation, industry term, or internal term once, where it first appears. Keep technical content exact when you explain it in plain words. Do not explain in a way that talks down to the reader.
 
 ## Attitude
 

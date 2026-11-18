@@ -40,6 +40,7 @@ When sending the same facts to several readers, follow these rules.
 - Write headings so that the heading alone tells what follows.
 - Keep one topic under each heading.
 - Order content the way the reader looks for it. Deciders read from conclusion to evidence. Builders read from problem to method.
+- Where the text mentions another page, slide, or document, include the content the reader needs in place. A number, code, or summary label standing in for the content sends the reader to another location.
 
 ## 3. Is it understandable?
 
@@ -71,6 +72,7 @@ Question 1 is whether the reader understands it without explanation.
 - If the reference reader understands it without explanation, treat it as an everyday word and use it as is.
 - Judge by how people learn the word: through daily life, or through studying or working in a specific field. The second kind is jargon.
 - Words that look everyday but mean something else within a field count as jargon. Examples are "significant" in statistics, "good faith" in law, and "exposure" in finance.
+- Software-design terms that describe work or human judgment as system processing (input, output, mapping, pipeline, and the like) count as jargon.
 - Spell out every abbreviation and acronym in full the first time, whether or not the reader knows it.
 - The more familiar a word feels to the writer, the easier it is to skip the test. Suspect familiar words first.
 

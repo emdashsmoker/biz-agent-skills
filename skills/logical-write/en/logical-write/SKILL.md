@@ -167,7 +167,7 @@ Work from large units to small units.
 - Sources and notes cite only external material the reader can look up. Do not cite items such as the target RFP, input files, internal documents, the user's request, or the drafting process.
 - Keep organization names and source titles exactly as the original writes them. Never invent a source. Give the full URL that opens the source directly, never the domain alone.
 - Write numbers with thousands separators and units (1,000,000 or 1 million).
-- When you introduce or quote a document, include its key content in full so the reader does not need to look up the original.
+- When you introduce or quote a document, data, or another section or page, include its key content in full so the reader does not need to look up the original. Do not let a number, code, or summary label stand in for the content.
 - Say you do not know when you do not know.
 - Use the official full names of people, organizations, sources, policies, programs, and products. Do not shorten or alter them unless the user asks.
 
@@ -179,7 +179,7 @@ Work from large units to small units.
 - Do not re-explain what the reader already knows. Avoid information overload.
 - Avoid assertive and aggressive words (absolutely, block, only, sole, unconditionally) and use polite, softened wording the reader can accept. Too much softening blurs meaning, so point out clear errors plainly.
 - Keep a warm tone without losing objectivity. Avoid showy expressions that only insiders understand.
-- Use simple logic and plain words. Simplicity applies to the flow of logic and the explanation of concepts. Keep the tone at the formality of official documents for adult professionals.
+- Use simple logic and plain words. Simplicity applies to the flow of logic and the explanation of concepts. Keep the tone at the formality of official documents for adult professionals. Do not imitate formality by piling up jargon, engineering phrasing, or software-design terms. Keep the meaning of specialist and technical content exact when you simplify it.
 - Aim for the expertise and finish of a professional consulting report.
 
 ## Priority and scope

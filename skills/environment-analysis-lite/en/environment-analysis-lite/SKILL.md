@@ -445,7 +445,7 @@ An implication is a conclusion that groups several facts and condenses what they
 - Name headings so the content below is clear from the heading alone, and give each heading one topic. Do not combine two topics as in "Policy Trends and Technology Trends"
 - Use either keyword headings or sentence headings throughout the document (Five Forces headings follow their set format). Name sibling headings in parallel (e.g., "Overseas Policy Trends", "Domestic Policy Trends"). Avoid repeating generic labels such as "Overview", "Background", or "Status"
 - Keep three or four items at the same level where possible. With five or more, add a grouping level, and use one classification criterion
-- Keep fact IDs and implication IDs in the output. If the user asks for a clean copy without IDs, make a separate version with the IDs removed
+- Keep fact IDs and implication IDs in the output. If the user asks for a clean copy without IDs, make a separate version with the IDs removed. When the body mentions another fact or implication, write its ID together with its content
 
 ### Sentences and Format
 
@@ -459,7 +459,7 @@ An implication is a conclusion that groups several facts and condenses what they
 - Replace tildes with hyphens. Do not use em dashes, contrast constructions that negate one thing to assert another, unsupported count announcements ("three pillars" and similar), or inflated modifiers
 - Do not write sentences about the output or the writing process ("This report", "Our research found", "The table below summarizes")
 - Keep working terms (module, stage, evidence register, verification level, quality grade, unit of analysis, rating) out of the output. Framework names such as PEST, Five Forces, and VRIO, and the names of the five forces, may appear as section names
-- Write the full name of technical terms and abbreviations at first use, and add a one-line explanation block `> (term) explanation` when needed
+- Write the full name of technical terms and abbreviations at first use, and add a one-line explanation block `> (term) explanation` when needed. Build the report's formality from correct grammar. Do not imitate formality by piling up jargon or engineering phrasing. Keep the meaning of policy and technology content exact when you simplify it
 
 ### Output Skeleton Example
 

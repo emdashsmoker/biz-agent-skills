@@ -6,11 +6,13 @@ Pick the template that fits the request. Sections may be added or dropped to sui
 
 ## Writing rules
 
-- (Bullets) Write claims as bullets and label them in the form "(keyword) statement". Keep bullets short and factual. Do not use colloquial or informal register, and avoid a colloquial or informal tone in endings, word choice, and phrasing. Do not use placeholder nouns such as "thing" or "part" (in Korean 것, 곳, 거, 셈, 부분), and name the referent with a concrete noun.
+- (Bullets) Write claims as bullets and label them in the form "(keyword) statement". Keep bullets short and factual. Do not use colloquial or informal register, and avoid a colloquial or informal tone in endings, word choice, and phrasing. Do not use placeholder nouns such as "thing" or "part" (in Korean 것, 곳, 거, 셈, 부분), and name the referent with a concrete noun. Build the formality of sentences from correct grammar. Do not imitate formality by piling up analysis terms.
 - (Formulas) Define each measure with a LaTeX formula.
+- (Terms) Use the exact name of each measure. When the interpretation explains a measure in plain words, keep what the measure captures unchanged.
 - (Code) Show the Python code that produced every number. A reader should get the same result from the same code.
 - (Images) Deliver image files separately with the file delivery feature. Leave `![alt](file.png)` syntax out of the body and write a short line such as "image files sent separately".
 - (File check) Confirm that a file was saved before mentioning it. Do not mention files that failed to save.
+- (Self-contained) When you mention a figure, a table, or a result from another section, state the relevant numbers and their meaning in place. Do not point to a result by figure number or section number alone.
 - (Brevity) Do not repeat the same content across sections.
 
 ## Data analysis request (template A)
