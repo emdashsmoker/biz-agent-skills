@@ -6,7 +6,7 @@ The interview sets the values that go into the always-on instructions and the mo
 
 - Ask at most 4 questions at a time. When there are more, users tend to pick answers carelessly.
 - Show the default for each question and put it as the first option.
-- Always ask group A (environment). In the first question of group B, offer "Use defaults for all remaining questions." If the user picks it, fill groups B through F with defaults.
+- Always ask group A (environment). In the first question of group B, offer "Use defaults for all remaining questions." If the user picks it, fill groups B through G with defaults.
 - If there are existing assets, put the values read from them in place of the defaults and label them "current setting."
 - Skip questions that earlier answers made unnecessary. For example, if code-standard will not be installed, skip group E.
 - If the user writes an answer outside the options, use that answer as the setting value. If it conflicts with another setting, explain the conflict and ask again.
@@ -90,3 +90,23 @@ These rules apply to every conversation regardless of module, so they go into th
 | F8 | Short preferences for every output regardless of module (custom) | None | Holds preferences the user wants kept in any task |
 
 For group F, show the table and let the user pick only the rules to turn off. When the user writes F8 or a new rule, first check whether a module to be installed already has the same rule. If it does, do not add it again to the always-on instructions, and tell the user it is in the module. Then check whether every conversation needs the rule. If only specific tasks need it, suggest putting it in the body of the matching module.
+
+## G. Off-switch skill
+
+An off-switch skill keeps chosen modules from loading in the conversation where the user calls it. The always-on instructions load modules for every request, so a user who wants a particular conversation without modules uses the off-switch skill.
+
+| No. | Question | Options | Default | What the answer changes |
+|---|---|---|---|---|
+| G1 | Should an off-switch skill that keeps modules from loading be created? | Do not create, standard modules off, all modules off, custom | Do not create | Whether the off-switch skill is created, (Target modules) in the off-switch skill, the off-switch sentence in the always-on instructions |
+| G2 | What should the off-switch skill be named? | Suggested name, custom | no-standard for standard modules off, no-modules for all modules off, otherwise no- followed by the target module name | The name of the off-switch skill, the off-switch sentence in the always-on instructions |
+
+When showing the options, explain the use of the off-switch skill with a one-line example. For example, write "In a conversation where /no-standard is called, the model answers without the standard modules."
+
+- (Target range) Choose the targets from the modules that the loading rule of the always-on instructions calls in this setup. These are the bundled modules to be installed and the existing skills the user keeps using.
+- (Standard modules off) The targets are the standard modules that the loading rule loads before a response starts. In the default setup, the targets are write-standard and code-standard. Do not show this option in a setup without standard modules.
+- (All modules off) The targets are all modules that the loading rule of the always-on instructions calls.
+- (Custom) The user sets the target modules. Several off-switch skills with different targets can be created. In that case, ask G2 for each off-switch skill.
+
+If the user picks "Do not create" in G1, skip G2. If the name in G2 matches a module or an existing skill with a different use, suggest another name. If no target environment supports skills, skip group G.
+
+If the existing assets include a skill that turns module loading off, put its targets and name in place of the defaults of G1 and G2. If a target module gets a different name in the new setup, apply the new name to the targets.

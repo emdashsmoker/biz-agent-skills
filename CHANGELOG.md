@@ -27,6 +27,15 @@ Changelog rules
 - (Push) Commit on top of the latest main and push directly to main.
 -->
 
+## 2026-11-20
+
+### pref-architect
+- Added an optional off-switch skill that keeps chosen modules from loading in the conversation where the user calls it, with interview group G and a bundled source file (#80)
+- Added a section that defines the generation mark (generator and generator-version) as a part of the rebuilding function (#80)
+
+* 사용자가 호출한 대화에서 지정한 모듈의 로드를 끄는 선택형 해제 스킬 추가 (인터뷰 G묶음 및 동봉 원본 파일 포함) (#80)
+* 생성 표시(generator 및 generator-version)를 재구성 기능의 구성 요소로 정의하는 절 추가 (#80)
+
 ## 2026-11-18
 
 ### biz-code-style
