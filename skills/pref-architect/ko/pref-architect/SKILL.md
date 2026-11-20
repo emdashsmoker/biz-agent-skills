@@ -1,8 +1,6 @@
 ---
 name: pref-architect
 description: "사용자 인터뷰를 거쳐 짧은 상시 지침(claude.ai 유저 프리퍼런스, CLAUDE.md, AGENTS.md)과 필요할 때만 불러오는 모듈 스킬 세트를 설계하고 생성하는 스킬. 스킬이 하나도 없는 입문 사용자에게는 동봉 모듈(글쓰기 표준, 코딩 표준, 단계 작업, 토큰 절약)을 맞춤 설정하여 만들어 주고 기존 프리퍼런스와 스킬을 가진 사용자에게는 규칙별 이관 판정으로 통합안을 만든다. 사용자가 \"/pref-architect\", \"프리퍼런스 설정\", \"유저 프리퍼런스 만들어줘\", \"지침 정리해줘\", \"CLAUDE.md 작성\", \"AGENTS.md 작성\", \"처음 쓰는데 세팅해줘\", \"지침을 스킬로 모듈화\", \"프리퍼런스가 너무 길어\" 등을 요청하거나 상시 지침과 스킬의 역할 분담을 묻는 경우 이 스킬을 사용한다. 이 스킬로 만든 구성을 다시 고치거나 재구성할 때도 사용한다. 부속 파일은 references/interview.md(인터뷰 문항과 기본값), references/router.md(상시 지침 작성법과 환경별 배치), references/integration.md(기존 자산 통합과 재구성 절차), assets/modules/write-standard.md, assets/modules/code-standard.md, assets/modules/staged-work.md, assets/modules/token-lean.md(동봉 모듈 원본), assets/modules/module-off.md(해제 스킬 원본)이며 해당 단계에서 읽는다."
-metadata:
-  version: "1.1"
 license: GPL-3.0-or-later with an output exception. Terms in LICENSE and NOTICE.md
 ---
 
@@ -61,7 +59,7 @@ references/interview.md의 B묶음부터 F묶음까지 인터뷰한다. 입문 �
 - 모듈은 assets/modules의 원본을 복사한 뒤 원본의 설정 절에 있는 값만 인터뷰 답으로 바꾼다. 본문 규칙은 사용자가 따로 요청한 경우에만 고친다.
 - 기존 자산이 있으면 references/integration.md의 이관표대로 규칙을 옮긴다.
 
-모듈 원본 frontmatter의 metadata(generator, generator-version)는 지우지 않는다. 나중에 이 스킬로 다시 구성할 때 이 스킬이 만든 모듈을 알아보는 표시로 쓴다.
+모듈 원본 frontmatter의 metadata(generator)는 지우지 않는다. 나중에 이 스킬로 다시 구성할 때 이 스킬이 만든 모듈을 알아보는 표시로 쓴다.
 
 모듈 원본 파일은 이름이 SKILL.md가 아니다. 생성할 때 `모듈이름/SKILL.md` 경로로 저장한다. 원본을 SKILL.md로 두지 않는 이유는 일부 도구가 스킬 폴더 아래의 SKILL.md를 모두 찾아 별도 스킬로 등록하기 때문이다.
 
@@ -76,7 +74,6 @@ references/interview.md의 B묶음부터 F묶음까지 인터뷰한다. 입문 �
 - 모듈마다 description이 1,024자 이하이고 언제 불러오는지를 적고 있다.
 - 모듈의 설정 절에 인터뷰에서 정하지 않은 빈 값이 남아 있지 않다.
 - 모듈 폴더 안에 SKILL.md가 하나뿐이다.
-- 모듈마다 metadata의 generator-version이 이 스킬 frontmatter의 metadata version과 같다.
 - 해제 스킬의 (해제 대상)에 적힌 이름이 모두 산출물에 들어 있는 모듈의 이름과 같다.
 - 기존 자산이 있으면 원문 규칙 수와 이관표의 행 수가 같다. 코드를 실행할 수 있으면 개수를 코드로 센다.
 

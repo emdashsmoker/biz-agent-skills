@@ -3,7 +3,6 @@ name: module-off
 description: "Keeps the modules listed in the settings section, out of those named in the always-on instructions, from loading in this conversation. Load it only when the user asks for \"/module-off\", \"work without modules\", \"answer without the standard modules\", and similar."
 metadata:
   generator: pref-architect
-  generator-version: "1.1"
 ---
 
 # module-off

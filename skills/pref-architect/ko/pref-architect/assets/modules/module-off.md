@@ -3,7 +3,6 @@ name: module-off
 description: "상시 지침이 지정한 모듈 가운데 설정 절의 해제 대상을 이 대화에서 불러오지 않게 하는 스킬. 사용자가 \"/module-off\", \"모듈 없이 진행\", \"표준 모듈 없이 답해 줘\" 등을 요청한 경우에만 불러온다."
 metadata:
   generator: pref-architect
-  generator-version: "1.1"
 ---
 
 # module-off

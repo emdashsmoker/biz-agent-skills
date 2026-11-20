@@ -1,8 +1,6 @@
 ---
 name: pref-architect
 description: "Designs short always-on instructions (claude.ai user preferences, CLAUDE.md, AGENTS.md) plus modular skills that load only when needed, via a user interview. For beginners it customizes the bundled modules (writing standard, coding standard, staged work, token saving). For users with existing preferences and skills it builds an integration plan rule by rule. Use it when the user says \"/pref-architect\", \"set up my preferences\", \"clean up my instructions\", \"write a CLAUDE.md\", \"write an AGENTS.md\", \"turn my instructions into skills\", \"my preferences are too long\", asks how to split instructions and skills, or wants to rebuild a setup made by this skill. Supporting files (read at the matching step): references/interview.md (interview), references/router.md (writing and placing instructions), references/integration.md (integration and rebuilding), assets/modules/write-standard.md, code-standard.md, staged-work.md, token-lean.md (bundled module sources), and module-off.md (off-switch skill source)."
-metadata:
-  version: "1.1"
 license: GPL-3.0-or-later with an output exception. Terms in LICENSE and NOTICE.md
 ---
 
@@ -63,7 +61,7 @@ Produce the outputs according to the approved design.
 - For each module, copy its source from assets/modules and change only the values in the source's settings section to match the interview answers. Change body rules only when the user asks for it.
 - If there are existing assets, move rules as the migration table in references/integration.md says.
 
-Do not delete the metadata (generator, generator-version) in the module source frontmatter. It marks modules made by this skill when the user later rebuilds the setup with this skill.
+Do not delete the metadata (generator) in the module source frontmatter. It marks modules made by this skill when the user later rebuilds the setup with this skill.
 
 The module source files are not named SKILL.md. Save each one as `module-name/SKILL.md` when generating. The sources are not named SKILL.md because some tools find every SKILL.md under a skill folder and register each as a separate skill.
 
@@ -78,7 +76,6 @@ Confirm every item below before delivery. If any item fails, fix it and check ag
 - In every module, the description is 1,024 characters or fewer and says when to load the module.
 - No module's settings section has an empty value that the interview did not decide.
 - Each module folder contains exactly one SKILL.md.
-- In every module, the metadata generator-version equals the metadata version in this skill's frontmatter.
 - Every name in the off-switch skill's (Modules to turn off) matches the name of a module included in the outputs.
 - If there are existing assets, the number of original rules equals the number of rows in the migration table. If code can run, count them with code.
 

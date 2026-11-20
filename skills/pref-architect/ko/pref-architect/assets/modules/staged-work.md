@@ -3,7 +3,6 @@ name: staged-work
 description: "여러 단계, 여러 파일, 여러 출처, 여러 세션에 걸친 큰 작업을 단계 계획, 단계별 검증, 전달 전 자기 검토 순서로 수행하는 절차. 상시 지침이 이 모듈을 불러오라고 지정했거나 사용자가 \"/staged-work\", \"꼼꼼하게\", \"체계적으로\", \"단계별로 검증하면서\" 등을 요청한 경우 작업 전에 불러온다. 한 번에 끝나는 단순한 요청에는 쓰지 않는다."
 metadata:
   generator: pref-architect
-  generator-version: "1.1"
 ---
 
 # staged-work
