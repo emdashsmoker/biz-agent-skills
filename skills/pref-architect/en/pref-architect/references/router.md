@@ -40,7 +40,7 @@ After loading the standard module, judge the size of the task.
 - For complex work that spans several steps, files, or sources, also load staged-work.
 - For token-heavy work such as bulk parsing, mass research, many tool calls, long outputs, or repetitive file operations, also load token-lean.
 
-Follow the rules of loaded modules to the end. Load the standard modules even when the user names another skill. Skip a module only when the user explicitly says not to use it.
+Follow the rules of loaded modules to the end. Load the standard modules even when the user names another skill. If the user calls no-modules, skip modules as no-modules says. no-modules is the skill that stops this loading rule, so do not treat it as naming another skill. Otherwise, skip a module only when the user explicitly says not to use it.
 
 # Common work rules
 
@@ -52,6 +52,8 @@ Follow the rules of loaded modules to the end. Load the standard modules even wh
 ```
 
 If only one standard module is installed, delete the "requests that span both" line and have the remaining module load for every request. If no standard module is installed, keep only the loading conditions for staged-work and token-lean.
+
+If no-modules is installed, keep the two sentences that mention no-modules in the loading rule. They are needed because of the template sentence "Load the standard modules even when the user names another skill." Without them, the model may read a no-modules call as naming another skill and load the standard modules first. If the user keeps an existing skill with the same role, write its name in place of no-modules in the two sentences. If neither no-modules nor such a skill is used, delete the two sentences and the "Otherwise," that opens the next sentence.
 
 ## Placement by environment
 
@@ -76,3 +78,5 @@ If the target environment does not support skills, fall back in this order.
 1. If the environment supports per-file rules (for example, rule files read only when certain files are opened), move the module body into that feature and delete the loading rule from the always-on instructions.
 2. If the model can read files in the environment, keep each module as a plain md file and change "load" in the loading rule to "read the file." Write the file path in the loading rule.
 3. If neither works, pick only the most used rules from the user's most used module and add them to the always-on instructions. Tell the user to paste the other modules into the conversation when needed.
+
+Create no-modules only with way 2. Ways 1 and 3 leave no loading rule in the always-on instructions to stop.

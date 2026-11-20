@@ -37,7 +37,7 @@ Detailed criteria for each verdict are below.
 - (Duplicate) If an existing user rule and a bundled module rule mean the same, keep the user's wording and delete the bundled module's wording, because the user already knows their own wording.
 - (Deletion candidate) Write the reason in one line. If you cannot write a reason, do not mark it as a deletion candidate and move on to question 4.
 - (Always-on) Module loading rules, consent rules such as those for subagents or file creation, and short preferences for every output belong here. A procedure longer than three or four lines goes to a module even if every conversation needs it.
-- (Module) Writing rules go to write-standard, code and visualization rules to code-standard, work procedure rules to staged-work, and token saving rules to token-lean. If an existing user skill already handles the same task, put the rule in that skill. If no module fits, suggest creating a new module.
+- (Module) Writing rules go to write-standard, code and visualization rules to code-standard, work procedure rules to staged-work, token saving rules to token-lean, and rules that turn off module loading to no-modules. If an existing user skill already handles the same task, put the rule in that skill. If no module fits, suggest creating a new module.
 
 ## 3. Overlapping skills
 
@@ -48,6 +48,8 @@ An existing user skill may handle the same task as a bundled module. For example
 - (Keep both) Define in one sentence how the two skills split their roles and reflect it in the loading rule of the always-on instructions.
 
 Keeping the existing skill is recommended because the user has already tuned it to their outputs.
+
+If the user already has a skill that turns off module loading, treat it as a skill that handles the same task as no-modules and follow the options in this section. A skill that holds only an instruction not to load certain skills is one example. If the user keeps the existing skill, use its name instead of no-modules in the loading rule of the always-on instructions. Then check that the skill names the existing skill turns off match the module names in the new loading rule. If they differ, create a copy with the names corrected.
 
 ## 4. Name collisions
 

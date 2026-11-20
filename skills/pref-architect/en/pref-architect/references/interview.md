@@ -38,7 +38,7 @@ B5 defaults to English because of token cost. The same content takes very differ
 
 | No. | Question | Options | Default | What the answer changes |
 |---|---|---|---|---|
-| C1 | Which bundled modules should be installed? (multiple choice) | write-standard, code-standard, staged-work, token-lean | All | List of modules to generate and the loading rule in the always-on instructions |
+| C1 | Which bundled modules should be installed? (multiple choice) | write-standard, code-standard, staged-work, token-lean, no-modules | All | List of modules to generate, the loading rule in the always-on instructions, and (Modules to turn off) in no-modules |
 
 Add a one-line description to each module when showing the options.
 
@@ -46,8 +46,11 @@ Add a one-line description to each module when showing the options.
 - code-standard holds standards for code quality, security, charts, and design.
 - staged-work holds a procedure that splits large tasks into stages and checks each stage.
 - token-lean holds a procedure that cuts unneeded file loads, repeated output, and extra turns.
+- no-modules holds rules that turn off module loading in the always-on instructions until the conversation ends, when the user wants.
 
 If the user did not pick coding or visualization in B1, drop code-standard from the default selection and say why. Add it back if the user wants it. If an existing skill does the same job, follow the overlap procedure in references/integration.md.
+
+In (Modules to turn off) of no-modules, list every skill name the loading rule in the always-on instructions calls. Include the user's skills that stay in the loading rule because the user kept an existing skill. If no always-on instructions are created or the loading rule calls no skill, drop no-modules from the options.
 
 ## D. write-standard settings
 
