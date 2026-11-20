@@ -1,6 +1,6 @@
 ---
 name: pref-architect
-description: "Designs short always-on instructions (claude.ai user preferences, CLAUDE.md, AGENTS.md) plus modular skills loaded only when needed, with an optional off-switch skill, via an interview. For beginners it customizes the bundled modules (writing standard, coding standard, staged work, token saving). For users with existing preferences and skills it builds a rule-by-rule integration plan. Use it when the user says \"/pref-architect\", \"set up my preferences\", \"clean up my instructions\", \"write a CLAUDE.md\", \"write an AGENTS.md\", \"turn my instructions into skills\", \"my preferences are too long\", asks how to split instructions and skills, or wants to rebuild a setup this skill made. Supporting files, read at the matching step: references/interview.md (interview), references/router.md (writing and placing instructions), references/integration.md (integration and rebuilding), assets/modules/write-standard.md, assets/modules/code-standard.md, assets/modules/staged-work.md, assets/modules/token-lean.md (module sources)."
+description: "Designs short always-on instructions (claude.ai user preferences, CLAUDE.md, AGENTS.md) plus modular skills loaded only when needed, with an optional off-switch skill, via an interview. For beginners it customizes the bundled modules (writing, coding, staged work, token saving). For users with existing preferences and skills it builds a rule-by-rule integration plan. Use it when the user says \"/pref-architect\", \"set up my preferences\", \"clean up my instructions\", \"write a CLAUDE.md or AGENTS.md\", \"turn my instructions into skills\", \"my preferences are too long\", asks how to split instructions and skills, or wants to rebuild a setup this skill made. Files read at the matching step: references/interview.md, references/router.md (writing and placing instructions), references/integration.md (integration and rebuilding), assets/modules/write-standard.md, assets/modules/code-standard.md, assets/modules/staged-work.md, assets/modules/token-lean.md, assets/modules/module-off.md (module and off-switch sources)."
 metadata:
   version: "1.0"
 license: GPL-3.0-or-later with an output exception. Terms in LICENSE and NOTICE.md
@@ -22,7 +22,7 @@ This skill and its supporting files use the terms below with these meanings only
 - (Module) A skill loaded only for specific tasks. It follows the form of one SKILL.md inside one folder.
 - (Bundled modules) The modules whose sources ship with this skill: write-standard (writing standard), code-standard (coding standard), staged-work (staged work), and token-lean (token saving).
 - (Target environment) Where the user will place the always-on instructions: claude.ai, Claude Code, or a tool that reads AGENTS.md (Codex, Cursor, and others).
-- (Off-switch skill) A skill that keeps chosen modules from loading in the conversation where the user calls it. Create it when the user chooses it in the interview.
+- (Off-switch skill) A skill that keeps chosen modules from loading in the conversation where the user calls it. Its source (assets/modules/module-off.md) ships with this skill, and it is created when the user chooses it in the interview.
 - (Existing assets) The always-on instructions and skills the user already uses.
 
 ## Generation mark
@@ -70,12 +70,12 @@ Produce the outputs according to the approved design.
 
 - Write one set of always-on instructions per target environment, following the principles and template in references/router.md.
 - For each module, copy its source from assets/modules and change only the values in the source's settings section to match the interview answers. Change body rules only when the user asks for it.
-- Create an off-switch skill with the off-switch skill template in references/router.md when the user chooses it in interview question G1.
+- Create an off-switch skill by copying assets/modules/module-off.md when the user chooses it in interview question G1. Change the source's name, body title, the names written in the description, and (Target modules) in the settings section to match the answers to G1 and G2.
 - If there are existing assets, move rules as the migration table in references/integration.md says.
 
-Copy the generation mark in the module source frontmatter as is, without deleting or changing it. The rebuilding procedure reads this mark.
+Copy the generation mark in the frontmatter of the sources in assets/modules as is, without deleting or changing it. The rebuilding procedure reads this mark.
 
-The module source files are not named SKILL.md. Save each one as `module-name/SKILL.md` when generating. The sources are not named SKILL.md because some tools find every SKILL.md under a skill folder and register each as a separate skill.
+The source files in assets/modules are not named SKILL.md. When generating, save each module as `module-name/SKILL.md` and each off-switch skill as `off-switch-skill-name/SKILL.md`. The sources are not named SKILL.md because some tools find every SKILL.md under a skill folder and register each as a separate skill.
 
 ### 6. Check
 

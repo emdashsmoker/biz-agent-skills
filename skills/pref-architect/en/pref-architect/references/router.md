@@ -55,40 +55,6 @@ When the user calls [off-switch skill name], do not load [target modules] in tha
 
 If only one standard module is installed, delete the "requests that span both" line and have the remaining module load for every request. If no standard module is installed, keep only the loading conditions for staged-work and token-lean. The last paragraph of the loading rule in the template is the off-switch sentence. If no off-switch skill is created, delete the off-switch sentence. If there are several off-switch skills, put one off-switch sentence per skill, each on its own line.
 
-## Off-switch skill
-
-Create it with the template below when the user chooses an off-switch skill in interview question G1. Replace the bracketed parts with interview answers and rewrite the body in the user's output language.
-
-```
----
-name: [off-switch skill name]
-description: "Makes the model answer without loading [target modules]. Use it when the user calls \"/[off-switch skill name]\" or asks for an answer without [target modules]. Do not load it without a user request."
-metadata:
-  generator: pref-architect
-  generator-version: "[the metadata version in this skill's frontmatter]"
----
-
-# [off-switch skill name]
-
-In a conversation where this skill is called, do not load the target modules in the settings section. This call counts as the case in the module loading rule of the always-on instructions where the user explicitly says not to use a module.
-
-## Settings
-
-- (Target modules) [target module names]
-
-## Scope
-
-- Apply it from the response where it is called until the conversation ends.
-- After the call, stop applying the rules of target modules already loaded in the conversation.
-- If the user asks for a target module again, load that module from that request on.
-- Keep applying modules outside the targets and the common work rules in the always-on instructions.
-```
-
-- Save the off-switch skill as `off-switch-skill-name/SKILL.md`.
-- The two metadata values in the frontmatter are the generation mark, so record them as the template shows.
-- State in the description that the skill is used only on a user request. If the model loads the off-switch skill on its own, the standards of the target modules stop applying without the user knowing.
-- Put only the content that turns off loading of the target modules in the off-switch skill. Put other rules in the always-on instructions or in modules.
-
 ## Placement by environment
 
 | Target environment | Always-on instructions | Module install location | Notes |

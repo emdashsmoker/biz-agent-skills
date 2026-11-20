@@ -1,6 +1,6 @@
 ---
 name: pref-architect
-description: "사용자 인터뷰를 거쳐 짧은 상시 지침(claude.ai 유저 프리퍼런스, CLAUDE.md, AGENTS.md)과 필요할 때만 불러오는 모듈 스킬 세트를 설계하고 생성하는 스킬. 스킬이 하나도 없는 입문 사용자에게는 동봉 모듈(글쓰기 표준, 코딩 표준, 단계 작업, 토큰 절약)을 맞춤 설정하여 만들어 주고 기존 프리퍼런스와 스킬을 가진 사용자에게는 규칙별 이관 판정으로 통합안을 만든다. 인터뷰에서 사용자가 고르면 지정한 모듈을 대화 단위로 불러오지 않게 하는 해제 스킬도 함께 만든다. 사용자가 \"/pref-architect\", \"프리퍼런스 설정\", \"유저 프리퍼런스 만들어줘\", \"지침 정리해줘\", \"CLAUDE.md 작성\", \"AGENTS.md 작성\", \"처음 쓰는데 세팅해줘\", \"지침을 스킬로 모듈화\", \"프리퍼런스가 너무 길어\", \"모듈 끄는 스킬\" 등을 요청하거나 상시 지침과 스킬의 역할 분담을 묻는 경우 이 스킬을 사용한다. 이 스킬로 만든 구성을 다시 고치거나 재구성할 때도 사용한다. 부속 파일은 references/interview.md(인터뷰 문항과 기본값), references/router.md(상시 지침 작성법, 해제 스킬 서식, 환경별 배치), references/integration.md(기존 자산 통합과 재구성 절차), assets/modules/write-standard.md, assets/modules/code-standard.md, assets/modules/staged-work.md, assets/modules/token-lean.md(동봉 모듈 원본)이며 해당 단계에서 읽는다."
+description: "사용자 인터뷰를 거쳐 짧은 상시 지침(claude.ai 유저 프리퍼런스, CLAUDE.md, AGENTS.md)과 필요할 때만 불러오는 모듈 스킬 세트를 설계하고 생성하는 스킬. 스킬이 하나도 없는 입문 사용자에게는 동봉 모듈(글쓰기 표준, 코딩 표준, 단계 작업, 토큰 절약)을 맞춤 설정하여 만들어 주고 기존 프리퍼런스와 스킬을 가진 사용자에게는 규칙별 이관 판정으로 통합안을 만든다. 인터뷰에서 사용자가 고르면 지정한 모듈을 대화 단위로 불러오지 않게 하는 해제 스킬도 함께 만든다. 사용자가 \"/pref-architect\", \"프리퍼런스 설정\", \"유저 프리퍼런스 만들어줘\", \"지침 정리해줘\", \"CLAUDE.md 작성\", \"AGENTS.md 작성\", \"처음 쓰는데 세팅해줘\", \"지침을 스킬로 모듈화\", \"프리퍼런스가 너무 길어\", \"모듈 끄는 스킬\" 등을 요청하거나 상시 지침과 스킬의 역할 분담을 묻는 경우 이 스킬을 사용한다. 이 스킬로 만든 구성을 다시 고치거나 재구성할 때도 사용한다. 부속 파일은 references/interview.md(인터뷰 문항과 기본값), references/router.md(상시 지침 작성법과 환경별 배치), references/integration.md(기존 자산 통합과 재구성 절차), assets/modules/write-standard.md, assets/modules/code-standard.md, assets/modules/staged-work.md, assets/modules/token-lean.md(동봉 모듈 원본), assets/modules/module-off.md(해제 스킬 원본)이며 해당 단계에서 읽는다."
 metadata:
   version: "1.0"
 license: GPL-3.0-or-later with an output exception. Terms in LICENSE and NOTICE.md
@@ -20,7 +20,7 @@ license: GPL-3.0-or-later with an output exception. Terms in LICENSE and NOTICE.
 - (모듈) 특정 작업에서만 불러오는 스킬이다. 폴더 하나에 SKILL.md 하나가 들어 있는 형태를 따른다.
 - (동봉 모듈) 이 스킬이 원본을 가지고 있는 모듈이다. write-standard(글쓰기 표준), code-standard(코딩 표준), staged-work(단계 작업), token-lean(토큰 절약)이다.
 - (대상 환경) 사용자가 상시 지침을 둘 곳이다. claude.ai, Claude Code, AGENTS.md를 읽는 도구(Codex, Cursor 등)가 있다.
-- (해제 스킬) 사용자가 호출한 대화에서 지정한 모듈을 불러오지 않게 하는 스킬이다. 인터뷰에서 사용자가 고른 경우에 만든다.
+- (해제 스킬) 사용자가 호출한 대화에서 지정한 모듈을 불러오지 않게 하는 스킬이다. 이 스킬이 원본(assets/modules/module-off.md)을 가지고 있으며 인터뷰에서 사용자가 고른 경우에 만든다.
 - (기존 자산) 사용자가 이미 쓰고 있는 상시 지침과 스킬이다.
 
 ## 생성 표시
@@ -68,12 +68,12 @@ references/interview.md의 B묶음부터 G묶음까지 인터뷰한다. 입문 �
 
 - 상시 지침은 references/router.md의 원칙과 서식으로 대상 환경마다 하나씩 작성한다.
 - 모듈은 assets/modules의 원본을 복사한 뒤 원본의 설정 절에 있는 값만 인터뷰 답으로 바꾼다. 본문 규칙은 사용자가 따로 요청한 경우에만 고친다.
-- 해제 스킬은 인터뷰 G1에서 사용자가 고른 경우에 references/router.md의 해제 스킬 서식으로 만든다.
+- 해제 스킬은 인터뷰 G1에서 사용자가 고른 경우에 assets/modules/module-off.md를 복사하여 만든다. 원본의 name, 본문 제목, description에 적힌 이름, 설정 절의 (대상 모듈)을 G1과 G2의 답으로 바꾼다.
 - 기존 자산이 있으면 references/integration.md의 이관표대로 규칙을 옮긴다.
 
-모듈 원본 frontmatter의 생성 표시는 지우거나 바꾸지 않고 그대로 복사한다. 재구성 절차가 이 표시를 읽기 때문이다.
+assets/modules의 원본 frontmatter에 있는 생성 표시는 지우거나 바꾸지 않고 그대로 복사한다. 재구성 절차가 이 표시를 읽기 때문이다.
 
-모듈 원본 파일은 이름이 SKILL.md가 아니다. 생성할 때 `모듈이름/SKILL.md` 경로로 저장한다. 원본을 SKILL.md로 두지 않는 이유는 일부 도구가 스킬 폴더 아래의 SKILL.md를 모두 찾아 별도 스킬로 등록하기 때문이다.
+assets/modules의 원본 파일은 이름이 SKILL.md가 아니다. 생성할 때 모듈은 `모듈이름/SKILL.md` 경로로 저장하고 해제 스킬은 `해제 스킬 이름/SKILL.md` 경로로 저장한다. 원본을 SKILL.md로 두지 않는 이유는 일부 도구가 스킬 폴더 아래의 SKILL.md를 모두 찾아 별도 스킬로 등록하기 때문이다.
 
 ### 6. 점검
 
