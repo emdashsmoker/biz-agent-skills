@@ -6,7 +6,7 @@ Always-on instructions sit at the front of every conversation. So shorter is bet
 
 Put only the items below in the always-on instructions, in this order.
 
-1. Module loading rule
+1. Module loading rule (including the off-switch sentence if an off-switch skill is created)
 2. Common work rules (rules turned on in interview F1-F7)
 3. Short preferences for every output (interview F8, only if any)
 
@@ -42,6 +42,8 @@ After loading the standard module, judge the size of the task.
 
 Follow the rules of loaded modules to the end. Load the standard modules even when the user names another skill. Skip a module only when the user explicitly says not to use it.
 
+When the user calls [off-switch skill name], do not load [target modules] in that conversation. This call counts as the user explicitly saying not to use a module.
+
 # Common work rules
 
 - [Rules turned on in F1-F7, one per line with a reason]
@@ -51,7 +53,41 @@ Follow the rules of loaded modules to the end. Load the standard modules even wh
 - [Answer to F8; delete this section if none]
 ```
 
-If only one standard module is installed, delete the "requests that span both" line and have the remaining module load for every request. If no standard module is installed, keep only the loading conditions for staged-work and token-lean.
+If only one standard module is installed, delete the "requests that span both" line and have the remaining module load for every request. If no standard module is installed, keep only the loading conditions for staged-work and token-lean. The last paragraph of the loading rule in the template is the off-switch sentence. If no off-switch skill is created, delete the off-switch sentence. If there are several off-switch skills, put one off-switch sentence per skill, each on its own line.
+
+## Off-switch skill
+
+Create it with the template below when the user chooses an off-switch skill in interview question G1. Replace the bracketed parts with interview answers and rewrite the body in the user's output language.
+
+```
+---
+name: [off-switch skill name]
+description: "Makes the model answer without loading [target modules]. Use it when the user calls \"/[off-switch skill name]\" or asks for an answer without [target modules]. Do not load it without a user request."
+metadata:
+  generator: pref-architect
+  generator-version: "[the metadata version in this skill's frontmatter]"
+---
+
+# [off-switch skill name]
+
+In a conversation where this skill is called, do not load the target modules in the settings section. This call counts as the case in the module loading rule of the always-on instructions where the user explicitly says not to use a module.
+
+## Settings
+
+- (Target modules) [target module names]
+
+## Scope
+
+- Apply it from the response where it is called until the conversation ends.
+- After the call, stop applying the rules of target modules already loaded in the conversation.
+- If the user asks for a target module again, load that module from that request on.
+- Keep applying modules outside the targets and the common work rules in the always-on instructions.
+```
+
+- Save the off-switch skill as `off-switch-skill-name/SKILL.md`.
+- The two metadata values in the frontmatter are the generation mark, so record them as the template shows.
+- State in the description that the skill is used only on a user request. If the model loads the off-switch skill on its own, the standards of the target modules stop applying without the user knowing.
+- Put only the content that turns off loading of the target modules in the off-switch skill. Put other rules in the always-on instructions or in modules.
 
 ## Placement by environment
 
@@ -61,7 +97,7 @@ If only one standard module is installed, delete the "requests that span both" l
 | Claude Code | `~/.claude/CLAUDE.md` for all projects, `CLAUDE.md` in the project root for one project | `~/.claude/skills/module-name/` for all projects, `.claude/skills/module-name/` for one project | CLAUDE.md is recommended to stay under 200 lines |
 | Tools that read AGENTS.md (Codex, Cursor, and others) | `AGENTS.md` in the repository root | For Codex and Cursor, `~/.agents/skills/module-name/` or `.agents/skills/module-name/` in the repository | Each tool has extra paths, so check its documentation |
 
-The paths in this table are the values in each tool's official documentation as of 2026. Paths can change when tools change, so when giving directions, add one line telling the user to check the tool's latest documentation.
+The paths in this table are the values in each tool's official documentation as of 2026. Paths can change when tools change, so when giving directions, add one line telling the user to check the tool's latest documentation. Install off-switch skills in the same location as modules.
 
 ## Environment notes
 
