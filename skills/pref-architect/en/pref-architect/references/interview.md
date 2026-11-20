@@ -39,6 +39,7 @@ B5 defaults to English because of token cost. The same content takes very differ
 | No. | Question | Options | Default | What the answer changes |
 |---|---|---|---|---|
 | C1 | Which bundled modules should be installed? (multiple choice) | write-standard, code-standard, staged-work, token-lean | All | List of modules to generate and the loading rule in the always-on instructions |
+| C2 | Should the off-switch skill (module-off), which turns modules off for a single conversation, be installed? If so, which modules should it turn off? | All installed modules, standard modules only, custom (multiple choice), do not install the off-switch skill | All installed modules | Whether module-off is generated, (Modules to turn off) in module-off, and the skip conditions in the always-on instructions |
 
 Add a one-line description to each module when showing the options.
 
@@ -48,6 +49,14 @@ Add a one-line description to each module when showing the options.
 - token-lean holds a procedure that cuts unneeded file loads, repeated output, and extra turns.
 
 If the user did not pick coding or visualization in B1, drop code-standard from the default selection and say why. Add it back if the user wants it. If an existing skill does the same job, follow the overlap procedure in references/integration.md.
+
+C2 exists because always-on instructions apply to every conversation. To run one conversation without modules, the user needs a way to turn modules off per conversation. The user can also ask for a skip in a sentence. The off-switch skill shortens the same request to a single call and fixes which modules it turns off.
+
+- Ask C2 only when always-on instructions with a loading rule will be created and skills are available in the target environment. Without a loading rule there is nothing to turn off, and without skills the off-switch skill cannot be called.
+- "Standard modules only" means whichever of write-standard and code-standard will be installed. Do not show this option if no standard module will be installed.
+- If only one module will be installed, reduce the options to "install" and "do not install the off-switch skill."
+- The default is all installed modules because the user can still call a needed module by name in a conversation where modules are turned off.
+- If the existing assets include a skill that keeps modules or skills from loading, put what that skill turns off in place of the default and follow the overlap procedure in references/integration.md.
 
 ## D. write-standard settings
 

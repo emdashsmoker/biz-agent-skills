@@ -49,9 +49,11 @@ An existing user skill may handle the same task as a bundled module. For example
 
 Keeping the existing skill is recommended because the user has already tuned it to their outputs.
 
+Treat an existing skill that keeps modules or skills from loading as a skill that handles the same task as the off-switch skill, and apply the options above. If the existing skill is kept, create a copy whose targets are changed to the new module names, and write that skill's name in the skip conditions of the always-on instructions.
+
 ## 4. Name collisions
 
-If an existing skill and a bundled module share a name, do not overwrite. Suggest renaming the bundled module and apply the new name the user picks to the always-on instructions exactly.
+If an existing skill and a bundled module share a name, do not overwrite. Suggest renaming the bundled module and apply the new name the user picks to the always-on instructions and to (Modules to turn off) in the off-switch skill exactly.
 
 ## 5. Migration table
 

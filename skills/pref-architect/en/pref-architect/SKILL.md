@@ -1,8 +1,8 @@
 ---
 name: pref-architect
-description: "Designs short always-on instructions (claude.ai user preferences, CLAUDE.md, AGENTS.md) plus modular skills that load only when needed, via a user interview. For beginners it customizes the bundled modules (writing standard, coding standard, staged work, token saving). For users with existing preferences and skills it builds an integration plan rule by rule. Use it when the user says \"/pref-architect\", \"set up my preferences\", \"clean up my instructions\", \"write a CLAUDE.md\", \"write an AGENTS.md\", \"turn my instructions into skills\", \"my preferences are too long\", asks how to split instructions and skills, or wants to rebuild a setup made by this skill. Supporting files (read at the matching step): references/interview.md (interview), references/router.md (writing and placing instructions), references/integration.md (integration and rebuilding), assets/modules/write-standard.md, assets/modules/code-standard.md, assets/modules/staged-work.md, assets/modules/token-lean.md (bundled module sources)."
+description: "Designs short always-on instructions (claude.ai user preferences, CLAUDE.md, AGENTS.md) plus modular skills that load only when needed, via a user interview. For beginners it customizes the bundled modules (writing standard, coding standard, staged work, token saving). For users with existing preferences and skills it builds an integration plan rule by rule. Use it when the user says \"/pref-architect\", \"set up my preferences\", \"clean up my instructions\", \"write a CLAUDE.md\", \"write an AGENTS.md\", \"turn my instructions into skills\", \"my preferences are too long\", asks how to split instructions and skills, or wants to rebuild a setup made by this skill. Supporting files (read at the matching step): references/interview.md (interview), references/router.md (writing and placing instructions), references/integration.md (integration and rebuilding), assets/modules/write-standard.md, code-standard.md, staged-work.md, token-lean.md (bundled module sources), and module-off.md (off-switch skill source)."
 metadata:
-  version: "1.0"
+  version: "1.1"
 license: GPL-3.0-or-later with an output exception. Terms in LICENSE and NOTICE.md
 ---
 
@@ -21,6 +21,7 @@ This skill and its supporting files use the terms below with these meanings only
 - (Always-on instructions) Instructions passed to the model at the start of every conversation. Examples are claude.ai user preferences, Claude Code's CLAUDE.md, and AGENTS.md, which many coding agents read.
 - (Module) A skill loaded only for specific tasks. It follows the form of one SKILL.md inside one folder.
 - (Bundled modules) The modules whose sources ship with this skill: write-standard (writing standard), code-standard (coding standard), staged-work (staged work), and token-lean (token saving).
+- (Off-switch skill) A skill that, when the user calls it, keeps the named modules from loading in that conversation. Its source ships with this skill and its name is module-off. From design approval through delivery, and in rebuilding, handle it the same way as a bundled module.
 - (Target environment) Where the user will place the always-on instructions: claude.ai, Claude Code, or a tool that reads AGENTS.md (Codex, Cursor, and others).
 - (Existing assets) The always-on instructions and skills the user already uses.
 
@@ -78,6 +79,7 @@ Confirm every item below before delivery. If any item fails, fix it and check ag
 - No module's settings section has an empty value that the interview did not decide.
 - Each module folder contains exactly one SKILL.md.
 - In every module, the metadata generator-version equals the metadata version in this skill's frontmatter.
+- Every name in the off-switch skill's (Modules to turn off) matches the name of a module included in the outputs.
 - If there are existing assets, the number of original rules equals the number of rows in the migration table. If code can run, count them with code.
 
 ### 7. Deliver

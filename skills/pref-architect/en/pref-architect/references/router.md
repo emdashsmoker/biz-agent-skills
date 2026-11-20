@@ -35,12 +35,17 @@ Before starting a response, load the matching standard module first. The standar
 - For every other request (writing, research, everyday search, and so on), load write-standard.
 - For requests that span both, load both.
 
-After loading the standard module, judge the size of the task.
+Next, judge the size of the task. Judge it the same way in a conversation where the standard modules are skipped.
 
 - For complex work that spans several steps, files, or sources, also load staged-work.
 - For token-heavy work such as bulk parsing, mass research, many tool calls, long outputs, or repetitive file operations, also load token-lean.
 
-Follow the rules of loaded modules to the end. Load the standard modules even when the user names another skill. Skip a module only when the user explicitly says not to use it.
+Follow the rules of loaded modules to the end. Load the standard modules even when the user names another skill.
+
+Skip a module only in the cases below. Keep the skip for the rest of the conversation until the user asks for the module again. Reloading a module midway makes the user repeat the same request.
+
+- When the user explicitly says not to use a module, skip that module.
+- When the user calls module-off, skip the modules listed under its modules to turn off.
 
 # Common work rules
 
@@ -52,6 +57,8 @@ Follow the rules of loaded modules to the end. Load the standard modules even wh
 ```
 
 If only one standard module is installed, delete the "requests that span both" line and have the remaining module load for every request. If no standard module is installed, keep only the loading conditions for staged-work and token-lean.
+
+If the off-switch skill will not be installed, delete the module-off line. If an existing user skill is kept as the off-switch skill, write that skill's name in place of module-off. Do not repeat the modules to turn off in the always-on instructions. Keep them only in the settings section of the off-switch skill. If they live in two places and only one copy gets edited, the model receives two different lists.
 
 ## Placement by environment
 

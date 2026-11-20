@@ -1,8 +1,8 @@
 ---
 name: pref-architect
-description: "사용자 인터뷰를 거쳐 짧은 상시 지침(claude.ai 유저 프리퍼런스, CLAUDE.md, AGENTS.md)과 필요할 때만 불러오는 모듈 스킬 세트를 설계하고 생성하는 스킬. 스킬이 하나도 없는 입문 사용자에게는 동봉 모듈(글쓰기 표준, 코딩 표준, 단계 작업, 토큰 절약)을 맞춤 설정하여 만들어 주고 기존 프리퍼런스와 스킬을 가진 사용자에게는 규칙별 이관 판정으로 통합안을 만든다. 사용자가 \"/pref-architect\", \"프리퍼런스 설정\", \"유저 프리퍼런스 만들어줘\", \"지침 정리해줘\", \"CLAUDE.md 작성\", \"AGENTS.md 작성\", \"처음 쓰는데 세팅해줘\", \"지침을 스킬로 모듈화\", \"프리퍼런스가 너무 길어\" 등을 요청하거나 상시 지침과 스킬의 역할 분담을 묻는 경우 이 스킬을 사용한다. 이 스킬로 만든 구성을 다시 고치거나 재구성할 때도 사용한다. 부속 파일은 references/interview.md(인터뷰 문항과 기본값), references/router.md(상시 지침 작성법과 환경별 배치), references/integration.md(기존 자산 통합과 재구성 절차), assets/modules/write-standard.md, assets/modules/code-standard.md, assets/modules/staged-work.md, assets/modules/token-lean.md(동봉 모듈 원본)이며 해당 단계에서 읽는다."
+description: "사용자 인터뷰를 거쳐 짧은 상시 지침(claude.ai 유저 프리퍼런스, CLAUDE.md, AGENTS.md)과 필요할 때만 불러오는 모듈 스킬 세트를 설계하고 생성하는 스킬. 스킬이 하나도 없는 입문 사용자에게는 동봉 모듈(글쓰기 표준, 코딩 표준, 단계 작업, 토큰 절약)을 맞춤 설정하여 만들어 주고 기존 프리퍼런스와 스킬을 가진 사용자에게는 규칙별 이관 판정으로 통합안을 만든다. 사용자가 \"/pref-architect\", \"프리퍼런스 설정\", \"유저 프리퍼런스 만들어줘\", \"지침 정리해줘\", \"CLAUDE.md 작성\", \"AGENTS.md 작성\", \"처음 쓰는데 세팅해줘\", \"지침을 스킬로 모듈화\", \"프리퍼런스가 너무 길어\" 등을 요청하거나 상시 지침과 스킬의 역할 분담을 묻는 경우 이 스킬을 사용한다. 이 스킬로 만든 구성을 다시 고치거나 재구성할 때도 사용한다. 부속 파일은 references/interview.md(인터뷰 문항과 기본값), references/router.md(상시 지침 작성법과 환경별 배치), references/integration.md(기존 자산 통합과 재구성 절차), assets/modules/write-standard.md, assets/modules/code-standard.md, assets/modules/staged-work.md, assets/modules/token-lean.md(동봉 모듈 원본), assets/modules/module-off.md(해제 스킬 원본)이며 해당 단계에서 읽는다."
 metadata:
-  version: "1.0"
+  version: "1.1"
 license: GPL-3.0-or-later with an output exception. Terms in LICENSE and NOTICE.md
 ---
 
@@ -19,6 +19,7 @@ license: GPL-3.0-or-later with an output exception. Terms in LICENSE and NOTICE.
 - (상시 지침) 매 대화 시작 시 항상 모델에게 전달되는 지침이다. claude.ai의 유저 프리퍼런스, Claude Code의 CLAUDE.md, 여러 코딩 에이전트가 읽는 AGENTS.md가 여기에 해당한다.
 - (모듈) 특정 작업에서만 불러오는 스킬이다. 폴더 하나에 SKILL.md 하나가 들어 있는 형태를 따른다.
 - (동봉 모듈) 이 스킬이 원본을 가지고 있는 모듈이다. write-standard(글쓰기 표준), code-standard(코딩 표준), staged-work(단계 작업), token-lean(토큰 절약)이다.
+- (해제 스킬) 사용자가 부르면 그 대화에서 지정한 모듈을 불러오지 않게 하는 스킬이다. 이 스킬이 원본을 가지고 있으며 이름은 module-off다. 설계안 승인부터 전달까지의 단계와 재구성에서는 동봉 모듈과 같은 방식으로 다룬다.
 - (대상 환경) 사용자가 상시 지침을 둘 곳이다. claude.ai, Claude Code, AGENTS.md를 읽는 도구(Codex, Cursor 등)가 있다.
 - (기존 자산) 사용자가 이미 쓰고 있는 상시 지침과 스킬이다.
 
@@ -76,6 +77,7 @@ references/interview.md의 B묶음부터 F묶음까지 인터뷰한다. 입문 �
 - 모듈의 설정 절에 인터뷰에서 정하지 않은 빈 값이 남아 있지 않다.
 - 모듈 폴더 안에 SKILL.md가 하나뿐이다.
 - 모듈마다 metadata의 generator-version이 이 스킬 frontmatter의 metadata version과 같다.
+- 해제 스킬의 (해제 대상)에 적힌 이름이 모두 산출물에 들어 있는 모듈의 이름과 같다.
 - 기존 자산이 있으면 원문 규칙 수와 이관표의 행 수가 같다. 코드를 실행할 수 있으면 개수를 코드로 센다.
 
 ### 7. 전달
