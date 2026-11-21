@@ -207,7 +207,7 @@ Set colors in this order.
 
 1. Colors the user specifies
 2. The presenting organization's signature colors (read them from a logo or past materials if the user provided them)
-3. With no instruction or clue, a deep navy primary, a teal or sky-blue secondary and a red accent
+3. With no instruction or clue, a deep navy primary, a teal or sky-blue secondary and an orange accent
 
 ### Order of color fields
 
@@ -226,7 +226,7 @@ Set colors in this order.
 - Compute contrast ratios by running code against the colors that touch.
 - Pick vivid colors first and meet the criteria through text color assignment. Darkening color fields to pass the criteria muddies the secondary and accent colors and makes the whole slide sink.
 - For each color field, assign white text or dark text (the darkest primary step), whichever gives higher contrast. Light fields such as sky blue, teal, orange, yellow and similar get dark text.
-- Choose an accent for white text from hues that pass 4.5:1 while vivid, such as reds, magentas and similar. Fix the hue and saturation and find the lightest value that passes, in code.
+- When the accent is used as a text color on a light background, fix the hue and saturation and find the lightest value that passes, in code. Orange hues pass the large-text criterion (3:1) at a vivid value and pass the normal-text criterion (4.5:1) only at a value close to brown.
 - Apply the same criteria when the accent or secondary color is used as a text color. A color that lacks contrast with its ground becomes the field behind the text, and the text stays white or dark.
 - For text on gradients, light, photos and similar grounds, compute against the lowest-contrast point in the area under the text. For semi-transparent text, compute with the color that results from blending with the ground.
 - When slides with different background lightness mix, such as a cover and body slides, a role color may pass on one background only. Set background-specific steps for each role color and compute contrast on both backgrounds.
