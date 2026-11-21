@@ -207,7 +207,7 @@ Set colors in this order.
 
 1. Colors the user specifies
 2. The presenting organization's signature colors (read them from a logo or past materials if the user provided them)
-3. With no instruction or clue, a deep navy primary, a teal or sky-blue secondary and a red accent
+3. With no instruction or clue, a deep navy primary, a teal or sky-blue secondary and an orange accent
 
 ### Order of color fields
 
@@ -226,7 +226,9 @@ Set colors in this order.
 - Compute contrast ratios by running code against the colors that touch.
 - Pick vivid colors first and meet the criteria through text color assignment. Darkening color fields to pass the criteria muddies the secondary and accent colors and makes the whole slide sink.
 - For each color field, assign white text or dark text (the darkest primary step), whichever gives higher contrast. Light fields such as sky blue, teal, orange, yellow and similar get dark text.
-- Choose an accent for white text from hues that pass 4.5:1 while vivid, such as reds, magentas and similar. Fix the hue and saturation and find the lightest value that passes, in code.
+- For a presentation that puts the accent on light surfaces, choose a red-leaning hue within the oranges. This hue passes 3:1 against a light surface while vivid. A yellow-leaning orange has to be darkened to meet the same criterion, which turns it into a muddy ochre.
+- For orange on a light surface, find in code a lightness that passes both 3:1 against the adjacent surface and 4.5:1 against dark text placed on the orange field, and use it for large text, color fields and chart marks. Orange that passes the 4.5:1 criterion for normal-size text looks brown, so emphasize small text with dark text on an orange field or with weight.
+- For a presentation that needs white text on accent fields, choose the accent from hues that pass 4.5:1 while vivid, such as reds, magentas and similar. Fix the hue and saturation and find the lightest value that passes, in code.
 - Apply the same criteria when the accent or secondary color is used as a text color. A color that lacks contrast with its ground becomes the field behind the text, and the text stays white or dark.
 - For text on gradients, light, photos and similar grounds, compute against the lowest-contrast point in the area under the text. For semi-transparent text, compute with the color that results from blending with the ground.
 - When slides with different background lightness mix, such as a cover and body slides, a role color may pass on one background only. Set background-specific steps for each role color and compute contrast on both backgrounds.
