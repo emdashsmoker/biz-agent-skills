@@ -38,7 +38,7 @@ A skill whose name ends in `-lite` is a lite edition: the same function with sho
 - [`chart`](skills/chart/): Settles the message first, then builds static report charts with matplotlib. [Samples](skills/chart/demo/en/)
 - [`biz-code-style`](skills/biz-code-style/): Sets how coding, analysis and chart work runs and how the outputs look. [Samples](skills/biz-code-style/demo/en/)
 - [`biz-code-style-lite`](skills/biz-code-style-lite/): Lite edition of `biz-code-style`.
-- [`grand-viz-style`](skills/grand-viz-style/): Sets the visual direction for rich, formal slides at large project briefings, policy announcements and vision ceremonies of Korean public institutions and large corporations.
+- [`grand-viz-style`](skills/grand-viz-style/): Sets the visual direction for rich, formal slides at large project briefings, policy announcements and vision ceremonies of Korean public institutions and large corporations. [Samples](skills/grand-viz-style/demo/en/)
 
 ### Planning
 
@@ -54,7 +54,7 @@ A skill whose name ends in `-lite` is a lite edition: the same function with sho
 - [`logical-write-lite`](skills/logical-write-lite/): Lite edition of `logical-write`.
 - [`clear-comm`](skills/clear-comm/): Writes emails, replies, feedback and announcements that put the point first. [Samples](skills/clear-comm/demo/en/)
 - [`slop-proof`](skills/slop-proof/): Finds and fixes the stock phrasing of language models. [Samples](skills/slop-proof/demo/en/)
-- [`no-meta-commentary`](skills/no-meta-commentary/): Removes meta-commentary about the text, the writing process, the writer or the user's request, and unrequested reverse statements such as counterexamples and reverse logic.
+- [`no-meta-commentary`](skills/no-meta-commentary/): Removes meta-commentary about the text, the writing process, the writer or the user's request, and unrequested reverse statements such as counterexamples and reverse logic. [Samples](skills/no-meta-commentary/demo/en/)
 - [`no-meta-commentary-lite`](skills/no-meta-commentary-lite/): Lite edition of `no-meta-commentary`.
 - [`no-jargon`](skills/no-jargon/): Rewrites jargon so that readers outside the field can follow. [Samples](skills/no-jargon/demo/en/)
 - [`onto-mece`](skills/onto-mece/): Checks classifications, hierarchies and definitions in a text for overlaps and gaps. [Samples](skills/onto-mece/demo/en/)
@@ -142,7 +142,7 @@ Each skill carries its own `LICENSE` and `NOTICE.md`. Under the output exception
 - [`chart`](skills/chart/): 전달할 메시지를 먼저 확정한 뒤 matplotlib으로 보고서용 정적 차트를 작성합니다. [예시](skills/chart/demo/ko/)
 - [`biz-code-style`](skills/biz-code-style/): 코딩, 데이터 분석, 차트 작업의 진행 방식과 산출물 스타일을 정합니다. [예시](skills/biz-code-style/demo/ko/)
 - [`biz-code-style-lite`](skills/biz-code-style-lite/): `biz-code-style`의 경량판입니다.
-- [`grand-viz-style`](skills/grand-viz-style/): 국내 공공기관과 대기업의 대형 사업 설명회, 정책 발표, 비전 선포식에 맞는 풍부하고 격식 있는 장표의 시각화 방향을 정합니다.
+- [`grand-viz-style`](skills/grand-viz-style/): 국내 공공기관과 대기업의 대형 사업 설명회, 정책 발표, 비전 선포식에 맞는 풍부하고 격식 있는 장표의 시각화 방향을 정합니다. [예시](skills/grand-viz-style/demo/ko/)
 
 ### 기획
 
@@ -158,7 +158,7 @@ Each skill carries its own `LICENSE` and `NOTICE.md`. Under the output exception
 - [`logical-write-lite`](skills/logical-write-lite/): `logical-write`의 경량판입니다.
 - [`clear-comm`](skills/clear-comm/): 이메일, 답장, 피드백, 공지를 요점부터 전달하는 존댓말 산문으로 작성합니다. [예시](skills/clear-comm/demo/ko/)
 - [`slop-proof`](skills/slop-proof/): 언어 모델이 자주 만드는 상투 표현을 찾아 수정합니다. [예시](skills/slop-proof/demo/ko/)
-- [`no-meta-commentary`](skills/no-meta-commentary/): 글 자체, 작성 과정, 작성자, 사용자 요청을 다루는 메타적 서술과 요청하지 않은 역방향 서술(반례, 역논리 등)을 찾아 지웁니다.
+- [`no-meta-commentary`](skills/no-meta-commentary/): 글 자체, 작성 과정, 작성자, 사용자 요청을 다루는 메타적 서술과 요청하지 않은 역방향 서술(반례, 역논리 등)을 찾아 지웁니다. [예시](skills/no-meta-commentary/demo/ko/)
 - [`no-meta-commentary-lite`](skills/no-meta-commentary-lite/): `no-meta-commentary`의 경량판입니다.
 - [`no-jargon`](skills/no-jargon/): 분야 밖의 독자도 읽을 수 있도록 전문용어를 쉬운 표현으로 바꾸어 작성합니다. [예시](skills/no-jargon/demo/ko/)
 - [`onto-mece`](skills/onto-mece/): 글 속 분류, 상하 구조, 정의에 중복이나 누락이 있는지 점검합니다. [예시](skills/onto-mece/demo/ko/)
