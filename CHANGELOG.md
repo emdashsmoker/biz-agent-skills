@@ -27,6 +27,23 @@ Changelog rules
 - (Push) Commit on top of the latest main and push directly to main.
 -->
 
+## 2026-11-21
+
+### grand-viz-style
+- Added the grand-viz-style skill that sets the visual direction for rich, formal slides at large project briefings, policy announcements and vision ceremonies of Korean public institutions and large corporations (#81)
+
+* 국내 공공기관과 대기업의 대형 사업 설명회, 정책 발표, 비전 선포식에 맞는 장표 시각화 방향 설정 스킬 추가 (#81)
+
+### no-meta-commentary
+- Added the no-meta-commentary skill that removes meta-commentary about the text, the writing process, the writer or the user's request, and unrequested reverse statements such as counterexamples and reverse logic (#81)
+
+* 글 자체, 작성 과정, 작성자, 사용자 요청을 다루는 메타적 서술과 요청하지 않은 역방향 서술(반례, 역논리 등)의 제거 스킬 추가 (#81)
+
+### no-meta-commentary-lite
+- Added the lite edition of no-meta-commentary, which holds the same type names and examples in a single SKILL.md (#81)
+
+* 정식판과 같은 유형 이름과 예시를 SKILL.md 하나에 담은 no-meta-commentary 경량판 추가 (#81)
+
 ## 2026-11-20
 
 ### pref-architect

@@ -1,0 +1,2 @@
+b0238feb01e8a3cdac7cccb31f1533b78b44c0b257e81b4be47ea9310e9ce4ea  no-meta-commentary-lite-en.skill
+0da6e04a7fcf17a0b6684aa2f4b4aa5f4d23a8eb861e687a623cf9db111e7bf4  no-meta-commentary-lite-ko.skill
