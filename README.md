@@ -25,7 +25,7 @@ A skill whose name ends in `-lite` is a lite edition: the same function with sho
 - [`digest`](skills/digest/): Turns web pages, documents, audio and video into minutes, briefings, reports or translations. [Samples](skills/digest/demo/en/)
 - [`md-parser`](skills/md-parser/): Converts PDF, HWP, HWPX, Office files and more into Markdown.
 
-### Visualization and analysis
+### Analysis and visualization
 
 - [`practical-calc`](skills/practical-calc/): Runs practical calculations such as CAGR, NPV, B/C, IRR, AHP and financial ratios as reproducible Python scripts.
 - [`practical-calc-lite`](skills/practical-calc-lite/): Lite edition of `practical-calc`.
@@ -129,7 +129,7 @@ Each skill carries its own `LICENSE` and `NOTICE.md`. Under the output exception
 - [`digest`](skills/digest/): 웹 페이지, 문서, 음성, 영상을 회의록, 브리핑, 보고서, 번역문으로 정리합니다. [예시](skills/digest/demo/ko/)
 - [`md-parser`](skills/md-parser/): PDF, HWP, HWPX, 오피스 파일 등을 마크다운으로 변환합니다.
 
-### 시각화 및 분석
+### 분석 및 시각화
 
 - [`practical-calc`](skills/practical-calc/): CAGR, NPV, B/C, IRR, AHP, 재무비율 같은 실무 계산을 재현 가능한 파이썬 스크립트로 수행합니다.
 - [`practical-calc-lite`](skills/practical-calc-lite/): `practical-calc`의 경량판입니다.
