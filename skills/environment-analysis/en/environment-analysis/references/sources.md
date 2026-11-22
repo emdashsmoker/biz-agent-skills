@@ -24,6 +24,7 @@ These rules for data collection, source quality, verification levels, and comput
 | Material | Usual channel |
 |---|---|
 | National R&D program and project information | Public APIs of national R&D information systems, user exports |
+| Public program budgets | Public finance disclosure systems, ministry budget documents, program calls |
 | Detailed official statistics tables | Statistics agency APIs, exports from statistics portals |
 | Corporate disclosures and financials | Disclosure system APIs |
 | Patents | Patent office databases, public patent search services, user exports |

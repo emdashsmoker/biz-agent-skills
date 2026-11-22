@@ -47,7 +47,10 @@ The same data can belong to different modules depending on its relation to the s
 | Benchmarking | Results and practices of other entities used as reference | Overseas cases, other domestic regions, peer organizations |
 
 - Firms, universities, research institutes, and industry statistics of a region go to internal capability when the subject is that region, and to micro environment when the subject is a company
-- Directions and institutions stated in policy documents go to macro environment. Money flows such as budget execution and investment attraction go to investment trends in micro environment. Policies set by the subject itself and programs it runs go to internal capability
+- Place material that involves money or funding by the unit the amount belongs to. The labels that separate R&D from non-R&D, policy from program, and public from private differ by country, ministry, law, and period, so judge by the attributes of the unit
+- (Allocation unit) A unit with a budget or committed amount and a defined performer or investee goes to investment trends in micro environment. Public programs and projects (both R&D and non-R&D), fund commitments, fundraising deals, and corporate R&D spending and facility investment fall here. Programs the subject has already won and runs go to internal capability
+- (Aggregate) A statistic whose measured scope is the target's market or industry goes to micro environment (market size, investment by field, trading trends in stocks of related firms). A statistic whose scope is the whole national or world economy goes to economy in macro environment (interest rates, stock indices, national gross R&D expenditure)
+- (Policy and institutions) Strategies and plans that set direction and targets (statutory and non-statutory plans) and rules applied on the same terms to every party that meets the requirements (investment tax credits, disclosure duties) go to macro environment. Policies set by the subject itself go to internal capability. Record target investment amounts stated in a policy document as policy content, and record budgets of individual programs in the same document in micro environment
 - Competitors' market share and size go to micro environment. Competitors' practices studied to learn from them go to benchmarking
 - With no subject, skip the internal capability module and write the micro environment from the viewpoint of the whole industry
 
@@ -104,7 +107,7 @@ Data that general web search rarely finds needs the connected tool and user requ
 
 | Data type | Examples | Typical holders |
 |---|---|---|
-| Investment trends | Venture investment deal counts and amounts, M&A, government R&D budgets and projects | Venture investment databases, national R&D information services (e.g., NTIS in Korea), budget disclosure systems |
+| Investment trends | Venture investment deal counts and amounts, M&A, public program budgets (R&D and non-R&D) and projects | Venture investment databases, national R&D information services (e.g., NTIS in Korea), budget disclosure systems |
 | Internal capability | Staff, budget, program results, work processes, organizational culture | HR, finance, and project management systems, collaborative document tools, spreadsheets, email, messengers, internal databases, ontologies |
 | Detailed statistics | Establishments, employees, and output by region and industry | National statistics portals, statistics APIs |
 | Facilities and equipment | Research equipment specifications, open access status | National research equipment information services, institution disclosures |
@@ -254,18 +257,18 @@ Record external changes the subject cannot alter, with a focus on facts.
 - (Item order) Set it by purpose and emphasis. For R&D and industry analysis, policy and institutions and technology are often central, so review those two first
 - (Overseas then domestic) Within each item, write overseas trends first and domestic trends next, showing the influence, response, or gap between them. If regional policy affects the target, write it after national policy even when the region is not the subject
 - (Research period) Prefer data from the research period set in stage 1
-- (Policy and institutions) Record them in the table below, including regulatory changes. If both industrial policy and science and technology policy apply, separate them with the field column. Record expected effects only as stated in the policy document
+- (Policy and institutions) Record them in the table below, including political conditions at home and abroad, national strategies, statutory plans, non-statutory plans, and regulatory changes. If both industrial policy and science and technology policy apply, separate them with the field column. Record expected effects only as stated in the policy document. Record target investment amounts stated in the document in the main content column
 
 | Year | Country | Agency | Field | Policy or institution | Background | Main content | Instruments | Expected effects |
 |---|---|---|---|---|---|---|---|---|
 
-- (Technology) Record R&D trends in the table below. Use TRL (the nine-level technology maturity scale) values only as stated by the source. If the source gives none, mark an estimate with its basis and the TRL definition table used, or write "unknown" when the basis is weak. TRL definition tables differ across fields and agencies, so comparisons without a stated basis mislead
+- (Technology) Record R&D trends in the table below. Record R&D content, technology level, and technology convergence under technology, and place R&D spending by the money units in the module sorting rule. Use TRL (the nine-level technology maturity scale) values only as stated by the source. If the source gives none, mark an estimate with its basis and the TRL definition table used, or write "unknown" when the basis is weak. TRL definition tables differ across fields and agencies, so comparisons without a stated basis mislead
 - (Papers and patents) When data is available, add time series tables of annual paper publications, patent filings, and major applicants
 
 | Year | Country | Performing organization | R&D content | TRL | TRL basis and definition used |
 |---|---|---|---|---|---|
 
-- (Economy, society, natural environment, law) Record only indicators and events directly related to the target. Present indicators as time series of three to five years or more with CAGR
+- (Economy, society, natural environment, law) Record only indicators and events that affect the target. Present indicators as time series of three to five years or more with CAGR. Under economy, record indicators whose measured scope is the whole national or world economy, and record the size and growth of the target market in micro environment
 
 ## Micro Environment Module
 
@@ -293,8 +296,9 @@ Record the industry and market in which the subject participates or competes. Sh
 
 ### Investment Trends
 
-- Research public R&D budget execution, venture investment (deal counts and amounts by stage), and M&A
-- Investment plans stated in policy documents go to the macro environment. Actual execution and investment results go here
+- Research public program budgets (both R&D and non-R&D programs), corporate R&D spending and facility investment, venture investment (deal counts and amounts by stage), M&A, and trading trends in stocks of firms related to the target
+- Place amounts by the money units in the module sorting rule. Target investment amounts stated in policy documents go to the macro environment. Plans, budgets, execution, and investment results of individual programs go here
+- Carry over the R&D or non-R&D type of a public program as the source states it, and write "unknown" when the source does not state it
 - Follow the stage 2 table for access channels and mark items not obtained as "not obtained"
 
 ### Five Forces Competitive Structure

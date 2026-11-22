@@ -17,17 +17,17 @@ If the user names a framework, follow it. If not, choose only the categories tha
 
 R&D topics often use a free composition centered on policy (including regulations and laws) and technology. These frameworks grew in practice from Aguilar (1967), who divided the environment into economic, technical, political, and social sectors in his study of how executives scan their environment. They are not theories with a single correct composition, so choose categories by fit with the topic.
 
-Macro frameworks do not cover markets, industries, or competitors. The micro environment module handles those separately.
+Write markets, industries, competitors, and individual programs and investment deals in the micro environment module. Place facts that involve money by the classification of funding and investment in SKILL.md.
 
 ## Items to collect by category
 
 | Category | Items to collect | Main source types |
 |---|---|---|
-| Policy | National strategies, industrial policy, science and technology policy, budget allocation direction, policies of major foreign countries | Releases from ministries and local governments, statutory plans, reports from international organizations |
-| Regulation | Enactment and amendment of laws, permits, standards, certification, deregulation and new regulation | Legal information systems, legislative records, standards bodies |
-| Economy | Growth, prices, interest rates, exchange rates, trade, supply chains | Central banks, statistics agencies, international statistics |
+| Policy | Political conditions at home and abroad, national strategies, statutory plans, non-statutory plans, industrial policy, science and technology policy, budget allocation direction, policies of major foreign countries | Releases from ministries and local governments, statutory plans, reports from international organizations |
+| Regulation | Enactment and amendment of laws, permits, standards, certification, tax incentives, deregulation and new regulation | Legal information systems, legislative records, standards bodies |
+| Economy | Growth, prices, interest rates, exchange rates, trade, supply chains, gross investment, national gross R&D expenditure, financial market indicators | Central banks, statistics agencies, international statistics |
 | Society | Demographics, employment, consumer behavior, social needs | National statistics, official surveys |
-| Technology | Trends in papers, patents, standardization, demonstration, and commercialization | Academic databases, patent databases, standards bodies, research institute reports |
+| Technology | R&D trends, technology level, technology convergence, standardization, demonstration, and commercialization | Academic databases, patent databases, standards bodies, research institute reports, technology level assessment reports |
 | Environment | Climate, energy, resources, environmental regulation | Government and international organization reports |
 
 ## Organizing policy trends
@@ -42,13 +42,13 @@ Build a table for each combination, only where material exists. The default look
 | Year | Country or agency | Policy or regulation name | Background | Content | Measures | Expected effects |
 |---|---|---|---|---|---|---|
 
-The expected effects column carries the effects stated in the policy document itself. Keep the analyst's evaluation out of it. Use the official full names of policies and agencies.
+The expected effects column carries the effects stated in the policy document itself. Keep the analyst's evaluation out of it. Use the official full names of policies and agencies. Record target investment amounts stated in a policy document in the content column. Record budgets of individual programs listed in the same document under public investment in references/micro.md.
 
 If the subject is a region or a local government, move that region's own policies to internal status. This follows the controllability criterion in SKILL.md.
 
 ## Organizing technology trends
 
-Check technology trends by type of evidence.
+Record the content of R&D, technology level, and technology convergence in the technology category. Place amounts spent on R&D by the classification of funding and investment in SKILL.md. Check technology trends by type of evidence. Confirm technology convergence through papers, patents, and products that combine different technology fields.
 
 | Evidence type | Items to check |
 |---|---|
@@ -78,6 +78,8 @@ Record a TRL only when the source states the level or the source's description c
 
 TRL started at NASA. The definitions above are the general definitions in European Commission Horizon 2020 General Annexes G (2017). If the user specifies field-specific TRL definitions (for example, those set by the responsible agency), use those.
 
+Record technology level assessments, such as the level relative to leading countries or the technology gap in years, with the assessing body, assessment year, and method.
+
 ## Order of writing
 
 Within each category, write overseas trends first and then national trends. If the geography includes a region, put regional trends last. When a relationship between overseas and domestic trends (influence, response, difference) is confirmed as fact, record it too. Requests limited to domestic trends skip this order.
@@ -87,13 +89,15 @@ Within each category, write overseas trends first and then national trends. If t
 - Describe objective conditions and trends only. Leave out to-be states, solutions, and the analyst's evaluation of outlooks
 - Outlooks published by a source can be recorded as facts, together with who made the outlook, the publication year, and the outlook period
 - Choose only changes that affect the topic
+- Record indicators whose measured scope is the whole national or world economy in the economy category. Record the size and growth of the topic's market in the market category of the micro environment
 - Do not record the same fact under several categories. If a fact spans two categories, place it in the one more directly tied to the topic
 - Record each fact in the fact register with a MAC- ID
 
 ## Check
 
 - Categories follow the user's framework or fit with the topic
-- No market, industry, or competitor content has slipped into the macro environment
+- No market, industry, competitor, individual program, or investment deal content has slipped into the macro environment
+- Facts that involve money follow the classification of funding and investment in SKILL.md
 - The expected effects in the policy table repeat what the policy documents state
 - No TRL is estimated without basis
 - Writing moves from overseas to national to regional

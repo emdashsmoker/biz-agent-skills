@@ -39,9 +39,25 @@ An environment analysis does not always need the full process. Every module can 
 | Data channel | Web search, user-provided files, or connected systems (MCP, API, database) |
 | Verification level | The strictness of source checking, from level 1 to level 3, defined in references/sources.md |
 
-One criterion separates macro, micro, and internal: whether the subject can control or interact with the item. The same item moves between categories when the subject changes. Regional industrial policy is part of the macro environment when a firm in the region is the subject, and part of internal status when that region or its local government is the subject. A policy direction document for government R&D programs belongs to the macro environment. The funding flow of individual programs and projects that the subject applies for or competes for belongs to the investment category of the micro environment. Programs the subject has already won and is running are resources it controls, so they belong to internal status.
+One criterion separates macro, micro, and internal: whether the subject can control or interact with the item. The same item moves between categories when the subject changes. Regional industrial policy is part of the macro environment when a firm in the region is the subject, and part of internal status when that region or its local government is the subject. Place each fact that involves money or funding by the classification of funding and investment below.
 
 The industry value chain and the organizational value chain work at different units. The unit of the industry value chain is a market, and the unit of the organizational value chain is an activity inside one organization. Always write both terms with their qualifier and never shorten either to "value chain". Record the stages of the industry value chain where the subject does business as the business scope in its organization profile, and cover the market structure of those stages in the micro environment.
+
+### Classifying funding and investment
+
+Place each fact that involves money or funding by the unit the amount belongs to. The labels that separate R&D from non-R&D, policy from program, and public from private differ by country, ministry, law, and period. So decide the unit by the signals below in place of the label the source uses. The same keyword can sit in different places when the unit differs. For example, an ESG disclosure duty is a regulation in the macro environment, and the funding raised by startups in the ESG field is investment in the micro environment.
+
+| Unit | Signal | Examples | Placement |
+|---|---|---|---|
+| Allocation unit | Has a budget or committed amount and a defined performer or investee | Public programs and projects, commitments to policy funds, startup fundraising, corporate R&D spending and facility investment | Units the subject already holds go to internal status, other units to investment in the micro environment |
+| Aggregate | A statistic that sums or indexes many allocation units or transactions | Market size, industry R&D spending, venture investment by field, trading trends in stocks of topic-related firms, national gross R&D expenditure, stock indices | Internal status when the measured scope is the subject itself, micro environment when it is the topic's market or industry, economy in the macro environment when it is the whole national or world economy |
+| Policy | A strategy or plan that sets direction, targets, and action items | National strategies, statutory plans, non-statutory plans, government announcements of investment targets | Policy in the macro environment. Record target investment amounts stated in the document as part of the policy content |
+| Regulation | A rule applied on the same terms to every party that meets its requirements | Investment tax credits, permits, disclosure duties | Regulation in the macro environment |
+
+- (Roles of government) The same government sits in different places by role. A government that sets direction and rules belongs to the macro environment. A government that allocates funding belongs to investment in the micro environment. A government that buys (public procurement) belongs to customers and demand in the micro environment. Kotler and Armstrong (Principles of Marketing) also classify financial publics, which affect a firm's ability to obtain funds, and government markets, where government is the buyer, as actors of the microenvironment
+- (Policy and program) A policy sets targets and direction. A program is the unit that allocates budget to those targets. The OECD Spending Review Survey glossary (2023) also defines a programme as a grouping of government activities in relation to a specific government objective. Decide the unit by the signals whatever word the document's name carries: strategy, plan, program, project, or initiative. When one plan document holds both a direction and budgets of individual programs, record the direction under policy in the macro environment and the program budgets under investment in the micro environment
+- (R&D spending) R&D spending is funding put into R&D activity. The OECD Frascati Manual (2015) measures R&D activity by R&D expenditure and R&D personnel. The UN 2008 SNA records R&D expenditure as gross fixed capital formation. Place R&D spending by the units in the table above, and record the content and technology level of R&D in the technology category
+- (Funding type) The split between R&D and non-R&D programs does not change placement. When a table needs a funding type, carry over the type the source states, and record it as unconfirmed when the source does not state one
 
 ## Modules
 
@@ -68,7 +84,7 @@ Place the modules you run in the order of the table. Moving from broad external 
 | Market size and outlook | Market category of the micro environment |
 | Competitive structure, Five Forces | Competition category of the micro environment, procedure in references/five-forces.md |
 | Key companies | Key players within the competition category of the micro environment |
-| R&D investment trends, national R&D project analysis, venture investment trends | Investment category of the micro environment. For a region subject, projects and corporate R&D spending within the region go to internal status |
+| Investment trends, government program trends, national R&D project analysis, venture investment trends | Investment category of the micro environment. For a region subject, projects and corporate R&D spending within the region go to internal status |
 | Industry value chain structure | Industry value chain category of the micro environment |
 | Internal capability assessment, VRIO, SPROC | Internal status for an organization subject |
 | Organizational value chain, analysis of internal activities | Internal status for an organization subject, organizational value chain framework |
@@ -214,6 +230,7 @@ If the environment can save files, keep the scope proposal, the fact register, m
 - Every figure was computed or rechecked in code
 - Module sections contain no interpretation, to-be states, or solutions
 - The macro, micro, and internal classification follows the controllability criterion
+- Facts that involve money are placed by the classification of funding and investment
 - Each module builds on facts from earlier modules, with no isolated items
 - Every implication cites supporting fact IDs and every fact feeds an implication
 - The output contains no SWOT labels, strategies, initiatives, or support needs
