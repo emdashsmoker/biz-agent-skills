@@ -170,7 +170,7 @@ python scripts/plan.py xlsx plan.json -o wbs.xlsx
 python scripts/md2pdf.py overview.md -o overview.pdf
 ```
 
-- `check`, `md`, `csv`에는 추가 패키지가 필요 없다. `xlsx`에는 openpyxl, PDF에는 fpdf2와 markdown-it-py, 문서 변환에는 markitdown이 필요하다. HWPX 변환에는 python-hwpx를 선택적으로 쓴다.
+- `check`, `md`, `csv`에는 추가 패키지가 필요 없다. `xlsx`에는 openpyxl, PDF에는 fpdf2와 markdown-it-py, 문서 변환에는 markitdown이 필요하다. HWPX 변환에는 python-hwpx 6.12.0을 선택적으로 쓴다(`pip install "python-hwpx==6.12.0"`). 7.0 이상에서는 내장 XML 추출로 넘어간다.
 - XLSX는 WBS 시트 1개로 구성하고, M/M을 켜면 투입인력 시트 1개를 더한다. 글자색은 검정, 테두리는 얇은 실선이고 머리글에만 회색 바탕을 쓴다. 간트 머리글은 가로로 쓴다. 위 줄은 월마다 병합한 흰 바탕 칸에 "2026년 3월"처럼 월을 적고, 아래 줄에는 각 주 월요일의 날짜를 적는다. 간트 칸은 수식이라 날짜를 고치면 표시도 따라 바뀐다.
 - CSV는 한글이 깨지지 않도록 BOM이 붙은 UTF-8로 저장한다. 다른 PM 도구로 옮길 때 쓴다.
 - PDF 스크립트는 설치된 한글 글꼴을 자동으로 찾는다. 글꼴을 찾지 못하면 `--font 글꼴경로`를 지정한다.

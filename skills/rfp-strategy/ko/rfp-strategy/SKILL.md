@@ -51,7 +51,7 @@ RFP를 읽고 입찰 여부와 제안 방향을 정하는 데 필요한 정보�
 RFP와 첨부 문서는 scripts/parse.py로 마크다운으로 바꾼 뒤 읽는다. 의존 패키지 설치를 가장 먼저 수행한다.
 
 ```bash
-pip install "markitdown[all]" python-hwpx pdfplumber olefile beautifulsoup4 lxml pyhwp six
+pip install "markitdown[all]" "python-hwpx==6.12.0" pdfplumber olefile beautifulsoup4 lxml pyhwp six
 python scripts/parse.py <입력 파일> <출력 파일.md>
 python scripts/parse.py <입력 파일> <출력 폴더> --chunk --chunk-size 2000
 ```
@@ -64,6 +64,7 @@ python scripts/parse.py <입력 파일> <출력 폴더> --chunk --chunk-size 200
 | DOCX, PPTX, XLSX, HTML, CSV, JSON, XML, TXT, EPUB, ZIP, 이미지, 오디오 | markitdown | 없음 |
 
 - PDF는 본문과 표를 따로 추출한다. 표가 있으면 `<파일명>_tables.md`가 함께 생긴다. 배점표와 제출 서류 목록은 대개 표에 있으므로 두 파일을 모두 읽는다.
+- python-hwpx는 6.12.0으로 고정한다. 7.0은 마크다운 변환 함수(export_markdown)를 별도 패키지로 옮겼다. 7.0 이상에서는 표가 마크다운 표로 나오지 않는 텍스트 추출 경로가 쓰인다.
 - pyhwp는 HWP의 표를 `<표>`로 대체한다. 표 내용이 필요하면 사용자에게 같은 문서의 HWPX나 PDF 파일을 요청한다.
 - pyhwp 설치나 실행이 실패하면 스크립트가 olefile 경로로 자동 전환한다. 이 경로는 표 내용까지 읽지만 일부 글자가 깨지거나 한자가 빠질 수 있다.
 - 추출 글자 수가 0이면 스캔 이미지 PDF일 가능성이 높다. 사용자에게 OCR이 필요하다고 알린다.
