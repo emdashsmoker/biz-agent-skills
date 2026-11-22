@@ -227,7 +227,7 @@ Apply this when revising existing output. Add a short diagnosis to the revised r
 Put only the finished result in the output. The process that produced the result is not needed for the reader's judgment.
 
 - Keep everything that comes from the internal work of this skill out of the output. The table below gives typical cases. The same rule applies to internal work content that the table does not list.
-- Do not use in the output the name of this skill, the fact that it was applied, or any term this skill defines or uses (ECRS, element judgment, department-store listing, message overload, and so on). A term the user used first in the request may be used.
+- Do not use in the output the name of this skill, the fact that it was applied, or the terms, internal frameworks, and the like that this skill defines (ECRS, element judgment, department-store listing, message overload). A term the user used first in the request may be used.
 - Do not use meta-commentary in the output. Meta-commentary is wording that describes the text itself, the writing process, or the writer's judgment and way of working. Sentences such as "To sum up the key points", "Unnecessary steps were left out", "This was boiled down to one message", "This is kept concise", and so on fall under it. Such wording does not serve the reader's purpose, so it runs against this skill's way of working, which keeps only the elements that are needed.
 
 | Internal work | Cases of content kept out of the output |
@@ -309,7 +309,7 @@ In the slide before revision, the title is a topic label. Its seven parallel ite
 - Slow adoption of new technology
 ```
 
-After revision, the slide is split by message. Below is the first of the split slides.
+After revision, the slide is split into three slides by message. Below is the first of them.
 
 ```
 (Headline) Low-priced imports and crowded competition cut profitability in the domestic market
@@ -320,8 +320,7 @@ After revision, the slide is split by message. Below is the first of the split s
 
 | Order | What was applied |
 |-------|------------------|
-| Eliminate | Consumer awareness, distribution structure, and slow technology adoption do not support falling profitability, so they were deleted |
-| Rearrange | The judgment sentence moved up to the headline. The regulatory sandbox program moved to the next slide, which covers opportunity factors |
+| Rearrange | The judgment sentence moved up to the headline. The regulatory sandbox program moved to the second slide, which covers opportunity factors. Consumer awareness, distribution structure, and slow technology adoption moved to the third slide, which covers industry structure |
 
 ### Paragraph Example
 
@@ -394,7 +393,7 @@ The chart after revision is below.
 - Does every element meet the checks that apply to it?
 - Did you apply eliminate, combine, rearrange, and simplify to every element in this order?
 - Does the output hold only the finished result?
-- Is the output free of internal work content, the name and terms of this skill, and meta-commentary?
+- Is the output free of internal work content, the name and defined terms of this skill, and meta-commentary?
 
 ### Work Design Checks
 
