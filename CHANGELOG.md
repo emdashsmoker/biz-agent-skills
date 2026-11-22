@@ -167,11 +167,13 @@ Changelog rules
 - Added Guide mode that explains how to use a specific skill and writes a copy-ready request prompt (#93)
 - Added deliverables to the items of the Guide mode usage table (#95)
 - Added the skill's limits and the harness features it needs to the items of the Guide mode usage table (#96)
+- Added a table to the Guide mode answer that explains the skill's own terms and proper nouns for first-time users (#97)
 
 * 본문 작성 규칙에 지시의 긍정형 기술 규칙 추가 (목표 상태를 직접 나타내는 긍정형 지시의 명료성을 근거로 명시) (#86)
 * 특정 스킬의 사용 방법 설명과 복사용 요청 프롬프트 작성을 담당하는 안내 모드 추가 (#93)
 * 안내 모드의 사용 안내 표 항목에 산출물 추가 (#95)
 * 안내 모드의 사용 안내 표 항목에 한계 및 필요한 하네스 기능 추가 (#96)
+* 안내 모드의 답변에 처음 접하는 사용자를 위한 스킬 고유 용어 및 고유명사 풀이 표 추가 (#97)
 
 ## 2026-11-21
 
