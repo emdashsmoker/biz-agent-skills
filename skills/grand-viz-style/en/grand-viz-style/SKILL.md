@@ -176,6 +176,8 @@ Set whether to use background treatment, and how strongly, by the message and pu
 
 ## Color
 
+The color criteria in this section and the WCAG contrast criteria are not a right answer for every situation. During verification, adjust any color that looks jarring or unnatural to the audience and practitioners toward what they find pleasant and natural.
+
 ### Role assignment
 
 Use chromatic colors only in the roles of primary, secondary and accent. Make every other color from lightness steps of these colors and from neutrals. With fixed roles, the audience can tell what an element is from its color alone.
@@ -228,6 +230,7 @@ Set the color of each role in this order.
 - Compute contrast ratios by running code against the colors that touch.
 - Pick vivid colors first and meet the criteria through text color assignment. Darkening color fields to pass the criteria muddies the secondary and accent colors and makes the whole slide sink.
 - For each color field, assign white text or dark text (the darkest primary step), whichever gives higher contrast. Light fields such as sky blue, teal, orange, yellow and similar get dark text.
+- When neither white nor dark text reaches 4.5:1 on a color field that carries normal text, use a lightness step of that color for the field. Fix the hue and saturation and find, in code, the passing lightness closest to the original.
 - For the default accent, choose the hue closest to orange among the vermilions that stay vivid at the lightness that passes 4.5:1 with white text. Fix the hue and saturation and find the lightest value that passes, in code.
 - Apply the same criteria when the accent or secondary color is used as a text color. A color that lacks contrast with its ground becomes the field behind the text, and the text stays white or dark.
 - For text on gradients, light, photos and similar grounds, compute against the lowest-contrast point in the area under the text. For semi-transparent text, compute with the color that results from blending with the ground.
