@@ -59,7 +59,7 @@ When a decision is hard, check it this way.
 
 Set the direction in this order before building. For work that produces files, record the design direction in a short document. For work that ends in one response, write it in 3-5 lines before the build. Writing the direction first keeps elements from piling up on the fly.
 
-1. (Read the setting) Find out the presenting organization, audience, purpose, aspect ratio, venue, distribution and similar facts. Venues split into bright meeting rooms, dimmed event halls and the like. Distribution splits into screen-only, screen plus printed handouts and the like. Ask only about items the request leaves out and you cannot infer, all at once. Use 16:9 when no aspect ratio is given.
+1. (Read the setting) Find out the presenting organization, audience, purpose, aspect ratio, venue, distribution and similar facts. Venues split into bright meeting rooms, dimmed event halls and the like. Distribution splits into screen-only, screen plus printed handouts and the like. Ask only about items the request leaves out and you cannot infer, all at once. Assume screening in a large presentation hall when the user does not state the intended use. Use 16:9 when no aspect ratio is given.
 2. (Fix the message) Set one judgment statement that the slide delivers. This statement becomes the head message.
 3. (Identify the relation) Identify the relation among the supporting content and pick the main structure. The criteria are in the section on relations.
 4. (Decide the background) Set the background lightness and the level of background treatment. The criteria are in the background section.
