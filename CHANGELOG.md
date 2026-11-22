@@ -165,9 +165,11 @@ Changelog rules
 ### skill-forge
 - Added a body-writing rule that states instructions in the positive form, with the reason that a positive instruction states the target state directly (#86)
 - Added Guide mode that explains how to use a specific skill and writes a copy-ready request prompt (#93)
+- Added deliverables to the items of the Guide mode usage table (#95)
 
 * 본문 작성 규칙에 지시의 긍정형 기술 규칙 추가 (목표 상태를 직접 나타내는 긍정형 지시의 명료성을 근거로 명시) (#86)
 * 특정 스킬의 사용 방법 설명과 복사용 요청 프롬프트 작성을 담당하는 안내 모드 추가 (#93)
+* 안내 모드의 사용 안내 표 항목에 산출물 추가 (#95)
 
 ## 2026-11-21
 

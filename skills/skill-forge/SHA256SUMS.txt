@@ -1,2 +1,2 @@
-2b66841f72151758328651a9ebd37c7f2006e31a3e37fe7d1c11bdbe0a7ad6e2  skill-forge-en.skill
-04cb5ccf781c66ff2fe7c6b8ed901f10b8e22b1f6b5e5e751c287e23ba41ad54  skill-forge-ko.skill
+720d9f81c84634223cafdf55d6816bbd5c25803bdbba492150e1a3df1e763dc5  skill-forge-en.skill
+ee848f62ddb2579fb977115e0c799efd4133fc5af08693304155f5c5e86a920d  skill-forge-ko.skill

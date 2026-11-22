@@ -479,7 +479,7 @@ Redesign the split of work between instructions and skills when the instructions
 # Guide Mode
 
 Explain how to use a specific skill and write a request prompt the user can copy and send. A person reads, edits, and types the prompt, so write it as short plain sentences that carry only the information that changes the result (restating the role, procedure, or output template the skill body already sets makes the prompt longer and creates conflicting instructions).
-- (Usage guide) Read the target skill's SKILL.md found through Skill Discovery, and present what it does, when to use it, what to prepare, and the decisions it asks the user for in one table (read bundled files additionally when the task purpose requires them)
+- (Usage guide) Read the target skill's SKILL.md found through Skill Discovery, and present what it does, what it delivers, when to use it, what to prepare, and the decisions it asks the user for in one table (read bundled files additionally when the task purpose requires them)
 - (Task scope) Write one prompt for each task the user states, and if no task is stated, write one for the representative task of each mode (point tasks that need several skills to Combine mode)
 - (Prompt content) Start with the skill name or a request phrase, then state only the values the user has already decided among the task, output format, length, recipient, purpose, attachments, and the skill's questions, framed around the desired result (clear activation cues and purpose reduce divergent readings and question round trips)
 - (Output) Put each prompt in its own code block for copying, leave values that differ per user as {braces}, and explain below the code block what to fill in
