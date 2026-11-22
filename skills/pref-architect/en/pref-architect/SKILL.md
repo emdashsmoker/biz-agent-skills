@@ -2,7 +2,7 @@
 name: pref-architect
 description: "Designs short always-on instructions (claude.ai user preferences, CLAUDE.md, AGENTS.md) plus modular skills loaded only when needed, with an optional off-switch skill, via an interview. For beginners it customizes the bundled modules (writing, coding, staged work, token saving). For users with existing preferences and skills it builds a rule-by-rule integration plan. Use it when the user says \"/pref-architect\", \"set up my preferences\", \"clean up my instructions\", \"write a CLAUDE.md or AGENTS.md\", \"turn my instructions into skills\", \"my preferences are too long\", asks how to split instructions and skills, or wants to rebuild a setup this skill made. Files read at the matching step: references/interview.md, references/router.md (writing and placing instructions), references/integration.md (integration and rebuilding), assets/modules/write-standard.md, assets/modules/code-standard.md, assets/modules/staged-work.md, assets/modules/token-lean.md, assets/modules/module-off.md (module and off-switch sources)."
 metadata:
-  version: "1.0"
+  version: "1.1"
 license: GPL-3.0-or-later with an output exception. Terms in LICENSE and NOTICE.md
 ---
 
