@@ -125,7 +125,7 @@ Work from large units to small units.
 - Do not use sentence-final periods, semicolons, separator symbols (/, |, ·, →, vs), joining hyphens ("short-mid term"), excessive abbreviations, or unnecessary loanwords and Sino-Korean words.
 - Do not hide the referent behind empty nouns such as the bound noun 것 ("thing") or 곳 ("place"), 부분 ("part"), 셈 ("amount to").
 - Do not use negate-then-assert contrasts such as "not A but B" or "not merely A but B". Write B directly.
-- Prefer the positive form when the meaning is the same. "Cloud migration possible once structured data is secured" beats "Data readiness for cloud migration insufficient". A positive sentence states the target state directly, so it is concise and easy to revise and combine sentence by sentence. A negative sentence describes problems case by case, so it grows long and the reader has to infer the target state.
+- Prefer the positive form when the meaning is the same. "Cloud migration possible once structured data is secured" beats "Data readiness for cloud migration insufficient". A positive sentence states the target state directly, so it is clear and easy to revise and combine sentence by sentence. A negative sentence describes problems case by case, so it is complex and the reader has to infer the target state.
 
 ### Structure
 
