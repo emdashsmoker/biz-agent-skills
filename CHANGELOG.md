@@ -112,6 +112,8 @@ Changelog rules
 - Changed the default reader to a general adult reader without background in the field (#89)
 - Changed the unit examples to open lists that name a subheading or paragraph of a text, the headline or a component of a slide and a data item (#89)
 - Added output rules that keep internal work content, the terms of the skill and meta-commentary out of the output (#89)
+- Changed the output rule on skill terms to cover only the terms and internal frameworks the skill defines, so plain words such as message, reader and scope stay usable in the output (#90)
+- Fixed the slide example so that it moves the industry structure items, which its diagnosis calls an independent message, to a third slide (#90)
 
 * 같은 내용의 긍정 표현 서술 규칙 추가 (목표 상태를 직접 나타내는 긍정 문장의 명료성을 근거로 명시) (#86)
 * 웹 페이지, 파일, 붙여넣은 글을 고정 포맷으로 요약하던 요약 모드와 "요약해줘", "브리핑해줘" 등의 발동 문구 삭제 (#89)
@@ -122,6 +124,8 @@ Changelog rules
 * 독자 기본값을 해당 분야의 배경지식이 없는 일반 성인으로 변경 (#89)
 * 단위 예시를 글의 소제목이나 문단, 슬라이드의 헤드라인이나 구성요소, 데이터 항목 등의 열린 목록으로 변경 (#89)
 * 내부 작업 내용, 스킬 용어, 메타적 표현을 산출물에 담지 않는 산출물 규칙 추가 (#89)
+* 산출물에 쓰지 않는 용어의 범위를 스킬이 정의한 고유 용어와 내부 프레임워크로 변경 (메시지, 독자, 범위 등 일반 단어의 산출물 사용 허용) (#90)
+* 독립 메시지로 진단한 산업 구조 항목을 세 번째 슬라이드로 옮기도록 슬라이드 예시 수정 (#90)
 
 ### logical-write
 - Added a reason to the positive phrasing rule: a positive sentence states the target state directly, so it is clear and easy to revise and combine sentence by sentence (#86)
