@@ -88,7 +88,7 @@ assets/modules의 원본 파일은 이름이 SKILL.md가 아니다. 생성할 �
 - 모듈마다 description이 1,024자 이하이고 언제 불러오는지를 적고 있다.
 - 모듈의 설정 절에 인터뷰에서 정하지 않은 빈 값이 남아 있지 않다.
 - 모듈 폴더 안에 SKILL.md가 하나뿐이다.
-- 모듈마다 metadata의 generator-version이 이 스킬 frontmatter의 metadata version과 같다.
+- 모듈마다 metadata의 generator-version이 이 스킬 frontmatter의 metadata version과 같다. 재구성에서 사용자가 버전 값을 직접 정한 모듈은 그 값과 같다.
 - 해제 스킬이 있으면 대상 모듈이 모두 상시 지침의 로드 규칙에 이름이 있고 상시 지침에 그 해제 스킬의 해제 문장이 있다.
 - 기존 자산이 있으면 원문 규칙 수와 이관표의 행 수가 같다. 코드를 실행할 수 있으면 개수를 코드로 센다.
 

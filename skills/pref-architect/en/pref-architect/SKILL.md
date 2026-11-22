@@ -90,7 +90,7 @@ Confirm every item below before delivery. If any item fails, fix it and check ag
 - In every module, the description is 1,024 characters or fewer and says when to load the module.
 - No module's settings section has an empty value that the interview did not decide.
 - Each module folder contains exactly one SKILL.md.
-- In every module, the metadata generator-version equals the metadata version in this skill's frontmatter.
+- In every module, the metadata generator-version equals the metadata version in this skill's frontmatter. In a module whose version value the user set during rebuilding, it equals that value.
 - If there is an off-switch skill, every target module is named in the loading rule of the always-on instructions, and the always-on instructions contain the off-switch sentence for that skill.
 - If there are existing assets, the number of original rules equals the number of rows in the migration table. If code can run, count them with code.
 
