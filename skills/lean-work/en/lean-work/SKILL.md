@@ -174,7 +174,7 @@ Sentences in every mode must pass the necessity and reader relevance checks. Jud
 - When referring to another document, page, section, data, and so on, write the needed content in the sentence itself so the reader does not have to consult it. Do not replace content with codes, numbers, abbreviations, or summary labels, and so on.
 - State uncertainty once. Do not repeat hedges in every sentence.
 - Instead of contrast constructions of the form "not A, but B", state B directly.
-- When the content is the same, state it in the positive form. Write "conversion is possible once structured data is secured" in place of "data readiness is insufficient". A positive sentence states the target state directly, so it is concise. A negative sentence only describes problem cases, so the reader has to infer the target state.
+- When the content is the same, state it in the positive form. Write "conversion is possible once structured data is secured" in place of "data readiness is insufficient". A positive sentence states the target state directly, so it is concise and easy to revise and combine sentence by sentence. A negative sentence describes problems case by case, so it grows long and the reader has to infer the target state.
 - Put only one message in each bullet. The recommended length is about 100 characters for Korean text and about 15 words on average for English text. Do not cram unnecessary information into that length.
 
 ## Summary Format
