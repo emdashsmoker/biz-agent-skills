@@ -16,7 +16,7 @@ Rules that depend on the kind of task stay out of the always-on instructions and
 
 - Attach a short reason to each rule. With a reason, the model judges new situations by the rule's purpose.
 - Do not use all-caps emphasis or heavy wording such as "never" or "no exceptions." Recent models can overreact to strong wording and apply a rule to unrelated tasks.
-- Write what to do rather than what not to do. A positive rule names the action directly, so it stays short and applies flexibly to new situations. A negative rule has to list what is forbidden case by case, so it grows long and adds maintenance burden.
+- Write what to do rather than what not to do. A positive rule states the target state directly, so it is short and applies as written to new situations. A negative rule only lists prohibited cases, so the model has to infer the target state and the rule does not cover unlisted cases.
 - Write each module name exactly as the folder name to be installed, down to every character.
 - State that the module loading rule applies to short questions too. Models tend to skip loading skills when a question is short.
 

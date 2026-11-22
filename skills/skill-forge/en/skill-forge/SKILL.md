@@ -184,7 +184,7 @@ The model decides whether to use a skill from the name and description in the sk
 Every time the skill triggers, the body takes up context alongside the conversation history and other skills. Keep each instruction only if the model would get the task wrong without it.
 - Write work-specific rules, cautions, and tool usage, and leave out general knowledge the model already has
 - Give each rule a short reason so the model judges unfamiliar situations by the rule's intent (reasons are followed more reliably than repeated emphasis)
-- State each instruction in the positive form, as the action to perform (a positive instruction names the action directly, so it stays concise and applies flexibly to unfamiliar situations and other harnesses. A negative instruction has to list what is prohibited case by case, which adds maintenance burden and edge cases)
+- State each instruction in the positive form (a positive instruction states the target state directly, so it is concise and applies as written to unfamiliar situations and other harnesses. A negative instruction only lists prohibited cases, so the model has to infer the target state and the instruction does not cover unlisted cases)
 - For steps that tolerate varied results, give only the purpose and criteria, and for steps where a change in order causes errors, fix the commands and order
 - When several methods work, give one default and an exception path (listing equal options delays judgment and lowers consistency)
 - Write a procedure that works for every request of the same type (an instruction holding only one case's answer cannot be reused for other requests)

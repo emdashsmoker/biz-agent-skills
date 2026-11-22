@@ -63,7 +63,7 @@ The rules below apply regardless of output language.
 - Do not use modifiers, evaluative words, abstract nouns, or connectors whose removal leaves the meaning intact.
 - Do not use tautology or adjectives without grounds.
 - Do not use contrast constructions that put a negation before an affirmation (for example, "not X but Y"). State Y directly.
-- Use positive phrasing for the same content. For example, write "conversion is possible once structured data is secured" instead of "data readiness is lacking." A positive sentence has no negative elements to describe case by case, so it is concise and easy to revise and combine sentence by sentence.
+- Use positive phrasing for the same content. For example, write "conversion is possible once structured data is secured" instead of "data readiness is lacking." A positive sentence states the target state directly, so it is concise. A negative sentence only describes problem cases, so the reader has to infer the target state.
 - Use polite wording that is not aggressive. For example, write "needs strengthening" instead of "capability is severely lacking." Point out clearly wrong content plainly. Too much softening blurs meaning, so soften only as much as needed.
 - Avoid assertive and aggressive words (absolutely, block, only, sole, unconditionally, top priority, and so on).
 - Do not use em dashes (—) or tildes (~). Write ranges with a hyphen (-).
