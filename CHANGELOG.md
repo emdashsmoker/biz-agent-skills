@@ -95,6 +95,8 @@ Changelog rules
 - Changed the background lightness for requests that leave the lighting unknown, including requests under the large-venue default, to follow the slide's purpose and subject, with a light background when these do not settle the choice (#91)
 - Removed large screens and screen-only showing from the conditions that favor a dark background (#91)
 - Added a principle that a slide delivers one message, with content that belongs to another message moved to a separate slide (#92)
+- Changed the photo caption rule from every photo to photos that need a caption (#94)
+- Added a line that leaves images placed for decoration or metaphor without a caption, whether they are photos or generated images (#94)
 
 * 기본 강조색을 적색 계열에서 흰 글자와 4.5:1 대비를 내는 명도에서도 선명한 주황 쪽 주홍 계열로 변경 (#83)
 * 색 결정 순서를 지정되지 않은 역할만 기본값으로 채우는 역할별 적용 방식으로 변경 (#83)
@@ -107,6 +109,8 @@ Changelog rules
 * 조명을 알 수 없는 요청(대형 발표장 기본값 적용 요청 포함)의 배경 명도 판단 기준을 장표의 목적과 주제로 변경 (목적과 주제로 가려지지 않는 경우 밝은 배경 선택) (#91)
 * 짙은 배경이 유리한 조건에서 대형 화면 및 화면 상영 전용 삭제 (#91)
 * 장표 1장에 메시지 1개만 담는 원칙 추가 (다른 메시지에 해당하는 내용의 별도 장표 분리 포함) (#92)
+* 사진 설명 규칙의 적용 대상을 모든 사진에서 설명이 필요한 사진으로 변경 (#94)
+* 장식이나 비유를 위해 넣은 이미지를 설명 없이 두는 규칙 추가 (사진과 생성 이미지 모두 적용) (#94)
 
 ### lean-work
 - Added a sentence rule that states the same content in the positive form, with the reason that a positive sentence states the target state directly (#86)
