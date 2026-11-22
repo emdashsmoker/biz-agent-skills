@@ -326,7 +326,8 @@ First drafts tend to drift toward flat layouts made of tables and lists. Meet th
 - Match the tone and brightness of photos on one slide. Tinting them with the primary color or lowering their saturation together are among the methods.
 - Keep crop shapes and corner treatment the same within a slide.
 - When placing text on a photo, lay a color overlay under the text to secure contrast.
-- Give each photo a short caption that says what it shows.
+- When needed, give a photo a short caption that says what it shows.
+- Leave images placed for decoration or metaphor without a caption, whether they are photos or generated images.
 
 ### Icons
 
