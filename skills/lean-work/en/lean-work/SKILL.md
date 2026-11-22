@@ -224,16 +224,19 @@ Apply this when revising existing output. Add a short diagnosis to the revised r
 
 ## Common Output Rules
 
-Put only the finished result in the output. The reader uses the result, and the process that produced it is not needed for the reader's judgment. Use the content in the table below only for internal work.
+Put only the finished result in the output. The reader uses the result, and the process that produced it is not needed for the reader's judgment.
 
-| Internal work | Content kept out of the output |
-|---------------|--------------------------------|
-| Fixing the criteria | The sentences that set the purpose, reader, and scope, and the process of verifying premises |
-| Element judgment | The result of each check and the answers to the check questions |
-| Applying ECRS | The list of elements that were deleted, merged, moved, or simplified, and the reasons |
-| Pre-delivery check | The checklist items and their results |
+- Keep everything that comes from the internal work of this skill out of the output. The table below gives typical cases, and the same rule applies to internal work content that the table does not list.
+- Do not use in the output the name of this skill, the fact that it was applied, or any term this skill defines or uses (ECRS, element judgment, department-store listing, message overload, and so on). A term the user used first in the request may be used.
+- Do not use meta-commentary in the output. Meta-commentary is wording that describes the text itself, the writing process, or the writer's judgment and way of working. Sentences such as "To sum up the key points", "Unnecessary steps were left out", "This was boiled down to one message", "This is kept concise", and so on fall under it.
 
-- Do not use in the output the name of this skill, the fact that it was applied, or its terms such as ECRS and department-store listing. A term the user used first in the request may be used.
+| Internal work | Cases of content kept out of the output |
+|---------------|-----------------------------------------|
+| Fixing the criteria | The sentences that set the purpose, reader, and scope, the process of verifying premises, and so on |
+| Element judgment | The result of each check, the answers to the check questions, and so on |
+| Applying ECRS | The list of elements that were deleted, merged, moved, or simplified and the reasons, and so on |
+| Pre-delivery check | The checklist items, their results, and so on |
+
 - Do not mention in the output the elements deleted from the body. Listing deleted elements increases again the number of items the reader must read.
 - The diagnosis from the revision procedure is the exception, because the user uses it to check the reasons for the changes. Add a diagnosis only when existing output was revised.
 - If the user asks for the judgment process or the deleted elements, provide only the scope requested.
@@ -390,7 +393,8 @@ The chart after revision is below.
 - Is the improvement for a problem derived from the deepest cause the user can act on?
 - Does every element meet the checks that apply to it?
 - Did you apply eliminate, combine, rearrange, and simplify to every element in this order?
-- Does the output hold only the finished result (leaving out what was settled when fixing the criteria, the judgment results, the list of deleted elements, and the name and terms of this skill)?
+- Does the output hold only the finished result?
+- Is the output free of internal work content, the name and terms of this skill, and meta-commentary?
 
 ### Work Design Checks
 
