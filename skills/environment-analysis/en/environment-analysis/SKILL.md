@@ -39,9 +39,30 @@ An environment analysis does not always need the full process. Every module can 
 | Data channel | Web search, user-provided files, or connected systems (MCP, API, database) |
 | Verification level | The strictness of source checking, from level 1 to level 3, defined in references/sources.md |
 
-One criterion separates macro, micro, and internal: whether the subject can control or interact with the item. The same item moves between categories when the subject changes. Regional industrial policy is part of the macro environment when a firm in the region is the subject, and part of internal status when that region or its local government is the subject. A policy direction document for government R&D programs belongs to the macro environment. The funding flow of individual programs and projects that the subject applies for or competes for belongs to the investment category of the micro environment. Programs the subject has already won and is running are resources it controls, so they belong to internal status.
+One criterion separates macro, micro, and internal: whether the subject can control or interact with the item. The same item moves between categories when the subject changes. Regional industrial policy is part of the macro environment when a firm in the region is the subject, and part of internal status when that region or its local government is the subject. Programs the subject has already won and is running are resources it controls, so they belong to internal status.
 
 The industry value chain and the organizational value chain work at different units. The unit of the industry value chain is a market, and the unit of the organizational value chain is an activity inside one organization. Always write both terms with their qualifier and never shorten either to "value chain". Record the stages of the industry value chain where the subject does business as the business scope in its organization profile, and cover the market structure of those stages in the micro environment.
+
+### Separating policy from investment
+
+Policy and investment often appear in the same document, so separate them by what each fact records. Policy is the goals, directions, and rules a government sets. The subject is on the receiving end of their effects, so policy belongs to the macro environment. Investment is money that moved from a funder to a recipient. The subject and its competitors apply for that money, raise it, and compete for it, so investment belongs to the micro environment.
+
+Classify by facts the source confirms, such as whether a budget is allocated, who provided the money, and who received it. Document titles, responsible agencies, governing laws, and topic keywords change by country and over time, so use them as reference information only.
+
+Place a fact that contains an amount by what the amount records.
+
+| What the amount records | How to recognize it | Placement |
+|---|---|---|
+| A declared investment target | Target amounts and total scale stated in strategies and plans, before program budgets and recipients are set | Policy in the macro environment, recorded as content of that policy |
+| An economy-wide aggregate | Indicators such as growth, prices, interest rates, and exchange rates that aggregate a whole national or world economy | Economy in the macro environment |
+| Transactions in the topic's market | Revenue, output, and sales of the topic's industry, and their growth rates | Market in the micro environment |
+| Money that moved into the topic's field | Budgets, spending, and funds raised with an identified funder and recipient. Includes the total amounts recorded alongside to compute the share of the topic's field | Investment in the micro environment |
+
+- (Policy and programs) Strategies, plans, and laws are policy. A plan stays policy even when it states an investment amount. A government program with an allocated budget and a defined performer or target group is public investment. The same criterion applies to R&D programs and to non-R&D programs such as facility building, business support, and workforce development
+- (R&D inputs and results) Money spent on R&D goes to investment. Results of R&D such as papers, patents, and technology levels go to technology in the macro environment
+- (Topic keywords and categories) The kind of fact decides the category. Funds raised by firms in environmental or social fields and money flowing into the shares of firms in the topic's field are movements of money between parties, so they go to investment
+
+This separation corresponds to the policy instrument taxonomy of the EC-OECD STIP Survey, which separates national strategies and plans from financial support instruments such as grants, loans, and equity financing.
 
 ## Modules
 
@@ -68,7 +89,7 @@ Place the modules you run in the order of the table. Moving from broad external 
 | Market size and outlook | Market category of the micro environment |
 | Competitive structure, Five Forces | Competition category of the micro environment, procedure in references/five-forces.md |
 | Key companies | Key players within the competition category of the micro environment |
-| R&D investment trends, national R&D project analysis, venture investment trends | Investment category of the micro environment. For a region subject, projects and corporate R&D spending within the region go to internal status |
+| Investment trends, government support programs, national R&D project analysis, venture investment trends | Investment category of the micro environment. For a region subject, projects and corporate R&D spending within the region go to internal status |
 | Industry value chain structure | Industry value chain category of the micro environment |
 | Internal capability assessment, VRIO, SPROC | Internal status for an organization subject |
 | Organizational value chain, analysis of internal activities | Internal status for an organization subject, organizational value chain framework |
@@ -214,6 +235,7 @@ If the environment can save files, keep the scope proposal, the fact register, m
 - Every figure was computed or rechecked in code
 - Module sections contain no interpretation, to-be states, or solutions
 - The macro, micro, and internal classification follows the controllability criterion
+- Facts that contain amounts sit in policy, economy, market, or investment as the section on separating policy from investment directs
 - Each module builds on facts from earlier modules, with no isolated items
 - Every implication cites supporting fact IDs and every fact feeds an implication
 - The output contains no SWOT labels, strategies, initiatives, or support needs
