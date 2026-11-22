@@ -10,9 +10,9 @@ If the user names a framework, follow it. If not, choose only the categories tha
 
 | Framework | Categories and order |
 |---|---|
-| PEST | Political, economic, social, technological |
-| STEEP | Social, technological, economic, environmental, political |
-| PESTEL | Political, economic, social, technological, environmental, legal |
+| PEST | Policy (political), economic, social, technological |
+| STEEP | Social, technological, economic, environmental, policy (political) |
+| PESTEL | Policy (political), economic, social, technological, environmental, legal |
 | Free composition | The categories among policy, regulation, economy, society, technology, and environment that the topic needs. Order follows what the report emphasizes |
 
 R&D topics often use a free composition centered on policy, regulation, and technology. These frameworks grew in practice from Aguilar (1967), who divided the environment into economic, technical, political, and social sectors in his study of how executives scan their environment. They are not theories with a single correct composition, so choose categories by fit with the topic.

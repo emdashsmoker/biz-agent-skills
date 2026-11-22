@@ -250,7 +250,7 @@ How to respond: approve, correct, replace (search for an alternative source), re
 Record external changes the subject cannot alter, with a focus on facts.
 
 - (Item selection) Use the framework the user names. Without one, pick only the items that affect the target
-- (Framework contents) PEST covers political, economic, social, and technological factors. PESTEL adds the natural environment and law to PEST, and law corresponds to the regulation item. STEEP covers social, technological, economic, environmental, and political factors in that order
+- (Framework contents) PEST covers policy (political), economic, social, and technological factors. PESTEL adds the natural environment and law to PEST, and law corresponds to the regulation item. STEEP covers social, technological, economic, environmental, and policy (political) factors in that order
 - (Item order) Set it by purpose and emphasis. For R&D and industry analysis, policy, regulation, and technology are often central, so review those three first
 - (Overseas then domestic) Within each item, write overseas trends first and domestic trends next, showing the influence, response, or gap between them. If regional policy affects the target, write it after national policy even when the region is not the subject
 - (Research period) Prefer data from the research period set in stage 1
