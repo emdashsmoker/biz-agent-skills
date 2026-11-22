@@ -13,12 +13,13 @@ license: GPL-3.0-or-later with an output exception. Terms in LICENSE and NOTICE.
 변환 전에 한 번 설치한다.
 
 ```bash
-python -m pip install "markitdown[pdf,docx,pptx,xlsx,xls,outlook,audio-transcription]" pdfplumber python-hwpx olefile
+python -m pip install "markitdown[pdf,docx,pptx,xlsx,xls,outlook,audio-transcription]" pdfplumber "python-hwpx==6.12.0" olefile
 python -m pip install --use-pep517 pyhwp
 ```
 
 - 시스템 파이썬이 패키지 설치를 막으면 가상환경에 설치하거나 명령 끝에 `--break-system-packages`를 붙인다.
 - pyhwp는 소스 형태로만 배포된다. `--use-pep517`을 붙이면 일부 리눅스 배포판의 setuptools에서 생기는 빌드 오류를 피할 수 있다.
+- python-hwpx는 6.12.0으로 고정한다. 7.0은 export_markdown 함수를 별도 패키지로 옮겼다. 7.0 이상에서는 표가 마크다운 표로 나오지 않는 TextExtractor 경로가 쓰인다.
 - mp3, m4a, mp4 오디오를 변환하려면 ffmpeg가 필요하다. 이미지 메타데이터를 읽으려면 exiftool이 필요하다. 두 프로그램이 없어도 다른 포맷은 정상적으로 변환된다.
 
 ## 실행

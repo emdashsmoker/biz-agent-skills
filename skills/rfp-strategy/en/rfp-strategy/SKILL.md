@@ -53,7 +53,7 @@ If the request shows the mode, go straight to it. "Summarize this RFP" and "pull
 Convert the RFP and attachments to Markdown with scripts/parse.py before reading. Install the dependencies first.
 
 ```bash
-pip install "markitdown[all]" python-hwpx pdfplumber olefile beautifulsoup4 lxml pyhwp six
+pip install "markitdown[all]" "python-hwpx==6.12.0" pdfplumber olefile beautifulsoup4 lxml pyhwp six
 python scripts/parse.py <input file> <output file.md>
 python scripts/parse.py <input file> <output folder> --chunk --chunk-size 2000
 ```
@@ -66,6 +66,7 @@ python scripts/parse.py <input file> <output folder> --chunk --chunk-size 2000
 | DOCX, PPTX, XLSX, HTML, CSV, JSON, XML, TXT, EPUB, ZIP, images, audio | markitdown | None |
 
 - PDF body text and tables are extracted separately. If tables exist, `<file name>_tables.md` is created as well. Scoring tables and submission lists usually sit in tables, so read both files.
+- python-hwpx is pinned to 6.12.0. Version 7.0 moved the Markdown export function (export_markdown) to a separate package. With 7.0 or later the text extraction path runs, and tables do not come out as Markdown tables.
 - pyhwp replaces HWP tables with `<표>`. If the table content matters, ask the user for an HWPX or PDF copy of the same document.
 - If pyhwp fails to install or run, the script switches to the olefile path. That path reads table text too, but some characters may break and Chinese characters may drop out.
 - An extracted character count of 0 usually means a scanned image PDF. Tell the user that OCR is needed.

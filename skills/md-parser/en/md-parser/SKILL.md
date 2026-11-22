@@ -15,12 +15,13 @@ This skill converts document files to Markdown. `scripts/parse.py` does the conv
 Install once before converting.
 
 ```bash
-python -m pip install "markitdown[pdf,docx,pptx,xlsx,xls,outlook,audio-transcription]" pdfplumber python-hwpx olefile
+python -m pip install "markitdown[pdf,docx,pptx,xlsx,xls,outlook,audio-transcription]" pdfplumber "python-hwpx==6.12.0" olefile
 python -m pip install --use-pep517 pyhwp
 ```
 
 - If the system Python blocks package installation, install into a virtual environment or add `--break-system-packages` to the command.
 - pyhwp is published as source only. `--use-pep517` avoids a build error that occurs with the setuptools shipped by some Linux distributions.
+- python-hwpx is pinned to 6.12.0. Version 7.0 moved the export_markdown function to a separate package. With 7.0 or later the TextExtractor path runs, and tables do not come out as Markdown tables.
 - mp3, m4a, and mp4 audio need ffmpeg. Image metadata needs exiftool. Other formats convert normally without these two programs.
 
 ## Running

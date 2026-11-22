@@ -10,7 +10,7 @@ Usage:
 
 Formats:
     .md .txt          read as is
-    .hwpx             python-hwpx if installed, otherwise built-in XML text extraction
+    .hwpx             python-hwpx 6.12.0 if installed, otherwise built-in XML text extraction
     .hwp              not converted; save the file as HWPX or PDF first
     .pdf .docx .xlsx .pptx .html .csv   markitdown (pip install "markitdown[pdf,docx,xlsx,pptx]")
 """

@@ -22,8 +22,10 @@ license: GPL-3.0-or-later with an output exception. Terms in LICENSE and NOTICE.
 Python 3.9 이상에서 동작한다. 처음 한 번 아래 패키지를 설치한다.
 
 ```bash
-pip install "markitdown[pdf,docx,pptx,xlsx,xls]" python-hwpx olefile pandas openpyxl matplotlib
+pip install "markitdown[pdf,docx,pptx,xlsx,xls]" "python-hwpx==6.12.0" olefile pandas openpyxl matplotlib
 ```
+
+python-hwpx는 6.12.0으로 고정한다. 7.0은 export_markdown 함수를 별도 패키지로 옮겼다. 7.0 이상에서는 표가 마크다운 표로 나오지 않는 텍스트 추출기가 쓰인다.
 
 모든 계산 스크립트는 같은 방식으로 실행한다.
 

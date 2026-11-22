@@ -54,13 +54,13 @@ Install only the packages for the input types at hand.
 |---|---|
 | Web address | httpx, trafilatura |
 | PDF, DOCX, PPTX, XLSX and other documents | markitdown[pdf,docx,pptx,xlsx,xls], pdfplumber |
-| HWPX | python-hwpx, beautifulsoup4, lxml |
+| HWPX | `python-hwpx==6.12.0`, beautifulsoup4, lxml |
 | HWP | pyhwp, olefile |
 | Audio, video | faster-whisper, `av<19` |
 | Captions | none |
 
 ```bash
-pip install httpx trafilatura "markitdown[pdf,docx,pptx,xlsx,xls]" pdfplumber python-hwpx beautifulsoup4 lxml olefile faster-whisper "av<19"
+pip install httpx trafilatura "markitdown[pdf,docx,pptx,xlsx,xls]" pdfplumber "python-hwpx==6.12.0" beautifulsoup4 lxml olefile faster-whisper "av<19"
 pip install pyhwp
 ```
 
@@ -69,6 +69,7 @@ pip install pyhwp
 - If pyhwp fails with a build error mentioning `install_layout`, retry with `SETUPTOOLS_USE_DISTUTILS=stdlib pip install pyhwp`. If it still fails, continue without pyhwp. HWP files then go through the olefile fallback.
 - ffmpeg is optional. The script uses it for audio decoding when present and uses the decoder bundled with faster-whisper otherwise.
 - The decoder bundled with faster-whisper 1.2.1 does not work with PyAV 19 or later, so the install command keeps the `av<19` condition. If an error mentioning `metadata_errors` appears where ffmpeg is absent, reinstall PyAV with `pip install "av<19"` and try again.
+- python-hwpx 7.0 moved the export_markdown function to a separate package. With 7.0 or later the TextExtractor path runs, and tables do not come out as Markdown tables. The install command therefore pins python-hwpx to 6.12.0. If another version is installed, reinstall it with `pip install "python-hwpx==6.12.0"`.
 - Whisper models download from Hugging Face on the first transcription. Transcription cannot run where network access is restricted, so tell the user.
 - If the script returns a `missing_dependency` error, run the `install` command in the result and try again.
 

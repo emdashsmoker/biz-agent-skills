@@ -24,8 +24,10 @@ Numbers in plans and reports are trustworthy only when someone else can rerun th
 Requires Python 3.9 or later. Install the packages once.
 
 ```bash
-pip install "markitdown[pdf,docx,pptx,xlsx,xls]" python-hwpx olefile pandas openpyxl matplotlib
+pip install "markitdown[pdf,docx,pptx,xlsx,xls]" "python-hwpx==6.12.0" olefile pandas openpyxl matplotlib
 ```
+
+python-hwpx is pinned to 6.12.0. Version 7.0 moved the export_markdown function to a separate package. With 7.0 or later the text extractor runs, and tables do not come out as Markdown tables.
 
 Every calculator runs the same way.
 

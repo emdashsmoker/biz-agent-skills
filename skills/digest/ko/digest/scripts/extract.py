@@ -77,6 +77,8 @@ SAMPLE_RATE = 16000          # Whisper 입력 규격(16kHz 모노)
 FFMPEG_TIMEOUT_SEC = 600
 # faster-whisper 1.2.1의 PyAV 디코더는 PyAV 19에서 제거된 av.open의 metadata_errors 인자를 사용
 PYAV_PIP_SPEC = '"av<19"'
+# python-hwpx 7.0은 export_markdown을 별도 패키지로 옮겨 표가 마크다운 표로 나오지 않는 대체 경로로 넘어감
+HWPX_PIP_SPEC = '"python-hwpx==6.12.0"'
 HWP5TXT_TIMEOUT_SEC = 60
 TRUNCATION_MARK = "\n\n[... 이하 생략 ...]"
 
@@ -272,7 +274,7 @@ def extract_pdf_tables(path):
 
 def parse_hwpx(path):
     """export_markdown, TextExtractor, XML 직접 파싱 순서로 시도"""
-    require("hwpx", "python-hwpx")
+    require("hwpx", HWPX_PIP_SPEC)
     try:
         from hwpx.tools.exporter import export_markdown
         with open(path, "rb") as f:

@@ -171,7 +171,7 @@ python scripts/plan.py xlsx plan.json -o wbs.xlsx
 python scripts/md2pdf.py overview.md -o overview.pdf
 ```
 
-- `check`, `md` and `csv` need no packages. `xlsx` needs openpyxl, PDF needs fpdf2 and markdown-it-py, and document conversion needs markitdown (python-hwpx optional for HWPX)
+- `check`, `md` and `csv` need no packages. `xlsx` needs openpyxl, PDF needs fpdf2 and markdown-it-py, and document conversion needs markitdown (python-hwpx 6.12.0 optional for HWPX, installed with `pip install "python-hwpx==6.12.0"`; 7.0 or later falls back to built-in XML extraction)
 - The XLSX has one WBS sheet, plus one staffing sheet when M/M is on. Black text, thin borders and a gray header only. Gantt headers run horizontally. The upper row has one merged white cell per month, such as "Mar 2026", and the row below shows the Monday date of each week. Gantt cells are formulas, so the marks move when dates change
 - CSV is saved as UTF-8 with BOM so spreadsheet programs read non-English text correctly. Use it to move the plan into another PM tool
 - The PDF script finds an installed font. If none is found, pass `--font path/to/font`
