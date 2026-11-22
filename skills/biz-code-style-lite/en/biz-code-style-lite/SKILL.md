@@ -83,7 +83,7 @@ Write code on the premise that debugging takes more time than writing. Code that
 - Pair every design decision with a conclusion and its reason. Record the reason for technology choices in comments or the README
 - Write prompts, code, skills, and agents that connect to LLMs so they do not depend on a specific execution tool. Do not connect them to other agents or skills unless the user wants it
 - In outputs that connect to LLMs, write judgments the model can handle on its own as flexible behavioral guidelines. Use deterministic scripts and logic for tasks the model cannot handle accurately, such as numeric calculation. Before adding a script, check whether it creates edge cases, bugs, or maintenance burden
-- In prompts and instructions for LLMs and agents, write in the positive form. A positive instruction states the target state directly, so it is clear and applies as written to new situations and other execution tools. A negative instruction lists what is prohibited case by case, so the model has to infer the target state, and edge cases and maintenance burden grow
+- In prompts and instructions for LLMs and agents, write in the positive form. A positive instruction states the target state directly, so it is clear and applies as written to new situations and other execution tools. A negative instruction lists what is prohibited case by case, so it is complex, the model has to infer the target state, and edge cases and maintenance burden grow
 
 ### Structural Design
 
