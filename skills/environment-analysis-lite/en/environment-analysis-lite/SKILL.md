@@ -37,7 +37,7 @@ Most environment analysis requests need one part of the work. Do only the scope 
 
 ## Module Sorting Rule
 
-The same data can belong to different modules depending on its relation to the subject. One criterion decides placement: how far the subject can control or influence the factor. Borderline data is placed by the rules below the table. Inside a module, the kind of thing a fact describes decides its item. Facts that describe the same kind of thing go under the same item even when the field name, the responsible ministry, the governing law, or the words in a document title differ.
+The same data can belong to different modules depending on its relation to the subject. One criterion decides placement: how far the subject can control or influence the factor. Borderline data is placed by the rules below the table. Inside a module, the kind of thing a fact describes decides its item. Facts that describe the same kind of thing go under the same item even when the field name, the responsible ministry, the governing law, or the words in a source title differ.
 
 | Module | Criterion | Typical items |
 |---|---|---|
@@ -47,7 +47,7 @@ The same data can belong to different modules depending on its relation to the s
 | Benchmarking | Results and practices of other entities used as reference | Overseas cases, other domestic regions, peer organizations |
 
 - Firms, universities, research institutes, and industry statistics of a region go to internal capability when the subject is that region, and to micro environment when the subject is a company
-- Policy documents that state a direction and binding rules go to macro environment. Money flows such as government programs with a set budget and period (open calls, demonstration programs, infrastructure programs, business support programs, and so on) and investment attraction go to investment trends in micro environment. Policies set by the subject itself and programs it runs go to internal capability
+- Policy directions the government has stated and binding rules go to macro environment. Money flows such as government programs with a set budget and period (open calls, demonstration programs, infrastructure programs, business support programs, and so on) and investment attraction go to investment trends in micro environment. Policies set by the subject itself and programs it runs go to internal capability
 - Competitors' market share and size go to micro environment. Competitors' practices studied to learn from them go to benchmarking
 - With no subject, skip the internal capability module and write the micro environment from the viewpoint of the whole industry
 
@@ -84,7 +84,7 @@ The scope definition is the basis for every later judgment. Keep the definitions
 | Work scope | Full analysis, module analysis, item analysis | From the request |
 | Verification level | 1, 2, 3 | From the verification level table |
 
-- If required inputs are missing, ask for all of them in one message and apply defaults to the rest. When a request that runs the policy item does not say whether to include political conditions, ask in the same message whether to cover political conditions too or only the policy documents that result from politics, and cover policy documents only if there is no answer
+- If required inputs are missing, ask for all of them in one message and apply defaults to the rest. When a request that runs the policy item does not say whether to include political conditions, ask in the same message whether to cover political conditions too or only the policy directions that result from politics, and cover policy directions only if there is no answer
 - If the user cannot respond, proceed with reasonable defaults and record the applied scope in the target overview of the output
 - For partial analysis, decide only the items that module needs. For example, a policy trend table needs only the target, geographic scope, and research period. Fix the place of an industry or technology target in a classification for partial analysis too, by confirming from material a classification the field itself uses (standard classification schemes, technology roadmaps, standards documents, review papers, and so on), and record the source and reference date of the one applied. Treat items that differ in material, working principle, process, equipment, use, or the like as separate even when their names are similar (for example, silicon and compound semiconductors, the additive manufacturing process and 3D printer equipment, and so on)
 - For full analysis, write a target overview. It covers the target's significance (facts confirmed by sources), definition and scope, working principle or business model, and industry value chain
@@ -254,7 +254,7 @@ Record external changes the subject cannot alter, with a focus on facts.
 - (Item order) Set it by purpose and emphasis. For R&D and industry analysis, policy, regulation, and technology are often central, so review those three first
 - (Overseas then domestic) Within each item, write overseas trends first and domestic trends next, showing the influence, response, or gap between them. If regional policy affects the target, write it after national policy even when the region is not the subject
 - (Research period) Prefer data from the research period set in stage 1
-- (Policy) Record documents that state a direction (national strategies, statutory plans, non-statutory plans, investment strategies by field, and so on) in the table below. If both industrial policy and science and technology policy apply, separate them with the field column. Record expected effects only as stated in the policy document. Record a program that carries out a policy by name in the instruments column, and write its budget and details under investment trends in the micro environment. Describe political conditions (changes of government or legislature, elections, geopolitical conflict, trade disputes, and so on) when the scope definition includes them
+- (Policy) Record literature that states a policy direction (national strategies, statutory plans, non-statutory plans, investment strategies by field, and so on) in the table below. If both industrial policy and science and technology policy apply, separate them with the field column. Record expected effects only as stated in the policy literature. Record a program that carries out a policy by name in the instruments column, and write its budget and details under investment trends in the micro environment. Describe political conditions (changes of government or legislature, elections, geopolitical conflict, trade disputes, and so on) when the scope definition includes them
 - (Regulation) Record binding rules (laws, permits, certification, and so on) separately in the same table format, and write the stage (proposed, pre-announced, promulgated, in force, and so on) in the main content column
 
 | Year | Country | Agency | Field | Policy or institution | Background | Main content | Instruments | Expected effects |
@@ -295,7 +295,7 @@ Record the industry and market in which the subject participates or competes. Sh
 ### Investment Trends
 
 - Research investment by source of funds (public, private) and by use (R&D, other than R&D). Public R&D covers government R&D budgets and programs, and so on. Public investment other than R&D covers demonstration, infrastructure, business support, policy finance, publicly funded investment funds, and so on. Private R&D covers R&D spending that firms fund themselves, and so on. Private investment other than R&D covers equity investment by risk capital (deal counts and amounts by stage), facility investment, M&A, and so on. Confirm whether a public program is R&D from the budget classification the source states, and record it apart from the program content (technology development, demonstration, workforce development, and so on). When the classification cannot be confirmed, record it as unconfirmed
-- The total investment plan stated in a policy document goes to the macro environment. Program budgets, execution, and investment results go here. Follow the stage 2 table for access channels and mark items not obtained as "not obtained"
+- The total investment plan stated in policy literature goes to the macro environment. Program budgets, execution, and investment results go here. Follow the stage 2 table for access channels and mark items not obtained as "not obtained"
 
 ### Five Forces Competitive Structure
 

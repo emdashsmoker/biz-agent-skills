@@ -21,11 +21,11 @@ Macro frameworks do not cover markets, industries, competitors, or investment. T
 
 ## Questions by category
 
-Place each fact in the one category whose question it answers. For facts that are easy to misplace at a boundary, follow the placement rules in SKILL.md. When a fact belongs to a category the user's framework lacks, place it in the closest category of that framework (for example, regulation goes under political in PEST, and so on).
+Place each fact in the one category whose question it answers. For facts that are easy to misplace at a boundary, follow the placement rules in SKILL.md. When a fact belongs to a category the user's framework lacks, place it in the closest category of that framework (for example, regulation goes under policy in PEST, and so on).
 
 | Category | Question it answers | Content | Main source types |
 |---|---|---|---|
-| Policy | Where do the government and political actors intend to go | National strategies, statutory and non-statutory plans, policy directions and investment strategies by field, policies of major foreign countries, political conditions at home and abroad when the scope includes them, and so on | Releases from ministries and local governments, plan documents, reports from international organizations, and so on |
+| Policy | Where do the government and political actors intend to go | National strategies, statutory and non-statutory plans, policy directions and investment strategies by field, policies of major foreign countries, political conditions at home and abroad when the scope includes them, and so on | Releases from ministries and local governments, plan literature, reports from international organizations, and so on |
 | Regulation | What is required and what is permitted | Enactment and amendment of laws, permits, mandatory standards and certification, deregulation and new regulation, and so on | Legal information systems, legislative records, documents from regulators, and so on |
 | Economy | How are conditions across the whole economy changing | Economy-wide indicators such as growth, prices, interest rates, exchange rates, trade, and supply chain conditions | Central banks, statistics agencies, international statistics, and so on |
 | Society | How are the makeup of the population and ways of living changing | Demographics, employment, lifestyles and consumer behavior, social issues, and so on | National statistics, official surveys, and so on |
@@ -34,21 +34,21 @@ Place each fact in the one category whose question it answers. For facts that ar
 
 ## Organizing policy trends
 
-The policy category covers policy documents, and it also covers political conditions when the scope includes them.
+The policy category covers policy directions, and it also covers political conditions when the scope includes them.
 
-- (Policy documents) Organize documents that state a direction, such as national strategies, statutory plans, non-statutory plans, and ministry policy directions, in the table below
-- (Political conditions) Write events that shift policy direction, such as changes of government or legislature, elections, geopolitical conflict, and trade disputes, as descriptive bullets. If the user has not said whether to include them, ask during scoping, and write policy documents only when the decision is to leave them out
+- (Policy literature) Organize literature that states a policy direction, such as national strategies, statutory plans, non-statutory plans, and ministry releases, in the table below
+- (Political conditions) Write events that shift policy direction, such as changes of government or legislature, elections, geopolitical conflict, and trade disputes, as descriptive bullets. If the user has not said whether to include them, ask during scoping, and write policy directions only when the decision is to leave them out
 
-Divide policy documents by jurisdiction level (major foreign countries, national, regional) and build only the levels that have material. When several policy areas apply (industrial policy, science and technology policy, and so on), add an area column. The default lookback period is the last 5 years.
+Divide policy literature by jurisdiction level (major foreign countries, national, regional) and build only the levels that have material. When several policy areas apply (industrial policy, science and technology policy, and so on), add an area column. The default lookback period is the last 5 years.
 
 | Year | Country or agency | Policy name | Background | Content | Measures | Expected effects |
 |---|---|---|---|---|---|---|
 
-- The expected effects column carries the effects stated in the policy document itself. Keep the analyst's evaluation out of it
+- The expected effects column carries the effects stated in the policy literature itself. Keep the analyst's evaluation out of it
 - Use the official full names of policies and agencies
-- A plan drawn up under a law is a document that states a direction, so it belongs to policy
+- A plan drawn up under a law is literature that states a policy direction, so it belongs to policy
 - Record a program that carries out a policy by name in the measures column of that policy row. Cover the program's budget, period, and details in the investment category of the micro environment. A policy sets a direction, and a program is the means that carries out that direction with budget
-- Record the total investment plan stated in a policy document as the content of that policy
+- Record the total investment plan stated in policy literature as the content of that policy
 
 If the subject is a region or a local government, move that region's own policies to internal status. This follows the controllability criterion in SKILL.md.
 
@@ -124,7 +124,7 @@ Within each category, write overseas trends first and then national trends. If t
 - Programs appear by name in the measures column of their policy row
 - Political conditions are included or left out as the scope decided
 - Technology trends are organized separately for each technology
-- The expected effects in the policy table repeat what the policy documents state
+- The expected effects in the policy table repeat what the policy literature states
 - No TRL is estimated without basis
 - Writing moves from overseas to national to regional
 - No interpretation or prescription is mixed in

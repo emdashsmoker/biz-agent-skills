@@ -45,11 +45,11 @@ The industry value chain and the organizational value chain work at different un
 
 ## Placing facts in categories
 
-Inside a module, the kind of thing a fact describes decides its category. Each category answers one question, and a fact goes in the one category whose question it answers. The questions are in references/macro.md and references/micro.md. Facts that describe the same kind of thing go in the same category even when the field name, the responsible ministry, the governing law, or the words in a document title differ. Ministry names and program terms change by country and over time, but the kind of thing a fact describes stays the same, so the same material always lands in the same category.
+Inside a module, the kind of thing a fact describes decides its category. Each category answers one question, and a fact goes in the one category whose question it answers. The questions are in references/macro.md and references/micro.md. Facts that describe the same kind of thing go in the same category even when the field name, the responsible ministry, the governing law, or the words in a source title differ. Ministry names and program terms change by country and over time, but the kind of thing a fact describes stays the same, so the same material always lands in the same category.
 
 | Fact that is easy to misplace | Placement | Reason |
 |---|---|---|
-| A government program with a set budget, period, and implementing body (open calls, demonstration programs, infrastructure programs, business support programs, and so on) and its amount | Investment in the micro environment | A document that states a direction (strategy, plan, roadmap, and so on) is policy, and a program that spends budget to carry out that direction is a flow of funds |
+| A government program with a set budget, period, and implementing body (open calls, demonstration programs, infrastructure programs, business support programs, and so on) and its amount | Investment in the micro environment | A policy direction the government has stated (strategy, plan, roadmap, and so on) is policy, and a program that spends budget to carry out that direction is a flow of funds |
 | R&D spending, project counts, funding raised, and so on | Investment in the micro environment | The technology category covers the state of a technology, and money is the input that produces that state |
 | Binding rules such as laws, permits, certification, and so on | Regulation in the macro environment | Policy states a direction, and regulation binds |
 | Market size and growth of a specific industry, stock and venture investment in a specific industry or firm, and so on | Market or investment in the micro environment | The economy category covers economy-wide indicators |
@@ -126,7 +126,7 @@ Settle the following items.
 | Topic | Industry, technology, product, service, or policy field to analyze | None. Ask if missing |
 | Geography | Global, national, regional | Global and national. Add regional for a region subject |
 | Time frame | Period for the current situation and period for the outlook | Last 5 years for the current situation, 5 years for the outlook |
-| Political conditions | Whether the policy category also covers political conditions or only the policy documents that result from politics | None. Ask when a request that runs the policy category does not say. If proceeding without confirmation, cover policy documents only |
+| Political conditions | Whether the policy category also covers political conditions or only the policy directions that result from politics | None. Ask when a request that runs the policy category does not say. If proceeding without confirmation, cover policy directions only |
 | Purpose and use | Internal review, external submission, input to later analysis, and so on | Propose a value inferred from the request. Internal review if there is no clue |
 | Internal source disclosure | When internal material is used, choose the full document name, "[organization] internal material", or no source in the body (recorded only in the fact register), based on disclosure scope, internal security, and personal-information sensitivity | Full document name for internal review, "[organization] internal material" for external submission |
 | Modules and categories | Chosen from the request mapping and the defaults | Result of the request mapping |
