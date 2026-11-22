@@ -228,7 +228,7 @@ Put only the finished result in the output. The reader uses the result, and the 
 
 - Keep everything that comes from the internal work of this skill out of the output. The table below gives typical cases, and the same rule applies to internal work content that the table does not list.
 - Do not use in the output the name of this skill, the fact that it was applied, or any term this skill defines or uses (ECRS, element judgment, department-store listing, message overload, and so on). A term the user used first in the request may be used.
-- Do not use meta-commentary in the output. Meta-commentary is wording that describes the text itself, the writing process, or the writer's judgment and way of working. Sentences such as "To sum up the key points", "Unnecessary steps were left out", "This was boiled down to one message", "This is kept concise", and so on fall under it.
+- Do not use meta-commentary in the output. Meta-commentary is an element that does not serve the reader's purpose, so it runs directly against the purpose and intent of this skill, which is to keep only the elements that are needed. Meta-commentary is wording that describes the text itself, the writing process, or the writer's judgment and way of working. Sentences such as "To sum up the key points", "Unnecessary steps were left out", "This was boiled down to one message", "This is kept concise", and so on fall under it.
 
 | Internal work | Cases of content kept out of the output |
 |---------------|-----------------------------------------|
