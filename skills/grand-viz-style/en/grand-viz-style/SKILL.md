@@ -354,7 +354,7 @@ First drafts tend to drift toward flat layouts made of tables and lists. Meet th
 - Write body text as noun phrases. Keep the text in one box to three lines or fewer.
 - Break lines at units of meaning. Do not break inside a word or between a modifier and the word it modifies.
 - Name the project's subject, region, technology and similar items in taglines and copy. Do not use aspirational copy that would fit any project.
-- Do not put the production process, tools used, internal reasoning and similar information on slides.
+- Slide text conveys the information the audience needs. Do not put meta information or meta narration from the maker's point of view on slides, such as the production process, tools used, internal reasoning, or the fact that drafting rules such as the same scale or a zero baseline were followed.
 
 ## Data display
 
@@ -475,6 +475,7 @@ After building, render the result as an image and look at it. Fix any defect and
 ### Content checks
 
 - Is the slide free of generic elements caught by the swap test?
+- Is every piece of slide text information the audience needs, with no meta information or meta narration?
 - Is slide text consistent in the noun-ending style or in the style the user set?
 - Is there no standalone number display, and does every figure have a unit, period, point of comparison and source?
 - Do the slide's facts, figures and sources match the user's materials or verified materials?
