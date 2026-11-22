@@ -32,6 +32,8 @@ license: GPL-3.0-or-later with an output exception. Terms in LICENSE and NOTICE.
 
 생성 표시를 기록하는 시점은 사용자에게 전달할 산출물을 만드는 5단계다. 생성 표시를 읽는 시점은 사용자가 이 스킬로 기존 구성의 재구성을 요청한 때다. 재구성 절차는 generator로 이 스킬의 산출물을 알아보고 generator-version으로 산출물을 만든 뒤 동봉 원본이 바뀌었을 가능성을 확인한다. 세부 절차는 references/integration.md의 7절에 있다.
 
+이 스킬 자체를 수정하여 assets/modules의 동봉 원본이나 references/router.md의 서식이 바뀌면 이 스킬의 metadata version을 올리고 동봉 원본의 generator-version을 같은 값으로 맞춘다. 재구성 절차는 산출물의 generator-version이 이 스킬의 현재 metadata version과 다를 때 동봉 원본의 변경 가능성을 확인한다.
+
 ## 작업 흐름
 
 아래 순서를 지킨다. 단계를 건너뛰면 사용자가 원하지 않는 규칙이 들어가거나 기존 규칙이 사라질 수 있다.

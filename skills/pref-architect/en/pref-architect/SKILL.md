@@ -34,6 +34,8 @@ The generation mark is a part of this skill's rebuilding function. It is recorde
 
 The mark is recorded at step 5, when the outputs to deliver to the user are made. The mark is read when the user asks this skill to rebuild an existing setup. The rebuilding procedure uses generator to recognize outputs of this skill and generator-version to check whether the bundled sources may have changed since the output was made. The detailed procedure is in section 7 of references/integration.md.
 
+When an edit to this skill itself changes a bundled source under assets/modules or the template in references/router.md, raise this skill's metadata version and set the generator-version of the bundled sources to the same value. The rebuilding procedure checks for a bundled source change when the generator-version of an output differs from this skill's current metadata version.
+
 ## Workflow
 
 Follow the steps in order. Skipping a step can add rules the user does not want or drop rules the user already has.
