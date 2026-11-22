@@ -35,12 +35,14 @@ Changelog rules
 - Added a rule that asks the user how to assign the primary and accent colors when a warm primary meets the default accent (#83)
 - Added a rule that uses a lightness step of a color field when neither white nor dark text reaches 4.5:1 for normal text on it (#83)
 - Added a line that adjusts colors that look jarring or unnatural to the audience and practitioners during verification toward what is easy to read, pleasant and natural (#83)
+- Changed the slide text rule to leave out meta information from the maker's point of view, including notes that drafting rules such as the same scale or a zero baseline were followed (#84)
 
 * 기본 강조색을 적색 계열에서 흰 글자와 4.5:1 대비를 내는 명도에서도 선명한 주황 쪽 주홍 계열로 변경 (#83)
 * 색 결정 순서를 지정되지 않은 역할만 기본값으로 채우는 역할별 적용 방식으로 변경 (#83)
 * 따뜻한 주조색과 기본 강조색이 겹치는 경우의 주조색과 강조색 배정 질의 규칙 추가 (#83)
 * 흰 글자와 짙은 글자 모두 4.5:1에 못 미치는 색면의 일반 글자용 명도 단계 규칙 추가 (#83)
 * 청중과 실무자의 눈에 거슬리거나 부자연스러운 색의 검증 단계 조정 문장 추가 (#83)
+* 같은 축척 적용, 0 기준선 등 작성 기준의 준수 사실을 포함한 작업자 관점 메타 정보를 장표에서 제외하도록 글자 규칙 변경 (#84)
 
 ## 2026-11-21
 
