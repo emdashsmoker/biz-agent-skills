@@ -90,6 +90,8 @@ Changelog rules
 - Added a rule that uses a lightness step of a color field when neither white nor dark text reaches 4.5:1 for normal text on it (#83)
 - Added a line that adjusts colors that look jarring or unnatural to the audience and practitioners during verification toward what is easy to read, pleasant and natural (#83)
 - Changed the slide text rule to leave out meta information from the maker's point of view, including notes that drafting rules such as the same scale or a zero baseline were followed (#84)
+- Added a use setting rule that follows a stated or clearly implied venue and distribution and otherwise proceeds without asking as screen showing at a large venue with no handouts (#88)
+- Changed the information density rule so that carrying the situation, cause and direction on the slide applies to slides that double as printed handouts (#88)
 
 * 기본 강조색을 적색 계열에서 흰 글자와 4.5:1 대비를 내는 명도에서도 선명한 주황 쪽 주홍 계열로 변경 (#83)
 * 색 결정 순서를 지정되지 않은 역할만 기본값으로 채우는 역할별 적용 방식으로 변경 (#83)
@@ -97,6 +99,8 @@ Changelog rules
 * 흰 글자와 짙은 글자 모두 4.5:1에 못 미치는 색면의 일반 글자용 명도 단계 규칙 추가 (#83)
 * 청중과 실무자의 눈에 거슬리거나 부자연스러운 색의 검증 단계 조정 문장 추가 (#83)
 * 같은 축척 적용, 0 기준선 등 작성 기준의 준수 사실을 포함한 작업자 관점 메타 정보를 장표에서 제외하도록 글자 규칙 변경 (#84)
+* 용도 미기재 요청의 용도를 자료 배포 없는 대형 발표장의 화면 상영으로 정하는 용도 판단 규칙 추가 (명시하거나 요청에 드러난 용도는 그대로 적용) (#88)
+* 현황, 원인, 방향을 장표 안에 모두 갖추는 정보 밀도 기준의 적용 대상을 인쇄 배포 겸용 장표로 변경 (#88)
 
 ### lean-work
 - Added a sentence rule that states the same content in the positive form, with the reason that a positive sentence states the target state directly (#86)

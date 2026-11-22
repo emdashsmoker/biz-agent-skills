@@ -19,6 +19,7 @@ The terms below keep the same meaning throughout this document.
 | Term | Meaning |
 |---|---|
 | Slide | One presentation slide, or one face of a visual such as an infographic or poster |
+| Use setting | The combination of the venue where the slide is shown and the way it is distributed |
 | Background | The base surface of the whole slide |
 | Background lightness | The choice of a light or dark background (light: white, light gray and similar, dark: deep navy, dark gray and similar) |
 | Background treatment | Decoration placed on the background, such as light, color fields, shapes or photos |
@@ -59,7 +60,7 @@ When a decision is hard, check it this way.
 
 Set the direction in this order before building. For work that produces files, record the design direction in a short document. For work that ends in one response, write it in 3-5 lines before the build. Writing the direction first keeps elements from piling up on the fly.
 
-1. (Read the setting) Find out the presenting organization, audience, purpose, aspect ratio, venue, distribution and similar facts. Venues split into bright meeting rooms, dimmed event halls and the like. Distribution splits into screen-only, screen plus printed handouts and the like. Ask only about items the request leaves out and you cannot infer, all at once. Use 16:9 when no aspect ratio is given.
+1. (Read the setting) Find out the presenting organization, audience, purpose, aspect ratio, use setting and similar facts. Venues split into bright meeting rooms, dimmed event halls and the like. Distribution splits into screen-only, screen plus printed handouts and the like. Set the use setting by the criteria in the use setting section below. Among the other items, ask only about those the request leaves out and you cannot infer, all at once. Use 16:9 when no aspect ratio is given.
 2. (Fix the message) Set one judgment statement that the slide delivers. This statement becomes the head message.
 3. (Identify the relation) Identify the relation among the supporting content and pick the main structure. The criteria are in the section on relations.
 4. (Decide the background) Set the background lightness and the level of background treatment. The criteria are in the background section.
@@ -68,6 +69,13 @@ Set the direction in this order before building. For work that produces files, r
 7. (Verify) Look at the rendered result and check the items in the verification section.
 
 For a multi-slide deck, set the storyline and the fixed elements listed in the multiple slides section before designing each slide's body.
+
+### Use setting
+
+- When the user states the use setting, follow it.
+- When the request makes the use setting clear without stating it, follow that setting. Requests that mention printed handouts, a place in a report, reading before a meeting and similar fall in this group.
+- When the user does not state the use setting and the request does not make it clear, set it to screen showing at a large venue with no handouts. In the background section, treat this setting as the large-screen condition and the screen-only condition. Proceed with this default without asking about the use setting.
+- Judge the use setting from information about how the slide will be used, such as the venue, handouts and where it will be published. Adjust slides with much content by the criteria in the information density section.
 
 ## Slide skeleton
 
@@ -100,11 +108,12 @@ A body slide has the zones below. Place and size each zone to fit the content.
 
 ### Information density
 
-- Make each slide understandable on its own, covering situation, cause and direction. Decks can circulate after the presentation and get read without the presenter.
+- Make the relation between the conclusion and its evidence clear from one slide alone.
+- Slides that double as printed handouts get read without the presenter, so they carry the situation, cause and direction on the slide itself.
 - When the user sets the content, build within it. You may add labels such as the names of comparison criteria. Do not add facts, figures or judgments.
 - As density rises, raise the consistency of alignment and spacing with it. The more elements a slide has, the more a misaligned spot stands out.
 - Do not add empty elements to fill space. When space remains, enlarge the diagrams or charts in the main panels or strengthen the evidence.
-- Slides for projection only carry fewer elements and larger text than slides that double as handouts.
+- Screen-only slides come with the presenter's explanation, so they carry fewer elements and larger text than slides that double as handouts.
 
 ### Non-body slides
 
@@ -142,7 +151,7 @@ Background lightness and background treatment change both the impression and the
 
 ### Background lightness
 
-This style works with light and dark backgrounds. Pick whichever works better for the purpose and venue.
+This style works with light and dark backgrounds. Pick whichever works better for the purpose and use setting.
 
 | Factor | Light background fits | Dark background fits |
 |---|---|---|
@@ -461,6 +470,7 @@ After building, render the result as an image and look at it. Fix any defect and
 
 ### Effect checks
 
+- Was the use setting set by the criteria in the use setting section?
 - Does the background lightness fit the amount of text, the venue and the distribution?
 - Does the background treatment serve the message and pass the removal test?
 - In the squint test, is the hero element seen first?
