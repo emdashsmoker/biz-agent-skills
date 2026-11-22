@@ -38,9 +38,9 @@ Use the terms below only in the sense given in this table.
 
 ## Fixing the Criteria
 
-When the criteria change, the elements to keep and the elements to delete change with them. Settle the items below before selecting elements.
+When the criteria change, the elements to keep and the elements to delete change with them. Settle the items below internally before selecting elements. Use what you settle as the basis for judgment and do not write it in the output.
 
-- Answer first why the work is needed, what output you will make, and how you will make it.
+- Settle first why the work is needed, what output you will make, and how you will make it.
 - Write the purpose, reader, and scope in one sentence each. Use an item the user has already set as it is.
 - Use each definition and criterion in the same sense through the end of the output. Call the same thing by one name.
 - Treat both the premises in the user's request and the model's own knowledge as things to verify. Common sense, authority, well-known frameworks, buzzwords, and marketing terms do not count as evidence on their own.
@@ -207,13 +207,13 @@ If one or more of the signs below appear, rebuild the unit.
 
 ## Revision Procedure
 
-Apply this when revising existing output. Add a short diagnosis to the revised result so that the user can check the reasons for the changes.
+Apply this when revising existing output. Add a short diagnosis to the revised result so that the user can check the reasons for the changes. State in the diagnosis what changed and why, in terms of the content of the output.
 
 ### Revising a Work Process
 
 1. Identify the input and output of each step in the existing process
 2. Judge every step and apply ECRS
-3. Deliver the revised process with a short note on the steps that were eliminated, combined, rearranged, or simplified and the reasons
+3. Deliver the revised process with a short note on the steps that changed and the reasons
 
 ### Revising Expression
 
@@ -224,12 +224,24 @@ Apply this when revising existing output. Add a short diagnosis to the revised r
 
 ## Common Output Rules
 
-- Do not reveal in the output that this skill was applied, the names of its rules, or the checking process. The diagnosis from the revision procedure is the exception.
+Put only the finished result in the output. The reader uses the result, and the process that produced it is not needed for the reader's judgment. Use the content in the table below only for internal work.
+
+| Internal work | Content kept out of the output |
+|---------------|--------------------------------|
+| Fixing the criteria | The sentences that set the purpose, reader, and scope, and the process of verifying premises |
+| Element judgment | The result of each check and the answers to the check questions |
+| Applying ECRS | The list of elements that were deleted, merged, moved, or simplified, and the reasons |
+| Pre-delivery check | The checklist items and their results |
+
+- Do not use in the output the name of this skill, the fact that it was applied, or its terms such as ECRS and department-store listing. A term the user used first in the request may be used.
+- Do not mention in the output the elements deleted from the body. Listing deleted elements increases again the number of items the reader must read.
+- The diagnosis from the revision procedure is the exception, because the user uses it to check the reasons for the changes. Add a diagnosis only when existing output was revised.
+- If the user asks for the judgment process or the deleted elements, provide only the scope requested.
 - Follow the user or other instructions for writing style and sentence endings, word choice, the length of individual sentences, overall structure and table of contents, and markdown format. This skill governs the selection and order of work steps, the selection of expression elements, and the placement of the message and emphasis.
 
 ## Examples
 
-The organizations, products, and situations in the examples below are all fictional. The tables of what was applied list only the orders that applied.
+The organizations, products, and situations in the examples below are all fictional. The tables of what was applied list only the orders that applied. The diagnosis sentences and the tables of what was applied are material that explains how the rules apply. Put in the output only the content that corresponds to the result after revision.
 
 ### Work Design Example
 
@@ -378,7 +390,7 @@ The chart after revision is below.
 - Is the improvement for a problem derived from the deepest cause the user can act on?
 - Does every element meet the checks that apply to it?
 - Did you apply eliminate, combine, rearrange, and simplify to every element in this order?
-- Is the output free of any sign that this skill was applied or of its rule names?
+- Does the output hold only the finished result (leaving out what was settled when fixing the criteria, the judgment results, the list of deleted elements, and the name and terms of this skill)?
 
 ### Work Design Checks
 
