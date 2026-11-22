@@ -25,19 +25,19 @@ Place each fact in the one category whose question it answers. For facts that ar
 
 | Category | Question it answers | Content | Main source types |
 |---|---|---|---|
-| Policy | Where do the government and political actors intend to go | Political conditions at home and abroad, national strategies, statutory and non-statutory plans, policy directions and investment strategies by field, policies of major foreign countries, and so on | Releases from ministries and local governments, plan documents, reports from international organizations, and so on |
+| Policy | Where do the government and political actors intend to go | National strategies, statutory and non-statutory plans, policy directions and investment strategies by field, policies of major foreign countries, political conditions at home and abroad when the scope includes them, and so on | Releases from ministries and local governments, plan documents, reports from international organizations, and so on |
 | Regulation | What is required and what is permitted | Enactment and amendment of laws, permits, mandatory standards and certification, deregulation and new regulation, and so on | Legal information systems, legislative records, documents from regulators, and so on |
 | Economy | How are conditions across the whole economy changing | Economy-wide indicators such as growth, prices, interest rates, exchange rates, trade, and supply chain conditions | Central banks, statistics agencies, international statistics, and so on |
 | Society | How are the makeup of the population and ways of living changing | Demographics, employment, lifestyles and consumer behavior, social issues, and so on | National statistics, official surveys, and so on |
-| Technology | Where does the technology stand on its development path | Performance level and limits, technology maturity, R&D level and trends, technology convergence, standardization, and so on | Technology roadmaps, technology level assessments, review papers, research institute reports, standards body documents, and so on |
+| Technology | Where does the technology stand on its development path | Performance level and limits, technology maturity, R&D level, R&D trends seen in papers, patents, and standards, demonstration and commercialization, technology convergence, and so on | Technology roadmaps, technology level assessments, review papers, research institute reports, academic databases, patent databases, standards body documents, and so on |
 | Environment | How is the state of nature and resources changing | Climate, greenhouse gas emissions, pollution, resource reserves and depletion, ecosystems, and so on | Observation data and reports from governments and international organizations, and so on |
 
 ## Organizing policy trends
 
-The policy category covers political conditions and policy documents.
+The policy category covers policy documents, and it also covers political conditions when the scope includes them.
 
-- (Political conditions) Write events that shift policy direction, such as changes of government or legislature, elections, geopolitical conflict, and trade disputes, as descriptive bullets
 - (Policy documents) Organize documents that state a direction, such as national strategies, statutory plans, non-statutory plans, and ministry policy directions, in the table below
+- (Political conditions) Write events that shift policy direction, such as changes of government or legislature, elections, geopolitical conflict, and trade disputes, as descriptive bullets. If the user has not said whether to include them, ask during scoping, and write policy documents only when the decision is to leave them out
 
 Divide policy documents by jurisdiction level (major foreign countries, national, regional) and build only the levels that have material. When several policy areas apply (industrial policy, science and technology policy, and so on), add an area column. The default lookback period is the last 5 years.
 
@@ -61,14 +61,23 @@ The regulation category covers binding rules. Record the stage of each rule, suc
 
 ## Organizing technology trends
 
-The technology category records, as facts, where the topic technology stands on its development path. The question comes from the technology S-curve of Foster (1986). The S-curve is the path on which performance gains from cumulative R&D effort are slow at first, speed up in the middle, and slow again as the technology nears its limit. Organize the items below that material confirms.
+The technology category records, as facts, where the topic technology stands on its development path. The question comes from the technology S-curve of Foster (1986). The S-curve is the path on which performance gains from cumulative R&D effort are slow at first, speed up in the middle, and slow again as the technology nears its limit. Record what material confirms among the items below.
 
-| Item to check | Content |
+| What to record | Details |
 |---|---|
 | Performance level | Current level of key performance indicators, the trend of improvement, theoretical limits or targets, and so on |
 | Maturity | TRL, demonstration, stage of commercialization and adoption, and so on |
 | R&D level | Leading countries and institutions, levels and gaps between countries, and so on |
 | R&D trends | Main research actors and directions, competing approaches, technology convergence, standardization, and so on |
+
+Confirm what you record through the evidence types below.
+
+| Evidence type | Items to check |
+|---|---|
+| Papers | Main research streams, most-cited topics, emerging keywords, leading research institutions, and so on |
+| Patents | Technology areas with growing filings, top applicants, filing countries, technology concentration, and so on |
+| Standards | Standardization launched and finalized, participating organizations, and so on |
+| Demonstration and commercialization | Prototypes, demonstration results, commercial product launches, and so on |
 
 - Organize each technology separately, following where the topic sits in the classification fixed in the scope section. Neighboring technologies at the same level can stand at different points on their development paths
 - Use first the analysis that public literature presents, such as technology roadmaps, technology level assessments, review papers, and research institute reports. For counts of papers and patents, cite the results the literature presents. Add direct queries by the procedure in references/sources.md when a data channel exists
@@ -113,6 +122,7 @@ Within each category, write overseas trends first and then national trends. If t
 - No market, industry, competitor, or investment content has slipped into the macro environment
 - Each fact answers the question of the category it sits in
 - Programs appear by name in the measures column of their policy row
+- Political conditions are included or left out as the scope decided
 - Technology trends are organized separately for each technology
 - The expected effects in the policy table repeat what the policy documents state
 - No TRL is estimated without basis
