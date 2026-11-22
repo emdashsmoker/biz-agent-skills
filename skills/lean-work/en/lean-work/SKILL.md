@@ -1,6 +1,6 @@
 ---
 name: lean-work
-description: A lean work skill that first fixes the purpose, reader, and scope, then keeps only the elements a work process or deliverable needs. It applies necessity, reader relevance, feasibility, and proportionality checks to every element to produce minimum-step work plans, one-message-per-unit expression, concise sentences, and fixed-format summaries. It supports both writing new output and revising existing output. Use this skill when the user asks for "/lean-work", "keep it lean", "be practical", "be realistic", "minimum steps", "no unnecessary steps", "be concise", "just the key points", "short version", "no fluff", "TL;DR", "focus this", "one message per slide", "boil it down to one message", "don't just list everything", "summarize", "brief me", "sum this up", "start from first principles", or asks for a summary of a web page, file, or pasted text. Do not apply it automatically to general tasks without such a request.
+description: A lean work skill that first fixes the purpose, reader, and scope, then keeps only the elements a work process or expression needs. It applies necessity, reader relevance, feasibility, and proportionality checks to every element. It tidies a work process in the order eliminate, combine, rearrange, simplify, leaving minimum steps that connect inputs and outputs without gaps. It builds answers, documents, slides, charts, and diagrams with one message per unit and three to four supporting elements or fewer, in concise sentences. It supports both writing new output and revising existing output. Use this skill when the user asks for "/lean-work", "keep it lean", "be practical", "be realistic", "minimum steps", "no unnecessary steps", "be concise", "just the key points", "short version", "no fluff", "TL;DR", "focus this", "one message per slide", "boil it down to one message", "don't just list everything", or "start from first principles". Do not apply it automatically to general tasks without such a request.
 license: GPL-3.0-or-later with an output exception. Terms in LICENSE and NOTICE.md
 ---
 
@@ -10,7 +10,7 @@ license: GPL-3.0-or-later with an output exception. Terms in LICENSE and NOTICE.
 
 This skill defines a way of working that filters out elements that do not serve the reader's purpose and explains the remaining elements in enough depth. Fix the purpose, reader, and scope before filtering anything. You can only judge what is needed once these criteria are set.
 
-It applies to work processes, the expression of answers and documents, and summaries of external material.
+It applies to work processes and to expression (answers, documents, slides, charts, diagrams).
 
 ## Definitions
 
@@ -21,6 +21,7 @@ Use the terms below only in the sense given in this table.
 | Purpose | The judgment or action the reader will make or carry out after receiving the output |
 | Reader | The person who reads or acts on the output. If the user does not specify one, a non-specialist adult with the general knowledge of a first-year university student |
 | Scope | The boundary of what the output covers |
+| Final deliverable | The result handed to the reader when the whole work process is finished |
 | Element | The smallest thing being judged. A work step, sentence, bullet, table row, chart series, slide component, and so on |
 | Unit | A block of expression the reader sees and takes in at once. One slide, one chart or diagram, one paragraph, one table |
 | Message | The one judgment the reader should remember after seeing a unit. A sentence with a subject and a predicate |
@@ -53,7 +54,6 @@ If the criteria shift, the choice of what to keep and what to delete shifts with
 |------|--------|---------------|
 | Work design | Work processes for problem solving, planning, analysis, research, coding, and similar tasks | Fixing the criteria, element judgment, work design rules, sentence rules |
 | Expression | Answers, documents, slides, charts, diagrams | Fixing the criteria, element judgment, unit rules, sentence rules |
-| Summary | Briefings on web pages, files, and pasted text | All rules of the expression mode plus the summary format |
 
 - The expression mode splits into writing new output and revising existing output. Revision follows the revision procedure.
 - If the user or another instruction specifies an output structure (a table template, rating scale, fixed workflow, and so on), keep that structure. In that case, apply element judgment and the sentence rules to each item and step inside the structure.
@@ -69,6 +69,8 @@ Every element must pass the checks below before delivery to stay. Each check app
 | Feasibility | Can the user carry it out with the resources and constraints they have? | Work steps |
 | Proportionality | Is the effort put in smaller than the value gained? | Work steps |
 
+Judge reader relevance against the reader set when fixing the criteria. An explanation a novice reader needs only adds reading load for a reader who already knows its content.
+
 Handle any element that fails even one of the checks that apply to it as follows.
 
 - The default is deletion. Do not keep something in the body because writing it took effort.
@@ -83,8 +85,25 @@ If the constraints needed to judge feasibility are unclear, confirm them with th
 
 The work design mode presents only the minimum steps needed to reach the goal.
 
-- If the user has defined the problem, do not add a step that redefines it. If the user has given a direction, do not add a step that explores directions.
-- Write steps that run at the same time, or that finish naturally within one task, as a single step.
+### Order of Tidying Steps
+
+Tidy both a newly drafted process and an existing process given by the user or another instruction in the order below. Elimination comes first because any effort spent refining a step that will be deleted is wasted. Ordering comes after combining because fewer steps are then left to arrange.
+
+1. (Eliminate) Delete the steps that fail the checks. If the user has defined the problem, do not add a step that redefines it. If the user has given a direction, do not add a step that explores directions.
+2. (Combine) Write steps that run at the same time, or that finish naturally within one task, as a single step.
+3. (Rearrange) Order the steps so that each step's input is secured before that step. Put checks that affect every later step, such as checking input material for gaps and format, near the start.
+4. (Simplify) If several methods give the same result, use the method that finishes with the tools and material the user already has as the default.
+
+### Input and Output Links
+
+The Input and Output columns of the work process table show the links between steps. Apply the conditions below so that a third party can reach the same judgment from the table alone.
+
+- The Output of every Task is used as the Input of a later Task or as the final deliverable. Delete any Task whose Output is used nowhere.
+- The Input of every Task is material the user provided or the Output of an earlier Task. For an Input with no source, add a Task that secures it before the step or confirm it with the user.
+- The final deliverable comes out as the Output of one Task.
+
+### Output Format
+
 - Write only the procedure, without adding its significance, background, or expected benefits. Do not write sentences such as "We propose the following process", "In this step, data is collected", or "This will improve efficiency".
 - Decide the number of modules within the range that passes the checks.
 - Unless another format is specified, output in the format below. Write only the action performed in the content column.
@@ -101,7 +120,7 @@ The work design mode presents only the minimum steps needed to reach the goal.
 
 ## Unit Rules
 
-In the expression and summary modes, every unit delivers exactly one message. A department-store listing hands the burden of choosing what to look at to the reader. When one unit packs in several independent claims, the reader cannot tell what that unit says.
+In the expression mode, every unit delivers exactly one message. A department-store listing hands the burden of choosing what to look at to the reader. When one unit packs in several independent claims, the reader cannot tell what that unit says.
 
 ### Setting the Message
 
@@ -121,10 +140,11 @@ Put the message at the head of the unit.
 - With a sentence-style header, the header carries the message and the first sentence of the body opens with evidence.
 - With a keyword-style header, the header announces the subject of the message and the first sentence of the body carries the judgment.
 - If the subject the header announces differs from the message in the first sentence, rename the header or move the content.
+- In output with two or more units, reading only the units' messages in order must still convey the overall conclusion, because each message summarizes the content of its unit.
 
 ### Selecting Components
 
-The default is three to four components or fewer per unit to support the message. People can hold only a limited number of information chunks at once, so as items increase, the attention each item gets decreases.
+The default is three to four components or fewer per unit to support the message. Adults can hold about four information chunks at once, so when items go beyond that, the attention each item gets decreases.
 
 - Selected components do not overlap, and each covers a different part of the message.
 - Do not stretch content that two components cover into three or four to fill a count.
@@ -143,6 +163,8 @@ Compress by selecting elements. If you keep every element and only shorten the s
 4. Decorative figures and examples that do not contribute to the judgment
 
 ### Emphasis Placement
+
+Emphasis draws the eye through contrast with the surrounding elements. As points of emphasis multiply, the contrast shrinks until no point stands out.
 
 - Arrange the elements in a unit with different weight in the order of message, supporting elements, and details.
 - Set one point of emphasis per unit.
@@ -175,82 +197,7 @@ Sentences in every mode must pass the necessity and reader relevance checks. Jud
 - State uncertainty once. Do not repeat hedges in every sentence.
 - Instead of contrast constructions of the form "not A, but B", state B directly.
 - When the content is the same, state it in the positive form. Write "conversion is possible once structured data is secured" in place of "data readiness is insufficient". A positive sentence states the target state directly, so it is clear and easy to revise and combine sentence by sentence. A negative sentence describes problems case by case, so it is complex and the reader has to infer the target state.
-- Put only one message in each bullet. The recommended length is about 100 characters for Korean text and about 15 words on average for English text. Do not cram unnecessary information into that length.
-
-## Summary Format
-
-The goal of the summary mode is a briefing that lets a third party with no background knowledge grasp the gist of a document and the author's intent within five minutes. The summary mode adds the format below on top of the expression mode rules.
-
-### Obtaining the Input
-
-| Input type | How to obtain it |
-|------------|------------------|
-| URL | Retrieve the full body text with an available web page reading tool |
-| PDF, image, document file | Read the file directly and apply text recognition (OCR) if needed |
-| Pasted text | Use the text as given |
-| Mixed input | Obtain each source separately, then combine them |
-
-- If the input is incomplete or access is blocked, tell the user and proceed with only the information obtained.
-- Do not work around logins, paid subscriptions, or access restrictions to obtain material.
-- Write the output in the user's language, whatever the language of the input.
-
-### Output Template
-
-Do not change the section names, section levels, or section order.
-
-```
-# [Document title or a title extracted from the body]
-[Input type] | [Author] | [Year of publication]
-
-## Overview
-- A [document type] written by [author] for [target reader] to [purpose]
-
-## Background
-- [Background and motive for publication]
-
-## Main Points
-- (Subheading) [Main claim]
-- [Evidence or elaboration supporting the claim]
-- (Subheading) [Main claim]
-- [Evidence or elaboration supporting the claim]
-
-> Organization or author (year), title of material (link)
-
-## Implications
-**[One sentence of assessment that runs through the whole document]**
-- [Evidence or elaboration 1]
-- [Evidence or elaboration 2]
-- [Evidence or elaboration 3]
-```
-
-### Section Rules
-
-| Section | Length | Writing criteria |
-|---------|--------|------------------|
-| Overview | 1 line | Write only the author, document type, purpose, and target reader. Do not include assessments or conclusions. Add a short definition in parentheses for technical terms |
-| Background | 1-3 lines | Write the background and motive for publication. If the stated purpose differs from the actual motive, write both |
-| Main Points | The longest section of the summary | Write three main claims or fewer. Extract only what the document states. Mark inferences as inferences, for example with "appears to" |
-| Implications | Fixed at 4 lines | Write one line of assessment in bold and exactly three bullets of evidence. Do not exceed four lines |
-
-- Arrange bullets in Main Points this way. A bullet that starts with a parenthesized subheading is a claim, and the bullets without a subheading that follow it are the evidence for that claim.
-- Set the number of evidence bullets to match the complexity of the claim. The total line count of Main Points must exceed the line count of Implications.
-- Add a parenthesized subheading only when it is needed to tell claims apart.
-
-### Citation Criteria
-
-- Use three pieces of quantitative data or fewer in the whole summary. The more figures there are, the harder it becomes for the reader to pick the ones that matter for a decision.
-- When you use quantitative data, give the source in a `>` block in the form "Organization or author (year), title of material (link)".
-- Quote only short phrases of the original in quotation marks and give the source. Put the rest in your own words.
-
-### Edge Cases
-
-| Situation | Handling |
-|-----------|----------|
-| Text without claims (personal impressions, lists of opinions, and so on) | List the main content under Main Points and state that there is no main claim |
-| URL not accessible | Tell the user and proceed with only the information provided |
-| Input in several languages | Unify the output in the user's language |
-| Short input such as a brief post | Keep the format and shorten each section |
-| Input containing personal information | Summarize it and mask information that could identify individuals |
+- Put only one independent claim in each sentence and each bullet. When a sentence grows long, first check whether two or more independent claims are mixed in it, and split it if they are. In a sentence with one claim, keep only the modifiers and conditions that claim needs.
 
 ## Revision Procedure
 
@@ -258,8 +205,9 @@ Apply this when revising existing output in the expression mode.
 
 1. Extract every message by unit and diagnose the number of messages in each unit
 2. Split units with two or more messages and reduce components to within the standard
-3. Apply element judgment and the sentence rules to the remaining sentences
-4. Deliver the revised result with a short diagnosis for each unit
+3. Read only the messages in order, and where the flow breaks, add the missing message or change the order of units
+4. Apply element judgment and the sentence rules to the remaining sentences
+5. Deliver the revised result with a short diagnosis for each unit
 
 ## Common Output Rules
 
@@ -288,7 +236,7 @@ The organizations, products, and situations in the examples below are all fictio
 9. Draft the report
 ```
 
-(Handling) The user had already set the purpose of the report, so the redefinition step was deleted. Benchmarking, framework design, and interviews took too much effort relative to the purpose of reporting survey results, so they failed the proportionality check. Descriptive statistics and cross-tabulations finish in one tabulation task, so they were merged. Deriving implications was merged into the message selection step.
+(Handling) The user had already set the purpose of the report, so the redefinition step was deleted. Benchmarking, framework design, and interviews took too much effort relative to the purpose of reporting survey results, so they failed the proportionality check. Descriptive statistics and cross-tabulations finish in one tabulation task, so they were merged. Deriving implications was merged into the message selection step. The remaining Tasks were arranged so that each Output feeds the Input of the next Task and the last Output becomes the report material.
 
 (after)
 
@@ -368,6 +316,28 @@ stabilize before a shorter launch schedule and a larger marketing budget can
 take effect.
 ```
 
+### Expression (Chart)
+
+(before)
+
+```
+(Title) Results by division
+- Show the revenue bars of all 12 divisions in the same color
+- Attach data labels to every bar
+```
+
+(Diagnosis) The title is a topic label. All 12 divisions are laid out at equal weight, so the reader has no point to look at.
+
+(after)
+
+```
+(Title) The materials division generated more than half of company-wide revenue growth
+- Show only the materials division bar in the accent color and attach its data label
+- Show the top two divisions other than materials at lower saturation and combine the rest into "Other"
+```
+
+(Handling) The title was turned into a judgment sentence that carries the message. The highlighted series was set to the materials division alone, the subject of the message. Only the divisions needed for comparison remain, and the rest were combined into "Other", which cut the displayed items to four.
+
 ### Expression (Concise Answer)
 
 (Question) What to check first when adopting an automatic meeting-notes tool
@@ -390,40 +360,6 @@ I hope this helps!
 - Check whether it integrates with the collaboration tools you already use. Without integration, moving the records becomes a new task.
 ```
 
-### Summary
-
-(Input) A press release from a fictional metropolitan city announcing a plan to expand public bicycles
-
-(after)
-
-```
-# Public Bicycle Expansion Plan
-Web (press release) | City of OO | 2025
-
-## Overview
-- A press release issued by the City of OO for residents and transport departments to announce the direction of expanding public bicycle rental stations
-
-## Background
-- Reliance on cars for short trips in the city center was identified as a cause of traffic congestion
-- Existing rental stations were concentrated downtown, which made them hard to use for residents of outer residential areas
-
-## Main Points
-- (Station expansion) The city presents a plan to add rental stations in outer residential areas and around subway stations
-- The aim appears to be encouraging people to use bicycles for trips between subway stations and homes
-- (Fare reform) The city presents a plan to discount bicycle fares when transferring to public transit
-- The press release does not state the size of the discount or when it takes effect
-- (Operations) The city is considering outsourcing breakdown reports and bicycle redistribution to a private operator
-- The operator and selection process are to be announced later
-
-> City of OO (2025), Public Bicycle Expansion Plan (link)
-
-## Implications
-**An expansion plan aimed at demand for trips between outer residential areas and subway stations**
-- If the transfer discount takes effect, trips that combine public transit and bicycles may increase
-- The size and timing of the discount are missing, so follow-up announcements need checking
-- If operations are outsourced, the standards for managing redistribution quality appear to decide the plan's success
-```
-
 ## Exceptions
 
 - If the user asks for "more detail", "be specific", "a detailed process", or "all the steps", do not apply the concision and count standards to that part.
@@ -441,12 +377,13 @@ Web (press release) | City of OO | 2025
 - Did you handle each failed element by deletion, splitting, moving, or merging?
 - Is the work process free of steps that reset a problem or direction the user already set?
 - Did you avoid splitting work that one action finishes into several steps?
+- Did you tidy the process in the order eliminate, combine, rearrange, simplify?
+- Is the Output of every Task used as the Input of a later Task or as the final deliverable, and does the table show a source for every Input?
 - Does every unit deliver exactly one message in the form of a judgment sentence?
+- Does reading only the units' messages convey the overall conclusion?
 - Does each unit have three to four components or fewer (excluding built-in framework counts and exceptions)?
 - Did you compress by selecting elements?
 - Does each unit have one point of emphasis?
 - Does the first sentence start with the answer, and does the last sentence avoid courtesies and unrequested offers?
-- Does each bullet hold one message within the recommended length?
-- Did you follow the section names, order, and length standards of the summary format?
-- Are there three pieces of quantitative data or fewer, each with a source?
+- Does each sentence and each bullet hold one independent claim?
 - Is the output free of any sign that this skill was applied or of its rule names?
