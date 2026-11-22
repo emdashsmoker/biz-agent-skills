@@ -42,6 +42,7 @@ The terms below keep the same meaning throughout this document.
 Every criterion in the sections below comes from these principles. Use them to decide cases the document does not cover.
 
 - (Strict logic) State the conclusion first and split the evidence without gaps or overlaps. The richer the effects, the messier a slide looks when this skeleton breaks.
+- (One message per slide) A slide delivers one message. Content that belongs to another message goes on a separate slide. With one message, the rich effects and the evidence all draw the eye to that message.
 - (Effects follow importance) Keep the number of effect types small and give elements with the same role the same effect. Match effect strength to the order of importance. When every element shines, no element stands out.
 - (Every element carries this project) Photos, icons, shapes, copy and every other element point to something specific to the project. An element that would still work on another project's slide only takes up space.
 - (Verified facts only) Do not invent information or sources you do not know. When facts, figures, organization names, dates, sources and similar items are uncertain, ask the user or leave them off the slide.
