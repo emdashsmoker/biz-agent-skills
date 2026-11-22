@@ -158,13 +158,12 @@ This style works with light and dark backgrounds. Pick whichever works better fo
 |---|---|---|
 | Amount of text | Slides with much body text, tables, charts and similar content | Slides with little text, built around photos, 3D objects, large shapes and similar |
 | Venue | Bright meeting rooms, individual screen reading and similar | Dimmed event halls and similar |
-| Distribution | Printed handouts, possible grayscale printing and similar | Screen-only showing works with light and dark backgrounds |
 | Organization template | The template has a light base | The template has a dark base |
 
 - Dark text on a light ground is easier to read than the reverse. That is why light backgrounds suit text-heavy slides.
 - In a dimmed venue, a fully bright screen dazzles the audience.
-- Dark backgrounds use a lot of ink when printed and lose quality in grayscale.
-- When the lighting and distribution are unknown, leave the venue row and the distribution row out and decide from the remaining rows and the slide's purpose and subject.
+- Dark backgrounds use a lot of ink when printed and lose quality in grayscale. Printed handouts or possible grayscale printing favor a light background. When the slide is screen-only or the distribution is unknown, leave distribution out of the decision.
+- When the lighting is unknown, leave the venue row out and decide from the remaining rows and the slide's purpose and subject.
 - Slides that ask the audience to read and weigh evidence get a light background. Analyses, plans, review results and similar fall in this group. Slides that leave an impression with one scene get a dark background. Vision announcements, covers, dividers and similar fall in this group.
 - Reflect the subject when what it covers is itself a dark or light scene. Night landscapes, space, stages and similar suit a dark background. When the purpose and subject do not settle the choice, pick a light background.
 - Write the reason for the choice in the design direction in one line, citing the slide's content.
