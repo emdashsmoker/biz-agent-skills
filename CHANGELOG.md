@@ -27,6 +27,21 @@ Changelog rules
 - (Push) Commit on top of the latest main and push directly to main.
 -->
 
+## 2026-11-22
+
+### grand-viz-style
+- Changed the default accent from red to an orange-leaning vermilion that stays vivid at the lightness that passes 4.5:1 with white text (#83)
+- Changed the color order to apply to each role so that only unspecified roles fall to the defaults (#83)
+- Added a rule that asks the user how to assign the primary and accent colors when a warm primary meets the default accent (#83)
+- Added a rule that uses a lightness step of a color field when neither white nor dark text reaches 4.5:1 for normal text on it (#83)
+- Added a line that adjusts colors that look jarring or unnatural to the audience and practitioners during verification toward what is easy to read, pleasant and natural (#83)
+
+* 기본 강조색을 적색 계열에서 흰 글자와 4.5:1 대비를 내는 명도에서도 선명한 주황 쪽 주홍 계열로 변경 (#83)
+* 색 결정 순서를 지정되지 않은 역할만 기본값으로 채우는 역할별 적용 방식으로 변경 (#83)
+* 따뜻한 주조색과 기본 강조색이 겹치는 경우의 주조색과 강조색 배정 질의 규칙 추가 (#83)
+* 흰 글자와 짙은 글자 모두 4.5:1에 못 미치는 색면의 일반 글자용 명도 단계 규칙 추가 (#83)
+* 청중과 실무자의 눈에 거슬리거나 부자연스러운 색의 검증 단계 조정 문장 추가 (#83)
+
 ## 2026-11-21
 
 ### grand-viz-style
