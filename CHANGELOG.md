@@ -43,6 +43,11 @@ Changelog rules
 * LLM 및 에이전트에 전달하는 프롬프트와 지침의 긍정형 작성 규칙 추가 (목표 상태를 직접 나타내는 긍정형 지시의 명료성을 근거로 명시) (#86)
 * 긍정 표현 우선 규칙에 근거 문장 추가 (목표 상태의 직접 제시에 따른 명료성 및 문장 단위의 수정과 결합 용이성) (#86)
 
+### digest
+- Fixed HWPX tables missing from the Markdown output with python-hwpx 7.0, which moved export_markdown to a separate package, by pinning python-hwpx to 6.12.0 in the install command and the missing-dependency hint (#99)
+
+* python-hwpx 7.0의 export_markdown 이동에 따른 HWPX 표의 마크다운 변환 누락 오류 수정 (설치 명령과 미설치 안내의 python-hwpx 6.12.0 고정) (#99)
+
 ### environment-analysis
 - Added a placement criterion that puts each fact in one category by the kind of thing it describes, with a table of facts that are easy to misplace (#87)
 - Changed government programs with a set budget, period and implementing body to go to the investment category, with each program named in the measures column of its policy (#87)
@@ -147,6 +152,16 @@ Changelog rules
 
 * 긍정 표현 우선 규칙에 근거 문장 추가 (목표 상태의 직접 제시에 따른 명료성 및 문장 단위의 수정과 결합 용이성) (#86)
 
+### md-parser
+- Fixed HWPX tables missing from the Markdown output with python-hwpx 7.0, which moved export_markdown to a separate package, by pinning python-hwpx to 6.12.0 in the install command (#99)
+
+* python-hwpx 7.0의 export_markdown 이동에 따른 HWPX 표의 마크다운 변환 누락 오류 수정 (설치 명령의 python-hwpx 6.12.0 고정) (#99)
+
+### practical-calc-lite
+- Fixed HWPX tables missing from the Markdown output with python-hwpx 7.0, which moved export_markdown to a separate package, by pinning python-hwpx to 6.12.0 in the install command (#99)
+
+* python-hwpx 7.0의 export_markdown 이동에 따른 HWPX 표의 마크다운 변환 누락 오류 수정 (설치 명령의 python-hwpx 6.12.0 고정) (#99)
+
 ### pref-architect
 - Added a rule to the code-standard module that writes prompts and instructions for LLMs and agents in the positive form (#86)
 - Added a reason to the rule of the always-on instruction guide that writes what to do (#86)
@@ -161,6 +176,16 @@ Changelog rules
 * metadata version 및 동봉 모듈의 generator-version을 1.0에서 1.1로 변경 (#86)
 * 동봉 원본 또는 상시 지침 서식 변경 시의 metadata version 상향 규칙 추가 (#86)
 * 버전 값 불일치 시 배포 저장소와의 metadata version 대조 및 사용자의 진행 방식 선택 단계를 재구성 절차에 추가 (#86)
+
+### project-plan
+- Fixed HWPX conversion falling back to the built-in XML reader with python-hwpx 7.0, which moved export_markdown to a separate package, by naming python-hwpx 6.12.0 as the optional HWPX dependency (#99)
+
+* python-hwpx 7.0의 export_markdown 이동에 따른 HWPX 변환의 내장 XML 추출 전환 오류 수정 (선택 의존성의 python-hwpx 6.12.0 지정) (#99)
+
+### rfp-strategy
+- Fixed HWPX tables missing from the Markdown output with python-hwpx 7.0, which moved export_markdown to a separate package, by pinning python-hwpx to 6.12.0 in the install command (#99)
+
+* python-hwpx 7.0의 export_markdown 이동에 따른 HWPX 표의 마크다운 변환 누락 오류 수정 (설치 명령의 python-hwpx 6.12.0 고정) (#99)
 
 ### skill-forge
 - Added a body-writing rule that states instructions in the positive form, with the reason that a positive instruction states the target state directly (#86)
