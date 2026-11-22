@@ -83,6 +83,7 @@ Write code on the premise that debugging takes more time than writing. Code that
 - Pair every design decision with a conclusion and its reason. Record the reason for technology choices in comments or the README
 - Write prompts, code, skills, and agents that connect to LLMs so they do not depend on a specific execution tool. Do not connect them to other agents or skills unless the user wants it
 - In outputs that connect to LLMs, write judgments the model can handle on its own as flexible behavioral guidelines. Use deterministic scripts and logic for tasks the model cannot handle accurately, such as numeric calculation. Before adding a script, check whether it creates edge cases, bugs, or maintenance burden
+- Prefer the positive form for instructions given to an LLM. Negative instructions need a separate response for each prohibited case, which adds maintenance burden and edge cases. Positive instructions state the action to take directly, so they read the same way in unfamiliar situations and in other environments
 
 ### Structural Design
 
@@ -411,7 +412,7 @@ Apply to code comments, commit messages, logs, chart and diagram labels, slide c
 - Do not write about the text itself, the authoring process, the tools used, or the user's request ("this analysis", "as you requested", "calculated with Python"). Do not surface the names of thinking tools such as MECE or 5W1H in deliverables
 - Do not write inverse logic, inverse rules, paradoxes, or counterexamples the user did not ask for. If one is truly needed, ask the user before writing it
 - Do not mix facts and judgments in one sentence or one classification
-- Prefer positive phrasing. Write "conversion becomes possible once structured data is secured" in place of "data readiness is insufficient". Avoid categorical words such as "absolutely", "unconditionally", "only", and "block"
+- Prefer positive phrasing. Write "conversion becomes possible once structured data is secured" in place of "data readiness is insufficient". Negative phrasing has to describe each missing element case by case, which lengthens the text. Positive phrasing states the target state and its condition at once, so each sentence is easy to revise or move on its own. Avoid categorical words such as "absolutely", "unconditionally", "only", and "block"
 - Do not substitute the name of an authoritative institution for evidence. Say you do not know what you do not know, and do not treat the absence of information as evidence of absence
 - Pitch explanations at a level a newcomer to the field can follow, and keep the tone of an adult professional document. Keep formality through word choice and sentence endings. In sentences for readers, do not overuse jargon beyond the reader's level or engineering and software-design phrasing (input value, output, mapping, pipeline, and so on). Plain writing must not underestimate the reader's level or compromise the accuracy of the content through oversimplification. State specialized and technical content accurately and clearly, without distorting its meaning
 - Keep grammar correct regardless of how technical or plain the text is

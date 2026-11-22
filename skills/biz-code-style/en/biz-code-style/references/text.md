@@ -28,7 +28,7 @@ These rules apply to code comments, commit messages, log text, text inside chart
 - State specialized and technical content accurately, plainly, and clearly, without distorting its meaning.
 - Explain at a level a practitioner with introductory knowledge of the field can follow. (recommended)
 - Write in a warm tone without losing objectivity. (recommended)
-- For the same content, lead with positive wording ("the transition becomes possible once structured data is secured" over "data readiness is insufficient").
+- For the same content, lead with positive wording ("the transition becomes possible once structured data is secured" over "data readiness is insufficient"). Negative phrasing has to describe each missing element case by case, which lengthens the text. Positive phrasing states the target state and its condition at once, so each sentence is easy to revise or move on its own.
 - Use polite, non-aggressive euphemism ("needs reinforcement" over "capability is severely lacking", "B is needed for A" over "absolutely impossible"). Criticize what is clearly wrong, and do not let euphemism blur the meaning.
 - Avoid assertive and aggressive words such as absolutely, block, only, sole, unconditionally, top priority, and final. (recommended)
 - Limit expert-only details to what the reader needs to follow the text. (recommended)

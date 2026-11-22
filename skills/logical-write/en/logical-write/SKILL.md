@@ -125,7 +125,7 @@ Work from large units to small units.
 - Do not use sentence-final periods, semicolons, separator symbols (/, |, ·, →, vs), joining hyphens ("short-mid term"), excessive abbreviations, or unnecessary loanwords and Sino-Korean words.
 - Do not hide the referent behind empty nouns such as the bound noun 것 ("thing") or 곳 ("place"), 부분 ("part"), 셈 ("amount to").
 - Do not use negate-then-assert contrasts such as "not A but B" or "not merely A but B". Write B directly.
-- Prefer the positive form when the meaning is the same. "Cloud migration possible once structured data is secured" beats "Data readiness for cloud migration insufficient".
+- Prefer the positive form when the meaning is the same. "Cloud migration possible once structured data is secured" beats "Data readiness for cloud migration insufficient". Negative phrasing has to describe each missing element case by case, which lengthens the text. Positive phrasing states the target state and its condition at once, so each sentence is easy to revise or move on its own.
 
 ### Structure
 

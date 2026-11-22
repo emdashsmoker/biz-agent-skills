@@ -76,6 +76,7 @@ Apply this to work that spans several files, several sources, or several session
 
 - When writing prompts, code, skills, or agents that connect to an LLM, write them so they are not tied to a specific environment such as Claude Code, Cursor, or ChatGPT.
 - In that work, write what the model can handle on its own as flexible behavioral guidance. Deterministic scripts and fixed logic can add edge cases, bugs, and maintenance burden, so review whether they are needed before adding them.
+- Prefer the positive form for instructions given to an LLM. Negative instructions need a separate response for each prohibited case, which adds maintenance burden and edge cases. Positive instructions state the action to take directly, so they read the same way in unfamiliar situations and in other environments.
 - Unless the user wants it, do not link to other agents or skills. If another skill is needed, ask the user first and present similar alternatives if they exist.
 - Read this skill's body and reference files in full. Do not read only the beginning or the end.
 

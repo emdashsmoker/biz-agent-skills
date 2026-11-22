@@ -184,6 +184,7 @@ The model decides whether to use a skill from the name and description in the sk
 Every time the skill triggers, the body takes up context alongside the conversation history and other skills. Keep each instruction only if the model would get the task wrong without it.
 - Write work-specific rules, cautions, and tool usage, and leave out general knowledge the model already has
 - Give each rule a short reason so the model judges unfamiliar situations by the rule's intent (reasons are followed more reliably than repeated emphasis)
+- Write instructions as the action the model should take, in positive form, so that unfamiliar requests lead to the same action (negative instructions need a separate response for each prohibited case, which adds maintenance burden and exceptions)
 - For steps that tolerate varied results, give only the purpose and criteria, and for steps where a change in order causes errors, fix the commands and order
 - When several methods work, give one default and an exception path (listing equal options delays judgment and lowers consistency)
 - Write a procedure that works for every request of the same type (an instruction holding only one case's answer cannot be reused for other requests)
@@ -474,6 +475,7 @@ Direct install follows these rules.
 Redesign the split of work between instructions and skills when the instructions grow long or overlap with skills.
 - Aim for a split where individual skills carry detailed rules and user instructions carry only skill loading conditions and routing rules
 - Remove wording tied to a specific product or harness so the instructions move easily to other environments
+- Rewrite negative instructions as positive instructions with the same intent so that prohibited cases need not be listed one by one
 - Keep the instructions concise for environments with instruction character limits
 
 1. Confirm the current instruction text and how the user runs skills (default-loaded skills, module split, and similar)
