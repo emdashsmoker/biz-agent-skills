@@ -19,7 +19,7 @@ Use the terms below only in the sense given in this table.
 | Term | Definition |
 |------|------------|
 | Purpose | The judgment or action the reader will make or carry out after receiving the output |
-| Reader | The person who reads or acts on the output. If the user does not specify one, a non-specialist adult with the general knowledge of a first-year university student |
+| Reader | The person who reads or acts on the output. If the user does not specify one, a general adult reader |
 | Scope | The boundary of what the output covers |
 | Final deliverable | The result handed to the reader when the whole work process is finished |
 | Element | The smallest thing being judged. A work step, sentence, bullet, table row, chart series, slide component, and so on |
