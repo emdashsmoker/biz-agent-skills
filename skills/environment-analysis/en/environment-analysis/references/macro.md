@@ -10,54 +10,80 @@ If the user names a framework, follow it. If not, choose only the categories tha
 
 | Framework | Categories and order |
 |---|---|
-| PEST | Political, economic, social, technological |
-| STEEP | Social, technological, economic, environmental, political |
-| PESTEL | Political, economic, social, technological, environmental, legal |
+| PEST | Policy (political), economic, social, technological |
+| STEEP | Social, technological, economic, environmental, policy (political) |
+| PESTEL | Policy (political), economic, social, technological, environmental, legal |
 | Free composition | The categories among policy, regulation, economy, society, technology, and environment that the topic needs. Order follows what the report emphasizes |
 
-R&D topics often use a free composition centered on policy (including regulations and laws) and technology. These frameworks grew in practice from Aguilar (1967), who divided the environment into economic, technical, political, and social sectors in his study of how executives scan their environment. They are not theories with a single correct composition, so choose categories by fit with the topic.
+R&D topics often use a free composition centered on policy, regulation, and technology. These frameworks grew in practice from Aguilar (1967), who divided the environment into economic, technical, political, and social sectors in his study of how executives scan their environment. They are not theories with a single correct composition, so choose categories by fit with the topic.
 
-Macro frameworks do not cover markets, industries, or competitors. The micro environment module handles those separately.
+Macro frameworks do not cover markets, industries, competitors, or investment. The micro environment module handles those separately.
 
-## Items to collect by category
+## Questions by category
 
-| Category | Items to collect | Main source types |
-|---|---|---|
-| Policy | National strategies, industrial policy, science and technology policy, budget allocation direction, policies of major foreign countries | Releases from ministries and local governments, statutory plans, reports from international organizations |
-| Regulation | Enactment and amendment of laws, permits, standards, certification, deregulation and new regulation | Legal information systems, legislative records, standards bodies |
-| Economy | Growth, prices, interest rates, exchange rates, trade, supply chains | Central banks, statistics agencies, international statistics |
-| Society | Demographics, employment, consumer behavior, social needs | National statistics, official surveys |
-| Technology | Trends in papers, patents, standardization, demonstration, and commercialization | Academic databases, patent databases, standards bodies, research institute reports |
-| Environment | Climate, energy, resources, environmental regulation | Government and international organization reports |
+Place each fact in the one category whose question it answers. For facts that are easy to misplace at a boundary, follow the placement rules in SKILL.md. When a fact belongs to a category the user's framework lacks, place it in the closest category of that framework (for example, regulation goes under policy in PEST, and so on).
+
+| Category | Question it answers | Content | Main source types |
+|---|---|---|---|
+| Policy | Where do the government and political actors intend to go | National strategies, statutory and non-statutory plans, policy directions and investment strategies by field, policies of major foreign countries, political conditions at home and abroad when the scope includes them, and so on | Releases from ministries and local governments, plan literature, reports from international organizations, and so on |
+| Regulation | What is required and what is permitted | Enactment and amendment of laws, permits, mandatory standards and certification, deregulation and new regulation, and so on | Legal information systems, legislative records, documents from regulators, and so on |
+| Economy | How are conditions across the whole economy changing | Economy-wide indicators such as growth, prices, interest rates, exchange rates, trade, and supply chain conditions | Central banks, statistics agencies, international statistics, and so on |
+| Society | How are the makeup of the population and ways of living changing | Demographics, employment, lifestyles and consumer behavior, social issues, and so on | National statistics, official surveys, and so on |
+| Technology | Where does the technology stand on its development path | Performance level and limits, technology maturity, R&D level, R&D trends seen in papers, patents, and standards, demonstration and commercialization, technology convergence, and so on | Technology roadmaps, technology level assessments, review papers, research institute reports, academic databases, patent databases, standards body documents, and so on |
+| Environment | How is the state of nature and resources changing | Climate, greenhouse gas emissions, pollution, resource reserves and depletion, ecosystems, and so on | Observation data and reports from governments and international organizations, and so on |
 
 ## Organizing policy trends
 
-Organize policy by jurisdiction level and policy area.
+The policy category covers policy directions, and it also covers political conditions when the scope includes them.
 
-- (Jurisdiction level) Major foreign countries, national, regional
-- (Policy area) Industrial and technology policy, science and technology policy, regulation
+- (Policy literature) Organize literature that states a policy direction, such as national strategies, statutory plans, non-statutory plans, and ministry releases, in the table below
+- (Political conditions) Write events that shift policy direction, such as changes of government or legislature, elections, geopolitical conflict, and trade disputes, as descriptive bullets. If the user has not said whether to include them, ask during scoping, and write policy directions only when the decision is to leave them out. When political conditions are included, use the category label fixed during scoping as the section title, as given
 
-Build a table for each combination, only where material exists. The default lookback period is the last 5 years.
+Divide policy literature by jurisdiction level (major foreign countries, national, regional) and build only the levels that have material. When several policy areas apply (industrial policy, science and technology policy, and so on), add an area column. The default lookback period is the last 5 years.
 
-| Year | Country or agency | Policy or regulation name | Background | Content | Measures | Expected effects |
+| Year | Country or agency | Policy name | Background | Content | Measures | Expected effects |
 |---|---|---|---|---|---|---|
 
-The expected effects column carries the effects stated in the policy document itself. Keep the analyst's evaluation out of it. Use the official full names of policies and agencies.
+- The expected effects column carries the effects stated in the policy literature itself. Keep the analyst's evaluation out of it
+- Use the official full names of policies and agencies
+- A plan drawn up under a law is literature that states a policy direction, so it belongs to policy
+- Record a program that carries out a policy by name in the measures column of that policy row. Cover the program's budget, period, and details in the investment category of the micro environment. A policy sets a direction, and a program is the means that carries out that direction with budget
+- Record the total investment plan stated in policy literature as the content of that policy
 
 If the subject is a region or a local government, move that region's own policies to internal status. This follows the controllability criterion in SKILL.md.
 
+## Organizing regulation
+
+The regulation category covers binding rules. Record the stage of each rule, such as proposed, pre-announced, promulgated, or in force. The stage decides when the rule starts to apply.
+
+| Year | Country or agency | Law or rule name | Main content | Who it applies to | Stage |
+|---|---|---|---|---|---|
+
 ## Organizing technology trends
 
-Check technology trends by type of evidence.
+The technology category records, as facts, where the topic technology stands on its development path. The question comes from the technology S-curve of Foster (1986). The S-curve is the path on which performance gains from cumulative R&D effort are slow at first, speed up in the middle, and slow again as the technology nears its limit. Record what material confirms among the items below.
+
+| What to record | Details |
+|---|---|
+| Performance level | Current level of key performance indicators, the trend of improvement, theoretical limits or targets, and so on |
+| Maturity | TRL, demonstration, stage of commercialization and adoption, and so on |
+| R&D level | Leading countries and institutions, levels and gaps between countries, and so on |
+| R&D trends | Main research actors and directions, competing approaches, technology convergence, standardization, and so on |
+
+Confirm what you record through the evidence types below.
 
 | Evidence type | Items to check |
 |---|---|
-| Papers | Main research streams, most-cited topics, emerging keywords, leading research institutions |
-| Patents | Technology areas with growing filings, top applicants, filing countries, technology concentration |
-| Standards | Standardization launched and finalized, participating organizations |
-| Demonstration and commercialization | Prototypes, demonstration projects, commercial product launches |
+| Papers | Main research streams, most-cited topics, emerging keywords, leading research institutions, and so on |
+| Patents | Technology areas with growing filings, top applicants, filing countries, technology concentration, and so on |
+| Standards | Standardization launched and finalized, participating organizations, and so on |
+| Demonstration and commercialization | Prototypes, demonstration results, commercial product launches, and so on |
 
-Build the table below for each level: overseas, national, and regional.
+- Organize each technology separately, following where the topic sits in the classification fixed in the scope section. Neighboring technologies at the same level can stand at different points on their development paths
+- Use first the analysis that public literature presents, such as technology roadmaps, technology level assessments, review papers, and research institute reports. For counts of papers and patents, cite the results the literature presents. Add direct queries by the procedure in references/sources.md when a data channel exists
+- Record R&D spending, project counts, funding raised, and so on in the investment category of the micro environment. Money is the input into technology development, and the technology category covers the state of the technology that results from that input
+
+For R&D trends, build the table below for each level: overseas, national, and regional.
 
 | Year | R&D organization | R&D content | TRL | Basis for TRL |
 |---|---|---|---|---|
@@ -93,8 +119,12 @@ Within each category, write overseas trends first and then national trends. If t
 ## Check
 
 - Categories follow the user's framework or fit with the topic
-- No market, industry, or competitor content has slipped into the macro environment
-- The expected effects in the policy table repeat what the policy documents state
+- No market, industry, competitor, or investment content has slipped into the macro environment
+- Each fact answers the question of the category it sits in
+- Programs appear by name in the measures column of their policy row
+- Political conditions and the category label follow what the scope decided
+- Technology trends are organized separately for each technology
+- The expected effects in the policy table repeat what the policy literature states
 - No TRL is estimated without basis
 - Writing moves from overseas to national to regional
 - No interpretation or prescription is mixed in

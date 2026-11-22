@@ -39,9 +39,21 @@ An environment analysis does not always need the full process. Every module can 
 | Data channel | Web search, user-provided files, or connected systems (MCP, API, database) |
 | Verification level | The strictness of source checking, from level 1 to level 3, defined in references/sources.md |
 
-One criterion separates macro, micro, and internal: whether the subject can control or interact with the item. The same item moves between categories when the subject changes. Regional industrial policy is part of the macro environment when a firm in the region is the subject, and part of internal status when that region or its local government is the subject. A policy direction document for government R&D programs belongs to the macro environment. The funding flow of individual programs and projects that the subject applies for or competes for belongs to the investment category of the micro environment. Programs the subject has already won and is running are resources it controls, so they belong to internal status.
+One criterion separates macro, micro, and internal: whether the subject can control or interact with the item. The same item moves between categories when the subject changes. Regional industrial policy is part of the macro environment when a firm in the region is the subject, and part of internal status when that region or its local government is the subject. Programs the subject has already won and is running are resources it controls, so they belong to internal status.
 
 The industry value chain and the organizational value chain work at different units. The unit of the industry value chain is a market, and the unit of the organizational value chain is an activity inside one organization. Always write both terms with their qualifier and never shorten either to "value chain". Record the stages of the industry value chain where the subject does business as the business scope in its organization profile, and cover the market structure of those stages in the micro environment.
+
+## Placing facts in categories
+
+Inside a module, the kind of thing a fact describes decides its category. Each category answers one question, and a fact goes in the one category whose question it answers. The questions are in references/macro.md and references/micro.md. Facts that describe the same kind of thing go in the same category even when the field name, the responsible ministry, the governing law, or the words in a source title differ. Ministry names and program terms change by country and over time, but the kind of thing a fact describes stays the same, so the same material always lands in the same category.
+
+| Fact that is easy to misplace | Placement | Reason |
+|---|---|---|
+| A government program with a set budget, period, and implementing body (open calls, demonstration programs, infrastructure programs, business support programs, and so on) and its amount | Investment in the micro environment | A policy direction the government has stated (strategy, plan, roadmap, and so on) is policy, and a program that spends budget to carry out that direction is a flow of funds |
+| R&D spending, project counts, funding raised, and so on | Investment in the micro environment | The technology category covers the state of a technology, and money is the input that produces that state |
+| Binding rules such as laws, permits, certification, and so on | Regulation in the macro environment | Policy states a direction, and regulation binds |
+| Market size and growth of a specific industry, stock and venture investment in a specific industry or firm, and so on | Market or investment in the micro environment | The economy category covers economy-wide indicators |
+| Policy, regulation, markets, corporate investment, and so on in the environmental field | Policy, regulation, market, and investment respectively | The environment category covers the physical state of nature and resources |
 
 ## Modules
 
@@ -68,7 +80,7 @@ Place the modules you run in the order of the table. Moving from broad external 
 | Market size and outlook | Market category of the micro environment |
 | Competitive structure, Five Forces | Competition category of the micro environment, procedure in references/five-forces.md |
 | Key companies | Key players within the competition category of the micro environment |
-| R&D investment trends, national R&D project analysis, venture investment trends | Investment category of the micro environment. For a region subject, projects and corporate R&D spending within the region go to internal status |
+| R&D investment trends, government support programs and open calls, national R&D project analysis, venture investment trends | Investment category of the micro environment. For a region subject, projects and corporate R&D spending within the region go to internal status |
 | Industry value chain structure | Industry value chain category of the micro environment |
 | Internal capability assessment, VRIO, SPROC | Internal status for an organization subject |
 | Organizational value chain, analysis of internal activities | Internal status for an organization subject, organizational value chain framework |
@@ -114,17 +126,21 @@ Settle the following items.
 | Topic | Industry, technology, product, service, or policy field to analyze | None. Ask if missing |
 | Geography | Global, national, regional | Global and national. Add regional for a region subject |
 | Time frame | Period for the current situation and period for the outlook | Last 5 years for the current situation, 5 years for the outlook |
+| Political conditions | Whether the policy category also covers political conditions or only the policy directions that result from politics | None. Ask when a request that runs the policy category does not say. If proceeding without confirmation, cover policy directions only |
+| Policy category label | The label for the category and its section title when political conditions are included. Choose among "policy environment analysis", "political environment analysis", and "political and policy environment analysis" | "Policy environment analysis". Ask when a request that includes political conditions does not name the label |
 | Purpose and use | Internal review, external submission, input to later analysis, and so on | Propose a value inferred from the request. Internal review if there is no clue |
 | Internal source disclosure | When internal material is used, choose the full document name, "[organization] internal material", or no source in the body (recorded only in the fact register), based on disclosure scope, internal security, and personal-information sensitivity | Full document name for internal review, "[organization] internal material" for external submission |
 | Modules and categories | Chosen from the request mapping and the defaults | Result of the request mapping |
 | Verification level | Level 1 to 3 | Result of the selection rule in references/sources.md |
 | Output format | Bullet report in markdown, tables, file format, output language | Bullet report in markdown, written in the user's language |
 
-Fill items the request leaves open with defaults, build a scope proposal, and confirm it in one round. Splitting questions across several turns adds burden for the user. If the subject or the topic is missing, the analysis cannot start, so ask only for that item. When Five Forces is in scope, include industry definition, industry value chain breakdown, geographic scope, and time scope in the same confirmation. If the user says to proceed without confirmation, proceed with the defaults and record the applied scope in the report's scope section.
+Fill items the request leaves open with defaults, build a scope proposal, and confirm it in one round. Splitting questions across several turns adds burden for the user. If the subject or the topic is missing, the analysis cannot start, so ask only for that item. Political conditions are sensitive to cover, so the user decides whether to include them and which category label to use. Ask both in the same confirmation. When Five Forces is in scope, include industry definition, industry value chain breakdown, geographic scope, and time scope in the same confirmation. If the user says to proceed without confirmation, proceed with the defaults and record the applied scope in the report's scope section.
 
 Once the scope is settled, run to the end on your own. After that point, questions to the user are limited to confirmation steps at verification level 2 or 3, requests for access to internal data, confirmation of query conditions for complex databases, the internal data confirmation list, and an internal source disclosure level not settled during scoping.
 
 When the topic is an industry or a technology, write a topic overview in the scope section at the start of the report. For a partial analysis covering a single category, write it only if the user wants it. The topic overview covers the topic's definition and what is included and excluded (What), how it works or is implemented (How), and its importance as confirmed by sources (Why). Decide here whether adjacent industries or related technologies are part of the analysis or treated as substitutes. The topic overview also uses sourced facts only.
+
+When the topic is an industry or a technology, fix where the topic sits in a classification and record it in the scope section. This applies to a partial analysis covering a single category too. Confirm from material a classification the field itself uses (standard classification schemes, technology roadmaps, standards documents, review papers, and so on), and record the topic's parent class, its neighbors at the same level, and its components. Classification schemes are revised often, so state the source and reference date of the one applied. Treat items as separate when they differ in material, working principle, process, equipment, use, or the like, even if they share a parent class or have similar names (for example, silicon and compound semiconductors, the additive manufacturing process and 3D printer equipment, superconducting and trapped-ion quantum computers, and so on). Check that the scope of each piece of collected material matches the topic. When material covers a wider scope or a neighboring item, state that scope and record the fact as a fact about that scope.
 
 ### Step 2 Checking data channels
 
@@ -214,6 +230,8 @@ If the environment can save files, keep the scope proposal, the fact register, m
 - Every figure was computed or rechecked in code
 - Module sections contain no interpretation, to-be states, or solutions
 - The macro, micro, and internal classification follows the controllability criterion
+- Each fact sits in the one category that fits the kind of thing it describes
+- The scope each fact covers matches the topic, or the fact states its scope
 - Each module builds on facts from earlier modules, with no isolated items
 - Every implication cites supporting fact IDs and every fact feeds an implication
 - The output contains no SWOT labels, strategies, initiatives, or support needs

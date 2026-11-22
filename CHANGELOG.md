@@ -43,6 +43,46 @@ Changelog rules
 * LLM 및 에이전트에 전달하는 프롬프트와 지침의 긍정형 작성 규칙 추가 (목표 상태를 직접 나타내는 긍정형 지시의 명료성을 근거로 명시) (#86)
 * 긍정 표현 우선 규칙에 근거 문장 추가 (목표 상태의 직접 제시에 따른 명료성 및 문장 단위의 수정과 결합 용이성) (#86)
 
+### environment-analysis
+- Added a placement criterion that puts each fact in one category by the kind of thing it describes, with a table of facts that are easy to misplace (#87)
+- Changed government programs with a set budget, period and implementing body to go to the investment category, with each program named in the measures column of its policy (#87)
+- Changed the policy category to cover policy directions and to organize policy literature (#87)
+- Added a separate regulation table that records the stage of each rule (#87)
+- Changed technology trends to record where a technology stands on its development path through performance level, maturity, R&D level and R&D trends, with public literature used first (#87)
+- Changed investment trends to divide by source of funds (public, private) and by use (R&D, other than R&D) (#87)
+- Added budget classification, program type and program period columns to the public investment table (#87)
+- Added a scope step that fixes where an industry or technology topic sits in a classification of its field (#87)
+- Added scope questions on whether the policy category covers political conditions and which label it takes (#87)
+- Changed the P label of PEST, STEEP and PESTEL to policy (#87)
+
+* 사실이 서술하는 대상의 종류로 범주를 정하는 배치 기준 및 혼동하기 쉬운 사실의 배치 표 추가 (#87)
+* 예산, 기간, 수행 주체가 정해진 정부 사업의 배치를 투자 범주로 변경 (정책 테이블에는 추진 방안 열의 사업명으로 기재) (#87)
+* 정책 범주의 대상 및 정리 자료의 표기를 정책 방향 및 정책 문헌으로 변경 (#87)
+* 규범의 진행 단계를 기재하는 제도와 규제 테이블 추가 (#87)
+* 기술 동향의 기록 내용을 발전 경로상의 위치(성능 수준, 성숙도, 연구개발 수준, 연구개발 동향)로 변경 (공개 문헌 우선 활용) (#87)
+* 투자 동향의 구분 기준을 재원(공공, 민간) 및 용도(연구개발, 연구개발 외)로 변경 (#87)
+* 공공 투자 테이블에 재정 구분, 사업 유형, 사업 기간 열 추가 (#87)
+* 산업 및 기술 주제의 분류상 위치를 정하는 범위 설정 절차 추가 (#87)
+* 정치 상황의 포함 여부 및 정책 범주 명칭을 묻는 범위 설정 질문 추가 (#87)
+* PEST, STEEP, PESTEL의 P 항목 표기를 정책으로 변경 (#87)
+
+### environment-analysis-lite
+- Added a placement criterion that puts each fact under one item by the kind of thing it describes (#87)
+- Changed government programs with a set budget and period to go to investment trends (#87)
+- Changed policy and regulation into separate items (#87)
+- Changed investment trends to divide by source of funds (public, private) and by use (R&D, other than R&D) (#87)
+- Added a rule that fixes where an industry or technology target sits in a classification of its field (#87)
+- Added scope questions on whether the policy item covers political conditions and which label it takes (#87)
+- Changed the P label of PEST and STEEP to policy (#87)
+
+* 사실이 서술하는 대상의 종류로 항목을 정하는 배치 기준 추가 (#87)
+* 예산 및 기간이 정해진 정부 사업의 배치를 투자 동향으로 변경 (#87)
+* 정책 항목과 제도와 규제 항목의 구성을 별도 항목으로 변경 (#87)
+* 투자 동향의 구분 기준을 재원(공공, 민간) 및 용도(연구개발, 연구개발 외)로 변경 (#87)
+* 산업 및 기술 대상의 분류상 위치를 정하는 규칙 추가 (#87)
+* 정치 상황의 포함 여부 및 정책 항목 명칭을 묻는 범위 설정 질문 추가 (#87)
+* PEST, STEEP의 P 항목 표기를 정책으로 변경 (#87)
+
 ### grand-viz-style
 - Changed the default accent from red to an orange-leaning vermilion that stays vivid at the lightness that passes 4.5:1 with white text (#83)
 - Changed the color order to apply to each role so that only unspecified roles fall to the defaults (#83)
