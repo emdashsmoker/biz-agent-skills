@@ -37,7 +37,7 @@ Place each fact in the one category whose question it answers. For facts that ar
 The policy category covers policy directions, and it also covers political conditions when the scope includes them.
 
 - (Policy literature) Organize literature that states a policy direction, such as national strategies, statutory plans, non-statutory plans, and ministry releases, in the table below
-- (Political conditions) Write events that shift policy direction, such as changes of government or legislature, elections, geopolitical conflict, and trade disputes, as descriptive bullets. If the user has not said whether to include them, ask during scoping, and write policy directions only when the decision is to leave them out
+- (Political conditions) Write events that shift policy direction, such as changes of government or legislature, elections, geopolitical conflict, and trade disputes, as descriptive bullets. If the user has not said whether to include them, ask during scoping, and write policy directions only when the decision is to leave them out. When political conditions are included, use the category label fixed during scoping as the section title, as given
 
 Divide policy literature by jurisdiction level (major foreign countries, national, regional) and build only the levels that have material. When several policy areas apply (industrial policy, science and technology policy, and so on), add an area column. The default lookback period is the last 5 years.
 
@@ -122,7 +122,7 @@ Within each category, write overseas trends first and then national trends. If t
 - No market, industry, competitor, or investment content has slipped into the macro environment
 - Each fact answers the question of the category it sits in
 - Programs appear by name in the measures column of their policy row
-- Political conditions are included or left out as the scope decided
+- Political conditions and the category label follow what the scope decided
 - Technology trends are organized separately for each technology
 - The expected effects in the policy table repeat what the policy literature states
 - No TRL is estimated without basis
