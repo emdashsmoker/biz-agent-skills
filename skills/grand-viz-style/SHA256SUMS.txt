@@ -1,2 +1,2 @@
-070bf84f67e94cb134f526e5a56ee6ce5f9aaaa891dacfb75fdd66b65ca1839d  grand-viz-style-en.skill
-4291dce75c4b9a61f0eae9e85eff62029e78bbe548f3e1b2804a205094bd4dc3  grand-viz-style-ko.skill
+931b751997fdf4fdf7e11e6265446653a0636e9c1491d8a6be64199b088501c2  grand-viz-style-en.skill
+21c38cbe4139d5c55b37388177b6b1960073731fba1173c6059cb8ae7faf4424  grand-viz-style-ko.skill

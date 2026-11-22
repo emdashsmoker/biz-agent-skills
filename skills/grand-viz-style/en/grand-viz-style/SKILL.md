@@ -203,11 +203,14 @@ The same role color uses different steps depending on background lightness.
 | Panel fills, area shading | Light step that stands apart from the background at a glance | White or light-step content surfaces |
 | Icons, bullets, arrows, lines | Dark step with ample contrast against the background | Light step with ample contrast against the background |
 
-Set colors in this order.
+Set the color of each role in this order.
 
 1. Colors the user specifies
 2. The presenting organization's signature colors (read them from a logo or past materials if the user provided them)
-3. With no instruction or clue, a deep navy primary, a teal or sky-blue secondary and a red accent
+3. With no instruction or clue, a deep navy primary, a teal or sky-blue secondary and a vermilion accent
+
+- Vermilion reads as less of a warning than red. It stays vivid even at the lightness that reaches 4.5:1 with white text (see the contrast section).
+- When the primary is set to a warm color such as red, vermilion or orange and the accent falls to the default, the vermilion accent does not stand apart from the primary. This happens when a user-specified color or the organization's signature color is warm. In that case, ask the user how to assign the primary and accent colors.
 
 ### Order of color fields
 
@@ -226,7 +229,7 @@ Set colors in this order.
 - Compute contrast ratios by running code against the colors that touch.
 - Pick vivid colors first and meet the criteria through text color assignment. Darkening color fields to pass the criteria muddies the secondary and accent colors and makes the whole slide sink.
 - For each color field, assign white text or dark text (the darkest primary step), whichever gives higher contrast. Light fields such as sky blue, teal, orange, yellow and similar get dark text.
-- Choose an accent for white text from hues that pass 4.5:1 while vivid, such as reds, magentas and similar. Fix the hue and saturation and find the lightest value that passes, in code.
+- Choose an accent for white text from hues that stay vivid at the lightness that passes 4.5:1. Fix the hue and saturation and find the lightest value that passes, in code. Oranges and yellows turn brown or ochre at that lightness, so shift the hue toward vermilion.
 - Apply the same criteria when the accent or secondary color is used as a text color. A color that lacks contrast with its ground becomes the field behind the text, and the text stays white or dark.
 - For text on gradients, light, photos and similar grounds, compute against the lowest-contrast point in the area under the text. For semi-transparent text, compute with the color that results from blending with the ground.
 - When slides with different background lightness mix, such as a cover and body slides, a role color may pass on one background only. Set background-specific steps for each role color and compute contrast on both backgrounds.
@@ -481,6 +484,7 @@ After building, render the result as an image and look at it. Fix any defect and
 - Whether to use the organization's signature colors, logo and template files
 - Providing photos and illustrations, or approving a generation tool
 - Adding chromatic color roles
+- Assigning the primary and accent colors when the primary is a warm color
 - Verifying information without a confirmed source
 - Verifying the terms of use of images and icons whose terms are unconfirmed
 - The final level of effect intensity
