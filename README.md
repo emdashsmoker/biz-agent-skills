@@ -62,7 +62,7 @@ A skill whose name ends in `-lite` is a lite edition: the same function with sho
 
 ### Working setup
 
-- [`lean-work`](skills/lean-work/): Fixes the purpose, reader and scope first, then keeps only what the work needs.
+- [`lean-work`](skills/lean-work/): Fixes the purpose, reader and scope first, then trims work processes to the minimum steps and focuses each unit of expression on one message.
 - [`long-task-ledger`](skills/long-task-ledger/): Records long multi-step agent work so it can resume after a truncated conversation or a new session.
 - [`pref-architect`](skills/pref-architect/): Designs short always-on instructions and on-demand modular skills through an interview.
 - [`skill-forge`](skills/skill-forge/): Builds, combines and manages skills and agent instructions.
@@ -166,7 +166,7 @@ Each skill carries its own `LICENSE` and `NOTICE.md`. Under the output exception
 
 ### 작업 환경
 
-- [`lean-work`](skills/lean-work/): 목적, 독자, 범위를 먼저 정하고 작업에 필요한 요소만 남깁니다.
+- [`lean-work`](skills/lean-work/): 목적, 독자, 범위를 먼저 정한 뒤 작업 절차는 최소 단계로 줄이고 표현은 단위당 메시지 1개로 정리합니다.
 - [`long-task-ledger`](skills/long-task-ledger/): 대화가 잘리거나 세션이 바뀌어도 긴 다단계 작업을 이어 갈 수 있도록 기록합니다.
 - [`pref-architect`](skills/pref-architect/): 인터뷰로 짧은 상시 지침과 필요할 때만 불러오는 모듈 스킬을 설계합니다.
 - [`skill-forge`](skills/skill-forge/): 스킬과 에이전트 지침을 생성하고 조합하고 관리합니다.
