@@ -157,8 +157,8 @@ This style works with light and dark backgrounds. Pick whichever works better fo
 | Factor | Light background fits | Dark background fits |
 |---|---|---|
 | Amount of text | Slides with much body text, tables, charts and similar content | Slides with little text, built around photos, 3D objects, large shapes and similar |
-| Venue | Bright meeting rooms, individual screen reading and similar | Dimmed event halls, large screens and similar |
-| Distribution | Printed handouts, possible grayscale printing and similar | Screen-only showing |
+| Venue | Bright meeting rooms, individual screen reading and similar | Dimmed event halls and similar |
+| Distribution | Printed handouts, possible grayscale printing and similar | None, screen-only showing works with both |
 | Organization template | The template has a light base | The template has a dark base |
 
 - Dark text on a light ground is easier to read than the reverse. That is why light backgrounds suit text-heavy slides.
