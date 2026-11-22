@@ -89,7 +89,7 @@ Within each category, write overseas trends first and then national trends. If t
 - Describe objective conditions and trends only. Leave out to-be states, solutions, and the analyst's evaluation of outlooks
 - Outlooks published by a source can be recorded as facts, together with who made the outlook, the publication year, and the outlook period
 - Choose only changes that affect the topic
-- Record indicators whose measured scope is the whole national or world economy in the economy category. Record the size and growth of the topic's market in the market category of the micro environment
+- Record indicators whose measured scope is an industry wider than the topic or the whole economy in the economy category. Record the size and growth of the topic's market in the market category of the micro environment
 - Do not record the same fact under several categories. If a fact spans two categories, place it in the one more directly tied to the topic
 - Record each fact in the fact register with a MAC- ID
 

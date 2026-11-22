@@ -49,7 +49,7 @@ The same data can belong to different modules depending on its relation to the s
 - Firms, universities, research institutes, and industry statistics of a region go to internal capability when the subject is that region, and to micro environment when the subject is a company
 - Place material that involves money or funding by the unit the amount belongs to. The labels that separate R&D from non-R&D, policy from program, and public from private differ by country, ministry, law, and period, so judge by the attributes of the unit
 - (Allocation unit) A unit with a budget or committed amount and a defined performer or investee goes to investment trends in micro environment. Public programs and projects (both R&D and non-R&D), fund commitments, fundraising deals, and corporate R&D spending and facility investment fall here. Programs the subject has already won and runs go to internal capability
-- (Aggregate) A statistic whose measured scope is the target's market or industry goes to micro environment (market size, investment by field, trading trends in stocks of related firms). A statistic whose scope is the whole national or world economy goes to economy in macro environment (interest rates, stock indices, national gross R&D expenditure)
+- (Aggregate) A statistic whose measured scope is the target's market or industry goes to micro environment (market size, investment by field, trading trends in stocks of related firms). A statistic whose scope is an industry wider than the target or the whole economy goes to economy in macro environment (interest rates, stock indices, national gross R&D expenditure)
 - (Policy and institutions) Strategies and plans that set direction and targets (statutory and non-statutory plans) and rules applied on the same terms to every party that meets the requirements (investment tax credits, disclosure duties) go to macro environment. Policies set by the subject itself go to internal capability. Record target investment amounts stated in a policy document as policy content, and record budgets of individual programs in the same document in micro environment
 - Competitors' market share and size go to micro environment. Competitors' practices studied to learn from them go to benchmarking
 - With no subject, skip the internal capability module and write the micro environment from the viewpoint of the whole industry
@@ -268,7 +268,7 @@ Record external changes the subject cannot alter, with a focus on facts.
 | Year | Country | Performing organization | R&D content | TRL | TRL basis and definition used |
 |---|---|---|---|---|---|
 
-- (Economy, society, natural environment, law) Record only indicators and events that affect the target. Present indicators as time series of three to five years or more with CAGR. Under economy, record indicators whose measured scope is the whole national or world economy, and record the size and growth of the target market in micro environment
+- (Economy, society, natural environment, law) Record only indicators and events that affect the target. Present indicators as time series of three to five years or more with CAGR. Under economy, record indicators whose measured scope is an industry wider than the target or the whole economy, and record the size and growth of the target market in micro environment
 
 ## Micro Environment Module
 
