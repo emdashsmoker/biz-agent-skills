@@ -74,7 +74,7 @@ For a multi-slide deck, set the storyline and the fixed elements listed in the m
 
 - When the user states the use setting, follow it.
 - When the request makes the use setting clear without stating it, follow that setting. Requests that mention printed handouts, a place in a report, reading before a meeting and similar fall in this group.
-- When the user does not state the use setting and the request does not make it clear, set it to screen showing at a large venue with no handouts. In the background section, treat this setting as the large-screen condition and the screen-only condition. Proceed with this default without asking about the use setting.
+- When the user does not state the use setting and the request does not make it clear, set it to screen showing at a large venue with no handouts. Proceed with this default without asking about the use setting. Apply this default to information density decisions. For background lightness, treat the venue and distribution as unknown and decide by the criteria in the background lightness section.
 - Judge the use setting from information about how the slide will be used, such as the venue, handouts and where it will be published. Adjust slides with much content by the criteria in the information density section.
 
 ## Slide skeleton
@@ -151,18 +151,21 @@ Background lightness and background treatment change both the impression and the
 
 ### Background lightness
 
-This style works with light and dark backgrounds. Pick whichever works better for the purpose and use setting.
+This style works with light and dark backgrounds. Pick whichever works better for the topic, purpose and use setting.
 
 | Factor | Light background fits | Dark background fits |
 |---|---|---|
+| Topic and purpose | Topics or purposes that convey approachability and openness, such as everyday-life policy, welfare, education and resident participation | Topics or purposes that convey immersion and grandeur, such as advanced technology, space and future vision declarations |
 | Amount of text | Slides with much body text, tables, charts and similar content | Slides with little text, built around photos, 3D objects, large shapes and similar |
-| Venue | Bright meeting rooms, individual screen reading and similar | Dimmed event halls, large screens and similar |
+| Venue | Bright meeting rooms, individual screen reading and similar | Dimmed event halls and similar |
 | Distribution | Printed handouts, possible grayscale printing and similar | Screen-only showing |
 | Organization template | The template has a light base | The template has a dark base |
 
+- A light background gives a wide, open impression, and a dark background gives a deep, focused one. Choosing the impression that fits the topic and purpose lets the background support the message.
 - Dark text on a light ground is easier to read than the reverse. That is why light backgrounds suit text-heavy slides.
 - In a dimmed venue, a fully bright screen dazzles the audience.
 - Dark backgrounds use a lot of ink when printed and lose quality in grayscale.
+- When the venue and distribution are unknown, decide by the topic and purpose, the amount of text and the organization template. Proceeding with the default in the use setting section falls in this group.
 - Body slides on a dark background still place their content on light content surfaces. Floating light surfaces on a dark background gives both richness and readability.
 - Covers and dividers may use a different background lightness from body slides. In that case, set the shade of each role color for both backgrounds.
 
@@ -471,7 +474,7 @@ After building, render the result as an image and look at it. Fix any defect and
 ### Effect checks
 
 - Was the use setting set by the criteria in the use setting section?
-- Does the background lightness fit the amount of text, the venue and the distribution?
+- Does the background lightness fit the topic and purpose, the amount of text, and the confirmed venue and distribution?
 - Does the background treatment serve the message and pass the removal test?
 - In the squint test, is the hero element seen first?
 - Does the hero element stand out in area, contrast and depth, and does the slide avoid looking like a table or list?
