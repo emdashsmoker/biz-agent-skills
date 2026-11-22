@@ -39,9 +39,23 @@ An environment analysis does not always need the full process. Every module can 
 | Data channel | Web search, user-provided files, or connected systems (MCP, API, database) |
 | Verification level | The strictness of source checking, from level 1 to level 3, defined in references/sources.md |
 
-One criterion separates macro, micro, and internal: whether the subject can control or interact with the item. The same item moves between categories when the subject changes. Regional industrial policy is part of the macro environment when a firm in the region is the subject, and part of internal status when that region or its local government is the subject. A policy direction document for government R&D programs belongs to the macro environment. The funding flow of individual programs and projects that the subject applies for or competes for belongs to the investment category of the micro environment. Programs the subject has already won and is running are resources it controls, so they belong to internal status.
+One criterion separates macro, micro, and internal: whether the subject can control or interact with the item. The same item moves between categories when the subject changes. Regional industrial policy is part of the macro environment when a firm in the region is the subject, and part of internal status when that region or its local government is the subject. Programs the subject has already won and is running are resources it controls, so they belong to internal status.
 
 The industry value chain and the organizational value chain work at different units. The unit of the industry value chain is a market, and the unit of the organizational value chain is an activity inside one organization. Always write both terms with their qualifier and never shorten either to "value chain". Record the stages of the industry value chain where the subject does business as the business scope in its organization profile, and cover the market structure of those stages in the micro environment.
+
+## Fact placement
+
+Topic words such as AI, semiconductors, carbon neutrality, or ESG appear across every category. Place each fact by the kind of thing it describes. Split facts that involve government by the kind of action the government takes. Directions, rules, and macroeconomic management are changes the subject has no direct exchange with, so they belong to the macro environment. Funding and purchasing are things the subject takes part in by applying, competing, or trading, so they belong to the micro environment.
+
+| Government action | Material | Category |
+|---|---|---|
+| Setting direction | Political calendar, national strategies, statutory and non-statutory plans, roadmaps, including target investment amounts stated in the document | Macro environment, policy |
+| Setting rules | Enactment and amendment of laws, regulations, permits, mandatory standards and certification, disclosure duties | Macro environment, regulation |
+| Funding | Programs and projects with an allocated budget, calls for proposals, grants, subsidies, loans, investment in policy funds, whether R&D or not | Micro environment, investment |
+| Purchasing | Public procurement, public demand | Micro environment, customers and demand |
+| Managing the macroeconomy | Policy rate decisions, foreign exchange intervention, total government spending | Macro environment, economy |
+
+When one document holds several actions, split the facts by action and record each in its category. For example, the direction and target amount of an investment strategy a ministry announces go to policy, and the budget and selection results of a demonstration program the same ministry calls for go to investment. Facts outside government follow the category boundaries in references/macro.md and references/micro.md.
 
 ## Modules
 
@@ -68,7 +82,7 @@ Place the modules you run in the order of the table. Moving from broad external 
 | Market size and outlook | Market category of the micro environment |
 | Competitive structure, Five Forces | Competition category of the micro environment, procedure in references/five-forces.md |
 | Key companies | Key players within the competition category of the micro environment |
-| R&D investment trends, national R&D project analysis, venture investment trends | Investment category of the micro environment. For a region subject, projects and corporate R&D spending within the region go to internal status |
+| R&D investment trends, government support programs, national R&D project analysis, venture investment trends | Investment category of the micro environment. For a region subject, projects and programs within the region and corporate R&D spending there go to internal status |
 | Industry value chain structure | Industry value chain category of the micro environment |
 | Internal capability assessment, VRIO, SPROC | Internal status for an organization subject |
 | Organizational value chain, analysis of internal activities | Internal status for an organization subject, organizational value chain framework |
@@ -188,6 +202,7 @@ When the user asks for a review of an environment analysis that already exists, 
 | Implication links | Each implication has supporting facts, and every fact feeds an implication |
 | Structure | Conclusions come first, parent and child bullets relate as conclusion and evidence, and items on one level follow one grouping basis |
 | Classification | Items do not overlap or leave gaps, and one level holds four items or fewer |
+| Category placement | Facts sit in the category that the fact placement rules and the module category boundaries assign. Government programs and investment amounts sit in micro environment investment, and technology trends are split by technology unit |
 | Sources | Sources pass the quality criteria in references/sources.md. News reports are traced to original sources |
 | Figures | Each figure has a source and reference date and matches a recheck in code |
 | Sentences | The text passes the writing check in references/writing.md |
@@ -214,6 +229,7 @@ If the environment can save files, keep the scope proposal, the fact register, m
 - Every figure was computed or rechecked in code
 - Module sections contain no interpretation, to-be states, or solutions
 - The macro, micro, and internal classification follows the controllability criterion
+- Facts that involve government sit in the category that matches the kind of government action
 - Each module builds on facts from earlier modules, with no isolated items
 - Every implication cites supporting fact IDs and every fact feeds an implication
 - The output contains no SWOT labels, strategies, initiatives, or support needs

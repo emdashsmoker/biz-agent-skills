@@ -28,8 +28,9 @@ These rules for data collection, source quality, verification levels, and comput
 | Corporate disclosures and financials | Disclosure system APIs |
 | Patents | Patent office databases, public patent search services, user exports |
 | Papers | Academic database APIs, user exports |
+| Public non-R&D program budgets | Fiscal information disclosure systems, ministry budget documents, program calls |
 | Corporate R&D spending | R&D activity survey statistics, industry surveys, corporate disclosures |
-| Venture investment | Association and government statistics, user exports from paid investment databases |
+| Facility and risk capital investment | Facility investment statistics, association and government statistics, user exports from paid investment databases |
 | Internal capability material | Internal document systems, internal databases, user-provided files |
 
 ### Channel rules

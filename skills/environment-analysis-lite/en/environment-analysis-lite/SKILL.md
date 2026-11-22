@@ -41,13 +41,15 @@ The same data can belong to different modules depending on its relation to the s
 
 | Module | Criterion | Typical items |
 |---|---|---|
-| Macro environment | External factors the subject cannot influence | Policy and institutions (including regulation), economy, society, technology, natural environment, law |
-| Micro environment | Industry and market the subject interacts with through trade, competition, or cooperation | Industry value chain, market size, competitors, customers, suppliers, investment flows |
+| Macro environment | External factors the subject cannot influence | Politics and policy, law and institutions (including regulation), economy, society, technology, natural environment |
+| Micro environment | Industry and market the subject interacts with through trade, competition, or cooperation | Industry value chain, market size, competitors, customers, suppliers, public and private investment |
 | Internal capability | Resources and capabilities the subject owns or operates | Staff, funding, facilities, ongoing programs, organizational value chain activities, organization, culture, firms and institutions located in the region |
 | Benchmarking | Results and practices of other entities used as reference | Overseas cases, other domestic regions, peer organizations |
 
 - Firms, universities, research institutes, and industry statistics of a region go to internal capability when the subject is that region, and to micro environment when the subject is a company
-- Directions and institutions stated in policy documents go to macro environment. Money flows such as budget execution and investment attraction go to investment trends in micro environment. Policies set by the subject itself and programs it runs go to internal capability
+- Topic words such as AI, carbon neutrality, or ESG appear across every item, so decide the item by the kind of thing the material describes
+- Split material that involves government by the kind of government action. Directions and target investment amounts stated in strategies and plans go to politics and policy in the macro environment, laws and regulations go to law and institutions in the macro environment, programs and projects with an allocated budget go to investment trends in the micro environment whether R&D or not, public procurement goes to customers in the micro environment, and macroeconomic management such as policy rates and total government spending goes to economy in the macro environment
+- Policies set by the subject itself and programs it runs go to internal capability
 - Competitors' market share and size go to micro environment. Competitors' practices studied to learn from them go to benchmarking
 - With no subject, skip the internal capability module and write the micro environment from the viewpoint of the whole industry
 
@@ -104,7 +106,7 @@ Data that general web search rarely finds needs the connected tool and user requ
 
 | Data type | Examples | Typical holders |
 |---|---|---|
-| Investment trends | Venture investment deal counts and amounts, M&A, government R&D budgets and projects | Venture investment databases, national R&D information services (e.g., NTIS in Korea), budget disclosure systems |
+| Investment trends | Government R&D programs and projects, government non-R&D program budgets, corporate R&D spending, facility investment, venture investment deal counts and amounts, M&A | National R&D information services (e.g., NTIS in Korea), budget disclosure systems, program calls, R&D activity surveys, venture investment databases |
 | Internal capability | Staff, budget, program results, work processes, organizational culture | HR, finance, and project management systems, collaborative document tools, spreadsheets, email, messengers, internal databases, ontologies |
 | Detailed statistics | Establishments, employees, and output by region and industry | National statistics portals, statistics APIs |
 | Facilities and equipment | Research equipment specifications, open access status | National research equipment information services, institution disclosures |
@@ -250,22 +252,30 @@ How to respond: approve, correct, replace (search for an alternative source), re
 Record external changes the subject cannot alter, with a focus on facts.
 
 - (Item selection) Use the framework the user names. Without one, pick only the items that affect the target
-- (Framework contents) PEST covers political, economic, social, and technological factors. PESTEL adds the natural environment and law to PEST. STEEP covers social, technological, economic, environmental, and political factors in that order
-- (Item order) Set it by purpose and emphasis. For R&D and industry analysis, policy and institutions and technology are often central, so review those two first
+- (Framework contents) PEST covers political, economic, social, and technological factors. PESTEL adds the natural environment and law to PEST. STEEP covers social, technological, economic, environmental, and political factors in that order. PEST and STEEP have no law item, so write the policy table and the law and institutions table apart within the political item
+- (Item order) Set it by purpose and emphasis. For R&D and industry analysis, politics and policy, law and institutions, and technology are often central, so review those items first
 - (Overseas then domestic) Within each item, write overseas trends first and domestic trends next, showing the influence, response, or gap between them. If regional policy affects the target, write it after national policy even when the region is not the subject
 - (Research period) Prefer data from the research period set in stage 1
-- (Policy and institutions) Record them in the table below, including regulatory changes. If both industrial policy and science and technology policy apply, separate them with the field column. Record expected effects only as stated in the policy document
+- (Politics and policy) Write the political situation (elections and changes of government, conflicts and trade disputes between countries) as narrative items, and record national strategies, statutory plans, and non-statutory plans in the table below. If both industrial policy and science and technology policy apply, separate them with the field column. Put the document type the source states, such as strategy, statutory plan, or non-statutory plan, in parentheses after the policy name. Write target investment amounts stated in the document in the instruments column, and write individual programs with an allocated budget under investment trends in the micro environment. Record expected effects only as stated in the policy document
 
-| Year | Country | Agency | Field | Policy or institution | Background | Main content | Instruments | Expected effects |
+| Year | Country | Agency | Field | Policy name (document type) | Background | Main content | Instruments | Expected effects |
 |---|---|---|---|---|---|---|---|---|
 
-- (Technology) Record R&D trends in the table below. Use TRL (the nine-level technology maturity scale) values only as stated by the source. If the source gives none, mark an estimate with its basis and the TRL definition table used, or write "unknown" when the basis is weak. TRL definition tables differ across fields and agencies, so comparisons without a stated basis mislead
+- (Law and institutions) Record enactment and amendment of laws, regulations, permits, mandatory standards and certification, and disclosure duties in the table below
+
+| Effective date | Country | Agency | Law or institution | Enactment or amendment | Main content | Who it applies to |
+|---|---|---|---|---|---|---|
+
+- (Technology) Gather the basis for judging where on the S-curve the target technology stands: performance level and rate of improvement, TRL, trends in papers and patents, standardization, and results of demonstration and commercialization. Foster's (1986) S-curve shows performance against cumulative R&D effort, so treat R&D budgets and investment amounts as inputs on the horizontal axis and write them under investment trends in the micro environment. The budget and selection results of demonstration programs also go under investment trends in the micro environment
+- (Technology units) First define technology units, each the range that improves the same performance metric through the same working principle, and write unit by unit. Split into separate units when any one of working principle, base material, or core performance metric differs (e.g., superconducting, trapped ion, neutral atom, and photonic quantum computers). Keep one object type (material, device, process, equipment, software, application, and so on) and one criterion at each level (e.g., additive manufacturing is a process and a 3D printer is equipment. Silicon and compound semiconductors by material and memory and RF by function are classified at different levels)
+- (Official classification) Confirm the name and scope of each technology unit in an official classification, such as a patent classification, a national technology classification, or a standard terminology, and record the classification name and edition in the evidence register. Official classifications get revised, so the edition lets anyone query the same scope again. If a source gives only a figure that combines several units, record the source's scope and do not estimate a split into lower units
+- (R&D trends) Record them in the table below. Use TRL (the nine-level technology maturity scale) values only as stated by the source. If the source gives none, mark an estimate with its basis and the TRL definition table used, or write "unknown" when the basis is weak. TRL definition tables differ across fields and agencies, so comparisons without a stated basis mislead
 - (Papers and patents) When data is available, add time series tables of annual paper publications, patent filings, and major applicants
 
-| Year | Country | Performing organization | R&D content | TRL | TRL basis and definition used |
-|---|---|---|---|---|---|
+| Year | Country | Technology unit | Performing organization | R&D content | TRL | TRL basis and definition used |
+|---|---|---|---|---|---|---|
 
-- (Economy, society, natural environment, law) Record only indicators and events directly related to the target. Present indicators as time series of three to five years or more with CAGR
+- (Economy, society, natural environment) Record only indicators and events directly related to the target. Present indicators as time series of three to five years or more with CAGR. Economy covers indicators aggregated over the national and world economy as a whole (growth, prices, interest rates, exchange rates, trade), and the natural environment covers states measured in physical quantities such as climate, emissions, and resources. Growth of the target market and the share prices of and equity investment in target firms go to the micro environment, emissions disclosure duties and emissions trading schemes go to law and institutions, and the emissions of an individual firm go to that firm's information in the micro environment
 
 ## Micro Environment Module
 
@@ -293,8 +303,18 @@ Record the industry and market in which the subject participates or competes. Sh
 
 ### Investment Trends
 
-- Research public R&D budget execution, venture investment (deal counts and amounts by stage), and M&A
-- Investment plans stated in policy documents go to the macro environment. Actual execution and investment results go here
+Money flows go here whatever the field of investment, such as green, ESG, or AI. Split them into the four categories below by the combination of funder (public, private) and funding track (R&D, non-R&D).
+
+| Category | What to research |
+|---|---|
+| Public R&D investment | Budgets and execution of programs and projects that government and public bodies fund from R&D budgets |
+| Public non-R&D investment | Budgets and execution of fiscal programs outside R&D budgets (commercialization and demonstration support, facility and infrastructure building, subsidies and matching, policy loans, investment in policy funds) |
+| Private R&D investment | R&D spending that firms and other private parties fund themselves |
+| Private non-R&D investment | Facility investment, equity investment by venture capital, private equity, and corporate venture capital (deal counts and amounts by stage), M&A |
+
+- Decide whether a program is R&D by the funder's official classification (the classification in budget documents and program calls, and registration in the national R&D information service), and record the basis and reference year. The same program changes track when the budget classification rules change
+- Equity investment is a purchase of equity, and deal data does not show whether the money goes to R&D, so classify it as private non-R&D investment
+- Target investment amounts stated in government strategies go to the politics and policy table in the macro environment. Write budgets, execution, and investment results here with the nature of each amount, and do not add amounts of different nature together
 - Follow the stage 2 table for access channels and mark items not obtained as "not obtained"
 
 ### Five Forces Competitive Structure
@@ -372,7 +392,7 @@ Record list-type assets with the columns below.
 | Table | Columns | Rules |
 |---|---|---|
 | Facilities and equipment | Owner, name, type (testbed, research equipment, data processing facility), specifications, quantity, use, open access status and terms of use | Specifications and quantities follow the owner's public disclosures |
-| Ongoing programs | Category (externally funded R&D, self-funded R&D, non-R&D support program; externally funded means R&D run by regional institutions with central government funds when the subject is a region), ministry or managing agency, performing organization, program name, period, content, annual budget | List only programs currently under way and leave out planned applications or unselected programs. Keep R&D and non-R&D programs apart |
+| Ongoing programs | Funding (external, own) and track (R&D, non-R&D); externally funded means programs run by regional institutions with central government funds when the subject is a region, and the track follows the rule in micro environment investment trends, ministry or managing agency, performing organization, program name, period, content, annual budget | List only programs currently under way and leave out planned applications or unselected programs. Keep R&D and non-R&D programs apart |
 | Researchers | Affiliation type (company, university, research institute), name, affiliation, research field, representative public papers or projects | Limited to the public information defined in Lawful Data Collection |
 
 ### Capability Assessment
@@ -490,6 +510,7 @@ Confirm each item below by code or by comparison with source text. If any item f
 - Every figure in the body matches the value recalculated in code
 - Every implication cites fact IDs, and every fact is used by at least one implication (checked by code that matches IDs)
 - Each fact's module placement follows the module sorting rule, and industry and organizational value chains are not mixed
+- Government programs and investment amounts sit in the four categories of micro environment investment trends, and technology trends are organized by technology unit
 - Analysis sections and implications contain no prescriptions, target states, or recommendations
 - If Five Forces was performed, unit tables, summary rows, cross-checks among forces, and cross-checks between adjacent units are all complete
 - At verification level 2 or 3, no unapproved citation appears in the body

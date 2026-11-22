@@ -111,7 +111,7 @@ Regional innovation resources fall into four groups following research on region
 | Knowledge application | Ecosystem linkages, large firms and SMEs located in the region, anchor innovation organizations, industrial clusters, industry statistics |
 | Knowledge generation | Universities and departments, research institutes, regional branches of government-funded research institutes, key research teams |
 | Innovation support | Business support organizations, research and demonstration facilities and equipment, data processing facilities |
-| Policy and funding | Central government R&D programs won by the region, the region's own R&D programs, non-R&D business support programs, regional industrial policy |
+| Policy and funding | Central government programs won by the region, the region's own programs, regional industrial policy and regulation |
 
 ### Knowledge application items
 
@@ -159,17 +159,19 @@ How the facilities and equipment could serve the topic is a judgment, so it belo
 
 For national R&D projects carried out by organizations in the region, apply the national R&D database rules in references/micro.md with the scope narrowed to the region.
 
-List central government R&D programs only when organizations in the region have already received central government funding and are carrying them out. Exclude programs the region is preparing to bid for or plans to apply to. List pure R&D programs only, and organize non-R&D programs separately.
+Split programs into tables by funder (central government, the region itself). Record each program's track (R&D, non-R&D) by the track rule in references/micro.md and group programs by track within each table.
 
-| Ministry | Performing organization in the region | Program name | Program period | Program content | Budget by year |
+List central government programs only when organizations in the region have already received central government funding and are carrying them out. Exclude programs the region is preparing to bid for or plans to apply to.
+
+| Ministry | Performing organization in the region | Program name | Track and basis | Program period | Program content | Budget by year |
+|---|---|---|---|---|---|---|
+
+Organize the region's own programs in the format below.
+
+| Lead organization | Program name | Track and basis | Program period | Program content | Budget by year |
 |---|---|---|---|---|---|
 
-Organize the region's own R&D programs and non-R&D business support programs separately in the format below. The region's own R&D programs include pure R&D programs only.
-
-| Lead organization | Program name | Program period | Program content | Budget by year |
-|---|---|---|---|---|
-
-Organize the industrial policies and regulations of a region subject here, in the policy table format of references/macro.md.
+Organize the industrial policies and regulations of a region subject here, in the policy table and regulation table formats of references/macro.md.
 
 ## Check
 
@@ -179,7 +181,7 @@ Organize the industrial policies and regulations of a region subject here, in th
 - SPROC areas were applied as defined in the table
 - Activities of the organizational value chain and stages of the industry value chain are not mixed
 - Each regional resource sits in exactly one of the four groups
-- Central government R&D programs include only ongoing programs
-- R&D and non-R&D programs are separated
+- Central government programs include only ongoing programs
+- Each program carries its track and basis, and R&D and non-R&D programs are grouped by track
 - Research team information stays within public professional information
 - No to-be states, needs, or utilization plans are mixed into the text
