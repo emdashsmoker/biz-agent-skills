@@ -1,6 +1,6 @@
 ---
 name: lean-work
-description: A lean work skill that first fixes the purpose, reader, and scope, then keeps only the elements a work process or an expression needs. It applies necessity, reader relevance, feasibility, and proportionality checks to every element and sorts the elements out in the order of eliminate, combine, rearrange, and simplify (ECRS) to produce minimum-step work processes and texts, slides, charts, and so on with one message per unit. It supports both writing new output and revising existing output. Use this skill when the user asks for "/lean-work", "keep it lean", "be practical", "be realistic", "minimum steps", "no unnecessary steps", "cut the pointless steps", "a simple process", "make it doable", "improve this with ECRS", "focus this", "find the focus", "one message per slide", "one message per paragraph", "boil it down to one message", "don't just list everything", "no laundry lists", or "start from first principles". Do not apply it automatically to general tasks without such a request.
+description: A lean work skill that first fixes the purpose, reader, and scope, then keeps only the elements a work process or an expression needs. It applies necessity, reader relevance, feasibility, and proportionality checks to every element, then sorts the elements out in the order of eliminate, combine, rearrange, and simplify (ECRS). The result is a minimum-step work process or texts, slides, charts, and so on with one message per unit. It supports both writing new output and revising existing output. Use this skill when the user asks for "/lean-work", "keep it lean", "be practical", "be realistic", "minimum steps", "no unnecessary steps", "cut the pointless steps", "a simple process", "make it doable", "improve this with ECRS", "focus this", "find the focus", "one message per slide", "one message per paragraph", "boil it down to one message", "don't just list everything", "no laundry lists", or "start from first principles". Do not apply it automatically to general tasks without such a request.
 license: GPL-3.0-or-later with an output exception. Terms in LICENSE and NOTICE.md
 ---
 
@@ -8,9 +8,9 @@ license: GPL-3.0-or-later with an output exception. Terms in LICENSE and NOTICE.
 
 > This English version is a translation of the Korean original. It may behave differently from the intent of the original.
 
-This skill defines a way of working that selects the elements that serve the reader's purpose and explains the selected elements in enough depth. Fix the purpose, reader, and scope before selecting elements. Whether an element is needed can be judged only once these three are set.
+This skill defines a way of working that selects only the elements that serve the reader's purpose and explains them in enough depth. Fix the purpose, reader, and scope before selecting elements. Whether an element is needed can be judged only once these three are set.
 
-It applies to work processes and to expression. A work process is built from the minimum steps needed to reach the goal. Expression is built so that each unit, such as a subheading or paragraph of a text, the headline or a component of a slide, a data item, and so on, delivers one message. Both judge elements with the same checks and sort them out in the order of eliminate, combine, rearrange, and simplify.
+It applies to work processes and to expression. A work process is built from the minimum steps needed to reach the goal. Expression is built so that each unit delivers one message. A unit is a subheading or paragraph of a text, the headline or a component of a slide, a data item, and so on. Both judge elements with the same checks, then sort them out in the order of eliminate, combine, rearrange, and simplify.
 
 ## Definitions
 
@@ -24,7 +24,7 @@ Use the terms below only in the sense given in this table.
 | Element | The smallest thing that is judged and sorted out. In a work process the element is a work step. In expression the elements are the expression elements that make up a unit, such as a sentence, bullet, figure, shape, and so on |
 | Unit | A block of expression the reader sees and understands at once. A subheading or paragraph of a text, the headline or a component of a slide, a data item of a chart or table, and so on. A smaller unit inside a larger unit is treated as an element of the larger unit |
 | Message | The one judgment the reader should remember after seeing a unit. A sentence with a subject and a predicate |
-| Topic label | A title that names a subject without making a judgment. For example "Market overview", "Background", "Key issues" |
+| Topic label | A title that names a subject without making a judgment. "Market overview", "Background", "Key issues", and so on |
 | Department-store listing | Expression that lays out related information at equal weight without a message |
 | Message overload | A state in which one unit holds two or more independent claims |
 | ECRS | The order of improvement used in work study. The initials of Eliminate, Combine, Rearrange, and Simplify |
@@ -38,7 +38,7 @@ Use the terms below only in the sense given in this table.
 
 ## Fixing the Criteria
 
-When the criteria change, the elements to keep and the elements to delete change with them. Settle the items below internally before selecting elements. Use what you settle as the basis for judgment and do not write it in the output.
+When the criteria change, the elements to keep and the elements to delete change with them. Settle the items below before selecting elements. Use what you settle only for judgment, and do not write it in the output.
 
 - Settle first why the work is needed, what output you will make, and how you will make it.
 - Write the purpose, reader, and scope in one sentence each. Use an item the user has already set as it is.
@@ -46,7 +46,7 @@ When the criteria change, the elements to keep and the elements to delete change
 - Treat both the premises in the user's request and the model's own knowledge as things to verify. Common sense, authority, well-known frameworks, buzzwords, and marketing terms do not count as evidence on their own.
 - When given a problem, trace its causes back to the deepest cause the user can act on. Derive the improvement from that cause.
 - Explain the conclusion so that a third party with no background knowledge can follow the evidence and accept it. Use expressions with a clear meaning in the explanation.
-- Match the depth of verification to the impact the judgment has on the conclusion. Do not verify in depth the details that cannot change the conclusion.
+- Match the depth of verification to the impact the item under check has on the conclusion. Do not verify in depth the details that cannot change the conclusion.
 
 ## Choosing a Mode
 
@@ -56,7 +56,7 @@ When the criteria change, the elements to keep and the elements to delete change
 | Expression | Answers, documents, slides, charts, diagrams | Expression procedure |
 
 - Both modes split into writing new output and revising existing output. Revision follows the revision procedure.
-- If one request calls for both a work process and expression, set the process with the work design procedure, then apply the expression procedure to the output of that process.
+- If one request calls for both a work process and expression, first set the work order with the work design procedure. Then apply the expression procedure to the output of that work.
 - If the user or another instruction specifies an output structure (a table template, rating scale, fixed workflow, and so on), keep that structure. In that case, apply element judgment and ECRS to each item and step inside the structure.
 
 ## Element Judgment
@@ -71,11 +71,11 @@ Keep an element only when it meets the checks below. Each check applies to diffe
 | Proportionality | Is the effort put in smaller than the value gained? | Work steps |
 
 - Use the constraints the user has stated as the basis for judging feasibility. If the constraints are unclear, confirm them with the user before proceeding.
-- Keep steps with high sensitivity, such as law, regulation, and safety, regardless of the judgment result. Skipping such a step causes a loss larger than the effort saved.
+- Keep steps in highly sensitive areas, such as law, regulation, and safety, regardless of the judgment result. Skipping such a step causes a loss larger than the effort saved.
 
 ## Applying ECRS
 
-Apply the four questions below to each judged element in the order of the table. When the answer is "no", move on to the next question without action.
+Apply the questions below to each judged element in the order of the table. When the answer is "no", move on to the next question without action.
 
 | Order | Question | Action when the answer is "yes" |
 |-------|----------|---------------------------------|
@@ -85,7 +85,7 @@ Apply the four questions below to each judged element in the order of the table.
 | 4. Simplify | Can a simpler means or form produce the same result? | Change the means or form of the element |
 
 - Apply eliminate first. Effort spent merging or refining an element that will be eliminated leaves nothing in the result.
-- Cover the elements that remain after the four actions in enough depth. ECRS reduces the number of elements so that the reader's attention gathers on those that remain.
+- Cover the elements that remain after ECRS in enough depth. ECRS reduces the number of elements so that the reader's attention gathers on those that remain.
 - The detailed criteria for work steps are in the work design procedure, and those for expression elements are in the expression procedure.
 
 ## Work Design Procedure
@@ -101,13 +101,13 @@ The work design mode presents only the minimum steps needed to reach the goal. A
 
 | Order | Criteria applied to work steps |
 |-------|--------------------------------|
-| Eliminate | Delete steps that do not meet the necessity check. Also delete steps that set again a problem definition or direction the user has already set |
+| Eliminate | Delete steps that do not meet the necessity check. Also delete steps that redo a problem definition or direction the user has already set |
 | Combine | Merge steps that run at the same time or finish within one task into one step. Also merge steps that handle the same input material in the same way into one step |
 | Rearrange | Place a step that uses the output of an earlier step as its input after that step. Place a step early when its result changes the scope or method of later steps. Gather steps with the same purpose in one module |
 | Simplify | First select a method that uses the materials, templates, and tools the user already has. Match the scope and precision of the work to the level the purpose requires |
 
-- Review elimination from the steps that directly produce the output. When such a step is deleted, the steps that prepare or check it are deleted with it.
-- Placing late a step that decides the scope or method of later steps means remaking output that was already made.
+- Review elimination from the steps that directly produce the output. When a step that directly produces the output is deleted, also delete the steps that prepare or check it.
+- If a step that decides the scope or method of later steps comes late, output that was already made has to be made again.
 - For a step that meets necessity but does not meet feasibility or proportionality, reduce the effort by combining and simplifying, then judge it again. Delete a step that still does not meet the checks after the second judgment.
 - Apply the same judgment and ECRS to the plan for work the model carries out itself.
 
@@ -115,7 +115,7 @@ The work design mode presents only the minimum steps needed to reach the goal. A
 
 - Write only the actions to perform in a process. Delete sentences that explain the significance, background, or expected benefits of the process. Sentences such as "We propose the following process", "In this step, data is collected", and "This will improve efficiency" are to be deleted.
 - Decide the number of modules within the range that meets the checks.
-- When the user has asked for a process and has not specified a format, output in the format below. Write only the action performed in the content column.
+- When the user asks for a process without specifying a format, output in the format below. Write only the action performed in the content column.
 
 ```
 ## Module N. Module name
@@ -141,7 +141,7 @@ In the expression mode, every unit delivers exactly one message. A department-st
 - For each unit, answer "What is the one sentence a reader should remember after seeing this unit?"
 - If there is no answer, the unit has no message. Set a judgment sentence or delete the unit.
 - If the answer strings together two or more independent claims, the unit has message overload. Split the unit by adding a slide, splitting the paragraph, dividing the chart, and so on.
-- A topic label carries no judgment, so it does not count as a message. An example of a message is "Low-priced imports cut profitability in the domestic market", a judgment sentence with a subject and a predicate.
+- A topic label carries no judgment, so it does not count as a message. A message is a judgment sentence with a subject and a predicate, such as "Low-priced imports cut profitability in the domestic market".
 
 ### ECRS Criteria for Expression Elements
 
@@ -154,7 +154,7 @@ In the expression mode, every unit delivers exactly one message. A department-st
 
 ### Selecting Components
 
-The default is three to four components or fewer per unit to support the message. People can remember and handle only a limited number of pieces of information at once, so as items increase, the attention each item gets decreases.
+By default, each unit has three to four or fewer components that support the message. People can remember and handle only a limited number of pieces of information at once. As items increase, the attention each item gets decreases.
 
 Review deletion candidates in the order below. The effort spent writing an element is not a reason to keep it.
 
@@ -164,19 +164,19 @@ Review deletion candidates in the order below. The effort spent writing an eleme
 4. Decorative figures and examples that do not contribute to the judgment
 
 - Sort out an element that does not support the message in one of three ways: delete it, split it into a separate unit, or move it to an appendix. Do not name something in the body and leave out its content.
-- If five or more components remain after elimination, first check whether two or more messages are mixed. If they are mixed, split the unit, and if there is one message, merge the components into higher categories.
-- Selected components do not overlap, and each covers a different part of the message.
+- If five or more components remain after elimination, first check whether two or more messages are mixed. If they are mixed, split the unit. If there is one message, merge the components into higher categories.
+- Selected components cover different parts of the message without overlap.
 - Keep only as many components as the message requires. Finish content that two components cover with two.
 - Place elements of different kinds, such as causes and effects, symptoms and remedies, or facts and opinions, in separate groups by kind.
 - Keep the built-in count of frameworks with a fixed number of parts, such as a four-quadrant matrix or a five-stage process.
 
-Compress by reducing the number of elements. If you keep every element and only shorten the sentences, the density of the writing rises while the number of items the reader must read stays the same.
+Compress by reducing the number of elements. If you keep every element and only shorten the sentences, only the density of the writing rises. The number of items the reader must read stays the same.
 
 ### Message Placement
 
 Put the message at the head of the unit.
 
-- On a slide, the headline sentence carries the message.
+- On a slide, the headline carries the message.
 - On a chart, the title carries the message.
 - In a paragraph, the first sentence carries the message. The remaining sentences support only the first sentence.
 - With a sentence-style header, the header carries the message and the first sentence of the body opens with evidence.
@@ -186,11 +186,11 @@ Put the message at the head of the unit.
 
 ### Emphasis Placement
 
-- Arrange the elements in a unit with different weight in the order of message, supporting elements, and details.
+- Arrange the elements in a unit with decreasing weight in the order of message, supporting elements, and details.
 - Set one point of emphasis per unit.
-- In slides and designs, guide the eye with size, position, and color, and show the other elements at smaller size and lower saturation.
+- In slides and designs, draw the eye to the point of emphasis with size, position, and color. Show the other elements at smaller size and lower saturation.
 - In charts, highlight only one series and show comparison series at lower saturation. Attach data labels only to points related to the message.
-- Reduce colors, lines, and decoration that are not used to tell the message apart.
+- Reduce colors, lines, and decoration that do not help deliver the message.
 - If every element carries the same weight, treat the unit as having no point of emphasis and rearrange it.
 
 ### Signs of Department-Store Listing
@@ -217,18 +217,18 @@ Apply this when revising existing output. Add a short diagnosis to the revised r
 
 ### Revising Expression
 
-1. Extract every message by unit and diagnose the number of messages in each unit
+1. Extract the messages of each unit and diagnose how many each unit has
 2. Split units with two or more messages, and for units with no message set a judgment sentence or delete the unit
 3. Judge the elements in each unit and apply ECRS
 4. Deliver the revised result with a short diagnosis for each unit
 
 ## Common Output Rules
 
-Put only the finished result in the output. The reader uses the result, and the process that produced it is not needed for the reader's judgment.
+Put only the finished result in the output. The process that produced the result is not needed for the reader's judgment.
 
-- Keep everything that comes from the internal work of this skill out of the output. The table below gives typical cases, and the same rule applies to internal work content that the table does not list.
-- Do not use in the output the name of this skill, the fact that it was applied, or any term this skill defines or uses (ECRS, element judgment, department-store listing, message overload, and so on). A term the user used first in the request may be used.
-- Do not use meta-commentary in the output. Meta-commentary is an element that does not serve the reader's purpose, so it runs directly against the purpose and intent of this skill, which is to keep only the elements that are needed. Meta-commentary is wording that describes the text itself, the writing process, or the writer's judgment and way of working. Sentences such as "To sum up the key points", "Unnecessary steps were left out", "This was boiled down to one message", "This is kept concise", and so on fall under it.
+- Keep everything that comes from the internal work of this skill out of the output. The table below gives typical cases. The same rule applies to internal work content that the table does not list.
+- Do not use in the output the name of this skill, the fact that it was applied, or the terms, internal frameworks, and the like that this skill defines (ECRS, element judgment, department-store listing, message overload). A term the user used first in the request may be used.
+- Do not use meta-commentary in the output. Meta-commentary is wording that describes the text itself, the writing process, or the writer's judgment and way of working. Sentences such as "To sum up the key points", "Unnecessary steps were left out", "This was boiled down to one message", "This is kept concise", and so on fall under it. Such wording does not serve the reader's purpose, so it runs against this skill's way of working, which keeps only the elements that are needed.
 
 | Internal work | Cases of content kept out of the output |
 |---------------|-----------------------------------------|
@@ -237,18 +237,18 @@ Put only the finished result in the output. The reader uses the result, and the 
 | Applying ECRS | The list of elements that were deleted, merged, moved, or simplified and the reasons, and so on |
 | Pre-delivery check | The checklist items, their results, and so on |
 
-- Do not mention in the output the elements deleted from the body. Listing deleted elements increases again the number of items the reader must read.
+- Do not mention in the output the elements deleted from the body. Listing deleted elements adds back items the reader must read.
 - The diagnosis from the revision procedure is the exception, because the user uses it to check the reasons for the changes. Add a diagnosis only when existing output was revised.
 - If the user asks for the judgment process or the deleted elements, provide only the scope requested.
 - Follow the user or other instructions for writing style and sentence endings, word choice, the length of individual sentences, overall structure and table of contents, and markdown format. This skill governs the selection and order of work steps, the selection of expression elements, and the placement of the message and emphasis.
 
 ## Examples
 
-The organizations, products, and situations in the examples below are all fictional. The tables of what was applied list only the orders that applied. The diagnosis sentences and the tables of what was applied are material that explains how the rules apply. Put in the output only the content that corresponds to the result after revision.
+The organizations, products, and situations in the examples below are all fictional. The tables of what was applied list only the orders that applied. The diagnosis sentences and the tables of what was applied are material that explains how the rules apply. Put only the result after revision in the output.
 
 ### Work Design Example
 
-The user asks for the steps to make an executive report from last month's raw employee survey data in Excel. The user has an executive report template used every quarter.
+The user asks for the steps to make an executive report from last month's raw employee survey data in Excel. The user also has an executive report template used every quarter.
 
 The process before revision is below.
 
@@ -270,8 +270,8 @@ The process before revision is below.
 |-------|------------------|
 | Eliminate | The user had already set the purpose of the report, so the redefinition step was deleted. Benchmarking, framework design, and interviews were deleted because the quality of the survey report holds without them |
 | Combine | Descriptive statistics and cross-tabulations finish in one tabulation task, so they were merged |
-| Rearrange | Checking the report template moved to the first step. The template decides the tabulation items, so placing it late means tabulating again |
-| Simplify | The step that designs a new report structure was switched to using the existing report template and merged into the material writing step. Deriving implications for every question took too much effort relative to the purpose of the report, so its scope was narrowed to message selection, which picks three to four results that need an executive decision |
+| Rearrange | Checking the report template moved to the first step. The template decides the tabulation items, so checking it late means tabulating again |
+| Simplify | The step that designs a new report structure was switched to using the existing report template and merged into the material writing step. Deriving implications for every question took too much effort relative to the purpose of the report, so its scope was narrowed to message selection. Message selection picks only three to four results that need an executive decision |
 
 The process after revision is below.
 
@@ -296,7 +296,7 @@ The process after revision is below.
 
 ### Slide Example
 
-In the slide before revision, the title is a topic label and there are seven parallel items. Independent messages about falling profitability, regulatory change, and industry structure are mixed, and there is no point of emphasis.
+In the slide before revision, the title is a topic label. Its seven parallel items mix independent messages about falling profitability, regulatory change, and industry structure. There is no point of emphasis either.
 
 ```
 (Title) Market overview
@@ -309,7 +309,7 @@ In the slide before revision, the title is a topic label and there are seven par
 - Slow adoption of new technology
 ```
 
-After revision, the slide is split by message. Below is the first of the split slides.
+After revision, the slide is split into three slides by message. Below is the first of them.
 
 ```
 (Headline) Low-priced imports and crowded competition cut profitability in the domestic market
@@ -320,8 +320,7 @@ After revision, the slide is split by message. Below is the first of the split s
 
 | Order | What was applied |
 |-------|------------------|
-| Eliminate | Consumer awareness, distribution structure, and slow technology adoption do not support falling profitability, so they were deleted |
-| Rearrange | The judgment sentence moved up to the headline. The regulatory sandbox program moved to the next slide, which covers opportunity factors |
+| Rearrange | The judgment sentence moved up to the headline. The regulatory sandbox program moved to the second slide, which covers opportunity factors. Consumer awareness, distribution structure, and slow technology adoption moved to the third slide, which covers industry structure |
 
 ### Paragraph Example
 
@@ -335,7 +334,7 @@ larger than ours. Therefore, we should move up the launch date, raise the
 marketing budget, and diversify suppliers.
 ```
 
-After revision, the paragraph is split by message, and each paragraph opens with its message. The remaining sentences support only the first sentence.
+After revision, the paragraph is split by message. Each paragraph opens with its message. The remaining sentences support only the first sentence.
 
 ```
 The launch of the new product is delayed because the parts supply is unstable.
@@ -380,7 +379,7 @@ The chart after revision is below.
 
 - If the user asks for "a detailed process" or "all the steps", do not apply element judgment and ECRS to that process.
 - If the user asks for a complete list or a detailed inventory, do not apply the count standard to that part.
-- For output whose purpose is a complete list, such as laws, regulations, and checklists, do not apply the count standard and apply only the emphasis placement rules.
+- For output that must be a complete list, such as laws, regulations, and checklists, do not apply the count standard. Apply only the emphasis placement rules to such output.
 - Keep the built-in count of frameworks and standard templates with a fixed number of parts.
 - Exclude quotations, verbatim reproductions of source text, and code bodies.
 
@@ -394,12 +393,12 @@ The chart after revision is below.
 - Does every element meet the checks that apply to it?
 - Did you apply eliminate, combine, rearrange, and simplify to every element in this order?
 - Does the output hold only the finished result?
-- Is the output free of internal work content, the name and terms of this skill, and meta-commentary?
+- Is the output free of internal work content, the name and defined terms of this skill, and meta-commentary?
 
 ### Work Design Checks
 
 - Did you follow the problem definition and direction the user set as they are?
-- Is work that one task finishes written as one step?
+- Are steps that finish within one task merged into one step?
 - Are the steps that decide the scope or method of later steps placed early?
 - Did you first select methods that use the materials, templates, and tools the user already has?
 - Are the legal, regulatory, and safety steps kept?
