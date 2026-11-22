@@ -79,23 +79,30 @@ An element stays only when it passes every check that applies to it. Each pass c
 
 ## Work Process Rules
 
-Build a work process from the minimum steps needed to reach the goal.
+Build a work process from the minimum steps needed to reach the goal, and arrange the steps in an order that causes no rework.
 
 ### Handling Steps
 
-Handle a step that fails in the order below. Considering deletion first saves the effort of refining a step that will be deleted.
+After judging the steps, tidy the process in the order below. The order follows ECRS (Eliminate, Combine, Rearrange, Simplify), a technique for improving work. Each action applies only to the steps that remain after the one before it, so no effort goes into refining a step that will be deleted.
 
-1. (Delete) Delete a step that fails necessity
-2. (Merge) When the work of a step is needed but the step runs at the same time as another step or finishes within one task, merge it into that step and write them as one
-3. (Reduce) When a step passes necessity but fails feasibility or proportionality, replace it with a method that produces an output of the same use with fewer resources
+| Order | Action | Applies to | Method |
+|-------|--------|------------|--------|
+| 1 | Delete | A step that fails necessity | Remove it from the process |
+| 2 | Merge | A step whose work is needed but that runs at the same time as another step or finishes within one task | Merge it into that step and write them as one step |
+| 3 | Rearrange | A step whose output has to be redone depending on the result of a later step | Move the decisions and confirmations that change its content ahead of it |
+| 4 | Simplify | A step that passes necessity but fails feasibility or proportionality | Replace it with a method that produces an output of the same use with fewer resources |
 
-| Step that fails | Reduced step |
-|-----------------|--------------|
+- Decide deletion and simplification from the results of element judgment. Decide merging and rearranging from the relations among the remaining steps.
+- In a rearranged process, the input of every step is filled by the output of an earlier step or by material the user provided.
+- For a step that has no way to be simplified, tell the user what resources it needs and confirm whether to proceed.
+
+Examples of simplification are below.
+
+| Step that fails | Simplified step |
+|-----------------|-----------------|
 | Interviews with all stakeholders | Confirm only the items with divided interpretations with one person in charge |
 | Full survey of the population | Sample survey |
 | Collecting new material | Using the material the user already has |
-
-For a step that has no way to be reduced, tell the user what resources it needs and confirm whether to proceed.
 
 ### Writing Steps
 
@@ -107,12 +114,13 @@ For a step that has no way to be reduced, tell the user what resources it needs 
 
 ### Signs to Recheck a Process
 
-If one or more of the signs below appear, apply element judgment to that step again.
+If one or more of the signs below appear, apply element judgment and step handling to that step again.
 
 - A step whose output is used neither as input to a later step nor in the final output
 - A step whose output cannot be named concretely
 - A step that resets a problem, purpose, or direction the user already set
 - Work that one task finishes is split into several steps
+- An order in which the output of an earlier step has to be redone depending on the result of a later step
 - A step that assumes resources the user has not stated (extra staff, extra budget, cooperation from outside organizations, paid material)
 - Extra research steps (benchmarking, interviews, surveys, workshops) are included although the final output can be made from the request and the material provided
 - A step that produces secondary evidence takes the largest effort in the process
@@ -230,7 +238,7 @@ If one or more of the signs below appear, rebuild the unit.
 Apply this when revising existing output.
 
 1. Confirm the purpose, reader, and scope of the existing output
-2. (Work process) Apply the checks to each step and handle the steps that fail in the order of delete, merge, and reduce
+2. (Work process) Apply the checks to each step and tidy the process in the order of delete, merge, rearrange, and simplify
 3. (Expression) Extract every message by unit and find the units with no message and the units with message overload. Split the units with message overload and select components to within the standard
 4. Apply sentence selection to the remaining sentences
 5. Deliver the revised result with a short diagnosis for each step or unit handled
@@ -257,12 +265,17 @@ The organizations, products, and situations in the examples below are all fictio
 4. Clean the data
 5. Compute descriptive statistics
 6. Run cross-tabulations
-7. Interview stakeholders
-8. Derive implications
-9. Draft the report
+7. Derive implications
+8. Draft the report
+9. Verify the interpretation of results through stakeholder interviews
 ```
 
-(Handling) The user had already set the purpose of the report, so the redefinition step was deleted. The outputs of benchmarking and framework design are not used in the tabulation or the report, so they failed necessity and were deleted. Descriptive statistics and cross-tabulations finish in one tabulation task, so they were merged. Stakeholder interviews are used to confirm the interpretation of results, but one person cannot carry them out within this week, so the step was reduced to a check with the person in charge of the survey. Deriving implications was merged into the message selection step.
+(Handling)
+
+- (Delete) The user had already set the purpose of the report, so the redefinition step was deleted. The outputs of benchmarking and framework design are not used in the tabulation or the report, so they failed necessity.
+- (Merge) Descriptive statistics and cross-tabulations finish in one tabulation task. Deriving implications is one task with message selection.
+- (Rearrange) If verification comes after the draft, the draft has to be rewritten depending on the verification result. Verification was moved ahead of message selection.
+- (Simplify) One person cannot carry out stakeholder interviews within this week. The step was replaced with confirming only the results with divided interpretations with the person in charge of the survey.
 
 (after)
 
@@ -274,13 +287,14 @@ The organizations, products, and situations in the examples below are all fictio
 |------|-------|---------|--------|
 | 1-1. Data cleaning | Raw survey data in Excel | Remove non-responses and duplicate responses | Cleaned data |
 | 1-2. Tabulation | Cleaned data | Tabulate response distribution by question and differences by department | Tabulation sheet |
+| 1-3. Interpretation check | Tabulation sheet | Confirm the results with divided interpretations with the person in charge of the survey | Confirmed tabulation sheet |
 
 ## Module 2. Report Writing
 - (Purpose) Write material executives can read once and decide on
 
 | Task | Input | Content | Output |
 |------|-------|---------|--------|
-| 2-1. Message selection | Tabulation sheet | Select three to four results that need an executive decision, and confirm results with divided interpretations with the person in charge of the survey | Message list |
+| 2-1. Message selection | Confirmed tabulation sheet | Select three to four results that need an executive decision | Message list |
 | 2-2. Material writing | Message list | Write one slide per message | Report material |
 ```
 
@@ -399,7 +413,8 @@ I hope this helps!
 - (Common) Is the output free of any sign that this skill was applied or of its rule names?
 - (Work process) Is the output of every step used as input to a later step or in the final output?
 - (Work process) Can every step be carried out within the constraints the user stated?
-- (Work process) Did you handle the steps that failed in the order of delete, merge, and reduce?
+- (Work process) Did you tidy the process in the order of delete, merge, rearrange, and simplify?
+- (Work process) Is the input of every step filled by the output of an earlier step or by material the user provided?
 - (Work process) Are the problem, purpose, and direction the user set used as they are?
 - (Work process) Do the steps that involve law, regulation, or safety remain?
 - (Work process) Is the process free of steps that match the signs to recheck a process?
