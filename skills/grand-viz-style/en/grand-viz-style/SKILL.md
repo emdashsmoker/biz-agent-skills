@@ -74,7 +74,8 @@ For a multi-slide deck, set the storyline and the fixed elements listed in the m
 
 - When the user states the use setting, follow it.
 - When the request makes the use setting clear without stating it, follow that setting. Requests that mention printed handouts, a place in a report, reading before a meeting and similar fall in this group.
-- When the user does not state the use setting and the request does not make it clear, set it to screen showing at a large venue with no handouts. In the background section, treat this setting as the large-screen condition and the screen-only condition. Proceed with this default without asking about the use setting.
+- When the user does not state the use setting and the request does not make it clear, set it to screen showing at a large venue with no handouts. Proceed with this default without asking about the use setting. Use this default to set the information density and text size.
+- Under this default, set the background lightness with the lighting and distribution treated as unknown. The criteria are in the background section.
 - Judge the use setting from information about how the slide will be used, such as the venue, handouts and where it will be published. Adjust slides with much content by the criteria in the information density section.
 
 ## Slide skeleton
@@ -163,6 +164,10 @@ This style works with light and dark backgrounds. Pick whichever works better fo
 - Dark text on a light ground is easier to read than the reverse. That is why light backgrounds suit text-heavy slides.
 - In a dimmed venue, a fully bright screen dazzles the audience.
 - Dark backgrounds use a lot of ink when printed and lose quality in grayscale.
+- When the lighting and distribution are unknown, leave the venue row and the distribution row out and decide from the remaining rows and the slide's purpose and subject.
+- Slides that ask the audience to read and weigh evidence get a light background. Analyses, plans, review results and similar fall in this group. Slides that leave an impression with one scene get a dark background. Vision announcements, covers, dividers and similar fall in this group.
+- Reflect the subject when what it covers is itself a dark or light scene. Night landscapes, space, stages and similar suit a dark background. When the purpose and subject do not settle the choice, pick a light background.
+- Write the reason for the choice in the design direction in one line, citing the slide's content.
 - Body slides on a dark background still place their content on light content surfaces. Floating light surfaces on a dark background gives both richness and readability.
 - Covers and dividers may use a different background lightness from body slides. In that case, set the shade of each role color for both backgrounds.
 
