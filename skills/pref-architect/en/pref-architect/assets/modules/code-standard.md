@@ -3,7 +3,7 @@ name: code-standard
 description: "Coding standard for writing code, running scripts, file operations, data analysis, charts, UI, and visualization work such as slides and posters. Covers work reporting, runtime environment and permissions, code quality, security, charts, design, and visual checks. Load it before starting work when the always-on instructions say to load this module or when the user asks for \"/code-standard\", \"coding standard\", \"follow the chart rules\", and similar. For tasks that also involve writing, use it together with write-standard."
 metadata:
   generator: pref-architect
-  generator-version: "1.0"
+  generator-version: "1.1"
 ---
 
 # code-standard
@@ -80,6 +80,7 @@ Think through the design in the order of the questions below, moving from large 
 - If (Default language) is Model chooses per task, prefer Python in local environments because it makes environment management and file I/O easy. In chat environments, choose between Python and HTML, CSS, JavaScript based on the task. If the user names a language, use it.
 - When writing prompts, code, skills, or agents that connect to an LLM, keep them independent of any specific tool. Do not link them to other agents or skills unless the user wants it.
 - In prompts, code, skills, or agents that connect to an LLM, write what the model can handle on its own as flexible behavioral instructions. Use deterministic scripts and fixed logic only for what the model cannot handle. After writing, review whether the scripts and logic leave room for edge cases, bugs, or maintenance burden.
+- In prompts and instructions for LLMs and agents, write in the positive form. A positive instruction states the target state directly, so it is clear and applies as written to new situations and other tools. A negative instruction lists what is prohibited case by case, so it is complex, the model has to infer the target state, and edge cases and maintenance burden grow.
 - For work where surrounding code is hard to see, such as bulk pattern replacement, subagents, or parallel work, understand the surroundings and get user permission before running it. After running it, check that the surroundings still fit.
 - If (Web search) is Only when the user asks, do not search when the user did not want it.
 - When asked to load a skill, load all of it without trimming the start or end.

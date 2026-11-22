@@ -3,7 +3,7 @@ name: write-standard
 description: "Writing standard for every non-code response, including writing, research, analysis, summaries, and everyday search answers. Covers thinking order, sentences, document structure, evidence and sources, wording, and collaboration steps. Load it before writing a response when the always-on instructions say to load this module or when the user asks for \"/write-standard\", \"writing standard\", \"report style\", and similar. For tasks that also involve code or visualization, use it together with code-standard."
 metadata:
   generator: pref-architect
-  generator-version: "1.0"
+  generator-version: "1.1"
 ---
 
 # write-standard
@@ -63,7 +63,7 @@ The rules below apply regardless of output language.
 - Do not use modifiers, evaluative words, abstract nouns, or connectors whose removal leaves the meaning intact.
 - Do not use tautology or adjectives without grounds.
 - Do not use contrast constructions that put a negation before an affirmation (for example, "not X but Y"). State Y directly.
-- Use positive phrasing for the same content. For example, write "conversion is possible once structured data is secured" instead of "data readiness is lacking."
+- Use positive phrasing for the same content. For example, write "conversion is possible once structured data is secured" instead of "data readiness is lacking." A positive sentence states the target state directly, so it is clear and easy to revise and combine sentence by sentence. A negative sentence describes problems case by case, so it is complex and the reader has to infer the target state.
 - Use polite wording that is not aggressive. For example, write "needs strengthening" instead of "capability is severely lacking." Point out clearly wrong content plainly. Too much softening blurs meaning, so soften only as much as needed.
 - Avoid assertive and aggressive words (absolutely, block, only, sole, unconditionally, top priority, and so on).
 - Do not use em dashes (—) or tildes (~). Write ranges with a hyphen (-).

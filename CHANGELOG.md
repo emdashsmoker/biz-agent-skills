@@ -29,6 +29,20 @@ Changelog rules
 
 ## 2026-11-22
 
+### biz-code-style
+- Added a rule that writes prompts and instructions for LLMs and agents in the positive form, with the reason that a positive instruction states the target state directly (#86)
+- Added a reason to the positive phrasing rule: a positive sentence states the target state directly, so it is clear and easy to revise and combine sentence by sentence (#86)
+
+* LLM 및 에이전트에 전달하는 프롬프트와 지침의 긍정형 작성 규칙 추가 (목표 상태를 직접 나타내는 긍정형 지시의 명료성을 근거로 명시) (#86)
+* 긍정 표현 우선 규칙에 근거 문장 추가 (목표 상태의 직접 제시에 따른 명료성 및 문장 단위의 수정과 결합 용이성) (#86)
+
+### biz-code-style-lite
+- Added a rule that writes prompts and instructions for LLMs and agents in the positive form, with the reason that a positive instruction states the target state directly (#86)
+- Added a reason to the positive phrasing rule: a positive sentence states the target state directly, so it is clear and easy to revise and combine sentence by sentence (#86)
+
+* LLM 및 에이전트에 전달하는 프롬프트와 지침의 긍정형 작성 규칙 추가 (목표 상태를 직접 나타내는 긍정형 지시의 명료성을 근거로 명시) (#86)
+* 긍정 표현 우선 규칙에 근거 문장 추가 (목표 상태의 직접 제시에 따른 명료성 및 문장 단위의 수정과 결합 용이성) (#86)
+
 ### grand-viz-style
 - Changed the default accent from red to an orange-leaning vermilion that stays vivid at the lightness that passes 4.5:1 with white text (#83)
 - Changed the color order to apply to each role so that only unspecified roles fall to the defaults (#83)
@@ -43,6 +57,41 @@ Changelog rules
 * 흰 글자와 짙은 글자 모두 4.5:1에 못 미치는 색면의 일반 글자용 명도 단계 규칙 추가 (#83)
 * 청중과 실무자의 눈에 거슬리거나 부자연스러운 색의 검증 단계 조정 문장 추가 (#83)
 * 같은 축척 적용, 0 기준선 등 작성 기준의 준수 사실을 포함한 작업자 관점 메타 정보를 장표에서 제외하도록 글자 규칙 변경 (#84)
+
+### lean-work
+- Added a sentence rule that states the same content in the positive form, with the reason that a positive sentence states the target state directly (#86)
+
+* 같은 내용의 긍정 표현 서술 규칙 추가 (목표 상태를 직접 나타내는 긍정 문장의 명료성을 근거로 명시) (#86)
+
+### logical-write
+- Added a reason to the positive phrasing rule: a positive sentence states the target state directly, so it is clear and easy to revise and combine sentence by sentence (#86)
+
+* 긍정 표현 우선 규칙에 근거 문장 추가 (목표 상태의 직접 제시에 따른 명료성 및 문장 단위의 수정과 결합 용이성) (#86)
+
+### logical-write-lite
+- Added a reason to the positive phrasing rule: a positive sentence states the target state directly, so it is clear and easy to revise and combine sentence by sentence (#86)
+
+* 긍정 표현 우선 규칙에 근거 문장 추가 (목표 상태의 직접 제시에 따른 명료성 및 문장 단위의 수정과 결합 용이성) (#86)
+
+### pref-architect
+- Added a rule to the code-standard module that writes prompts and instructions for LLMs and agents in the positive form (#86)
+- Added a reason to the rule of the always-on instruction guide that writes what to do (#86)
+- Added a reason to the positive phrasing rule of the write-standard module (#86)
+- Changed the metadata version and the generator-version of the bundled modules from 1.0 to 1.1 (#86)
+- Added a rule that raises the metadata version when a bundled source or the always-on instruction template changes (#86)
+- Added a rebuilding step that compares the installed skill's metadata version with the distribution repository when version values differ and lets the user choose how to proceed (#86)
+
+* code-standard 모듈에 LLM 및 에이전트에 전달하는 프롬프트와 지침의 긍정형 작성 규칙 추가 (#86)
+* 상시 지침 작성법의 해야 할 일 기재 규칙에 근거 문장 추가 (#86)
+* write-standard 모듈의 긍정 표현 규칙에 근거 문장 추가 (#86)
+* metadata version 및 동봉 모듈의 generator-version을 1.0에서 1.1로 변경 (#86)
+* 동봉 원본 또는 상시 지침 서식 변경 시의 metadata version 상향 규칙 추가 (#86)
+* 버전 값 불일치 시 배포 저장소와의 metadata version 대조 및 사용자의 진행 방식 선택 단계를 재구성 절차에 추가 (#86)
+
+### skill-forge
+- Added a body-writing rule that states instructions in the positive form, with the reason that a positive instruction states the target state directly (#86)
+
+* 본문 작성 규칙에 지시의 긍정형 기술 규칙 추가 (목표 상태를 직접 나타내는 긍정형 지시의 명료성을 근거로 명시) (#86)
 
 ## 2026-11-21
 

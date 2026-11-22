@@ -3,7 +3,7 @@ name: token-lean
 description: "같은 품질의 결과물을 더 적은 입력과 출력 토큰으로 만드는 절차. 불필요한 파일 로드, 원문 재출력, 턴 반복, 시행착오를 줄인다. 상시 지침이 이 모듈을 불러오라고 지정했거나 대량 파싱, 대량 조사, 대량 도구 호출, 긴 산출물, 반복 파일 작업처럼 토큰 소모가 큰 작업이거나 사용자가 \"/token-lean\", \"토큰 아껴줘\", \"컨텍스트 절약\", \"가볍게 처리해줘\" 등을 요청한 경우 불러온다."
 metadata:
   generator: pref-architect
-  generator-version: "1.0"
+  generator-version: "1.1"
 ---
 
 # token-lean

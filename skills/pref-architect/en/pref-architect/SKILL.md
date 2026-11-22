@@ -2,7 +2,7 @@
 name: pref-architect
 description: "Designs short always-on instructions (claude.ai user preferences, CLAUDE.md, AGENTS.md) plus modular skills loaded only when needed, with an optional off-switch skill, via an interview. For beginners it customizes the bundled modules (writing, coding, staged work, token saving). For users with existing preferences and skills it builds a rule-by-rule integration plan. Use it when the user says \"/pref-architect\", \"set up my preferences\", \"clean up my instructions\", \"write a CLAUDE.md or AGENTS.md\", \"turn my instructions into skills\", \"my preferences are too long\", asks how to split instructions and skills, or wants to rebuild a setup this skill made. Files read at the matching step: references/interview.md, references/router.md (writing and placing instructions), references/integration.md (integration and rebuilding), assets/modules/write-standard.md, assets/modules/code-standard.md, assets/modules/staged-work.md, assets/modules/token-lean.md, assets/modules/module-off.md (module and off-switch sources)."
 metadata:
-  version: "1.0"
+  version: "1.1"
 license: GPL-3.0-or-later with an output exception. Terms in LICENSE and NOTICE.md
 ---
 
@@ -33,6 +33,8 @@ The generation mark is a part of this skill's rebuilding function. It is recorde
 - (generator-version) The metadata version in this skill's frontmatter at the time the output was made.
 
 The mark is recorded at step 5, when the outputs to deliver to the user are made. The mark is read when the user asks this skill to rebuild an existing setup. The rebuilding procedure uses generator to recognize outputs of this skill and generator-version to check whether the bundled sources may have changed since the output was made. The detailed procedure is in section 7 of references/integration.md.
+
+When an edit to this skill itself changes a bundled source under assets/modules or the template in references/router.md, raise this skill's metadata version and set the generator-version of the bundled sources to the same value. The rebuilding procedure checks for a bundled source change when the generator-version of an output differs from this skill's current metadata version.
 
 ## Workflow
 
@@ -88,7 +90,7 @@ Confirm every item below before delivery. If any item fails, fix it and check ag
 - In every module, the description is 1,024 characters or fewer and says when to load the module.
 - No module's settings section has an empty value that the interview did not decide.
 - Each module folder contains exactly one SKILL.md.
-- In every module, the metadata generator-version equals the metadata version in this skill's frontmatter.
+- In every module, the metadata generator-version equals the metadata version in this skill's frontmatter. In a module whose version value the user set during rebuilding, it equals that value.
 - If there is an off-switch skill, every target module is named in the loading rule of the always-on instructions, and the always-on instructions contain the off-switch sentence for that skill.
 - If there are existing assets, the number of original rules equals the number of rows in the migration table. If code can run, count them with code.
 

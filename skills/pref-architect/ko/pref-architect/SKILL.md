@@ -2,7 +2,7 @@
 name: pref-architect
 description: "사용자 인터뷰를 거쳐 짧은 상시 지침(claude.ai 유저 프리퍼런스, CLAUDE.md, AGENTS.md)과 필요할 때만 불러오는 모듈 스킬 세트를 설계하고 생성하는 스킬. 스킬이 하나도 없는 입문 사용자에게는 동봉 모듈(글쓰기 표준, 코딩 표준, 단계 작업, 토큰 절약)을 맞춤 설정하여 만들어 주고 기존 프리퍼런스와 스킬을 가진 사용자에게는 규칙별 이관 판정으로 통합안을 만든다. 인터뷰에서 사용자가 고르면 지정한 모듈을 대화 단위로 불러오지 않게 하는 해제 스킬도 함께 만든다. 사용자가 \"/pref-architect\", \"프리퍼런스 설정\", \"유저 프리퍼런스 만들어줘\", \"지침 정리해줘\", \"CLAUDE.md 작성\", \"AGENTS.md 작성\", \"처음 쓰는데 세팅해줘\", \"지침을 스킬로 모듈화\", \"프리퍼런스가 너무 길어\", \"모듈 끄는 스킬\" 등을 요청하거나 상시 지침과 스킬의 역할 분담을 묻는 경우 이 스킬을 사용한다. 이 스킬로 만든 구성을 다시 고치거나 재구성할 때도 사용한다. 부속 파일은 references/interview.md(인터뷰 문항과 기본값), references/router.md(상시 지침 작성법과 환경별 배치), references/integration.md(기존 자산 통합과 재구성 절차), assets/modules/write-standard.md, assets/modules/code-standard.md, assets/modules/staged-work.md, assets/modules/token-lean.md(동봉 모듈 원본), assets/modules/module-off.md(해제 스킬 원본)이며 해당 단계에서 읽는다."
 metadata:
-  version: "1.0"
+  version: "1.1"
 license: GPL-3.0-or-later with an output exception. Terms in LICENSE and NOTICE.md
 ---
 
@@ -31,6 +31,8 @@ license: GPL-3.0-or-later with an output exception. Terms in LICENSE and NOTICE.
 - (generator-version) 산출물을 만든 시점의 이 스킬 frontmatter metadata version 값이다.
 
 생성 표시를 기록하는 시점은 사용자에게 전달할 산출물을 만드는 5단계다. 생성 표시를 읽는 시점은 사용자가 이 스킬로 기존 구성의 재구성을 요청한 때다. 재구성 절차는 generator로 이 스킬의 산출물을 알아보고 generator-version으로 산출물을 만든 뒤 동봉 원본이 바뀌었을 가능성을 확인한다. 세부 절차는 references/integration.md의 7절에 있다.
+
+이 스킬 자체를 수정하여 assets/modules의 동봉 원본이나 references/router.md의 서식이 바뀌면 이 스킬의 metadata version을 올리고 동봉 원본의 generator-version을 같은 값으로 맞춘다. 재구성 절차는 산출물의 generator-version이 이 스킬의 현재 metadata version과 다를 때 동봉 원본의 변경 가능성을 확인한다.
 
 ## 작업 흐름
 
@@ -86,7 +88,7 @@ assets/modules의 원본 파일은 이름이 SKILL.md가 아니다. 생성할 �
 - 모듈마다 description이 1,024자 이하이고 언제 불러오는지를 적고 있다.
 - 모듈의 설정 절에 인터뷰에서 정하지 않은 빈 값이 남아 있지 않다.
 - 모듈 폴더 안에 SKILL.md가 하나뿐이다.
-- 모듈마다 metadata의 generator-version이 이 스킬 frontmatter의 metadata version과 같다.
+- 모듈마다 metadata의 generator-version이 이 스킬 frontmatter의 metadata version과 같다. 재구성에서 사용자가 버전 값을 직접 정한 모듈은 그 값과 같다.
 - 해제 스킬이 있으면 대상 모듈이 모두 상시 지침의 로드 규칙에 이름이 있고 상시 지침에 그 해제 스킬의 해제 문장이 있다.
 - 기존 자산이 있으면 원문 규칙 수와 이관표의 행 수가 같다. 코드를 실행할 수 있으면 개수를 코드로 센다.
 
