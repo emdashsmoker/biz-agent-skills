@@ -1,6 +1,6 @@
 ---
 name: lean-work
-description: A lean work skill that first fixes the purpose, reader, and scope, then keeps only the elements a work process or an expression needs. It applies necessity, reader relevance, feasibility, and proportionality checks to every element and sorts the elements out in the order of eliminate, combine, rearrange, and simplify (ECRS) to produce minimum-step work processes and slides, charts, and paragraphs with one message per unit. It supports both writing new output and revising existing output. Use this skill when the user asks for "/lean-work", "keep it lean", "be practical", "be realistic", "minimum steps", "no unnecessary steps", "cut the pointless steps", "a simple process", "make it doable", "improve this with ECRS", "focus this", "find the focus", "one message per slide", "one message per paragraph", "boil it down to one message", "don't just list everything", "no laundry lists", or "start from first principles". Do not apply it automatically to general tasks without such a request.
+description: A lean work skill that first fixes the purpose, reader, and scope, then keeps only the elements a work process or an expression needs. It applies necessity, reader relevance, feasibility, and proportionality checks to every element and sorts the elements out in the order of eliminate, combine, rearrange, and simplify (ECRS) to produce minimum-step work processes and texts, slides, charts, and so on with one message per unit. It supports both writing new output and revising existing output. Use this skill when the user asks for "/lean-work", "keep it lean", "be practical", "be realistic", "minimum steps", "no unnecessary steps", "cut the pointless steps", "a simple process", "make it doable", "improve this with ECRS", "focus this", "find the focus", "one message per slide", "one message per paragraph", "boil it down to one message", "don't just list everything", "no laundry lists", or "start from first principles". Do not apply it automatically to general tasks without such a request.
 license: GPL-3.0-or-later with an output exception. Terms in LICENSE and NOTICE.md
 ---
 
@@ -10,7 +10,7 @@ license: GPL-3.0-or-later with an output exception. Terms in LICENSE and NOTICE.
 
 This skill defines a way of working that selects the elements that serve the reader's purpose and explains the selected elements in enough depth. Fix the purpose, reader, and scope before selecting elements. Whether an element is needed can be judged only once these three are set.
 
-It applies to work processes and to expression. A work process is built from the minimum steps needed to reach the goal. Expression is built so that each unit, such as a slide, a chart, or a paragraph, delivers one message. Both judge elements with the same checks and sort them out in the order of eliminate, combine, rearrange, and simplify.
+It applies to work processes and to expression. A work process is built from the minimum steps needed to reach the goal. Expression is built so that each unit, such as a subheading or paragraph of a text, the headline or a component of a slide, a data item, and so on, delivers one message. Both judge elements with the same checks and sort them out in the order of eliminate, combine, rearrange, and simplify.
 
 ## Definitions
 
@@ -21,8 +21,8 @@ Use the terms below only in the sense given in this table.
 | Purpose | The judgment or action the reader will make or carry out after receiving the output |
 | Reader | The person who reads or acts on the output. If the user does not specify one, a general adult reader without background in the field |
 | Scope | The boundary of what the output covers |
-| Element | The smallest thing that is judged and sorted out. In a work process the element is a work step. In expression the elements are expression elements such as a sentence, bullet, table row, chart series, or slide component |
-| Unit | A block of expression the reader sees and understands at once. One slide, one chart or diagram, one paragraph, one table |
+| Element | The smallest thing that is judged and sorted out. In a work process the element is a work step. In expression the elements are the expression elements that make up a unit, such as a sentence, bullet, figure, shape, and so on |
+| Unit | A block of expression the reader sees and understands at once. A subheading or paragraph of a text, the headline or a component of a slide, a data item of a chart or table, and so on. A smaller unit inside a larger unit is treated as an element of the larger unit |
 | Message | The one judgment the reader should remember after seeing a unit. A sentence with a subject and a predicate |
 | Topic label | A title that names a subject without making a judgment. For example "Market overview", "Background", "Key issues" |
 | Department-store listing | Expression that lays out related information at equal weight without a message |
@@ -140,7 +140,7 @@ In the expression mode, every unit delivers exactly one message. A department-st
 
 - For each unit, answer "What is the one sentence a reader should remember after seeing this unit?"
 - If there is no answer, the unit has no message. Set a judgment sentence or delete the unit.
-- If the answer strings together two or more independent claims, the unit has message overload. Split the unit by adding a slide, splitting the paragraph, or dividing the chart.
+- If the answer strings together two or more independent claims, the unit has message overload. Split the unit by adding a slide, splitting the paragraph, dividing the chart, and so on.
 - A topic label carries no judgment, so it does not count as a message. An example of a message is "Low-priced imports cut profitability in the domestic market", a judgment sentence with a subject and a predicate.
 
 ### ECRS Criteria for Expression Elements
@@ -182,6 +182,7 @@ Put the message at the head of the unit.
 - With a sentence-style header, the header carries the message and the first sentence of the body opens with evidence.
 - With a keyword-style header, the header announces the subject of the message and the first sentence of the body carries the judgment.
 - If the subject the header announces differs from the message in the first sentence, rename the header or move the content.
+- For other units, such as a component of a slide, a data item, and so on, put the message where the reader reads first.
 
 ### Emphasis Placement
 
