@@ -65,7 +65,7 @@ A skill whose name ends in `-lite` is a lite edition: the same function with sho
 - [`lean-work`](skills/lean-work/): Cuts a work process to the minimum steps and focuses each slide, chart and paragraph on one message, handling elements in the order of eliminate, combine, rearrange and simplify (ECRS).
 - [`long-task-ledger`](skills/long-task-ledger/): Records long multi-step agent work so it can resume after a truncated conversation or a new session.
 - [`pref-architect`](skills/pref-architect/): Designs short always-on instructions and on-demand modular skills through an interview.
-- [`skill-forge`](skills/skill-forge/): Builds, combines and manages skills and agent instructions.
+- [`skill-forge`](skills/skill-forge/): Builds, combines and manages skills and agent instructions, and guides how to use each skill.
 - [`offline-deps-builder`](skills/offline-deps-builder/): Builds dependency skills that carry the libraries, fonts and models another skill would download at run time.
 
 ## Installation
@@ -169,7 +169,7 @@ Each skill carries its own `LICENSE` and `NOTICE.md`. Under the output exception
 - [`lean-work`](skills/lean-work/): 작업 절차를 최소 단계로 줄이고 슬라이드, 차트, 문단마다 메시지 1개를 전달하도록 제거, 결합, 재배열, 단순화(ECRS) 순서로 요소를 처리합니다.
 - [`long-task-ledger`](skills/long-task-ledger/): 대화가 잘리거나 세션이 바뀌어도 긴 다단계 작업을 이어 갈 수 있도록 기록합니다.
 - [`pref-architect`](skills/pref-architect/): 인터뷰로 짧은 상시 지침과 필요할 때만 불러오는 모듈 스킬을 설계합니다.
-- [`skill-forge`](skills/skill-forge/): 스킬과 에이전트 지침을 생성하고 조합하고 관리합니다.
+- [`skill-forge`](skills/skill-forge/): 스킬과 에이전트 지침을 생성하고 조합하고 관리합니다. 스킬별 사용 방법과 요청 프롬프트도 안내합니다.
 - [`offline-deps-builder`](skills/offline-deps-builder/): 다른 스킬이 실행 중에 내려받는 라이브러리, 글꼴, 모델을 미리 포함한 의존성 스킬을 생성합니다.
 
 ## 설치
