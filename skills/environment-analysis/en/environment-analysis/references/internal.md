@@ -159,7 +159,7 @@ How the facilities and equipment could serve the topic is a judgment, so it belo
 
 For national R&D projects carried out by organizations in the region, apply the national R&D database rules in references/micro.md with the scope narrowed to the region.
 
-List central government R&D programs only when organizations in the region have already received central government funding and are carrying them out. Exclude programs the region is preparing to bid for or plans to apply to. List pure R&D programs only, and organize non-R&D programs separately.
+List central government R&D programs only when organizations in the region have already received central government funding and are carrying them out. Exclude programs the region is preparing to bid for or plans to apply to. List pure R&D programs only, and organize non-R&D programs separately. Separate R&D and non-R&D programs by the budget classification in references/micro.md.
 
 | Ministry | Performing organization in the region | Program name | Program period | Program content | Budget by year |
 |---|---|---|---|---|---|
