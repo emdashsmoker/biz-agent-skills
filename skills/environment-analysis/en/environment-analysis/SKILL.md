@@ -27,7 +27,7 @@ An environment analysis does not always need the full process. Every module can 
 |---|---|
 | Subject | The organization, region, or industry and technology area at the center of the analysis |
 | Topic | The industry, technology, product, service, or policy field the analysis covers |
-| Macro environment | Broad changes the subject cannot control and has no direct exchange with: policy, economy, society, technology, environment, law and regulation |
+| Macro environment | Broad changes the subject cannot control and has no direct exchange with: policy, regulation, economy, society, technology, environment |
 | Micro environment | Parties the subject interacts with through transactions, competition, or cooperation: markets, industries, competitors, customers, suppliers, funding sources |
 | Internal status | Resources, capabilities, and operations the subject controls directly |
 | Benchmarking | Cases of comparable subjects and the differences between them and the subject |
@@ -39,7 +39,22 @@ An environment analysis does not always need the full process. Every module can 
 | Data channel | Web search, user-provided files, or connected systems (MCP, API, database) |
 | Verification level | The strictness of source checking, from level 1 to level 3, defined in references/sources.md |
 
-One criterion separates macro, micro, and internal: whether the subject can control or interact with the item. The same item moves between categories when the subject changes. Regional industrial policy is part of the macro environment when a firm in the region is the subject, and part of internal status when that region or its local government is the subject. A policy direction document for government R&D programs belongs to the macro environment. The funding flow of individual programs and projects that the subject applies for or competes for belongs to the investment category of the micro environment. Programs the subject has already won and is running are resources it controls, so they belong to internal status.
+One criterion separates macro, micro, and internal: whether the subject can control or interact with the item. The same item moves between categories when the subject changes. Regional industrial policy is part of the macro environment when a firm in the region is the subject, and part of internal status when that region or its local government is the subject.
+
+Within a module, the category of a fact follows the object the fact describes. Keywords, issuing bodies, program names, and document types change by country and period, so they do not decide the category. Facts from the same document go to separate categories when they describe different objects.
+
+| Object described | Category | Test question |
+|---|---|---|
+| Political conditions, directions and goals a government has set | Macro environment, policy | Is it a strategy, plan, or policy package that states what is pursued and why |
+| Rules with a duty to comply or a legal effect | Macro environment, regulation | Does the rule set rights, duties, or eligibility |
+| Indicators that aggregate the whole economy | Macro environment, economy | Is the unit of aggregation a national, regional-bloc, or world economy |
+| State and behavior of the population and social groups | Macro environment, society | Is it a change among people or social groups |
+| Performance, maturity, and diffusion of a technology | Macro environment, technology | Does it show where the technology stands on its growth curve |
+| Measured state of nature and resources | Macro environment, environment | Is it a state of nature measured in physical quantities |
+| Movement of money with a funding source and an amount | Micro environment, investment | Does it show who spends how much on what |
+| Transactions, participants, and demand in a specific market or industry | Micro environment: market, industry value chain, competition, customers | Is the unit of aggregation a specific industry, market, or company |
+
+A government's direction documents and a government's programs describe different objects. Strategies, plans, and policy packages go to the policy category. A program with a budget line, an executing agency, eligible recipients, and a selection procedure goes to the investment category of the micro environment, whether or not its budget is classified as R&D. A program is a funding source the subject interacts with by applying, winning awards, and cooperating. A program's implementation plan and its call for proposals count as program material, even when the title contains the word plan. Amount trends and amounts by program also go to the investment category, whatever document carries them. Programs the subject has already won and is running are resources it controls, so they belong to internal status.
 
 The industry value chain and the organizational value chain work at different units. The unit of the industry value chain is a market, and the unit of the organizational value chain is an activity inside one organization. Always write both terms with their qualifier and never shorten either to "value chain". Record the stages of the industry value chain where the subject does business as the business scope in its organization profile, and cover the market structure of those stages in the micro environment.
 
@@ -68,7 +83,7 @@ Place the modules you run in the order of the table. Moving from broad external 
 | Market size and outlook | Market category of the micro environment |
 | Competitive structure, Five Forces | Competition category of the micro environment, procedure in references/five-forces.md |
 | Key companies | Key players within the competition category of the micro environment |
-| R&D investment trends, national R&D project analysis, venture investment trends | Investment category of the micro environment. For a region subject, projects and corporate R&D spending within the region go to internal status |
+| Investment trends, government support programs and calls for proposals, non-R&D programs, national R&D project analysis, venture investment trends | Investment category of the micro environment. For a region subject, projects and corporate R&D spending within the region go to internal status |
 | Industry value chain structure | Industry value chain category of the micro environment |
 | Internal capability assessment, VRIO, SPROC | Internal status for an organization subject |
 | Organizational value chain, analysis of internal activities | Internal status for an organization subject, organizational value chain framework |
@@ -124,7 +139,7 @@ Fill items the request leaves open with defaults, build a scope proposal, and co
 
 Once the scope is settled, run to the end on your own. After that point, questions to the user are limited to confirmation steps at verification level 2 or 3, requests for access to internal data, confirmation of query conditions for complex databases, the internal data confirmation list, and an internal source disclosure level not settled during scoping.
 
-When the topic is an industry or a technology, write a topic overview in the scope section at the start of the report. For a partial analysis covering a single category, write it only if the user wants it. The topic overview covers the topic's definition and what is included and excluded (What), how it works or is implemented (How), and its importance as confirmed by sources (Why). Decide here whether adjacent industries or related technologies are part of the analysis or treated as substitutes. The topic overview also uses sourced facts only.
+When the topic is an industry or a technology, write a topic overview in the scope section at the start of the report. For a partial analysis covering a single category, write it only if the user wants it. The topic overview covers the topic's definition and what is included and excluded (What), how it works or is implemented (How), and its importance as confirmed by sources (Why). Decide here whether adjacent industries or related technologies are part of the analysis or treated as substitutes. When the topic is a technology, set the unit of analysis and what is included with the technology scope table in references/macro.md. The topic overview also uses sourced facts only.
 
 ### Step 2 Checking data channels
 
@@ -188,6 +203,7 @@ When the user asks for a review of an environment analysis that already exists, 
 | Implication links | Each implication has supporting facts, and every fact feeds an implication |
 | Structure | Conclusions come first, parent and child bullets relate as conclusion and evidence, and items on one level follow one grouping basis |
 | Classification | Items do not overlap or leave gaps, and one level holds four items or fewer |
+| Category placement | Each fact sits in the category that fits the object it describes. Program and amount facts sit in the investment category |
 | Sources | Sources pass the quality criteria in references/sources.md. News reports are traced to original sources |
 | Figures | Each figure has a source and reference date and matches a recheck in code |
 | Sentences | The text passes the writing check in references/writing.md |
@@ -214,6 +230,7 @@ If the environment can save files, keep the scope proposal, the fact register, m
 - Every figure was computed or rechecked in code
 - Module sections contain no interpretation, to-be states, or solutions
 - The macro, micro, and internal classification follows the controllability criterion
+- Each fact's category fits the object it describes, and program and amount facts sit in the investment category
 - Each module builds on facts from earlier modules, with no isolated items
 - Every implication cites supporting fact IDs and every fact feeds an implication
 - The output contains no SWOT labels, strategies, initiatives, or support needs

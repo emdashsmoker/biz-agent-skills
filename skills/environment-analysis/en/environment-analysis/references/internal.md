@@ -157,7 +157,7 @@ How the facilities and equipment could serve the topic is a judgment, so it belo
 
 ### Policy and funding items
 
-For national R&D projects carried out by organizations in the region, apply the national R&D database rules in references/micro.md with the scope narrowed to the region.
+For national R&D projects carried out by organizations in the region, apply the national R&D database rules in references/micro.md with the scope narrowed to the region. Separate R&D programs from non-R&D programs by the R&D-or-not rule in references/micro.md.
 
 List central government R&D programs only when organizations in the region have already received central government funding and are carrying them out. Exclude programs the region is preparing to bid for or plans to apply to. List pure R&D programs only, and organize non-R&D programs separately.
 
