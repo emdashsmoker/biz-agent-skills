@@ -176,7 +176,7 @@ Set whether to use background treatment, and how strongly, by the message and pu
 
 ## Color
 
-The color criteria in this section and the WCAG contrast criteria are not a right answer for every situation. During verification, adjust any color that looks jarring or unnatural to the audience and practitioners toward what they find pleasant and natural.
+The color criteria in this section and the WCAG contrast criteria are not a right answer for every situation. During verification, adjust any color that looks jarring or unnatural to the audience and practitioners toward what is easy to read, pleasant and natural for them.
 
 ### Role assignment
 
