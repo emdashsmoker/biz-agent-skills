@@ -15,7 +15,7 @@ An environment analysis does not always need the full process. Every module can 
 ## Core principles
 
 - (Evidence) Factual statements rely only on user-provided material, web pages opened during this task, and data retrieved from connected systems (internal systems, public data APIs, and similar). Do not fill facts from model memory. Mark anything missing from these sources as unconfirmed
-- (Facts separate from interpretation) Module sections contain confirmed conditions and trends. Ratings defined by a procedure, such as Five Forces intensity, VRIO results, and critical success factors, appear paired with their supporting facts and never merged into the same sentence as a fact. Interpretation of what the findings mean for the subject goes in the implications section
+- (Facts separate from interpretation) Module sections contain confirmed conditions and trends. Ratings defined by a procedure, such as Five Forces intensity, VRIO results, S-curve stages, and critical success factors, appear paired with their supporting facts and never merged into the same sentence as a fact. Interpretation of what the findings mean for the subject goes in the implications section
 - (No prescriptions) Do not write to-be states, solutions, support needs, or investment feasibility judgments. Later stages such as SWOT or gap analysis handle those
 - (Traceability) Give every fact an ID, a source, and a reference date. Tag every implication with the IDs of its supporting facts. A third party who follows the same procedure with the same material should reach the same conclusions
 - (Computation in code) Compute sums, shares, growth rates, and conversions in code, and recheck figures quoted from sources in code. If code execution is unavailable, show the formula and inputs and mark the result as needing a check
@@ -32,14 +32,29 @@ An environment analysis does not always need the full process. Every module can 
 | Internal status | Resources, capabilities, and operations the subject controls directly |
 | Benchmarking | Cases of comparable subjects and the differences between them and the subject |
 | Fact | A single factual statement with a confirmed source and reference date |
-| Rating | The result of evaluating facts against defined criteria, as in Five Forces or VRIO. Always recorded with its supporting facts |
+| Rating | The result of evaluating facts against defined criteria, as in Five Forces, VRIO, or S-curve stages. Always recorded with its supporting facts |
 | Implication | A one-sentence statement, induced from one or more facts or ratings, of what the findings mean for the subject |
 | Industry value chain | The chain of market stages in an industry, from raw material and component supply (upstream) to final demand (downstream). Each stage is a market where several firms compete. It corresponds to what Porter (1985) called the value system, the linked value chains of suppliers, the firm, channels, and buyers. The unit of analysis for the micro environment and Five Forces |
 | Organizational value chain | The chain of activities that create value inside one organization. Porter (1985) divided them into primary activities (inbound logistics, operations, outbound logistics, marketing and sales, service) and support activities (firm infrastructure, human resource management, technology development, procurement). The subject controls these activities, so they belong to internal status |
+| Policy | A strategy or plan in which governments and public bodies state a direction, goals, and means. Covers both statutory and non-statutory plans |
+| Regulation | Laws, permits, and mandatory criteria that set an effective date and a scope and assign obligations and rights |
+| Program | A unit of public spending that has a budget, an operating agency, a period, and eligible recipients, and that allocates funds. The subject joins or competes for a program through calls and selection |
+| Technology unit | A unit of the topic technology divided by one classification criterion. Each technology unit has its own S-curve, and the unit is the unit of analysis for the technology category of the macro environment |
 | Data channel | Web search, user-provided files, or connected systems (MCP, API, database) |
 | Verification level | The strictness of source checking, from level 1 to level 3, defined in references/sources.md |
 
-One criterion separates macro, micro, and internal: whether the subject can control or interact with the item. The same item moves between categories when the subject changes. Regional industrial policy is part of the macro environment when a firm in the region is the subject, and part of internal status when that region or its local government is the subject. A policy direction document for government R&D programs belongs to the macro environment. The funding flow of individual programs and projects that the subject applies for or competes for belongs to the investment category of the micro environment. Programs the subject has already won and is running are resources it controls, so they belong to internal status.
+One criterion separates macro, micro, and internal: whether the subject can control or interact with the item. The same item moves between categories when the subject changes. Regional industrial policy is part of the macro environment when a firm in the region is the subject, and part of internal status when that region or its local government is the subject.
+
+Governments and public bodies land in different categories by the role they play, even within one field. Judge the role by the function a document or program actually performs. Ministries and laws use names such as strategy, plan, investment, and program in different senses.
+
+| Government role | Examples | Category |
+|---|---|---|
+| Setting direction | National strategies, statutory plans, non-statutory plans, investment strategy documents for a field, and so on | Policy in the macro environment |
+| Imposing rules | Laws, permits, mandatory criteria and certification, disclosure duties, and so on | Regulation in the macro environment |
+| Allocating funds | R&D programs, demonstration programs, infrastructure programs, policy finance, public fund commitments, and so on | Investment in the micro environment |
+| Purchasing | Public procurement, purchase contracts, and so on | Customers and demand in the micro environment |
+
+Programs the subject has already won and is running are resources it controls, so they belong to internal status. When one document carries a direction, programs, and amounts together, split it into facts and record each in its own category.
 
 The industry value chain and the organizational value chain work at different units. The unit of the industry value chain is a market, and the unit of the organizational value chain is an activity inside one organization. Always write both terms with their qualifier and never shorten either to "value chain". Record the stages of the industry value chain where the subject does business as the business scope in its organization profile, and cover the market structure of those stages in the micro environment.
 
@@ -63,12 +78,12 @@ Place the modules you run in the order of the table. Moving from broad external 
 | Example request | Scope to run |
 |---|---|
 | Summarize policy trends | Policy category of the macro environment |
-| Technology trends, paper and patent trends | Technology category of the macro environment |
+| Technology trends, technology maturity, paper and patent trends | Technology category of the macro environment |
 | Current regulations | Regulation category of the macro environment |
 | Market size and outlook | Market category of the micro environment |
 | Competitive structure, Five Forces | Competition category of the micro environment, procedure in references/five-forces.md |
 | Key companies | Key players within the competition category of the micro environment |
-| R&D investment trends, national R&D project analysis, venture investment trends | Investment category of the micro environment. For a region subject, projects and corporate R&D spending within the region go to internal status |
+| R&D investment trends, government support program trends, national R&D project analysis, venture investment trends | Investment category of the micro environment. For a region subject, programs that organizations in the region are running and corporate R&D spending within the region go to internal status |
 | Industry value chain structure | Industry value chain category of the micro environment |
 | Internal capability assessment, VRIO, SPROC | Internal status for an organization subject |
 | Organizational value chain, analysis of internal activities | Internal status for an organization subject, organizational value chain framework |
@@ -120,15 +135,15 @@ Settle the following items.
 | Verification level | Level 1 to 3 | Result of the selection rule in references/sources.md |
 | Output format | Bullet report in markdown, tables, file format, output language | Bullet report in markdown, written in the user's language |
 
-Fill items the request leaves open with defaults, build a scope proposal, and confirm it in one round. Splitting questions across several turns adds burden for the user. If the subject or the topic is missing, the analysis cannot start, so ask only for that item. When Five Forces is in scope, include industry definition, industry value chain breakdown, geographic scope, and time scope in the same confirmation. If the user says to proceed without confirmation, proceed with the defaults and record the applied scope in the report's scope section.
+Fill items the request leaves open with defaults, build a scope proposal, and confirm it in one round. Splitting questions across several turns adds burden for the user. If the subject or the topic is missing, the analysis cannot start, so ask only for that item. When Five Forces is in scope, include industry definition, industry value chain breakdown, geographic scope, and time scope in the same confirmation. When the technology category is in scope, include the technology classification in the same confirmation. If the user says to proceed without confirmation, proceed with the defaults and record the applied scope in the report's scope section.
 
 Once the scope is settled, run to the end on your own. After that point, questions to the user are limited to confirmation steps at verification level 2 or 3, requests for access to internal data, confirmation of query conditions for complex databases, the internal data confirmation list, and an internal source disclosure level not settled during scoping.
 
-When the topic is an industry or a technology, write a topic overview in the scope section at the start of the report. For a partial analysis covering a single category, write it only if the user wants it. The topic overview covers the topic's definition and what is included and excluded (What), how it works or is implemented (How), and its importance as confirmed by sources (Why). Decide here whether adjacent industries or related technologies are part of the analysis or treated as substitutes. The topic overview also uses sourced facts only.
+When the topic is an industry or a technology, write a topic overview in the scope section at the start of the report. For a partial analysis covering a single category, write it only if the user wants it. The topic overview covers the topic's definition and what is included and excluded (What), how it works or is implemented (How), and its importance as confirmed by sources (Why). Decide here whether adjacent industries or related technologies are part of the analysis or treated as substitutes. When the topic is a technology, place the technology classification from references/macro.md in the definition and scope. The topic overview also uses sourced facts only.
 
 ### Step 2 Checking data channels
 
-Before starting, check which connectors, APIs, and databases are available. If the task needs material that is not on the public web, such as internal data for the internal status module, paid investment databases, exports from national R&D databases, or internal statistics, send the user one list of the material needed. Do not fill missing material with guesses from web results. Leave it as unconfirmed. Explore complex databases while confirming query conditions with the user. Channel rules and the database exploration procedure are in references/sources.md.
+Before starting, check which connectors, APIs, and databases are available. Collect first, by web search, the material that the public web and literature can confirm. If the task needs material that is not on the public web, such as internal data for the internal status module, paid investment databases, exports from national R&D databases, or internal statistics, send the user one list of the material needed. Do not fill missing material with guesses from web results. Leave it as unconfirmed. Explore complex databases while confirming query conditions with the user. Channel rules and the database exploration procedure are in references/sources.md.
 
 ### Step 3 Collection and the fact register
 
@@ -214,6 +229,8 @@ If the environment can save files, keep the scope proposal, the fact register, m
 - Every figure was computed or rechecked in code
 - Module sections contain no interpretation, to-be states, or solutions
 - The macro, micro, and internal classification follows the controllability criterion
+- Each government-related fact sits in the category of its role: setting direction, imposing rules, allocating funds, or purchasing
+- Each technology fact names its technology unit and is not extended to another unit or to the parent technology
 - Each module builds on facts from earlier modules, with no isolated items
 - Every implication cites supporting fact IDs and every fact feeds an implication
 - The output contains no SWOT labels, strategies, initiatives, or support needs

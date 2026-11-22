@@ -11,8 +11,8 @@ The micro environment module covers the markets and industries the subject inter
 | Market | Size, growth rate, outlook, segments, shares by region |
 | Industry value chain | Market stages from upstream to downstream and the main participants at each stage |
 | Competition | Key players, market concentration, Five Forces competitive structure |
-| Customers and demand | Customer groups, purchase criteria, material that shows demand |
-| Investment | Public R&D investment, corporate R&D investment, risk capital investment |
+| Customers and demand | Customer groups, purchase criteria, material that shows demand, including public procurement |
+| Investment | Public R&D investment, public non-R&D investment, private R&D investment, private non-R&D investment |
 
 Run only the requested categories. Classification schemes vary with the topic (Five Forces, market and industry, industry value chain, customers and competitors, and so on), so the order of categories is not fixed.
 
@@ -46,7 +46,7 @@ Organize the main companies in the whole market in the table below. For a region
 |---|---|---|---|---|---|---|---|
 
 - Company, country or location, and size are required columns. Add or drop the other columns to fit the material confirmed
-- Report size as revenue or headcount, with the reference year
+- Report size as revenue, headcount, market capitalization, and so on, with the reference year
 - Report market share only when a source exists
 - In the competitive relations column, write the industries or main rivals the company competes with
 - After the table, describe the competitive landscape among the players in a few fact-based sentences
@@ -64,26 +64,38 @@ Organize the main companies in the whole market in the table below. For a region
 
 ## Investment trends
 
-Investment trends fall into three categories by source and use of the money.
+Investment trends cover the flows of funds the subject can attract or compete for. Two criteria, the source of funds (public or private) and the funding track (R&D or non-R&D), divide them into four categories.
 
 | Category | Content | Main sources |
 |---|---|---|
-| Public R&D investment | Government budget allocation, program budgets of ministries and funding agencies, national R&D projects | Budget documents, R&D program implementation plans, national R&D databases |
-| Corporate R&D investment | R&D spending and facility investment that firms fund themselves | R&D activity surveys, industry surveys, corporate disclosures |
-| Risk capital investment | Venture capital and private equity investment, startup fundraising | Association and government statistics, paid investment databases |
+| Public R&D investment | Programs and projects that governments and public bodies fund from R&D budgets | Budget documents, R&D program implementation plans, program calls, and so on |
+| Public non-R&D investment | Programs that governments and public bodies fund from budgets other than R&D (demonstration and deployment, infrastructure and facility construction, subsidies, policy finance, public fund commitments, matching support, and so on) | Budget documents, program implementation plans, program calls, and so on |
+| Private R&D investment | R&D spending that firms and other private actors fund themselves | R&D activity surveys, industry surveys, corporate disclosures, and so on |
+| Private non-R&D investment | Private facility investment, risk capital investment (venture capital, private equity, corporate venture capital, and so on), mergers and acquisitions, and so on | Corporate disclosures, association and government statistics, paid investment databases, and so on |
+
+Use first the material that web search and literature can confirm, such as budget documents, program calls, and official statistics. When project-level data or paid database data is needed, follow the channels in references/sources.md.
+
+### Classification criteria
+
+- (Program test) A public program that has a budget, an operating agency, a period, and eligible recipients, and that allocates funds, goes in the investment category. Strategy and plan documents in the same field go under policy in the macro environment (for example, an investment strategy document for a field is policy, and a demonstration program with an open call in the same field is public investment, and so on)
+- (Funding track) Decide R&D or non-R&D by the budget or accounting classification the source states. R&D budget programs also include workforce development and infrastructure, and non-R&D budget programs also include technology development work. If the source does not state the track, record it as unconfirmed
+- (Reference year) Budget classifications change by country and over time, so follow the classification of the data's reference year. For a program whose classification changed, record the classification for each year
+- (Funding stages) When money passes through several stages (public fund commitment, fund formation, investment in firms, and so on), record each stage separately under the source of funds stated by whoever compiled it, and do not add the stages together
+
+For a region subject, programs that organizations in the region are carrying out and R&D spending of firms in the region are resources the subject holds, so they belong to the region subject items in references/internal.md.
+
+### Recording amounts
 
 - Record the nature of each amount: plan, budget, execution, or cumulative funding raised. Do not add amounts of different nature together or join them into one trend. A government's announced investment plan and actual spending differ in size and timing
 - If one source presents public and private investment under the same definition, compute the trend of the private share in code. Do not pair a public amount from one source with a private amount from another to build a share
 - If the topic has sub-technologies or industry value chain stages and the data splits along those units, repeat the same format for each unit
-- For a region subject, projects carried out by organizations in the region and R&D spending of firms in the region are resources the subject holds, so they belong to the region subject items in references/internal.md
-- Search engines miss much of this material, so check first the connected-system channel or the user-provided channel in references/sources.md
 
-### Public R&D investment
+### Public investment
 
-Organize program budgets of ministries and funding agencies by year. Program types are technology development, commercialization, workforce development, and infrastructure.
+Organize program budgets of ministries and funding agencies by year. Record the program type as the program purpose the source states, such as technology development, demonstration and deployment, commercialization, workforce development, infrastructure and facility construction, financial support, and so on.
 
-| Ministry or agency | Program name | Program type | Budget by year | Source |
-|---|---|---|---|---|
+| Ministry or agency | Program name | Funding track | Program type | Budget by year | Nature of amount | Source |
+|---|---|---|---|---|---|---|
 
 When using project counts and research funds drawn from a national R&D database, follow the rules below. Set the search conditions and the breakdown together with the user by the database exploration procedure in references/sources.md.
 
@@ -91,20 +103,12 @@ When using project counts and research funds drawn from a national R&D database,
 - Report the number of projects used as the denominator with any share or ranking
 - The database holds projects with government funding, so R&D that firms carry out with their own money alone does not appear. Do not treat the absence of projects as evidence of no investment
 
-### Corporate R&D investment
+### Private investment
 
-Organize corporate R&D spending and facility investment by year, at industry or regional level. Add averages per firm or output indicators such as patents when the data has them.
+Organize private investment at industry or regional level by investment type. In the investment type column, write R&D spending, facility investment, risk capital investment, mergers and acquisitions, and so on. Record R&D spending as private R&D investment and the other types as private non-R&D investment. Add investment stages, main investors, and focus areas when the data has them.
 
-| Year | Industry or region | R&D spending | Facility investment | Source |
-|---|---|---|---|---|
-
-### Risk capital investment
-
-- Organize the number and amount of venture capital and private equity deals by period. Add investment stages, main investors, and focus areas when the data has them
-- Terms of paid databases often restrict redistribution, so use exports provided by the user or connected systems, and cite within the terms
-
-| Period | Country or field | Number of deals | Amount invested | Source |
-|---|---|---|---|---|
+| Period | Industry or region | Investment type | Number of deals | Amount | Nature of amount | Source |
+|---|---|---|---|---|---|---|
 
 ## Writing principles
 
@@ -120,7 +124,9 @@ Organize corporate R&D spending and facility investment by year, at industry or 
 - No estimates from different publishers are spliced into one series
 - Compound annual growth rates and shares were computed in code
 - The player table has the required columns
-- Each investment amount states whether it is a plan, budget, execution, or cumulative amount raised
+- Each investment fact states the source of funds, the funding track, and the nature of the amount
+- The funding track follows the source's budget or accounting classification
+- Government programs sit in the investment category and government purchasing sits in the customers and demand category
 - Figures drawn from a national R&D database state the search conditions and the denominator
 - No causal claim goes beyond what sources state
 - No interpretation or prescription is mixed in
