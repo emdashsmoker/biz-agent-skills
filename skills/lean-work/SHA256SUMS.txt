@@ -1,2 +1,2 @@
-913516fbfdb3bfec5a20ad83f6f01fe25e4781b258bf864168eed596407483ce  lean-work-en.skill
-ceae77c007e328c8c731e5329487e8574bef15c2ba095a8313a80b4b5a34d0ee  lean-work-ko.skill
+7a67f1e7c7fb1ad9b48bd8e5190e5ba71481125a6de8aca0591747f8e4eff7c3  lean-work-en.skill
+7bc9241fdcb39919ce58c93eb4a3e4bfb4f305b5639ba47dc54deaba13173876  lean-work-ko.skill
