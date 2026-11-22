@@ -75,7 +75,6 @@ For a multi-slide deck, set the storyline and the fixed elements listed in the m
 - When the user states the use setting, follow it.
 - When the request makes the use setting clear without stating it, follow that setting. Requests that mention printed handouts, a place in a report, reading before a meeting and similar fall in this group.
 - When the user does not state the use setting and the request does not make it clear, set it to screen showing at a large venue with no handouts. In the background section, treat this setting as the large-screen condition and the screen-only condition. Proceed with this default without asking about the use setting.
-- Users of this skill expect the rich staging of a large presentation. A guess of screen plus handouts adds text and reduces staging. The slide then moves away from what the user expects.
 - Judge the use setting from information about how the slide will be used, such as the venue, handouts and where it will be published. Adjust slides with much content by the criteria in the information density section.
 
 ## Slide skeleton
