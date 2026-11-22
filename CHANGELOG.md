@@ -104,8 +104,24 @@ Changelog rules
 
 ### lean-work
 - Added a sentence rule that states the same content in the positive form, with the reason that a positive sentence states the target state directly (#86)
+- Removed the summary mode that produced fixed-format summaries of web pages, files and pasted text, with its trigger phrases such as "summarize" and "brief me" (#89)
+- Removed the sentence rules, the concise-answer example and the concision trigger phrases such as "be concise" and "just the key points" (#89)
+- Added ECRS criteria that apply eliminate, combine, rearrange and simplify in this order to work steps and expression elements, with a criteria table for each mode (#89)
+- Added a work design procedure, a revision procedure for work processes and an expression procedure for new output (#89)
+- Added a chart example, the message overload definition and checklist items on mixed element kinds and header consistency (#89)
+- Changed the default reader to a general adult reader without background in the field (#89)
+- Changed the unit examples to open lists that name a subheading or paragraph of a text, the headline or a component of a slide and a data item (#89)
+- Added output rules that keep internal work content, the terms of the skill and meta-commentary out of the output (#89)
 
 * 같은 내용의 긍정 표현 서술 규칙 추가 (목표 상태를 직접 나타내는 긍정 문장의 명료성을 근거로 명시) (#86)
+* 웹 페이지, 파일, 붙여넣은 글을 고정 포맷으로 요약하던 요약 모드와 "요약해줘", "브리핑해줘" 등의 발동 문구 삭제 (#89)
+* 문장 규칙, 간결 응답 예시, "간결하게", "핵심만" 등의 발동 문구 삭제 (#89)
+* 작업 단계와 표현 요소에 제거, 결합, 재배열, 단순화를 순서대로 적용하는 ECRS 기준과 모드별 기준 표 추가 (#89)
+* 작업 설계 절차, 작업 절차의 교정 절차, 신규 작성용 표현 절차 추가 (#89)
+* 차트 예시, 메시지 과적 정의, 성격이 다른 요소의 혼재 및 헤더 일치 점검 항목 추가 (#89)
+* 독자 기본값을 해당 분야의 배경지식이 없는 일반 성인으로 변경 (#89)
+* 단위 예시를 글의 소제목이나 문단, 슬라이드의 헤드라인이나 구성요소, 데이터 항목 등의 열린 목록으로 변경 (#89)
+* 내부 작업 내용, 스킬 용어, 메타적 표현을 산출물에 담지 않는 산출물 규칙 추가 (#89)
 
 ### logical-write
 - Added a reason to the positive phrasing rule: a positive sentence states the target state directly, so it is clear and easy to revise and combine sentence by sentence (#86)
