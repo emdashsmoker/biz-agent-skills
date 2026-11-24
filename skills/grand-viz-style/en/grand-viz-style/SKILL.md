@@ -67,7 +67,7 @@ Set the direction in this order before building. For work that produces files, r
 4. (Decide the background) Set the background lightness and the level of background treatment. The criteria are in the background section.
 5. (Assign effects) Decide the color roles, the hero element, the effect methods and whether to use photos and icons.
 6. (Build) Build to the direction you set.
-7. (Verify) Look at the rendered result and check the items in the verification section.
+7. (Verify) Look at the rendered result and check the items in the verification section. Repeat fixing and checking until no defect remains.
 
 For a multi-slide deck, set the storyline and the fixed elements listed in the multiple slides section before designing each slide's body.
 
@@ -460,7 +460,9 @@ Redesign any part of a draft that matches the patterns below or patterns of the 
 
 ## Verification
 
-After building, render the result as an image and look at it. Fix any defect and render again. Reading code alone cannot reveal text overflow or overlaps. Without a way to check images, check coordinates and text widths by calculation and state in the result that the output is unverified. After checking the items below, look again through the eyes of the audience and practitioners and fix anything that looks off, even when no item covers it.
+After building, render the result as an image and look at it. Reading code alone cannot reveal text overflow or overlaps. Without a way to check images, check coordinates and text widths by calculation and state in the result that the output is unverified. After checking the items below, look again through the eyes of the audience and practitioners and fix anything that looks off, even when no item covers it.
+
+Render each fixed slide again and recheck every item from the start. A fix in one place can change the size and position of nearby elements and create a new defect. If a defect remains, repeat fixing, rendering and checking until no defect remains. Deliver the result after confirming a render that shows no defect.
 
 ### Readability checks
 
