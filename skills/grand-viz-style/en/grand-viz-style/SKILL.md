@@ -399,6 +399,7 @@ First drafts tend to drift toward flat layouts made of tables and lists. Meet th
 
 ### Tables
 
+- Tables tend to look detached from the elements around them. Keep a table's placement, alignment and spacing to neighboring shapes and text in harmony with the other elements on the slide.
 - Set header rows as dark color fields with white text, and mark total rows and highlighted rows with light color fields or bold text.
 - Right-align numbers and put units in the header row or above the table.
 - When a table is the slide's main structure, use the accent color on one or two highlighted cells only.
