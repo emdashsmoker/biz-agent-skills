@@ -466,7 +466,7 @@ After building, render the result as an image and look at it. Fix any defect and
 
 - Does any text overflow or get cut off at its box?
 - Do line breaks avoid splitting words and avoid awkward spots?
-- Does each shape that holds text fit its block of text, with the text centered vertically?
+- Does each shape that holds text fit its block of text, with its text and copy aligned to the vertical center?
 - Do elements avoid overlapping?
 - Does all text, including text on gradients, light and photos, meet WCAG AA contrast against its real background?
 - Do icons, arrows, bullets, lines, chart marks and similar elements have 3:1 or more contrast against adjacent colors?
