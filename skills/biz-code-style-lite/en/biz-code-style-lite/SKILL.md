@@ -417,7 +417,7 @@ Apply to code comments, commit messages, logs, chart and diagram labels, slide c
 - Pitch explanations at a level a newcomer to the field can follow, and keep the tone of an adult professional document. Keep formality through word choice and sentence endings. In sentences for readers, do not overuse jargon beyond the reader's level or engineering and software-design phrasing (input value, output, mapping, pipeline, and so on). Plain writing must not underestimate the reader's level or compromise the accuracy of the content through oversimplification. State specialized and technical content accurately and clearly, without distorting its meaning
 - Keep grammar correct regardless of how technical or plain the text is
 - After writing a sentence, prompt, or comment, ask "So what?" and "Why so?". A sentence that needs further breakdown before it answers is vague, so rewrite it until both answers show
-- After writing a sentence, prompt, or comment, put "the writer", "I", "the model", "the LLM", or "the AI provider" in the subject position. A sentence that still reads naturally carries meta information, so rewrite it from the reader's or user's point of view
+- After writing a sentence, prompt, or comment, put "the writer", "I", "the model or LLM writing this text", or "the AI provider" in the subject position. A sentence that still reads naturally carries meta information, so rewrite it from the reader's or user's point of view
 
 ### Formatting
 

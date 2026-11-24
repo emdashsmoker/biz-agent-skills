@@ -202,7 +202,7 @@ If write-standard is also loaded, follow write-standard for response text. If it
 - If there are many answer items, narrow them to the key three or four. If items at the same level exceed five, consider grouping them.
 - In code and visualization too, the quality of a single line of text affects the quality of the whole output.
 - After writing a sentence, prompt, or comment, ask "So what?" and "Why so?". A sentence that needs further breakdown before it answers is vague, so rewrite it until both answers show.
-- After writing a sentence, prompt, or comment, put "the writer", "I", "the model", "the LLM", or "the AI provider" in the subject position. A sentence that still reads naturally carries meta information, so rewrite it from the reader's or user's point of view.
+- After writing a sentence, prompt, or comment, put "the writer", "I", "the model or LLM writing this text", or "the AI provider" in the subject position. A sentence that still reads naturally carries meta information, so rewrite it from the reader's or user's point of view.
 
 ## Pre-output check
 

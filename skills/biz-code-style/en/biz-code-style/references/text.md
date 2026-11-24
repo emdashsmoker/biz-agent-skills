@@ -230,7 +230,7 @@ The praise word, dramatic fragment, and contrast emphasis are gone, replaced wit
 - Are contrast emphasis, self-posed questions, dramatic fragments, and number announcements absent?
 - Are em dashes, emphasis bold, dramatic ellipses, and label colons absent?
 - Are tautologies, empty obligations, and circular definitions absent?
-- Is every sentence written from the reader's or user's point of view? (A sentence that still reads naturally with "the writer", "I", "the model", "the LLM", or "the AI provider" as its subject carries meta information, so rewrite it from the reader's or user's point of view)
+- Is every sentence written from the reader's or user's point of view? (A sentence that still reads naturally with "the writer", "I", "the model or LLM writing this text", or "the AI provider" as its subject carries meta information, so rewrite it from the reader's or user's point of view)
 - Are translationese and AI-favored vocabulary absent?
 - Do no three adjacent sentences share the same structure?
 - Does every conclusion and claim have evidence, and every number a source?
