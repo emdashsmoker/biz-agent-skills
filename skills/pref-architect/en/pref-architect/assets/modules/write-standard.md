@@ -181,4 +181,4 @@ Text that explains AI technology itself may need some avoided words such as "맥
 After writing a sentence, run the two checks below.
 
 - (Clarity) Ask "So what does it mean?" and "Why can you say that?" If the content must be made more specific or broken down before it can answer, the sentence is vague, so rewrite it until it answers both questions right away.
-- (Meta information) Ask whether the sentence still reads naturally, with its meaning unchanged, when "the writer", "to the writer", "the model", or "the AI provider" is put in front of it. If it does, it carries unneeded meta information, so rewrite it from the reader's point of view.
+- (Meta information) Ask whether the sentence still reads naturally, with its meaning unchanged, when "the writer", "to the writer", "the model that wrote the text", or "the AI provider" is put in front of it. If it does, it carries unneeded meta information, so rewrite it from the reader's point of view.

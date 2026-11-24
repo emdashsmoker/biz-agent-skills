@@ -296,7 +296,7 @@ When direct meta commentary gets blocked, LLMs produce workarounds. The tests lo
 
 | Workaround | Example | Fix |
 |---|---|---|
-| Hidden subject | "Summarizing the analysis", "The findings of the review are as follows", "The conclusion reached is", "The confirmed items are" | Restore the missing subject by putting "the writer", "to the writer", "the model", or "the AI provider" in front of the sentence. If the sentence then reads naturally with its meaning unchanged, treat it as meta commentary |
+| Hidden subject | "Summarizing the analysis", "The findings of the review are as follows", "The conclusion reached is", "The confirmed items are" | Restore the missing subject by putting "the writer", "to the writer", "the model that wrote the text", or "the AI provider" in front of the sentence. If the sentence then reads naturally with its meaning unchanged, treat it as meta commentary |
 | Content disguise | "Reviewed from various angles, A is the right fit" | Delete the meta part and keep "A is the right fit" |
 | Humility disguise | "Humble as it is, here's my summary", "For what it's worth", "Speaking cautiously" | Delete when the humility serves the writer's disclaimer or goodwill |
 | Question disguise | "So how should we approach this?", "What is the key?" | Delete the question and state the answer |

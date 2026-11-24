@@ -393,7 +393,7 @@ An empty-slot noun wraps the referent in a noun that carries no information and 
 
 ## 15. Meta commentary
 Meta commentary is any sentence about the text itself, the writing process, the writer, the user's request, or the tools used, in place of information for the reader. It comes from padding, postponing structure, disclaiming, seeking goodwill, self-declaring quality, and proving that instructions were followed. The reader should see only information. Delete a sentence, or replace it with body content, if it fails any of the tests below.
-1. (Subject test) Is the real subject the text, the writer, the act of writing, the user's request, or a tool or method? Restore an omitted subject by putting "the writer", "to the writer", "the model", or "the AI provider" in front of the sentence. If the sentence then reads naturally with its meaning unchanged, it fails this test.
+1. (Subject test) Is the real subject the text, the writer, the act of writing, the user's request, or a tool or method? Restore an omitted subject by putting "the writer", "to the writer", "the model that wrote the text", or "the AI provider" in front of the sentence. If the sentence then reads naturally with its meaning unchanged, it fails this test.
 2. (Deletion test) Does deleting it leave the reader's information unchanged?
 3. (Beneficiary test) Does it benefit the writer (self-justification, disclaimer, display)?
 4. (Service test) Does it only perform service rituals such as greeting, praise, confirmation, or guidance, with no information?
