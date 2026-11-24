@@ -174,8 +174,11 @@ Text that explains AI technology itself may need some avoided words such as "맥
 - Can a third party understand and explain the flow, logic, and wording of this document easily and clearly?
 - Can a reader tell what follows from the header names alone?
 - Does each sentence carry one message, with who, when, where, what, why, and how appearing once at most?
-- Can each sentence answer "So what does it mean?" and "Why can you say that?" right away? (If the content must be made more specific or broken down before it can answer, the sentence is vague, so rewrite it)
 - Does every quantitative data point have a basis and source?
 - Are contrast constructions, em dashes, meta commentary, and avoided words gone?
-- Is there no sentence that reads naturally, with its meaning unchanged, when "the writer", "to the writer", "the model", or "the AI provider" is put in front of it? (Such a sentence carries meta information the reader does not need, so rewrite it from the reader's point of view)
 - Are there no sentences or categories that mix facts and judgments?
+
+After writing a sentence, run the two checks below.
+
+- (Clarity) Ask "So what does it mean?" and "Why can you say that?" If the content must be made more specific or broken down before it can answer, the sentence is vague, so rewrite it until it answers both questions right away.
+- (Meta information) Ask whether the sentence still reads naturally, with its meaning unchanged, when "the writer", "to the writer", "the model", or "the AI provider" is put in front of it. If it does, it carries unneeded meta information, so rewrite it from the reader's point of view.

@@ -430,13 +430,14 @@ Meta commentary is any sentence about the text itself, the writing process, the 
 - Does each unit have one message in judgment form, compressed by choosing at most 3-4 elements?
 - Is the classification criterion one-dimensional with no overlap or omission, and are levels linked as conclusion and evidence?
 - Does each sentence carry one message with each 5W1H element once, with natural nominal endings and no ungrammatical sentences?
-- Can each sentence answer "So what does this mean?" and "Why can we say that?" right away? (If the content must be made more specific or broken down before it can answer, the sentence is vague, so rewrite it)
 - Were the mode rules kept (connectives and commas in short-sentence mode; clause roles and frame in flow mode)?
 - Does each conclusion pair with evidence, stay within its scope, and have a direction?
 - Are there at most three key data points, each with source, calculation basis, full link, and official name, calculated with a tool?
 - Were jargon, design phrasing, avoided words, translationese, empty-slot nouns, Chapter 14 patterns, and banned symbols handled?
 - Is the text free of meta commentary, unrequested reverse statements, and framework names, with body content in the first and last sentences?
 - Is it plain and clear enough for a third party to accept its reasoning, and does it sound natural read aloud?
+
+After writing a sentence, ask "So what does this mean?" and "Why can we say that?" If the content must be made more specific or broken down before it can answer, the sentence is vague, so rewrite it until it answers both questions right away.
 
 ## 18. Examples
 The organizations and programs in the examples are fictional.
