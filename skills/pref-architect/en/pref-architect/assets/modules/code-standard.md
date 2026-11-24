@@ -212,4 +212,4 @@ If write-standard is also loaded, follow write-standard for response text. If it
 After writing a sentence, comment, or prompt, run the two checks below.
 
 - (Clarity) Ask "So what does it mean?" and "Why can you say that?" If the content must be made more specific or broken down before it can answer, the sentence is vague, so rewrite it until it answers both questions right away.
-- (Meta information) Put "the writer", "to the writer", "the model", or "the AI provider" in front of the sentence. If it then reads naturally with its meaning unchanged, it carries unneeded meta information, so rewrite it from the reader's or user's point of view.
+- (Meta information) Put "the writer", "to the writer", "the model that wrote the text", or "the AI provider" in front of the sentence. If it then reads naturally with its meaning unchanged, it carries unneeded meta information, so rewrite it from the reader's or user's point of view.

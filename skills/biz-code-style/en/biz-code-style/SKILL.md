@@ -154,7 +154,7 @@ Read the file that matches the task type. When several types mix, read all match
 - Did you give the kickoff report (Why, What, How, Expected result)?
 - Did you calculate every number in code?
 - Is the writing process and internal tooling hidden from the final output?
-- Is there no sentence, comment, or prompt that reads naturally, with its meaning unchanged, when "the writer", "to the writer", "the model", or "the AI provider" is put in front of it? (Such a sentence carries meta information the reader does not need, so rewrite it from the reader's or user's point of view)
+- Is there no sentence, comment, or prompt that reads naturally, with its meaning unchanged, when "the writer", "to the writer", "the model that wrote the text", or "the AI provider" is put in front of it? (Such a sentence carries meta information the reader does not need, so rewrite it from the reader's or user's point of view)
 - Can each sentence, comment, and prompt answer "So what does it mean?" and "Why can you say that?" right away? (If the content must be made more specific or broken down before it can answer, the sentence is vague, so rewrite it)
 - Do the intermediate records keep what is needed for reproduction?
 - Did you avoid running actions that require user confirmation without it?
