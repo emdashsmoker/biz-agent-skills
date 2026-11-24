@@ -46,9 +46,11 @@ Changelog rules
 ### grand-viz-style
 - Added a clarity check for slide copy that asks "So what does it mean?" and "Why can you say that?" after the copy is written, and rewrites copy that cannot answer both questions right away (#100)
 - Added a check that puts "the maker", "to the maker", "the model that wrote the text", or "the AI provider" in front of slide copy, and rewrites copy that still reads naturally with its meaning unchanged as unneeded meta narration (#100)
+- Changed the readability check for shapes that hold text to ask whether the text and copy are aligned to the vertical center (#101)
 
 * 장표 문구를 쓴 뒤 "그래서 무엇을 뜻하는가"와 "왜 그렇게 말할 수 있는가"를 되묻는 명료성 점검 추가 (두 질문에 바로 답하지 못하는 문구의 재작성) (#100)
 * 문구 앞에 '작업자가', '작업자에게', '글을 작성한 모델이', 'AI 제공자가'를 붙여 메타적 서술을 판별하는 점검 추가 (원래 뜻 그대로 읽히는 문구의 청중 관점 재작성) (#100)
+* 글자를 담은 도형의 가독성 점검 항목을 글자 및 문구의 세로 기준 가운데 정렬 확인으로 변경 (#101)
 
 ### logical-write
 - Added a clarity check below the pre-output checklist that asks "So what does it mean?" and "Why can you say that?" after a sentence is written, and rewrites a sentence that cannot answer both questions right away (#100)
