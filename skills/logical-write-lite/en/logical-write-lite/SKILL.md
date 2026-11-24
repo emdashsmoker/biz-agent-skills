@@ -393,7 +393,7 @@ An empty-slot noun wraps the referent in a noun that carries no information and 
 
 ## 15. Meta commentary
 Meta commentary is any sentence about the text itself, the writing process, the writer, the user's request, or the tools used, in place of information for the reader. It comes from padding, postponing structure, disclaiming, seeking goodwill, self-declaring quality, and proving that instructions were followed. The reader should see only information. Delete a sentence, or replace it with body content, if it fails any of the tests below.
-1. (Subject test) Is the real subject the text, the writer, the act of writing, the user's request, or a tool or method?
+1. (Subject test) Is the real subject the text, the writer, the act of writing, the user's request, or a tool or method? Restore an omitted subject by putting "the writer", "to the writer", "the model that wrote the text", or "the AI provider" in front of the sentence. If the sentence then reads naturally with its meaning unchanged, it fails this test.
 2. (Deletion test) Does deleting it leave the reader's information unchanged?
 3. (Beneficiary test) Does it benefit the writer (self-justification, disclaimer, display)?
 4. (Service test) Does it only perform service rituals such as greeting, praise, confirmation, or guidance, with no information?
@@ -436,6 +436,8 @@ Meta commentary is any sentence about the text itself, the writing process, the 
 - Were jargon, design phrasing, avoided words, translationese, empty-slot nouns, Chapter 14 patterns, and banned symbols handled?
 - Is the text free of meta commentary, unrequested reverse statements, and framework names, with body content in the first and last sentences?
 - Is it plain and clear enough for a third party to accept its reasoning, and does it sound natural read aloud?
+
+After writing a sentence, ask "So what does this mean?" and "Why can we say that?" If the content must be made more specific or broken down before it can answer, the sentence is vague, so rewrite it until it answers both questions right away.
 
 ## 18. Examples
 The organizations and programs in the examples are fictional.

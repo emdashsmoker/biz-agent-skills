@@ -27,6 +27,79 @@ Changelog rules
 - (Push) Commit on top of the latest main and push directly to main.
 -->
 
+## 2026-11-24
+
+### biz-code-style
+- Added a clarity check that asks "So what does it mean?" and "Why can you say that?" after a sentence, comment, prompt or similar text is written, and rewrites a sentence that cannot answer both questions right away (#100)
+- Added a meta information check that puts "the writer", "to the writer", "the model that wrote the text", or "the AI provider" in front of a sentence, and rewrites a sentence that still reads naturally with its meaning unchanged (#100)
+
+* 문장, 주석, 프롬프트 등을 쓴 뒤 "그래서 무엇을 뜻하는가"와 "왜 그렇게 말할 수 있는가"를 되묻는 명료성 점검 추가 (두 질문에 바로 답하지 못하는 문장의 재작성) (#100)
+* 문장 앞에 '작성자가', '작성자에게', '글을 작성한 모델이', 'AI 제공자가'를 붙여 메타 정보를 판별하는 점검 추가 (원래 뜻 그대로 읽히는 문장의 재작성) (#100)
+
+### biz-code-style-lite
+- Added a clarity check that asks "So what does it mean?" and "Why can you say that?" after a sentence, comment, prompt or similar text is written, and rewrites a sentence that cannot answer both questions right away (#100)
+- Added a meta information check that puts "the writer", "to the writer", "the model that wrote the text", or "the AI provider" in front of a sentence, and rewrites a sentence that still reads naturally with its meaning unchanged (#100)
+
+* 문장, 주석, 프롬프트 등을 쓴 뒤 "그래서 무엇을 뜻하는가"와 "왜 그렇게 말할 수 있는가"를 되묻는 명료성 점검 추가 (두 질문에 바로 답하지 못하는 문장의 재작성) (#100)
+* 문장 앞에 '작성자가', '작성자에게', '글을 작성한 모델이', 'AI 제공자가'를 붙여 메타 정보를 판별하는 점검 추가 (원래 뜻 그대로 읽히는 문장의 재작성) (#100)
+
+### grand-viz-style
+- Added a clarity check for slide copy that asks "So what does it mean?" and "Why can you say that?" after the copy is written, and rewrites copy that cannot answer both questions right away (#100)
+- Added a check that puts "the maker", "to the maker", "the model that wrote the text", or "the AI provider" in front of slide copy, and rewrites copy that still reads naturally with its meaning unchanged as unneeded meta narration (#100)
+
+* 장표 문구를 쓴 뒤 "그래서 무엇을 뜻하는가"와 "왜 그렇게 말할 수 있는가"를 되묻는 명료성 점검 추가 (두 질문에 바로 답하지 못하는 문구의 재작성) (#100)
+* 문구 앞에 '작업자가', '작업자에게', '글을 작성한 모델이', 'AI 제공자가'를 붙여 메타적 서술을 판별하는 점검 추가 (원래 뜻 그대로 읽히는 문구의 청중 관점 재작성) (#100)
+
+### logical-write
+- Added a clarity check below the pre-output checklist that asks "So what does it mean?" and "Why can you say that?" after a sentence is written, and rewrites a sentence that cannot answer both questions right away (#100)
+- Added a step to the subject test that restores an omitted subject by putting "the writer", "to the writer", "the model that wrote the text", or "the AI provider" in front of the sentence, and treats a sentence that still reads naturally with its meaning unchanged as meta commentary (#100)
+
+* 산출 전 점검에 문장을 쓴 뒤 "그래서 무엇을 뜻하는가"와 "왜 그렇게 말할 수 있는가"를 되묻는 명료성 점검 추가 (두 질문에 바로 답하지 못하는 문장의 재작성) (#100)
+* 주어 테스트에 문장 앞에 '작성자가', '작성자에게', '글을 작성한 모델이', 'AI 제공자가'를 붙이는 생략 주어 복원 절차 추가 (원래 뜻 그대로 읽히는 문장의 메타 서술 판정) (#100)
+
+### logical-write-lite
+- Added a clarity check below the pre-output checklist that asks "So what does it mean?" and "Why can you say that?" after a sentence is written, and rewrites a sentence that cannot answer both questions right away (#100)
+- Added a step to the subject test that restores an omitted subject by putting "the writer", "to the writer", "the model that wrote the text", or "the AI provider" in front of the sentence, and treats a sentence that still reads naturally with its meaning unchanged as meta commentary (#100)
+
+* 산출 전 점검에 문장을 쓴 뒤 "그래서 무엇을 뜻하는가"와 "왜 그렇게 말할 수 있는가"를 되묻는 명료성 점검 추가 (두 질문에 바로 답하지 못하는 문장의 재작성) (#100)
+* 주어 테스트에 문장 앞에 '작성자가', '작성자에게', '글을 작성한 모델이', 'AI 제공자가'를 붙이는 생략 주어 복원 절차 추가 (원래 뜻 그대로 읽히는 문장의 메타 서술 판정) (#100)
+
+### no-meta-commentary
+- Added a step to the subject test that restores an omitted subject by putting "the writer", "to the writer", "the model that wrote the text", or "the AI provider" in front of the sentence, and treats a sentence that still reads naturally with its meaning unchanged as meta commentary (#100)
+
+* 주어 테스트에 문장 앞에 '작성자가', '작성자에게', '글을 작성한 모델이', 'AI 제공자가'를 붙이는 생략 주어 복원 절차 추가 (원래 뜻 그대로 읽히는 문장의 메타 서술 판정) (#100)
+
+### no-meta-commentary-lite
+- Added a step to the subject test that restores an omitted subject by putting "the writer", "to the writer", "the model that wrote the text", or "the AI provider" in front of the sentence, and treats a sentence that still reads naturally with its meaning unchanged as meta commentary (#100)
+
+* 주어 테스트에 문장 앞에 '작성자가', '작성자에게', '글을 작성한 모델이', 'AI 제공자가'를 붙이는 생략 주어 복원 절차 추가 (원래 뜻 그대로 읽히는 문장의 메타 서술 판정) (#100)
+
+### ontology-modeling
+- Added a step to the subject test that restores an omitted subject by putting "the writer", "to the writer", "the model that wrote the text", or "the AI provider" in front of the sentence, and treats a sentence that still reads naturally with its meaning unchanged as meta commentary (#100)
+
+* 주어 테스트에 문장 앞에 '작성자가', '작성자에게', '글을 작성한 모델이', 'AI 제공자가'를 붙이는 생략 주어 복원 절차 추가 (원래 뜻 그대로 읽히는 문장의 메타 서술 판정) (#100)
+
+### pref-architect
+- Added a clarity check to the write-standard and code-standard modules that asks "So what does it mean?" and "Why can you say that?" after a sentence is written, and rewrites a sentence that cannot answer both questions right away (#100)
+- Added a meta information check to the write-standard and code-standard modules that puts "the writer", "to the writer", "the model that wrote the text", or "the AI provider" in front of a sentence, and rewrites a sentence that still reads naturally with its meaning unchanged (#100)
+- Changed the metadata version of the skill and the generator-version of the bundled modules from 1.1 to 1.2 (#100)
+
+* write-standard와 code-standard 모듈에 문장을 쓴 뒤 "그래서 무엇을 뜻하는가"와 "왜 그렇게 말할 수 있는가"를 되묻는 명료성 점검 추가 (두 질문에 바로 답하지 못하는 문장의 재작성) (#100)
+* write-standard와 code-standard 모듈에 문장 앞에 '작성자가', '작성자에게', '글을 작성한 모델이', 'AI 제공자가'를 붙여 메타 정보를 판별하는 점검 추가 (원래 뜻 그대로 읽히는 문장의 재작성) (#100)
+* 스킬의 metadata version과 동봉 모듈의 generator-version을 1.1에서 1.2로 변경 (#100)
+
+### skill-forge
+- Added a clarity check for instruction sentences to the body writing rules, which asks "So what does it mean?" and "Why can you say that?" and rewrites an instruction that cannot answer both questions right away (#100)
+- Added a meta information check for instruction sentences to the body writing rules, which puts "the writer", "to the writer", "the model that wrote the text", or "the AI provider" in front of a sentence and rewrites a sentence that still reads naturally from the skill user's point of view (#100)
+
+* 본문 작성 규칙에 지시 문장을 쓴 뒤 "그래서 무엇을 뜻하는가"와 "왜 그렇게 말할 수 있는가"를 되묻는 명료성 점검 추가 (두 질문에 바로 답하지 못하는 지시의 재작성) (#100)
+* 본문 작성 규칙에 문장 앞에 '작성자가', '작성자에게', '글을 작성한 모델이', 'AI 제공자가'를 붙여 메타 정보를 판별하는 점검 추가 (원래 뜻 그대로 읽히는 문장의 스킬 사용자 관점 재작성) (#100)
+
+### slop-proof
+- Added a step to the subject test that restores an omitted subject by putting "the writer", "to the writer", "the model that wrote the text", or "the AI provider" in front of the sentence, and treats a sentence that still reads naturally with its meaning unchanged as meta commentary (#100)
+
+* 주어 테스트에 문장 앞에 '작성자가', '작성자에게', '글을 작성한 모델이', 'AI 제공자가'를 붙이는 생략 주어 복원 절차 추가 (원래 뜻 그대로 읽히는 문장의 메타 서술 판정) (#100)
+
 ## 2026-11-22
 
 ### biz-code-style

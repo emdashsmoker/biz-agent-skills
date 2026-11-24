@@ -368,8 +368,8 @@ First drafts tend to drift toward flat layouts made of tables and lists. Meet th
 - Write slide text in terse noun-ending style, the Korean gaejosik convention (e.g., '공급 거점 확충 추진', 'Supply hub expansion underway', and '처리 기간 단축', 'Shorter processing time'). When the user wants another style, apply that style across the deck.
 - Write body text as noun phrases. Keep the text in one box to three lines or fewer.
 - Break lines at units of meaning. Do not break inside a word or between a modifier and the word it modifies.
-- Name the project's subject, region, technology and similar items in taglines and copy. Do not use aspirational copy that would fit any project.
-- Slide text conveys the information the audience needs. Do not put meta information or meta narration from the maker's point of view on slides, such as the production process, tools used, internal reasoning, or the fact that drafting rules such as the same scale or a zero baseline were followed.
+- Name the project's subject, region, technology and similar items in taglines and copy. Do not use aspirational copy that would fit any project. After writing copy, ask "So what does it mean?" and "Why can you say that?" If the content must be made more specific or broken down before it can answer, the copy is vague, so rewrite it until it answers both questions right away.
+- Slide text conveys the information the audience needs. Do not put meta information or meta narration from the maker's point of view on slides, such as the production process, tools used, internal reasoning, or the fact that drafting rules such as the same scale or a zero baseline were followed. Ask whether the copy still reads naturally, with its meaning unchanged, when "the maker", "to the maker", "the model that wrote the text", or "the AI provider" is put in front of it. If it does, the copy is unneeded meta narration, so rewrite it from the audience's point of view.
 
 ## Data display
 

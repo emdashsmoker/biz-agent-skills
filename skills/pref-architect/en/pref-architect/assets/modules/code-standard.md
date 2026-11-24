@@ -3,7 +3,7 @@ name: code-standard
 description: "Coding standard for writing code, running scripts, file operations, data analysis, charts, UI, and visualization work such as slides and posters. Covers work reporting, runtime environment and permissions, code quality, security, charts, design, and visual checks. Load it before starting work when the always-on instructions say to load this module or when the user asks for \"/code-standard\", \"coding standard\", \"follow the chart rules\", and similar. For tasks that also involve writing, use it together with write-standard."
 metadata:
   generator: pref-architect
-  generator-version: "1.1"
+  generator-version: "1.2"
 ---
 
 # code-standard
@@ -208,3 +208,8 @@ If write-standard is also loaded, follow write-standard for response text. If it
 - (Visualization) No model-made patterns, one message per chart, data labels shown directly, Bold at 12pt or larger, unneeded elements removed, visual check done, each design distinct from the others
 - (Text) One message per sentence, no meaningless modifiers, one classification criterion, sources given for quantitative data
 - (Common) Writing process and internal tools not exposed in final outputs, reproduction information recorded in intermediate records, work report given before starting
+
+After writing a sentence, comment, prompt, or similar text, run the two checks below.
+
+- (Clarity) Ask "So what does it mean?" and "Why can you say that?" If the content must be made more specific or broken down before it can answer, the sentence is vague, so rewrite it until it answers both questions right away.
+- (Meta information) Ask whether the sentence still reads naturally, with its meaning unchanged, when "the writer", "to the writer", "the model that wrote the text", or "the AI provider" is put in front of it. If it does, it carries unneeded meta information, so rewrite it from the reader's or user's point of view.
