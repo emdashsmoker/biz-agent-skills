@@ -1,2 +1,2 @@
 ceeb31b80e43ce967ec3bb34e5a17ef6c03da84848bc4cb1a9db3ee109719bd7  no-meta-commentary-lite-en.skill
-8dce44380a0edeed5ac82d2cff52d5d372a81fbf9149b1cdafbc36fb45805f62  no-meta-commentary-lite-ko.skill
+62d0dd2f6f7fc746b3b226046e94184e5027df8c2daa7b583d6953f7c392c7d7  no-meta-commentary-lite-ko.skill
