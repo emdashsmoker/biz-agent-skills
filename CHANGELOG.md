@@ -48,11 +48,13 @@ Changelog rules
 - Added a check that puts "the maker", "to the maker", "the model that wrote the text", or "the AI provider" in front of slide copy, and rewrites copy that still reads naturally with its meaning unchanged as unneeded meta narration (#100)
 - Changed the readability check for shapes that hold text to ask whether the text and copy are aligned to the vertical center (#101)
 - Changed the verification from a single check to a loop that re-renders each fixed slide, rechecks every item from the start, and repeats until no defect remains (#102)
+- Added a table rule that keeps a table's placement, alignment and spacing to neighboring shapes and text in harmony with the rest of the slide, because tables tend to look detached from their surroundings (#105)
 
 * 장표 문구를 쓴 뒤 "그래서 무엇을 뜻하는가"와 "왜 그렇게 말할 수 있는가"를 되묻는 명료성 점검 추가 (두 질문에 바로 답하지 못하는 문구의 재작성) (#100)
 * 문구 앞에 '작업자가', '작업자에게', '글을 작성한 모델이', 'AI 제공자가'를 붙여 메타적 서술을 판별하는 점검 추가 (원래 뜻 그대로 읽히는 문구의 청중 관점 재작성) (#100)
 * 글자를 담은 도형의 가독성 점검 항목을 글자 및 문구의 세로 기준 가운데 정렬 확인으로 변경 (#101)
 * 검증 절차를 1회 점검에서 결함 해소 시점까지의 반복 점검으로 변경 (수정한 장표의 재렌더링과 전체 항목 재확인) (#102)
+* 표의 배치와 정렬, 이웃한 도형과 글자까지의 간격을 장표의 다른 요소와 조화시키는 표 규칙 추가 (주변 요소와 동떨어져 보이기 쉬운 표의 보완) (#105)
 
 ### logical-write
 - Added a clarity check below the pre-output checklist that asks "So what does it mean?" and "Why can you say that?" after a sentence is written, and rewrites a sentence that cannot answer both questions right away (#100)
