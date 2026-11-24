@@ -29,7 +29,7 @@ Every sentence goes through the tests below before output. Delete a sentence tha
 
 ### Test 1. Subject
 
-A sentence is meta-commentary when its real subject is one of the targets below. Check both stated and omitted subjects.
+A sentence is meta-commentary when its real subject is one of the targets below. Check both stated and omitted subjects. Restore an omitted subject by putting "the writer", "to the writer", "the model", or "the AI provider" in front of the sentence. If the sentence then reads naturally with its meaning unchanged, it is meta-commentary.
 
 - (The text itself) "This report", "This analysis", "In this section"
 - (The writer) "I", "In my analysis", "My review found"

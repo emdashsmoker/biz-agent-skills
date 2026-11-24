@@ -464,6 +464,11 @@ Before delivering, run checks that can fail. A judgment that something looks rig
 - (Text) one message per sentence, no connectors, no empty modifiers, single criterion and full coverage in classifications, sources for quantitative data
 - (Common) process and tools hidden in final deliverables, reproduction details in intermediate records, kickoff report done
 
+After writing a sentence, comment, or prompt, run the two checks below.
+
+- (Clarity) Ask "So what does it mean?" and "Why can you say that?" If the content must be made more specific or broken down before it can answer, the sentence is vague, so rewrite it until it answers both questions right away
+- (Meta information) Put "the writer", "to the writer", "the model", or "the AI provider" in front of the sentence. If it then reads naturally with its meaning unchanged, it carries unneeded meta information, so rewrite it from the reader's or user's point of view
+
 ### Self-Review
 
 - Before submitting, look for real weaknesses with the eyes of a critical reviewer. Fix any weakness or report it to the user. If there is none, say so and do not invent one

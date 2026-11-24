@@ -3,7 +3,7 @@ name: token-lean
 description: "Procedure for producing the same quality of output with fewer input and output tokens. Cuts unneeded file loads, repeated source output, extra turns, and trial and error. Load it when the always-on instructions say to load this module, when the work is token-heavy (bulk parsing, mass research, many tool calls, long outputs, repetitive file operations), or when the user asks for \"/token-lean\", \"save tokens\", \"save context\", \"keep it light\", and similar."
 metadata:
   generator: pref-architect
-  generator-version: "1.1"
+  generator-version: "1.2"
 ---
 
 # token-lean

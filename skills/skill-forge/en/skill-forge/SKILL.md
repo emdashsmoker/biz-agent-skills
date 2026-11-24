@@ -180,7 +180,7 @@ The model decides whether to use a skill from the name and description in the sk
 
 ## Body Writing
 
-Every time the skill triggers, the body takes up context alongside the conversation history and other skills. Keep each instruction only if the model would get the task wrong without it.
+Every time the skill triggers, the body takes up context alongside the conversation history and other skills. Keep each instruction only if the model would get the task wrong without it. After writing an instruction, ask "So what does it mean?" and "Why can you say that?" An instruction that must be made more specific or broken down before it can answer is vague and models read it differently, so rewrite it until it answers both questions right away. A sentence that reads naturally, with its meaning unchanged, when "the writer", "to the writer", or "the AI provider" is put in front of it carries meta information the skill's user does not need, so rewrite it from the skill user's point of view.
 - Write work-specific rules, cautions, and tool usage, and leave out general knowledge the model already has
 - Give each rule a short reason so the model judges unfamiliar situations by the rule's intent (reasons are followed more reliably than repeated emphasis)
 - State each instruction in the positive form (a positive instruction states the target state directly, so it is clear and applies as written to unfamiliar situations and other harnesses. A negative instruction lists what is prohibited case by case, so it is complex, the model has to infer the target state, and edge cases and maintenance burden grow)
