@@ -158,7 +158,7 @@ Read the file that matches the task type. When several types mix, read all match
 - Did you avoid running actions that require user confirmation without it?
 - Did you go through the checklist of every reference file you read?
 
-After writing a sentence, comment, or prompt, run the two checks below.
+After writing a sentence, comment, prompt, or similar text, run the two checks below.
 
 - (Clarity) Ask "So what does it mean?" and "Why can you say that?" If the content must be made more specific or broken down before it can answer, the sentence is vague, so rewrite it until it answers both questions right away.
 - (Meta information) Ask whether the sentence still reads naturally, with its meaning unchanged, when "the writer", "to the writer", "the model that wrote the text", or "the AI provider" is put in front of it. If it does, it carries unneeded meta information, so rewrite it from the reader's or user's point of view.
