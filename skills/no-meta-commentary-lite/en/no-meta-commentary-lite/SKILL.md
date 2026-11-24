@@ -36,7 +36,7 @@ A sentence is meta-commentary when its real subject is one of the targets below.
 - (The act of writing) "Looking at this", "On review", "To sum up"
 - (The user's request) "As you requested", "As you mentioned", "To answer your question"
 - (Tools and methods) Internal means the writer used for the work
-- (The AI provider) The policies and guidelines of the company that made the model writing the text
+- (The AI provider) The policies and guidelines of whoever built or provides the model writing the text
 
 ### Test 2. Deletion
 

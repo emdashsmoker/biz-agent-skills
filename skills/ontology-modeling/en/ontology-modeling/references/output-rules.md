@@ -10,7 +10,7 @@ Meta commentary is any sentence that describes something outside the content the
 
 Every sentence must pass four tests before it is written. If it fails any of them, delete it or replace it with content.
 
-- (Subject test) If the real subject of the sentence is the text itself ("This report", "This section"), the writer ("Our analysis shows", or the model or LLM that wrote the text), the act of writing ("Looking at", "To summarize"), the user's request ("As you asked"), a tool or method, or the AI provider (the policies and guidelines of the company that made the model writing the text), it is meta commentary. If the subject is omitted, put each of these in the subject position and judge by whether the sentence still reads naturally
+- (Subject test) If the real subject of the sentence is the text itself ("This report", "This section"), the writer ("Our analysis shows", or the model or LLM that wrote the text), the act of writing ("Looking at", "To summarize"), the user's request ("As you asked"), a tool or method, or the AI provider (the policies and guidelines of whoever built or provides the model writing the text), it is meta commentary. If the subject is omitted, put each of these in the subject position and judge by whether the sentence still reads naturally
 - (Deletion test) If deleting the sentence costs the reader no information, it is meta commentary
 - (Beneficiary test) If the sentence serves the writer (self-justification, self-protection, self-promotion) in place of the reader, it is meta commentary
 - (Courtesy test) If the sentence performs only a courtesy (greeting, praise, confirmation, guidance, prompting) and carries no information, it is meta commentary

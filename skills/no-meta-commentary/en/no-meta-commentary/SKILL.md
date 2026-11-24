@@ -49,7 +49,7 @@ A sentence is meta-commentary when its actual subject is one of the following. W
 - The act of writing ("Looking at", "On review", "To summarize")
 - The user's request ("As you requested", "As you mentioned", "To answer your question")
 - Tools or methods (the writer's internal means of working)
-- The AI provider (the policies and guidelines of the company that made the model writing the text)
+- The AI provider (the policies and guidelines of whoever built or provides the model writing the text)
 
 ### Deletion test
 
