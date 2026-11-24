@@ -462,7 +462,7 @@ Redesign any part of a draft that matches the patterns below or patterns of the 
 
 After building, render the result as an image and look at it. Reading code alone cannot reveal text overflow or overlaps. Without a way to check images, check coordinates and text widths by calculation and state in the result that the output is unverified. After checking the items below, look again through the eyes of the audience and practitioners and fix anything that looks off, even when no item covers it.
 
-Render each fixed slide again and recheck every item from the start. A fix in one place can change the size and position of nearby elements and create a new defect. If a defect remains, repeat fixing, rendering and checking until no defect remains. Deliver the result after confirming a render that shows no defect.
+Render each fixed slide again and recheck every item from the start. Fixing one defect can change the size and position of nearby elements and create a new defect. If a defect remains, repeat fixing, rendering and checking until no defect remains. Deliver the result after confirming a render that shows no defect.
 
 ### Readability checks
 
