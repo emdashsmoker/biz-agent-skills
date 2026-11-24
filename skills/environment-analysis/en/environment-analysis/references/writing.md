@@ -209,6 +209,8 @@ Gathering implications at the end of the report is the default. If the user want
 - Analysis section titles are content keywords, and each header holds one topic
 - The first bullet of each section is a summary, and child bullets are evidence
 - Each sentence carries one message
+- Every sentence answers "So what?" and "Why so?" clearly (a sentence that needs further breakdown before it answers is vague, so rewrite it until both answers show)
+- Every sentence is written from the reader's point of view (a sentence that still reads naturally with "the writer", "I", "the model", "the LLM", or "the AI provider" as its subject carries meta information, so rewrite it from the reader's point of view)
 - Statements are compact and formal
 - Subtitles use parentheses and describe their content
 - Every figure has a source, a reference date, and a method

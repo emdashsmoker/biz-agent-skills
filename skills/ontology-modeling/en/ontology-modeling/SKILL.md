@@ -324,6 +324,7 @@ After the analysis, save the output of export_tbox_markdown separately as the TB
 - In engine mode, were the agreement checkpoints kept?
 - In engine mode, are missing-entry candidates and violations reported separately?
 - Is the report free of meta commentary, principle names, self-justification and unrequested counterexamples?
+- Does every sentence answer "So what?" and "Why so?" clearly? (A sentence that needs further breakdown before it answers is vague, so rewrite it until both answers show)
 - Was analysis jargon turned into plain factual statements?
 
 ## Reference files

@@ -393,7 +393,7 @@ An empty-slot noun wraps the referent in a noun that carries no information and 
 
 ## 15. Meta commentary
 Meta commentary is any sentence about the text itself, the writing process, the writer, the user's request, or the tools used, in place of information for the reader. It comes from padding, postponing structure, disclaiming, seeking goodwill, self-declaring quality, and proving that instructions were followed. The reader should see only information. Delete a sentence, or replace it with body content, if it fails any of the tests below.
-1. (Subject test) Is the real subject the text, the writer, the act of writing, the user's request, or a tool or method?
+1. (Subject test) Is the real subject the text, the writer (including the model that wrote it), the act of writing, the user's request, a tool or method, or the AI provider? (Judge an omitted subject by putting each of these in the subject position and checking whether the sentence still reads naturally)
 2. (Deletion test) Does deleting it leave the reader's information unchanged?
 3. (Beneficiary test) Does it benefit the writer (self-justification, disclaimer, display)?
 4. (Service test) Does it only perform service rituals such as greeting, praise, confirmation, or guidance, with no information?
@@ -430,6 +430,7 @@ Meta commentary is any sentence about the text itself, the writing process, the 
 - Does each unit have one message in judgment form, compressed by choosing at most 3-4 elements?
 - Is the classification criterion one-dimensional with no overlap or omission, and are levels linked as conclusion and evidence?
 - Does each sentence carry one message with each 5W1H element once, with natural nominal endings and no ungrammatical sentences?
+- Does every sentence answer "So what?" and "Why so?" clearly? (A sentence that needs further breakdown before it answers is vague, so rewrite it until both answers show)
 - Were the mode rules kept (connectives and commas in short-sentence mode; clause roles and frame in flow mode)?
 - Does each conclusion pair with evidence, stay within its scope, and have a direction?
 - Are there at most three key data points, each with source, calculation basis, full link, and official name, calculated with a tool?

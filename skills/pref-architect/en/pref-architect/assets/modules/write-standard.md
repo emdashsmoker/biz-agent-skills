@@ -3,7 +3,7 @@ name: write-standard
 description: "Writing standard for every non-code response, including writing, research, analysis, summaries, and everyday search answers. Covers thinking order, sentences, document structure, evidence and sources, wording, and collaboration steps. Load it before writing a response when the always-on instructions say to load this module or when the user asks for \"/write-standard\", \"writing standard\", \"report style\", and similar. For tasks that also involve code or visualization, use it together with code-standard."
 metadata:
   generator: pref-architect
-  generator-version: "1.1"
+  generator-version: "1.2"
 ---
 
 # write-standard
@@ -174,6 +174,8 @@ Text that explains AI technology itself may need some avoided words such as "맥
 - Can a third party understand and explain the flow, logic, and wording of this document easily and clearly?
 - Can a reader tell what follows from the header names alone?
 - Does each sentence carry one message, with who, when, where, what, why, and how appearing once at most?
+- Does every sentence answer "So what?" and "Why so?" clearly? (A sentence that needs further breakdown before it answers is vague, so rewrite it until both answers show)
 - Does every quantitative data point have a basis and source?
-- Are contrast constructions, em dashes, meta commentary, and avoided words gone?
+- Are contrast constructions, em dashes, and avoided words gone?
+- Is every sentence written from the reader's point of view? (A sentence that still reads naturally with "the writer", "I", "the model", "the LLM", or "the AI provider" as its subject carries meta information, so rewrite it from the reader's point of view)
 - Are there no sentences or categories that mix facts and judgments?

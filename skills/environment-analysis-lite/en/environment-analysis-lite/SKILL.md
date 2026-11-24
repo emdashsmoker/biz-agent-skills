@@ -497,4 +497,4 @@ Confirm each item below by code or by comparison with source text. If any item f
 - Personal information and data marked confidential are used only within the rules
 - No banned expressions or working terms remain (checked by string search)
 
-Finally, reread the output as a critical reviewer. Fix or report only weaknesses that are confirmed, and do not invent weaknesses that are not.
+Finally, reread the output as a critical reviewer. Fix or report only weaknesses that are confirmed, and do not invent weaknesses that are not. While rereading, ask "So what?" and "Why so?" of each sentence. A sentence that needs further breakdown before it answers is vague, so rewrite it until both answers show. A sentence that still reads naturally with "the writer", "I", "the model", "the LLM", or "the AI provider" as its subject carries meta information, so rewrite it from the reader's point of view.

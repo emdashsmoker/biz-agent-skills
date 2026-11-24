@@ -3,7 +3,7 @@ name: code-standard
 description: "Coding standard for writing code, running scripts, file operations, data analysis, charts, UI, and visualization work such as slides and posters. Covers work reporting, runtime environment and permissions, code quality, security, charts, design, and visual checks. Load it before starting work when the always-on instructions say to load this module or when the user asks for \"/code-standard\", \"coding standard\", \"follow the chart rules\", and similar. For tasks that also involve writing, use it together with write-standard."
 metadata:
   generator: pref-architect
-  generator-version: "1.1"
+  generator-version: "1.2"
 ---
 
 # code-standard
@@ -201,10 +201,12 @@ If write-standard is also loaded, follow write-standard for response text. If it
 - Use no more than three key quantitative data points in one response.
 - If there are many answer items, narrow them to the key three or four. If items at the same level exceed five, consider grouping them.
 - In code and visualization too, the quality of a single line of text affects the quality of the whole output.
+- After writing a sentence, prompt, or comment, ask "So what?" and "Why so?". A sentence that needs further breakdown before it answers is vague, so rewrite it until both answers show.
+- After writing a sentence, prompt, or comment, put "the writer", "I", "the model", "the LLM", or "the AI provider" in the subject position. A sentence that still reads naturally carries meta information, so rewrite it from the reader's or user's point of view.
 
 ## Pre-output check
 
 - (Code) Settings separated, named constants, easy-to-debug structure, single responsibility per function, no changes outside the requested scope
 - (Visualization) No model-made patterns, one message per chart, data labels shown directly, Bold at 12pt or larger, unneeded elements removed, visual check done, each design distinct from the others
-- (Text) One message per sentence, no meaningless modifiers, one classification criterion, sources given for quantitative data
+- (Text) One message per sentence, no meaningless modifiers, one classification criterion, sources given for quantitative data, "So what?" and "Why so?" answered, written from the reader's or user's point of view
 - (Common) Writing process and internal tools not exposed in final outputs, reproduction information recorded in intermediate records, work report given before starting

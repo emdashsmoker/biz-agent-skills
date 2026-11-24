@@ -296,6 +296,7 @@ Thank you,
 - Is the reader's task written as an action, with a weekday, date, or time when it has a deadline?
 - Does every claim have grounds, and does every fact about the case come from the information you were given?
 - Does each sentence hold one idea?
+- Apart from greetings, acknowledgments, thanks, and apologies, does every sentence answer "So what?" and "Why so?" clearly? (A sentence that needs further breakdown before it answers is vague, so rewrite it until both answers show)
 - Do thanks and apology each appear at most once, with their object stated?
 - In a reply, can the reader decide their next step from the main point alone?
 - In a reply, did you use acknowledgment and questions only when their conditions apply?

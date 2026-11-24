@@ -149,6 +149,8 @@ Pure software development projects are outside the scope of the module skeletons
 - Was the score total computed in code and matched to the RFP total?
 - Are eligibility conditions that could block participation in bold?
 - Do the figures and wording in the outputs match the source?
+- Does every sentence answer "So what?" and "Why so?" clearly? (A sentence that needs further breakdown before it answers is vague, so rewrite it until both answers show)
+- Is every sentence written from the reader's point of view? (A sentence that still reads naturally with "the writer", "I", "the model", "the LLM", or "the AI provider" as its subject carries meta information, so rewrite it from the reader's point of view)
 - (Strategy mode) Is every requirement assigned to at least one task?
 - (Strategy mode) Does every underlying-need hypothesis have a module or task that answers it?
 - (Strategy mode) Does every differentiator have at least one piece of evidence from track record, data, or people?

@@ -204,6 +204,7 @@ Work from large units to small units.
 - Does every claim have evidence, and does each conclusion stay within the scope of its evidence?
 - Does the conclusion point in one direction?
 - Does each 5W1H element appear only once per sentence?
+- Does every sentence answer "So what?" and "Why so?" clearly? (A sentence that needs further breakdown before it answers is vague, so rewrite it until both answers show)
 - In strict mode, are conjunctions and clause-linking endings absent?
 - In flow mode, do conjunctions appear only where they show a real relation, with no stacked linking endings in one sentence?
 - Do noun-form endings read naturally, with no honorific, colloquial, or informal wording?

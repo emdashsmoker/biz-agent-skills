@@ -416,6 +416,8 @@ Apply to code comments, commit messages, logs, chart and diagram labels, slide c
 - Do not substitute the name of an authoritative institution for evidence. Say you do not know what you do not know, and do not treat the absence of information as evidence of absence
 - Pitch explanations at a level a newcomer to the field can follow, and keep the tone of an adult professional document. Keep formality through word choice and sentence endings. In sentences for readers, do not overuse jargon beyond the reader's level or engineering and software-design phrasing (input value, output, mapping, pipeline, and so on). Plain writing must not underestimate the reader's level or compromise the accuracy of the content through oversimplification. State specialized and technical content accurately and clearly, without distorting its meaning
 - Keep grammar correct regardless of how technical or plain the text is
+- After writing a sentence, prompt, or comment, ask "So what?" and "Why so?". A sentence that needs further breakdown before it answers is vague, so rewrite it until both answers show
+- After writing a sentence, prompt, or comment, put "the writer", "I", "the model", "the LLM", or "the AI provider" in the subject position. A sentence that still reads naturally carries meta information, so rewrite it from the reader's or user's point of view
 
 ### Formatting
 
@@ -461,7 +463,7 @@ Before delivering, run checks that can fail. A judgment that something looks rig
 - (Code) configuration separated, named constants, easy-to-debug structure, single responsibility per function, no changes outside the requested scope, tests run with error paths exercised
 - (Data) data quality `assert` statements pass, every number computed by code, reasons for missing value handling recorded, random seeds and versions recorded
 - (Visuals) one message, direct data labels, 12pt or more in bold, one accent point, white text contrast, unnecessary elements removed, rendering inspected, distinct structures across multiple visuals
-- (Text) one message per sentence, no connectors, no empty modifiers, single criterion and full coverage in classifications, sources for quantitative data
+- (Text) one message per sentence, no connectors, no empty modifiers, single criterion and full coverage in classifications, sources for quantitative data, "So what?" and "Why so?" answered, written from the reader's or user's point of view
 - (Common) process and tools hidden in final deliverables, reproduction details in intermediate records, kickoff report done
 
 ### Self-Review

@@ -140,7 +140,7 @@ Meta commentary is a sentence about something outside the body: the text itself,
 
 Every sentence must pass the tests below before output. When any test flags a sentence, delete it or replace it with content. Apply the subject test first because it is the most mechanical, then the other four.
 
-- (Subject test) The sentence is meta commentary when its real subject, stated or implied, is the text itself ("this report", "this analysis", "this section"), the writer ("I", "as a result of my analysis"), the act of writing ("looking at", "reviewing", "to summarize"), the user's request ("as you requested", "regarding your question"), or the tools and methods used.
+- (Subject test) The sentence is meta commentary when its real subject, stated or implied, is the text itself ("this report", "this analysis", "this section"), the writer ("I", "as a result of my analysis", or the model or LLM that wrote the text), the act of writing ("looking at", "reviewing", "to summarize"), the user's request ("as you requested", "regarding your question"), the tools and methods used, or the AI provider (the policies and guidelines of the company that made the model writing the text). When the subject is omitted, put each of these in the subject position and judge by whether the sentence still reads naturally.
 - (Deletion test) The sentence is meta commentary when deleting it costs the reader no information.
 - (Beneficiary test) The sentence is meta commentary when the writer is its beneficiary (self-justification, self-protection, self-promotion).
 - (Service test) The sentence is meta commentary when it performs only a service ritual, such as a greeting, praise, confirmation, guidance, or prompting, with no information.
@@ -297,7 +297,7 @@ Removed from the original: self-justification, explanation of the output form, r
 - Does no syntactic pattern repeat three or more times in a row?
 - Are headings and subheadings free of repeated empty labels?
 - Do conclusions and claims have grounds, and do figures have sources?
-- Are sentences whose subject is the text, the writer, the writing, the request, or the tools absent?
+- Are sentences whose subject is the text, the writer, the writing, the request, the tools, or the AI provider absent?
 - Are sentences that benefit the writer, or that only perform service rituals, absent?
 - Are sentences on opposite directions, complements, or replacement rules the user did not request absent?
 - Are detours such as hidden subjects, disguised content, modesty, questions, and connectors absent?

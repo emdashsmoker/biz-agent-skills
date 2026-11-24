@@ -42,13 +42,14 @@ Before producing output, apply the tests below to every sentence. A sentence tha
 
 ### Subject test
 
-A sentence is meta-commentary when its actual subject is one of the following. Restore omitted subjects before you judge.
+A sentence is meta-commentary when its actual subject is one of the following. When the subject is omitted, put each target below in the subject position and judge by whether the sentence still reads naturally.
 
 - The text itself ("This report", "This analysis", "In this section")
-- The writer ("I", "As for me", "My analysis shows")
+- The writer ("I", "As for me", "My analysis shows", or the model or LLM that wrote the text)
 - The act of writing ("Looking at", "On review", "To summarize")
 - The user's request ("As you requested", "As you mentioned", "To answer your question")
 - Tools or methods (the writer's internal means of working)
+- The AI provider (the policies and guidelines of the company that made the model writing the text)
 
 ### Deletion test
 
@@ -166,7 +167,7 @@ You can use this skill with any style guideline. If another guideline allows an 
 
 Check the items below before producing output. Delete each sentence that fails, or replace it with content, then produce the output.
 
-- No sentence has the text, the writer, the act of writing, the user's request, or a tool as its subject
+- No sentence has the text, the writer, the act of writing, the user's request, a tool, or the AI provider as its subject
 - Every sentence carries information the reader would lose if the sentence were deleted
 - No sentence benefits the writer
 - No sentence only performs a courtesy ritual

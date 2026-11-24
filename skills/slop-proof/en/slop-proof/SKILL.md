@@ -28,7 +28,7 @@ The lists in each section collect expressions that often fail the tests below. W
 |---|---|---|
 | Deletion | Does the reader get the same information with this expression removed? | Delete it and go straight to the content |
 | Substitution | Would a more specific word add information? | Use the specific word |
-| Subject | Is the real subject of the sentence the text itself, the writer, the act of writing, the user's request, or a tool? | Treat as meta commentary (section 3) |
+| Subject | Is the real subject of the sentence the text itself, the writer (including the model that wrote it), the act of writing, the user's request, a tool, or the AI provider? (Judge an omitted subject by putting each of these in the subject position and checking whether the sentence still reads naturally) | Treat as meta commentary (section 3) |
 | Beneficiary | Does the sentence serve the writer's self-justification, disclaimers, or showing off more than the reader? | Treat as meta commentary (section 3) |
 | Courtesy | Does it only greet, praise, confirm, guide, or prompt, with no information? | Treat as meta commentary (section 3) |
 | Request direction | Does it cover the opposite polarity, the complement, or a replacement the user did not ask for? | Treat as meta commentary (section 3) |

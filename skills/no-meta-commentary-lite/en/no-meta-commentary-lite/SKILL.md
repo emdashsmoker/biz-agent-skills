@@ -29,13 +29,14 @@ Every sentence goes through the tests below before output. Delete a sentence tha
 
 ### Test 1. Subject
 
-A sentence is meta-commentary when its real subject is one of the targets below. Check both stated and omitted subjects.
+A sentence is meta-commentary when its real subject is one of the targets below. Check both stated and omitted subjects. When the subject is omitted, put each target below in the subject position and judge by whether the sentence still reads naturally.
 
 - (The text itself) "This report", "This analysis", "In this section"
-- (The writer) "I", "In my analysis", "My review found"
+- (The writer) "I", "In my analysis", "My review found", or the model or LLM that wrote the text
 - (The act of writing) "Looking at this", "On review", "To sum up"
 - (The user's request) "As you requested", "As you mentioned", "To answer your question"
 - (Tools and methods) Internal means the writer used for the work
+- (The AI provider) The policies and guidelines of the company that made the model writing the text
 
 ### Test 2. Deletion
 
@@ -383,7 +384,7 @@ This skill works alongside other guidelines that set style or format. When anoth
 
 Confirm the points below before output. Delete any sentence that fails, or replace it with content, then output.
 
-- No sentence takes the text, the writer, the act of writing, the user's request, or a tool as its subject
+- No sentence takes the text, the writer, the act of writing, the user's request, a tool, or the AI provider as its subject
 - Every sentence carries information the reader would lose without it
 - No sentence mainly benefits the writer
 - No sentence performs only a courtesy ritual with no information

@@ -360,6 +360,8 @@ These rules apply to all write-ups and to the overview and summary of an essay t
 - Keep grammar correct regardless of how technical or plain the text is.
 - When referring to another page, slide, agenda item, cited source, and so on in the original, write the needed content in the sentence itself so the reader does not have to consult the original. Do not replace content with the original's numbers, abbreviations, or summary labels, and so on.
 - Cite the original material by its bibliographic details. Text written from a conversion also cites the original. Do not use labels that fail to identify the original in the body or as sources, such as conversion file names, "the input", "the transcript", internal reasoning, and so on. Do not repeat as a source the original's details already given in an overview. For a report, cite each input as the "Report" section says.
+- After writing a sentence, ask "So what?" and "Why so?". A sentence that needs further breakdown before it answers is vague, so rewrite it until both answers show.
+- After writing a sentence, put "the writer", "I", "the model", "the LLM", or "the AI provider" in the subject position. A sentence that still reads naturally carries meta information, so rewrite it from the reader's point of view.
 
 ## Pre-delivery check
 
