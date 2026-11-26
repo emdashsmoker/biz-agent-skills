@@ -113,6 +113,7 @@ Treat these as non-preferred: delve, landscape, tapestry, realm, leverage, navig
 | Self Q&A | "Why did this happen? Because..." | Delete the question and state the answer |
 | Rule-of-three habit | Forcing items into lists of three regardless of content | Match the count to the content. Keep real lists of three |
 | Number declarations | "3 key strategies", "4 measures", "5 core tasks", "7 directions", "N ways", "two pillars" | List the content without announcing the count. Allowed when the count shows in the list itself ("split into short, mid, and long term") |
+| Machine-operation depiction | "takes the demand survey results and passes on only the projects that went through the eligibility review as final candidates", "takes interview results as input and processes them in three steps", and so on | Write a sentence that depicts organic and complex matters such as the work, actions, procedures, and guidelines of individuals, organizations, and society as the workings of a computer, machine, or software architecture (input, processing, output, pass, gate, function-like code schemes, and so on) through the actor and the actual action |
 
 ### Abstract repackaging
 

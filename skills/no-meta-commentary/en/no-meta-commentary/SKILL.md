@@ -50,6 +50,11 @@ A sentence is meta-commentary when its actual subject is one of the following. R
 - The user's request ("As you requested", "As you mentioned", "To answer your question")
 - Tools or methods (the writer's internal means of working)
 
+Read a sentence about the work, actions, procedures, guidelines, and similar matters of individuals, organizations, and society again with "the AI model" in the subject slot or "the AI model's" in the modifier slot. If the sentence then reads more naturally than the original, it is meta-commentary that carries the writer's own way of working over to the subject matter. Rewrite it through the actor and the actual action of the subject matter.
+
+- (Sentences) "Takes the user's responses as input, processes the survey in three steps, and passes it on as the next input of the analysis report", "This program takes the demand survey results and passes on only the projects that went through the eligibility review as final candidates", "Takes the user's request and rules on it", and so on
+- (Noun phrases) "The ruling criteria of this engagement", "The judgment principles of the structured survey", and so on
+
 ### Deletion test
 
 A sentence is meta-commentary when deleting it leaves the reader with the same information.

@@ -27,6 +27,90 @@ Changelog rules
 - (Push) Commit on top of the latest main and push directly to main.
 -->
 
+## 2026-11-26
+
+### biz-code-style
+- Added a rule that describes the work, actions, procedures and guidelines of individuals, organizations and society through the actor and the actual action, without depicting them as the workings of a computer, machine or software architecture (input, processing, output, pass, gate and so on) (#106)
+
+* 개인, 조직, 사회의 업무, 행동, 절차, 지침 등을 행위 주체와 실제 행위로 서술하는 규칙 추가 (컴퓨터, 기계, 소프트웨어 구조의 작동 방식처럼 묘사한 서술의 방지) (#106)
+
+### biz-code-style-lite
+- Added a rule that describes the work, actions, procedures and guidelines of individuals, organizations and society through the actor and the actual action, without depicting them as the workings of a computer, machine or software architecture (input, processing, output, pass, gate and so on) (#106)
+
+* 개인, 조직, 사회의 업무, 행동, 절차, 지침 등을 행위 주체와 실제 행위로 서술하는 규칙 추가 (컴퓨터, 기계, 소프트웨어 구조의 작동 방식처럼 묘사한 서술의 방지) (#106)
+
+### clear-comm
+- Added a rule that describes the work, actions, procedures and guidelines of individuals, organizations and society through the actor and the actual action, without depicting them as the workings of a computer, machine or software architecture (input, processing, output, pass, gate and so on) (#106)
+
+* 개인, 조직, 사회의 업무, 행동, 절차, 지침 등을 행위 주체와 실제 행위로 서술하는 규칙 추가 (컴퓨터, 기계, 소프트웨어 구조의 작동 방식처럼 묘사한 서술의 방지) (#106)
+
+### digest
+- Added a rule that describes the work, actions, procedures and guidelines of individuals, organizations and society through the actor and the actual action, without depicting them as the workings of a computer, machine or software architecture (input, processing, output, pass, gate and so on) (#106)
+
+* 개인, 조직, 사회의 업무, 행동, 절차, 지침 등을 행위 주체와 실제 행위로 서술하는 규칙 추가 (컴퓨터, 기계, 소프트웨어 구조의 작동 방식처럼 묘사한 서술의 방지) (#106)
+
+### environment-analysis
+- Added a rule that describes the work, actions, procedures and guidelines of individuals, organizations and society through the actor and the actual action, without depicting them as the workings of a computer, machine or software architecture (input, processing, output, pass, gate and so on) (#106)
+
+* 개인, 조직, 사회의 업무, 행동, 절차, 지침 등을 행위 주체와 실제 행위로 서술하는 규칙 추가 (컴퓨터, 기계, 소프트웨어 구조의 작동 방식처럼 묘사한 서술의 방지) (#106)
+
+### environment-analysis-lite
+- Added a rule that describes the work, actions, procedures and guidelines of individuals, organizations and society through the actor and the actual action, without depicting them as the workings of a computer, machine or software architecture (input, processing, output, pass, gate and so on) (#106)
+
+* 개인, 조직, 사회의 업무, 행동, 절차, 지침 등을 행위 주체와 실제 행위로 서술하는 규칙 추가 (컴퓨터, 기계, 소프트웨어 구조의 작동 방식처럼 묘사한 서술의 방지) (#106)
+
+### logical-write
+- Added a rule that describes the work, actions, procedures and guidelines of individuals, organizations and society through the actor and the actual action, without depicting them as the workings of a computer, machine or software architecture (input, processing, output, pass, gate and so on) (#106)
+
+* 개인, 조직, 사회의 업무, 행동, 절차, 지침 등을 행위 주체와 실제 행위로 서술하는 규칙 추가 (컴퓨터, 기계, 소프트웨어 구조의 작동 방식처럼 묘사한 서술의 방지) (#106)
+
+### logical-write-lite
+- Added a rule that describes the work, actions, procedures and guidelines of individuals, organizations and society through the actor and the actual action, without depicting them as the workings of a computer, machine or software architecture (input, processing, output, pass, gate and so on) (#106)
+
+* 개인, 조직, 사회의 업무, 행동, 절차, 지침 등을 행위 주체와 실제 행위로 서술하는 규칙 추가 (컴퓨터, 기계, 소프트웨어 구조의 작동 방식처럼 묘사한 서술의 방지) (#106)
+
+### network-analysis
+- Added a rule that describes the work, actions, procedures and guidelines of individuals, organizations and society through the actor and the actual action, without depicting them as the workings of a computer, machine or software architecture (input, processing, output, pass, gate and so on) (#106)
+
+* 개인, 조직, 사회의 업무, 행동, 절차, 지침 등을 행위 주체와 실제 행위로 서술하는 규칙 추가 (컴퓨터, 기계, 소프트웨어 구조의 작동 방식처럼 묘사한 서술의 방지) (#106)
+
+### no-meta-commentary
+- Added a step to the subject test that reads a sentence about the work, actions, procedures and guidelines of individuals, organizations and society again with "the AI model" as its subject or modifier, and treats a sentence that reads more naturally than the original as meta-commentary (#106)
+
+* 주어 테스트에 개인, 조직, 사회의 업무, 행동, 절차, 지침 등을 서술한 문장의 주어나 수식어 자리에 'AI 모델'을 넣어 다시 읽는 절차 추가 (원래 문장보다 자연스럽게 읽히는 문장의 메타적 서술 판별) (#106)
+
+### no-meta-commentary-lite
+- Added a step to the subject test that reads a sentence about the work, actions, procedures and guidelines of individuals, organizations and society again with "the AI model" as its subject or modifier, and treats a sentence that reads more naturally than the original as meta-commentary (#106)
+
+* 주어 테스트에 개인, 조직, 사회의 업무, 행동, 절차, 지침 등을 서술한 문장의 주어나 수식어 자리에 'AI 모델'을 넣어 다시 읽는 절차 추가 (원래 문장보다 자연스럽게 읽히는 문장의 메타적 서술 판별) (#106)
+
+### pref-architect
+- Added a rule to the write-standard module that describes the work, actions, procedures and guidelines of individuals, organizations and society through the actor and the actual action, without depicting them as the workings of a computer, machine or software architecture (input, processing, output, pass, gate and so on) (#106)
+- Changed the metadata version of the skill and the generator-version of the bundled modules from 1.2 to 1.3 (#106)
+
+* write-standard 모듈에 개인, 조직, 사회의 업무, 행동, 절차, 지침 등을 행위 주체와 실제 행위로 서술하는 규칙 추가 (컴퓨터, 기계, 소프트웨어 구조의 작동 방식처럼 묘사한 서술의 방지) (#106)
+* 스킬의 metadata version과 동봉 모듈의 generator-version을 1.2에서 1.3으로 변경 (#106)
+
+### project-plan
+- Added a rule that describes the work, actions, procedures and guidelines of individuals, organizations and society through the actor and the actual action, without depicting them as the workings of a computer, machine or software architecture (input, processing, output, pass, gate and so on) (#106)
+
+* 개인, 조직, 사회의 업무, 행동, 절차, 지침 등을 행위 주체와 실제 행위로 서술하는 규칙 추가 (컴퓨터, 기계, 소프트웨어 구조의 작동 방식처럼 묘사한 서술의 방지) (#106)
+
+### rfp-strategy
+- Added a rule that describes the work, actions, procedures and guidelines of individuals, organizations and society through the actor and the actual action, without depicting them as the workings of a computer, machine or software architecture (input, processing, output, pass, gate and so on) (#106)
+
+* 개인, 조직, 사회의 업무, 행동, 절차, 지침 등을 행위 주체와 실제 행위로 서술하는 규칙 추가 (컴퓨터, 기계, 소프트웨어 구조의 작동 방식처럼 묘사한 서술의 방지) (#106)
+
+### slop-proof
+- Added a formulaic rhetoric pattern for sentences that depict the work, actions, procedures and guidelines of individuals, organizations and society as the workings of a computer, machine or software architecture (input, processing, output, pass, gate and so on), rewritten through the actor and the actual action (#106)
+
+* 개인, 조직, 사회의 업무, 행동, 절차, 지침 등을 컴퓨터, 기계, 소프트웨어 구조의 작동 방식처럼 묘사한 문장의 정형 수사 패턴 추가 (행위 주체와 실제 행위로 재작성) (#106)
+
+### strategy-builder
+- Added a rule that describes the work, actions, procedures and guidelines of individuals, organizations and society through the actor and the actual action, without depicting them as the workings of a computer, machine or software architecture (input, processing, output, pass, gate and so on) (#106)
+
+* 개인, 조직, 사회의 업무, 행동, 절차, 지침 등을 행위 주체와 실제 행위로 서술하는 규칙 추가 (컴퓨터, 기계, 소프트웨어 구조의 작동 방식처럼 묘사한 서술의 방지) (#106)
+
 ## 2026-11-24
 
 ### biz-code-style

@@ -3,7 +3,7 @@ name: code-standard
 description: "코드 작성, 스크립트 실행, 파일 작업, 데이터 분석, 차트, UI, 슬라이드와 포스터 같은 시각화 작업에 적용하는 코딩 표준. 작업 보고, 실행 환경과 권한, 코드 품질, 보안, 차트, 디자인, 시각 검증의 기준을 담는다. 상시 지침이 이 모듈을 불러오라고 지정했거나 사용자가 \"/code-standard\", \"코딩 표준\", \"차트 규칙대로\" 등을 요청한 경우 작업 전에 불러온다. 글이 함께 들어간 작업은 write-standard와 함께 쓴다."
 metadata:
   generator: pref-architect
-  generator-version: "1.2"
+  generator-version: "1.3"
 ---
 
 # code-standard
