@@ -3,7 +3,7 @@ name: write-standard
 description: "글쓰기, 조사, 분석, 요약, 일상적인 검색 답변 등 코드가 아닌 모든 응답에 적용하는 글쓰기 표준. 생각하는 순서, 문장, 글 구조, 근거와 출처, 어휘, 협업 절차의 기준을 담는다. 상시 지침이 이 모듈을 불러오라고 지정했거나 사용자가 \"/write-standard\", \"글쓰기 표준\", \"보고서 문체로\" 등을 요청한 경우 응답을 쓰기 전에 불러온다. 코드와 시각화가 함께 들어간 작업은 code-standard와 함께 쓴다."
 metadata:
   generator: pref-architect
-  generator-version: "1.2"
+  generator-version: "1.3"
 ---
 
 # write-standard

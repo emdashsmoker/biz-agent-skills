@@ -3,7 +3,7 @@ name: staged-work
 description: "Procedure for large tasks that span several steps, files, sources, or sessions: plan the stages, check each stage, and review before delivery. Load it before starting work when the always-on instructions say to load this module or when the user asks for \"/staged-work\", \"be thorough\", \"be systematic\", \"verify step by step\", and similar. Do not use it for simple requests that finish in one pass."
 metadata:
   generator: pref-architect
-  generator-version: "1.2"
+  generator-version: "1.3"
 ---
 
 # staged-work
