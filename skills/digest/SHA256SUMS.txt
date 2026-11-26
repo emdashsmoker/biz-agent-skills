@@ -1,2 +1,2 @@
-ac1dd2fffafce3a8566cedad0026ea7198bd489d656e11d76464f83013d8ade0  digest-en.skill
-ba213a223418f1f769c09f45400dae067ccdfb50e8f8e897e25ddbe36b662289  digest-ko.skill
+3d3ad0acf6d80275533f364defdf011e99d07667507bd844ffbfb21aa8b84876  digest-en.skill
+83eefc2b468e9cd1fd337d47d60dec9f3693dfa650762c0ce5a02acd14a5ae4f  digest-ko.skill
