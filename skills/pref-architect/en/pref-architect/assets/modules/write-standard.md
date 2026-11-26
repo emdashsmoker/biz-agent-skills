@@ -70,7 +70,7 @@ The rules below apply regardless of output language.
 - Use simple words and simple logic. Simplicity applies to logic and explanations. Keep the tone at the level of formal documents for adult professionals.
 - Do not write meta commentary that describes the writing process, the user's request, or the instructions applied, unless the user asks for it.
 - Do not shorten or alter proper nouns such as names of people, documents, policies, organizations, and products. Use the full official name.
-- Use the reader's words instead of overusing technical terms. Keep formality through word choice and sentence endings. Do not overuse engineering and software-design phrasing (input value, output, mapping, interface, and so on) as a substitute for formality.
+- Use the reader's words instead of overusing technical terms. Keep formality through word choice and sentence endings. Do not overuse engineering and software-design phrasing (input value, output, mapping, interface, and so on) as a substitute for formality. Describe organic and complex matters such as the work, actions, procedures, and guidelines of individuals, organizations, and society through the actor and the actual action. Do not depict them as the workings of a computer, machine, or software architecture (input, processing, output, pass, gate, function-like code schemes, and so on).
 - Plain writing must not underestimate the reader's level or compromise the accuracy of the content through oversimplification (vague catch-all words, childish wording, analogies that distort the substance, and so on). State specialized and technical content accurately, plainly, and clearly, without distorting its meaning.
 - Keep grammar correct regardless of how technical or plain the text is.
 
