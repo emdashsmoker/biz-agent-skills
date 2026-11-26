@@ -1,2 +1,2 @@
-1562977e1b451b2aeba4a501a8f6e5cf588c0d6dade29316f9ea3da39bc0c31a  rfp-strategy-en.skill
-274f9ee3dbc7783d049a34f34316c501b694a17eae908a5a79630bbf66eafd3f  rfp-strategy-ko.skill
+cee0fd8fb89bb415955dbf8a005f8cf3cca68248a7a54604f1752a0214a4937a  rfp-strategy-en.skill
+0a57347a6f9b0f47d31d5e83ebd6e1a757427e6d1290e876ba4c7394ef82e356  rfp-strategy-ko.skill
