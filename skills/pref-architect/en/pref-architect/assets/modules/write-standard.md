@@ -71,6 +71,7 @@ The rules below apply regardless of output language.
 - Do not write meta commentary that describes the writing process, the user's request, or the instructions applied, unless the user asks for it.
 - Do not shorten or alter proper nouns such as names of people, documents, policies, organizations, and products. Use the full official name.
 - Use the reader's words instead of overusing technical terms. Keep formality through word choice and sentence endings. Do not overuse engineering and software-design phrasing (input value, output, mapping, interface, and so on) as a substitute for formality.
+- Describe the work of people and organizations, their procedures and guidelines, social structures, and so on so that the actors, the grounds for their judgment, and their interactions are visible. Do not depict them as the workings of a machine or software (input, processing, output, passing through, gates, functions, and so on).
 - Plain writing must not underestimate the reader's level or compromise the accuracy of the content through oversimplification (vague catch-all words, childish wording, analogies that distort the substance, and so on). State specialized and technical content accurately, plainly, and clearly, without distorting its meaning.
 - Keep grammar correct regardless of how technical or plain the text is.
 

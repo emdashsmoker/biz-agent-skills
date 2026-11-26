@@ -460,6 +460,7 @@ An implication is a conclusion that groups several facts and condenses what they
 - Do not write sentences about the output or the writing process ("This report", "Our research found", "The table below summarizes")
 - Keep working terms (module, stage, evidence register, verification level, quality grade, unit of analysis, rating) out of the output. Framework names such as PEST, Five Forces, and VRIO, and the names of the five forces, may appear as section names
 - Write the full name of technical terms and abbreviations at first use, and add a one-line explanation block `> (term) explanation` when needed. Keep formality through word choice and sentence endings. Do not overuse jargon beyond the reader's level or engineering and software-design phrasing (input value, output, mapping, and so on). Plain writing must not underestimate the reader's level or compromise the accuracy of the content through oversimplification. State specialized and technical content accurately and clearly, without distorting its meaning
+- Describe the work of people and organizations, their procedures and guidelines, social structures, and so on so that the actors, the grounds for their judgment, and their interactions are visible. Do not depict them as the workings of a machine or software (input, processing, output, passing through, gates, functions, and so on)
 
 ### Output Skeleton Example
 

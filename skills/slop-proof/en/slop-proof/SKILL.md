@@ -129,6 +129,13 @@ LLMs wrap a clear term X in an abstract noun Y: "the Y of X", "X, a Y", "X as a 
 
 When one wrapper is blocked, the writer moves to the next ("X as a Y", then "the Y of X", then a bare "X is Y" declaration). Judge by whether information increased, whatever the surface form.
 
+### Machine-process depiction
+
+LLMs depict the work of people and organizations, their procedures and guidelines, social structures, and so on as the workings of a machine or software (input, processing, output, passing through, gates, functions, and so on). An LLM tends to carry its own routine of receiving a request, processing it, and passing on a result into descriptions of human activity. Such sentences hide who decides and on what grounds. Rewrite them so that the actors, the grounds for their judgment, and their interactions are visible.
+
+- (Before) "Takes interview results as input and outputs initiative candidates", "Passes only the projects that clear the first review on to the second review", and so on
+- (After) "Reflects the views heard in interviews in selecting initiative candidates", "The review committee selects the projects that meet the first-round criteria for the second review", and so on
+
 ### Empty nouns
 
 LLMs often skip naming what they refer to and wrap it in a noun that carries no information, such as thing, part, point, matter, aspect, area, or way. The writer knows the referent but leaves it unnamed, and the reader has to reconstruct it from the surrounding sentences. Block one of these nouns and the model moves to a sibling while keeping the same "clause plus empty noun" frame. So judge by what the frame does, whatever noun fills it. The list is a starting point. Any noun doing the same job gets the same treatment.
@@ -408,6 +415,7 @@ Check the items below before delivering. Fix anything that fails, then deliver.
 - No contrast framing, repeated structure, self Q&A, dramatic fragments, staccato rhythm, or number declarations
 - Lists are not forced into threes regardless of content
 - No abstract repackaging that adds no information
+- No sentence that depicts the activity of people or organizations as the workings of a machine or software
 - No empty nouns hiding a specific referent or sealing the end of a sentence
 - No empty noun swapped for a sibling empty noun or a contraction while fixing
 - No fix touched fixed expressions, grammatical uses, real places, directive-genre endings, or forecasts with their basis

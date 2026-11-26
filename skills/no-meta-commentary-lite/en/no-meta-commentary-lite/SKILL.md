@@ -36,6 +36,13 @@ A sentence is meta-commentary when its real subject is one of the targets below.
 - (The act of writing) "Looking at this", "On review", "To sum up"
 - (The user's request) "As you requested", "As you mentioned", "To answer your question"
 - (Tools and methods) Internal means the writer used for the work
+- (The writer's way of working) The writer's own routine of receiving a request or material, processing and judging it, and passing it on to the next step
+
+The writer's way of working also appears in sentences whose subject is a program, engagement, survey, or other topic of the content. Put "the AI model" in the place of an omitted subject, or read the sentence with its stated subject replaced by "the AI model". Put "the AI model's" in front of a noun phrase such as a heading, an item name, and so on. If the result reads naturally with its meaning unchanged, the sentence is meta-commentary. Rewrite it around the actual actions and grounds for judgment of the people or organizations the content covers.
+
+- (Omitted subject) "Takes the user's responses as input, processes the survey in three stages, and passes it on as the next input to the analysis report", "Receives the user's request and judges it", and so on
+- (Stated subject) "This program takes the demand survey results and passes on only the projects that clear the eligibility review as final candidates", and so on
+- (Noun phrase) "The judgment criteria of this engagement", "The judgment principles of the structured survey", and so on
 
 ### Test 2. Deletion
 
@@ -384,6 +391,7 @@ This skill works alongside other guidelines that set style or format. When anoth
 Confirm the points below before output. Delete any sentence that fails, or replace it with content, then output.
 
 - No sentence takes the text, the writer, the act of writing, the user's request, or a tool as its subject
+- No sentence or noun phrase reads naturally as the writer's way of working once "the AI model" is put in as its subject
 - Every sentence carries information the reader would lose without it
 - No sentence mainly benefits the writer
 - No sentence performs only a courtesy ritual with no information

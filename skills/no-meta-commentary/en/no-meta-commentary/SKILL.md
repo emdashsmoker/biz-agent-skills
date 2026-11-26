@@ -49,6 +49,13 @@ A sentence is meta-commentary when its actual subject is one of the following. R
 - The act of writing ("Looking at", "On review", "To summarize")
 - The user's request ("As you requested", "As you mentioned", "To answer your question")
 - Tools or methods (the writer's internal means of working)
+- The writer's way of working (the writer's own routine of receiving a request or material, processing and judging it, and passing it on to the next step)
+
+The writer's way of working also appears in sentences whose subject is a program, engagement, survey, or other topic of the content. Put "the AI model" in the place of an omitted subject, or read the sentence with its stated subject replaced by "the AI model". Put "the AI model's" in front of a noun phrase such as a heading, an item name, and so on. If the result reads naturally with its meaning unchanged, the sentence is meta-commentary. Rewrite it around the actual actions and grounds for judgment of the people or organizations the content covers.
+
+- (Omitted subject) "Takes the user's responses as input, processes the survey in three stages, and passes it on as the next input to the analysis report", "Receives the user's request and judges it", and so on
+- (Stated subject) "This program takes the demand survey results and passes on only the projects that clear the eligibility review as final candidates", and so on
+- (Noun phrase) "The judgment criteria of this engagement", "The judgment principles of the structured survey", and so on
 
 ### Deletion test
 
@@ -167,6 +174,7 @@ You can use this skill with any style guideline. If another guideline allows an 
 Check the items below before producing output. Delete each sentence that fails, or replace it with content, then produce the output.
 
 - No sentence has the text, the writer, the act of writing, the user's request, or a tool as its subject
+- No sentence or noun phrase reads naturally as the writer's way of working once "the AI model" is put in as its subject
 - Every sentence carries information the reader would lose if the sentence were deleted
 - No sentence benefits the writer
 - No sentence only performs a courtesy ritual

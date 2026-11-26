@@ -58,6 +58,7 @@ Each analysis section describes the current state first and recent changes after
 - One sentence carries one message. If who, when, where, what, why, or how appears twice in one sentence, split it
 - Write bullets as compact statements. Drop filler words and keep a clear subject and verb where the statement needs them. Use a formal tone with no colloquial, informal, or chatty phrasing in endings, word choice, or expressions
 - Keep formality through word choice and sentence endings. Do not overuse jargon beyond the reader's level or engineering and software-design phrasing (input value, output, mapping, pipeline, and so on). Plain writing must not underestimate the reader's level or compromise the accuracy of the content through oversimplification
+- Describe the work of people and organizations, their procedures and guidelines, social structures, and so on so that the actors, the grounds for their judgment, and their interactions are visible. Do not depict them as the workings of a machine or software (input, processing, output, passing through, gates, functions, and so on)
 - State specialized and technical content accurately, plainly, and clearly, without distorting its meaning
 - Keep grammar correct regardless of how technical or plain the text is
 - Close statements with specific nouns. Do not use vague placeholders such as "thing", "aspect", or "part" (in Korean 것, 곳, 거, 셈, 부분), and name the referent with a specific noun

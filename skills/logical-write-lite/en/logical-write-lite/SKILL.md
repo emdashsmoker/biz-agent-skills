@@ -418,6 +418,7 @@ Meta commentary is any sentence about the text itself, the writing process, the 
 ## 16. Tone
 - Use a formal academic report style. Do not use colloquial speech, informal register, buzzwords, slang, jargon of in-groups, or honorific endings. Also avoid a colloquial or informal tone in endings, words, and expressions.
 - Keep reasoning and concept explanations plain and simple. Keep the formality of vocabulary and style at the level of an official document for adult professionals. Keep formality through word choice and sentence endings. Do not overuse engineering and software-design phrasing (input value, output, mapping, interface, pipeline, and so on) as a substitute for formality. State specialized and technical content accurately, plainly, and clearly, without distorting its meaning.
+- Describe the work of people and organizations, their procedures and guidelines, social structures, and so on so that the actors, the grounds for their judgment, and their interactions are visible. Do not depict them as the workings of a machine or software (input, processing, output, passing through, gates, functions, and so on).
 - Keep the tone warm while staying objective. Write the direction for improvement in place of blaming expressions. Aim for the finish of a professional consulting report.
 - Avoid absolute and aggressive words (absolutely, block, only, unconditionally, final) and use tactful wording the reader can accept. Write "capability severely lacking" as "capability needs strengthening" and "absolutely impossible" as "requires X to achieve Y". State clear errors clearly. Too much tact blurs the meaning, so adjust the degree.
 - When the content is the same, lead with the positive form. "Insufficient data readiness for cloud migration" becomes "Cloud migration possible once structured data is secured". A positive sentence states the target state directly, so it is clear and easy to revise and combine sentence by sentence. A negative sentence describes problems case by case, so it is complex and the reader has to infer the target state.
@@ -433,7 +434,7 @@ Meta commentary is any sentence about the text itself, the writing process, the 
 - Were the mode rules kept (connectives and commas in short-sentence mode; clause roles and frame in flow mode)?
 - Does each conclusion pair with evidence, stay within its scope, and have a direction?
 - Are there at most three key data points, each with source, calculation basis, full link, and official name, calculated with a tool?
-- Were jargon, design phrasing, avoided words, translationese, empty-slot nouns, Chapter 14 patterns, and banned symbols handled?
+- Were jargon, design phrasing, machine-process depiction, avoided words, translationese, empty-slot nouns, Chapter 14 patterns, and banned symbols handled?
 - Is the text free of meta commentary, unrequested reverse statements, and framework names, with body content in the first and last sentences?
 - Is it plain and clear enough for a third party to accept its reasoning, and does it sound natural read aloud?
 

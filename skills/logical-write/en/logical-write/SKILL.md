@@ -183,6 +183,7 @@ Work from large units to small units.
 - Keep a warm tone without losing objectivity. Avoid showy expressions that only insiders understand.
 - Use simple logic and plain words. Simplicity applies to the flow of logic and the explanation of concepts. Keep the tone at the formality of official documents for adult professionals.
 - Keep formality through word choice and sentence endings. Do not overuse engineering and software-design phrasing (input value, output, mapping, interface, pipeline, and so on) or jargon beyond the reader's level as a substitute for formality. Plain writing must not underestimate the reader's level or compromise the accuracy of the content through oversimplification (criteria in `references/terms.md`).
+- Describe the work of people and organizations, their procedures and guidelines, social structures, and so on so that the actors, the grounds for their judgment, and their interactions are visible. Do not depict them as the workings of a machine or software (input, processing, output, passing through, gates, functions, and so on).
 - State specialized and technical content accurately, plainly, and clearly, without distorting its meaning.
 - Aim for the expertise and finish of a professional consulting report.
 
@@ -207,7 +208,7 @@ Work from large units to small units.
 - In strict mode, are conjunctions and clause-linking endings absent?
 - In flow mode, do conjunctions appear only where they show a real relation, with no stacked linking endings in one sentence?
 - Do noun-form endings read naturally, with no honorific, colloquial, or informal wording?
-- Is the text free of grammar errors, design phrasing, and oversimplification, and of passages that make the reader look up another location or the original?
+- Is the text free of grammar errors, design phrasing, machine-process depiction, and oversimplification, and of passages that make the reader look up another location or the original?
 - Are `+` items used only when two or more exist?
 - Does every quantitative data point have a basis and a source?
 - Are meta commentary, empty modifiers, count announcements, and negate-then-assert contrasts absent?
