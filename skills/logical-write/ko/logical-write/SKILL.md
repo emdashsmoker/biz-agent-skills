@@ -1,6 +1,6 @@
 ---
 name: logical-write
-description: "보고서, 기획서, 제안서, 분석 글을 마크다운 계위 구조의 논리적 개조식 문장으로 작성하고 교정하고 진단하는 글쓰기 스킬. 결론 우선 배치, 한 기준으로 겹침과 빠짐 없이 나눈 분류, 주장과 근거의 짝, 1문장 1메시지, 명사형 종결, 출처 표기를 적용하여 hwpx, docx 등 계위형 문서로 옮기기 쉬운 글을 만든다. 접속 표현을 쓰지 않는 단문 모드를 기본으로 쓰고 사용자가 흐름을 요청하면 접속 표현을 허용하는 연결 모드로 쓴다. 사용자가 '/logical-write', '개조식으로 써줘', '보고서 문체로', '논리적으로 써줘', '결론 우선으로', '피라미드 구조로', 'MECE하게', '흐름 있게', '서사적으로', '결론을 내려줘', '메타 서술 빼줘', 'AI 티 빼줘', '전문용어 줄여줘', '포커싱해줘' 등을 요청하거나 보고서류 문서를 개조식으로 작성, 교정, 구조 진단하도록 요청할 때 사용한다. 세부 규칙은 references/sentence.md(문장 규칙), references/structure.md(문서 구조), references/logic.md(논증 점검), references/judgment.md(결론 도출), references/classification.md(분류와 정의), references/expression.md(정형 표현과 메타 서술), references/vocabulary.md(어휘 사전), references/terms.md(전문용어 처리)에 있다."
+description: "보고서, 기획서, 제안서, 분석 글을 마크다운 계위 구조의 논리적 개조식 문장으로 작성하고 교정하고 진단하는 글쓰기 스킬. 결론 우선 배치, 한 기준으로 겹침과 빠짐 없이 나눈 분류, 근거를 갖춘 주장, 1문장 1메시지, 명사형 종결, 출처 표기를 적용하여 hwpx, docx 등 계위형 문서로 옮기기 쉬운 글을 만든다. 접속 표현을 쓰지 않는 단문 모드를 기본으로 쓰고 사용자가 흐름을 요청하면 접속 표현을 허용하는 연결 모드로 쓴다. 사용자가 '/logical-write', '개조식으로 써줘', '보고서 문체로', '논리적으로 써줘', '결론 우선으로', '피라미드 구조로', 'MECE하게', '흐름 있게', '서사적으로', '결론을 내려줘', '메타 서술 빼줘', 'AI 티 빼줘', '전문용어 줄여줘', '포커싱해줘' 등을 요청하거나 보고서류 문서를 개조식으로 작성, 교정, 구조 진단하도록 요청할 때 사용한다. 세부 규칙은 references/sentence.md(문장 규칙), references/structure.md(문서 구조), references/logic.md(논증 점검), references/judgment.md(결론 도출), references/classification.md(분류와 정의), references/expression.md(정형 표현과 메타 서술), references/vocabulary.md(어휘 사전), references/terms.md(전문용어 처리)에 있다."
 license: GPL-3.0-or-later with an output exception. Terms in LICENSE and NOTICE.md
 ---
 
@@ -77,7 +77,7 @@ license: GPL-3.0-or-later with an output exception. Terms in LICENSE and NOTICE.
 |---|---|---|
 | `references/sentence.md` | 5W1H 확인 절차, 모드별 세부 규칙, 문장 부호, 종결, '것' 등 빈자리 명사, 문장 리듬 | 문장을 쓰거나 고칠 때 |
 | `references/structure.md` | 결론 우선 배치, 거시 구조, 분석 단계 순서, 헤더 작명, 단위당 메시지, 표와 데이터 배치, 진단 항목 | 구조를 설계하거나 진단할 때 |
-| `references/logic.md` | 주장과 근거의 짝, 가설 사고, 형식적 오류, 비형식적 오류, 인지 편향, 입증 책임 | 주장을 세우거나 논증을 검토할 때 |
+| `references/logic.md` | 근거를 갖춘 주장, 가설 사고, 형식적 오류, 비형식적 오류, 인지 편향, 입증 책임 | 주장을 세우거나 논증을 검토할 때 |
 | `references/judgment.md` | 양비론 판별, 근거의 질 검토, 반론 배치, 결론 유보 조건 | 대립하는 입장 사이에서 결론을 낼 때 |
 | `references/classification.md` | 분류 기준, 겹침과 빠짐 점검, 계층 관계, 정의, 정보 부재 처리 | 항목을 나누고 묶거나 개념을 정의할 때 |
 | `references/expression.md` | 의미 없는 표현, LLM 정형 수사, 메타 서술 | 산출 전 점검, 교정 |
