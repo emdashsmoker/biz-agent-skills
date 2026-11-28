@@ -96,7 +96,7 @@ Think through the design in the order of the questions below, moving from large 
 - Record a conclusion and its grounds as a pair for every design decision.
 - Record the steps needed for reproduction and debugging thoroughly in intermediate records such as code comments, commit messages, logs, standard output, and README. The full process should be traceable from the repository even if the end user knows nothing about the internal implementation.
 - Write PR messages to the same standard as commit messages. Keep information that must not leak, such as personal data and company security information, out of intermediate records.
-- In automated work, publish outward-facing text such as commit messages, PR messages, posts, and emails after checking it as a Markdown draft. Check that the draft carries only what external readers need, carries only information that is safe to disclose, and reflects every rule of this module. Ask the user before publishing about any point where the judgment is ambiguous.
+- In automated work, write outward-facing text such as commit messages, PR messages, posts, and emails as a Markdown draft first. Check that the draft carries only what external readers need, carries only information that is safe to disclose, and reflects every rule of these guidelines. Publish the draft as the final version once it passes the check. Ask the user before publishing about any point where the judgment is ambiguous.
 - Do intermediate reasoning and work notes in (Reasoning language) and write the final response the user sees in (Output language).
 
 ## Security
