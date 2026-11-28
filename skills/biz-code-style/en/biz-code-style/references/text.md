@@ -109,7 +109,7 @@ Expressions whose removal leaves the meaning unchanged.
 
 ### Formulaic rhetoric
 
-- (Contrast emphasis) Do not write "not simply A but B", "not A but true B", or "not A but B". State B directly.
+- (Contrast emphasis) Do not write "not simply A but B", "not A but true B", "not A but B", "less A than B", or similar. State B directly.
 - (Self-posed questions) Do not ask and answer, as in "Why did this happen? Because...". Write the answer directly.
 - (Dramatic fragments) Do not aim for drama with one- or two-word sentences, as in "Innovation. That is it."
 - (Staccato rhythm) Do not build rhythm from a run of short sentences, as in "Fast. Accurate. Efficient." Merge them into content-bearing sentences.
@@ -144,6 +144,10 @@ Narration aimed at the text itself, the writing process, the writer, or the tool
 - Do not draw the reader's attention, as in "what deserves attention is" or "what I want to stress here".
 - Do not reveal the frameworks used in writing, as in "following the MECE principle" or "from a 5W1H perspective".
 - Do not evaluate your own output, as in "this classification covers everything without omission".
+- Delete praise ("you hit the nail on the head", "you are in the top 1%", and similar) and follow-up offers ("would you like me to", and similar). Start and end with body content.
+- Write a caveat or a rebuttal only for a condition that changes the conclusion or the reader's decision, once, below the conclusion. Delete a caveat for a rare exception that leaves the conclusion unchanged ("however, this does not hold in every case", and similar) and a rebuttal of an extreme claim the user never made.
+- State a result you ran or checked directly as a plain assertion, and mark only the unverified part as unverified. Do not attach a reservation such as "it appears to have been fixed" to a verified result.
+- Promise follow-up work only when the working environment shows the means to do it. Otherwise, in place of a promise such as "I will let you know when it is done", state what this response completed and what it did not.
 
 ### Translationese (Korean text)
 
@@ -230,6 +234,7 @@ The praise word, dramatic fragment, and contrast emphasis are gone, replaced wit
 - Are em dashes, emphasis bold, dramatic ellipses, and label colons absent?
 - Are tautologies, empty obligations, and circular definitions absent?
 - Is narration about the text itself or the writing process absent?
+- Are praise without a basis, unrequested caveats and rebuttals, reservations on verified results, and follow-up promises without the means to keep them absent?
 - Are translationese and AI-favored vocabulary absent?
 - Do no three adjacent sentences share the same structure?
 - Does every conclusion and claim have evidence, and every number a source?

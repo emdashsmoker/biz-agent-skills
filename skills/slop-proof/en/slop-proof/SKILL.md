@@ -28,6 +28,7 @@ The lists in each section collect expressions that often fail the tests below. W
 |---|---|---|
 | Deletion | Does the reader get the same information with this expression removed? | Delete it and go straight to the content |
 | Substitution | Would a more specific word add information? | Use the specific word |
+| Collocation | In Korean text, does a noun-predicate pair carry an English expression over word for word? | Use the predicate Korean speakers pair with that noun (Korean-only rules) |
 | Subject | Is the real subject of the sentence the text itself, the writer, the act of writing, the user's request, or a tool? | Treat as meta commentary (section 3) |
 | Beneficiary | Does the sentence serve the writer's self-justification, disclaimers, or showing off more than the reader? | Treat as meta commentary (section 3) |
 | Courtesy | Does it only greet, praise, confirm, guide, or prompt, with no information? | Treat as meta commentary (section 3) |
@@ -58,12 +59,12 @@ Words are sorted by how readers receive them, how much they mark the text as AI 
 |---|---|---|
 | LLMs overuse them, so they mark text as AI output | context (as glue or abstraction), discourse, layer, tier, level, hierarchy (abstract uses such as "at multiple levels"), disconnect ("the disconnect between perception and reality"), graded, in full, parallel, restricted to, gate, MVP (including lean-method explanations), integrated package, tide ("the great tide"), break away from ("break away from old ways"), tailored, customized, multilayered | Name the specific thing or action |
 | Spread beyond their home field | bottleneck (outside real process analysis), value (outside engineering), full-stack (where "full lifecycle" fits), input value, output, interface, pipeline, and other software-design phrasing (outside system design explanations) | Keep to the original use or replace |
-| Emphasis that adds nothing when deleted | very, quite, considerably, extremely, virtually, literally, genuine ("genuine innovation"), fundamental, essential (when adding abstract authority), comprehensive, overall (when specifics disappear) | Delete or state the degree |
+| Emphasis that adds nothing when deleted | very, quite, pretty, considerably, extremely, virtually, literally, genuine ("genuine innovation"), fundamental, essential, structural, practical (when adding abstract authority with no referent), comprehensive, overall (when specifics disappear) | Delete or state the degree |
 | Inflation without evidence | groundbreaking, innovative, pioneering, overwhelming, radical, unprecedented, unheard-of, explosive, astonishing, outstanding, excellent, historic, enormous, all-out, surge, leap, first-mover, paradigm, game-changer, "change the game", first-ever (when overused), strongest, weakest, orphan, maximize, encompass, span, reign, sweep, dominate, lead (when overused), trigger | Replace with evidence, figures, or a comparison |
 | Absolutes that shut out counterarguments | absolutely, only, sole, unconditionally, immediately, top priority (when overused), "directly linked", causal (as an assertion), crux, prerequisite, reference standard, strictly observe, "make or break" | State the conditions and scope |
 | Words that intimidate the reader | block, exclude, prohibit (except when quoting a rule), evade, weed out, preemptive | Use a neutral verb |
 | Jargon and abstractions LLMs favor | landscape, frame, leverage, implications ("the implications are significant"), mapping (use matching, linking, placement), deep dive (use analysis), insight (use finding), pivot, gatekeeping, ultimately, holistic, dynamic | Use plain words |
-| Stale metaphors | new horizons, backbone, milestone, turning point (when overused), catalyst, stepping stone, breakthrough, cornerstone, beachhead, blueprint, compass, beacon | Say what happens |
+| Stale metaphors and literary wording that is rare in everyday use | new horizons, backbone, milestone, turning point (when overused), catalyst, stepping stone, breakthrough, cornerstone, beachhead, blueprint, compass, beacon, and similar | Say what happens, in common words |
 | Paired with number declarations | "two pillars", "two axes", "seven-piece set" | Fix under number declarations in section 2 |
 
 ### Words to use with care
@@ -84,9 +85,10 @@ Words are sorted by how readers receive them, how much they mark the text as AI 
 | In this context, Given this context, From this perspective, In this respect, Amid this trend, "in that", "in terms of" | Glue that links sentences with no content | Delete and go straight to the content |
 | Furthermore, Moreover, Not only... but also, Additionally, Ultimately | Stock glue LLMs overuse | Delete or state the real relation |
 | That is why, sentence-initial "This" pointing at a whole previous sentence | Overuse chains sentences together and blurs the referent | Split the sentence or name the referent |
+| That said, However, Of course (as a reflex caveat) | Attaches a caveat or exception that leaves the conclusion unchanged | Use only for a condition that changes the conclusion or the reader's decision (section 3, unrequested caveats and rebuttals) |
 | In other words, That is | Makes the text repeat itself | Delete |
 | Meanwhile, On the other hand, Based on this, Through this, In relation to this | Used only to switch topics, with no real contrast or cause | Use only when the relation is real |
-| In conclusion, To summarize, In summary | Meta commentary announcing what the text does | Delete and state the conclusion |
+| In conclusion, To start with the conclusion, To summarize, In summary | Meta commentary announcing what the text does | Delete and state the conclusion |
 
 ### Common LLM English words
 
@@ -95,7 +97,7 @@ Treat these as non-preferred: delve, landscape, tapestry, realm, leverage, navig
 ### Stock phrases
 
 - (Blurred conclusions) "This speaks volumes", "This offers important implications", "This is meaningful". State the specific implication or delete.
-- (Assertions with no evidence) "cannot be overlooked", "undeniable", "clearly", "self-evident", "it goes without saying". Delete and state the fact.
+- (Assertions with no evidence) "cannot be overlooked", "undeniable", "clearly", "self-evident", "it goes without saying", "the right way to see it is". Delete and state the fact.
 - (Stock openers and generalizations) "The era of X has arrived", "The importance of X grows by the day", "Interest in X is rising", "The need for X is emerging", "X is drawing global attention", "X has become a global trend", "X is widely used across many fields". Replace with a specific case or evidence, or delete when none exists.
 
 "What matters is" and "Notably" go under reader prompts in section 3. "Not just A but B" and "three key strategies" go under formulaic rhetoric in section 2. "The single mechanism of X" goes under abstract repackaging in section 2. "Half right" goes under conclusion avoidance in section 4.
@@ -106,7 +108,7 @@ Treat these as non-preferred: delve, landscape, tapestry, realm, leverage, navig
 
 | Pattern | Example | Fix |
 |---|---|---|
-| Contrast framing | "not just A but B", "not A but true B", "not A but B", "beyond A to B", "doesn't stop at A, it goes to B" | Write B directly. Skip this frame even when A is a widely rejected idea |
+| Contrast framing | "not just A but B", "not A but true B", "not A but B", "beyond A to B", "doesn't stop at A, it goes to B", "less A than B", and similar | Write B directly. Skip this frame even when A is a widely rejected idea. When A is something the reader never claimed, the sentence belittles the reader's thinking as simple |
 | Repeated structure | "X is... Y is also... Z too is..." | Vary the sentence structure |
 | Dramatic fragments | "Innovation. That's it." | Write complete sentences |
 | Staccato rhythm | "Fast. Accurate. Efficient." | Merge into sentences built on content |
@@ -180,10 +182,11 @@ These criteria fix the habit of handing sentence-structure decisions to a symbol
 | Symbol | Misuse | Allowed when | Fix |
 |---|---|---|---|
 | Em dash | Drops an aside into a sentence without settling its structure | Never | Split the sentence, or use parentheses or commas |
-| Colon | Replaces a statement with a label ("Conclusion:", "Key point:") | Introducing a real list or a formal quotation. Follow the user's style guide if it says otherwise | Remove the colon and write a sentence |
+| Colon | Replaces a statement with a label ("Conclusion:", "Key point:") or follows a lead-in clause ("To start with the conclusion:") | Introducing a real list or a formal quotation. Follow the user's style guide if it says otherwise | Remove the colon and write a sentence |
 | Semicolon | Glues sentences instead of splitting them | Joining closely related independent clauses reads more naturally. User style guide first | Split with a period or join with a conjunction |
 | Ellipsis | Creates dramatic suspense or a musing mood | Marking an omission in a quotation | Remove and complete the sentence |
 | Bold inside sentences | Scatters emphasis over keywords | Terms being defined, technical identifiers, things readers scan for | Remove emphasis bold |
+| Middle dot (·) | Strings unrelated pieces of information on one line ("12 requests · 3 groups · 40 items in total") or stands in for content that belongs in a sentence or a table | In Korean text, the uses set by the Korean orthography rules (between paired phrases, in phrases that share an omitted component, and similar). User style guide first | Rebuild as a comma list, a sentence, or a table |
 | Slash | Skips writing the relation ("cost/benefit") | Never | Write the relation out |
 | Joining hyphen | Links separate words to skip the relation ("short-mid term") | Never | Write the relation out |
 
@@ -198,6 +201,16 @@ When colons, semicolons, and ellipses together exceed one per 150 words on avera
 | Fixed syntax | Three or more neighboring sentences with the same subject-predicate pattern | Vary the structure to create rhythm |
 | Parallel-list habit | Lists with no relation between items | Add relations such as cause, elaboration, or contrast |
 | Bold subheading overuse | A bold label on every bullet | Add labels only where needed |
+
+### Mixed register
+
+The register, the sentence-ending style, or the script of names changes within one text for no reason. The user's style guide or the conventions of the genre decide which style to use. This criterion checks that the chosen style holds to the end of the text.
+
+| Type | Example | Fix |
+|---|---|---|
+| Mixed register | Casual lines such as "Yep." or "Got it." inside a formal text. In Korean, plain-speech sentences (반말) such as "응.", "봤어." inside polite-speech text (존댓말) | Keep one register |
+| Mixed sentence endings | In Korean, plain declarative endings ("-다"), noun endings ("-함", "-임"), and polite endings ("-습니다") alternate among sentences in the same position | Keep one ending style for sentences in the same position, such as body text, tables, and lists |
+| Script switching | A name the source or the user wrote in Korean script is rewritten in English ("샘 올트먼" as "Sam Altman", "대한민국" as "Korea", and similar) | Keep the notation of the source and the user, and write words with an established Korean form in Korean |
 
 ### Korean-only rules
 
@@ -217,6 +230,20 @@ These rules depend on Korean grammar and vocabulary. Apply them when the text is
 | -에 대하여, -을 통하여, -로 인하여 ["regarding", "through", "due to"] | Japanese or English preposition calques | -에 대해, -을 통해, -로 인해, or state the cause directly |
 | -의 경우 ["in the case of"] | English "in the case of" | Name the subject directly |
 
+- (Calqued collocations) A noun-predicate pair that is natural in English is carried into Korean word for word. Each word is in the dictionary, yet Korean speakers do not use the pair for that object, so it reads as awkward. The table below gives examples. Fix a pair outside the table the same way when it fails the collocation test.
+
+| Calqued pair | English expression | Replacement |
+|---|---|---|
+| "완충 장치로 기능한다" [functions as a buffer], "-에 중요한 역할을 한다" [plays an important role in], and similar | function as, serve as, play a role, and similar | State the actual effect as the predicate ("충격을 흡수한다" [absorbs the shock], and similar) |
+| "버그를 닫다", "취약점을 닫다" [close a bug, close a vulnerability], and similar | close | 고치다, 수정하다, 제거하다 [fix, correct, remove], and similar |
+| "이름을 채우다" [fill in the name], and similar | fill in | 적다, 입력하다 [write, enter], and similar (keep 채우다 for an empty slot such as a blank, a quota, or a quantity) |
+| "작업에 경고가 붙는다" [a warning attaches to the task], "오류가 따라온다" [an error comes along], and similar | attach, come with, and similar | 표시되다, 함께 발생하다 [is shown, occurs together], and similar |
+| "회귀가 발생" [a regression occurs], and similar | regression | 성능 저하, 재발 [performance drop, recurrence], and similar (keep terms such as "회귀 테스트" [regression test] and "회귀분석" [regression analysis]) |
+| "주장이 약해진다", "논거가 강해진다" [the claim weakens, the argument strengthens], and similar | weaken, strengthen | 설득력이 떨어진다, 근거가 보강된다 [becomes less persuasive, gains support], and similar |
+| "방어 가능한 주장" [a defensible claim], and similar | defensible | 타당한 주장, 근거가 있는 주장 [a valid claim, a claim with grounds], and similar |
+
+A calqued pair used as praise, such as "질문이 깊다" [the question is deep] or "통찰력 있는 지적" [an insightful point], goes under praise and approval in section 3.
+
 - (Suffix overuse) "-적" [的, "-ic"] three or more times in a paragraph, or "-화" [化, "-ization"] twice or more in a sentence ("디지털화의 고도화가 가속화" [digitalization's upgrading accelerates]), counts as overuse. Rebuild the sentence.
 - (Empty nouns in Korean) The Korean empty nouns are 것, 점, 부분, 사항, 측면 [thing, point, part, matter, aspect], 곳, 데 [place], 바, 셈, 편, 터, 식 [state, degree]. The spoken contractions 거, 겄, 게, 건, 걸 [contracted forms of 것] count as 것 and also break formal register, so fix them first in reports. Korean allowed cases: lexicalized words (먹을 것, 탈것, 날것, 새것, 옛것), grammatical uses (-할 수 있다, 설치하는 데 소요, 보고한 바와 같이), real places (곳 for an identified location), directive endings in rules and checklists (-할 것), and forecasts with their basis in the sentence (-할 것으로 전망). A "-할 것" ending in the narrative part of a report is not a directive ending.
 - (Noun-ending grammar errors) In text already written with noun endings (개조식), LLMs leave attributive verb forms (-할, -을 할, -시킬) or the particle 의 behind. This rule applies only to such text. Fix when deleting the attributive form keeps the meaning. Keep it when the verb picks out its object. "삭제할 파일" [the file to delete] stays, while "검토할 사항" [item to review] becomes "검토 사항" because the difference is small. "-할 것" endings go under empty nouns.
@@ -230,7 +257,7 @@ These rules depend on Korean grammar and vocabulary. Apply them when the text is
 | 작업의 부담 [burden of work] | 작업 부담 발생 | Needless 의, and "작업 부담" alone is incomplete, so add a predicate noun such as 발생, 증가, or 우려 |
 
 - (Restoration check for noun endings) Check a Korean sentence that ends in a noun or a nominalizing ending (-함, -임, -음 and similar) by restoring it to a plain declarative sentence. Add the omitted particles and change the ending to "-이다", "-한다", "-다" or a similar form, or add such an ending (e.g., "목적 달성 필요" restores to "목적 달성이 필요하다", and so on). If the sentence does not restore to a natural declarative sentence, or the restored sentence differs in meaning from the original, the grammar is wrong, so rewrite it.
-- (Korean vocabulary with no clean English match) Treat these as non-preferred. 결 and 틀 ("같은 결" [same grain], "평가틀" [evaluation frame]) sound unnatural. 온전 used as a noun cut from 온전한 [intact] sounds forced. 묵음 [muted] and 뽑기 [drawing lots] mark text as AI output. -결 coinages such as 귀결 [conclusive ending] act as absolutes. 갈래 [strand] is overused in place of branch or path. 통독 [reading through] is overused for reading a whole text, though Korean speakers rarely use it at work or in daily life. The loanwords 에코시스템, 트랜스포메이션, 컨틴전시, 커버리지, 헷지 [ecosystem, transformation, contingency, coverage, hedge] have Korean equivalents such as 생태계 and 전환. The calques 정립 [establish], 즉각적 [immediate], 야기 [cause], 수반 [entail], 내포 [imply] read as direct translations and take plain Korean replacements. 묶음 [bundle] is overused in place of the proper name of a set such as 패키지, 종합본, 전략 [package, compendium, strategy], and 판 [edition] in place of version or basis. 약속 [promise] is a cautionary word, used only for something the user can actually deliver, since a promise written in a document becomes an obligation the user must meet. 판정 [ruling] is managed by frequency. 출발 [departure] is used only when something actually departs, and 계측, 실측, 시측 and other -측 words [measurement words] only when something is actually measured. Neither is used figuratively, and the -측 words do not claim accuracy for the work.
+- (Korean vocabulary with no clean English match) Treat these as non-preferred. 결 and 틀 ("같은 결" [same grain], "평가틀" [evaluation frame]) sound unnatural. 온전 used as a noun cut from 온전한 [intact] sounds forced. 묵음 [muted] and 뽑기 [drawing lots] mark text as AI output. -결 coinages such as 귀결 [conclusive ending] act as absolutes. 갈래 [strand] is overused in place of branch or path. 통독 [reading through] is overused for reading a whole text, though Korean speakers rarely use it at work or in daily life. The loanwords 에코시스템, 트랜스포메이션, 컨틴전시, 커버리지, 헷지 [ecosystem, transformation, contingency, coverage, hedge] have Korean equivalents such as 생태계 and 전환. The calques 정립 [establish], 즉각적 [immediate], 야기 [cause], 수반 [entail], 내포 [imply] read as direct translations and take plain Korean replacements. 묶음 [bundle] is overused in place of the proper name of a set such as 패키지, 종합본, 전략 [package, compendium, strategy], and 판 [edition] in place of version or basis. 약속 [promise] is a cautionary word, used only for something the user can actually deliver, since a promise written in a document becomes an obligation the user must meet. 판정 [ruling] is non-preferred when it stands in for 판단, 평가, 확인, 결정 [judgment, assessment, check, decision] and similar words. 경로 [path] is used only for a real path such as a route, a file path, a network path, or a distribution channel, and never as a figure for a method or a process. 감각 [sense] is non-preferred when it replaces evidence, as in "실무 감각" [practical sense]. The demonstratives 이는 and 이러한 [this] often carry English "this" over word for word and are managed like sentence-initial "This". 다만, 단, 물론 [however, provided that, of course] follow the reflex-caveat row of the connectives table. 출발 [departure] is used only when something actually departs, and 계측, 실측, 시측 and other -측 words [measurement words] only when something is actually measured. Neither is used figuratively, and the -측 words do not claim accuracy for the work.
 - (Verbs with sexual connotation) 넣다, 빼다, 박다, 쑤시다 and the coinage 동시삽입 [put in, pull out, drive in, poke, simultaneous insertion] sound colloquial and can carry sexual connotations in Korean. Replace with 포함 or 추가 [include, add], 제외 or 삭제 [exclude, delete], 명시 or 고정 [state, fix], 점검 or 조사 [check, examine], and 병기 [state side by side]. Detect by stem and cover all conjugations. Words with different stems such as 빼앗다, 빼어나다, 빼곡하다 are unaffected.
 - (Connective particle) The particles -으로 and -로 are managed by frequency.
 
@@ -263,13 +290,15 @@ The goal is a text where the writing, the writer, and the process stay invisible
 | Subject | Reporting a change of viewpoint | "Approaching this from another angle", "Taking a bird's-eye view" |
 | Subject | Redundant lead-in | The second half of "Bottom line: B. Looking at B in detail" |
 | Subject | Exposing writer-only information | "My training data cutoff is", "Due to context window limits", "Per my system prompt", "After loading the skill", "Combining the three search results" |
-| Subject | Meta talk about tone | "To be honest", "To put it gently", "Was that too stiff?" |
-| Subject | Reporting guesses about intent | "It seems you want", "I understand you intend" |
+| Subject | Meta talk about tone | "To be honest", "To put it gently", "To put it bluntly", "Was that too stiff?", and similar |
+| Subject | Guessing intent and redefining the user's statement | "It seems you want", "I understand you intend", "What you mean is B, not A", "What you really want is B", and similar (answer the user's own wording as written) |
 | Subject | Announcing an attempt | "Let me try", "I'll attempt to write" |
 | Beneficiary | Bragging about work and completion | "After thorough analysis", "After careful review", "The analysis is complete" |
 | Beneficiary | Self-justification | "A classification that covers everything without gaps", "From a balanced perspective", "Objectively speaking" |
 | Beneficiary | Advance disclaimers and self-declared limits | "This may not be perfect, but", "The limitations of this analysis include", "Further expert review is needed" |
-| Beneficiary | Advertising abilities and conditional offers | "I can explain in more detail if you'd like", "I could also put this in a table" |
+| Beneficiary | Advertising abilities and conditional offers | "I can explain in more detail if you'd like", "I could also put this in a table", "Would you like me to", a teaser that announces content without giving it ("There is one more method that works even better"), and similar |
+| Beneficiary | Follow-up promises with no means to keep them | "I'll send the file in a few hours", "I'll let you know when it's done", and similar (when the working environment shows no means to keep the promise, state what this response completed and what it did not) |
+| Beneficiary | Explaining away a correction | "That wasn't my intent", "The point I was trying to make earlier was", "I never said that", and similar (drop the explanation and write the corrected content) |
 | Beneficiary | Rating difficulty and complexity | "This is a fairly complex problem", "Simply put", "In plain terms" |
 | Beneficiary | Managing expectations | "This may differ from what you expected", "The answer may not be simple" |
 | Beneficiary | Confessing scope | "This goes beyond the original scope, but", "For reference", unrequested "B needs separate analysis" |
@@ -278,19 +307,20 @@ The goal is a text where the writing, the writer, and the process stay invisible
 | Beneficiary | Piling on reservations | "While one cannot be definitive", "Although it's too early to say" (handled under repeated hedging in section 4) |
 | Courtesy | Prompting attention and declaring importance | "Notably", "The key here is", "What matters is", "It's worth emphasizing", "What must not be overlooked is" |
 | Courtesy | Greetings and relationship management | "I hope this helps", "Let me know if you have more questions", "Great question" |
-| Courtesy | Guessing the reader's state | "This may be confusing, but", "As you probably know", "You may have wondered" |
-| Courtesy | Staging emotions | "Unfortunately", "Fortunately", "Interestingly", "Surprisingly", "Encouragingly" |
+| Courtesy | Guessing the reader's state and feelings | "This may be confusing, but", "As you probably know", "You may have wondered", "You have every right to be angry", "It's natural to feel that way", and similar |
+| Courtesy | Staging emotions | "Unfortunately", "Fortunately", "Interestingly", "Surprisingly", "Encouragingly", "That's pretty interesting", and similar |
 | Courtesy | Telling the reader what to do | "Please note", "Please keep in mind", "Please bear in mind" |
-| Courtesy | Agreement and approval | "Good approach", "You've nailed it", "That's right" used only to signal agreement |
+| Courtesy | Praise and approval | "Good approach", "You've nailed it", "You hit the nail on the head", "That's a deep question", "An insightful point", a rating of the user with no checkable basis ("You're in the top 1%", and similar), "That's right" used only to signal agreement, agreement placed before a rebuttal or a refusal ("You're right. That said", and similar) |
 | Courtesy | Confirmation rituals | "Does that make sense?", "How does that sound?", "May I interpret it this way?" |
 | Request direction | Unrequested reverse-direction content | Asked to add a supplementary feature Y to X, adding "use Y by default and stop using X", asked for direction A, adding responses for the opposite direction B, after defining A, listing why B, C, and D are not A, after deriving SO strategies, listing ST, WO, and WT factors (use reverse checks for internal verification only and write only the requested direction) |
+| Request direction | Unrequested caveats and rebuttals | Attaching a caveat for a rare exception that leaves the conclusion unchanged ("That said, this does not hold in every case", and similar), announcing a correction with nothing to correct ("Let me set one thing straight", and similar), setting up an extreme claim the user never made and rebutting it ("Generalizing it that way conflicts with the facts", and similar) (write only a condition that changes the conclusion or the reader's decision, once, below the conclusion) |
 | Deletion | Restating known facts | Listing definitions the reader knows as "X is Y": "At its core it is next-token prediction", "the capabilities and limitations that come from the principle" |
 | Deletion | Empty context declarations | "Considering the current situation", "Amid global changes", "Meeting the demands of the times" with no specifics |
 | Deletion | Redefining the topic | Redefining a concept the reader knows with "What is X?" or "Let's start with the concept" |
 
 - (Known-fact check) Knowledge the target reader already has when reading the text counts as a known fact. When every sentence looks informative but the whole paragraph restates textbook material, treat the paragraph as a unit. This includes symmetric pairs that dodge specifics ("capabilities and limitations") and predicate-less noun phrases posing as analysis ("attention and the use of input context"). Replace them with analysis or judgment the reader does not already have.
 - (Writer-only information check) Ask whether knowing it would help the reader understand or decide. Delete it if not.
-- (Allowed) When the user directly asks about method, tools, or internal workings, answer. When the user asks for limitations, or when uncertainty materially affects reliability, state the limitation. A non-obvious numeric assumption that changes the result ("at an exchange rate of 1,300 won per dollar") is body content. A counterargument placed below a conclusion under section 4 is part of the request for a conclusion.
+- (Allowed) When the user directly asks about method, tools, or internal workings, answer. When the user asks for limitations, or when uncertainty materially affects reliability, state the limitation. A non-obvious numeric assumption that changes the result ("at an exchange rate of 1,300 won per dollar") is body content. A condition, an exception, or a correction of a factual error that changes the conclusion or the reader's decision is also body content. A counterargument placed below a conclusion under section 4 is part of the request for a conclusion.
 
 ### Workarounds
 
@@ -330,7 +360,7 @@ End every analysis with a conclusion that has a direction. "Both are valid" mean
 
 | Type | Expressions | Problem |
 |---|---|---|
-| Partial agreement | "half right", "partly right, partly wrong", "has a point", "I largely agree", "not wrong", "can't say it's entirely wrong", "partially valid" | Leaves the scope of agreement and disagreement unstated. State both scopes |
+| Partial agreement | "half right", "partly right, partly wrong", "has a point", "I largely agree", "largely right", "close to A", "not wrong", "can't say it's entirely wrong", "partially valid" | Leaves the scope of agreement and disagreement unstated. State both scopes |
 | Crediting both sides | "both sides have a point", "each has pros and cons", "there are advantages and disadvantages", "positives and negatives coexist", "both an opportunity and a threat", "two sides of the same coin", "a double-edged sword", "light and shadow coexist", "can be medicine or poison" | Skips weighing, or lets a metaphor stand in for analysis |
 | Suspended judgment | "it depends on the situation", "case by case", "it may vary with context", "hard to say definitively", "too early to tell", "there's no easy answer", "premature to judge" | Leaves unstated which direction applies in which situation, and when a judgment becomes possible |
 | Fake compromise | "combine the strengths of both", "a balanced approach is needed", "find the right balance", "harmonize both views", "moderation is needed" | Gives no method for combining and no basis for the midpoint |
@@ -339,6 +369,8 @@ End every analysis with a conclusion that has a direction. "Both are valid" mean
 
 - (Equal allocation) Both positions get artificially matched length, number of reasons, or strength of modifiers. When the evidence is asymmetric, a symmetric layout leaves only a list with no analysis.
 - (Repeated hedging) Reservations appear twice or more in the text. Stacking uncertainty words in one sentence ("somewhat to some extent fairly positive") and loading a conclusion with conditions ("Of course, assuming A, and considering B, and given variable C, the conclusion is D") also count. State the uncertainty once.
+- (Hedging a verified result) A result the writer produced or checked directly carries a reservation such as "it appears to have been fixed" or "I can't say for certain". State a verified result as a plain assertion, and mark only the unverified part as unverified.
+- (Overturned conclusion) After stating a conclusion, the text sets up a new criterion with "But a better option is", "If it were me", "Surprisingly", and similar, and voids the earlier conclusion. When the user has set the criterion, keep the one conclusion reached under it to the end. Place an alternative that comes from another criterion below the conclusion, as the condition under which the conclusion changes.
 - (Fake compromise) The arithmetic midpoint of two positions appears as the conclusion with no basis. "Combining the strengths of A and B is desirable" is a fake compromise when it lacks a method and a basis.
 - (Quantity trap) Weight is decided by the number of sources, page count, citation count, or headcount of supporters. "Three times as many studies support A, so A is right", "The A report runs 800 pages and the B report 50, so A is more solid", "More experts support A, so A is the consensus" all fall here. A position with fewer sources still wins when its logic and causal explanation are stronger.
 
@@ -406,7 +438,7 @@ Check the items below before delivering. Fix anything that fails, then deliver.
 
 - No non-preferred words, calques, common LLM English words, glue connectives, or stock phrases remain
 - Use-with-care words meet their conditions and appear no more than once per paragraph
-- For Korean text, the Korean-only rules pass, including the verbs with sexual connotation
+- For Korean text, the Korean-only rules pass, including the calqued collocations and the verbs with sexual connotation
 - No contrast framing, repeated structure, self Q&A, dramatic fragments, staccato rhythm, or number declarations
 - Lists are not forced into threes regardless of content
 - No abstract repackaging that adds no information
@@ -414,16 +446,19 @@ Check the items below before delivering. Fix anything that fails, then deliver.
 - No empty noun swapped for a sibling empty noun or a contraction while fixing
 - No fix touched fixed expressions, grammatical uses, real places, directive-genre endings, or forecasts with their basis
 - No noun stacks
-- No em dashes, dramatic ellipses, emphasis bold, label colons, sentence-joining semicolons, slashes, or joining hyphens
+- No em dashes, dramatic ellipses, emphasis bold, label colons, sentence-joining semicolons, middle dots that string pieces of information together, slashes, or joining hyphens
 - No three or more neighboring sentences with the same structure, and no headings or subheadings repeated as empty labels
+- The register, the sentence-ending style, and the notation of names hold to the end of the text
 - The text reads with natural rhythm out loud
 - The first sentence carries content (a greeting, a restated request, or a process announcement needs fixing)
 - The last sentence carries content (a greeting, an invitation for more questions, or a disclaimer needs fixing)
 - No sentence or workaround fails the subject, beneficiary, courtesy, request-direction, or deletion test
+- No praise without a basis, no unrequested caveat or rebuttal, and no follow-up promise without the means to keep it
 - Every conclusion has evidence and every figure has a source
 - Every conclusion stays within the scope of its evidence
 - No circular reasoning or empty obligations
-- The analysis ends with a directional conclusion, with no conclusion-avoiding expressions, equal allocation, repeated hedging, or fake compromise
+- The analysis ends with a directional conclusion, with no conclusion-avoiding expressions, equal allocation, repeated hedging, overturned conclusion, or fake compromise
+- Every result that was checked directly is stated as a plain assertion
 - The direction was set by the quality of evidence in rank order, never by counts of sources, pages, citations, or supporters
 - The counterargument was assessed in its strongest form and placed below the conclusion
 - Any withheld conclusion meets all three conditions and states the direction of the lean

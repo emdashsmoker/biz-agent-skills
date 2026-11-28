@@ -74,6 +74,7 @@ A sentence is meta-commentary when it covers an opposite polarity, a complement 
 - (Opposite polarity) After a request for statements in direction A, the writer continues with the opposite direction B
 - (Complement set) After defining or choosing A, the writer continues with the items that do not belong to A
 - (Substitute) After a request for a feature that supplements X, the writer states a rule that replaces or forbids X
+- (Caveats and rebuttals) The writer attaches a caveat for a rare exception that leaves the conclusion unchanged, or sets up an extreme claim the user never made and rebuts it
 
 ### Order of application
 
@@ -166,6 +167,7 @@ You can use this skill with any style guideline. If another guideline allows an 
 - If the user explicitly asks for meta-commentary, keep it (for example, "State the purpose of this report in the introduction")
 - If genre conventions require meta-commentary, as in the research purpose and methods sections of an academic paper, follow those conventions
 - If the user explicitly asks for limitations, cautions, or an explanation of the method, allow them
+- State a condition, an exception, or a correction of a factual error that changes the conclusion or the reader's decision as body content
 
 ## Pre-output check
 
@@ -177,5 +179,6 @@ Check the items below before producing output. Delete each sentence that fails, 
 - No sentence only performs a courtesy ritual
 - No bypass form remains, such as a hidden subject, disguised content, or disguised modesty
 - No sentence covers an opposite direction, a complement set, or a substitute rule the user did not request
+- No praise without a basis, no unrequested caveat or rebuttal, no follow-up promise without the means to keep it, and no explaining away of a correction
 - The first sentence starts with content (it does not open with a greeting, a restated request, or a process preview)
 - The last sentence ends with content (it does not close with a greeting, an invitation to ask more, or a disclaimer)

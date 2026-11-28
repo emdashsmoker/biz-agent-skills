@@ -58,6 +58,8 @@ When the length, number of grounds, and strength of modifiers given to two oppos
 
 When reservation expressions ("hard to say for sure", "too early to tell", "further review is needed", "we need to look from various angles") appear twice or more, the text is evading. State uncertainty once.
 
+A reservation such as "it appears to have been fixed" or "I cannot say for certain" attached to a result the writer produced or checked directly is the same evasion. State a verified result as a plain assertion, and mark only the unverified part as unverified.
+
 ### Test 4: Fake compromise
 
 Presenting the arithmetic midpoint of two positions as the conclusion is a variant of fence-sitting. The midpoint between A and B is not automatically correct, and its validity needs its own grounds. "Combining the strengths of A and B is desirable" is a fake compromise when it lacks a method and grounds for the combination.
@@ -112,14 +114,18 @@ Place counterarguments under the conclusion so they only adjust its strength. Pl
     + (Counterargument and limits) The main argument for B is X, but it is limited by Y
 ```
 
-### Rule 4: Conditional conclusions are allowed
+### Rule 4: Keep one conclusion
+
+After stating a conclusion, do not set up a new criterion with "but a better option is", "if it were me", "surprisingly", and similar to void it. When the user has set the criterion, keep the one conclusion reached under it to the end. Place an alternative that comes from another criterion below the conclusion, as the condition under which the conclusion changes.
+
+### Rule 5: Conditional conclusions are allowed
 
 When the conclusion depends on a condition, state the condition and keep the direction. A conditional conclusion is a conclusion. A reservation without direction is the absence of a conclusion.
 
 - (Allowed) "On current evidence A fits, but review again if condition X changes"
 - (Not allowed) "A may be better, or B may be better, so decide based on the situation"
 
-### Rule 5: Accept asymmetry
+### Rule 6: Accept asymmetry
 
 The two positions may get different amounts of space. When the evidence is asymmetric, asymmetric writing is natural. Padding the weaker position to balance the text distorts the analysis.
 
@@ -208,6 +214,8 @@ The revision meets all three conditions: evidence is lacking on both sides, pilo
 - Are missing-conclusion expressions such as "both have pros and cons" absent?
 - Did you avoid forcing equal length onto two opposing positions?
 - Do reservation expressions appear no more than once?
+- Is every result that was checked directly stated as a plain assertion?
+- Does the text keep the stated conclusion without overturning it under a new criterion?
 - Did you avoid presenting the midpoint of two positions as the conclusion without grounds?
 - Is the counterargument placed under the conclusion?
 - Did you avoid weakening or distorting the counterargument, and did you keep its core arguments?

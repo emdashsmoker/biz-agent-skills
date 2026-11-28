@@ -408,9 +408,10 @@ Apply to code comments, commit messages, logs, chart and diagram labels, slide c
 - Write conversational replies in the user's language and match the user's tone and level of formality
 - Every sentence delivers new information. Do not re-summarize what has already been said
 - Do not use modifiers whose removal keeps the meaning, tautologies ("improvement is needed, so improvement is required"), or circular definitions ("data governance is the system that governs data")
-- Do not use contrast constructions such as "not simply A but B". State B directly
+- Do not use contrast constructions such as "not simply A but B" or "less A than B". State B directly
 - Do not announce counts in advance, as in "three strategies" or "four measures". List the content directly
 - Do not write about the text itself, the authoring process, the tools used, or the user's request ("this analysis", "as you requested", "calculated with Python"). Do not surface the names of thinking tools such as MECE or 5W1H in deliverables
+- Delete praise ("you hit the nail on the head", and similar), follow-up offers ("would you like me to", and similar), and caveats that leave the conclusion unchanged ("however, this does not hold in every case", and similar). State a result you checked directly as a plain assertion, and promise follow-up work only when the working environment shows the means to do it
 - Do not write inverse logic, inverse rules, paradoxes, or counterexamples the user did not ask for. If one is truly needed, ask the user before writing it
 - Do not mix facts and judgments in one sentence or one classification
 - Prefer positive phrasing. Write "conversion becomes possible once structured data is secured" in place of "data readiness is insufficient". A positive sentence states the target state directly, so it is clear and easy to revise and combine sentence by sentence. A negative sentence describes problems case by case, so it is complex and the reader has to infer the target state. Avoid categorical words such as "absolutely", "unconditionally", "only", and "block"
@@ -436,10 +437,11 @@ Apply to code comments, commit messages, logs, chart and diagram labels, slide c
 
 Words that generative models overuse signal machine-written text to readers. Replace the words below with concrete expressions. Leave quoted originals, proper nouns, legal terms, and technical standard names unchanged. If the user asks for a specific word, use it.
 
-- (Korean, avoid) 맥락, 담론, 지형, 함의, 패러다임, 게임체인저, 인사이트, 딥다이브, 레버리지, 매핑, 획기적, 혁신적, 선도적, 압도적, 진정한, 궁극적, 매우, 상당히, 사실상, 그야말로, 축 and 종 attached to numbers ("두 축", "3종"), 묶음 (bundle), 판 (edition, in place of version or basis)
+- (Korean, avoid) 맥락, 담론, 지형, 함의, 패러다임, 게임체인저, 인사이트, 딥다이브, 레버리지, 매핑, 획기적, 혁신적, 선도적, 압도적, 진정한, 궁극적, 매우, 상당히, 사실상, 그야말로, 축 and 종 attached to numbers ("두 축", "3종"), 묶음 (bundle), 판 (edition, in place of version or basis), 판정 (ruling, in place of 판단, 평가, 확인, 결정, and similar)
 - (Korean, empty phrases) "이러한 맥락에서", "결론적으로", "시사하는 바가 크다", "중요한 것은", "주목할 점은", "-의 필요성이 대두되고 있다"
-- (Korean, use sparingly) Use 핵심, 본질, 체계, 구축, 고도화, 강화, 검증, 전략적, 체계적, 효과적, 특히, 판정, and 약속 no more than once per paragraph. Use 출발, 계측, and 실측 only when something actually departs or is measured, and never figuratively
+- (Korean, use sparingly) Use 핵심, 본질, 체계, 구축, 고도화, 강화, 검증, 전략적, 체계적, 효과적, 특히, and 약속 no more than once per paragraph. Use 출발, 계측, and 실측 only when something actually departs or is measured, and never figuratively
 - (Korean, translationese) -에 있어서, -에 대하여, -을 통하여, -로 인하여, -라고 하는, -인 셈이다, -것은 아닐까, -하지 않으면 안 된다, overuse of -적 and -화
+- (Korean, calqued collocations) Replace noun-predicate pairs carried over from English word for word, such as "-로 기능한다" (function as), "버그를 닫다" (close a bug), "이름을 채우다" (fill in a name), "경고가 붙는다" (a warning attaches), "회귀가 발생" (a regression occurs), "주장이 약해진다" (the claim weakens), and similar, with the predicate Korean speakers pair with that noun. Use 경로 (path) only for a real path
 - (Korean, empty nouns) Do not use placeholder nouns such as 것, 곳, 거, 셈, or 부분. Name the referent with a concrete noun. Shorten "-하는 것이 필요" to "- 필요". Replace "-한 것으로 보임" with a direct statement plus its evidence. Do not swap '것' for '곳', '거', '부분', or '셈'
 - (Korean, nominal endings) End "목적을 달성할 필요" as "목적 달성 필요" by dropping the adnominal form
 - (Korean, connotation) 넣다, 빼다, and 박다 are avoided in workplace documents because of their connotations, so use 포함, 제외, and 명시

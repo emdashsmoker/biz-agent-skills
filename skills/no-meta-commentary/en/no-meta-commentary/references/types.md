@@ -166,6 +166,13 @@ Statements in which the writer assesses and declares the quality, consistency, o
 - "Classified systematically", "A classification that covers everything without gaps", "From a balanced perspective"
 - "Judging objectively", "Evaluating fairly", "Strictly speaking"
 
+### Explaining away a correction
+
+Statements that defend the writer's intent or earlier wording in response to the user's correction, in place of the corrected content. The beneficiary is the writer (reducing responsibility). Drop the explanation and write the corrected content.
+
+- "That wasn't my intent", "The point I was trying to make earlier was"
+- "I never said that", and similar
+
 ### Advance disclaimers and self-declared limitations
 
 Statements that declare the limitations, incompleteness, or need for further review of the output when the user did not ask for them
@@ -262,6 +269,13 @@ Statements that advertise the writer's further abilities or conditionally offer 
 
 - "If you'd like, I can explain in more detail", "If you want, further analysis is possible"
 - "I can also put this in a table", "If you need more specific examples"
+- "Would you like me to", a teaser that announces content without giving it ("There is one more method that works even better"), and similar
+
+### Follow-up promises with no means to keep them
+
+Statements that promise follow-up work when the working environment shows no means to do it. The beneficiary is the writer (hiding unfinished work). State what this response completed and what it did not.
+
+- "I'll send the file in a few hours", "I'm working on it now and will let you know when it's done", and similar
 
 ### Guessing the reader's state
 
@@ -269,6 +283,7 @@ Statements in which the writer guesses the reader's cognitive state, emotional s
 
 - "This may be confusing, but", "This may be hard to follow, but", "This may be unfamiliar, but"
 - "As you probably know", "As you may have expected", "You may have wondered", "This may seem puzzling, but"
+- "You have every right to be angry", "It's natural to feel that way", and similar
 
 ### Managing the reader's expectations
 
@@ -290,6 +305,8 @@ Statements in which the writer evaluates or approves the user's judgment or ques
 
 - "Good approach", "That's the right direction", "That's a sound judgment"
 - "You've put your finger on it", "That's right" (used only to signal agreement)
+- "You hit the nail on the head", "That's a deep question", "An insightful point", and similar
+- A rating of the user with no checkable basis ("You're in the top 1%", and similar), agreement placed before a rebuttal or a refusal ("You're right. That said", and similar)
 
 ### Reporting guesses about the user's intent
 
@@ -297,6 +314,7 @@ Statements that report the process of guessing the user's intent. Guess the inte
 
 - "It seems you want X", "I understand you intend X"
 - "It sounds like you are curious about X", "If what you want to know is X"
+- Redefining the user's statement, as in "What you mean is B, not A", "What you really want is B", and similar (answer the user's own wording as written)
 
 ### Check-in rituals
 
@@ -339,3 +357,12 @@ Statements that add, without being asked, the opposite polarity, complement set,
 - (Listing reasons for non-membership) Right after writing a definition of A that distinguishes it from B, C, D, and E, the writer explains why B, C, D, and E do not fit the definition of A
 - (Listing unselected factors) After deriving SO strategies from a SWOT analysis, the writer goes on to describe the factors of the ST, WO, and WT strategies
 - (Handling) Use reverse checks only for internal verification and put only results in the request direction into the output
+
+### Unrequested caveats and rebuttals
+
+Statements that add, without a request, a caveat that leaves the conclusion unchanged or a rebuttal of a claim the user never made. The beneficiary is the writer (avoiding blame for an error). They fail the request direction test.
+
+- (Caveat for a rare exception) "That said, this does not hold in every case", and similar
+- (Correction announced with nothing to correct) "Let me set one thing straight", "One thing to flag before we go on", and similar
+- (Rebuttal of an extreme version) Setting up an extreme claim the user never made and rebutting it, as in "Generalizing it that way conflicts with the facts", and similar
+- (Handling) A condition, an exception, or a correction of a factual error that changes the conclusion or the reader's decision is body content, so state it once below the conclusion

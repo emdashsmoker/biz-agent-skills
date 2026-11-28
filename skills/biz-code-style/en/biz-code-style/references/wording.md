@@ -21,7 +21,7 @@ Non-preferred:
 - (Excess metaphors) 뼈대 (skeleton), 디딤돌 (stepping stone), 초석 (cornerstone), 교두보 (beachhead), 청사진 (blueprint), 나침반 (compass), 등대 (lighthouse), 촉매, 촉매제 (catalyst), 이정표 (milestone), 돌파구 (breakthrough), 전환점 (turning point, when overused)
 - (Exaggeration) 패러다임 (paradigm, as in "paradigm shift"), 게임체인저 (game changer), 판도 (the whole game), 폭증 (explosion), 비약 (leap, as in "leaping growth"), 최초 (first ever, when overused), 최강 (strongest), 최약 (weakest)
 - (Aggressive or assertive nouns) 도태 (being weeded out), 선점 (preemption), 선제 (preemptive, as in "preemptive response"), 직결 (direct link), 인과 (causation), 쟁점 (point of contention), 엄수 (strict observance), 선결 (prerequisite), 준거 (yardstick)
-- (Nouns LLMs favor) 함의 (implication, a literal translation), 괴리 (disconnect), 묵음 (muting), 차등 (differential), 전량 (entire quantity), 뽑기 (drawing), 병렬 (parallel), 한정 (limitation), 정립 (establishment, a literal translation of establish), 고아 (orphan), 병목 (bottleneck, outside actual process analysis), 매핑 (mapping, a literal translation, replace with 대응 correspondence, 연결 connection, or 배치 arrangement), 값 (value, outside engineering contexts), 갈래 (branch, in place of "branch" or "path"), 묶음 (bundle, in place of a proper name for a set such as 패키지 package, 종합본 compendium, or 전략 strategy), 판 (edition, in place of "version" or "basis")
+- (Nouns LLMs favor) 함의 (implication, a literal translation), 괴리 (disconnect), 묵음 (muting), 차등 (differential), 전량 (entire quantity), 뽑기 (drawing), 병렬 (parallel), 한정 (limitation), 정립 (establishment, a literal translation of establish), 고아 (orphan), 병목 (bottleneck, outside actual process analysis), 매핑 (mapping, a literal translation, replace with 대응 correspondence, 연결 connection, or 배치 arrangement), 값 (value, outside engineering contexts), 갈래 (branch, in place of "branch" or "path"), 묶음 (bundle, in place of a proper name for a set such as 패키지 package, 종합본 compendium, or 전략 strategy), 판 (edition, in place of "version" or "basis"), 판정 (ruling, in place of 판단 judgment, 평가 evaluation, 확인 check, 결정 decision, and similar)
 - (Unneeded loanwords and acronyms) 프레임 (frame), 레버리지 (leverage), 컨틴전시 (contingency), 풀스택 (full stack, replace with 전주기), 게이트 (gate, as in "stage gates"), MVP, 통합패키지 (integrated package), 딥다이브 (deep dive, replace with 심층 분석 in-depth analysis), 인사이트 (insight, replace with 시사점), 피보팅 (pivoting), 게이트키핑 (gatekeeping), 에코시스템 (ecosystem), 트랜스포메이션 (transformation, replace with 디지털 전환 digital transition), 커버리지 (coverage), 헷지 (hedge)
 - (Forced nouns) 온전 (a noun made by cutting 한 off 온전한 "whole", regardless of context)
 - (기반 base) Avoid using it alone. Compounds such as 기반조성 (laying the groundwork) and 기반구축 (building the base) are allowed.
@@ -29,7 +29,7 @@ Non-preferred:
 Use with care:
 
 - (Nouns LLMs overuse to add authority) 핵심 (core), 본질 (essence), 근본 (root), 원칙 (principle)
-- (Nouns to watch for overuse) 결론 (conclusion, non-preferred in 결론적으로 "in conclusion"), 결과 (result), 영향 (impact), 영역 (area, when a specific object exists), 환경 (environment), 역량 (capability), 리스크 (risk), 한계 (limit), 격차 (gap), 문제 (problem), 이슈 (issue), 과제 (task), 체계 (system, as in "building a system"), 구조 (structure), 구축 (construction, when it is actual new development), 고도화 (upgrade, when it is a real improvement to an existing system), 선도 (leading), 정합 (consistency), 검증 (verification), 진단 (diagnosis), 평가 (evaluation), 판단 (judgment), 판정 (ruling), 통제 (control), 관리 (management), 책임 (responsibility), 근거 (basis), 객관 (objectivity), 주관 (subjectivity), 위험 (danger), 위협 (threat), 규제 (regulation), 컴플라이언스, 준법 (compliance), 논리 (logic), 우선, 순위 (priority, rank), 연결 (connection), 결합 (combination), 구성 (composition), 규칙 (rule), 명제 (proposition), 유보 (reservation), 확정 (finalization), 조직 (organization), 인사 (personnel), 보상 (compensation), 소속 (affiliation), 결정 (decision), 단일 (single), 매칭 (matching), 교차 (cross, not as a meta expression describing method)
+- (Nouns to watch for overuse) 결론 (conclusion, non-preferred in 결론적으로 "in conclusion"), 결과 (result), 영향 (impact), 영역 (area, when a specific object exists), 환경 (environment), 역량 (capability), 리스크 (risk), 한계 (limit), 격차 (gap), 문제 (problem), 이슈 (issue), 과제 (task), 체계 (system, as in "building a system"), 구조 (structure), 구축 (construction, when it is actual new development), 고도화 (upgrade, when it is a real improvement to an existing system), 선도 (leading), 정합 (consistency), 검증 (verification), 진단 (diagnosis), 평가 (evaluation), 판단 (judgment), 통제 (control), 관리 (management), 책임 (responsibility), 근거 (basis), 객관 (objectivity), 주관 (subjectivity), 위험 (danger), 위협 (threat), 규제 (regulation), 컴플라이언스, 준법 (compliance), 논리 (logic), 우선, 순위 (priority, rank), 연결 (connection), 결합 (combination), 구성 (composition), 규칙 (rule), 명제 (proposition), 유보 (reservation), 확정 (finalization), 조직 (organization), 인사 (personnel), 보상 (compensation), 소속 (affiliation), 결정 (decision), 단일 (single), 매칭 (matching), 교차 (cross, not as a meta expression describing method)
 - (Allowed when they refer to an actual object) 거버넌스 (governance, an actual organizational operating structure), 바우처 (voucher, a policy instrument), 생태계 (ecosystem, an actual structure of interaction among many actors), 시너지 (synergy, when the specific effect is stated), 로드맵 (roadmap, an actual schedule), 허브 (hub, an actual hub function), 플랫폼 (platform, an actual technology platform), 솔루션 (solution, an actual product or service), 아젠다 (agenda, an actual agenda), 이니셔티브 (initiative, an actual program), 벤치마크 (benchmark, an actual comparison baseline), 마중물 (priming water, limited to metaphors for initial policy investment)
 - (Engineering contexts only) 입력 (input), 출력 (output)
 - (Only for what the user can deliver) 약속 (promise, a promise written in a document becomes an obligation the user must meet)
@@ -77,9 +77,10 @@ Use with care: 특히 (especially, overuse kills its emphasis), 결정적 (decis
 Non-preferred:
 
 - (Glue phrases) 이러한 맥락에서 (in this context), 해당 맥락을 고려하면 (considering this context), 이러한 관점에서 볼 때 (from this perspective), 이러한 측면에서 (in this respect), 이러한 흐름 속에서 (amid this flow)
-- (Overused connectives) 그렇기 때문에 (therefore), 이는 (this), 즉 (that is, when overused)
+- (Overused connectives) 그렇기 때문에 (therefore), 이는 (this), 이러한 (such, this), 즉 (that is, when overused)
+- (Reflex caveats) 다만 (however), 단 (provided that), 물론 (of course) attached to a caveat or an exception that leaves the conclusion unchanged
 - (Literal translations) 나아가 (furthermore), 더불어 (in addition), 뿐만 아니라 (not only), 궁극적으로 (ultimately), 추가적으로 (additionally)
-- (Meta narration) 결론적으로 (in conclusion), 요약하자면 (to summarize), 정리하면 (to sum up), 이와 관련하여 (in this regard)
+- (Meta narration) 결론적으로 (in conclusion), 결론부터 말하면 (to start with the conclusion), 요약하자면 (to summarize), 정리하면 (to sum up), 이와 관련하여 (in this regard)
 - (Invites tautology) 다시 말해 (in other words)
 - (Used only to switch topics without a real relation) 한편 (meanwhile), 반면 (on the other hand), 이를 바탕으로 (based on this), 이를 통해 (through this, blurs causation)
 
@@ -95,6 +96,12 @@ Non-preferred: -에 있어서 (において), -인 셈이다 (わけだ), -것�
 Non-preferred: delve (깊이 파고들다, 심층적으로 들여다보다), landscape (지형, 지형도), tapestry (다채로운 무엇, 풍부한 직물), realm (무엇의 세계), leverage (레버리지), navigate (헤쳐나가다), underscore (강조하다, 밑줄 긋다), showcase (보여주다, 선보이다), harness (동력으로 삼다), spearhead (진두지휘), multifaceted (다면적), ever-evolving (끊임없이 진화하는), game-changer (게임체인저), groundbreaking (획기적, 선구적), paradigm shift (패러다임 전환), holistic (총체적, 전인적), not just A, but B (단순한 A가 아니라 B)
 
 Use with care: intricate (정교한, when it is an actually precise structure), pivotal (중추적, when it is an actual key role), crucial (필수적, when it is an actual requirement), robust (견고한, 탄탄한, when it is actual stability), foster (육성, when it is actual training), bolster (뒷받침, when the support is stated), cutting-edge (최첨단, when it is the actual level of technology), seamlessly (원활하게, when it is the actual integration quality), stakeholder (이해관계자, when the parties are stated)
+
+## Calqued collocations
+
+Non-preferred: noun-predicate pairs carried over from English word for word. Examples: "-로 기능한다" (function as), "-에 중요한 역할을 한다" (play a role), "버그를 닫다" (close a bug), "이름을 채우다" (fill in a name), "경고가 붙는다" (a warning attaches), "회귀가 발생" (a regression occurs), "주장이 약해진다" (the claim weakens), "방어 가능한 주장" (a defensible claim), and similar. Use the predicate Korean speakers pair with that noun (state the actual effect, 고치다 fix, 입력하다 enter, 표시되다 is shown, 성능 저하 performance drop, 설득력이 떨어진다 becomes less persuasive, 타당한 주장 a valid claim, and similar). Keep terms such as "회귀 테스트" (regression test) and "회귀분석" (regression analysis).
+
+Use with care: 경로 (path, when it names a real path such as a route, a file path, or a network path)
 
 ## Stock phrases
 
@@ -118,7 +125,7 @@ Use with care: -을 위한 기반을 마련 (lay the groundwork for, when specif
 
 Non-preferred structures: repeated contrast emphasis, self-posed questions, dramatic fragments, staccato short sentences, habitual lists of three, declarative definitions that line up known facts as "X is Y", tautology, number announcements, "X라는 Y" abstract repackaging, meta narration about the text itself or the writing process, sentences made only of stacked nouns ("디지털 산업의 집적도" the concentration of the digital industry over "디지털 산업 집적 지표" digital industry concentration index)
 
-Non-preferred symbols: em dashes, ellipses for dramatic pause (marking omissions in quotations is allowed), emphasis bold scattered through sentences, label colons such as "Conclusion:", semicolons used to avoid splitting sentences, slashes such as "cost/benefit", joining hyphens such as "short-mid term"
+Non-preferred symbols: em dashes, ellipses for dramatic pause (marking omissions in quotations is allowed), emphasis bold scattered through sentences, label colons such as "Conclusion:", semicolons used to avoid splitting sentences, middle dots that string unrelated pieces of information on one line ("12 cases · 3 groups"), slashes such as "cost/benefit", joining hyphens such as "short-mid term"
 
 ## Checklist
 
@@ -126,7 +133,7 @@ Non-preferred symbols: em dashes, ellipses for dramatic pause (marking omissions
 - Are non-preferred modifiers (획기적, 혁신적, 선도적, 압도적, 진정한, and so on) absent?
 - Are non-preferred adverbs (매우, 상당히, 굉장히, 그야말로, 궁극적으로, and so on) absent?
 - Are non-preferred connecting expressions ("이러한 맥락에서", "결론적으로", and so on) absent?
-- Are Japanese-style literal translations and literal translations of English stock words absent?
+- Are Japanese-style literal translations, literal translations of English stock words, and calqued collocations absent?
 - Are conjugations of verbs with sexual connotations (넣다, 빼다, 박다, 쑤시다, and so on) absent?
 - Is no use-with-care word repeated twice or more in one paragraph?
 - Are em dashes, emphasis bold, and dramatic ellipses absent?
