@@ -3,7 +3,7 @@ name: no-standard
 description: "write-standard와 code-standard를 불러오지 않고 답하게 하는 스킬. 사용자가 \"/no-standard\"로 호출하거나 write-standard와 code-standard 없이 답해 달라고 요청한 경우에 사용한다. 사용자의 요청이 없으면 불러오지 않는다."
 metadata:
   generator: pref-architect
-  generator-version: "1.4"
+  generator-version: "1.5"
 ---
 
 # no-standard

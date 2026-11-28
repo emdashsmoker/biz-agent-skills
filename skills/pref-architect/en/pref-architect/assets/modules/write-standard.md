@@ -3,7 +3,7 @@ name: write-standard
 description: "Writing standard for every non-code response, including writing, research, analysis, summaries, and everyday search answers. Covers thinking order, sentences, document structure, evidence and sources, wording, and collaboration steps. Load it before writing a response when the always-on instructions say to load this module or when the user asks for \"/write-standard\", \"writing standard\", \"report style\", and similar. For tasks that also involve code or visualization, use it together with code-standard."
 metadata:
   generator: pref-architect
-  generator-version: "1.5"
+  generator-version: "1.6"
 ---
 
 # write-standard
