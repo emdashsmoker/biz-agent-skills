@@ -43,6 +43,7 @@ license: GPL-3.0-or-later with an output exception. Terms in LICENSE and NOTICE.
 같은 내용을 두 모드로 쓰면 다음과 같다.
 
 ```markdown
+단문 모드
 ## 반복 입력 항목의 통합 필요
 - 현장 담당자는 같은 고객 정보를 여러 화면에 반복 입력하여 건당 처리 시간 증가
     + 월말 정산 기간에 입력량 집중으로 반복 입력 불편 신고 증가
@@ -50,9 +51,8 @@ license: GPL-3.0-or-later with an output exception. Terms in LICENSE and NOTICE.
 - 운영팀은 반복 입력 항목을 단일 화면으로 통합하여 입력 부담 경감 추진
     + 통합 대상 항목은 현장 설문 결과로 우선순위 설정
     + 시범 부서의 처리 시간 변화를 확인한 후 전 부서로 확대
-```
 
-```markdown
+연결 모드
 ## 반복 입력 항목의 통합 필요
 - 현장 담당자가 같은 고객 정보를 여러 화면에 반복 입력하면서 건당 처리 시간이 늘어남
     + 월말 정산 기간에 입력량이 몰리면서 반복 입력 불편 신고가 증가
