@@ -49,6 +49,7 @@ Non-preferred:
 - (Assertion disguised as neutrality) 좌우 (determine, sway)
 - (Words unused in work and daily life) 통독 (read through, overused to mean reading the whole text)
 - (Verbs with sexual connotations, in every conjugation) 넣다 (put in, including 넣을 것, replace with 포함 include or 추가 add), 빼다 (pull out, including 뺄 것, replace with 제외 exclude or 삭제 delete), 박다 (drive in, a literal translation of hardcode, replace with 명시 state explicitly or 고정 fix), 쑤시다 (poke, replace with 점검 inspect or 조사 investigate), 동시삽입 (simultaneous insertion, replace with 병기)
+- (Native words with a colloquial tone, in every conjugation) 잇다 (join, including 잇는, replace with 연계 link), 쓰다 (use or write, including 씀, replace with 사용 use or 작성 write), 바꾸다 (change, replace with 변경 change or 전환 convert), 짚다 (point at, replace with 지적 point out), 따지다 (pick apart, replace with 검토 review), and any other native word with a colloquial tone that contains a tense consonant (ㄲ, ㄸ, ㅃ, ㅆ, ㅉ) (replace with a formal word of the same meaning)
 
 Use with care:
 
@@ -130,6 +131,7 @@ Non-preferred symbols: em dashes, ellipses for dramatic pause (marking omissions
 - Are Japanese-style literal translations and literal translations of English stock words absent?
 - Are 판정 and literal translations of English predicates (기능하다, 회귀가 발생, 버그를 닫다, and so on) absent?
 - Are conjugations of verbs with sexual connotations (넣다, 빼다, 박다, 쑤시다, and so on) absent?
+- Are conjugations of native words with a colloquial tone (잇다, 쓰다, 바꾸다, and native words with a tense consonant) absent?
 - Is no use-with-care word repeated twice or more in one paragraph?
 - Are em dashes, emphasis bold, and dramatic ellipses absent?
 

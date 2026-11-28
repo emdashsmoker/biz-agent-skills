@@ -87,7 +87,7 @@ Use these words only under their conditions.
 - (Translationese verbs) 야기 (cause), 수반 (entail), 내포 (imply), 탈피 (break away, as in "기존 방식을 탈피" break away from the old way)
 - (Assertion posing as neutral) 좌우 (determine)
 - (Unused in work or daily language) 통독 (reading through), overused to mean reading the whole text
-- (Colloquial or vulgar connotation) 넣다 (put in; replace with 포함 "include" or 추가 "add"), 빼다 (take out; replace with 제외 "exclude" or 삭제 "delete"), 박다 (hammer in; replace with 명시 "specify" or 고정 "fix"), 쑤시다 (poke; replace with 점검 "inspect" or 조사 "investigate"), 동시삽입 (simultaneous insertion; replace with 병기 "state alongside"). All inflected forms count, such as "넣을 것", "뺄 것", "빼고", "코드에 박아 넣다" (hard-code), "박음", "쑤심"
+- (Colloquial or vulgar connotation) 넣다 (put in; replace with 포함 "include" or 추가 "add"), 빼다 (take out; replace with 제외 "exclude" or 삭제 "delete"), 박다 (hammer in; replace with 명시 "specify" or 고정 "fix"), 쑤시다 (poke; replace with 점검 "inspect" or 조사 "investigate"), 동시삽입 (simultaneous insertion; replace with 병기 "state alongside"), 잇다 (join; replace with 연계 "link"), 쓰다 (use or write; replace with 사용 "use" or 작성 "write"), 바꾸다 (change; replace with 변경 "change" or 전환 "convert"), 짚다 (point at; replace with 지적 "point out"), 따지다 (pick apart; replace with 검토 "review"), and any other native word with a colloquial tone that contains a tense consonant (ㄲ, ㄸ, ㅃ, ㅆ, ㅉ) (replace with a formal word of the same meaning). All inflected forms count, such as "넣을 것", "뺄 것", "빼고", "코드에 박아 넣다" (hard-code), "박음", "쑤심", "잇는", "씀"
 
 ### Cautionary
 
@@ -222,7 +222,7 @@ Words that English-language LLMs overuse, appearing in Korean output as literal 
 - Are non-preferred linking expressions ("이러한 맥락에서", "결론적으로") absent?
 - Are translationese and literal forms of English LLM words absent?
 - Are 판정 and its same-tone swaps 판별 and 판가름 absent?
-- Are inflected forms of colloquial or vulgar verbs (넣다, 빼다, 박다, 쑤시다) absent?
+- Are inflected forms of colloquial or vulgar words (넣다, 빼다, 박다, 쑤시다, 잇다, 쓰다, 바꾸다, and native words with a colloquial tone that contain a tense consonant) absent?
 - Are contrast emphasis, self-posed questions, and count announcements absent?
 - Did you write concrete grounds in place of exaggerated evaluations?
 - Does no cautionary word appear twice or more in one paragraph?

@@ -444,7 +444,7 @@ Words that generative models overuse signal machine-written text to readers. Rep
 - (Korean, literal translations of English predicates) Replace -로 기능한다 (functions as), 방어 가능하다 (defensible), 회귀가 발생 (a regression occurs), 버그를 닫다 (close a bug), 양식을 채우다 (fill in a form), and 경고가 붙는다 (a warning comes with) with the actual act (성능 저하, 오류 재발, 수정, 입력, 표시). Keep established terms such as 회귀 테스트 (regression test) and issue tracker status names
 - (Korean, empty nouns) Do not use placeholder nouns such as 것, 곳, 거, 셈, or 부분. Name the referent with a concrete noun. Shorten "-하는 것이 필요" to "- 필요". Replace "-한 것으로 보임" with a direct statement plus its evidence. Do not swap '것' for '곳', '거', '부분', or '셈'
 - (Korean, nominal endings) End "목적을 달성할 필요" as "목적 달성 필요" by dropping the adnominal form
-- (Korean, connotation) 넣다, 빼다, and 박다 are avoided in workplace documents because of their connotations, so use 포함, 제외, and 명시
+- (Korean, connotation) 넣다, 빼다, and 박다 are avoided in workplace documents because of their connotations, so use 포함, 제외, and 명시. Replace 잇다 (join) and native words with a colloquial tone that contain a tense consonant (ㄲ, ㄸ, ㅃ, ㅆ, ㅉ), such as 쓰다, 바꾸다, 짚다, and 따지다 (use or write, change, point at, pick apart), with formal words of the same meaning such as 연계, 사용, 작성, 변경, 지적, and 검토
 - (English, avoid) delve, landscape, tapestry, realm, leverage, navigate, underscore, showcase, harness, spearhead, multifaceted, ever-evolving, game-changer, groundbreaking, paradigm shift, holistic, "not just A but B"
 - (English, use sparingly) Use robust, seamless, crucial, pivotal, and cutting-edge only when they point to a real object
 
