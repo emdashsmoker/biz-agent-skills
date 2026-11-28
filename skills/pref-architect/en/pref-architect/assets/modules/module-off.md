@@ -3,7 +3,7 @@ name: no-standard
 description: "Makes the model answer without loading write-standard and code-standard. Use it when the user calls \"/no-standard\" or asks for an answer without write-standard and code-standard. Do not load it without a user request."
 metadata:
   generator: pref-architect
-  generator-version: "1.4"
+  generator-version: "1.5"
 ---
 
 # no-standard
