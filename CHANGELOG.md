@@ -40,6 +40,8 @@ Changelog rules
 - Added unfounded praise, post-hoc excuses and unfounded progress reports to the meta-commentary rules (#109)
 - Added a rule that states results the writer ran and checked as settled (#109)
 - Changed the wording of the instructions to name the actual act instead of stock words such as 판정, 평가 and 짝, keeping 평가 for institutional and established concepts (#109)
+- Added 쓰다 and 잇다 to the non-preferred words, replaced with formal words such as 사용, 작성 and 연계 (#111)
+- Added a rule that replaces words whose double consonant (ㄲ, ㄸ, ㅃ, ㅆ, ㅉ) gives a strong colloquial tone, such as 뽑다, 쓰다 and 짝, with formal words of the same meaning (#111)
 
 * 명사형 종결 문장을 생략된 조사와 종결 어미를 갖춘 평서문으로 복원하는 문법 점검 추가 (자연스럽게 복원되지 않거나 의미가 달라지는 문장의 재작성) (#107)
 * 자동화 작업에서 커밋 메시지, PR 메시지, 게시글, 메일 등 외부에 게시하는 글을 마크다운 초안으로 먼저 검토하는 단계 추가 (외부 독자에게 필요한 내용, 공개해도 안전한 정보, 스킬 규칙 반영 여부의 점검과 모호한 지점의 사용자 질의) (#108)
@@ -51,6 +53,8 @@ Changelog rules
 * 메타 서술 기준에 근거 없는 칭찬, 사후 해명, 근거 없는 진행 보고 추가 (#109)
 * 직접 실행하고 확인한 결과를 확정해서 쓰는 규칙 추가 (#109)
 * 판정, 평가, 짝 등 상투 어휘 대신 실제 행위를 나타내는 어휘로 지침 문구 변경 (제도 용어와 확립된 개념의 평가는 유지) (#109)
+* 비선호 어휘에 쓰다, 잇다 추가 (사용, 작성, 연계 등 격식 어휘로 대체) (#111)
+* 쌍자음(ㄲ, ㄸ, ㅃ, ㅆ, ㅉ)이 들어 구어 어감이 강한 어휘(뽑다, 쓰다, 짝 등)를 같은 뜻의 격식 어휘로 대체하는 규칙 추가 (#111)
 
 ### biz-code-style-lite
 - Added a grammar check that restores a Korean noun-ending sentence to a declarative sentence with the omitted particles and the ending in place (rewriting of sentences that do not restore naturally or that change meaning) (#107)
@@ -59,6 +63,8 @@ Changelog rules
 - Added calques of English predicates such as -로 기능한다, 방어 가능하다, 회귀가 발생 and 버그를 닫다 to the translationese patterns (#109)
 - Added a rule that states results the writer ran and checked as settled (#109)
 - Changed the wording of the instructions to name the actual act instead of stock words such as 판정, 평가 and 짝, keeping 평가 for institutional and established concepts (#109)
+- Added 쓰다 and 잇다 to the non-preferred words, replaced with formal words such as 사용, 작성 and 연계 (#111)
+- Added a rule that replaces words whose double consonant (ㄲ, ㄸ, ㅃ, ㅆ, ㅉ) gives a strong colloquial tone, such as 뽑다, 쓰다 and 짝, with formal words of the same meaning (#111)
 
 * 명사형 종결 문장을 생략된 조사와 종결 어미를 갖춘 평서문으로 복원하는 문법 점검 추가 (자연스럽게 복원되지 않거나 의미가 달라지는 문장의 재작성) (#107)
 * 자동화 작업에서 커밋 메시지, PR 메시지, 게시글, 메일 등 외부에 게시하는 글을 마크다운 초안으로 먼저 검토하는 단계 추가 (외부 독자에게 필요한 내용, 공개해도 안전한 정보, 스킬 규칙 반영 여부의 점검과 모호한 지점의 사용자 질의) (#108)
@@ -66,6 +72,8 @@ Changelog rules
 * 번역투 유형에 -로 기능한다, 방어 가능하다, 회귀가 발생, 버그를 닫다 등 영어 서술어 직역 추가 (#109)
 * 직접 실행하고 확인한 결과를 확정해서 쓰는 규칙 추가 (#109)
 * 판정, 평가, 짝 등 상투 어휘 대신 실제 행위를 나타내는 어휘로 지침 문구 변경 (제도 용어와 확립된 개념의 평가는 유지) (#109)
+* 비선호 어휘에 쓰다, 잇다 추가 (사용, 작성, 연계 등 격식 어휘로 대체) (#111)
+* 쌍자음(ㄲ, ㄸ, ㅃ, ㅆ, ㅉ)이 들어 구어 어감이 강한 어휘(뽑다, 쓰다, 짝 등)를 같은 뜻의 격식 어휘로 대체하는 규칙 추가 (#111)
 
 ### clear-comm
 - Added 판정, 경로, 짝, 꽤 and 미친 듯이 to the expressions to avoid (#109)
@@ -131,6 +139,8 @@ Changelog rules
 - Added unfounded praise and rankings, generic empathy lines, post-hoc excuses, unfounded progress reports and unrequested caveats to the meta-commentary types (#109)
 - Added conclusion reversal by a new criterion and hedging of verified results to conclusion avoidance (#109)
 - Changed the wording of the instructions to name the actual act instead of stock words such as 판정, 평가 and 짝, keeping 평가 for institutional and established concepts (#109)
+- Added 쓰다 and 잇다 to the non-preferred words, replaced with formal words such as 사용, 작성 and 연계 (#111)
+- Added a rule that replaces words whose double consonant (ㄲ, ㄸ, ㅃ, ㅆ, ㅉ) gives a strong colloquial tone, such as 뽑다, 쓰다 and 짝, with formal words of the same meaning (#111)
 
 * 명사형 종결 문장을 생략된 조사와 종결 어미를 갖춘 평서문으로 복원하는 문법 점검 추가 (자연스럽게 복원되지 않거나 의미가 달라지는 문장의 재작성) (#107)
 * 비선호 어휘에 판정, 짝, 칭찬 용도의 통찰력, 꽤, 미친 듯이 추가 (#109)
@@ -141,6 +151,8 @@ Changelog rules
 * 메타 서술 유형에 근거 없는 칭찬과 순위 평가, 범용 공감 문구, 사후 해명, 근거 없는 진행 보고, 요청하지 않은 단서 추가 (#109)
 * 결론 회피 유형에 새 기준에 따른 결론 번복과 확인 사실 유보 추가 (#109)
 * 판정, 평가, 짝 등 상투 어휘 대신 실제 행위를 나타내는 어휘로 지침 문구 변경 (제도 용어와 확립된 개념의 평가는 유지) (#109)
+* 비선호 어휘에 쓰다, 잇다 추가 (사용, 작성, 연계 등 격식 어휘로 대체) (#111)
+* 쌍자음(ㄲ, ㄸ, ㅃ, ㅆ, ㅉ)이 들어 구어 어감이 강한 어휘(뽑다, 쓰다, 짝 등)를 같은 뜻의 격식 어휘로 대체하는 규칙 추가 (#111)
 
 ### logical-write-lite
 - Added a grammar check that restores a Korean noun-ending sentence to a declarative sentence with the omitted particles and the ending in place (rewriting of sentences that do not restore naturally or that change meaning) (#107)
@@ -150,6 +162,8 @@ Changelog rules
 - Added "A라기보다 B" and recasting the other person's words before correcting them to contrast framing (#109)
 - Added praise and excuses, and conclusion reversal, to the expression patterns (#109)
 - Changed the wording of the instructions to name the actual act instead of stock words such as 판정, 평가 and 짝, keeping 평가 for institutional and established concepts (#109)
+- Added 쓰다 and 잇다 to the non-preferred words, replaced with formal words such as 사용, 작성 and 연계 (#111)
+- Added a rule that replaces words whose double consonant (ㄲ, ㄸ, ㅃ, ㅆ, ㅉ) gives a strong colloquial tone, such as 뽑다, 쓰다 and 짝, with formal words of the same meaning (#111)
 
 * 명사형 종결 문장을 생략된 조사와 종결 어미를 갖춘 평서문으로 복원하는 문법 점검 추가 (자연스럽게 복원되지 않거나 의미가 달라지는 문장의 재작성) (#107)
 * 비선호 어휘에 판정, 짝, 칭찬 용도의 통찰력, 꽤, 미친 듯이 추가 (#109)
@@ -158,6 +172,8 @@ Changelog rules
 * 대비 강조 유형에 A라기보다 B와 상대 발언을 단순화한 뒤 바로잡는 형태 추가 (#109)
 * 표현 패턴에 칭찬과 해명, 결론 번복 추가 (#109)
 * 판정, 평가, 짝 등 상투 어휘 대신 실제 행위를 나타내는 어휘로 지침 문구 변경 (제도 용어와 확립된 개념의 평가는 유지) (#109)
+* 비선호 어휘에 쓰다, 잇다 추가 (사용, 작성, 연계 등 격식 어휘로 대체) (#111)
+* 쌍자음(ㄲ, ㄸ, ㅃ, ㅆ, ㅉ)이 들어 구어 어감이 강한 어휘(뽑다, 쓰다, 짝 등)를 같은 뜻의 격식 어휘로 대체하는 규칙 추가 (#111)
 
 ### long-task-ledger
 - Changed the wording of the instructions to name the actual act instead of stock words such as 판정, 평가 and 짝, keeping 평가 for institutional and established concepts (#109)
@@ -213,6 +229,9 @@ Changelog rules
 - Added the new slop rules to the write-standard module (words to avoid, calques of English predicates, proper nouns, praise and excuses, one conclusion under the user's criteria) (#109)
 - Changed the metadata version of the skill and the generator-version of the write-standard, code-standard and staged-work modules from 1.5 to 1.6 (#109)
 - Changed the wording of the instructions to name the actual act instead of stock words such as 판정, 평가 and 짝, keeping 평가 for institutional and established concepts (#109)
+- Added 쓰다 and 잇다 to the words to replace in the write-standard module, replaced with formal words such as 사용, 작성 and 연계 (#111)
+- Added a rule to the write-standard module that replaces words whose double consonant (ㄲ, ㄸ, ㅃ, ㅆ, ㅉ) gives a strong colloquial tone, such as 뽑다, 쓰다 and 짝, with formal words of the same meaning (#111)
+- Changed the metadata version of the skill and the generator-version of the write-standard module from 1.6 to 1.7 (#111)
 
 * write-standard와 code-standard 모듈에 명사형 종결 문장을 생략된 조사와 종결 어미를 갖춘 평서문으로 복원하는 문법 점검 추가 (자연스럽게 복원되지 않거나 의미가 달라지는 문장의 재작성) (#107)
 * 스킬의 metadata version과 동봉 모듈의 generator-version을 1.3에서 1.4로 변경 (#107)
@@ -221,6 +240,9 @@ Changelog rules
 * write-standard 모듈에 신규 슬롭 규칙 추가 (피하는 말, 영어 서술어 직역, 고유명사 표기, 칭찬과 해명, 사용자 기준의 단일 결론) (#109)
 * 스킬의 metadata version과 write-standard, code-standard, staged-work 모듈의 generator-version을 1.5에서 1.6으로 변경 (#109)
 * 판정, 평가, 짝 등 상투 어휘 대신 실제 행위를 나타내는 어휘로 지침 문구 변경 (제도 용어와 확립된 개념의 평가는 유지) (#109)
+* write-standard 모듈의 바꾸는 말에 쓰다, 잇다 추가 (사용, 작성, 연계 등 격식 어휘로 대체) (#111)
+* write-standard 모듈에 쌍자음(ㄲ, ㄸ, ㅃ, ㅆ, ㅉ)이 들어 구어 어감이 강한 어휘(뽑다, 쓰다, 짝 등)를 같은 뜻의 격식 어휘로 대체하는 규칙 추가 (#111)
+* 스킬의 metadata version과 write-standard 모듈의 generator-version을 1.6에서 1.7로 변경 (#111)
 
 ### project-plan
 - Added a rule to write each Korean noun-ending sentence of the overview body so that it restores to a natural declarative sentence with the same meaning when the omitted particles and the ending are added (#107)
@@ -251,6 +273,8 @@ Changelog rules
 - Added middle dots that are not part of official names to the symbol rules (#109)
 - Added unfounded praise and rankings, generic empathy lines, post-hoc excuses, unfounded progress reports and unrequested caveats to the meta-commentary types (#109)
 - Added conclusion reversal by a new criterion and hedging of verified results to conclusion avoidance (#109)
+- Added 쓰다 and 잇다 to the non-preferred words, replaced with formal words such as 사용, 작성 and 연계 (#111)
+- Added a rule that replaces words whose double consonant (ㄲ, ㄸ, ㅃ, ㅆ, ㅉ) gives a strong colloquial tone, such as 뽑다, 쓰다 and 짝, with formal words of the same meaning (#111)
 
 * 명사형 종결 문장을 생략된 조사와 종결 어미를 갖춘 평서문으로 복원하는 문법 점검 추가 (자연스럽게 복원되지 않거나 의미가 달라지는 문장의 재작성) (#107)
 * 비선호 어휘에 판정, 짝, 칭찬 용도의 통찰력, 꽤, 미친 듯이 추가 (#109)
@@ -261,6 +285,8 @@ Changelog rules
 * 기호 기준에 공식 명칭이 아닌 가운뎃점 추가 (#109)
 * 메타 서술 유형에 근거 없는 칭찬과 순위 평가, 범용 공감 문구, 사후 해명, 근거 없는 진행 보고, 요청하지 않은 단서 추가 (#109)
 * 결론 회피 유형에 새 기준에 따른 결론 번복과 확인 사실 유보 추가 (#109)
+* 비선호 어휘에 쓰다, 잇다 추가 (사용, 작성, 연계 등 격식 어휘로 대체) (#111)
+* 쌍자음(ㄲ, ㄸ, ㅃ, ㅆ, ㅉ)이 들어 구어 어감이 강한 어휘(뽑다, 쓰다, 짝 등)를 같은 뜻의 격식 어휘로 대체하는 규칙 추가 (#111)
 
 ### source-check
 - Changed the wording of the instructions to name the actual act instead of stock words such as 판정, 평가 and 짝, keeping 평가 for institutional and established concepts (#109)

@@ -5,7 +5,7 @@ A list that sorts words LLMs pick out of habit into preferred, non-preferred, an
 ## Criteria
 
 - (Preferred) Words readers accept without resistance, that do not mark text as AI output, and that fit a formal report style. Choose a preferred word first where a non-preferred word would go.
-- (Non-preferred) Words that meet one or more of these: words LLMs pick so often that they mark AI output, words whose deletion keeps the meaning, aggressive words that intimidate readers (차단 block, 배제 exclude, 도태 weed out, 금지 prohibit, and so on), assertive words that shut out objections (절대 absolutely, 오직 only, 유일 sole, 무조건 unconditionally, and so on), exaggerating words that inflate scale or degree without evidence (획기적 groundbreaking, 폭발적 explosive, 전례 없는 unprecedented, and so on), literal translations that carry English or Japanese structure over as is, and words avoided at work because they carry sexual connotations (넣다 put in, 빼다 pull out, 박다 drive in, 쑤시다 poke, and so on). Do not use them when writing.
+- (Non-preferred) Words that meet one or more of these: words LLMs pick so often that they mark AI output, words whose deletion keeps the meaning, aggressive words that intimidate readers (차단 block, 배제 exclude, 도태 weed out, 금지 prohibit, and so on), assertive words that shut out objections (절대 absolutely, 오직 only, 유일 sole, 무조건 unconditionally, and so on), exaggerating words that inflate scale or degree without evidence (획기적 groundbreaking, 폭발적 explosive, 전례 없는 unprecedented, and so on), literal translations that carry English or Japanese structure over as is, words avoided at work because they carry sexual connotations (넣다 put in, 빼다 pull out, 박다 drive in, 쑤시다 poke, and so on), and words avoided in formal documents because of a strong colloquial tone (쓰다 use or write, 잇다 join, and so on). Do not use them when writing.
 - (Use with care) Usable in the right place in limited amounts. Overuse weakens the word's emphasis and lowers the vocabulary density of the whole text until every word becomes noise. Use only where the context truly needs it, at minimum frequency, and not twice in one paragraph.
 - When revising existing text, find non-preferred words, check whether a preferred word can replace them, and confirm the meaning holds after replacement.
 - This list covers vocabulary only and does not govern sentence structure, sentence endings, overall structure, or length.
@@ -49,6 +49,7 @@ Non-preferred:
 - (Assertion disguised as neutrality) 좌우 (determine, sway)
 - (Words unused in work and daily life) 통독 (read through, overused to mean reading the whole text)
 - (Verbs with sexual connotations, in every conjugation) 넣다 (put in, including 넣을 것, replace with 포함 include or 추가 add), 빼다 (pull out, including 뺄 것, replace with 제외 exclude or 삭제 delete), 박다 (drive in, a literal translation of hardcode, replace with 명시 state explicitly or 고정 fix), 쑤시다 (poke, replace with 점검 inspect or 조사 investigate), 동시삽입 (simultaneous insertion, replace with 병기)
+- (Words with a strong colloquial tone, in every conjugation) 쓰다 (use or write, replace with a word such as 사용 use, 활용 apply, 작성 draft, or 기재 enter), 잇다 (join, replace with a word such as 연계 link). A word whose double consonant (ㄲ, ㄸ, ㅃ, ㅆ, ㅉ) gives it a strong colloquial tone, such as 뽑다, 쓰다 and 짝, is replaced with a formal word of the same meaning even when this list does not name it
 
 Use with care:
 
@@ -130,6 +131,7 @@ Non-preferred symbols: em dashes, ellipses for dramatic pause (marking omissions
 - Are Japanese-style literal translations and literal translations of English stock words absent?
 - Are 판정 and literal translations of English predicates (기능하다, 회귀가 발생, 버그를 닫다, and so on) absent?
 - Are conjugations of verbs with sexual connotations (넣다, 빼다, 박다, 쑤시다, and so on) absent?
+- Are words with a strong colloquial tone (쓰다, 잇다, colloquial words with a double consonant, and so on) absent?
 - Is no use-with-care word repeated twice or more in one paragraph?
 - Are em dashes, emphasis bold, and dramatic ellipses absent?
 
