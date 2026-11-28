@@ -31,13 +31,17 @@ Changelog rules
 
 ### biz-code-style
 - Added a grammar check that restores a Korean noun-ending sentence to a declarative sentence with the omitted particles and the ending in place (rewriting of sentences that do not restore naturally or that change meaning) (#107)
+- Added a step that reviews outward-facing text of automated work, such as commit messages, PR messages, posts, and emails, as a Markdown draft before publishing (check of reader needs, safe disclosure, and the skill rules, with questions to the user on ambiguous points) (#108)
 
 * 명사형 종결 문장을 생략된 조사와 종결 어미를 갖춘 평서문으로 복원하는 문법 점검 추가 (자연스럽게 복원되지 않거나 의미가 달라지는 문장의 재작성) (#107)
+* 자동화 작업에서 커밋 메시지, PR 메시지, 게시글, 메일 등 외부에 게시하는 글을 마크다운 초안으로 먼저 검토하는 단계 추가 (외부 독자에게 필요한 내용, 공개해도 안전한 정보, 스킬 규칙 반영 여부의 점검과 모호한 지점의 사용자 질의) (#108)
 
 ### biz-code-style-lite
 - Added a grammar check that restores a Korean noun-ending sentence to a declarative sentence with the omitted particles and the ending in place (rewriting of sentences that do not restore naturally or that change meaning) (#107)
+- Added a step that reviews outward-facing text of automated work, such as commit messages, PR messages, posts, and emails, as a Markdown draft before publishing (check of reader needs, safe disclosure, and the skill rules, with questions to the user on ambiguous points) (#108)
 
 * 명사형 종결 문장을 생략된 조사와 종결 어미를 갖춘 평서문으로 복원하는 문법 점검 추가 (자연스럽게 복원되지 않거나 의미가 달라지는 문장의 재작성) (#107)
+* 자동화 작업에서 커밋 메시지, PR 메시지, 게시글, 메일 등 외부에 게시하는 글을 마크다운 초안으로 먼저 검토하는 단계 추가 (외부 독자에게 필요한 내용, 공개해도 안전한 정보, 스킬 규칙 반영 여부의 점검과 모호한 지점의 사용자 질의) (#108)
 
 ### digest
 - Added a rule to write each Korean noun-ending sentence so that it restores to a natural declarative sentence with the same meaning when the omitted particles and the ending are added (#107)
@@ -77,9 +81,13 @@ Changelog rules
 ### pref-architect
 - Added a grammar check to the write-standard and code-standard modules that restores a Korean noun-ending sentence to a declarative sentence with the omitted particles and the ending in place (rewriting of sentences that do not restore naturally or that change meaning) (#107)
 - Changed the metadata version of the skill and the generator-version of the bundled modules from 1.3 to 1.4 (#107)
+- Added a step to the code-standard module that reviews outward-facing text of automated work, such as commit messages, PR messages, posts, and emails, as a Markdown draft before publishing (check of reader needs, safe disclosure, and the module rules, with questions to the user on ambiguous points) (#108)
+- Changed the metadata version of the skill and the generator-version of the bundled modules from 1.4 to 1.5 (#108)
 
 * write-standard와 code-standard 모듈에 명사형 종결 문장을 생략된 조사와 종결 어미를 갖춘 평서문으로 복원하는 문법 점검 추가 (자연스럽게 복원되지 않거나 의미가 달라지는 문장의 재작성) (#107)
 * 스킬의 metadata version과 동봉 모듈의 generator-version을 1.3에서 1.4로 변경 (#107)
+* code-standard 모듈에 자동화 작업에서 커밋 메시지, PR 메시지, 게시글, 메일 등 외부에 게시하는 글을 마크다운 초안으로 먼저 검토하는 단계 추가 (외부 독자에게 필요한 내용, 공개해도 안전한 정보, 모듈 규칙 반영 여부의 점검과 모호한 지점의 사용자 질의) (#108)
+* 스킬의 metadata version과 동봉 모듈의 generator-version을 1.4에서 1.5로 변경 (#108)
 
 ### project-plan
 - Added a rule to write each Korean noun-ending sentence of the overview body so that it restores to a natural declarative sentence with the same meaning when the omitted particles and the ending are added (#107)
