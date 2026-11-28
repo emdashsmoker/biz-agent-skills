@@ -1,2 +1,2 @@
 4af2c20a6b4ade549fdb5dc8e90c98eef1db153a3b989863b9cc5ac428e6ef8e  onto-mece-en.skill
-b51fed4f3076d485bc4eddb996ba4539383fc1b448912c8e8bedfb2f9d207a50  onto-mece-ko.skill
+aefa99c13769002cd430c47f7c6f7f8889ed0b8fe3390d3c9e980b7d700b862f  onto-mece-ko.skill

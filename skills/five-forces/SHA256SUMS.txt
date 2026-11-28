@@ -1,2 +1,2 @@
 111530a1fca0e21a64681890a2a3e9dabb53fa98cc1cee15052a4e3a242b4f20  five-forces-en.skill
-2e5067c10a277ff0d9374c1769e861ac56d97cb9bb8419ea00516f1f96307a05  five-forces-ko.skill
+ec2ff11ea4cbe03d18e212c0a2d83abeb78678b0fe9e94ca57055d11ea834ccb  five-forces-ko.skill

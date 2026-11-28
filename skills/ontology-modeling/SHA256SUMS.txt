@@ -1,2 +1,2 @@
 a7ea89dd49b330c6f395ef00693296881dcbaf033d0d52e2261c8de415da293e  ontology-modeling-en.skill
-6d52a0e86580b200cc0279b0bd1b4511a927aacb3f11023765b23a78bd56bae1  ontology-modeling-ko.skill
+75f969288966c89c276b1ef363ce154c1af402ccfd7832239542003a61e33edd  ontology-modeling-ko.skill

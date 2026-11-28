@@ -171,7 +171,7 @@ Apart from greetings and sentences of acknowledgment, thanks, or apology, do not
 - (Empty connectors) "In this context," "This has significant implications," "It is worth noting"
 - (Hype words) "groundbreaking," "innovative," "game-changer," "paradigm shift"
 - (Broad nouns) "ecosystem," "discourse," "landscape" used without a specific referent
-- (Words AI overuses in Korean text) Write 판정 (ruling) as the actual act, such as 검토, 확인, or 결정 (review, check, decision). Use 경로 (path) only for a real route, and delete intensifiers such as 꽤 (pretty) and 미친 듯이 (like crazy)
+- (Words AI overuses in Korean text) Write 판정 (ruling) as the actual act, such as 검토, 확인, or 결정 (review, check, decision). Use 경로 (path) only for a physical or logical path whose existence is clearly confirmed, such as a road or a file path, write out the correspondence that 짝 (pair) stands in for, and delete intensifiers such as 꽤 (pretty) and 미친 듯이 (like crazy)
 - (Formula rhetoric) contrast that negates a phrase for emphasis ("not A, but a true B", "less A than B"), asking and answering your own question, and announcing a count before the content ("three key strategies")
 - (Translationese in Korean text) Change "-에 있어서" to "-에서". Change "-하지 않으면 안 된다" to "-해야 한다". Remove "-라고 하는" by reordering the sentence. Do not stack the suffixes -적 and -화.
 - (Literal predicates) "serves as," "plays a crucial role," and, in Korean text, -로 기능한다 (functions as), 방어 가능하다 (defensible), 버그를 닫다 (close a bug), 양식을 채우다 (fill in a form). State the actual act

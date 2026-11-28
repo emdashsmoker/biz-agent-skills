@@ -436,7 +436,7 @@ Apply to code comments, commit messages, logs, chart and diagram labels, slide c
 
 Words that generative models overuse signal machine-written text to readers. Replace the words below with concrete expressions. Leave quoted originals, proper nouns, legal terms, and technical standard names unchanged. If the user asks for a specific word, use it.
 
-- (Korean, avoid) 맥락, 담론, 지형, 함의, 패러다임, 게임체인저, 인사이트, 딥다이브, 레버리지, 매핑, 획기적, 혁신적, 선도적, 압도적, 진정한, 궁극적, 매우, 상당히, 사실상, 그야말로, 축 and 종 attached to numbers ("두 축", "3종"), 묶음 (bundle), 판 (edition, in place of version or basis), 판정 (ruling; replace with the actual act such as 검토, 분류, 확인, 결정), 통찰력 (insight, as praise), 꽤 (pretty), 미친 듯이 (like crazy)
+- (Korean, avoid) 맥락, 담론, 지형, 함의, 패러다임, 게임체인저, 인사이트, 딥다이브, 레버리지, 매핑, 획기적, 혁신적, 선도적, 압도적, 진정한, 궁극적, 매우, 상당히, 사실상, 그야말로, 축 and 종 attached to numbers ("두 축", "3종"), 묶음 (bundle), 판 (edition, in place of version or basis), 판정 (ruling; replace with the actual act such as 검토, 분류, 확인, 결정), 통찰력 (insight, as praise), 꽤 (pretty), 미친 듯이 (like crazy), 짝 (pair, standing in for the correspondence between two things)
 - (Korean, empty phrases) "이러한 맥락에서", "결론적으로", "시사하는 바가 크다", "중요한 것은", "주목할 점은", "-의 필요성이 대두되고 있다"
 - (Korean, use sparingly) Use 핵심, 본질, 체계, 구축, 고도화, 강화, 검증, 전략적, 체계적, 효과적, 특히, and 약속 no more than once per paragraph. Use 출발, 계측, and 실측 only when something actually departs or is measured, and never figuratively
 - (Korean, translationese) -에 있어서, -에 대하여, -을 통하여, -로 인하여, -라고 하는, -인 셈이다, -것은 아닐까, -하지 않으면 안 된다, overuse of -적 and -화

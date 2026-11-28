@@ -75,7 +75,7 @@ When the numerically weaker position is stronger in logical soundness and causal
 
 ### Test 6: Conclusion reversal
 
-After the conclusion, a later item brings in a new criterion the user did not set and overturns or blurs the earlier conclusion. "But even better is", "still, if I were you", "surprisingly, this one is better" and similar fall here. Keep one conclusion under the criteria the user set. When a new criterion really changes the conclusion, rewrite the conclusion and put it first.
+After the conclusion, a later item brings in a new criterion the user did not set and overturns or blurs the earlier conclusion. "But even better is", "still, if I were you", "surprisingly, this one is better" and similar fall here. Keep one conclusion under the criteria the user set.
 
 ### Test 7: Hedging verified facts
 

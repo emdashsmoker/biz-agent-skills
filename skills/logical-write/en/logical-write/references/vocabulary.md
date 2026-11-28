@@ -34,7 +34,7 @@ A list of words LLMs habitually overuse, sorted into preferred, non-preferred, a
 - (Authoritarian tone) 엄수 (strict observance)
 - (Unneeded loanwords) 프레임 (frame), 레버리지 (leverage), 컨틴전시 (contingency), 게이트 (gate, as in "단계별 게이트" stage gates), 커버리지 (coverage), 헷지 (hedge), MVP, 통합패키지 (integrated package)
 - (Direct English borrowings) 딥다이브 (deep dive, replace with 심층 분석 "in-depth analysis"), 인사이트 (insight, replace with 시사점 "implication"), 피보팅 (pivoting), 게이트키핑 (gatekeeping), 에코시스템 (ecosystem, replace with 생태계), 트랜스포메이션 (transformation, replace with 디지털 전환 "digital transition"), 풀스택 (full stack, as in "풀스택 솔루션", replace with 전주기 "full life cycle"), 매핑 (mapping, replace with 대응 "correspondence", 연결 "link", or 배치 "placement"), 정립 (establishment, a literal rendering of "establish", as in "체계 정립" establishing a system), 통찰 and 통찰력 (insight, a literal rendering used to praise the reader or the content)
-- (LLM favorites) 괴리 (disconnect, as in "인식과 현실의 괴리" gap between perception and reality), 묵음 (muting), 차등 (differentiated grading), 전량 (entire quantity), 뽑기 (picking) and every other form of 뽑다 (pick) such as 뽑음, 병렬 (parallel), 한정 (limitation), 병목 (bottleneck) outside real process analysis, 값 (value) outside engineering contexts, 갈래 (branch) used in place of "branch" or "path", 묶음 (bundle) used in place of the proper name of a set (패키지 package, 종합본 compendium, 전략 strategy, and so on), 판 (edition) used in place of "version" or "basis", 판정 (ruling; replace with the word for the actual act, such as 검토 review, 분류 classification, 확인 check, 결정 decision, and avoid same-tone swaps such as 판별 or 판가름)
+- (LLM favorites) 괴리 (disconnect, as in "인식과 현실의 괴리" gap between perception and reality), 묵음 (muting), 차등 (differentiated grading), 전량 (entire quantity), 뽑기 (picking) and every other form of 뽑다 (pick) such as 뽑음, 병렬 (parallel), 한정 (limitation), 병목 (bottleneck) outside real process analysis, 값 (value) outside engineering contexts, 갈래 (branch) used in place of "branch" or "path", 묶음 (bundle) used in place of the proper name of a set (패키지 package, 종합본 compendium, 전략 strategy, and so on), 판 (edition) used in place of "version" or "basis", 판정 (ruling; replace with the word for the actual act, such as 검토 review, 분류 classification, 확인 check, 결정 decision, and avoid same-tone swaps such as 판별 or 판가름), 짝 (pair, standing in for the correspondence between two things, as in "주장과 근거의 짝" the pair of claim and evidence)
 - (Forced noun) 온전 (wholeness), formed by cutting 한 off the adjective 온전한 (whole)
 
 ### Cautionary
@@ -71,7 +71,7 @@ Use these words only under their conditions.
 - (입력 input, 출력 output) Only in engineering contexts
 - (언어 language) Only for real languages such as Korean, English, or language models. Not in a figurative sense
 - (약속 promise) Only for something the user can actually deliver. A promise written in a document becomes an obligation the user must meet
-- (경로 path) Only for a real route such as a distribution, infection, or file path. Not as a metaphor for a method or plan
+- (경로 path) Only for a physical or logical path whose existence is clearly confirmed, such as a road or a file path. Not as a metaphor for a method or plan
 - (감각 sense) Not as a stand-in for evidence, as in "실무 감각으로는" (in a practical sense)
 
 ## Verbs and predicates
