@@ -177,6 +177,7 @@ An error where a noun-ending sentence fails to drop the verb and leaves an adnom
 - Write "목적 달성을 할 필요" and "목적을 달성할 필요" (the need to achieve the goal) as "목적 달성 필요". Write "선행할 필요", "정의할 필요", and "내장시킬 필요" the same way, as "선행 필요", "정의 필요", and "내장 필요".
 - Complete unfinished noun phrases such as "작업의 부담" (the burden of work) with a predicate noun, as in "작업 부담 발생" (work burden arises).
 - If deleting the adnominal form keeps the meaning, fix it. Leave cases where the verb limits the object and deleting it changes the meaning, as in "삭제할 파일" (the file to delete).
+- Restore each noun-ending sentence to a predicate form by adding or substituting an ending such as -이다, -한다, or -다. If the restored sentence reads unnaturally or carries a different message from the original, treat it as a grammar error and revise it.
 
 ### Placeholder nouns (Korean text)
 

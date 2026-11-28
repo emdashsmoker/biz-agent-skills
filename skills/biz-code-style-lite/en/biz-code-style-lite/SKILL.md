@@ -440,7 +440,7 @@ Words that generative models overuse signal machine-written text to readers. Rep
 - (Korean, use sparingly) Use 핵심, 본질, 체계, 구축, 고도화, 강화, 검증, 전략적, 체계적, 효과적, 특히, 판정, and 약속 no more than once per paragraph. Use 출발, 계측, and 실측 only when something actually departs or is measured, and never figuratively
 - (Korean, translationese) -에 있어서, -에 대하여, -을 통하여, -로 인하여, -라고 하는, -인 셈이다, -것은 아닐까, -하지 않으면 안 된다, overuse of -적 and -화
 - (Korean, empty nouns) Do not use placeholder nouns such as 것, 곳, 거, 셈, or 부분. Name the referent with a concrete noun. Shorten "-하는 것이 필요" to "- 필요". Replace "-한 것으로 보임" with a direct statement plus its evidence. Do not swap '것' for '곳', '거', '부분', or '셈'
-- (Korean, nominal endings) End "목적을 달성할 필요" as "목적 달성 필요" by dropping the adnominal form
+- (Korean, nominal endings) End "목적을 달성할 필요" as "목적 달성 필요" by dropping the adnominal form. Restore each noun-ending sentence to a predicate form by adding or substituting an ending such as -이다, -한다, or -다. If the restored sentence reads unnaturally or carries a different message from the original, treat it as a grammar error and revise it
 - (Korean, connotation) 넣다, 빼다, and 박다 are avoided in workplace documents because of their connotations, so use 포함, 제외, and 명시
 - (English, avoid) delve, landscape, tapestry, realm, leverage, navigate, underscore, showcase, harness, spearhead, multifaceted, ever-evolving, game-changer, groundbreaking, paradigm shift, holistic, "not just A but B"
 - (English, use sparingly) Use robust, seamless, crucial, pivotal, and cutting-edge only when they point to a real object

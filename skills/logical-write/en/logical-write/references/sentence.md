@@ -179,6 +179,7 @@ Correct
 | 온전 세트 ("whole set", adjective ending dropped) | 온전한 세트 |
 
 - Watch for awkward sentence endings on nouns such as 구조 "structure", 우선 "priority", 결론 "conclusion", 훌륭 "excellent", -것 "thing", -곳 "place", and nouns ending in the final consonant ㅅ.
+- Restore each noun-ending sentence to a predicate form by adding or substituting an ending such as -이다, -한다, or -다. If the restored sentence reads unnaturally or carries a different message from the original, treat it as a grammar error and revise it.
 
 ### Leftover adnominal forms
 
