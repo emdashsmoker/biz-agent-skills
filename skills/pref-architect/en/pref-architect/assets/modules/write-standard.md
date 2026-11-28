@@ -3,7 +3,7 @@ name: write-standard
 description: "Writing standard for every non-code response, including writing, research, analysis, summaries, and everyday search answers. Covers thinking order, sentences, document structure, evidence and sources, wording, and collaboration steps. Load it before writing a response when the always-on instructions say to load this module or when the user asks for \"/write-standard\", \"writing standard\", \"report style\", and similar. For tasks that also involve code or visualization, use it together with code-standard."
 metadata:
   generator: pref-architect
-  generator-version: "1.5"
+  generator-version: "1.6"
 ---
 
 # write-standard
@@ -62,7 +62,9 @@ The rules below apply regardless of output language.
 - Do not build a sentence from a string of nouns alone. Show the relations between words with particles and modifiers. For example, write "whether research infrastructure is in place" instead of "research technology resource capability status."
 - Do not use modifiers, evaluative words, abstract nouns, or connectors whose removal leaves the meaning intact.
 - Do not use tautology or adjectives without grounds.
-- Do not use contrast constructions that put a negation before an affirmation (for example, "not X but Y"). State Y directly.
+- Do not use contrast constructions that put a negation before an affirmation (for example, "not X but Y", "less X than Y"). State Y directly.
+- Do not praise the other person without grounds or use empathy lines unrelated to the situation. Go straight to the content. When corrected, state the fixed result instead of an excuse.
+- Keep one conclusion under the criteria the user set. State results you checked directly as settled and name only the part left unchecked.
 - Use positive phrasing for the same content. For example, write "conversion is possible once structured data is secured" instead of "data readiness is lacking." A positive sentence states the target state directly, so it is clear and easy to revise and combine sentence by sentence. A negative sentence describes problems case by case, so it is complex and the reader has to infer the target state.
 - Use polite wording that is not aggressive. For example, write "needs strengthening" instead of "capability is severely lacking." Point out clearly wrong content plainly. Too much softening blurs meaning, so soften only as much as needed.
 - Avoid assertive and aggressive words (absolutely, block, only, sole, unconditionally, top priority, and so on).
@@ -85,6 +87,8 @@ The rules below apply regardless of output language.
 - Do not drop particles. Do not write ungrammatical or compound sentences.
 - Do not use placeholder nouns such as 것, 곳, 거, 셈, or 부분. Name the referent with a concrete noun. Do not swap one placeholder noun for another.
 - Avoid Japanese-calque patterns (-에 있어서, -에 대하여, -을 통하여, -로 인하여, -하지 않으면 안 된다, -라고 하는, -인 셈이다, -할 수밖에 없다) and overuse of -적 and -화.
+- Replace literal translations of English predicates (-로 기능한다 "functions as", 방어 가능하다 "defensible", 강해진다 and 약해진다 "strengthens, weakens", 회귀가 발생 "a regression occurs", 버그를 닫다 "close a bug", 양식을 채우다 "fill in a form", 경고가 붙는다 "a warning comes with", and so on) with the actual act or the property that changes.
+- Write proper nouns, country names, and field names with an established Korean spelling in Korean, with the original in parentheses at first mention when needed.
 - Use periods only when needed.
 - Prefer characters that can be typed on a standard Korean keyboard.
 - If (Korean word list) is Apply, follow the word list section below.
@@ -150,10 +154,10 @@ If (Bullet levels) is One level, do not use '+' lines. Write the evidence after 
 Use this when (Korean word list) is Apply and the output is Korean. The list is sorted by whether readers accept a word easily and whether the word signals model-generated writing.
 
 - (Common words) 연계, 수립, 확보, 도입, 증대, 도출, 전주기, 시너지, 전략, 협력, 단기, 중장기, 조성, 동시, 전환, 필요, 보완, 차별화, 개선, 방향, 설정, 확장, 부합, 생태계, 개방, 기여, 비전, 시사점, 단계적, 점진적, 변화, 발전, 융합, 추가, 가치
-- (Words to avoid) 기반(기반조성 and 기반구축 are allowed), 축, 층, 종, 층위, 계위, 위계, 즉시, 맞춤, 맥락, 이중, 삼중, MVP, 통합패키지, 절대, 선점, 선제, 컨틴전시, 정립, 차등, 풀스택, 배제, 병렬, 차단, 회피, 금지, 한정, 병목, 함의, 유일, 도태, 최초, 비약, 흐름, 게이트, 전량, 폭증, 묵음, 괴리, 뼈대, 뽑기, 최강, 최약, 직결, 인과, 고아, 커버리지, 쟁점, 엄수, 헷지, 값, 선결, 좌우, 결(as in 같은 결), 준거, 틀, 갈래(when used in place of branch or path), 통독(when used to mean reading the whole text), 묶음(when used in place of a proper name for a set such as 패키지, 종합본, or 전략), 판(when used in place of version or basis)
+- (Words to avoid) 기반(기반조성 and 기반구축 are allowed), 축, 층, 종, 층위, 계위, 위계, 즉시, 맞춤, 맥락, 이중, 삼중, MVP, 통합패키지, 절대, 선점, 선제, 컨틴전시, 정립, 차등, 풀스택, 배제, 병렬, 차단, 회피, 금지, 한정, 병목, 함의, 유일, 도태, 최초, 비약, 흐름, 게이트, 전량, 폭증, 묵음, 괴리, 뼈대, 뽑기, 최강, 최약, 직결, 인과, 고아, 커버리지, 쟁점, 엄수, 헷지, 값, 선결, 좌우, 결(as in 같은 결), 준거, 틀, 갈래(when used in place of branch or path), 통독(when used to mean reading the whole text), 묶음(when used in place of a proper name for a set such as 패키지, 종합본, or 전략), 판(when used in place of version or basis), 판정(replace with the word for the actual act such as 검토, 분류, 확인, or 결정, and avoid same-tone swaps such as 판별 or 판가름), 통찰력(when used to praise the other person), 꽤, 미친 듯이, 짝(when used in place of the correspondence between two things)
 - (Words to replace for tone) Replace 넣다 with 포함 or 추가, 빼다 with 제외 or 삭제, 박다 with 명시 or 고정, 쑤시다 with 점검 or 조사, and 뽑다 with 선정 or 도출. In work documents these can sound colloquial or carry an inappropriate connotation.
-- (Words to use sparingly) 영역, 탁월, 훌륭, 결론, 결과, 영향, 단일, 우선, 순위, 연결, 판단, 판정, 진단, 평가, 검증, 리스크, 통제, 관리, 한계, 명제, 객관, 주관, 위험, 위협, 유보, 확정, 규제, 준법, 컴플라이언스, 논리, 역량, 환경, 조직, 인사, 보상, 거버넌스, 가드, 가드레일, 책임, 소속, 근거, 확인, 근본, 본질, 격차, 결정, 매칭, 핵심, 문제, 이슈, 선도, 체계, 구조, 구축, 고도화, 정합, 원칙, 구성, 결합, 온전, 교차, 규칙, 출발, '-측' words (계측, 실측, 시측, and so on), 약속, and the particles '-으로' and '-로'
-- (Words not used as metaphors) Use 언어, 번역, and 통역 only for actual languages.
+- (Words to use sparingly) 영역, 탁월, 훌륭, 결론, 결과, 영향, 단일, 우선, 순위, 연결, 판단, 진단, 평가, 검증, 리스크, 통제, 관리, 한계, 명제, 객관, 주관, 위험, 위협, 유보, 확정, 규제, 준법, 컴플라이언스, 논리, 역량, 환경, 조직, 인사, 보상, 거버넌스, 가드, 가드레일, 책임, 소속, 근거, 확인, 근본, 본질, 격차, 결정, 매칭, 핵심, 문제, 이슈, 선도, 체계, 구조, 구축, 고도화, 정합, 원칙, 구성, 결합, 온전, 교차, 규칙, 출발, '-측' words (계측, 실측, 시측, and so on), 약속, and the particles '-으로' and '-로'
+- (Words not used as metaphors) Use 언어, 번역, and 통역 only for actual languages. Use 경로 (path) only for a physical or logical path whose existence is clearly confirmed, such as a road or a file path.
 - (Number declarations) Do not announce item counts in advance, as in "4대 방안" or "세 가지 약속." Write the content directly.
 
 Text that explains AI technology itself may need some avoided words such as "맥락." Even then, keep their frequency to a minimum.

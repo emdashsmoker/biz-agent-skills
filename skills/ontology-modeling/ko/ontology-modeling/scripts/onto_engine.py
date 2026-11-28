@@ -119,7 +119,7 @@ MESSAGES = {
         "route_cardinality": "객체 속성 '{p}' 존재 (연결 수 기준 점검 가능)",
         "route_shared": "'{r}' 클래스를 {n}개 속성이 참조",
         "route_mandatory": "산출물 클래스 '{c}'와 순서 속성이 함께 존재",
-        "route_provenance_note": "provenance_note 속성 발견 (판정 근거 기록 확인)",
+        "route_provenance_note": "provenance_note 속성 발견 (판단 근거 기록 확인)",
         "route_mece": "하위 클래스가 2개 이상인 클래스 {k}건 발견 (외부 데이터 적재 시 분류 점검 권장)",
         "selftest_ok": "[OK] 엔진 정상 작동",
     },

@@ -54,6 +54,7 @@ These apply in both sentence modes.
 | Excessive abbreviations | Unneeded English abbreviations, informal short forms | Spell them out |
 | Unneeded loanwords and Sino-Korean words | Loanwords with a native equivalent | Use the native word |
 | Honorific endings | Korean -합니다, -입니다, -하세요 | Replace with noun-form endings |
+| Proper nouns switched to English | "대한민국" to "Korea", "경제학" to "economics" | Write proper nouns, country names, and field names with an established Korean spelling in Korean, with the original in parentheses at first mention when needed. Product names, code identifiers, and standard names whose official form is the original keep it |
 
 Do not simply delete a joining comma. Deleting the comma alone leaves the compound sentence in place. Split the sentence or rebuild it as a noun phrase. Keep the commas in lists of three or more. Nouns separated only by spaces blur the meaning.
 

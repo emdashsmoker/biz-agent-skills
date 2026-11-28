@@ -32,31 +32,89 @@ Changelog rules
 ### biz-code-style
 - Added a grammar check that restores a Korean noun-ending sentence to a declarative sentence with the omitted particles and the ending in place (rewriting of sentences that do not restore naturally or that change meaning) (#107)
 - Added a step that reviews outward-facing text of automated work, such as commit messages, PR messages, posts, and emails, as a Markdown draft before publishing (check of reader needs, safe disclosure, and the skill rules, with questions to the user on ambiguous points) (#108)
+- Added 판정, 짝, 통찰력 used as praise, 꽤 and 미친 듯이 to the non-preferred words (#109)
+- Added usage conditions for 경로, 구조적, 실무적 and 감각 (경로 only for a physical or logical path whose existence is clearly confirmed) (#109)
+- Added calques of English predicates such as -로 기능한다, 방어 가능하다, 회귀가 발생 and 버그를 닫다 to the translationese patterns (#109)
+- Added "A라기보다 B" and recasting the other person's words before correcting them to contrast framing (#109)
+- Added middle dots that are not part of official names to the symbol rules (#109)
+- Added unfounded praise, post-hoc excuses and unfounded progress reports to the meta-commentary rules (#109)
+- Added a rule that states results the writer ran and checked as settled (#109)
+- Changed the wording of the instructions to name the actual act instead of stock words such as 판정, 평가 and 짝, keeping 평가 for institutional and established concepts (#109)
 
 * 명사형 종결 문장을 생략된 조사와 종결 어미를 갖춘 평서문으로 복원하는 문법 점검 추가 (자연스럽게 복원되지 않거나 의미가 달라지는 문장의 재작성) (#107)
 * 자동화 작업에서 커밋 메시지, PR 메시지, 게시글, 메일 등 외부에 게시하는 글을 마크다운 초안으로 먼저 검토하는 단계 추가 (외부 독자에게 필요한 내용, 공개해도 안전한 정보, 스킬 규칙 반영 여부의 점검과 모호한 지점의 사용자 질의) (#108)
+* 비선호 어휘에 판정, 짝, 칭찬 용도의 통찰력, 꽤, 미친 듯이 추가 (#109)
+* 경로, 구조적, 실무적, 감각의 사용 조건 추가 (경로는 실제로 존재함이 명백히 확인된 물리적, 논리적 길에 한정) (#109)
+* 번역투 유형에 -로 기능한다, 방어 가능하다, 회귀가 발생, 버그를 닫다 등 영어 서술어 직역 추가 (#109)
+* 대비 강조 유형에 A라기보다 B와 상대 발언을 단순화한 뒤 바로잡는 형태 추가 (#109)
+* 기호 기준에 공식 명칭이 아닌 가운뎃점 추가 (#109)
+* 메타 서술 기준에 근거 없는 칭찬, 사후 해명, 근거 없는 진행 보고 추가 (#109)
+* 직접 실행하고 확인한 결과를 확정해서 쓰는 규칙 추가 (#109)
+* 판정, 평가, 짝 등 상투 어휘 대신 실제 행위를 나타내는 어휘로 지침 문구 변경 (제도 용어와 확립된 개념의 평가는 유지) (#109)
 
 ### biz-code-style-lite
 - Added a grammar check that restores a Korean noun-ending sentence to a declarative sentence with the omitted particles and the ending in place (rewriting of sentences that do not restore naturally or that change meaning) (#107)
 - Added a step that reviews outward-facing text of automated work, such as commit messages, PR messages, posts, and emails, as a Markdown draft before publishing (check of reader needs, safe disclosure, and the skill rules, with questions to the user on ambiguous points) (#108)
+- Added 판정, 짝, 통찰력 used as praise, 꽤 and 미친 듯이 to the non-preferred words (#109)
+- Added calques of English predicates such as -로 기능한다, 방어 가능하다, 회귀가 발생 and 버그를 닫다 to the translationese patterns (#109)
+- Added a rule that states results the writer ran and checked as settled (#109)
+- Changed the wording of the instructions to name the actual act instead of stock words such as 판정, 평가 and 짝, keeping 평가 for institutional and established concepts (#109)
 
 * 명사형 종결 문장을 생략된 조사와 종결 어미를 갖춘 평서문으로 복원하는 문법 점검 추가 (자연스럽게 복원되지 않거나 의미가 달라지는 문장의 재작성) (#107)
 * 자동화 작업에서 커밋 메시지, PR 메시지, 게시글, 메일 등 외부에 게시하는 글을 마크다운 초안으로 먼저 검토하는 단계 추가 (외부 독자에게 필요한 내용, 공개해도 안전한 정보, 스킬 규칙 반영 여부의 점검과 모호한 지점의 사용자 질의) (#108)
+* 비선호 어휘에 판정, 짝, 칭찬 용도의 통찰력, 꽤, 미친 듯이 추가 (#109)
+* 번역투 유형에 -로 기능한다, 방어 가능하다, 회귀가 발생, 버그를 닫다 등 영어 서술어 직역 추가 (#109)
+* 직접 실행하고 확인한 결과를 확정해서 쓰는 규칙 추가 (#109)
+* 판정, 평가, 짝 등 상투 어휘 대신 실제 행위를 나타내는 어휘로 지침 문구 변경 (제도 용어와 확립된 개념의 평가는 유지) (#109)
+
+### clear-comm
+- Added 판정, 경로, 짝, 꽤 and 미친 듯이 to the expressions to avoid (#109)
+- Added calques of English predicates to the translationese rules (#109)
+- Added generic empathy lines and post-hoc excuses to the expressions to avoid (#109)
+- Added a rule that keeps one speech level in a polite message (#109)
+- Added middle dots that are not part of official names to the symbol rules (#109)
+
+* 지양할 표현에 판정, 경로, 짝, 꽤, 미친 듯이 추가 (#109)
+* 번역투 기준에 영어 서술어 직역 추가 (#109)
+* 지양할 표현에 범용 공감 문구와 사후 해명 추가 (#109)
+* 존댓말 글의 높임 등급을 하나로 유지하는 규칙 추가 (#109)
+* 기호 기준에 공식 명칭이 아닌 가운뎃점 추가 (#109)
 
 ### digest
 - Added a rule to write each Korean noun-ending sentence so that it restores to a natural declarative sentence with the same meaning when the omitted particles and the ending are added (#107)
+- Added stock predicates such as serves as, and in Korean translations calques of English predicates and 판정, to the writing-style rules (#109)
 
 * 명사형 종결 문장이 생략된 조사와 종결 어미를 갖추었을 때 의미가 같은 자연스러운 평서문으로 복원되도록 작성하는 규칙 추가 (#107)
+* 작성 문체 기준에 영어 서술어 직역과 판정 추가 (번역본 포함) (#109)
 
 ### environment-analysis
 - Added a grammar check that restores a Korean noun-ending sentence to a declarative sentence with the omitted particles and the ending in place (rewriting of sentences that do not restore naturally or that change meaning) (#107)
+- Added calques of English predicates and unrequested caveats to the expressions to avoid (#109)
+- Changed the internal capability wording to VRIO 진단 and the Five Forces wording to 5-Forces 분석 (#109)
+- Changed the wording of the instructions to name the actual act instead of stock words such as 판정, 평가 and 짝, keeping 평가 for institutional and established concepts (#109)
 
 * 명사형 종결 문장을 생략된 조사와 종결 어미를 갖춘 평서문으로 복원하는 문법 점검 추가 (자연스럽게 복원되지 않거나 의미가 달라지는 문장의 재작성) (#107)
+* 지양할 표현에 영어 서술어 직역과 요청하지 않은 단서 추가 (#109)
+* 내부역량 표기를 VRIO 진단으로, 경쟁강도 표기를 5-Forces 분석으로 변경 (#109)
+* 판정, 평가, 짝 등 상투 어휘 대신 실제 행위를 나타내는 어휘로 지침 문구 변경 (제도 용어와 확립된 개념의 평가는 유지) (#109)
 
 ### environment-analysis-lite
 - Added a grammar check that restores a Korean noun-ending sentence to a declarative sentence with the omitted particles and the ending in place (rewriting of sentences that do not restore naturally or that change meaning) (#107)
+- Added calques of English predicates and unrequested caveats to the expressions to avoid (#109)
+- Changed the internal capability wording to VRIO 진단 and the Five Forces wording to 5-Forces 분석 (#109)
+- Changed the wording of the instructions to name the actual act instead of stock words such as 판정, 평가 and 짝, keeping 평가 for institutional and established concepts (#109)
 
 * 명사형 종결 문장을 생략된 조사와 종결 어미를 갖춘 평서문으로 복원하는 문법 점검 추가 (자연스럽게 복원되지 않거나 의미가 달라지는 문장의 재작성) (#107)
+* 지양할 표현에 영어 서술어 직역과 요청하지 않은 단서 추가 (#109)
+* 내부역량 표기를 VRIO 진단으로, 경쟁강도 표기를 5-Forces 분석으로 변경 (#109)
+* 판정, 평가, 짝 등 상투 어휘 대신 실제 행위를 나타내는 어휘로 지침 문구 변경 (제도 용어와 확립된 개념의 평가는 유지) (#109)
+
+### five-forces
+- Changed the Five Forces wording from 평가 to 분석 (#109)
+- Changed the wording of the instructions to name the actual act instead of stock words such as 판정, 평가 and 짝, keeping 평가 for institutional and established concepts (#109)
+
+* 경쟁강도 표기를 평가에서 분석으로 변경 (#109)
+* 판정, 평가, 짝 등 상투 어휘 대신 실제 행위를 나타내는 어휘로 지침 문구 변경 (제도 용어와 확립된 개념의 평가는 유지) (#109)
 
 ### grand-viz-style
 - Added a rule to write each Korean noun-ending sentence of slide text so that it restores to a natural declarative sentence with the same meaning when the omitted particles and the ending are added (#107)
@@ -65,44 +123,170 @@ Changelog rules
 
 ### logical-write
 - Added a grammar check that restores a Korean noun-ending sentence to a declarative sentence with the omitted particles and the ending in place (rewriting of sentences that do not restore naturally or that change meaning) (#107)
+- Added 판정, 짝, 통찰력 used as praise, 꽤 and 미친 듯이 to the non-preferred words (#109)
+- Added usage conditions for 경로, 구조적, 실무적 and 감각 (경로 only for a physical or logical path whose existence is clearly confirmed) (#109)
+- Added calques of English predicates such as -로 기능한다, 방어 가능하다, 회귀가 발생 and 버그를 닫다 to the translationese patterns (#109)
+- Added a rule that keeps the established Korean spelling of proper nouns (#109)
+- Added "A라기보다 B" and recasting the other person's words before correcting them to contrast framing (#109)
+- Added unfounded praise and rankings, generic empathy lines, post-hoc excuses, unfounded progress reports and unrequested caveats to the meta-commentary types (#109)
+- Added conclusion reversal by a new criterion and hedging of verified results to conclusion avoidance (#109)
+- Changed the wording of the instructions to name the actual act instead of stock words such as 판정, 평가 and 짝, keeping 평가 for institutional and established concepts (#109)
 
 * 명사형 종결 문장을 생략된 조사와 종결 어미를 갖춘 평서문으로 복원하는 문법 점검 추가 (자연스럽게 복원되지 않거나 의미가 달라지는 문장의 재작성) (#107)
+* 비선호 어휘에 판정, 짝, 칭찬 용도의 통찰력, 꽤, 미친 듯이 추가 (#109)
+* 경로, 구조적, 실무적, 감각의 사용 조건 추가 (경로는 실제로 존재함이 명백히 확인된 물리적, 논리적 길에 한정) (#109)
+* 번역투 유형에 -로 기능한다, 방어 가능하다, 회귀가 발생, 버그를 닫다 등 영어 서술어 직역 추가 (#109)
+* 고유명사의 정착된 한글 표기를 유지하는 규칙 추가 (#109)
+* 대비 강조 유형에 A라기보다 B와 상대 발언을 단순화한 뒤 바로잡는 형태 추가 (#109)
+* 메타 서술 유형에 근거 없는 칭찬과 순위 평가, 범용 공감 문구, 사후 해명, 근거 없는 진행 보고, 요청하지 않은 단서 추가 (#109)
+* 결론 회피 유형에 새 기준에 따른 결론 번복과 확인 사실 유보 추가 (#109)
+* 판정, 평가, 짝 등 상투 어휘 대신 실제 행위를 나타내는 어휘로 지침 문구 변경 (제도 용어와 확립된 개념의 평가는 유지) (#109)
 
 ### logical-write-lite
 - Added a grammar check that restores a Korean noun-ending sentence to a declarative sentence with the omitted particles and the ending in place (rewriting of sentences that do not restore naturally or that change meaning) (#107)
+- Added 판정, 짝, 통찰력 used as praise, 꽤 and 미친 듯이 to the non-preferred words (#109)
+- Added usage conditions for 경로, 구조적, 실무적 and 감각 (경로 only for a physical or logical path whose existence is clearly confirmed) (#109)
+- Added calques of English predicates such as -로 기능한다, 방어 가능하다, 회귀가 발생 and 버그를 닫다 to the translationese patterns (#109)
+- Added "A라기보다 B" and recasting the other person's words before correcting them to contrast framing (#109)
+- Added praise and excuses, and conclusion reversal, to the expression patterns (#109)
+- Changed the wording of the instructions to name the actual act instead of stock words such as 판정, 평가 and 짝, keeping 평가 for institutional and established concepts (#109)
 
 * 명사형 종결 문장을 생략된 조사와 종결 어미를 갖춘 평서문으로 복원하는 문법 점검 추가 (자연스럽게 복원되지 않거나 의미가 달라지는 문장의 재작성) (#107)
+* 비선호 어휘에 판정, 짝, 칭찬 용도의 통찰력, 꽤, 미친 듯이 추가 (#109)
+* 경로, 구조적, 실무적, 감각의 사용 조건 추가 (경로는 실제로 존재함이 명백히 확인된 물리적, 논리적 길에 한정) (#109)
+* 번역투 유형에 -로 기능한다, 방어 가능하다, 회귀가 발생, 버그를 닫다 등 영어 서술어 직역 추가 (#109)
+* 대비 강조 유형에 A라기보다 B와 상대 발언을 단순화한 뒤 바로잡는 형태 추가 (#109)
+* 표현 패턴에 칭찬과 해명, 결론 번복 추가 (#109)
+* 판정, 평가, 짝 등 상투 어휘 대신 실제 행위를 나타내는 어휘로 지침 문구 변경 (제도 용어와 확립된 개념의 평가는 유지) (#109)
+
+### long-task-ledger
+- Changed the wording of the instructions to name the actual act instead of stock words such as 판정, 평가 and 짝, keeping 평가 for institutional and established concepts (#109)
+
+* 판정, 평가, 짝 등 상투 어휘 대신 실제 행위를 나타내는 어휘로 지침 문구 변경 (제도 용어와 확립된 개념의 평가는 유지) (#109)
 
 ### network-analysis
 - Added a rule to write each Korean noun-ending sentence of the report so that it restores to a natural declarative sentence with the same meaning when the omitted particles and the ending are added (#107)
+- Changed the wording of the instructions to name the actual act instead of stock words such as 판정, 평가 and 짝, keeping 평가 for institutional and established concepts (#109)
 
 * 보고서의 명사형 종결 문장이 생략된 조사와 종결 어미를 갖추었을 때 의미가 같은 자연스러운 평서문으로 복원되도록 작성하는 규칙 추가 (#107)
+* 판정, 평가, 짝 등 상투 어휘 대신 실제 행위를 나타내는 어휘로 지침 문구 변경 (제도 용어와 확립된 개념의 평가는 유지) (#109)
+
+### network-analysis-lite
+- Changed the wording of the instructions to name the actual act instead of stock words such as 판정, 평가 and 짝, keeping 평가 for institutional and established concepts (#109)
+
+* 판정, 평가, 짝 등 상투 어휘 대신 실제 행위를 나타내는 어휘로 지침 문구 변경 (제도 용어와 확립된 개념의 평가는 유지) (#109)
+
+### no-meta-commentary
+- Added unfounded praise and rankings, generic empathy lines, post-hoc excuses, unfounded progress reports and unrequested caveats to the meta-commentary types (#109)
+- Changed the wording of the instructions to name the actual act instead of stock words such as 판정, 평가 and 짝, keeping 평가 for institutional and established concepts (#109)
+
+* 메타 서술 유형에 근거 없는 칭찬과 순위 평가, 범용 공감 문구, 사후 해명, 근거 없는 진행 보고, 요청하지 않은 단서 추가 (#109)
+* 판정, 평가, 짝 등 상투 어휘 대신 실제 행위를 나타내는 어휘로 지침 문구 변경 (제도 용어와 확립된 개념의 평가는 유지) (#109)
+
+### no-meta-commentary-lite
+- Added unfounded praise and rankings, generic empathy lines, post-hoc excuses, unfounded progress reports and unrequested caveats to the meta-commentary types (#109)
+- Changed the wording of the instructions to name the actual act instead of stock words such as 판정, 평가 and 짝, keeping 평가 for institutional and established concepts (#109)
+
+* 메타 서술 유형에 근거 없는 칭찬과 순위 평가, 범용 공감 문구, 사후 해명, 근거 없는 진행 보고, 요청하지 않은 단서 추가 (#109)
+* 판정, 평가, 짝 등 상투 어휘 대신 실제 행위를 나타내는 어휘로 지침 문구 변경 (제도 용어와 확립된 개념의 평가는 유지) (#109)
+
+### ontology-modeling
+- Changed the wording of the instructions to name the actual act instead of stock words such as 판정, 평가 and 짝, keeping 평가 for institutional and established concepts (#109)
+
+* 판정, 평가, 짝 등 상투 어휘 대신 실제 행위를 나타내는 어휘로 지침 문구 변경 (제도 용어와 확립된 개념의 평가는 유지) (#109)
+
+### practical-calc
+- Changed the wording of the instructions to name the actual act instead of stock words such as 판정, 평가 and 짝, keeping 평가 for institutional and established concepts (#109)
+
+* 판정, 평가, 짝 등 상투 어휘 대신 실제 행위를 나타내는 어휘로 지침 문구 변경 (제도 용어와 확립된 개념의 평가는 유지) (#109)
+
+### practical-stats
+- Changed the wording of the instructions to name the actual act instead of stock words such as 판정, 평가 and 짝, keeping 평가 for institutional and established concepts (#109)
+
+* 판정, 평가, 짝 등 상투 어휘 대신 실제 행위를 나타내는 어휘로 지침 문구 변경 (제도 용어와 확립된 개념의 평가는 유지) (#109)
 
 ### pref-architect
 - Added a grammar check to the write-standard and code-standard modules that restores a Korean noun-ending sentence to a declarative sentence with the omitted particles and the ending in place (rewriting of sentences that do not restore naturally or that change meaning) (#107)
 - Changed the metadata version of the skill and the generator-version of the bundled modules from 1.3 to 1.4 (#107)
 - Added a step to the code-standard module that reviews outward-facing text of automated work, such as commit messages, PR messages, posts, and emails, as a Markdown draft before publishing (check of reader needs, safe disclosure, and the module rules, with questions to the user on ambiguous points) (#108)
 - Changed the metadata version of the skill and the generator-version of the bundled modules from 1.4 to 1.5 (#108)
+- Added the new slop rules to the write-standard module (words to avoid, calques of English predicates, proper nouns, praise and excuses, one conclusion under the user's criteria) (#109)
+- Changed the metadata version of the skill and the generator-version of the write-standard, code-standard and staged-work modules from 1.5 to 1.6 (#109)
+- Changed the wording of the instructions to name the actual act instead of stock words such as 판정, 평가 and 짝, keeping 평가 for institutional and established concepts (#109)
 
 * write-standard와 code-standard 모듈에 명사형 종결 문장을 생략된 조사와 종결 어미를 갖춘 평서문으로 복원하는 문법 점검 추가 (자연스럽게 복원되지 않거나 의미가 달라지는 문장의 재작성) (#107)
 * 스킬의 metadata version과 동봉 모듈의 generator-version을 1.3에서 1.4로 변경 (#107)
 * code-standard 모듈에 자동화 작업에서 커밋 메시지, PR 메시지, 게시글, 메일 등 외부에 게시하는 글을 마크다운 초안으로 먼저 검토하는 단계 추가 (외부 독자에게 필요한 내용, 공개해도 안전한 정보, 모듈 규칙 반영 여부의 점검과 모호한 지점의 사용자 질의) (#108)
 * 스킬의 metadata version과 동봉 모듈의 generator-version을 1.4에서 1.5로 변경 (#108)
+* write-standard 모듈에 신규 슬롭 규칙 추가 (피하는 말, 영어 서술어 직역, 고유명사 표기, 칭찬과 해명, 사용자 기준의 단일 결론) (#109)
+* 스킬의 metadata version과 write-standard, code-standard, staged-work 모듈의 generator-version을 1.5에서 1.6으로 변경 (#109)
+* 판정, 평가, 짝 등 상투 어휘 대신 실제 행위를 나타내는 어휘로 지침 문구 변경 (제도 용어와 확립된 개념의 평가는 유지) (#109)
 
 ### project-plan
 - Added a rule to write each Korean noun-ending sentence of the overview body so that it restores to a natural declarative sentence with the same meaning when the omitted particles and the ending are added (#107)
+- Renamed 승계 분류 in the previous plan comparison table to 처리 방향 분류 (#109)
+- Changed the wording of the instructions to name the actual act instead of stock words such as 판정, 평가 and 짝, keeping 평가 for institutional and established concepts (#109)
 
 * 오버뷰 본문의 명사형 종결 문장이 생략된 조사와 종결 어미를 갖추었을 때 의미가 같은 자연스러운 평서문으로 복원되도록 작성하는 규칙 추가 (#107)
+* 기존 계획 대조표의 승계 분류 명칭을 처리 방향 분류로 변경 (#109)
+* 판정, 평가, 짝 등 상투 어휘 대신 실제 행위를 나타내는 어휘로 지침 문구 변경 (제도 용어와 확립된 개념의 평가는 유지) (#109)
+
+### rfp-strategy
+- Changed the wording of the instructions to name the actual act instead of stock words such as 판정, 평가 and 짝, keeping 평가 for institutional and established concepts (#109)
+
+* 판정, 평가, 짝 등 상투 어휘 대신 실제 행위를 나타내는 어휘로 지침 문구 변경 (제도 용어와 확립된 개념의 평가는 유지) (#109)
+
+### skill-forge
+- Changed the wording of the instructions to name the actual act instead of stock words such as 판정, 평가 and 짝, keeping 평가 for institutional and established concepts (#109)
+
+* 판정, 평가, 짝 등 상투 어휘 대신 실제 행위를 나타내는 어휘로 지침 문구 변경 (제도 용어와 확립된 개념의 평가는 유지) (#109)
 
 ### slop-proof
 - Added a grammar check that restores a Korean noun-ending sentence to a declarative sentence with the omitted particles and the ending in place (rewriting of sentences that do not restore naturally or that change meaning) (#107)
+- Added 판정, 짝, 통찰력 used as praise, 꽤 and 미친 듯이 to the non-preferred words (#109)
+- Added usage conditions for 경로, 구조적, 실무적 and 감각 (경로 only for a physical or logical path whose existence is clearly confirmed) (#109)
+- Added calques of English predicates such as -로 기능한다, 방어 가능하다, 회귀가 발생 and 버그를 닫다 to the translationese patterns (#109)
+- Added a rule that keeps the established Korean spelling of proper nouns (#109)
+- Added "A라기보다 B" and recasting the other person's words before correcting them to contrast framing (#109)
+- Added middle dots that are not part of official names to the symbol rules (#109)
+- Added unfounded praise and rankings, generic empathy lines, post-hoc excuses, unfounded progress reports and unrequested caveats to the meta-commentary types (#109)
+- Added conclusion reversal by a new criterion and hedging of verified results to conclusion avoidance (#109)
 
 * 명사형 종결 문장을 생략된 조사와 종결 어미를 갖춘 평서문으로 복원하는 문법 점검 추가 (자연스럽게 복원되지 않거나 의미가 달라지는 문장의 재작성) (#107)
+* 비선호 어휘에 판정, 짝, 칭찬 용도의 통찰력, 꽤, 미친 듯이 추가 (#109)
+* 경로, 구조적, 실무적, 감각의 사용 조건 추가 (경로는 실제로 존재함이 명백히 확인된 물리적, 논리적 길에 한정) (#109)
+* 번역투 유형에 -로 기능한다, 방어 가능하다, 회귀가 발생, 버그를 닫다 등 영어 서술어 직역 추가 (#109)
+* 고유명사의 정착된 한글 표기를 유지하는 규칙 추가 (#109)
+* 대비 강조 유형에 A라기보다 B와 상대 발언을 단순화한 뒤 바로잡는 형태 추가 (#109)
+* 기호 기준에 공식 명칭이 아닌 가운뎃점 추가 (#109)
+* 메타 서술 유형에 근거 없는 칭찬과 순위 평가, 범용 공감 문구, 사후 해명, 근거 없는 진행 보고, 요청하지 않은 단서 추가 (#109)
+* 결론 회피 유형에 새 기준에 따른 결론 번복과 확인 사실 유보 추가 (#109)
+
+### source-check
+- Changed the wording of the instructions to name the actual act instead of stock words such as 판정, 평가 and 짝, keeping 평가 for institutional and established concepts (#109)
+
+* 판정, 평가, 짝 등 상투 어휘 대신 실제 행위를 나타내는 어휘로 지침 문구 변경 (제도 용어와 확립된 개념의 평가는 유지) (#109)
 
 ### strategy-builder
 - Added a rule to write each Korean noun-ending sentence so that it restores to a natural declarative sentence with the same meaning when the omitted particles and the ending are added (#107)
+- Changed the wording of the instructions to name the actual act instead of stock words such as 판정, 평가 and 짝, keeping 평가 for institutional and established concepts (#109)
 
 * 명사형 종결 문장이 생략된 조사와 종결 어미를 갖추었을 때 의미가 같은 자연스러운 평서문으로 복원되도록 작성하는 규칙 추가 (#107)
+* 판정, 평가, 짝 등 상투 어휘 대신 실제 행위를 나타내는 어휘로 지침 문구 변경 (제도 용어와 확립된 개념의 평가는 유지) (#109)
+
+### think-review
+- Renamed the 등급 평가 step of the plan lens to 질문별 검토 (#109)
+- Changed the wording of the instructions to name the actual act instead of stock words such as 판정, 평가 and 짝, keeping 평가 for institutional and established concepts (#109)
+
+* 기획 관점의 등급 평가 단계 명칭을 질문별 검토로 변경 (#109)
+* 판정, 평가, 짝 등 상투 어휘 대신 실제 행위를 나타내는 어휘로 지침 문구 변경 (제도 용어와 확립된 개념의 평가는 유지) (#109)
+
+### think-review-lite
+- Renamed the outcome section from 평가 to 검토 결과 and the 평가표 to 검토표 (#109)
+- Changed the wording of the instructions to name the actual act instead of stock words such as 판정, 평가 and 짝, keeping 평가 for institutional and established concepts (#109)
+
+* 점검 결과 절의 명칭을 평가에서 검토 결과로, 평가표를 검토표로 변경 (#109)
+* 판정, 평가, 짝 등 상투 어휘 대신 실제 행위를 나타내는 어휘로 지침 문구 변경 (제도 용어와 확립된 개념의 평가는 유지) (#109)
 
 ## 2026-11-26
 

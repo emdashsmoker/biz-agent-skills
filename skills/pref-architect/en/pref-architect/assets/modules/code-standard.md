@@ -3,7 +3,7 @@ name: code-standard
 description: "Coding standard for writing code, running scripts, file operations, data analysis, charts, UI, and visualization work such as slides and posters. Covers work reporting, runtime environment and permissions, code quality, security, charts, design, and visual checks. Load it before starting work when the always-on instructions say to load this module or when the user asks for \"/code-standard\", \"coding standard\", \"follow the chart rules\", and similar. For tasks that also involve writing, use it together with write-standard."
 metadata:
   generator: pref-architect
-  generator-version: "1.5"
+  generator-version: "1.6"
 ---
 
 # code-standard
