@@ -7,7 +7,7 @@ A list of words LLMs habitually overuse, sorted into preferred, non-preferred, a
 ## Criteria
 
 - (Preferred) Easy for readers to accept, does not mark text as LLM output, and fits formal report style naturally.
-- (Non-preferred) Meets one or more of these conditions. The word is statistically overused by LLMs and marks text as LLM output. The word is empty, so the sentence keeps its meaning without it. The word is aggressive and intimidates readers (차단 "block", 배제 "exclude", 도태 "weed out", 금지 "prohibit"). The word is assertive and closes off rebuttal (절대 "absolutely", 오직 "only", 유일 "sole", 무조건 "unconditionally"). The word exaggerates scale or degree without grounds (획기적 "groundbreaking", 폭발적 "explosive", 전례 없는 "unprecedented"). The word is translationese copying English or Japanese structure. The word has a colloquial or vulgar connotation and is avoided in official documents (넣다 "put in", 빼다 "take out", 박다 "hammer in", 쑤시다 "poke", 쓰다 "use or write", 잇다 "join", and so on).
+- (Non-preferred) Meets one or more of these conditions. The word is statistically overused by LLMs and marks text as LLM output. The word is empty, so the sentence keeps its meaning without it. The word is aggressive and intimidates readers (차단 "block", 배제 "exclude", 도태 "weed out", 금지 "prohibit"). The word is assertive and closes off rebuttal (절대 "absolutely", 오직 "only", 유일 "sole", 무조건 "unconditionally"). The word exaggerates scale or degree without grounds (획기적 "groundbreaking", 폭발적 "explosive", 전례 없는 "unprecedented"). The word is translationese copying English or Japanese structure. The word has a colloquial or vulgar connotation and is avoided in official documents (넣다 "put in", 빼다 "take out", 박다 "hammer in", 쑤시다 "poke"). The word has a strong colloquial tone and is avoided in formal documents (쓰다 "use or write", 잇다 "join", and so on).
 - (Cautionary) Usable in fitting contexts, but overuse dulls its emphasis and lowers the word density of the whole text.
 
 ## Application
@@ -87,7 +87,8 @@ Use these words only under their conditions.
 - (Translationese verbs) 야기 (cause), 수반 (entail), 내포 (imply), 탈피 (break away, as in "기존 방식을 탈피" break away from the old way)
 - (Assertion posing as neutral) 좌우 (determine)
 - (Unused in work or daily language) 통독 (reading through), overused to mean reading the whole text
-- (Colloquial or vulgar connotation) 넣다 (put in; replace with 포함 "include" or 추가 "add"), 빼다 (take out; replace with 제외 "exclude" or 삭제 "delete"), 박다 (hammer in; replace with 명시 "specify" or 고정 "fix"), 쑤시다 (poke; replace with 점검 "inspect" or 조사 "investigate"), 쓰다 (use or write; replace with a word such as 사용 "use", 활용 "apply", 작성 "draft" or 기재 "enter"), 잇다 (join; replace with a word such as 연계 "link"), 동시삽입 (simultaneous insertion; replace with 병기 "state alongside"). All inflected forms count, such as "넣을 것", "뺄 것", "빼고", "코드에 박아 넣다" (hard-code), "박음", "쑤심", "씀", "쓰는", "잇는". A word whose double consonant (ㄲ, ㄸ, ㅃ, ㅆ, ㅉ) gives it a strong colloquial tone, such as 뽑다 (pick), 쓰다 and 짝 (pair), is replaced with a formal word of the same meaning even when this list does not name it
+- (Colloquial or vulgar connotation) 넣다 (put in; replace with 포함 "include" or 추가 "add"), 빼다 (take out; replace with 제외 "exclude" or 삭제 "delete"), 박다 (hammer in; replace with 명시 "specify" or 고정 "fix"), 쑤시다 (poke; replace with 점검 "inspect" or 조사 "investigate"), 동시삽입 (simultaneous insertion; replace with 병기 "state alongside"). All inflected forms count, such as "넣을 것", "뺄 것", "빼고", "코드에 박아 넣다" (hard-code), "박음", "쑤심"
+- (Strong colloquial tone) 쓰다 (use or write; replace with a word such as 사용 "use", 활용 "apply", 작성 "draft" or 기재 "enter"), 잇다 (join; replace with a word such as 연계 "link"). All inflected forms count, such as "씀", "쓰는", "잇는". A word whose double consonant (ㄲ, ㄸ, ㅃ, ㅆ, ㅉ) gives it a strong colloquial tone, such as 뽑다, 쓰다 and 짝, is replaced with a formal word of the same meaning even when this list does not name it
 
 ### Cautionary
 
@@ -222,7 +223,8 @@ Words that English-language LLMs overuse, appearing in Korean output as literal 
 - Are non-preferred linking expressions ("이러한 맥락에서", "결론적으로") absent?
 - Are translationese and literal forms of English LLM words absent?
 - Are 판정 and its same-tone swaps 판별 and 판가름 absent?
-- Are inflected forms of colloquial or vulgar verbs (넣다, 빼다, 박다, 쑤시다, 쓰다, 잇다, and so on) and words with a strong colloquial tone from a double consonant absent?
+- Are inflected forms of colloquial or vulgar verbs (넣다, 빼다, 박다, 쑤시다) absent?
+- Are words with a strong colloquial tone, such as 쓰다 and 잇다, absent?
 - Are contrast emphasis, self-posed questions, and count announcements absent?
 - Did you write concrete grounds in place of exaggerated evaluations?
 - Does no cautionary word appear twice or more in one paragraph?
