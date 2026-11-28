@@ -336,7 +336,7 @@ Choose words by how easily readers accept them, whether they make the text look 
 
 - Replace 판정 (ruling) with the word for the actual act, such as 검토, 분류, 확인, or 결정 (review, classification, check, decision), and avoid same-tone swaps such as 판별 or 판가름.
 - Colloquial verbs such as 넣다 (put in), 빼다 (take out), and 박다 (drive in) can carry unwanted connotations, so replace them with 포함 (include), 추가 (add), 제외 (exclude), 삭제 (delete), 명시 (specify), 고정 (fix). Words with a different root, such as 빼앗다 (seize) and 빼어나다 (excel), are not affected.
-- Replace 쓰다 (use or write) with 사용 (use), 활용 (apply), 작성 (draft) or 기재 (enter), and 잇다 (join) with 연계 (link). A word whose double consonant (ㄲ, ㄸ, ㅃ, ㅆ, ㅉ) gives it a strong colloquial tone, such as 뽑다 (pick), 쓰다 and 짝 (pair), is replaced with a formal word of the same meaning even when the table does not name it.
+- Replace 쓰다 (use or write) with a word such as 사용 (use), 활용 (apply), 작성 (draft) or 기재 (enter), and 잇다 (join) with a word such as 연계 (link). A word whose double consonant (ㄲ, ㄸ, ㅃ, ㅆ, ㅉ) gives it a strong colloquial tone, such as 뽑다 (pick), 쓰다 and 짝 (pair), is replaced with a formal word of the same meaning even when the table does not name it.
 - Avoid words common in English AI text and their literal translations: delve, landscape, leverage, navigate, underscore, multifaceted, ever-evolving, holistic.
 - Use "language", "translation", and "interpretation" only for actual languages, never as metaphors. Words such as "context" are allowed when explaining AI technology itself, at minimum frequency.
 - Quotations, proper nouns, legal terms, technical standard names, and words the user specifies are exempt from these criteria.
