@@ -1,2 +1,2 @@
 08e65ebd5d90ac4247be16a291af6239156bb83b3a6f7601c6c232ddc7dfbf69  slop-proof-en.skill
-ab1289cf8c7af34f3b78c2f27531dff9171b10055f7a4a32d374337ddaa9cc5c  slop-proof-ko.skill
+b42f2cc72ea4a6fc2197afe29d99e20d4d214da4e873169ca5222c6f2a0106cf  slop-proof-ko.skill
