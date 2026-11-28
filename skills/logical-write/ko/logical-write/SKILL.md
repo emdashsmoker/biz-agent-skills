@@ -78,7 +78,7 @@ license: GPL-3.0-or-later with an output exception. Terms in LICENSE and NOTICE.
 | `references/sentence.md` | 5W1H 확인 절차, 모드별 세부 규칙, 문장 부호, 종결, '것' 등 빈자리 명사, 문장 리듬 | 문장을 쓰거나 고칠 때 |
 | `references/structure.md` | 결론 우선 배치, 거시 구조, 분석 단계 순서, 헤더 작명, 단위당 메시지, 표와 데이터 배치, 진단 항목 | 구조를 설계하거나 진단할 때 |
 | `references/logic.md` | 주장과 근거의 짝, 가설 사고, 형식적 오류, 비형식적 오류, 인지 편향, 입증 책임 | 주장을 세우거나 논증을 검토할 때 |
-| `references/judgment.md` | 양비론 판별, 근거의 질 평가, 반론 배치, 결론 유보 조건 | 대립하는 입장 사이에서 결론을 낼 때 |
+| `references/judgment.md` | 양비론 판별, 근거의 질 검토, 반론 배치, 결론 유보 조건 | 대립하는 입장 사이에서 결론을 낼 때 |
 | `references/classification.md` | 분류 기준, 겹침과 빠짐 점검, 계층 관계, 정의, 정보 부재 처리 | 항목을 나누고 묶거나 개념을 정의할 때 |
 | `references/expression.md` | 의미 없는 표현, LLM 정형 수사, 메타 서술 | 산출 전 점검, 교정 |
 | `references/vocabulary.md` | 선호, 비선호, 신중 어휘와 번역투 | 산출 전 점검, 교정 |

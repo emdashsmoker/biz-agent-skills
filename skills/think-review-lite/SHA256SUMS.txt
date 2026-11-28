@@ -1,2 +1,2 @@
 ac358faa6d3b0899519cf9a96b16c288a2bf85fffeef5c0150164da2742c50fa  think-review-lite-en.skill
-be5f766c4ef7bde9d18de2bf675260dc2e34151ddbfae2a30674eaf10de5e8be  think-review-lite-ko.skill
+55bcb362abc04139d4496c18ac42cb635b6978d17308fd3b73f7bf9177dd81f7  think-review-lite-ko.skill

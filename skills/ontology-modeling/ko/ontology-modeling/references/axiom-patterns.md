@@ -18,11 +18,11 @@ OWL 공리를 구축하고 추론기(HermiT, Pellet)를 실행하는 방법이�
 - (복합 조건 분류) 속성값 범위와 관계 존재 여부를 조합해 분류한다
 - (SWRL 규칙) IF-THEN 규칙으로 새 사실을 도출한다
 
-## 개방 세계에서 추론기가 판단하는 범위
+## 개방 세계에서 추론기가 확인하는 범위
 
-OWL 추론기는 입력되지 않은 사실을 미지로 본다. 또 이름이 다르다고 다른 개체라고 가정하지 않는다. 그래서 같은 공리라도 판단할 수 있는 것과 없는 것이 나뉜다. 아래 동작은 owlready2 0.51과 HermiT로 실행해 확인했다.
+OWL 추론기는 입력되지 않은 사실을 미지로 본다. 또 이름이 다르다고 다른 개체라고 가정하지 않는다. 그래서 같은 공리라도 확인할 수 있는 것과 없는 것이 나뉜다. 아래 동작은 owlready2 0.51과 HermiT로 실행해 확인했다.
 
-| 공리 | 입력만으로 판단하는 것 | 입력만으로 판단하지 못하는 것 | 보완 방법 |
+| 공리 | 입력만으로 확인하는 것 | 입력만으로 확인하지 못하는 것 | 보완 방법 |
 |---|---|---|---|
 | DisjointClasses | 두 클래스에 동시에 속한 개체 (온톨로지 모순) | 없음 | 없음 |
 | MinCardinality | 없음 | 연결이 빠진 개체 | SPARQL의 unsupported 쿼리나 check_provenance로 미입력 후보를 찾고, 입력이 완전하다고 확인되면 close_world_scope 뒤 추론 |
@@ -174,7 +174,7 @@ build_equivalent_class(onto, "LargeProject",
 build_equivalent_class(onto, "SelfReviewedDocument",
     onto["Document"] & onto["reviewed_by_self"].has_self())
 
-# 복합 조건 (Not과 max 0은 close_world_scope 뒤에 판단된다)
+# 복합 조건 (Not과 max 0은 close_world_scope 뒤에 확인된다)
 build_equivalent_class(onto, "RiskyProject",
     onto["Project"]
     & onto["budget"].some(ConstrainedDatatype(int, min_inclusive=5000000000))

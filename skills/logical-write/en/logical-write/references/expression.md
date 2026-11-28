@@ -75,7 +75,7 @@ Lining up facts the reader already knows as "X is Y" in place of analysis and ju
 | Staccato rhythm | "Fast. Accurate. Efficient." | Merge into content-centered sentences |
 | Self-posed questions | "Why did this happen? Because" | Delete the question and state the answer |
 | Overgeneralized implications | "This signals a paradigm shift for the entire industry" | Narrow the conclusion to the scope of the evidence |
-| Vague partial assessments | "Half right", "largely agreeable" | State the range of agreement and disagreement specifically |
+| Vague partial agreement | "Half right", "largely agreeable" | State the range of agreement and disagreement specifically |
 | Meta-emphasis clichés | "To put it strongly", "the point is", "one thing to note", "to draw a line here" | Delete |
 
 ### Symbol overuse

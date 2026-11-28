@@ -10,7 +10,7 @@
 - "transitive": True는 build_object_property의 is_transitive=True, "functional": True는 is_functional=True에 대응한다
 - 전이 속성(transitive)은 domain과 range가 같은 클래스일 때만 쓴다. 둘이 다르면 연쇄 중간의 개체가 두 클래스에 동시에 속한다고 추론되고, 두 클래스가 상호 배타이면 온톨로지 전체가 모순이 된다
 - owl_pattern은 사람이 읽는 표기다. 코드로는 `&`, `Not(...)`, `prop.some(Class)`, `Inverse(prop)`로 옮긴다
-- owl_pattern에 NOT이 들어간 자동 분류는 개방 세계 가정 때문에 입력만으로는 판단되지 않는다. 먼저 SPARQL 점검으로 해당 개체를 미입력 후보로 찾고, 사용자가 해당 범위의 입력이 완전하다고 확인하면 close_world_scope를 실행한 뒤 추론기로 판단한다
+- owl_pattern에 NOT이 들어간 자동 분류는 개방 세계 가정 때문에 입력만으로는 확인되지 않는다. 먼저 SPARQL 점검으로 해당 개체를 미입력 후보로 찾고, 사용자가 해당 범위의 입력이 완전하다고 확인하면 close_world_scope를 실행한 뒤 추론기로 분류한다
 - min_cardinality 공리도 빠진 연결을 위반으로 잡지 못한다. 빠진 연결은 check_provenance나 SPARQL의 unsupported 쿼리로 찾는다
 
 ```python

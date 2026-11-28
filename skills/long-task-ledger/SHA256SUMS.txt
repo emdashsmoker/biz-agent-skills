@@ -1,2 +1,2 @@
 557921e3678f322a6f68c63f2a025fde6922440e53374031d24c6b65d432fbe2  long-task-ledger-en.skill
-677c11f87bea10bb5564b4c7ce55e4a1a8a4dbf466c274e2acb9187effb3bf6b  long-task-ledger-ko.skill
+7a83dbd589ea7b25c4c2972d37f00942615093a75f46e537b462aa2f12a200d3  long-task-ledger-ko.skill

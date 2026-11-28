@@ -162,7 +162,7 @@ Narration aimed at the text itself, the writing process, the writer, or the tool
 - Replace exaggerated transformation phrases such as paradigm shift, game changer, and "change the landscape" with the specific change.
 - Replace abstract catch-all nouns such as 맥락 (context), 담론 (discourse), 지형 (landscape), 프레임 (frame), and 레버리지 (leverage) with the specific object.
 - (Korean text) Replace English loan phrases such as 딥다이브 (deep dive), 인사이트 (insight), and 피보팅 (pivoting) with Korean words.
-- (Korean text) Replace 판정 (ruling) with the word for the actual act, such as 판단, 평가, 분류, 확인, or 결정 (judgment, evaluation, classification, check, decision).
+- (Korean text) Replace 판정 (ruling) with the word for the actual act, such as 검토, 분류, 확인, or 결정 (review, classification, check, decision).
 - Do not overuse 견인하다 (drive) and 선도하다 (lead). State the concrete action.
 - The detailed list follows wording.md.
 
