@@ -1,2 +1,2 @@
-e8b16fab52ffd62ce2f768d7f154fbb3eec1c01c91e1153c8a43a7feeddf452f  no-meta-commentary-en.skill
-64c2ff7d6f2cd87ec66d4a0749bf32802e25facf268cf2e62a8eb5112de986ca  no-meta-commentary-ko.skill
+71ff45e6e1fd8cf09207985209c9106e7a00427b8c32b2a0db22548935d2e5af  no-meta-commentary-en.skill
+94746113b2d3481d0f0a2041674c040b6d8949db2d6fbdb52520c7876ac0af2a  no-meta-commentary-ko.skill

@@ -75,10 +75,12 @@ Do not use the expressions below.
 | Type | Examples |
 |---|---|
 | Comments on the text or the writing process | "This report", "Let's look at", "To summarize", "Search results show", "As requested" |
-| Contrast framing | "Not just A but B", "Beyond A to B" |
+| Contrast framing | "Not just A but B", "Less A than B", "Beyond A to B" |
 | Number declarations | "Three pillars", "Four directions" |
 | Empty connectors | "In this context", "This has significant implications" |
-| Exaggeration | "Groundbreaking", "explosive", "unprecedented", "game-changer" |
+| Exaggeration | "Groundbreaking", "explosive", "unprecedented", "game-changer", "incredibly" |
+| Literal predicates | "Serves as", "plays a crucial role", "defensible", "strengthens", "weakens" (in Korean text, -로 기능한다, 중요한 역할을 한다, 방어 가능하다, 강해진다, 약해진다) |
+| Unrequested caveats | "That said, not everyone does", "generalizing that far conflicts with the facts", "quite right" |
 | Symbol abuse | Em dashes, dramatic ellipses, bold for emphasis |
 | Procedure terms | Module, verification level, quality tier, rating |
 

@@ -406,6 +406,7 @@ Apply to code comments, commit messages, logs, chart and diagram labels, slide c
 - (Korean text) Write labels, comments, and slide copy in terse bullet style (개조식 간결체). End with nominal forms (명사형 종결) by default and use verb endings where they read more naturally. Do not end bullet items with a period. Do not string nouns together as in "연구 기술 자원 역량 상태". Keep particles and relations as in "연구 인프라 보유 여부". Do not use colloquial or informal register, and avoid a colloquial or informal tone in endings, words, and expressions
 - Write conversational replies in the user's language and match the user's tone and level of formality
 - Every sentence delivers new information. Do not re-summarize what has already been said
+- State results you ran and checked directly as settled, and name only the part left unchecked. Do not describe work you have not run as in progress; state the finished result or the reason the work cannot be done
 - Do not use modifiers whose removal keeps the meaning, tautologies ("improvement is needed, so improvement is required"), or circular definitions ("data governance is the system that governs data")
 - Do not use contrast constructions such as "not simply A but B". State B directly
 - Do not announce counts in advance, as in "three strategies" or "four measures". List the content directly
@@ -435,10 +436,11 @@ Apply to code comments, commit messages, logs, chart and diagram labels, slide c
 
 Words that generative models overuse signal machine-written text to readers. Replace the words below with concrete expressions. Leave quoted originals, proper nouns, legal terms, and technical standard names unchanged. If the user asks for a specific word, use it.
 
-- (Korean, avoid) 맥락, 담론, 지형, 함의, 패러다임, 게임체인저, 인사이트, 딥다이브, 레버리지, 매핑, 획기적, 혁신적, 선도적, 압도적, 진정한, 궁극적, 매우, 상당히, 사실상, 그야말로, 축 and 종 attached to numbers ("두 축", "3종"), 묶음 (bundle), 판 (edition, in place of version or basis)
+- (Korean, avoid) 맥락, 담론, 지형, 함의, 패러다임, 게임체인저, 인사이트, 딥다이브, 레버리지, 매핑, 획기적, 혁신적, 선도적, 압도적, 진정한, 궁극적, 매우, 상당히, 사실상, 그야말로, 축 and 종 attached to numbers ("두 축", "3종"), 묶음 (bundle), 판 (edition, in place of version or basis), 판정 (ruling; replace with the actual act such as 판단, 평가, 분류, 확인, 결정), 통찰력 (insight, as praise), 꽤 (pretty), 미친 듯이 (like crazy)
 - (Korean, empty phrases) "이러한 맥락에서", "결론적으로", "시사하는 바가 크다", "중요한 것은", "주목할 점은", "-의 필요성이 대두되고 있다"
-- (Korean, use sparingly) Use 핵심, 본질, 체계, 구축, 고도화, 강화, 검증, 전략적, 체계적, 효과적, 특히, 판정, and 약속 no more than once per paragraph. Use 출발, 계측, and 실측 only when something actually departs or is measured, and never figuratively
+- (Korean, use sparingly) Use 핵심, 본질, 체계, 구축, 고도화, 강화, 검증, 전략적, 체계적, 효과적, 특히, and 약속 no more than once per paragraph. Use 출발, 계측, and 실측 only when something actually departs or is measured, and never figuratively
 - (Korean, translationese) -에 있어서, -에 대하여, -을 통하여, -로 인하여, -라고 하는, -인 셈이다, -것은 아닐까, -하지 않으면 안 된다, overuse of -적 and -화
+- (Korean, literal translations of English predicates) Replace -로 기능한다 (functions as), 방어 가능하다 (defensible), 회귀가 발생 (a regression occurs), 버그를 닫다 (close a bug), 양식을 채우다 (fill in a form), and 경고가 붙는다 (a warning comes with) with the actual act (성능 저하, 오류 재발, 수정, 입력, 표시). Keep established terms such as 회귀 테스트 (regression test) and issue tracker status names
 - (Korean, empty nouns) Do not use placeholder nouns such as 것, 곳, 거, 셈, or 부분. Name the referent with a concrete noun. Shorten "-하는 것이 필요" to "- 필요". Replace "-한 것으로 보임" with a direct statement plus its evidence. Do not swap '것' for '곳', '거', '부분', or '셈'
 - (Korean, nominal endings) End "목적을 달성할 필요" as "목적 달성 필요" by dropping the adnominal form
 - (Korean, connotation) 넣다, 빼다, and 박다 are avoided in workplace documents because of their connotations, so use 포함, 제외, and 명시

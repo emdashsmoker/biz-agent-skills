@@ -69,7 +69,7 @@ Lining up facts the reader already knows as "X is Y" in place of analysis and ju
 
 | Pattern | Example | Handling |
 |---|---|---|
-| Contrast emphasis | "not merely A but B", "not A but true B", "not A but B", "beyond A to B", "not stopping at A but B" | Drop the negate-then-assert frame and state B directly |
+| Contrast emphasis | "not merely A but B", "not A but true B", "not A but B", "less A than B", "beyond A to B", "not stopping at A but B", recasting the other person's words as A and then correcting them to B ("what you said is not A but B" and similar) | Drop the negate-then-assert frame and state B directly |
 | Repeated frames | "X is ... Y is also ... Z too is ..." | Vary the structure |
 | Dramatic fragments | "Innovation. That is it." | Rebuild as a complete sentence |
 | Staccato rhythm | "Fast. Accurate. Efficient." | Merge into content-centered sentences |
@@ -164,10 +164,10 @@ LLMs produce meta commentary for the purposes below. None serves the reader.
 The types below are examples and the list is open-ended. A sentence outside the list is still meta commentary when a test flags it. The handling is the same for all: delete the meta commentary and go straight to the content.
 
 1. (Self-reference) "This report analyzes X", "the purpose of this text is", "this section covers Z", "as mentioned above", "putting the above together", "explained in detail below"
-2. (Previews and recaps) "First we will look at A and then analyze B", "we have now looked at A", "in conclusion", "to summarize", "now to the main point"
+2. (Previews and recaps) "First we will look at A and then analyze B", "we have now looked at A", "in conclusion", "to summarize", "now to the main point", "let's explore", "let's start with the big picture", "one thing to flag first", "let me correct one point"
 3. (Echoing the request) "As you requested", "as you said", "to answer your question", "having reviewed the material you provided", "having checked the file you uploaded", "following the conditions you set"
 4. (Boasting and completion reports) "After thorough analysis", "reviewed from various perspectives", "after close review", "the analysis is complete", "the summary is done", "analyzing from multiple angles"
-5. (Exposed reasoning) "After considering several possibilities", "after looking from various angles", "after careful thought", "comparing A and B, I judged B suitable", "I considered several alternatives, but"
+5. (Exposed reasoning) "After considering several possibilities", "after looking from various angles", "after careful thought", "comparing A and B, I judged B suitable", "I considered several alternatives, but", "wait, looking again"
 6. (Restating known facts) Textbook definitions of what the reader already knows in this context. For readers of an AI report, "AI stands for artificial intelligence"; for readers of a strategy report, "SWOT means strengths, weaknesses, opportunities, threats"
 7. (Exposing methods and tools) "Confirmed through web search", "calculated by running code", "classified by the MECE principle", "written in a pyramid structure", "applying the skill". Allowed when the user explicitly asks about methods or tools
 8. (Self-justification) "Classifying systematically", "a classification that covers everything without omission", "from a balanced perspective", "judging objectively", "evaluating fairly", "strictly speaking"
@@ -175,9 +175,9 @@ The types below are examples and the list is open-ended. A sentence outside the 
 10. (Pre-emptive disclaimers and exposed limits) "This may not be perfect", "a more detailed analysis may be needed", "the limits of this analysis include", "further expert review is needed", "this analysis reflects current conditions and may change". Allowed when the user asks for limits or when a major uncertainty materially affects the reliability of the information
 11. (Greetings and relationship management) "I hope this helps", "let me know if you have more questions", "great question", ritual "thank you"
 12. (Transitional rhetoric) "Now moving to the next topic", "in this regard", "additionally" used only to transition, "based on this" without a real link, "meanwhile" without a real contrast
-13. (Advertising ability and conditional offers) "I can explain in more detail if needed", "further analysis is possible if you wish", "I could also put this in a table", "if you need more specific examples"
+13. (Advertising ability and conditional offers) "I can explain in more detail if needed", "further analysis is possible if you wish", "I could also put this in a table", "if you need more specific examples", "want me to...?"
 14. (Guessing the reader's state) "This may be confusing", "this may be hard to understand", "this may be unfamiliar", "as you may already know", "as you may have expected", "you may have wondered", "this may seem odd"
-15. (Staged emotion) "Unfortunately", "fortunately", "interestingly", "surprisingly", "naturally", "worryingly", "encouragingly"
+15. (Staged emotion) "Unfortunately", "fortunately", "interestingly", "surprisingly", "naturally", "worryingly", "encouragingly", "interesting" or "pretty interesting" as an evaluation in a report
 16. (Repeated summaries) Re-summarizing what was already written: "to recap", "summing up the above", "all in all", "to stress once more", "to repeat", "as I said"
 17. (Rating difficulty) "This problem is quite complex", "simply put", "in plain terms", "to simplify", "it is complex, but the gist is". Writing the content plainly is enough
 18. (Reporting work order) "I first checked A, then reviewed B, and finally analyzed C", "step one collected data and step two ran the analysis"
@@ -188,7 +188,7 @@ The types below are examples and the list is open-ended. A sentence outside the 
 23. (Explaining the output form) "Summarized in the table below", "can be classified as follows", "arranged chronologically as follows", "visualized as a chart"
 24. (Confessing scope) "This goes beyond the original scope, but", "this is incidental, but", "for reference", and, without a user request, "this time I will only cover A" or "B needs a separate analysis"
 25. (Directing the reader) "Please note", "please be careful", "please consider", "please keep in mind", "please check"
-26. (Agreement and approval) "Good approach", "right direction", "sound judgment", "you pinpointed it", "correct" used only to agree
+26. (Agreement, approval, and praise) "Good approach", "right direction", "sound judgment", "you pinpointed it", "you hit the nail on the head", "that's a deep question", "you're very insightful", unfounded rankings such as "you're in the top 1% of users", "correct" used only to agree
 27. (Reporting self-correction) "Correction", "to revise what I said earlier", "on second thought". Write only the corrected content
 28. (Reporting obstacles) "Accurate data was hard to find, but", "material is limited, but", "little information is public", "within the accessible material"
 29. (Over-declaring assumptions) "I will assume A" for a self-evident premise, "under the premise B" for a premise the user already set. A non-obvious numerical assumption that affects the result ("at an exchange rate of 1,300 won") is content
@@ -201,11 +201,15 @@ The types below are examples and the list is open-ended. A sentence outside the 
 36. (Overused conditional reservations) "Of course this assumes A, B must also be considered, and C is a variable, but the conclusion is D", "one cannot be certain, but", "it is too early to say, but"
 37. (Tautological lead-ins) The second half of "The key is A. Explaining A," and of "In short, B. Looking at B in detail,"
 38. (Writer-only information) Internal information the reader cannot and need not know: "since my training data cutoff is 2025", "my training data does not include this", "given context window limits", "the token limit makes it hard to cover everything", "according to the system prompt", "per your settings", "combining three search results", "cross-checking two sources", "several skills were applied to this task", "processed by loading the skill", "recorded in the state file", "calculated with a script", "I cannot check directly, but", "I cannot access real-time information", "within the scope of my knowledge", "within my ability". Judge by whether knowing it helps the reader decide or understand. Allowed when the user explicitly asks about internal methods, limits, or tools
-39. (Commenting on tone) "To be honest", "to put it carefully", "to be blunt", "was that too stiff?", "to put it in friendly terms", "to put it gently"
-40. (Reporting guesses about intent) "It seems you want", "I understood that you intend", "it seems you are curious about", "if what you want to know is". Infer intent silently and show only the result
+39. (Commenting on tone) "To be honest", "to put it carefully", "to be blunt", "was that too stiff?", "to put it in friendly terms", "to put it gently", "to put it strongly"
+40. (Reporting guesses about intent) "It seems you want", "I understood that you intend", "it seems you are curious about", "if what you want to know is", "so what you mean is...?". Infer intent silently and show only the result
 41. (Announcing attempts) "Let me try", "I will give it a go", "let me approach this", "let me write this"
 42. (Checking rituals) "Did you see that?", "does that make sense?", "how is it?", "is this part right?", "may I interpret it this way?", "did I understand correctly?"
 43. (Unrequested reverse statements) Adding the opposite polarity, complement, or substitute of what was requested. Examples: answering a request to add feature Y that supplements X with "use Y by default and never use X", following a statement in direction A with responses for the opposite direction B, defining A as distinct from B, C, D, and E and then listing why B, C, D, and E are not A, or deriving SO strategies from a SWOT analysis and then adding the factors of ST, WO, and WT strategies. Use reverse checks only for internal verification and write only results in the requested direction
+44. (Generic empathy lines) Counseling lines used regardless of the situation, such as "that must be so frustrating", "your anger is valid", "I'm here for you". Replace with a sentence that acknowledges the specific facts the person went through, or delete
+45. (Post-hoc excuses) "That wasn't my intent", "what I meant earlier was", "I never said that". State only the corrected content
+46. (Unfounded progress reports) "I'll have the file ready in a few hours", "I'm working on it and will let you know when it's done". State only the finished result or the reason the work cannot be done
+47. (Unrequested caveats and rebuttals) Rebutting a statement that holds for the majority with a rare exception ("that said, not everyone does", "that said, it isn't necessarily X"), or rebutting the other person's claim after recasting it in an extreme form ("generalizing that far conflicts with the facts", "to avoid oversimplifying"). State an exception, with its scope, only when it changes the conclusion
 
 ### Detours
 
@@ -300,6 +304,7 @@ Removed from the original: self-justification, explanation of the output form, r
 - Are sentences whose subject is the text, the writer, the writing, the request, or the tools absent?
 - Are sentences that benefit the writer, or that only perform service rituals, absent?
 - Are sentences on opposite directions, complements, or replacement rules the user did not request absent?
+- Are unfounded praise, generic empathy lines, post-hoc excuses, unfounded progress reports, and unrequested caveats absent?
 - Are detours such as hidden subjects, disguised content, modesty, questions, and connectors absent?
 - Do the first and last sentences carry content?
 - Does the text read without awkward rhythm when read aloud?

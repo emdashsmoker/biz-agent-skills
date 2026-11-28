@@ -100,7 +100,7 @@ violations = check_conditional_branch(onto,
 | 프리셋 | 포함 점검 | 맞는 구조 |
 |---|---|---|
 | run_preset_cross_factor | check_cross_mapping, check_provenance, check_cardinality | 유형마다 참조할 수 있는 요인이 정해진 구조 |
-| run_preset_multi_axis | check_coverage, check_shared_reference | 여러 평가 기준의 결과가 종합 판정으로 모이는 구조 |
+| run_preset_multi_axis | check_coverage, check_shared_reference | 여러 평가 기준의 결과가 종합 결과로 모이는 구조 |
 | run_preset_regulated_procedure | check_pipeline_trace, check_mandatory_outputs | 순서와 필수 산출물이 정해진 절차 |
 | run_preset_causal | check_causal_chain, check_unsupported_assumptions, check_reverse_chain | 원인과 결과의 연쇄 |
 | run_preset_logic_model | check_pipeline_trace, check_bidirectional_coverage, check_unsupported_assumptions, check_provenance | 투입, 활동, 산출, 성과로 이어지는 구조 |
@@ -196,7 +196,7 @@ auto_route_advanced_checks는 이름을 보고 적용할 점검을 고른다. �
 | 순차 의존 연쇄 | 앞 단계 산출물이 뒤 단계 입력이 된다 | MinCardinality (뒤 단계 연결 요건 기록), 단절은 check_pipeline_trace로 점검 | precedes, follows 같은 순서 속성 |
 | 허용 조합 제약 | 유형마다 참조할 수 있는 대상이 정해져 있다 | EquivalentClass (허용 조합) | 유형별 허용 대상이 명시적으로 나열됨 |
 | 필수 연결 | 모든 X가 Y와 1개 이상 연결되어야 한다 | MinCardinality (요건 기록), SPARQL 점검 | 도메인 논리상 반드시 필요한 관계 |
-| 미연결 상태가 곧 문제 | 연결이 없으면 문제 상태다 | EquivalentClass의 Not 조건 (close_world_scope 뒤 판정) | 연결 부재를 문제로 인식하는 도메인 |
+| 미연결 상태가 곧 문제 | 연결이 없으면 문제 상태다 | EquivalentClass의 Not 조건 (close_world_scope 뒤 판단) | 연결 부재를 문제로 인식하는 도메인 |
 | 명시 대상과 실제 대상의 비교 | 명시한 수혜 대상과 실제 수혜 대상이 다를 수 있다 | 두 속성 값의 비교. OWL 클래스 공리로는 같은 개체의 두 속성 값을 직접 비교할 수 없으므로 SPARQL 패턴 비교나 DL-safe SWRL 규칙을 쓴다 | 수혜자 관련 속성이 2종 이상 |
 
 ## 다른 분석 결과를 온톨로지로 옮기기

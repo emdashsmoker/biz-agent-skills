@@ -36,11 +36,12 @@ When the expressions below sit where the conclusion should be, the conclusion is
 | Partial agreement | "Has a point" | Does not say which argument has a point, and gives no direction |
 | Partial agreement | "Largely agreeable", "partly valid" | Does not state the range of agreement |
 | Partial agreement | "Not wrong", "cannot be called entirely wrong" | Avoids the conclusion through double negation |
+| Partial agreement | "Quite right", "fairly close to A" | Gives an impression of agreement without stating where it is wrong |
 | Both-sides | "Both sides have a point", "each has pros and cons", "each has merits and demerits" | Accepts both sides equally without weighing them |
 | Both-sides | "Positive and negative aspects coexist" | Hides the assumption that the two aspects weigh the same |
 | Both-sides | "Both an opportunity and a crisis", "two sides of the same coin", "a double-edged sword", "light and shadow coexist", "could be medicine or poison" | Replaces analysis with metaphor |
 | Suspended judgment | "It depends on the situation", "it depends on the case", "it may vary with context" | Does not say which direction applies in which situation |
-| Suspended judgment | "Hard to say for sure", "not easy to conclude" | Refuses to judge, or does not say why it is hard |
+| Suspended judgment | "Hard to say for sure", "cannot be stated definitively", "not easy to conclude" | Refuses to judge, or does not say why it is hard |
 | Suspended judgment | "Too early to tell", "premature to judge" | Pushes the judgment to an unspecified future |
 | Fake compromise | "Combine the strengths of both", "harmonize the two views" | Gives no method for combining or harmonizing |
 | Fake compromise | "A balanced approach is needed", "find the right balance" | Does not define "balance" or "right" |
@@ -71,6 +72,14 @@ Weighing positions by the number of grounds, length, citation counts, or number 
 - "More experts support A, so A is the accepted view" (also an appeal to the crowd)
 
 When the numerically weaker position is stronger in logical soundness and causal explanatory power, conclude in its direction.
+
+### Test 6: Conclusion reversal
+
+After the conclusion, a later item brings in a new criterion the user did not set and overturns or blurs the earlier conclusion. "But even better is", "still, if I were you", "surprisingly, this one is better" and similar fall here. Keep one conclusion under the criteria the user set. When a new criterion really changes the conclusion, rewrite the conclusion and put it first.
+
+### Test 7: Hedging verified facts
+
+Reservations are attached to a result the writer carried out and checked directly. "The fix is done, but it cannot be stated definitively that it took effect" and similar fall here. State checked results as settled and name only the part left unchecked.
 
 ## Rules for reaching a conclusion
 
@@ -209,6 +218,8 @@ The revision meets all three conditions: evidence is lacking on both sides, pilo
 - Did you avoid forcing equal length onto two opposing positions?
 - Do reservation expressions appear no more than once?
 - Did you avoid presenting the midpoint of two positions as the conclusion without grounds?
+- Did you avoid overturning the conclusion with a new criterion in a later item?
+- Did you avoid attaching reservations to results you checked directly?
 - Is the counterargument placed under the conclusion?
 - Did you avoid weakening or distorting the counterargument, and did you keep its core arguments?
 - Does the conclusion hold after weighing the strongest form of the counterargument?

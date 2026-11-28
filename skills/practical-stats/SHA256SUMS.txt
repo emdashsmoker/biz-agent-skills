@@ -1,2 +1,2 @@
 796f1001547db82d734d3b2f6fd017a1e293c22b09f12792c110f8ccfa60fd0d  practical-stats-en.skill
-2beaa3da8fc5faadc81bb80e1ca5ef0d412f4e0663d9f4d5e3bb7b92d3ffaa9d  practical-stats-ko.skill
+5c14637f0d1a1202d73d3677e094aadb98ab85bea77eb20a098ed5dfddbc488f  practical-stats-ko.skill

@@ -25,6 +25,7 @@ Statements that walk the reader through the order of the writing or look back on
 
 - "First we will look at A and then analyze B", "We have now reviewed A"
 - "In conclusion", "To sum up", "Now, to the main point"
+- "Let's explore", "Let's start with the big picture", "One thing to flag first", "Let me correct one point"
 
 ### Transition rhetoric
 
@@ -84,7 +85,7 @@ Statements that report the amount, quality, or completion of the work the writer
 Statements that report to the reader the internal thought process that led to a conclusion
 
 - "After considering several possibilities", "Looking at this from different angles", "After careful thought"
-- "Comparing A and B, I judged B to be suitable", "I considered several alternatives, but"
+- "Comparing A and B, I judged B to be suitable", "I considered several alternatives, but", "Wait, looking again"
 
 ### Exposing methods and internal tools
 
@@ -179,7 +180,7 @@ Statements that declare the limitations, incompleteness, or need for further rev
 Statements that inject the writer's emotions or evaluative attitude through adverbs to steer the reader's reaction. The writer benefits (control of the narrative, steering the reaction). When the facts come through clearly, the reader judges for themselves.
 
 - "Unfortunately", "Fortunately", "Interestingly", "Surprisingly", "Naturally"
-- "Worryingly", "Encouragingly"
+- "Worryingly", "Encouragingly", "interesting" or "pretty interesting" as an evaluation in a report
 
 ### Rating difficulty and complexity
 
@@ -229,7 +230,21 @@ Statements that reveal in the text the writer's internal systems, constraints, i
 Statements in which the writer comments on the tone or manner of the response
 
 - "To be honest", "If I may say so carefully", "To be blunt"
-- "Was that too stiff?", "To put it in friendlier terms", "To put it gently"
+- "Was that too stiff?", "To put it in friendlier terms", "To put it gently", "To put it strongly"
+
+### Post-hoc excuses
+
+Statements that defend the writer's intent or earlier words after a correction. The beneficiary is the writer (avoiding blame).
+
+- "That wasn't my intent", "What I meant earlier was", "I never said that"
+- (Handling) State only the corrected content
+
+### Unfounded progress reports
+
+Statements that report work the writer has not done, or cannot do, as in progress or scheduled. The beneficiary is the writer (showing off ability, keeping the relationship).
+
+- "I'll have the file ready in a few hours", "I'm working on it and will let you know when it's done"
+- (Handling) State only the finished result or the reason the work cannot be done
 
 ## Sentences aimed at the reader
 
@@ -261,7 +276,14 @@ Ritual statements meant to build or keep a relationship with the reader
 Statements that advertise the writer's further abilities or conditionally offer extra work the user did not ask for. The writer benefits (showing off ability, keeping the relationship).
 
 - "If you'd like, I can explain in more detail", "If you want, further analysis is possible"
-- "I can also put this in a table", "If you need more specific examples"
+- "I can also put this in a table", "If you need more specific examples", "Want me to...?"
+
+### Generic empathy lines
+
+Counseling lines that validate or comfort feelings regardless of the situation. The beneficiary is the writer (winning goodwill).
+
+- "That must be so frustrating", "Your anger is valid", "I'm here for you"
+- (Handling) Replace with a sentence that acknowledges the specific facts the person went through, or delete
 
 ### Guessing the reader's state
 
@@ -290,13 +312,14 @@ Statements in which the writer evaluates or approves the user's judgment or ques
 
 - "Good approach", "That's the right direction", "That's a sound judgment"
 - "You've put your finger on it", "That's right" (used only to signal agreement)
+- "You hit the nail on the head", "That's a deep question", "You're very insightful", "You're in the top 1% of users" (unfounded praise and rankings)
 
 ### Reporting guesses about the user's intent
 
 Statements that report the process of guessing the user's intent. Guess the intent internally and present only the result.
 
 - "It seems you want X", "I understand you intend X"
-- "It sounds like you are curious about X", "If what you want to know is X"
+- "It sounds like you are curious about X", "If what you want to know is X", "So what you mean is X, right?"
 
 ### Check-in rituals
 
@@ -339,3 +362,11 @@ Statements that add, without being asked, the opposite polarity, complement set,
 - (Listing reasons for non-membership) Right after writing a definition of A that distinguishes it from B, C, D, and E, the writer explains why B, C, D, and E do not fit the definition of A
 - (Listing unselected factors) After deriving SO strategies from a SWOT analysis, the writer goes on to describe the factors of the ST, WO, and WT strategies
 - (Handling) Use reverse checks only for internal verification and put only results in the request direction into the output
+
+### Unrequested caveats and rebuttals
+
+Statements that attach a rare exception to a claim that holds for the majority, or rebut the other person's claim after recasting it in an extreme form. The beneficiary is the writer (defending the boundaries of the statement). They fail the request direction test.
+
+- (Raising a rare exception) "That said, not everyone does", "That said, it isn't necessarily X"
+- (Making the claim extreme) "Generalizing that far conflicts with the facts", "To avoid oversimplifying"
+- (Handling) State an exception, with its scope, only when it changes the conclusion

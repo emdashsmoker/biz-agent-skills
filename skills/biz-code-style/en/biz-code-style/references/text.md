@@ -109,13 +109,13 @@ Expressions whose removal leaves the meaning unchanged.
 
 ### Formulaic rhetoric
 
-- (Contrast emphasis) Do not write "not simply A but B", "not A but true B", or "not A but B". State B directly.
+- (Contrast emphasis) Do not write "not simply A but B", "not A but true B", "not A but B", or "less A than B". State B directly.
 - (Self-posed questions) Do not ask and answer, as in "Why did this happen? Because...". Write the answer directly.
 - (Dramatic fragments) Do not aim for drama with one- or two-word sentences, as in "Innovation. That is it."
 - (Staccato rhythm) Do not build rhythm from a run of short sentences, as in "Fast. Accurate. Efficient." Merge them into content-bearing sentences.
 - (Repeated structure) Do not repeat the same subject-predicate shape in three or more adjacent sentences.
 - (Overgeneralization) Do not write conclusions beyond the evidence, such as "this signals a paradigm shift for the whole industry".
-- (Vague partial agreement) Replace "half right" and "largely agree" with the specific range of agreement and disagreement.
+- (Vague partial agreement) Replace "half right", "quite right", and "largely agree" with the specific range of agreement and disagreement.
 - (Number announcements) Do not announce the number of items in advance, as in "three major strategies" or "four measures". List the content directly. A count that emerges from the listed items ("divided into short, mid, and long term") is fine.
 - (Fitting to a count) Do not habitually fit items to three. Write two if there are two and four if there are four.
 
@@ -144,6 +144,10 @@ Narration aimed at the text itself, the writing process, the writer, or the tool
 - Do not draw the reader's attention, as in "what deserves attention is" or "what I want to stress here".
 - Do not reveal the frameworks used in writing, as in "following the MECE principle" or "from a 5W1H perspective".
 - Do not evaluate your own output, as in "this classification covers everything without omission".
+- Do not praise or rank the other person without grounds, as in "you hit the nail on the head" or "that's a deep question".
+- When corrected, state the fixed result instead of an excuse such as "that wasn't my intent".
+- Do not describe work you have not run as in progress. State the finished result or the reason the work cannot be done.
+- State results you ran and checked directly as settled, and name only the part left unchecked.
 
 ### Translationese (Korean text)
 
@@ -151,12 +155,14 @@ Narration aimed at the text itself, the writing process, the writer, or the tool
 - Write "-하는듯" as "-으로 추정", and "-하지 않으면 안 된다" and "-할 수밖에 없다" as "-할 필요" or "-이 불가피".
 - Shorten "-에 대하여", "-을 통하여", and "-로 인하여" to "-에 대해", "-을 통해", and "-로 인해", or restructure the sentence.
 - Do not overuse the suffixes -적(的) and -화(化).
+- Replace literal translations of English predicates such as -로 기능한다 (functions as), 방어 가능하다 (defensible), 회귀가 발생 (a regression occurs), 버그를 닫다 (close a bug), 양식을 채우다 (fill in a form), and 경고가 붙는다 (a warning comes with) with the actual act (성능 저하 performance drop, 오류 재발 recurring bug, 수정 fix, 입력 enter, 표시 shown, and so on). Keep established terms such as 회귀 테스트 (regression test) and issue tracker status names.
 
 ### AI-favored vocabulary
 
 - Replace exaggerated transformation phrases such as paradigm shift, game changer, and "change the landscape" with the specific change.
 - Replace abstract catch-all nouns such as 맥락 (context), 담론 (discourse), 지형 (landscape), 프레임 (frame), and 레버리지 (leverage) with the specific object.
 - (Korean text) Replace English loan phrases such as 딥다이브 (deep dive), 인사이트 (insight), and 피보팅 (pivoting) with Korean words.
+- (Korean text) Replace 판정 (ruling) with the word for the actual act, such as 판단, 평가, 분류, 확인, or 결정 (judgment, evaluation, classification, check, decision).
 - Do not overuse 견인하다 (drive) and 선도하다 (lead). State the concrete action.
 - The detailed list follows wording.md.
 

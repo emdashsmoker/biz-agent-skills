@@ -159,8 +159,10 @@ Apart from greetings and sentences of acknowledgment, thanks, or apology, do not
 
 - (Cushions) "I was wondering if," "If it's not too much trouble," "I know you're busy, but" (in Korean, "다름이 아니라", "혹시 실례가 되지 않는다면", "바쁘신 줄 알지만")
 - (Self-lowering) expressions that lower the writer, such as "humble as I am" or "if I may be so bold" (in Korean, "부족한 제가" or "감히")
-- (Evaluative praise) words that judge the reader or the work without content, such as "Great question," "Excellent point," "That's truly amazing," or "Perfect." Such words put the writer in the position of judging the reader.
+- (Evaluative praise) words that judge the reader or the work without content, such as "Great question," "Excellent point," "That's truly amazing," "You hit the nail on the head," "That's a deep question," or "Perfect." Such words put the writer in the position of judging the reader.
 - (Exclamatory courtesy) thanks and apologies inflated with exclamation, such as "Thank you so much"
+- (Generic empathy lines) comfort lines used regardless of the situation, such as "That must be so frustrating" or "I'm here for you." Replace them with a sentence that acknowledges the specific facts the person went through
+- (Post-hoc excuses) sentences that only explain themselves after a correction, such as "That wasn't my intent." State what was fixed
 - (Goodwill fillers) sentences that carry no information and only maintain goodwill, such as "I hope this helps" or "Feel free to reach out"
 - (Echoes) sentences that copy the received message or restate it, as in "I understand this as a request to X"
 - (Text commentary) sentences that preview the structure of the text or why it was written, such as "I'll explain in detail below," "First I'll cover A," or "In response to your request"
@@ -169,10 +171,13 @@ Apart from greetings and sentences of acknowledgment, thanks, or apology, do not
 - (Empty connectors) "In this context," "This has significant implications," "It is worth noting"
 - (Hype words) "groundbreaking," "innovative," "game-changer," "paradigm shift"
 - (Broad nouns) "ecosystem," "discourse," "landscape" used without a specific referent
-- (Formula rhetoric) contrast that negates a phrase for emphasis ("not A, but a true B"), asking and answering your own question, and announcing a count before the content ("three key strategies")
+- (Words AI overuses in Korean text) Write 판정 (ruling) as the actual act, such as 판단, 평가, 확인, or 결정 (judgment, evaluation, check, decision). Use 경로 (path) only for a real route, and delete intensifiers such as 꽤 (pretty) and 미친 듯이 (like crazy)
+- (Formula rhetoric) contrast that negates a phrase for emphasis ("not A, but a true B", "less A than B"), asking and answering your own question, and announcing a count before the content ("three key strategies")
 - (Translationese in Korean text) Change "-에 있어서" to "-에서". Change "-하지 않으면 안 된다" to "-해야 한다". Remove "-라고 하는" by reordering the sentence. Do not stack the suffixes -적 and -화.
+- (Literal predicates) "serves as," "plays a crucial role," and, in Korean text, -로 기능한다 (functions as), 방어 가능하다 (defensible), 버그를 닫다 (close a bug), 양식을 채우다 (fill in a form). State the actual act
+- (Mixed speech levels in Korean text) Do not mix casual forms such as 응, 봤어, 됐어 (yeah, saw it, done) into a polite text. Keep one speech level throughout
 - (Repetition) sentences that repeat the same content in other words and sentences that re-summarize the body at the end
-- (Symbols) em dashes, ellipses for dramatic effect, bold for emphasis inside sentences, emojis, exclamation marks, tildes, chat abbreviations such as "ㅎㅎ" or "lol"
+- (Symbols) em dashes, middle dots outside official names, ellipses for dramatic effect, bold for emphasis inside sentences, emojis, exclamation marks, tildes, chat abbreviations such as "ㅎㅎ" or "lol"
 
 ## Rhythm
 

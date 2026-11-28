@@ -96,11 +96,11 @@ CONCOR(CONvergence of iterated CORrelations)는 상관계수 매트릭스의 상
 
 > Hanneman, R. A., Riddle, M.(2005), Introduction to Social Network Methods, Chapter 15(https://faculty.ucr.edu/%7Ehanneman/nettext/C15_Regular_Equivalence.html)
 
-## 이미지 매트릭스 판정 기준
+## 이미지 매트릭스 결정 기준
 
-블록 사이에 관계가 있다고 볼지 판정하는 기준은 다음과 같다(Faust and Wasserman 1992). 블록 밀도는 블록 사이의 실제 관계 수를 가능한 관계 수로 나눈 값이다.
+블록 사이에 관계가 있다고 볼지 정하는 기준은 다음과 같다(Faust and Wasserman 1992). 블록 밀도는 블록 사이의 실제 관계 수를 가능한 관계 수로 나눈 값이다.
 
-| criterion | 기준 | 1로 판정하는 조건 | 쓰임 |
+| criterion | 기준 | 1로 정하는 조건 | 쓰임 |
 |---|---|---|---|
 | `alpha` | α 밀도 | 블록 밀도가 α 이상 | 일반적인 기본값, α는 전체 밀도를 기본으로 씀 |
 | `zero` | 영블록 | 관계가 하나라도 있음 | 밀도가 낮은 네트워크 |

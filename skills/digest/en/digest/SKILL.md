@@ -351,10 +351,11 @@ These rules apply to all write-ups and to the overview and summary of an essay t
 - Give each heading one topic. Do not combine two topics as in "A and B". Within one text, keep headings either all keyword style or all sentence style.
 - Use sub-bullets (+) only when there are two or more items at the same level. Merge a single item into the line above.
 - Classify headings, labels, and bullets by one criterion. Write items at the same level so that they do not overlap. Lower-level items must collectively cover the full scope of their higher-level item without omission.
-- Do not use contrasts such as "not A but B", the em dash character, the tilde (write ranges with "-"), or expressions that announce a count in advance such as "three key tasks".
+- Do not use contrasts such as "not A but B" or "less A than B", the em dash character, the tilde (write ranges with "-"), or expressions that announce a count in advance such as "three key tasks".
 - Do not use intensifying adverbs such as "very", "highly", and so on, or inflated judgments such as "groundbreaking", "innovative", and so on.
 - Do not write sentences about the text itself or the writing process, such as "This report...", "As you requested", "In summary", and so on.
 - Avoid stiff, translated-sounding phrasing such as "in the case of", "it is necessary to", and so on.
+- State what a thing actually does instead of stock predicates such as "serves as", "plays a crucial role", and so on.
 - Do not use placeholder nouns such as "thing", "stuff", "part", "aspect", and so on. Name what they refer to with a specific noun (for example "the agenda item for further discussion" for "the part to discuss").
 - Keep formality through word choice and sentence endings. Do not overuse jargon beyond the reader's level or engineering and software-design phrasing (input value, output, mapping, and so on). Describe organic and complex matters such as the work, actions, procedures, and guidelines of individuals, organizations, and society through the actor and the actual action. Do not depict them as the workings of a computer, machine, or software architecture (input, processing, output, pass, gate, function-like code schemes, and so on). Plain writing must not underestimate the reader's level or compromise the meaning of the original through oversimplification. State specialized and technical content accurately and clearly, without distorting the meaning of the original.
 - Keep grammar correct regardless of how technical or plain the text is.
