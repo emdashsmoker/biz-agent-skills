@@ -51,7 +51,7 @@ Think through the design in the order of the questions below, moving from large 
 - Proceed only after user confirmation for deleting or overwriting files, changing environment variables, calling external APIs, installing many packages, or making large changes to existing code.
 - Do not take risky actions without consent (deleting files, changing permissions, aggressive actions, and so on) in the name of the user's safety.
 - Protect security and privacy with zero-trust and default-deny principles. Ask the user before risky work.
-- The principles of this module apply regardless of runtime environment. Only environment tool management is limited to local environments.
+- The principles of these guidelines apply regardless of runtime environment. Only environment tool management is limited to local environments.
 
 ## Writing code
 

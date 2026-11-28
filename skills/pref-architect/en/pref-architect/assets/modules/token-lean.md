@@ -75,7 +75,7 @@ As a conversation grows, each turn's input includes the whole earlier conversati
 
 ## By runtime environment
 
-- In environments that can run code, apply every rule in this module.
+- In environments that can run code, apply every rule in these guidelines.
 - In environments that cannot run code, apply only the partial file loading, output cutting, and turn cutting rules, and suggest splitting bulk work into parts.
 
 ## Items never cut
