@@ -3,7 +3,7 @@ name: code-standard
 description: "Coding standard for writing code, running scripts, file operations, data analysis, charts, UI, and visualization work such as slides and posters. Covers work reporting, runtime environment and permissions, code quality, security, charts, design, and visual checks. Load it before starting work when the always-on instructions say to load this module or when the user asks for \"/code-standard\", \"coding standard\", \"follow the chart rules\", and similar. For tasks that also involve writing, use it together with write-standard."
 metadata:
   generator: pref-architect
-  generator-version: "1.3"
+  generator-version: "1.4"
 ---
 
 # code-standard
@@ -209,7 +209,8 @@ If write-standard is also loaded, follow write-standard for response text. If it
 - (Text) One message per sentence, no meaningless modifiers, one classification criterion, sources given for quantitative data
 - (Common) Writing process and internal tools not exposed in final outputs, reproduction information recorded in intermediate records, work report given before starting
 
-After writing a sentence, comment, prompt, or similar text, run the two checks below.
+After writing a sentence, comment, prompt, or similar text, run the three checks below.
 
 - (Clarity) Ask "So what does it mean?" and "Why can you say that?" If the content must be made more specific or broken down before it can answer, the sentence is vague, so rewrite it until it answers both questions right away.
 - (Meta information) Ask whether the sentence still reads naturally, with its meaning unchanged, when "the writer", "to the writer", "the model that wrote the text", or "the AI provider" is put in front of it. If it does, it carries unneeded meta information, so rewrite it from the reader's or user's point of view.
+- (Korean noun endings) Check a Korean sentence that ends in a noun or a nominalizing ending (-함, -임, -음 and similar) by restoring it to a plain declarative sentence. Add the omitted particles and change the ending to "-이다", "-한다", "-다" or a similar form, or add such an ending (e.g., "목적 달성 필요" restores to "목적 달성이 필요하다", and so on). If the sentence does not restore to a natural declarative sentence, or the restored sentence differs in meaning from the original, the grammar is wrong, so rewrite it.

@@ -3,7 +3,7 @@ name: write-standard
 description: "Writing standard for every non-code response, including writing, research, analysis, summaries, and everyday search answers. Covers thinking order, sentences, document structure, evidence and sources, wording, and collaboration steps. Load it before writing a response when the always-on instructions say to load this module or when the user asks for \"/write-standard\", \"writing standard\", \"report style\", and similar. For tasks that also involve code or visualization, use it together with code-standard."
 metadata:
   generator: pref-architect
-  generator-version: "1.3"
+  generator-version: "1.4"
 ---
 
 # write-standard
@@ -178,7 +178,8 @@ Text that explains AI technology itself may need some avoided words such as "맥
 - Are contrast constructions, em dashes, meta commentary, and avoided words gone?
 - Are there no sentences or categories that mix facts and judgments?
 
-After writing a sentence, run the two checks below.
+After writing a sentence, run the three checks below.
 
 - (Clarity) Ask "So what does it mean?" and "Why can you say that?" If the content must be made more specific or broken down before it can answer, the sentence is vague, so rewrite it until it answers both questions right away.
 - (Meta information) Ask whether the sentence still reads naturally, with its meaning unchanged, when "the writer", "to the writer", "the model that wrote the text", or "the AI provider" is put in front of it. If it does, it carries unneeded meta information, so rewrite it from the reader's point of view.
+- (Korean noun endings) Check a Korean sentence that ends in a noun or a nominalizing ending (-함, -임, -음 and similar) by restoring it to a plain declarative sentence. Add the omitted particles and change the ending to "-이다", "-한다", "-다" or a similar form, or add such an ending (e.g., "목적 달성 필요" restores to "목적 달성이 필요하다", and so on). If the sentence does not restore to a natural declarative sentence, or the restored sentence differs in meaning from the original, the grammar is wrong, so rewrite it.

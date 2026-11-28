@@ -27,6 +27,75 @@ Changelog rules
 - (Push) Commit on top of the latest main and push directly to main.
 -->
 
+## 2026-11-28
+
+### biz-code-style
+- Added a grammar check that restores a Korean noun-ending sentence to a declarative sentence with the omitted particles and the ending in place (rewriting of sentences that do not restore naturally or that change meaning) (#107)
+
+* 명사형 종결 문장을 생략된 조사와 종결 어미를 갖춘 평서문으로 복원하는 문법 점검 추가 (자연스럽게 복원되지 않거나 의미가 달라지는 문장의 재작성) (#107)
+
+### biz-code-style-lite
+- Added a grammar check that restores a Korean noun-ending sentence to a declarative sentence with the omitted particles and the ending in place (rewriting of sentences that do not restore naturally or that change meaning) (#107)
+
+* 명사형 종결 문장을 생략된 조사와 종결 어미를 갖춘 평서문으로 복원하는 문법 점검 추가 (자연스럽게 복원되지 않거나 의미가 달라지는 문장의 재작성) (#107)
+
+### digest
+- Added a rule to write each Korean noun-ending sentence so that it restores to a natural declarative sentence with the same meaning when the omitted particles and the ending are added (#107)
+
+* 명사형 종결 문장이 생략된 조사와 종결 어미를 갖추었을 때 의미가 같은 자연스러운 평서문으로 복원되도록 작성하는 규칙 추가 (#107)
+
+### environment-analysis
+- Added a grammar check that restores a Korean noun-ending sentence to a declarative sentence with the omitted particles and the ending in place (rewriting of sentences that do not restore naturally or that change meaning) (#107)
+
+* 명사형 종결 문장을 생략된 조사와 종결 어미를 갖춘 평서문으로 복원하는 문법 점검 추가 (자연스럽게 복원되지 않거나 의미가 달라지는 문장의 재작성) (#107)
+
+### environment-analysis-lite
+- Added a grammar check that restores a Korean noun-ending sentence to a declarative sentence with the omitted particles and the ending in place (rewriting of sentences that do not restore naturally or that change meaning) (#107)
+
+* 명사형 종결 문장을 생략된 조사와 종결 어미를 갖춘 평서문으로 복원하는 문법 점검 추가 (자연스럽게 복원되지 않거나 의미가 달라지는 문장의 재작성) (#107)
+
+### grand-viz-style
+- Added a rule to write each Korean noun-ending sentence of slide text so that it restores to a natural declarative sentence with the same meaning when the omitted particles and the ending are added (#107)
+
+* 장표 문구의 명사형 종결 문장이 생략된 조사와 종결 어미를 갖추었을 때 의미가 같은 자연스러운 평서문으로 복원되도록 작성하는 규칙 추가 (#107)
+
+### logical-write
+- Added a grammar check that restores a Korean noun-ending sentence to a declarative sentence with the omitted particles and the ending in place (rewriting of sentences that do not restore naturally or that change meaning) (#107)
+
+* 명사형 종결 문장을 생략된 조사와 종결 어미를 갖춘 평서문으로 복원하는 문법 점검 추가 (자연스럽게 복원되지 않거나 의미가 달라지는 문장의 재작성) (#107)
+
+### logical-write-lite
+- Added a grammar check that restores a Korean noun-ending sentence to a declarative sentence with the omitted particles and the ending in place (rewriting of sentences that do not restore naturally or that change meaning) (#107)
+
+* 명사형 종결 문장을 생략된 조사와 종결 어미를 갖춘 평서문으로 복원하는 문법 점검 추가 (자연스럽게 복원되지 않거나 의미가 달라지는 문장의 재작성) (#107)
+
+### network-analysis
+- Added a rule to write each Korean noun-ending sentence of the report so that it restores to a natural declarative sentence with the same meaning when the omitted particles and the ending are added (#107)
+
+* 보고서의 명사형 종결 문장이 생략된 조사와 종결 어미를 갖추었을 때 의미가 같은 자연스러운 평서문으로 복원되도록 작성하는 규칙 추가 (#107)
+
+### pref-architect
+- Added a grammar check to the write-standard and code-standard modules that restores a Korean noun-ending sentence to a declarative sentence with the omitted particles and the ending in place (rewriting of sentences that do not restore naturally or that change meaning) (#107)
+- Changed the metadata version of the skill and the generator-version of the bundled modules from 1.3 to 1.4 (#107)
+
+* write-standard와 code-standard 모듈에 명사형 종결 문장을 생략된 조사와 종결 어미를 갖춘 평서문으로 복원하는 문법 점검 추가 (자연스럽게 복원되지 않거나 의미가 달라지는 문장의 재작성) (#107)
+* 스킬의 metadata version과 동봉 모듈의 generator-version을 1.3에서 1.4로 변경 (#107)
+
+### project-plan
+- Added a rule to write each Korean noun-ending sentence of the overview body so that it restores to a natural declarative sentence with the same meaning when the omitted particles and the ending are added (#107)
+
+* 오버뷰 본문의 명사형 종결 문장이 생략된 조사와 종결 어미를 갖추었을 때 의미가 같은 자연스러운 평서문으로 복원되도록 작성하는 규칙 추가 (#107)
+
+### slop-proof
+- Added a grammar check that restores a Korean noun-ending sentence to a declarative sentence with the omitted particles and the ending in place (rewriting of sentences that do not restore naturally or that change meaning) (#107)
+
+* 명사형 종결 문장을 생략된 조사와 종결 어미를 갖춘 평서문으로 복원하는 문법 점검 추가 (자연스럽게 복원되지 않거나 의미가 달라지는 문장의 재작성) (#107)
+
+### strategy-builder
+- Added a rule to write each Korean noun-ending sentence so that it restores to a natural declarative sentence with the same meaning when the omitted particles and the ending are added (#107)
+
+* 명사형 종결 문장이 생략된 조사와 종결 어미를 갖추었을 때 의미가 같은 자연스러운 평서문으로 복원되도록 작성하는 규칙 추가 (#107)
+
 ## 2026-11-26
 
 ### biz-code-style
