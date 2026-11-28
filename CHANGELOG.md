@@ -288,6 +288,16 @@ Changelog rules
 * 점검 결과 절의 명칭을 평가에서 검토 결과로, 평가표를 검토표로 변경 (#109)
 * 판정, 평가, 짝 등 상투 어휘 대신 실제 행위를 나타내는 어휘로 지침 문구 변경 (제도 용어와 확립된 개념의 평가는 유지) (#109)
 
+### tidy-grammar
+- Added the tidy-grammar skill that checks and corrects grammar in Korean and English text, including the endings and particle omission of Korean outline-style (gaejosik) items (#110)
+
+* 한국어와 영어 글의 문법 교정 스킬 추가 (한국어 개조식 문장의 종결 형태와 조사 생략 범위 포함) (#110)
+
+### tidy-grammar-lite
+- Added the lite edition of tidy-grammar, which holds SKILL.md and the three reference files of the full edition in a single SKILL.md (#110)
+
+* 정식판의 SKILL.md와 참조 파일 3개를 SKILL.md 하나에 담은 tidy-grammar 경량판 추가 (#110)
+
 ## 2026-11-26
 
 ### biz-code-style
