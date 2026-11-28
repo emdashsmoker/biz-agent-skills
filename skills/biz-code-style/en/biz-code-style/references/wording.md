@@ -49,7 +49,7 @@ Non-preferred:
 - (Assertion disguised as neutrality) 좌우 (determine, sway)
 - (Words unused in work and daily life) 통독 (read through, overused to mean reading the whole text)
 - (Verbs with sexual connotations, in every conjugation) 넣다 (put in, including 넣을 것, replace with 포함 include or 추가 add), 빼다 (pull out, including 뺄 것, replace with 제외 exclude or 삭제 delete), 박다 (drive in, a literal translation of hardcode, replace with 명시 state explicitly or 고정 fix), 쑤시다 (poke, replace with 점검 inspect or 조사 investigate), 동시삽입 (simultaneous insertion, replace with 병기)
-- (Words with a strong colloquial tone, in every conjugation) 쓰다 (use or write, replace with a word such as 사용 use, 활용 apply, 작성 draft, or 기재 enter), 잇다 (join, replace with a word such as 연계 link). A word whose double consonant (ㄲ, ㄸ, ㅃ, ㅆ, ㅉ) gives it a strong colloquial tone, such as 뽑다, 쓰다 and 짝, is replaced with a formal word of the same meaning even when this list does not name it
+- (Words with a strong colloquial tone, in every conjugation) 쓰다 (use or write, replace with a word such as 사용 use, 활용 apply, 작성 draft, or 기재 enter), 잇다 (join, replace with a word such as 연계 link). A vocabulary word whose own double consonant (ㄲ, ㄸ, ㅃ, ㅆ, ㅉ) gives it a strong colloquial tone, such as 뽑다, 쓰다 and 짝, is replaced with a formal word of the same meaning even when this list does not name it. Tense and grammar forms such as 하였음 and 있음 stay as they are
 
 Use with care:
 

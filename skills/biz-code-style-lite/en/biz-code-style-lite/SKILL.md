@@ -445,7 +445,7 @@ Words that generative models overuse signal machine-written text to readers. Rep
 - (Korean, empty nouns) Do not use placeholder nouns such as 것, 곳, 거, 셈, or 부분. Name the referent with a concrete noun. Shorten "-하는 것이 필요" to "- 필요". Replace "-한 것으로 보임" with a direct statement plus its evidence. Do not swap '것' for '곳', '거', '부분', or '셈'
 - (Korean, nominal endings) End "목적을 달성할 필요" as "목적 달성 필요" by dropping the adnominal form
 - (Korean, connotation) 넣다, 빼다, and 박다 are avoided in workplace documents because of their connotations, so use 포함, 제외, and 명시
-- (Korean, colloquial tone) Replace 쓰다 with a word such as 사용 or 작성 and 잇다 with a word such as 연계. A word whose double consonant (ㄲ, ㄸ, ㅃ, ㅆ, ㅉ) gives it a strong colloquial tone, such as 뽑다, 쓰다 and 짝, is replaced with a formal word of the same meaning even when no list names it
+- (Korean, colloquial tone) Replace 쓰다 with a word such as 사용 or 작성 and 잇다 with a word such as 연계. A vocabulary word whose own double consonant (ㄲ, ㄸ, ㅃ, ㅆ, ㅉ) gives it a strong colloquial tone, such as 뽑다, 쓰다 and 짝, is replaced with a formal word of the same meaning even when no list names it. Tense and grammar forms such as 하였음 and 있음 stay as they are
 - (English, avoid) delve, landscape, tapestry, realm, leverage, navigate, underscore, showcase, harness, spearhead, multifaceted, ever-evolving, game-changer, groundbreaking, paradigm shift, holistic, "not just A but B"
 - (English, use sparingly) Use robust, seamless, crucial, pivotal, and cutting-edge only when they point to a real object
 
