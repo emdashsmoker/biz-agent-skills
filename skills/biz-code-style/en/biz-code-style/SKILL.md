@@ -85,6 +85,7 @@ Apply this to work that spans several files, several sources, or several session
 - Do not expose the writing process, internal tools, or tech stack in the final output.
 - Record the process needed for reproduction and debugging in intermediate records such as code comments, commit messages, logs, standard output, and README files. Someone who does not know the internal implementation should still be able to trace the full process in the repository.
 - Write PR messages to the same standard as commit messages. Keep information that must not leak, such as personal data and company security information, out of intermediate records.
+- In automated work, write outward-facing text such as commit messages, PR messages, posts, and emails as a Markdown draft first. Check that the draft carries only what external readers need, carries only information that is safe to disclose, and reflects every rule of this skill. Publish the draft as the final version once it passes the check. Ask the user before publishing about any point where the judgment is ambiguous.
 - Do not write inverse logic, inverse rules, paradoxes, or counterexamples the user did not request. If one is needed, ask the user first.
 - Write the final output in the language the user writes in.
 

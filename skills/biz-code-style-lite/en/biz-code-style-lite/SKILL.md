@@ -396,6 +396,7 @@ Apply to code comments, commit messages, logs, chart and diagram labels, slide c
 - Mark unfinished and temporary spots with `TODO`, `FIXME`, and `HACK`
 - In intermediate records such as commit messages, logs, stdout, and the README, record the steps needed for reproduction and debugging in full. The whole history of the work must be traceable from the repository alone
 - Write PR messages to the same standard as commit messages. Keep information that must not leak, such as personal data and company security information, out of intermediate records
+- In automated work, write outward-facing text such as commit messages, PR messages, posts, and emails as a Markdown draft first. Check that the draft carries only what external readers need, carries only information that is safe to disclose, and reflects every rule of this skill. Publish the draft as the final version once it passes the check. Ask the user before publishing about any point where the judgment is ambiguous
 - Do not expose the authoring process, internal tools, or tech stack in final deliverables (reports, charts, slides)
 
 ### Sentences
