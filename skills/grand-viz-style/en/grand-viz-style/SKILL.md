@@ -366,6 +366,7 @@ First drafts tend to drift toward flat layouts made of tables and lists. Meet th
 - In pixel-based media, treat the screen width as 13.33 inches and convert points. At 1600px wide, 1pt is about 1.67px. Use the same conversion to judge large text for the contrast criteria.
 - Set head messages and labels in bold and body text in medium weight. Show emphasis inside body text with weight and color. Do not use underline or italics.
 - Write slide text in terse noun-ending style, the Korean gaejosik convention (e.g., '공급 거점 확충 추진', 'Supply hub expansion underway', and '처리 기간 단축', 'Shorter processing time'). When the user wants another style, apply that style across the deck.
+- Write each Korean noun-ending sentence so that filling in the omitted particles and the sentence ending ('-이다', '-한다', '-다' and similar) restores it to a natural declarative sentence with the same meaning.
 - Write body text as noun phrases. Keep the text in one box to three lines or fewer.
 - Break lines at units of meaning. Do not break inside a word or between a modifier and the word it modifies.
 - Name the project's subject, region, technology and similar items in taglines and copy. Do not use aspirational copy that would fit any project. After writing copy, ask "So what does it mean?" and "Why can you say that?" If the content must be made more specific or broken down before it can answer, the copy is vague, so rewrite it until it answers both questions right away.
