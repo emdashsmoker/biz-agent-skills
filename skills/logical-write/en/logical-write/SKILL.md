@@ -45,6 +45,7 @@ Choose the mode by these criteria.
 The same content in both modes looks like this.
 
 ```markdown
+Strict mode
 ## Merge of repeated input fields needed
 - Field staff re-enter the same customer data on several screens, raising handling time per case
     + Complaints about repeated entry up with the month-end closing workload
@@ -52,9 +53,8 @@ The same content in both modes looks like this.
 - Operations team to merge the repeated fields into one screen to cut the input burden
     + Merge priority set from field survey results
     + Rollout to all departments after checking handling-time change in pilot departments
-```
 
-```markdown
+Flow mode
 ## Merge of repeated input fields needed
 - Handling time per case has grown as field staff re-enter the same customer data on several screens
     + Complaints about repeated entry rise as input volume peaks during month-end closing
