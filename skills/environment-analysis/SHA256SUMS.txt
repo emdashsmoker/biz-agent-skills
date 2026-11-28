@@ -1,2 +1,2 @@
 c95913499516870ffebf180f309b9d95b98492f44659a941aa16c90e352a317a  environment-analysis-en.skill
-2667e8ffa7573a03c0597351d6e70c43a4afd3a11f79a5195da4a24218a9d375  environment-analysis-ko.skill
+415d4290a6c1d6eb01e669eb7092081c9f38fd32c33825ab8220e1ae4b3cb376  environment-analysis-ko.skill
