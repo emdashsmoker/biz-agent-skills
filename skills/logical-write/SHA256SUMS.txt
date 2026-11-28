@@ -1,2 +1,2 @@
-dacc498617b74f6d9895e4b8dad0781d59a534a6e01cf302c9bd6b787cc85c78  logical-write-en.skill
-a650d38ef16cc3e9b16af5d9f75deb62c0eebc2b04af6341f7e700f52b6c417c  logical-write-ko.skill
+7be59d83f01b710934413f791ef9ebb98b9fa2516034c85d7d552eec97fc8ed5  logical-write-en.skill
+6f221fe96a2d2068d2b432547c4c101dbecc299fd33ffb2af560580b35b10b47  logical-write-ko.skill
