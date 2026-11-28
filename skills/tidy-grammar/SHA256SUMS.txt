@@ -1,0 +1,2 @@
+25fd638ae013111c820b4bbc3722eb98be7cf86a1c273f9989db08232d3b63b0  tidy-grammar-en.skill
+27551d78b94a982ce929ee993a87df810859fdf869f49e90f2eda1e2f03f0f31  tidy-grammar-ko.skill

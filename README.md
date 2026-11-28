@@ -53,6 +53,8 @@ A skill whose name ends in `-lite` is a lite edition: the same function with sho
 - [`logical-write`](skills/logical-write/): Writes and revises Korean outline-style (gaejosik) reports in a Markdown hierarchy. [Samples](skills/logical-write/demo/en/)
 - [`logical-write-lite`](skills/logical-write-lite/): Lite edition of `logical-write`.
 - [`clear-comm`](skills/clear-comm/): Writes emails, replies, feedback and announcements that put the point first. [Samples](skills/clear-comm/demo/en/)
+- [`tidy-grammar`](skills/tidy-grammar/): Checks and corrects grammar in Korean and English text, including the endings and particle omission of Korean outline-style (gaejosik) items.
+- [`tidy-grammar-lite`](skills/tidy-grammar-lite/): Lite edition of `tidy-grammar`.
 - [`slop-proof`](skills/slop-proof/): Finds and fixes the stock phrasing of language models. [Samples](skills/slop-proof/demo/en/)
 - [`no-meta-commentary`](skills/no-meta-commentary/): Removes meta-commentary about the text, the writing process, the writer or the user's request, and unrequested reverse statements such as counterexamples and reverse logic. [Samples](skills/no-meta-commentary/demo/en/)
 - [`no-meta-commentary-lite`](skills/no-meta-commentary-lite/): Lite edition of `no-meta-commentary`.
@@ -157,6 +159,8 @@ Each skill carries its own `LICENSE` and `NOTICE.md`. Under the output exception
 - [`logical-write`](skills/logical-write/): 마크다운 계위 구조의 논리적 개조식 문장으로 보고서를 작성하고 수정합니다. [예시](skills/logical-write/demo/ko/)
 - [`logical-write-lite`](skills/logical-write-lite/): `logical-write`의 경량판입니다.
 - [`clear-comm`](skills/clear-comm/): 이메일, 답장, 피드백, 공지를 요점부터 전달하는 존댓말 산문으로 작성합니다. [예시](skills/clear-comm/demo/ko/)
+- [`tidy-grammar`](skills/tidy-grammar/): 한국어와 영어 글의 문법 오류를 찾아 고칩니다. 한국어 개조식 문장의 종결 형태와 조사 생략도 점검합니다.
+- [`tidy-grammar-lite`](skills/tidy-grammar-lite/): `tidy-grammar`의 경량판입니다.
 - [`slop-proof`](skills/slop-proof/): 언어 모델이 자주 만드는 상투 표현을 찾아 수정합니다. [예시](skills/slop-proof/demo/ko/)
 - [`no-meta-commentary`](skills/no-meta-commentary/): 글 자체, 작성 과정, 작성자, 사용자 요청을 다루는 메타적 서술과 요청하지 않은 역방향 서술(반례, 역논리 등)을 찾아 지웁니다. [예시](skills/no-meta-commentary/demo/ko/)
 - [`no-meta-commentary-lite`](skills/no-meta-commentary-lite/): `no-meta-commentary`의 경량판입니다.
